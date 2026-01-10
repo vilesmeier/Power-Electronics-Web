@@ -15,56 +15,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # 1️⃣ Checkout main / api-docs
     - name: Checkout source
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
-    # 2️⃣ Python 环境
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.x'
 
-    # 3️⃣ 安装 MkDocs
     - name: Install MkDocs
       run: |
         pip install mkdocs mkdocs-material
 
-    # 4️⃣ 构建 MkDocs（mkdocs.yml 在 Web/ 目录）
     - name: Build MkDocs site
       run: |
         mkdocs build \
           --config-file Web/mkdocs.yml \
           --site-dir site
 
-    # 5️⃣ 部署到 gh-pages（完全覆盖，但保留 Web/ 源码）
-    - name: Deploy to gh-pages
-      run: |
-        git config user.name "github-actions"
-        git config user.email "actions@github.com"
-
-        # 如果 gh-pages 不存在，创建 orphan
-        if git show-ref --quiet refs/heads/gh-pages; then
-          git checkout gh-pages
-        else
-          git checkout --orphan gh-pages
-          git rm -rf .
-        fi
-
-        # 删除旧的生成输出目录（这里假设放在 gh-pages 根目录）
-        rm -rf docs site_temp 2>/dev/null || true
-        mkdir -p site_temp
-        cp -r site/* site_temp/
-
-        # 清理 gh-pages 下旧生成目录
-        rm -rf docs
-        mv site_temp docs
-
-        # 保留 Web/ 目录及其他源码文件，不会删除
-        touch .nojekyll
-
-        git add docs .nojekyll
-        git commit -m "Deploy MkDocs site (full overwrite of docs)" || echo "No changes"
-        git push origin gh-pages --force
+    - name: Build and Deploy MkDocs
+      working-directory: Web
+      run: mkdocs gh-deploy --force
