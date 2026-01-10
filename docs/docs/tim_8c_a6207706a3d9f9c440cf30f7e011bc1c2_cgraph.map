@@ -1,0 +1,5 @@
+<map id="TIM0_Init" name="TIM0_Init">
+<area shape="rect" id="Node000001" title="Init CPU Timer0" alt="" coords="5,5,82,32"/>
+<area shape="rect" id="Node000002" href="$tim_8c.html#a0950d135719562f192fb7fd782cd58be" title="Interrupt handler" alt="" coords="130,5,236,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,16,114,16,114,21,82,21"/>
+</map>

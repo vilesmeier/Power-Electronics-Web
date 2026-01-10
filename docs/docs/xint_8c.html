@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Code/Peripheral_Driver/28335/XINT/xint.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('xint_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">xint.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>external interrupt driver source code  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+xint.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="xint_8c__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_peripheral___driver_228335_2_x_i_n_t_2xint_8c" loading="lazy" alt=""/></div>
+<map name="a_n_u_e_d_c-_core_2_code_2_peripheral___driver_228335_2_x_i_n_t_2xint_8c" id="a_n_u_e_d_c-_core_2_code_2_peripheral___driver_228335_2_x_i_n_t_2xint_8c">
+<area shape="rect" title="external interrupt driver source code" alt="" coords="5,5,205,48"/>
+<area shape="rect" href="global_8h.html" title="全局变量声明, 头文件打包, 全局通用宏定义" alt="" coords="72,96,138,123"/>
+<area shape="poly" title=" " alt="" coords="108,49,108,80,102,80,102,49"/>
+<area shape="rect" title=" " alt="" coords="73,171,137,197"/>
+<area shape="poly" title=" " alt="" coords="108,123,108,155,102,155,102,123"/>
+</map>
+</div>
+</div>
+<p><a href="xint_8c_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:affd07a9b3a14f2b8b71c64e5e87d68e2" id="r_affd07a9b3a14f2b8b71c64e5e87d68e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affd07a9b3a14f2b8b71c64e5e87d68e2">XINT_Init</a> (void)</td></tr>
+<tr class="memdesc:affd07a9b3a14f2b8b71c64e5e87d68e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">init XINT, select edge and gpio  <br /></td></tr>
+<tr class="memitem:a92ad91868533b28fb7e1ab474180e5f7" id="r_a92ad91868533b28fb7e1ab474180e5f7"><td class="memItemLeft" align="right" valign="top">interrupt void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ad91868533b28fb7e1ab474180e5f7">XINT1_isr</a> (void)</td></tr>
+<tr class="memdesc:a92ad91868533b28fb7e1ab474180e5f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">interrput serve rountine for XINT1  <br /></td></tr>
+<tr class="memitem:aa2506823905214f4e8d53131019b5462" id="r_aa2506823905214f4e8d53131019b5462"><td class="memItemLeft" align="right" valign="top">interrupt void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2506823905214f4e8d53131019b5462">XINT2_isr</a> (void)</td></tr>
+<tr class="memdesc:aa2506823905214f4e8d53131019b5462"><td class="mdescLeft">&#160;</td><td class="mdescRight">interrput serve rountine for XINT2  <br /></td></tr>
+<tr class="memitem:ae0177403580369c739b3feb39fd7658d" id="r_ae0177403580369c739b3feb39fd7658d"><td class="memItemLeft" align="right" valign="top">interrupt void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0177403580369c739b3feb39fd7658d">XINT3_isr</a> (void)</td></tr>
+<tr class="memdesc:ae0177403580369c739b3feb39fd7658d"><td class="mdescLeft">&#160;</td><td class="mdescRight">interrput serve rountine for XINT3  <br /></td></tr>
+<tr class="memitem:a3fa1e3cba136527e3c7615afcb989877" id="r_a3fa1e3cba136527e3c7615afcb989877"><td class="memItemLeft" align="right" valign="top">interrupt void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fa1e3cba136527e3c7615afcb989877">XINT4_isr</a> (void)</td></tr>
+<tr class="memdesc:a3fa1e3cba136527e3c7615afcb989877"><td class="mdescLeft">&#160;</td><td class="mdescRight">interrput serve rountine for XINT4  <br /></td></tr>
+<tr class="memitem:a4aeaba604b0e2c3dde57ba8d577c5904" id="r_a4aeaba604b0e2c3dde57ba8d577c5904"><td class="memItemLeft" align="right" valign="top">interrupt void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4aeaba604b0e2c3dde57ba8d577c5904">XINT5_isr</a> (void)</td></tr>
+<tr class="memdesc:a4aeaba604b0e2c3dde57ba8d577c5904"><td class="mdescLeft">&#160;</td><td class="mdescRight">interrput serve rountine for XINT5  <br /></td></tr>
+<tr class="memitem:a1654499233ad3bb3b3062a63385e17f5" id="r_a1654499233ad3bb3b3062a63385e17f5"><td class="memItemLeft" align="right" valign="top">interrupt void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1654499233ad3bb3b3062a63385e17f5">XINT6_isr</a> (void)</td></tr>
+<tr class="memdesc:a1654499233ad3bb3b3062a63385e17f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">interrput serve rountine for XINT6  <br /></td></tr>
+<tr class="memitem:a18aacfa7976670cf109b932a2dbb73da" id="r_a18aacfa7976670cf109b932a2dbb73da"><td class="memItemLeft" align="right" valign="top">interrupt void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18aacfa7976670cf109b932a2dbb73da">XINT7_isr</a> (void)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>external interrupt driver source code </p>
+
+<p class="definition">在文件 <a class="el" href="xint_8c_source.html">xint.c</a> 中定义.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="a92ad91868533b28fb7e1ab474180e5f7" name="a92ad91868533b28fb7e1ab474180e5f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ad91868533b28fb7e1ab474180e5f7">&#9670;&#160;</a></span>XINT1_isr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt void XINT1_isr </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>interrput serve rountine for XINT1 </p>
+
+<p class="definition">在文件 <a class="el" href="xint_8c_source.html">xint.c</a> 第 <a class="el" href="xint_8c_source.html#l00120">120</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa2506823905214f4e8d53131019b5462" name="aa2506823905214f4e8d53131019b5462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2506823905214f4e8d53131019b5462">&#9670;&#160;</a></span>XINT2_isr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt void XINT2_isr </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>interrput serve rountine for XINT2 </p>
+
+<p class="definition">在文件 <a class="el" href="xint_8c_source.html">xint.c</a> 第 <a class="el" href="xint_8c_source.html#l00127">127</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae0177403580369c739b3feb39fd7658d" name="ae0177403580369c739b3feb39fd7658d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0177403580369c739b3feb39fd7658d">&#9670;&#160;</a></span>XINT3_isr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt void XINT3_isr </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>interrput serve rountine for XINT3 </p>
+
+<p class="definition">在文件 <a class="el" href="xint_8c_source.html">xint.c</a> 第 <a class="el" href="xint_8c_source.html#l00134">134</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3fa1e3cba136527e3c7615afcb989877" name="a3fa1e3cba136527e3c7615afcb989877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa1e3cba136527e3c7615afcb989877">&#9670;&#160;</a></span>XINT4_isr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt void XINT4_isr </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>interrput serve rountine for XINT4 </p>
+
+<p class="definition">在文件 <a class="el" href="xint_8c_source.html">xint.c</a> 第 <a class="el" href="xint_8c_source.html#l00141">141</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4aeaba604b0e2c3dde57ba8d577c5904" name="a4aeaba604b0e2c3dde57ba8d577c5904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aeaba604b0e2c3dde57ba8d577c5904">&#9670;&#160;</a></span>XINT5_isr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt void XINT5_isr </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>interrput serve rountine for XINT5 </p>
+
+<p class="definition">在文件 <a class="el" href="xint_8c_source.html">xint.c</a> 第 <a class="el" href="xint_8c_source.html#l00148">148</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1654499233ad3bb3b3062a63385e17f5" name="a1654499233ad3bb3b3062a63385e17f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1654499233ad3bb3b3062a63385e17f5">&#9670;&#160;</a></span>XINT6_isr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt void XINT6_isr </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>interrput serve rountine for XINT6 </p>
+
+<p class="definition">在文件 <a class="el" href="xint_8c_source.html">xint.c</a> 第 <a class="el" href="xint_8c_source.html#l00155">155</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a18aacfa7976670cf109b932a2dbb73da" name="a18aacfa7976670cf109b932a2dbb73da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18aacfa7976670cf109b932a2dbb73da">&#9670;&#160;</a></span>XINT7_isr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt void XINT7_isr </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="xint_8c_source.html">xint.c</a> 第 <a class="el" href="xint_8c_source.html#l00162">162</a> 行定义.</p>
+
+</div>
+</div>
+<a id="affd07a9b3a14f2b8b71c64e5e87d68e2" name="affd07a9b3a14f2b8b71c64e5e87d68e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affd07a9b3a14f2b8b71c64e5e87d68e2">&#9670;&#160;</a></span>XINT_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void XINT_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>init XINT, select edge and gpio </p>
+
+<p class="definition">在文件 <a class="el" href="xint_8c_source.html">xint.c</a> 第 <a class="el" href="xint_8c_source.html#l00009">9</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="xint_8c_affd07a9b3a14f2b8b71c64e5e87d68e2_cgraph.png" border="0" usemap="#axint_8c_affd07a9b3a14f2b8b71c64e5e87d68e2_cgraph" loading="lazy" alt=""/></div>
+<map name="axint_8c_affd07a9b3a14f2b8b71c64e5e87d68e2_cgraph" id="axint_8c_affd07a9b3a14f2b8b71c64e5e87d68e2_cgraph">
+<area shape="rect" title="init XINT, select edge and gpio" alt="" coords="5,157,83,184"/>
+<area shape="rect" href="xint_8c.html#a92ad91868533b28fb7e1ab474180e5f7" title="interrput serve rountine for XINT1" alt="" coords="131,5,211,32"/>
+<area shape="poly" title=" " alt="" coords="50,155,81,103,103,71,129,42,131,40,135,44,133,46,107,75,85,106,55,158"/>
+<area shape="rect" href="xint_8c.html#aa2506823905214f4e8d53131019b5462" title="interrput serve rountine for XINT2" alt="" coords="131,56,211,83"/>
+<area shape="poly" title=" " alt="" coords="58,155,129,93,133,90,136,94,132,97,61,159"/>
+<area shape="rect" href="xint_8c.html#ae0177403580369c739b3feb39fd7658d" title="interrput serve rountine for XINT3" alt="" coords="131,107,211,133"/>
+<area shape="poly" title=" " alt="" coords="78,154,120,137,122,142,80,159"/>
+<area shape="rect" href="xint_8c.html#a3fa1e3cba136527e3c7615afcb989877" title="interrput serve rountine for XINT4" alt="" coords="131,157,211,184"/>
+<area shape="poly" title=" " alt="" coords="83,168,115,168,115,173,83,173"/>
+<area shape="rect" href="xint_8c.html#a4aeaba604b0e2c3dde57ba8d577c5904" title="interrput serve rountine for XINT5" alt="" coords="131,208,211,235"/>
+<area shape="poly" title=" " alt="" coords="80,182,122,199,120,204,78,187"/>
+<area shape="rect" href="xint_8c.html#a1654499233ad3bb3b3062a63385e17f5" title="interrput serve rountine for XINT6" alt="" coords="131,259,211,285"/>
+<area shape="poly" title=" " alt="" coords="61,182,132,245,136,247,133,252,129,249,58,186"/>
+<area shape="rect" href="xint_8c.html#a18aacfa7976670cf109b932a2dbb73da" title=" " alt="" coords="131,309,211,336"/>
+<area shape="poly" title=" " alt="" coords="55,183,85,236,107,267,133,295,135,298,131,302,129,299,103,270,81,238,50,186"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_26468b5983c560a96d3a222f07de3c8d.html">Peripheral_Driver</a></li><li class="navelem"><a href="dir_f03d8b6ecf10a1b5721c7ab8323bb129.html">28335</a></li><li class="navelem"><a href="dir_9aa5aa6d7ca4fe3b9a507c5f5e8cdace.html">XINT</a></li><li class="navelem"><a href="xint_8c.html">xint.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/MPPT/mppt.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('mppt_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">mppt.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mppt_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef MPPT_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define MPPT_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;stdint.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;inc/hw_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html">   19</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_m_p_p_t___i_n_c_c.html">MPPT_INCC</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#afcb6da9ad470aceab7edc379fc1e4c81">   21</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#afcb6da9ad470aceab7edc379fc1e4c81">Ipv</a>;         </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#ac97be06e2cabbbf723a5a11c31bcaeeb">   22</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#ac97be06e2cabbbf723a5a11c31bcaeeb">Vpv</a>;         </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#a4a52ddcb71a2885c655d8325eb8f0cca">   24</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#a4a52ddcb71a2885c655d8325eb8f0cca">Stepsize</a>;    </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#a54ed00e5216b7bf1232bbf60eff91d43">   26</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#a54ed00e5216b7bf1232bbf60eff91d43">MaxVolt</a>;     </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#a0eb6c159f91b6199d66084d044726327">   27</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#a0eb6c159f91b6199d66084d044726327">MinVolt</a>;     </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#a23bc09416e1802cc2aef2437f6d31554">   29</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#a23bc09416e1802cc2aef2437f6d31554">VmppOut</a>;     </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#afce71122a37f47de0dca6c1f0b93828e">   31</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#afce71122a37f47de0dca6c1f0b93828e">Cond</a>;        </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#a34033b29cd80df20fc4ed486b6536ce3">   32</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#a34033b29cd80df20fc4ed486b6536ce3">IncCond</a>;     </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#aec7b428b3bbc594ce90ef6d0999fed90">   33</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#aec7b428b3bbc594ce90ef6d0999fed90">DeltaV</a>;      </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#a75624ee1905add71d3f7b05bdcd166fc">   34</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#a75624ee1905add71d3f7b05bdcd166fc">DeltaI</a>;      </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#a0da0a81d1956e6a9ec6652accc51b62a">   35</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#a0da0a81d1956e6a9ec6652accc51b62a">VpvOld</a>;      </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#adbe41cc9acb5b838910497a19ca35ca2">   36</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#adbe41cc9acb5b838910497a19ca35ca2">IpvOld</a>;      </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#a0941380d1d97d38c6fd220c74701adea">   37</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#a0941380d1d97d38c6fd220c74701adea">StepFirst</a>;   </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">//state flags</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#ab5e77f3b96c878f331ad63bc73caf912">   40</a></span>    uint16_t <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#ab5e77f3b96c878f331ad63bc73caf912">mppt_enable</a>;  </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c.html#a1dc519bdcfdc78a88b597a8ecbbee0a4">   41</a></span>    uint16_t <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c.html#a1dc519bdcfdc78a88b597a8ecbbee0a4">mppt_first</a>;   </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="mppt_8h.html#abb55d0d1d3c054b086f2c9614e90b25d">   43</a></span>}<a class="code hl_struct" href="struct_m_p_p_t___i_n_c_c.html">MPPT_INCC</a>;</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html">   50</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_m_p_p_t___i_n_c_c___i.html">MPPT_INCC_I</a></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#a9383c5d32dd6d00136352dfd1c77646e">   52</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#a9383c5d32dd6d00136352dfd1c77646e">Ipv</a>;         </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#a7fe0d2b44a6d490f7360609f58131390">   53</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#a7fe0d2b44a6d490f7360609f58131390">Vpv</a>;         </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#affbc18d5a6a3f3f4328dab562b7031ab">   55</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#affbc18d5a6a3f3f4328dab562b7031ab">Stepsize</a>;    </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#ad351b2aaa2ab688e24a55bf8099381e2">   57</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#ad351b2aaa2ab688e24a55bf8099381e2">MaxI</a>;        </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#a63e9e585f339aeaab05e6df5b6667433">   58</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#a63e9e585f339aeaab05e6df5b6667433">MinI</a>;        </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#ac6d396281ded02ed50e4b166d316804f">   60</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#ac6d396281ded02ed50e4b166d316804f">ImppOut</a>;     </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#a16047155c63f4432c2ed7759f3b37588">   62</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#a16047155c63f4432c2ed7759f3b37588">Cond</a>;        </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#aefb56aecebaf90b4e8b09fbabc37adcb">   63</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#aefb56aecebaf90b4e8b09fbabc37adcb">IncCond</a>;     </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#aa7ff07413939cdaaa6dcda7b9d7f63f2">   64</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#aa7ff07413939cdaaa6dcda7b9d7f63f2">DeltaV</a>;      </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#a265b7b3b4d880970b450428b4e96e687">   65</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#a265b7b3b4d880970b450428b4e96e687">DeltaI</a>;      </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#a84c831c04e73c97fc128b8d34a663ce0">   66</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#a84c831c04e73c97fc128b8d34a663ce0">VpvOld</a>;      </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#af805b0ab4e4b51a8905c4d506fa1ba2f">   67</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#af805b0ab4e4b51a8905c4d506fa1ba2f">IpvOld</a>;      </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#a4da60efd34b28084bb9e9616cf1bb9cc">   68</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#a4da60efd34b28084bb9e9616cf1bb9cc">StepFirst</a>;   </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// flags</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#aeeb61f773f6a8652d233de93d9509040">   71</a></span>    uint16_t <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#aeeb61f773f6a8652d233de93d9509040">mppt_enable</a>;  </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___i_n_c_c___i.html#ad5a0f94af6490efe1cab7baf80580048">   72</a></span>    uint16_t <a class="code hl_variable" href="struct_m_p_p_t___i_n_c_c___i.html#ad5a0f94af6490efe1cab7baf80580048">mppt_first</a>;   </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="mppt_8h.html#ab46453c46aa91c7653f1b8a53ffe234c">   73</a></span>} <a class="code hl_struct" href="struct_m_p_p_t___i_n_c_c___i.html">MPPT_INCC_I</a>;</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="};">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___p_n_o.html">   80</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_m_p_p_t___p_n_o.html">MPPT_PNO</a></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>{</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___p_n_o.html#ae3ea62e29378a5178f192a1543160fc3">   82</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___p_n_o.html#ae3ea62e29378a5178f192a1543160fc3">Ipv</a>;             </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___p_n_o.html#afd91d91203a06d883a807337d929e9d2">   83</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___p_n_o.html#afd91d91203a06d883a807337d929e9d2">Vpv</a>;             </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___p_n_o.html#a8fc80609e9c916ad30adfdca92e9b008">   85</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___p_n_o.html#a8fc80609e9c916ad30adfdca92e9b008">DeltaPmin</a>;       </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___p_n_o.html#adf5c3f50a431a9384fd1979c96cb6014">   86</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___p_n_o.html#adf5c3f50a431a9384fd1979c96cb6014">Stepsize</a>;        </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___p_n_o.html#a585a78af18934c8611e2a45668d92dd2">   88</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___p_n_o.html#a585a78af18934c8611e2a45668d92dd2">MaxVolt</a>;         </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___p_n_o.html#a83706622d4e0f089ca27081d49992f43">   89</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___p_n_o.html#a83706622d4e0f089ca27081d49992f43">MinVolt</a>;         </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___p_n_o.html#a952bfa90eb2893ab59c143d86a7c60be">   91</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___p_n_o.html#a952bfa90eb2893ab59c143d86a7c60be">VmppOut</a>;         </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="comment">// 内部变量al variable</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___p_n_o.html#a8677705ff20fff2e43d37f8354046b68">   94</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___p_n_o.html#a8677705ff20fff2e43d37f8354046b68">DeltaP</a>;          </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___p_n_o.html#a871ecc74568e205f1130530dbe114cd2">   95</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___p_n_o.html#a871ecc74568e205f1130530dbe114cd2">PanelPower</a>;      </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___p_n_o.html#a00fbd1110ff9737d71e8a592c0fa7fe0">   96</a></span>    float32_t  <a class="code hl_variable" href="struct_m_p_p_t___p_n_o.html#a00fbd1110ff9737d71e8a592c0fa7fe0">PanelPower_Prev</a>; </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___p_n_o.html#acacc47588e57dd850cfc54e745d13abc">   97</a></span>    uint16_t  <a class="code hl_variable" href="struct_m_p_p_t___p_n_o.html#acacc47588e57dd850cfc54e745d13abc">mppt_enable</a>;      </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="struct_m_p_p_t___p_n_o.html#abdab69df1b953040be22cb871e6cf579">   98</a></span>    uint16_t  <a class="code hl_variable" href="struct_m_p_p_t___p_n_o.html#abdab69df1b953040be22cb871e6cf579">mppt_first</a>;       </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="mppt_8h.html#a7085eb8ce04db563a21ed43b0fe20cf0">   99</a></span>} <a class="code hl_struct" href="struct_m_p_p_t___p_n_o.html">MPPT_PNO</a>;</div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">// 电压型电导增量法功能函数</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keywordtype">void</span> <a class="code hl_function" href="mppt_8h.html#a28c1eb6d29bbe292e0789c08568f6211">MPPT_INCC_Init</a>(<a class="code hl_struct" href="struct_m_p_p_t___i_n_c_c.html">MPPT_INCC</a> *v);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keywordtype">void</span> <a class="code hl_function" href="mppt_8h.html#a1ac3d5018ba3ef1109054a12adda2f36">MPPT_INCC_Set</a>(<a class="code hl_struct" href="struct_m_p_p_t___i_n_c_c.html">MPPT_INCC</a> *v, float32_t step, float32_t max, float32_t min);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="keywordtype">void</span> <a class="code hl_function" href="mppt_8h.html#a7fac8c32fa91de0fee9c4ebd9d326f13">MPPT_INCC_Run</a>(<a class="code hl_struct" href="struct_m_p_p_t___i_n_c_c.html">MPPT_INCC</a> *v, float32_t Vpv, float32_t Ipv);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">// 电流型电导增量法功能函数</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="keywordtype">void</span> <a class="code hl_function" href="mppt_8h.html#a4c565cd0e2a9406ed8d533808f1bc6a8">MPPT_INCC_I_Init</a>(<a class="code hl_struct" href="struct_m_p_p_t___i_n_c_c___i.html">MPPT_INCC_I</a> *v);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keywordtype">void</span> <a class="code hl_function" href="mppt_8h.html#abe8fb5944da2e478ef84f21ea4033fbc">MPPT_INCC_I_Set</a>(<a class="code hl_struct" href="struct_m_p_p_t___i_n_c_c___i.html">MPPT_INCC_I</a> *v, float32_t step, float32_t max, float32_t min);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="keywordtype">void</span> <a class="code hl_function" href="mppt_8h.html#abc14854bc6a11d5b14e93675af39fcbb">MPPT_INCC_I_Run</a>(<a class="code hl_struct" href="struct_m_p_p_t___i_n_c_c___i.html">MPPT_INCC_I</a> *v, float32_t Vpv, float32_t Ipv);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">//扰动观测法功能函数</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="keywordtype">void</span> <a class="code hl_function" href="mppt_8h.html#aed56530c96b0662ec031e22f302c4971">MPPT_PNO_Init</a>(<a class="code hl_struct" href="struct_m_p_p_t___p_n_o.html">MPPT_PNO</a> *v);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keywordtype">void</span> <a class="code hl_function" href="mppt_8h.html#ac152f21064ab7f8db769d00f18032069">MPPT_PNO_Set</a>(<a class="code hl_struct" href="struct_m_p_p_t___p_n_o.html">MPPT_PNO</a> *v, float32_t step, float32_t max, float32_t min, float32_t delta_p_min);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="keywordtype">void</span> <a class="code hl_function" href="mppt_8h.html#aae5dc5aae6534148b4dc240642d390b7">MPPT_PNO_Run</a>(<a class="code hl_struct" href="struct_m_p_p_t___p_n_o.html">MPPT_PNO</a> *v, float32_t Vpv, float32_t Ipv);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="preprocessor">#pragma CODE_SECTION(MPPT_INCC_Init, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="preprocessor">#pragma CODE_SECTION(MPPT_INCC_Set, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="preprocessor">#pragma CODE_SECTION(MPPT_INCC_Run, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="preprocessor">#pragma CODE_SECTION(MPPT_INCC_I_Init, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="preprocessor">#pragma CODE_SECTION(MPPT_INCC_I_Set, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="preprocessor">#pragma CODE_SECTION(MPPT_INCC_I_Run, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="preprocessor">#pragma CODE_SECTION(MPPT_PNO_Init, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#pragma CODE_SECTION(MPPT_PNO_Set, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="preprocessor">#pragma CODE_SECTION(MPPT_PNO_Run, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="amppt_8h_html_a1ac3d5018ba3ef1109054a12adda2f36"><div class="ttname"><a href="mppt_8h.html#a1ac3d5018ba3ef1109054a12adda2f36">MPPT_INCC_Set</a></div><div class="ttdeci">void MPPT_INCC_Set(MPPT_INCC *v, float32_t step, float32_t max, float32_t min)</div><div class="ttdoc">配置结构体参数</div><div class="ttdef"><b>定义</b> <a href="mppt_8c_source.html#l00031">mppt.c:31</a></div></div>
+<div class="ttc" id="amppt_8h_html_a28c1eb6d29bbe292e0789c08568f6211"><div class="ttname"><a href="mppt_8h.html#a28c1eb6d29bbe292e0789c08568f6211">MPPT_INCC_Init</a></div><div class="ttdeci">void MPPT_INCC_Init(MPPT_INCC *v)</div><div class="ttdoc">结构体初始化</div><div class="ttdef"><b>定义</b> <a href="mppt_8c_source.html#l00012">mppt.c:12</a></div></div>
+<div class="ttc" id="amppt_8h_html_a4c565cd0e2a9406ed8d533808f1bc6a8"><div class="ttname"><a href="mppt_8h.html#a4c565cd0e2a9406ed8d533808f1bc6a8">MPPT_INCC_I_Init</a></div><div class="ttdeci">void MPPT_INCC_I_Init(MPPT_INCC_I *v)</div><div class="ttdoc">结构体初始化</div><div class="ttdef"><b>定义</b> <a href="mppt_8c_source.html#l00111">mppt.c:111</a></div></div>
+<div class="ttc" id="amppt_8h_html_a7fac8c32fa91de0fee9c4ebd9d326f13"><div class="ttname"><a href="mppt_8h.html#a7fac8c32fa91de0fee9c4ebd9d326f13">MPPT_INCC_Run</a></div><div class="ttdeci">void MPPT_INCC_Run(MPPT_INCC *v, float32_t Vpv, float32_t Ipv)</div><div class="ttdoc">执行电压型电导增量法 MPPT</div><div class="ttdef"><b>定义</b> <a href="mppt_8c_source.html#l00046">mppt.c:46</a></div></div>
+<div class="ttc" id="amppt_8h_html_aae5dc5aae6534148b4dc240642d390b7"><div class="ttname"><a href="mppt_8h.html#aae5dc5aae6534148b4dc240642d390b7">MPPT_PNO_Run</a></div><div class="ttdeci">void MPPT_PNO_Run(MPPT_PNO *v, float32_t Vpv, float32_t Ipv)</div><div class="ttdoc">执行扰动观测法MPPT</div><div class="ttdef"><b>定义</b> <a href="mppt_8c_source.html#l00233">mppt.c:233</a></div></div>
+<div class="ttc" id="amppt_8h_html_abc14854bc6a11d5b14e93675af39fcbb"><div class="ttname"><a href="mppt_8h.html#abc14854bc6a11d5b14e93675af39fcbb">MPPT_INCC_I_Run</a></div><div class="ttdeci">void MPPT_INCC_I_Run(MPPT_INCC_I *v, float32_t Vpv, float32_t Ipv)</div><div class="ttdoc">执行电流型电导增量法MPPT</div><div class="ttdef"><b>定义</b> <a href="mppt_8c_source.html#l00145">mppt.c:145</a></div></div>
+<div class="ttc" id="amppt_8h_html_abe8fb5944da2e478ef84f21ea4033fbc"><div class="ttname"><a href="mppt_8h.html#abe8fb5944da2e478ef84f21ea4033fbc">MPPT_INCC_I_Set</a></div><div class="ttdeci">void MPPT_INCC_I_Set(MPPT_INCC_I *v, float32_t step, float32_t max, float32_t min)</div><div class="ttdoc">配置结构体参数</div><div class="ttdef"><b>定义</b> <a href="mppt_8c_source.html#l00130">mppt.c:130</a></div></div>
+<div class="ttc" id="amppt_8h_html_ac152f21064ab7f8db769d00f18032069"><div class="ttname"><a href="mppt_8h.html#ac152f21064ab7f8db769d00f18032069">MPPT_PNO_Set</a></div><div class="ttdeci">void MPPT_PNO_Set(MPPT_PNO *v, float32_t step, float32_t max, float32_t min, float32_t delta_p_min)</div><div class="ttdoc">配置结构体参数</div><div class="ttdef"><b>定义</b> <a href="mppt_8c_source.html#l00217">mppt.c:217</a></div></div>
+<div class="ttc" id="amppt_8h_html_aed56530c96b0662ec031e22f302c4971"><div class="ttname"><a href="mppt_8h.html#aed56530c96b0662ec031e22f302c4971">MPPT_PNO_Init</a></div><div class="ttdeci">void MPPT_PNO_Init(MPPT_PNO *v)</div><div class="ttdoc">结构体初始化</div><div class="ttdef"><b>定义</b> <a href="mppt_8c_source.html#l00201">mppt.c:201</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html">MPPT_INCC_I</a></div><div class="ttdoc">结构体定义</div><div class="ttdef"><b>定义</b> <a href="#l00050">mppt.h:51</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_a16047155c63f4432c2ed7759f3b37588"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#a16047155c63f4432c2ed7759f3b37588">MPPT_INCC_I::Cond</a></div><div class="ttdeci">float32_t Cond</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00062">mppt.h:62</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_a265b7b3b4d880970b450428b4e96e687"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#a265b7b3b4d880970b450428b4e96e687">MPPT_INCC_I::DeltaI</a></div><div class="ttdeci">float32_t DeltaI</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00065">mppt.h:65</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_a4da60efd34b28084bb9e9616cf1bb9cc"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#a4da60efd34b28084bb9e9616cf1bb9cc">MPPT_INCC_I::StepFirst</a></div><div class="ttdeci">float32_t StepFirst</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00068">mppt.h:68</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_a63e9e585f339aeaab05e6df5b6667433"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#a63e9e585f339aeaab05e6df5b6667433">MPPT_INCC_I::MinI</a></div><div class="ttdeci">float32_t MinI</div><div class="ttdoc">输入变量: 光伏最小输出电流</div><div class="ttdef"><b>定义</b> <a href="#l00058">mppt.h:58</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_a7fe0d2b44a6d490f7360609f58131390"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#a7fe0d2b44a6d490f7360609f58131390">MPPT_INCC_I::Vpv</a></div><div class="ttdeci">float32_t Vpv</div><div class="ttdoc">输入变量: 光伏输出电压</div><div class="ttdef"><b>定义</b> <a href="#l00053">mppt.h:53</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_a84c831c04e73c97fc128b8d34a663ce0"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#a84c831c04e73c97fc128b8d34a663ce0">MPPT_INCC_I::VpvOld</a></div><div class="ttdeci">float32_t VpvOld</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00066">mppt.h:66</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_a9383c5d32dd6d00136352dfd1c77646e"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#a9383c5d32dd6d00136352dfd1c77646e">MPPT_INCC_I::Ipv</a></div><div class="ttdeci">float32_t Ipv</div><div class="ttdoc">输入变量: 光伏输出电流</div><div class="ttdef"><b>定义</b> <a href="#l00052">mppt.h:52</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_aa7ff07413939cdaaa6dcda7b9d7f63f2"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#aa7ff07413939cdaaa6dcda7b9d7f63f2">MPPT_INCC_I::DeltaV</a></div><div class="ttdeci">float32_t DeltaV</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00064">mppt.h:64</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_ac6d396281ded02ed50e4b166d316804f"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#ac6d396281ded02ed50e4b166d316804f">MPPT_INCC_I::ImppOut</a></div><div class="ttdeci">float32_t ImppOut</div><div class="ttdoc">输出变量: 最大功率点处的光伏输出电压</div><div class="ttdef"><b>定义</b> <a href="#l00060">mppt.h:60</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_ad351b2aaa2ab688e24a55bf8099381e2"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#ad351b2aaa2ab688e24a55bf8099381e2">MPPT_INCC_I::MaxI</a></div><div class="ttdeci">float32_t MaxI</div><div class="ttdoc">输入变量: 光伏最大输出电流</div><div class="ttdef"><b>定义</b> <a href="#l00057">mppt.h:57</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_ad5a0f94af6490efe1cab7baf80580048"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#ad5a0f94af6490efe1cab7baf80580048">MPPT_INCC_I::mppt_first</a></div><div class="ttdeci">uint16_t mppt_first</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00072">mppt.h:72</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_aeeb61f773f6a8652d233de93d9509040"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#aeeb61f773f6a8652d233de93d9509040">MPPT_INCC_I::mppt_enable</a></div><div class="ttdeci">uint16_t mppt_enable</div><div class="ttdoc">输入变量: 等于1时使能MPPT计算</div><div class="ttdef"><b>定义</b> <a href="#l00071">mppt.h:71</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_aefb56aecebaf90b4e8b09fbabc37adcb"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#aefb56aecebaf90b4e8b09fbabc37adcb">MPPT_INCC_I::IncCond</a></div><div class="ttdeci">float32_t IncCond</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00063">mppt.h:63</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_af805b0ab4e4b51a8905c4d506fa1ba2f"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#af805b0ab4e4b51a8905c4d506fa1ba2f">MPPT_INCC_I::IpvOld</a></div><div class="ttdeci">float32_t IpvOld</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00067">mppt.h:67</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c___i_html_affbc18d5a6a3f3f4328dab562b7031ab"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c___i.html#affbc18d5a6a3f3f4328dab562b7031ab">MPPT_INCC_I::Stepsize</a></div><div class="ttdeci">float32_t Stepsize</div><div class="ttdoc">输入变量: 电压变化补偿</div><div class="ttdef"><b>定义</b> <a href="#l00055">mppt.h:55</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html">MPPT_INCC</a></div><div class="ttdoc">结构体定义</div><div class="ttdef"><b>定义</b> <a href="#l00019">mppt.h:20</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_a0941380d1d97d38c6fd220c74701adea"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#a0941380d1d97d38c6fd220c74701adea">MPPT_INCC::StepFirst</a></div><div class="ttdeci">float32_t StepFirst</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00037">mppt.h:37</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_a0da0a81d1956e6a9ec6652accc51b62a"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#a0da0a81d1956e6a9ec6652accc51b62a">MPPT_INCC::VpvOld</a></div><div class="ttdeci">float32_t VpvOld</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00035">mppt.h:35</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_a0eb6c159f91b6199d66084d044726327"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#a0eb6c159f91b6199d66084d044726327">MPPT_INCC::MinVolt</a></div><div class="ttdeci">float32_t MinVolt</div><div class="ttdoc">输入变量: 光伏最小输出电压</div><div class="ttdef"><b>定义</b> <a href="#l00027">mppt.h:27</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_a1dc519bdcfdc78a88b597a8ecbbee0a4"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#a1dc519bdcfdc78a88b597a8ecbbee0a4">MPPT_INCC::mppt_first</a></div><div class="ttdeci">uint16_t mppt_first</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00041">mppt.h:41</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_a23bc09416e1802cc2aef2437f6d31554"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#a23bc09416e1802cc2aef2437f6d31554">MPPT_INCC::VmppOut</a></div><div class="ttdeci">float32_t VmppOut</div><div class="ttdoc">输出变量: 最大功率点处的光伏输出电压</div><div class="ttdef"><b>定义</b> <a href="#l00029">mppt.h:29</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_a34033b29cd80df20fc4ed486b6536ce3"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#a34033b29cd80df20fc4ed486b6536ce3">MPPT_INCC::IncCond</a></div><div class="ttdeci">float32_t IncCond</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00032">mppt.h:32</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_a4a52ddcb71a2885c655d8325eb8f0cca"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#a4a52ddcb71a2885c655d8325eb8f0cca">MPPT_INCC::Stepsize</a></div><div class="ttdeci">float32_t Stepsize</div><div class="ttdoc">输入变量: 电压变化补偿</div><div class="ttdef"><b>定义</b> <a href="#l00024">mppt.h:24</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_a54ed00e5216b7bf1232bbf60eff91d43"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#a54ed00e5216b7bf1232bbf60eff91d43">MPPT_INCC::MaxVolt</a></div><div class="ttdeci">float32_t MaxVolt</div><div class="ttdoc">输入变量: 光伏最大输出电压</div><div class="ttdef"><b>定义</b> <a href="#l00026">mppt.h:26</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_a75624ee1905add71d3f7b05bdcd166fc"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#a75624ee1905add71d3f7b05bdcd166fc">MPPT_INCC::DeltaI</a></div><div class="ttdeci">float32_t DeltaI</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00034">mppt.h:34</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_ab5e77f3b96c878f331ad63bc73caf912"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#ab5e77f3b96c878f331ad63bc73caf912">MPPT_INCC::mppt_enable</a></div><div class="ttdeci">uint16_t mppt_enable</div><div class="ttdoc">输入变量: 等于1时使能MPPT计算</div><div class="ttdef"><b>定义</b> <a href="#l00040">mppt.h:40</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_ac97be06e2cabbbf723a5a11c31bcaeeb"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#ac97be06e2cabbbf723a5a11c31bcaeeb">MPPT_INCC::Vpv</a></div><div class="ttdeci">float32_t Vpv</div><div class="ttdoc">输入变量: 光伏输出电压</div><div class="ttdef"><b>定义</b> <a href="#l00022">mppt.h:22</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_adbe41cc9acb5b838910497a19ca35ca2"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#adbe41cc9acb5b838910497a19ca35ca2">MPPT_INCC::IpvOld</a></div><div class="ttdeci">float32_t IpvOld</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00036">mppt.h:36</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_aec7b428b3bbc594ce90ef6d0999fed90"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#aec7b428b3bbc594ce90ef6d0999fed90">MPPT_INCC::DeltaV</a></div><div class="ttdeci">float32_t DeltaV</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00033">mppt.h:33</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_afcb6da9ad470aceab7edc379fc1e4c81"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#afcb6da9ad470aceab7edc379fc1e4c81">MPPT_INCC::Ipv</a></div><div class="ttdeci">float32_t Ipv</div><div class="ttdoc">输入变量: 光伏输出电流</div><div class="ttdef"><b>定义</b> <a href="#l00021">mppt.h:21</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___i_n_c_c_html_afce71122a37f47de0dca6c1f0b93828e"><div class="ttname"><a href="struct_m_p_p_t___i_n_c_c.html#afce71122a37f47de0dca6c1f0b93828e">MPPT_INCC::Cond</a></div><div class="ttdeci">float32_t Cond</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00031">mppt.h:31</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___p_n_o_html"><div class="ttname"><a href="struct_m_p_p_t___p_n_o.html">MPPT_PNO</a></div><div class="ttdoc">结构体定义</div><div class="ttdef"><b>定义</b> <a href="#l00080">mppt.h:81</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___p_n_o_html_a00fbd1110ff9737d71e8a592c0fa7fe0"><div class="ttname"><a href="struct_m_p_p_t___p_n_o.html#a00fbd1110ff9737d71e8a592c0fa7fe0">MPPT_PNO::PanelPower_Prev</a></div><div class="ttdeci">float32_t PanelPower_Prev</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00096">mppt.h:96</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___p_n_o_html_a585a78af18934c8611e2a45668d92dd2"><div class="ttname"><a href="struct_m_p_p_t___p_n_o.html#a585a78af18934c8611e2a45668d92dd2">MPPT_PNO::MaxVolt</a></div><div class="ttdeci">float32_t MaxVolt</div><div class="ttdoc">输入变量: 光伏最大输出电压</div><div class="ttdef"><b>定义</b> <a href="#l00088">mppt.h:88</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___p_n_o_html_a83706622d4e0f089ca27081d49992f43"><div class="ttname"><a href="struct_m_p_p_t___p_n_o.html#a83706622d4e0f089ca27081d49992f43">MPPT_PNO::MinVolt</a></div><div class="ttdeci">float32_t MinVolt</div><div class="ttdoc">输入变量: 光伏最小输出电压</div><div class="ttdef"><b>定义</b> <a href="#l00089">mppt.h:89</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___p_n_o_html_a8677705ff20fff2e43d37f8354046b68"><div class="ttname"><a href="struct_m_p_p_t___p_n_o.html#a8677705ff20fff2e43d37f8354046b68">MPPT_PNO::DeltaP</a></div><div class="ttdeci">float32_t DeltaP</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00094">mppt.h:94</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___p_n_o_html_a871ecc74568e205f1130530dbe114cd2"><div class="ttname"><a href="struct_m_p_p_t___p_n_o.html#a871ecc74568e205f1130530dbe114cd2">MPPT_PNO::PanelPower</a></div><div class="ttdeci">float32_t PanelPower</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00095">mppt.h:95</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___p_n_o_html_a8fc80609e9c916ad30adfdca92e9b008"><div class="ttname"><a href="struct_m_p_p_t___p_n_o.html#a8fc80609e9c916ad30adfdca92e9b008">MPPT_PNO::DeltaPmin</a></div><div class="ttdeci">float32_t DeltaPmin</div><div class="ttdoc">输入变量: 最小功率差值, 小于该值视为功率无变化</div><div class="ttdef"><b>定义</b> <a href="#l00085">mppt.h:85</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___p_n_o_html_a952bfa90eb2893ab59c143d86a7c60be"><div class="ttname"><a href="struct_m_p_p_t___p_n_o.html#a952bfa90eb2893ab59c143d86a7c60be">MPPT_PNO::VmppOut</a></div><div class="ttdeci">float32_t VmppOut</div><div class="ttdoc">输出变量: 最大功率点处的光伏输出电压</div><div class="ttdef"><b>定义</b> <a href="#l00091">mppt.h:91</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___p_n_o_html_abdab69df1b953040be22cb871e6cf579"><div class="ttname"><a href="struct_m_p_p_t___p_n_o.html#abdab69df1b953040be22cb871e6cf579">MPPT_PNO::mppt_first</a></div><div class="ttdeci">uint16_t mppt_first</div><div class="ttdoc">内部变量</div><div class="ttdef"><b>定义</b> <a href="#l00098">mppt.h:98</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___p_n_o_html_acacc47588e57dd850cfc54e745d13abc"><div class="ttname"><a href="struct_m_p_p_t___p_n_o.html#acacc47588e57dd850cfc54e745d13abc">MPPT_PNO::mppt_enable</a></div><div class="ttdeci">uint16_t mppt_enable</div><div class="ttdoc">输入变量: 等于1时使能MPPT计算</div><div class="ttdef"><b>定义</b> <a href="#l00097">mppt.h:97</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___p_n_o_html_adf5c3f50a431a9384fd1979c96cb6014"><div class="ttname"><a href="struct_m_p_p_t___p_n_o.html#adf5c3f50a431a9384fd1979c96cb6014">MPPT_PNO::Stepsize</a></div><div class="ttdeci">float32_t Stepsize</div><div class="ttdoc">输入变量: 电压变化补偿</div><div class="ttdef"><b>定义</b> <a href="#l00086">mppt.h:86</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___p_n_o_html_ae3ea62e29378a5178f192a1543160fc3"><div class="ttname"><a href="struct_m_p_p_t___p_n_o.html#ae3ea62e29378a5178f192a1543160fc3">MPPT_PNO::Ipv</a></div><div class="ttdeci">float32_t Ipv</div><div class="ttdoc">输入变量: 光伏输出电流</div><div class="ttdef"><b>定义</b> <a href="#l00082">mppt.h:82</a></div></div>
+<div class="ttc" id="astruct_m_p_p_t___p_n_o_html_afd91d91203a06d883a807337d929e9d2"><div class="ttname"><a href="struct_m_p_p_t___p_n_o.html#afd91d91203a06d883a807337d929e9d2">MPPT_PNO::Vpv</a></div><div class="ttdeci">float32_t Vpv</div><div class="ttdoc">输入变量: 光伏输出电压</div><div class="ttdef"><b>定义</b> <a href="#l00083">mppt.h:83</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_e4f9a31c13d16cbb9a21ebb7281924e4.html">MPPT</a></li><li class="navelem"><a href="mppt_8h.html">mppt.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

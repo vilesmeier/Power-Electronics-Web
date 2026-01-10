@@ -1,0 +1,20 @@
+<map id="NUEDC&#45;Core/Code/Control_Driver/DCL/DCLF32.h" name="NUEDC&#45;Core/Code/Control_Driver/DCL/DCLF32.h">
+<area shape="rect" id="Node000001" title="数字控制库函数定义 &#160;&#160;包含支持FPU32的结构体定义与函数声明 &#160;&#160;PI/QPR/QPIR/QPMR/RC" alt="" coords="143,5,326,48"/>
+<area shape="rect" id="Node000002" href="$_transfer_fun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="227,96,330,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,47,266,81,262,83,243,50"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="186,245,250,272"/>
+<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="289,46,319,66,343,95,347,109,344,123,330,164,304,199,281,221,256,239,253,235,278,217,300,196,325,162,338,122,342,109,339,97,316,70,286,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="160,171,269,197"/>
+<area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="230,49,218,96,216,155,210,155,213,96,225,48"/>
+<area shape="rect" id="Node000005" href="$delay_8h.html" title="数组延迟链驱动函数声明" alt="" coords="91,96,154,123"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="207,51,154,89,151,85,204,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="284,123,290,157,289,178,283,198,270,220,252,237,249,234,266,217,279,196,284,177,284,158,279,123"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="269,125,237,161,234,157,265,121"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="126,122,133,157,150,196,167,217,188,234,184,238,163,220,145,199,128,159,121,123"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="140,121,188,159,185,163,137,125"/>
+<area shape="rect" id="Node000006" href="$mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="5,171,85,197"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="111,125,71,162,68,158,107,121"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="76,195,175,236,173,241,74,200"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="14,245,76,272"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="48,198,48,230,42,230,42,198"/>
+</map>

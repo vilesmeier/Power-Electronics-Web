@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/PLL/pll_3ph.c 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('pll__3ph_8c_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">pll_3ph.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="pll__3ph_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="pll__3ph_8h.html">pll_3ph.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="pll__3ph_8c.html#a2826ad35dce8723d331004e797beadd4">   11</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="pll__3ph_8c.html#a2826ad35dce8723d331004e797beadd4">SRF_3PH_Init</a>(<a class="code hl_struct" href="struct_s_r_f__3_p_h.html">SRF_3PH</a> *spll_obj)</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a9bbc0d03e877bd5134a0f0909c213463">v_q</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a9bbc0d03e877bd5134a0f0909c213463">v_q</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a47b246f0dbf3341326007fb697ba6967">ylf</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a47b246f0dbf3341326007fb697ba6967">ylf</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#ada2e4c7df8817a3857561b1143f2d305">fo</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a25f08b63c4d9ae2a8ff80a527c9a0b8e">theta</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a25f08b63c4d9ae2a8ff80a527c9a0b8e">theta</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="pll__3ph_8c.html#aa461167a3a2ad945a1b0da4f6694077c">   26</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="pll__3ph_8c.html#aa461167a3a2ad945a1b0da4f6694077c">SRF_3PH_Set</a>(float32_t grid_freq, float32_t delta_t,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                                     <a class="code hl_struct" href="struct_s_r_f__3_p_h.html">SRF_3PH</a> *spll_obj)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a9bbc0d03e877bd5134a0f0909c213463">v_q</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a9bbc0d03e877bd5134a0f0909c213463">v_q</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a47b246f0dbf3341326007fb697ba6967">ylf</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a47b246f0dbf3341326007fb697ba6967">ylf</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#ada2e4c7df8817a3857561b1143f2d305">fo</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a0b02f1675419cc02fed162c952ce6320">fn</a> = (float32_t)(grid_freq);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a25f08b63c4d9ae2a8ff80a527c9a0b8e">theta</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a25f08b63c4d9ae2a8ff80a527c9a0b8e">theta</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a3ec7736e531b31d141d7c8a603d2fecb">delta_t</a> = (float32_t)delta_t;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="pll__3ph_8c.html#ab5a96d323b79646449adf4ea57322fa2">   44</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="pll__3ph_8c.html#ab5a96d323b79646449adf4ea57322fa2">SRF_3PH_Run</a>(float32_t v_q, <a class="code hl_struct" href="struct_s_r_f__3_p_h.html">SRF_3PH</a> *spll_obj)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// Update the spll_obj-&gt;v_q[0] with the grid value</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a9bbc0d03e877bd5134a0f0909c213463">v_q</a>[0] = v_q;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// Loop Filter</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a47b246f0dbf3341326007fb697ba6967">ylf</a>[0] =  spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a47b246f0dbf3341326007fb697ba6967">ylf</a>[1]</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                     + (spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a642dd3d6cadb1ca5709113ddc8c4ee26">lpf_coeff</a>.<a class="code hl_variable" href="struct_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html#a238687adace75bfb633d7f28e3373318">b0</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a9bbc0d03e877bd5134a0f0909c213463">v_q</a>[0])</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                     + (spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a642dd3d6cadb1ca5709113ddc8c4ee26">lpf_coeff</a>.<a class="code hl_variable" href="struct_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html#a65e0af57c121c3a143702f5dd06f8734">b1</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a9bbc0d03e877bd5134a0f0909c213463">v_q</a>[1]);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a47b246f0dbf3341326007fb697ba6967">ylf</a>[1] = spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a47b246f0dbf3341326007fb697ba6967">ylf</a>[0];</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a9bbc0d03e877bd5134a0f0909c213463">v_q</a>[1] = spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a9bbc0d03e877bd5134a0f0909c213463">v_q</a>[0];</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a47b246f0dbf3341326007fb697ba6967">ylf</a>[0] = (spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a47b246f0dbf3341326007fb697ba6967">ylf</a>[0] &gt; (float32_t)(200.0)) ?</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                                (float32_t)(200.0) : spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a47b246f0dbf3341326007fb697ba6967">ylf</a>[0];</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">// VCO</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#ada2e4c7df8817a3857561b1143f2d305">fo</a> = spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a0b02f1675419cc02fed162c952ce6320">fn</a> + spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a47b246f0dbf3341326007fb697ba6967">ylf</a>[0];</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a25f08b63c4d9ae2a8ff80a527c9a0b8e">theta</a>[0] = spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a25f08b63c4d9ae2a8ff80a527c9a0b8e">theta</a>[1] +</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                         ((spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#ada2e4c7df8817a3857561b1143f2d305">fo</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a3ec7736e531b31d141d7c8a603d2fecb">delta_t</a>) *</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                          (float32_t)(2.0 * 3.1415926));</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">if</span>(spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a25f08b63c4d9ae2a8ff80a527c9a0b8e">theta</a>[0] &gt; (float32_t)(2.0 * 3.1415926))</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a25f08b63c4d9ae2a8ff80a527c9a0b8e">theta</a>[0] = spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a25f08b63c4d9ae2a8ff80a527c9a0b8e">theta</a>[0] - (float32_t)(2.0 * 3.1415926);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a25f08b63c4d9ae2a8ff80a527c9a0b8e">theta</a>[1] = spll_obj-&gt;<a class="code hl_variable" href="struct_s_r_f__3_p_h.html#a25f08b63c4d9ae2a8ff80a527c9a0b8e">theta</a>[0];</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="pll__3ph_8c.html#ae9004fa2910a2eae2be44598dc8556bb">   79</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="pll__3ph_8c.html#ae9004fa2910a2eae2be44598dc8556bb">DDSRF_3PH_Init</a>(<a class="code hl_struct" href="struct_d_d_s_r_f__3_p_h.html">DDSRF_3PH</a> *spll_obj)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>{</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a355e9a00d1ffe8da49c3b951ca44b478">d_p_decoupl</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a71899666e66c83e57610385f88a9df8a">d_n_decoupl</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ab6260536edf63ad563a0b603f6015641">q_p_decoupl</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a73e0789f22aa05b6d14a6fc77d86526c">q_n_decoupl</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ad116563e6fe08c831948cbdf4790a735">d_p_decoupl_lpf</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a25f5eef90c759bbc9437a4e79b47f550">d_n_decoupl_lpf</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a894ab118c703a13d6ce8d6b7e301a767">q_p_decoupl_lpf</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a68e01e5fb13a9db1098ac0ebdb40ec34">q_n_decoupl_lpf</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a0f76192d505571411ed6c84738e3177c">y</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a0f76192d505571411ed6c84738e3177c">y</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ac163d4115eb5706cc7f9027aff302c6f">x</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ac163d4115eb5706cc7f9027aff302c6f">x</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#af52ae9522fdd957d59ec478c78a61455">w</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#af52ae9522fdd957d59ec478c78a61455">w</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a6c893fe599d0b111fa0c1d90a84c1c0d">z</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a6c893fe599d0b111fa0c1d90a84c1c0d">z</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a82bd050bf0492354fca2807ea3e094de">v_q</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a82bd050bf0492354fca2807ea3e094de">v_q</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a386dc9b0bade4f633408d21424574887">ylf</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a386dc9b0bade4f633408d21424574887">ylf</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a28c83db18be01978b084f38aee55f734">fo</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370">theta</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370">theta</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="pll__3ph_8c.html#aa64487c6508a531541965b98848e75d8">  117</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="pll__3ph_8c.html#aa64487c6508a531541965b98848e75d8">DDSRF_3PH_Set</a>(float32_t grid_freq, float32_t delta_t,</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                                    float32_t k1, float32_t k2,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                                    <a class="code hl_struct" href="struct_d_d_s_r_f__3_p_h.html">DDSRF_3PH</a> *spll_obj)</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>{</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a355e9a00d1ffe8da49c3b951ca44b478">d_p_decoupl</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a71899666e66c83e57610385f88a9df8a">d_n_decoupl</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ab6260536edf63ad563a0b603f6015641">q_p_decoupl</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a73e0789f22aa05b6d14a6fc77d86526c">q_n_decoupl</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ad116563e6fe08c831948cbdf4790a735">d_p_decoupl_lpf</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a25f5eef90c759bbc9437a4e79b47f550">d_n_decoupl_lpf</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a894ab118c703a13d6ce8d6b7e301a767">q_p_decoupl_lpf</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a68e01e5fb13a9db1098ac0ebdb40ec34">q_n_decoupl_lpf</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a0f76192d505571411ed6c84738e3177c">y</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a0f76192d505571411ed6c84738e3177c">y</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ac163d4115eb5706cc7f9027aff302c6f">x</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ac163d4115eb5706cc7f9027aff302c6f">x</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#af52ae9522fdd957d59ec478c78a61455">w</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#af52ae9522fdd957d59ec478c78a61455">w</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a6c893fe599d0b111fa0c1d90a84c1c0d">z</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a6c893fe599d0b111fa0c1d90a84c1c0d">z</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ad6552663c28cfd88901ed2ce0e2c96ea">k1</a> = k1;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a345c6e7980e49c0ef6269df0847eb2c0">k2</a> = k2;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a82bd050bf0492354fca2807ea3e094de">v_q</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a82bd050bf0492354fca2807ea3e094de">v_q</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a386dc9b0bade4f633408d21424574887">ylf</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a386dc9b0bade4f633408d21424574887">ylf</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a28c83db18be01978b084f38aee55f734">fo</a> = (float32_t)(0.0);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ab7d242bf805d0e9f8ea163786e770423">fn</a> = (float32_t)(grid_freq);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370">theta</a>[0] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370">theta</a>[1] = (float32_t)(0.0);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a693a8c6f6767aa439d1684220eaa87b8">delta_t</a> = delta_t;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>}</div>
+</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="foldopen" id="foldopen00163" data-start="{" data-end="}">
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="pll__3ph_8c.html#acabde816e5c373cf1e2d16dcfb6052e4">  163</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="pll__3ph_8c.html#acabde816e5c373cf1e2d16dcfb6052e4">DDSRF_3PH_Run</a>(<a class="code hl_struct" href="struct_d_d_s_r_f__3_p_h.html">DDSRF_3PH</a> *spll_obj,</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                                      float32_t d_p, float32_t d_n,</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                                      float32_t q_p, float32_t q_n)</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>{</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="comment">// before calling this routine run the ABC_DQ0_Pos &amp; Neg run routines</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="comment">// pass updated values for d_p,d_n,q_p,q_n</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="comment">// and update the cos_2theta and sin_2theta values with the prev angle</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="comment">// Decoupling Network</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a355e9a00d1ffe8da49c3b951ca44b478">d_p_decoupl</a> = d_p</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                           - (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a25f5eef90c759bbc9437a4e79b47f550">d_n_decoupl_lpf</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a9a99be98f04fbc34aaf475f8f2e4e112">cos_2theta</a>)</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                           - (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a73e0789f22aa05b6d14a6fc77d86526c">q_n_decoupl</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#aceb3ccf456af95825dfaf84889683d54">sin_2theta</a>);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ab6260536edf63ad563a0b603f6015641">q_p_decoupl</a> = q_p</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                           + (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a25f5eef90c759bbc9437a4e79b47f550">d_n_decoupl_lpf</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#aceb3ccf456af95825dfaf84889683d54">sin_2theta</a>)</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                           - (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a73e0789f22aa05b6d14a6fc77d86526c">q_n_decoupl</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a9a99be98f04fbc34aaf475f8f2e4e112">cos_2theta</a>);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a71899666e66c83e57610385f88a9df8a">d_n_decoupl</a> = d_n</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                           - (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ad116563e6fe08c831948cbdf4790a735">d_p_decoupl_lpf</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a9a99be98f04fbc34aaf475f8f2e4e112">cos_2theta</a>)</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                           + (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ab6260536edf63ad563a0b603f6015641">q_p_decoupl</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#aceb3ccf456af95825dfaf84889683d54">sin_2theta</a>);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a73e0789f22aa05b6d14a6fc77d86526c">q_n_decoupl</a> = q_n</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                           - (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ad116563e6fe08c831948cbdf4790a735">d_p_decoupl_lpf</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#aceb3ccf456af95825dfaf84889683d54">sin_2theta</a>)</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                           - (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ab6260536edf63ad563a0b603f6015641">q_p_decoupl</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a9a99be98f04fbc34aaf475f8f2e4e112">cos_2theta</a>);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="comment">// Low pass filter</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a0f76192d505571411ed6c84738e3177c">y</a>[1] = (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a355e9a00d1ffe8da49c3b951ca44b478">d_p_decoupl</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ad6552663c28cfd88901ed2ce0e2c96ea">k1</a>)</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                   - (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a0f76192d505571411ed6c84738e3177c">y</a>[0] * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a345c6e7980e49c0ef6269df0847eb2c0">k2</a>);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ad116563e6fe08c831948cbdf4790a735">d_p_decoupl_lpf</a> = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a0f76192d505571411ed6c84738e3177c">y</a>[1] + spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a0f76192d505571411ed6c84738e3177c">y</a>[0];</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a0f76192d505571411ed6c84738e3177c">y</a>[0] = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a0f76192d505571411ed6c84738e3177c">y</a>[1];</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ac163d4115eb5706cc7f9027aff302c6f">x</a>[1] = (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ab6260536edf63ad563a0b603f6015641">q_p_decoupl</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ad6552663c28cfd88901ed2ce0e2c96ea">k1</a>)</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                  - (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ac163d4115eb5706cc7f9027aff302c6f">x</a>[0] * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a345c6e7980e49c0ef6269df0847eb2c0">k2</a>);</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a894ab118c703a13d6ce8d6b7e301a767">q_p_decoupl_lpf</a> = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ac163d4115eb5706cc7f9027aff302c6f">x</a>[1] + spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ac163d4115eb5706cc7f9027aff302c6f">x</a>[0];</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ac163d4115eb5706cc7f9027aff302c6f">x</a>[0] = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ac163d4115eb5706cc7f9027aff302c6f">x</a>[1];</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#af52ae9522fdd957d59ec478c78a61455">w</a>[1] = (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a71899666e66c83e57610385f88a9df8a">d_n_decoupl</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ad6552663c28cfd88901ed2ce0e2c96ea">k1</a>)</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                  - (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#af52ae9522fdd957d59ec478c78a61455">w</a>[0] * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a345c6e7980e49c0ef6269df0847eb2c0">k2</a>);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a25f5eef90c759bbc9437a4e79b47f550">d_n_decoupl_lpf</a> = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#af52ae9522fdd957d59ec478c78a61455">w</a>[1] + spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#af52ae9522fdd957d59ec478c78a61455">w</a>[0];</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#af52ae9522fdd957d59ec478c78a61455">w</a>[0] = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#af52ae9522fdd957d59ec478c78a61455">w</a>[1];</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a6c893fe599d0b111fa0c1d90a84c1c0d">z</a>[1] = (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a73e0789f22aa05b6d14a6fc77d86526c">q_n_decoupl</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ad6552663c28cfd88901ed2ce0e2c96ea">k1</a>)</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                  - (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a6c893fe599d0b111fa0c1d90a84c1c0d">z</a>[0] * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a345c6e7980e49c0ef6269df0847eb2c0">k2</a>);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a68e01e5fb13a9db1098ac0ebdb40ec34">q_n_decoupl_lpf</a> = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a6c893fe599d0b111fa0c1d90a84c1c0d">z</a>[1] + spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a6c893fe599d0b111fa0c1d90a84c1c0d">z</a>[0];</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a6c893fe599d0b111fa0c1d90a84c1c0d">z</a>[0] = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a6c893fe599d0b111fa0c1d90a84c1c0d">z</a>[1];</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a82bd050bf0492354fca2807ea3e094de">v_q</a>[0] = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ab6260536edf63ad563a0b603f6015641">q_p_decoupl</a>;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="comment">// Loop Filter</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a386dc9b0bade4f633408d21424574887">ylf</a>[0] = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a386dc9b0bade4f633408d21424574887">ylf</a>[1]</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                    + (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ab7bef22e187a72120fe965953865171e">lpf_coeff</a>.<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html#a5fb26ee5069a8e11fd35ac3c7eb2de0d">b0</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a82bd050bf0492354fca2807ea3e094de">v_q</a>[0])</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                    + (spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ab7bef22e187a72120fe965953865171e">lpf_coeff</a>.<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html#a9f3bd4e98d513b121820a1bc688d741a">b1</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a82bd050bf0492354fca2807ea3e094de">v_q</a>[1]);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a386dc9b0bade4f633408d21424574887">ylf</a>[1] = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a386dc9b0bade4f633408d21424574887">ylf</a>[0];</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a82bd050bf0492354fca2807ea3e094de">v_q</a>[1] = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a82bd050bf0492354fca2807ea3e094de">v_q</a>[0];</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="comment">// VCO</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a28c83db18be01978b084f38aee55f734">fo</a> = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#ab7d242bf805d0e9f8ea163786e770423">fn</a> + spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a386dc9b0bade4f633408d21424574887">ylf</a>[0];</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370">theta</a>[0] = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370">theta</a>[1] +</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>             ((spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a28c83db18be01978b084f38aee55f734">fo</a> * spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a693a8c6f6767aa439d1684220eaa87b8">delta_t</a>)</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>             * (float32_t)(2.0f * 3.1415926f));</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordflow">if</span>(spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370">theta</a>[0] &gt; (float32_t)(2.0f * 3.1415926f))</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    {</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370">theta</a>[0] = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370">theta</a>[0] -</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                  (float32_t)(2.0f * 3.1415926f);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    }</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370">theta</a>[1] = spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370">theta</a>[0];</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a9a99be98f04fbc34aaf475f8f2e4e112">cos_2theta</a> = cosf(spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370">theta</a>[1] * 2.0f);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#aceb3ccf456af95825dfaf84889683d54">sin_2theta</a> = sinf(spll_obj-&gt;<a class="code hl_variable" href="struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370">theta</a>[1] * 2.0f);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>}</div>
+</div>
+<div class="ttc" id="apll__3ph_8c_html_a2826ad35dce8723d331004e797beadd4"><div class="ttname"><a href="pll__3ph_8c.html#a2826ad35dce8723d331004e797beadd4">SRF_3PH_Init</a></div><div class="ttdeci">void SRF_3PH_Init(SRF_3PH *spll_obj)</div><div class="ttdoc">Reset SRF_3PH module</div><div class="ttdef"><b>定义</b> <a href="#l00011">pll_3ph.c:11</a></div></div>
+<div class="ttc" id="apll__3ph_8c_html_aa461167a3a2ad945a1b0da4f6694077c"><div class="ttname"><a href="pll__3ph_8c.html#aa461167a3a2ad945a1b0da4f6694077c">SRF_3PH_Set</a></div><div class="ttdeci">void SRF_3PH_Set(float32_t grid_freq, float32_t delta_t, SRF_3PH *spll_obj)</div><div class="ttdoc">Initialize SRF_3PH module</div><div class="ttdef"><b>定义</b> <a href="#l00026">pll_3ph.c:26</a></div></div>
+<div class="ttc" id="apll__3ph_8c_html_aa64487c6508a531541965b98848e75d8"><div class="ttname"><a href="pll__3ph_8c.html#aa64487c6508a531541965b98848e75d8">DDSRF_3PH_Set</a></div><div class="ttdeci">void DDSRF_3PH_Set(float32_t grid_freq, float32_t delta_t, float32_t k1, float32_t k2, DDSRF_3PH *spll_obj)</div><div class="ttdoc">Initialize DDSRF_3PH module</div><div class="ttdef"><b>定义</b> <a href="#l00117">pll_3ph.c:117</a></div></div>
+<div class="ttc" id="apll__3ph_8c_html_ab5a96d323b79646449adf4ea57322fa2"><div class="ttname"><a href="pll__3ph_8c.html#ab5a96d323b79646449adf4ea57322fa2">SRF_3PH_Run</a></div><div class="ttdeci">void SRF_3PH_Run(float32_t v_q, SRF_3PH *spll_obj)</div><div class="ttdoc">Run SRF_3PH module</div><div class="ttdef"><b>定义</b> <a href="#l00044">pll_3ph.c:44</a></div></div>
+<div class="ttc" id="apll__3ph_8c_html_acabde816e5c373cf1e2d16dcfb6052e4"><div class="ttname"><a href="pll__3ph_8c.html#acabde816e5c373cf1e2d16dcfb6052e4">DDSRF_3PH_Run</a></div><div class="ttdeci">void DDSRF_3PH_Run(DDSRF_3PH *spll_obj, float32_t d_p, float32_t d_n, float32_t q_p, float32_t q_n)</div><div class="ttdoc">Run SRF_3PH module</div><div class="ttdef"><b>定义</b> <a href="#l00163">pll_3ph.c:163</a></div></div>
+<div class="ttc" id="apll__3ph_8c_html_ae9004fa2910a2eae2be44598dc8556bb"><div class="ttname"><a href="pll__3ph_8c.html#ae9004fa2910a2eae2be44598dc8556bb">DDSRF_3PH_Init</a></div><div class="ttdeci">void DDSRF_3PH_Init(DDSRF_3PH *spll_obj)</div><div class="ttdoc">Reset DDSRF_3PH module</div><div class="ttdef"><b>定义</b> <a href="#l00079">pll_3ph.c:79</a></div></div>
+<div class="ttc" id="apll__3ph_8h_html"><div class="ttname"><a href="pll__3ph_8h.html">pll_3ph.h</a></div><div class="ttdoc">三相电网锁相环</div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f_html_a5fb26ee5069a8e11fd35ac3c7eb2de0d"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html#a5fb26ee5069a8e11fd35ac3c7eb2de0d">DDSRF_3PH_LPF_COEFF::b0</a></div><div class="ttdeci">float32_t b0</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00050">pll_3ph.h:50</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f_html_a9f3bd4e98d513b121820a1bc688d741a"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html#a9f3bd4e98d513b121820a1bc688d741a">DDSRF_3PH_LPF_COEFF::b1</a></div><div class="ttdeci">float32_t b1</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00049">pll_3ph.h:49</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html">DDSRF_3PH</a></div><div class="ttdoc">Defines the DDSRF_3PH structure</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00060">pll_3ph.h:60</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a0f76192d505571411ed6c84738e3177c"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a0f76192d505571411ed6c84738e3177c">DDSRF_3PH::y</a></div><div class="ttdeci">float32_t y[2]</div><div class="ttdoc">Used to store history for filtering the decoupled D and Q axis components</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00069">pll_3ph.h:69</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a25f5eef90c759bbc9437a4e79b47f550"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a25f5eef90c759bbc9437a4e79b47f550">DDSRF_3PH::d_n_decoupl_lpf</a></div><div class="ttdeci">float32_t d_n_decoupl_lpf</div><div class="ttdoc">Decoupled negative sequence D-axis component filtered</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00076">pll_3ph.h:76</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a28c83db18be01978b084f38aee55f734"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a28c83db18be01978b084f38aee55f734">DDSRF_3PH::fo</a></div><div class="ttdeci">float32_t fo</div><div class="ttdoc">Instantaneous Grid Frequency in Hz</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00083">pll_3ph.h:83</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a345c6e7980e49c0ef6269df0847eb2c0"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a345c6e7980e49c0ef6269df0847eb2c0">DDSRF_3PH::k2</a></div><div class="ttdeci">float32_t k2</div><div class="ttdoc">Lpf coefficient</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00074">pll_3ph.h:74</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a355e9a00d1ffe8da49c3b951ca44b478"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a355e9a00d1ffe8da49c3b951ca44b478">DDSRF_3PH::d_p_decoupl</a></div><div class="ttdeci">float32_t d_p_decoupl</div><div class="ttdoc">Positive Rotating reference Frame D-axis value</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00061">pll_3ph.h:61</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a386dc9b0bade4f633408d21424574887"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a386dc9b0bade4f633408d21424574887">DDSRF_3PH::ylf</a></div><div class="ttdeci">float32_t ylf[2]</div><div class="ttdoc">Internal Data Buffer for Loop Filter output</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00082">pll_3ph.h:82</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a50c2c822c503cd44efebbc749ff8b370"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370">DDSRF_3PH::theta</a></div><div class="ttdeci">float32_t theta[2]</div><div class="ttdoc">Grid phase angle</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00081">pll_3ph.h:81</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a68e01e5fb13a9db1098ac0ebdb40ec34"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a68e01e5fb13a9db1098ac0ebdb40ec34">DDSRF_3PH::q_n_decoupl_lpf</a></div><div class="ttdeci">float32_t q_n_decoupl_lpf</div><div class="ttdoc">Decoupled negative sequence Q-axis component filtered</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00078">pll_3ph.h:78</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a693a8c6f6767aa439d1684220eaa87b8"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a693a8c6f6767aa439d1684220eaa87b8">DDSRF_3PH::delta_t</a></div><div class="ttdeci">float32_t delta_t</div><div class="ttdoc">1/Frequency of calling the PLL routine</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00085">pll_3ph.h:85</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a6c893fe599d0b111fa0c1d90a84c1c0d"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a6c893fe599d0b111fa0c1d90a84c1c0d">DDSRF_3PH::z</a></div><div class="ttdeci">float32_t z[2]</div><div class="ttdoc">Used to store history for filtering the decoupled D and Q axis components</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00072">pll_3ph.h:72</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a71899666e66c83e57610385f88a9df8a"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a71899666e66c83e57610385f88a9df8a">DDSRF_3PH::d_n_decoupl</a></div><div class="ttdeci">float32_t d_n_decoupl</div><div class="ttdoc">Negative Rotating reference Frame D-axis value</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00062">pll_3ph.h:62</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a73e0789f22aa05b6d14a6fc77d86526c"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a73e0789f22aa05b6d14a6fc77d86526c">DDSRF_3PH::q_n_decoupl</a></div><div class="ttdeci">float32_t q_n_decoupl</div><div class="ttdoc">Negative Rotating reference Frame Q-axis value</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00064">pll_3ph.h:64</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a82bd050bf0492354fca2807ea3e094de"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a82bd050bf0492354fca2807ea3e094de">DDSRF_3PH::v_q</a></div><div class="ttdeci">float32_t v_q[2]</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00080">pll_3ph.h:80</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a894ab118c703a13d6ce8d6b7e301a767"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a894ab118c703a13d6ce8d6b7e301a767">DDSRF_3PH::q_p_decoupl_lpf</a></div><div class="ttdeci">float32_t q_p_decoupl_lpf</div><div class="ttdoc">Decoupled positive sequence Q-axis component filtered</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00077">pll_3ph.h:77</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_a9a99be98f04fbc34aaf475f8f2e4e112"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#a9a99be98f04fbc34aaf475f8f2e4e112">DDSRF_3PH::cos_2theta</a></div><div class="ttdeci">float32_t cos_2theta</div><div class="ttdoc">Cos of twice the grid frequency angle</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00066">pll_3ph.h:66</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_ab6260536edf63ad563a0b603f6015641"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#ab6260536edf63ad563a0b603f6015641">DDSRF_3PH::q_p_decoupl</a></div><div class="ttdeci">float32_t q_p_decoupl</div><div class="ttdoc">Positive Rotating reference Frame Q-axis value</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00063">pll_3ph.h:63</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_ab7bef22e187a72120fe965953865171e"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#ab7bef22e187a72120fe965953865171e">DDSRF_3PH::lpf_coeff</a></div><div class="ttdeci">DDSRF_3PH_LPF_COEFF lpf_coeff</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00086">pll_3ph.h:86</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_ab7d242bf805d0e9f8ea163786e770423"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#ab7d242bf805d0e9f8ea163786e770423">DDSRF_3PH::fn</a></div><div class="ttdeci">float32_t fn</div><div class="ttdoc">Nominal Grid Frequency in Hz</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00084">pll_3ph.h:84</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_ac163d4115eb5706cc7f9027aff302c6f"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#ac163d4115eb5706cc7f9027aff302c6f">DDSRF_3PH::x</a></div><div class="ttdeci">float32_t x[2]</div><div class="ttdoc">Used to store history for filtering the decoupled D and Q axis components</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00070">pll_3ph.h:70</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_aceb3ccf456af95825dfaf84889683d54"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#aceb3ccf456af95825dfaf84889683d54">DDSRF_3PH::sin_2theta</a></div><div class="ttdeci">float32_t sin_2theta</div><div class="ttdoc">Sin of twice the grid frequency angle</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00067">pll_3ph.h:67</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_ad116563e6fe08c831948cbdf4790a735"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#ad116563e6fe08c831948cbdf4790a735">DDSRF_3PH::d_p_decoupl_lpf</a></div><div class="ttdeci">float32_t d_p_decoupl_lpf</div><div class="ttdoc">Decoupled positive sequence D-axis component filtered</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00075">pll_3ph.h:75</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_ad6552663c28cfd88901ed2ce0e2c96ea"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#ad6552663c28cfd88901ed2ce0e2c96ea">DDSRF_3PH::k1</a></div><div class="ttdeci">float32_t k1</div><div class="ttdoc">Lpf coefficient</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00073">pll_3ph.h:73</a></div></div>
+<div class="ttc" id="astruct_d_d_s_r_f__3_p_h_html_af52ae9522fdd957d59ec478c78a61455"><div class="ttname"><a href="struct_d_d_s_r_f__3_p_h.html#af52ae9522fdd957d59ec478c78a61455">DDSRF_3PH::w</a></div><div class="ttdeci">float32_t w[2]</div><div class="ttdoc">Used to store history for filtering the decoupled D and Q axis components</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00071">pll_3ph.h:71</a></div></div>
+<div class="ttc" id="astruct_s_r_f__3_p_h___l_p_f___c_o_e_f_f_html_a238687adace75bfb633d7f28e3373318"><div class="ttname"><a href="struct_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html#a238687adace75bfb633d7f28e3373318">SRF_3PH_LPF_COEFF::b0</a></div><div class="ttdeci">float32_t b0</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00024">pll_3ph.h:24</a></div></div>
+<div class="ttc" id="astruct_s_r_f__3_p_h___l_p_f___c_o_e_f_f_html_a65e0af57c121c3a143702f5dd06f8734"><div class="ttname"><a href="struct_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html#a65e0af57c121c3a143702f5dd06f8734">SRF_3PH_LPF_COEFF::b1</a></div><div class="ttdeci">float32_t b1</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00023">pll_3ph.h:23</a></div></div>
+<div class="ttc" id="astruct_s_r_f__3_p_h_html"><div class="ttname"><a href="struct_s_r_f__3_p_h.html">SRF_3PH</a></div><div class="ttdoc">Defines the SRF_3PH structure</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00033">pll_3ph.h:33</a></div></div>
+<div class="ttc" id="astruct_s_r_f__3_p_h_html_a0b02f1675419cc02fed162c952ce6320"><div class="ttname"><a href="struct_s_r_f__3_p_h.html#a0b02f1675419cc02fed162c952ce6320">SRF_3PH::fn</a></div><div class="ttdeci">float32_t fn</div><div class="ttdoc">Nominal frequency</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00037">pll_3ph.h:37</a></div></div>
+<div class="ttc" id="astruct_s_r_f__3_p_h_html_a25f08b63c4d9ae2a8ff80a527c9a0b8e"><div class="ttname"><a href="struct_s_r_f__3_p_h.html#a25f08b63c4d9ae2a8ff80a527c9a0b8e">SRF_3PH::theta</a></div><div class="ttdeci">float32_t theta[2]</div><div class="ttdoc">Grid phase angle</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00038">pll_3ph.h:38</a></div></div>
+<div class="ttc" id="astruct_s_r_f__3_p_h_html_a3ec7736e531b31d141d7c8a603d2fecb"><div class="ttname"><a href="struct_s_r_f__3_p_h.html#a3ec7736e531b31d141d7c8a603d2fecb">SRF_3PH::delta_t</a></div><div class="ttdeci">float32_t delta_t</div><div class="ttdoc">Inverse of the ISR rate at which module is called</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00039">pll_3ph.h:39</a></div></div>
+<div class="ttc" id="astruct_s_r_f__3_p_h_html_a47b246f0dbf3341326007fb697ba6967"><div class="ttname"><a href="struct_s_r_f__3_p_h.html#a47b246f0dbf3341326007fb697ba6967">SRF_3PH::ylf</a></div><div class="ttdeci">float32_t ylf[2]</div><div class="ttdoc">Data buffer for loop filter output</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00035">pll_3ph.h:35</a></div></div>
+<div class="ttc" id="astruct_s_r_f__3_p_h_html_a642dd3d6cadb1ca5709113ddc8c4ee26"><div class="ttname"><a href="struct_s_r_f__3_p_h.html#a642dd3d6cadb1ca5709113ddc8c4ee26">SRF_3PH::lpf_coeff</a></div><div class="ttdeci">SRF_3PH_LPF_COEFF lpf_coeff</div><div class="ttdoc">Loop filter coefficients</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00040">pll_3ph.h:40</a></div></div>
+<div class="ttc" id="astruct_s_r_f__3_p_h_html_a9bbc0d03e877bd5134a0f0909c213463"><div class="ttname"><a href="struct_s_r_f__3_p_h.html#a9bbc0d03e877bd5134a0f0909c213463">SRF_3PH::v_q</a></div><div class="ttdeci">float32_t v_q[2]</div><div class="ttdoc">Rotating reference frame Q-axis value</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00034">pll_3ph.h:34</a></div></div>
+<div class="ttc" id="astruct_s_r_f__3_p_h_html_ada2e4c7df8817a3857561b1143f2d305"><div class="ttname"><a href="struct_s_r_f__3_p_h.html#ada2e4c7df8817a3857561b1143f2d305">SRF_3PH::fo</a></div><div class="ttdeci">float32_t fo</div><div class="ttdoc">Output frequency of PLL</div><div class="ttdef"><b>定义</b> <a href="pll__3ph_8h_source.html#l00036">pll_3ph.h:36</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_5c8eb3294899d8ccde2bfe444a7d64dd.html">PLL</a></li><li class="navelem"><a href="pll__3ph_8c.html">pll_3ph.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

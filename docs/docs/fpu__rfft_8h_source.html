@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/FFT/dsp_lib/fpu_rfft.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('fpu__rfft_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fpu_rfft.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="fpu__rfft_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef _FPU_RFFT_H_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define _FPU_RFFT_H_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//#############################################################################</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//#############################################################################</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// includes</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="fpu__types_8h.html">fpu_types.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// typedefs</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">   24</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a0910d54540ed327ab37748d3568dada3">   25</a></span>  <span class="keywordtype">float</span>  *<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a0910d54540ed327ab37748d3568dada3">InBuf</a>;       </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a9b5615538b5e6a334697e9540aefffea">   26</a></span>  <span class="keywordtype">float</span>  *<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a9b5615538b5e6a334697e9540aefffea">OutBuf</a>;     </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#ab1180d10df01c6b2aef2650e057d3cb0">   27</a></span>  <span class="keywordtype">float</span>  *<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#ab1180d10df01c6b2aef2650e057d3cb0">CosSinBuf</a>;    </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#adc437e8e9eabf692ccf968096f55ce3e">   28</a></span>  <span class="keywordtype">float</span>  *<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#adc437e8e9eabf692ccf968096f55ce3e">MagBuf</a>;       </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#ad9f1c74853f82c802c410ab58df9116d">   29</a></span>  <span class="keywordtype">float</span>  *<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#ad9f1c74853f82c802c410ab58df9116d">PhaseBuf</a>;     </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a786173823bd56199aecdd62e6113da7f">   30</a></span>  uint16_t   <a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a786173823bd56199aecdd62e6113da7f">FFTSize</a>;   </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a17121f2659e2dce87f2e88009b873922">   31</a></span>  uint16_t   <a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a17121f2659e2dce87f2e88009b873922">FFTStages</a>; </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>} <a class="code hl_struct" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">RFFT_F32_STRUCT</a>;</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">   36</a></span><span class="keyword">typedef</span> <a class="code hl_struct" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">RFFT_F32_STRUCT</a>* <a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html">   40</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html#a5005fb9b7f47ec5684b25816e8dbc756">   41</a></span>  uint16_t   *<a class="code hl_variable" href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html#a5005fb9b7f47ec5684b25816e8dbc756">InBuf</a>;    </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html#a2394d2a69f9e145fa93cf6b0d19c2de6">   42</a></span>  <span class="keywordtype">void</span>       *<a class="code hl_variable" href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html#a2394d2a69f9e145fa93cf6b0d19c2de6">Tail</a>;     </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>} <a class="code hl_struct" href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html">RFFT_ADC_F32_STRUCT</a>;</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a8a977d8b9a2c1763124388928d94204a">   47</a></span><span class="keyword">typedef</span> <a class="code hl_struct" href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html">RFFT_ADC_F32_STRUCT</a>* <a class="code hl_typedef" href="fpu__rfft_8h.html#a8a977d8b9a2c1763124388928d94204a">RFFT_ADC_F32_STRUCT_Handle</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">// globals</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">//</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">//</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="fpu__rfft_8h.html#a7ee4950c0f3a0aa89000ac36ffffcd16">RFFT_f32_twiddleFactors</a>[1020];</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="fpu__rfft_8h.html#a9903744e1b4aa7f22343b3af65be67af">FPU32RFFTtwiddleFactors</a>[1020];</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">// &#39;inline&#39; function</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a89dba923f55a3ade344aa41159b7fa2f">   74</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__rfft_8h.html#a89dba923f55a3ade344aa41159b7fa2f">RFFT_f32_setInputPtr</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fh,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> *pi)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a0910d54540ed327ab37748d3568dada3">InBuf</a> = (<span class="keywordtype">float</span> *)pi;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span></div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a262641fc1a92961dc6bd0342bfd67013">   84</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> * <a class="code hl_function" href="fpu__rfft_8h.html#a262641fc1a92961dc6bd0342bfd67013">RFFT_f32_getInputPtr</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fh)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a0910d54540ed327ab37748d3568dada3">InBuf</a>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a30a4b4aaa467f7d81e84b2b0ffa0d162">   93</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__rfft_8h.html#a30a4b4aaa467f7d81e84b2b0ffa0d162">RFFT_f32_setOutputPtr</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fh,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> *po)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>{</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a9b5615538b5e6a334697e9540aefffea">OutBuf</a>= (<span class="keywordtype">float</span> *)po;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span></div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a52ef2f64a2d6392ce26bb85340c9a376">  103</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> * <a class="code hl_function" href="fpu__rfft_8h.html#a52ef2f64a2d6392ce26bb85340c9a376">RFFT_f32_getOutputPtr</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fh)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>{</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a9b5615538b5e6a334697e9540aefffea">OutBuf</a>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span></div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a92ccd21f6a5273d25995e8a19364775e">  112</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__rfft_8h.html#a92ccd21f6a5273d25995e8a19364775e">RFFT_f32_setTwiddlesPtr</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fh,</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> *pc)</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>{</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#ab1180d10df01c6b2aef2650e057d3cb0">CosSinBuf</a> = (<span class="keywordtype">float</span> *)pc;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
+</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span></div>
+<div class="foldopen" id="foldopen00122" data-start="{" data-end="}">
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a979a675d861bc6e2191040eefb890dda">  122</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> * <a class="code hl_function" href="fpu__rfft_8h.html#a979a675d861bc6e2191040eefb890dda">RFFT_f32_getTwiddlesPtr</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fh)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>{</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#ab1180d10df01c6b2aef2650e057d3cb0">CosSinBuf</a>);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span></div>
+<div class="foldopen" id="foldopen00131" data-start="{" data-end="}">
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#ae8f5e276d0d7a20e53283666cf3545f3">  131</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__rfft_8h.html#ae8f5e276d0d7a20e53283666cf3545f3">RFFT_f32_setMagnitudePtr</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fh,</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> *pm)</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>{</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#adc437e8e9eabf692ccf968096f55ce3e">MagBuf</a> = (<span class="keywordtype">float</span> *)pm;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
+</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span></div>
+<div class="foldopen" id="foldopen00142" data-start="{" data-end="}">
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a3a10a4d566ee53d12f3d1f0d2518525e">  142</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> * <a class="code hl_function" href="fpu__rfft_8h.html#a3a10a4d566ee53d12f3d1f0d2518525e">RFFT_f32_getMagnitudePtr</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fh)</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>{</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#adc437e8e9eabf692ccf968096f55ce3e">MagBuf</a>);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>}</div>
+</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span></div>
+<div class="foldopen" id="foldopen00151" data-start="{" data-end="}">
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#abd5ff5db18a8ee39271978c587093ce0">  151</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__rfft_8h.html#abd5ff5db18a8ee39271978c587093ce0">RFFT_f32_setPhasePtr</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fh,</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> *pp)</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>{</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#ad9f1c74853f82c802c410ab58df9116d">PhaseBuf</a> = (<span class="keywordtype">float</span> *)pp;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>}</div>
+</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span></div>
+<div class="foldopen" id="foldopen00162" data-start="{" data-end="}">
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a3fff1f49c27d3cdcaf50ed384fda3ef7">  162</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> * <a class="code hl_function" href="fpu__rfft_8h.html#a3fff1f49c27d3cdcaf50ed384fda3ef7">RFFT_f32_getPhasePtr</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fh)</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>{</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#ad9f1c74853f82c802c410ab58df9116d">PhaseBuf</a>);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
+</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span></div>
+<div class="foldopen" id="foldopen00171" data-start="{" data-end="}">
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a0d54e14dfc29f5c9635fe96077c5b959">  171</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__rfft_8h.html#a0d54e14dfc29f5c9635fe96077c5b959">RFFT_f32_setStages</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fh,</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                      <span class="keyword">const</span> uint16_t st)</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>{</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a17121f2659e2dce87f2e88009b873922">FFTStages</a> = st;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}</div>
+</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span></div>
+<div class="foldopen" id="foldopen00181" data-start="{" data-end="}">
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#af3564980c8919eeb3a316315d825fb6b">  181</a></span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t <a class="code hl_function" href="fpu__rfft_8h.html#af3564980c8919eeb3a316315d825fb6b">RFFT_f32_getStages</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fh)</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>{</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a17121f2659e2dce87f2e88009b873922">FFTStages</a>);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>}</div>
+</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span></div>
+<div class="foldopen" id="foldopen00190" data-start="{" data-end="}">
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#aa8570a2cefb6e9f92fdfc14007e3e2f7">  190</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__rfft_8h.html#aa8570a2cefb6e9f92fdfc14007e3e2f7">RFFT_f32_setFFTSize</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fh,</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                      <span class="keyword">const</span> uint16_t sz)</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>{</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a786173823bd56199aecdd62e6113da7f">FFTSize</a> = sz;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>}</div>
+</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span></div>
+<div class="foldopen" id="foldopen00200" data-start="{" data-end="}">
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a83b0d9297d7785030f0a50a1f7c5b95e">  200</a></span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t <a class="code hl_function" href="fpu__rfft_8h.html#a83b0d9297d7785030f0a50a1f7c5b95e">RFFT_f32_getFFTSize</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fh)</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>{</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a786173823bd56199aecdd62e6113da7f">FFTSize</a>);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>}</div>
+</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span></div>
+<div class="foldopen" id="foldopen00209" data-start="{" data-end="}">
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#acaf5a2be5b4d39c3407c4404f6a2c7d6">  209</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__rfft_8h.html#acaf5a2be5b4d39c3407c4404f6a2c7d6">RFFT_ADC_f32_setInBufPtr</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8a977d8b9a2c1763124388928d94204a">RFFT_ADC_F32_STRUCT_Handle</a> fh,</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                      <span class="keyword">const</span> uint16_t * pi)</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>{</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html#a5005fb9b7f47ec5684b25816e8dbc756">InBuf</a> = (uint16_t *)pi;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>}</div>
+</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span></div>
+<div class="foldopen" id="foldopen00219" data-start="{" data-end="}">
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a8719399d7d51583f00f1e4a2e83ba329">  219</a></span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t *<a class="code hl_function" href="fpu__rfft_8h.html#a8719399d7d51583f00f1e4a2e83ba329">RFFT_ADC_f32_getInBufPtr</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8a977d8b9a2c1763124388928d94204a">RFFT_ADC_F32_STRUCT_Handle</a> fh)</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>{</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html#a5005fb9b7f47ec5684b25816e8dbc756">InBuf</a>);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>}</div>
+</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span></div>
+<div class="foldopen" id="foldopen00228" data-start="{" data-end="}">
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a4d291e84e6204b5848f2f75c0b9e9be9">  228</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__rfft_8h.html#a4d291e84e6204b5848f2f75c0b9e9be9">RFFT_ADC_f32_setTailPtr</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8a977d8b9a2c1763124388928d94204a">RFFT_ADC_F32_STRUCT_Handle</a> fh,</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                      <span class="keyword">const</span> <span class="keywordtype">void</span> * pt)</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>{</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html#a2394d2a69f9e145fa93cf6b0d19c2de6">Tail</a> = (<span class="keywordtype">void</span> *)pt;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>}</div>
+</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span></div>
+<div class="foldopen" id="foldopen00238" data-start="{" data-end="}">
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a58fc9532ac9190d6cf34d32140122da8">  238</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> *<a class="code hl_function" href="fpu__rfft_8h.html#a58fc9532ac9190d6cf34d32140122da8">RFFT_ADC_f32_getTailPtr</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8a977d8b9a2c1763124388928d94204a">RFFT_ADC_F32_STRUCT_Handle</a> fh)</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>{</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html#a2394d2a69f9e145fa93cf6b0d19c2de6">Tail</a>);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>}</div>
+</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment">// function prototypes</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment">//</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a4ba62438408b6dbbe39975f316fe4429">  286</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="_r_f_f_t__f32__mag_8asm.html#a4c472a8faa2c848a76e49ce444dd00fa">RFFT_f32</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> hndRFFT_F32);</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="comment">//</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a9124e5c81f2cf7c0b2b8be3e761117bf">  324</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__rfft_8h.html#a9124e5c81f2cf7c0b2b8be3e761117bf">RFFT_f32u</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> hndRFFT_F32);</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="comment">//</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#aa982a487f6da0f5d2137d4ee9cea234e">  364</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__rfft_8h.html#aa982a487f6da0f5d2137d4ee9cea234e">RFFT_adc_f32</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8a977d8b9a2c1763124388928d94204a">RFFT_ADC_F32_STRUCT_Handle</a> hndRFFT_ADC_F32);</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span></div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="comment">//</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#a8688a6fb4f4f8a893268fc7dd8a8374f">  402</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_variable" href="_r_f_f_t__adc__f32_8asm.html#a989fe007e6b139c1fb7a30c3a37d2dd5">RFFT_adc_f32u</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8a977d8b9a2c1763124388928d94204a">RFFT_ADC_F32_STRUCT_Handle</a> hndRFFT_ADC_F32);</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span></div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span><span class="comment">//</span></div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#aee841a4f8b872d083983d709f6d77d91">  421</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__rfft_8h.html#aee841a4f8b872d083983d709f6d77d91">RFFT_f32_win</a>(<span class="keywordtype">float</span> *<a class="code hl_variable" href="_r_f_f_t__f32__adc__win_8asm.html#a036f8487409a76eaa34d47f77844bf6a">pBuffer</a>, <span class="keyword">const</span> <span class="keywordtype">float</span> *<a class="code hl_variable" href="_r_f_f_t__f32__adc__win_8asm.html#a0706e2153add8ac73318ac083d1cee81">pWindow</a>, </div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>                         <span class="keyword">const</span> uint16_t <a class="code hl_function" href="_r_f_f_t__f32__adc__win_8asm.html#aa2fbe8499f5d5a4eb9e5c72a0a8ae296">size</a>);</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span></div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span><span class="comment">//</span></div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#ac2a9398355a4c3432d915c539dc1c1b2">  447</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_variable" href="_r_f_f_t__f32__adc__win_8asm.html#aece64baebe81ff6fbb7a74540a221fc3">RFFT_adc_f32_win</a>(uint16_t *<a class="code hl_variable" href="_r_f_f_t__f32__adc__win_8asm.html#a036f8487409a76eaa34d47f77844bf6a">pBuffer</a>, <span class="keyword">const</span> uint16_t *<a class="code hl_variable" href="_r_f_f_t__f32__adc__win_8asm.html#a0706e2153add8ac73318ac083d1cee81">pWindow</a>,</div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>                             <span class="keyword">const</span> uint16_t <a class="code hl_function" href="_r_f_f_t__f32__adc__win_8asm.html#aa2fbe8499f5d5a4eb9e5c72a0a8ae296">size</a>);</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span></div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span><span class="comment">//</span></div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#aa72d6bf63e23a75e7f3ac08a5d64158c">  477</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_variable" href="_r_f_f_t__f32__mag_8asm.html#ae0e430848795df457d5610979de05789">RFFT_f32_mag</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> hndRFFT_F32);</div>
+<div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span></div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span><span class="comment">//</span></div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#abe4eba3f2d44c18e1c198929aa094570">  505</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_variable" href="_r_f_f_t__f32s__mag_8asm.html#a757d5457319f6231c46a88ba5458d6e5">RFFT_f32s_mag</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> hndRFFT_F32);</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span></div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span><span class="comment">//</span></div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno"><a class="line" href="fpu__rfft_8h.html#affb4b7030f76eacc85c7dc8e26a380ec">  525</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__rfft_8h.html#affb4b7030f76eacc85c7dc8e26a380ec">RFFT_f32_phase</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> hndRFFT_F32);</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span><span class="preprocessor">#if defined(__TMS320C28XX_TMU__)</span></div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span><span class="comment">//</span></div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span><span class="keyword">extern</span> <span class="keywordtype">void</span> RFFT_f32_mag_TMU0(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> hndRFFT_F32);</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span></div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span><span class="comment">//</span></div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span><span class="keyword">extern</span> <span class="keywordtype">void</span> RFFT_f32s_mag_TMU0(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> hndRFFT_F32);</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span></div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="comment">//</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="keyword">extern</span> <span class="keywordtype">void</span> RFFT_f32_phase_TMU0(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> hndRFFT_F32);</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><span class="preprocessor">#endif </span><span class="comment">//__TMS320C28XX_TMU__</span></div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span></div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><span class="comment">//</span></div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__rfft_8h.html#a9ba057440b48ec821d12b3afe3223d2e">RFFT_f32_sincostable</a>(<a class="code hl_typedef" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> hndRFFT_F32);</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span> </div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><span class="comment">// @} //addtogroup</span></div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span> </div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>}</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span><span class="preprocessor">#endif </span><span class="comment">/* extern &quot;C&quot; */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span> </div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="preprocessor">#endif   </span><span class="comment">// - end of _FPU_RFFT_H_</span></div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span> </div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span><span class="comment">// End of File</span></div>
+<div class="ttc" id="a_r_f_f_t__adc__f32_8asm_html_a989fe007e6b139c1fb7a30c3a37d2dd5"><div class="ttname"><a href="_r_f_f_t__adc__f32_8asm.html#a989fe007e6b139c1fb7a30c3a37d2dd5">RFFT_adc_f32u</a></div><div class="ttdeci">If you do not wish to align the input buffer then use the RFFT_adc_f32u</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__adc__f32_8asm_source.html#l00012">RFFT_adc_f32.asm:13</a></div></div>
+<div class="ttc" id="a_r_f_f_t__f32__adc__win_8asm_html_a036f8487409a76eaa34d47f77844bf6a"><div class="ttname"><a href="_r_f_f_t__f32__adc__win_8asm.html#a036f8487409a76eaa34d47f77844bf6a">pBuffer</a></div><div class="ttdeci">XAR4 pBuffer</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32__adc__win_8asm_source.html#l00063">RFFT_f32_adc_win.asm:64</a></div></div>
+<div class="ttc" id="a_r_f_f_t__f32__adc__win_8asm_html_a0706e2153add8ac73318ac083d1cee81"><div class="ttname"><a href="_r_f_f_t__f32__adc__win_8asm.html#a0706e2153add8ac73318ac083d1cee81">pWindow</a></div><div class="ttdeci">XAR5 pWindow</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32__adc__win_8asm_source.html#l00064">RFFT_f32_adc_win.asm:65</a></div></div>
+<div class="ttc" id="a_r_f_f_t__f32__adc__win_8asm_html_aa2fbe8499f5d5a4eb9e5c72a0a8ae296"><div class="ttname"><a href="_r_f_f_t__f32__adc__win_8asm.html#aa2fbe8499f5d5a4eb9e5c72a0a8ae296">size</a></div><div class="ttdeci">param size(AL)</div></div>
+<div class="ttc" id="a_r_f_f_t__f32__adc__win_8asm_html_aece64baebe81ff6fbb7a74540a221fc3"><div class="ttname"><a href="_r_f_f_t__f32__adc__win_8asm.html#aece64baebe81ff6fbb7a74540a221fc3">RFFT_adc_f32_win</a></div><div class="ttdeci">*****************************************************************************Module definition for external reference if __TI_EABI__ asg RFFT_adc_f32_win</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32__adc__win_8asm_source.html#l00016">RFFT_f32_adc_win.asm:16</a></div></div>
+<div class="ttc" id="a_r_f_f_t__f32__mag_8asm_html_a4c472a8faa2c848a76e49ce444dd00fa"><div class="ttname"><a href="_r_f_f_t__f32__mag_8asm.html#a4c472a8faa2c848a76e49ce444dd00fa">RFFT_f32</a></div><div class="ttdeci">* RFFT_f32() or RFFT_f32u() has been called prior to this function</div></div>
+<div class="ttc" id="a_r_f_f_t__f32__mag_8asm_html_ae0e430848795df457d5610979de05789"><div class="ttname"><a href="_r_f_f_t__f32__mag_8asm.html#ae0e430848795df457d5610979de05789">RFFT_f32_mag</a></div><div class="ttdeci">if __TI_EABI__ asg RFFT_f32_mag</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32__mag_8asm_source.html#l00095">RFFT_f32_mag.asm:95</a></div></div>
+<div class="ttc" id="a_r_f_f_t__f32s__mag_8asm_html_a757d5457319f6231c46a88ba5458d6e5"><div class="ttname"><a href="_r_f_f_t__f32s__mag_8asm.html#a757d5457319f6231c46a88ba5458d6e5">RFFT_f32s_mag</a></div><div class="ttdeci">if __TI_EABI__ asg RFFT_f32s_mag</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32s__mag_8asm_source.html#l00094">RFFT_f32s_mag.asm:94</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a0d54e14dfc29f5c9635fe96077c5b959"><div class="ttname"><a href="fpu__rfft_8h.html#a0d54e14dfc29f5c9635fe96077c5b959">RFFT_f32_setStages</a></div><div class="ttdeci">static void RFFT_f32_setStages(RFFT_F32_STRUCT_Handle fh, const uint16_t st)</div><div class="ttdoc">Set the number of FFT stages</div><div class="ttdef"><b>定义</b> <a href="#l00171">fpu_rfft.h:171</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a262641fc1a92961dc6bd0342bfd67013"><div class="ttname"><a href="fpu__rfft_8h.html#a262641fc1a92961dc6bd0342bfd67013">RFFT_f32_getInputPtr</a></div><div class="ttdeci">static float * RFFT_f32_getInputPtr(RFFT_F32_STRUCT_Handle fh)</div><div class="ttdoc">Get the input buffer pointer</div><div class="ttdef"><b>定义</b> <a href="#l00084">fpu_rfft.h:84</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a30a4b4aaa467f7d81e84b2b0ffa0d162"><div class="ttname"><a href="fpu__rfft_8h.html#a30a4b4aaa467f7d81e84b2b0ffa0d162">RFFT_f32_setOutputPtr</a></div><div class="ttdeci">static void RFFT_f32_setOutputPtr(RFFT_F32_STRUCT_Handle fh, const float *po)</div><div class="ttdoc">Set the output buffer pointer</div><div class="ttdef"><b>定义</b> <a href="#l00093">fpu_rfft.h:93</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a3a10a4d566ee53d12f3d1f0d2518525e"><div class="ttname"><a href="fpu__rfft_8h.html#a3a10a4d566ee53d12f3d1f0d2518525e">RFFT_f32_getMagnitudePtr</a></div><div class="ttdeci">static float * RFFT_f32_getMagnitudePtr(RFFT_F32_STRUCT_Handle fh)</div><div class="ttdoc">Get the magnitude buffer pointer</div><div class="ttdef"><b>定义</b> <a href="#l00142">fpu_rfft.h:142</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a3fff1f49c27d3cdcaf50ed384fda3ef7"><div class="ttname"><a href="fpu__rfft_8h.html#a3fff1f49c27d3cdcaf50ed384fda3ef7">RFFT_f32_getPhasePtr</a></div><div class="ttdeci">static float * RFFT_f32_getPhasePtr(RFFT_F32_STRUCT_Handle fh)</div><div class="ttdoc">Get the phase buffer pointer</div><div class="ttdef"><b>定义</b> <a href="#l00162">fpu_rfft.h:162</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a4d291e84e6204b5848f2f75c0b9e9be9"><div class="ttname"><a href="fpu__rfft_8h.html#a4d291e84e6204b5848f2f75c0b9e9be9">RFFT_ADC_f32_setTailPtr</a></div><div class="ttdeci">static void RFFT_ADC_f32_setTailPtr(RFFT_ADC_F32_STRUCT_Handle fh, const void *pt)</div><div class="ttdoc">Set the tail pointer</div><div class="ttdef"><b>定义</b> <a href="#l00228">fpu_rfft.h:228</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a52ef2f64a2d6392ce26bb85340c9a376"><div class="ttname"><a href="fpu__rfft_8h.html#a52ef2f64a2d6392ce26bb85340c9a376">RFFT_f32_getOutputPtr</a></div><div class="ttdeci">static float * RFFT_f32_getOutputPtr(RFFT_F32_STRUCT_Handle fh)</div><div class="ttdoc">Get the output buffer pointer</div><div class="ttdef"><b>定义</b> <a href="#l00103">fpu_rfft.h:103</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a58fc9532ac9190d6cf34d32140122da8"><div class="ttname"><a href="fpu__rfft_8h.html#a58fc9532ac9190d6cf34d32140122da8">RFFT_ADC_f32_getTailPtr</a></div><div class="ttdeci">static void * RFFT_ADC_f32_getTailPtr(RFFT_ADC_F32_STRUCT_Handle fh)</div><div class="ttdoc">Get the tail pointer</div><div class="ttdef"><b>定义</b> <a href="#l00238">fpu_rfft.h:238</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a7ee4950c0f3a0aa89000ac36ffffcd16"><div class="ttname"><a href="fpu__rfft_8h.html#a7ee4950c0f3a0aa89000ac36ffffcd16">RFFT_f32_twiddleFactors</a></div><div class="ttdeci">float RFFT_f32_twiddleFactors[1020]</div><div class="ttdoc">Twiddle Factor Table for a 2048-pt (max) Real FFT</div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a83b0d9297d7785030f0a50a1f7c5b95e"><div class="ttname"><a href="fpu__rfft_8h.html#a83b0d9297d7785030f0a50a1f7c5b95e">RFFT_f32_getFFTSize</a></div><div class="ttdeci">static uint16_t RFFT_f32_getFFTSize(RFFT_F32_STRUCT_Handle fh)</div><div class="ttdoc">Get the size of the FFT</div><div class="ttdef"><b>定义</b> <a href="#l00200">fpu_rfft.h:200</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a8719399d7d51583f00f1e4a2e83ba329"><div class="ttname"><a href="fpu__rfft_8h.html#a8719399d7d51583f00f1e4a2e83ba329">RFFT_ADC_f32_getInBufPtr</a></div><div class="ttdeci">static uint16_t * RFFT_ADC_f32_getInBufPtr(RFFT_ADC_F32_STRUCT_Handle fh)</div><div class="ttdoc">get the input buffer pointer</div><div class="ttdef"><b>定义</b> <a href="#l00219">fpu_rfft.h:219</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a89dba923f55a3ade344aa41159b7fa2f"><div class="ttname"><a href="fpu__rfft_8h.html#a89dba923f55a3ade344aa41159b7fa2f">RFFT_f32_setInputPtr</a></div><div class="ttdeci">static void RFFT_f32_setInputPtr(RFFT_F32_STRUCT_Handle fh, const float *pi)</div><div class="ttdoc">Set the input buffer pointer</div><div class="ttdef"><b>定义</b> <a href="#l00074">fpu_rfft.h:74</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a8a977d8b9a2c1763124388928d94204a"><div class="ttname"><a href="fpu__rfft_8h.html#a8a977d8b9a2c1763124388928d94204a">RFFT_ADC_F32_STRUCT_Handle</a></div><div class="ttdeci">RFFT_ADC_F32_STRUCT * RFFT_ADC_F32_STRUCT_Handle</div><div class="ttdoc">Handle to the Real FFT (with ADC input) structure</div><div class="ttdef"><b>定义</b> <a href="#l00047">fpu_rfft.h:47</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a8e0e8c088fc134b9afc9994c3b253faf"><div class="ttname"><a href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a></div><div class="ttdeci">RFFT_F32_STRUCT * RFFT_F32_STRUCT_Handle</div><div class="ttdoc">Handle to the Real FFT object</div><div class="ttdef"><b>定义</b> <a href="#l00036">fpu_rfft.h:36</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a9124e5c81f2cf7c0b2b8be3e761117bf"><div class="ttname"><a href="fpu__rfft_8h.html#a9124e5c81f2cf7c0b2b8be3e761117bf">RFFT_f32u</a></div><div class="ttdeci">void RFFT_f32u(RFFT_F32_STRUCT_Handle hndRFFT_F32)</div><div class="ttdoc">Real FFT (Unaligned).</div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a92ccd21f6a5273d25995e8a19364775e"><div class="ttname"><a href="fpu__rfft_8h.html#a92ccd21f6a5273d25995e8a19364775e">RFFT_f32_setTwiddlesPtr</a></div><div class="ttdeci">static void RFFT_f32_setTwiddlesPtr(RFFT_F32_STRUCT_Handle fh, const float *pc)</div><div class="ttdoc">Set the twiddles pointer</div><div class="ttdef"><b>定义</b> <a href="#l00112">fpu_rfft.h:112</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a979a675d861bc6e2191040eefb890dda"><div class="ttname"><a href="fpu__rfft_8h.html#a979a675d861bc6e2191040eefb890dda">RFFT_f32_getTwiddlesPtr</a></div><div class="ttdeci">static float * RFFT_f32_getTwiddlesPtr(RFFT_F32_STRUCT_Handle fh)</div><div class="ttdoc">Get the twiddles pointer</div><div class="ttdef"><b>定义</b> <a href="#l00122">fpu_rfft.h:122</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a9903744e1b4aa7f22343b3af65be67af"><div class="ttname"><a href="fpu__rfft_8h.html#a9903744e1b4aa7f22343b3af65be67af">FPU32RFFTtwiddleFactors</a></div><div class="ttdeci">float FPU32RFFTtwiddleFactors[1020]</div></div>
+<div class="ttc" id="afpu__rfft_8h_html_a9ba057440b48ec821d12b3afe3223d2e"><div class="ttname"><a href="fpu__rfft_8h.html#a9ba057440b48ec821d12b3afe3223d2e">RFFT_f32_sincostable</a></div><div class="ttdeci">void RFFT_f32_sincostable(RFFT_F32_STRUCT_Handle hndRFFT_F32)</div><div class="ttdoc">Generate twiddle factors for the Real FFT.</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32__sincostable_8c_source.html#l00077">RFFT_f32_sincostable.c:77</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_aa8570a2cefb6e9f92fdfc14007e3e2f7"><div class="ttname"><a href="fpu__rfft_8h.html#aa8570a2cefb6e9f92fdfc14007e3e2f7">RFFT_f32_setFFTSize</a></div><div class="ttdeci">static void RFFT_f32_setFFTSize(RFFT_F32_STRUCT_Handle fh, const uint16_t sz)</div><div class="ttdoc">Set the size of the FFT</div><div class="ttdef"><b>定义</b> <a href="#l00190">fpu_rfft.h:190</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_aa982a487f6da0f5d2137d4ee9cea234e"><div class="ttname"><a href="fpu__rfft_8h.html#aa982a487f6da0f5d2137d4ee9cea234e">RFFT_adc_f32</a></div><div class="ttdeci">void RFFT_adc_f32(RFFT_ADC_F32_STRUCT_Handle hndRFFT_ADC_F32)</div><div class="ttdoc">Real FFT with ADC Input.</div></div>
+<div class="ttc" id="afpu__rfft_8h_html_abd5ff5db18a8ee39271978c587093ce0"><div class="ttname"><a href="fpu__rfft_8h.html#abd5ff5db18a8ee39271978c587093ce0">RFFT_f32_setPhasePtr</a></div><div class="ttdeci">static void RFFT_f32_setPhasePtr(RFFT_F32_STRUCT_Handle fh, const float *pp)</div><div class="ttdoc">Set the phase buffer pointer</div><div class="ttdef"><b>定义</b> <a href="#l00151">fpu_rfft.h:151</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_acaf5a2be5b4d39c3407c4404f6a2c7d6"><div class="ttname"><a href="fpu__rfft_8h.html#acaf5a2be5b4d39c3407c4404f6a2c7d6">RFFT_ADC_f32_setInBufPtr</a></div><div class="ttdeci">static void RFFT_ADC_f32_setInBufPtr(RFFT_ADC_F32_STRUCT_Handle fh, const uint16_t *pi)</div><div class="ttdoc">Set the input buffer pointer</div><div class="ttdef"><b>定义</b> <a href="#l00209">fpu_rfft.h:209</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_ae8f5e276d0d7a20e53283666cf3545f3"><div class="ttname"><a href="fpu__rfft_8h.html#ae8f5e276d0d7a20e53283666cf3545f3">RFFT_f32_setMagnitudePtr</a></div><div class="ttdeci">static void RFFT_f32_setMagnitudePtr(RFFT_F32_STRUCT_Handle fh, const float *pm)</div><div class="ttdoc">Set the magnitude buffer pointer</div><div class="ttdef"><b>定义</b> <a href="#l00131">fpu_rfft.h:131</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_aee841a4f8b872d083983d709f6d77d91"><div class="ttname"><a href="fpu__rfft_8h.html#aee841a4f8b872d083983d709f6d77d91">RFFT_f32_win</a></div><div class="ttdeci">void RFFT_f32_win(float *pBuffer, const float *pWindow, const uint16_t size)</div><div class="ttdoc">Windowing function for the 32-bit real FFT</div></div>
+<div class="ttc" id="afpu__rfft_8h_html_af3564980c8919eeb3a316315d825fb6b"><div class="ttname"><a href="fpu__rfft_8h.html#af3564980c8919eeb3a316315d825fb6b">RFFT_f32_getStages</a></div><div class="ttdeci">static uint16_t RFFT_f32_getStages(RFFT_F32_STRUCT_Handle fh)</div><div class="ttdoc">Get the number of FFT stages</div><div class="ttdef"><b>定义</b> <a href="#l00181">fpu_rfft.h:181</a></div></div>
+<div class="ttc" id="afpu__rfft_8h_html_affb4b7030f76eacc85c7dc8e26a380ec"><div class="ttname"><a href="fpu__rfft_8h.html#affb4b7030f76eacc85c7dc8e26a380ec">RFFT_f32_phase</a></div><div class="ttdeci">void RFFT_f32_phase(RFFT_F32_STRUCT_Handle hndRFFT_F32)</div><div class="ttdoc">Real FFT Phase.</div></div>
+<div class="ttc" id="afpu__types_8h_html"><div class="ttname"><a href="fpu__types_8h.html">fpu_types.h</a></div><div class="ttdoc">Prototypes and Definitions for the C28x FPU Library</div></div>
+<div class="ttc" id="astruct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t_html"><div class="ttname"><a href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html">RFFT_ADC_F32_STRUCT</a></div><div class="ttdoc">Structure for the Real FFT with ADC input</div><div class="ttdef"><b>定义</b> <a href="#l00040">fpu_rfft.h:40</a></div></div>
+<div class="ttc" id="astruct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t_html_a2394d2a69f9e145fa93cf6b0d19c2de6"><div class="ttname"><a href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html#a2394d2a69f9e145fa93cf6b0d19c2de6">RFFT_ADC_F32_STRUCT::Tail</a></div><div class="ttdeci">void * Tail</div><div class="ttdoc">Null pointer to the OutBuf of RFFT_F32_STRUCT</div><div class="ttdef"><b>定义</b> <a href="#l00042">fpu_rfft.h:42</a></div></div>
+<div class="ttc" id="astruct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t_html_a5005fb9b7f47ec5684b25816e8dbc756"><div class="ttname"><a href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html#a5005fb9b7f47ec5684b25816e8dbc756">RFFT_ADC_F32_STRUCT::InBuf</a></div><div class="ttdeci">uint16_t * InBuf</div><div class="ttdoc">Pointer to the input buffer</div><div class="ttdef"><b>定义</b> <a href="#l00041">fpu_rfft.h:41</a></div></div>
+<div class="ttc" id="astruct_r_f_f_t___f32___s_t_r_u_c_t_html"><div class="ttname"><a href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">RFFT_F32_STRUCT</a></div><div class="ttdoc">Structure for the Real FFT</div><div class="ttdef"><b>定义</b> <a href="#l00024">fpu_rfft.h:24</a></div></div>
+<div class="ttc" id="astruct_r_f_f_t___f32___s_t_r_u_c_t_html_a0910d54540ed327ab37748d3568dada3"><div class="ttname"><a href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a0910d54540ed327ab37748d3568dada3">RFFT_F32_STRUCT::InBuf</a></div><div class="ttdeci">float * InBuf</div><div class="ttdoc">Pointer to the input buffer</div><div class="ttdef"><b>定义</b> <a href="#l00025">fpu_rfft.h:25</a></div></div>
+<div class="ttc" id="astruct_r_f_f_t___f32___s_t_r_u_c_t_html_a17121f2659e2dce87f2e88009b873922"><div class="ttname"><a href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a17121f2659e2dce87f2e88009b873922">RFFT_F32_STRUCT::FFTStages</a></div><div class="ttdeci">uint16_t FFTStages</div><div class="ttdoc">Number of FFT stages</div><div class="ttdef"><b>定义</b> <a href="#l00031">fpu_rfft.h:31</a></div></div>
+<div class="ttc" id="astruct_r_f_f_t___f32___s_t_r_u_c_t_html_a786173823bd56199aecdd62e6113da7f"><div class="ttname"><a href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a786173823bd56199aecdd62e6113da7f">RFFT_F32_STRUCT::FFTSize</a></div><div class="ttdeci">uint16_t FFTSize</div><div class="ttdoc">Size of the FFT (number of real data points)</div><div class="ttdef"><b>定义</b> <a href="#l00030">fpu_rfft.h:30</a></div></div>
+<div class="ttc" id="astruct_r_f_f_t___f32___s_t_r_u_c_t_html_a9b5615538b5e6a334697e9540aefffea"><div class="ttname"><a href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#a9b5615538b5e6a334697e9540aefffea">RFFT_F32_STRUCT::OutBuf</a></div><div class="ttdeci">float * OutBuf</div><div class="ttdoc">Pointer to the output buffer</div><div class="ttdef"><b>定义</b> <a href="#l00026">fpu_rfft.h:26</a></div></div>
+<div class="ttc" id="astruct_r_f_f_t___f32___s_t_r_u_c_t_html_ab1180d10df01c6b2aef2650e057d3cb0"><div class="ttname"><a href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#ab1180d10df01c6b2aef2650e057d3cb0">RFFT_F32_STRUCT::CosSinBuf</a></div><div class="ttdeci">float * CosSinBuf</div><div class="ttdoc">Pointer to the twiddle factors</div><div class="ttdef"><b>定义</b> <a href="#l00027">fpu_rfft.h:27</a></div></div>
+<div class="ttc" id="astruct_r_f_f_t___f32___s_t_r_u_c_t_html_ad9f1c74853f82c802c410ab58df9116d"><div class="ttname"><a href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#ad9f1c74853f82c802c410ab58df9116d">RFFT_F32_STRUCT::PhaseBuf</a></div><div class="ttdeci">float * PhaseBuf</div><div class="ttdoc">Pointer to the phase buffer</div><div class="ttdef"><b>定义</b> <a href="#l00029">fpu_rfft.h:29</a></div></div>
+<div class="ttc" id="astruct_r_f_f_t___f32___s_t_r_u_c_t_html_adc437e8e9eabf692ccf968096f55ce3e"><div class="ttname"><a href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#adc437e8e9eabf692ccf968096f55ce3e">RFFT_F32_STRUCT::MagBuf</a></div><div class="ttdeci">float * MagBuf</div><div class="ttdoc">Pointer to the magnitude buffer</div><div class="ttdef"><b>定义</b> <a href="#l00028">fpu_rfft.h:28</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_21974f642239eac7f24099953dcfa10f.html">FFT</a></li><li class="navelem"><a href="dir_aed7131e372a5760213c24165cb84e6a.html">dsp_lib</a></li><li class="navelem"><a href="fpu__rfft_8h.html">fpu_rfft.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

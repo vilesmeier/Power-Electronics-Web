@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/FFT/dsp_lib/win/fpu_fft_hann.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('fpu__fft__hann_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fpu_fft_hann.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="fpu__fft__hann_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:abda226d161f14a7bf8e5d25d8232b83e" id="r_abda226d161f14a7bf8e5d25d8232b83e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abda226d161f14a7bf8e5d25d8232b83e">HANN32</a></td></tr>
+<tr class="memitem:a02b83ae32516a93c3da1d19cd329370a" id="r_a02b83ae32516a93c3da1d19cd329370a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02b83ae32516a93c3da1d19cd329370a">HANN64</a></td></tr>
+<tr class="memitem:a9e33d3ea7e960c844b6149251416ddb9" id="r_a9e33d3ea7e960c844b6149251416ddb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e33d3ea7e960c844b6149251416ddb9">HANN128</a></td></tr>
+<tr class="memitem:a1c8b4f62a06d495ab72f038b56ee4216" id="r_a1c8b4f62a06d495ab72f038b56ee4216"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c8b4f62a06d495ab72f038b56ee4216">HANN256</a></td></tr>
+<tr class="memitem:a20142d2846cb81f38c200c918d15af06" id="r_a20142d2846cb81f38c200c918d15af06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20142d2846cb81f38c200c918d15af06">HANN512</a></td></tr>
+<tr class="memitem:a7e7569678bf38363062746448fa45cea" id="r_a7e7569678bf38363062746448fa45cea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e7569678bf38363062746448fa45cea">HANN1024</a></td></tr>
+<tr class="memitem:a0f24e15756c9255771c23172c76b03b3" id="r_a0f24e15756c9255771c23172c76b03b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f24e15756c9255771c23172c76b03b3">HANN2048</a></td></tr>
+<tr class="memitem:a46e401c3bf16b3c47859bd6c4dca20a9" id="r_a46e401c3bf16b3c47859bd6c4dca20a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46e401c3bf16b3c47859bd6c4dca20a9">HANN4096</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="a7e7569678bf38363062746448fa45cea" name="a7e7569678bf38363062746448fa45cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e7569678bf38363062746448fa45cea">&#9670;&#160;</a></span>HANN1024</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HANN1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__hann_8h_source.html">fpu_fft_hann.h</a> 第 <a class="el" href="fpu__fft__hann_8h_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9e33d3ea7e960c844b6149251416ddb9" name="a9e33d3ea7e960c844b6149251416ddb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e33d3ea7e960c844b6149251416ddb9">&#9670;&#160;</a></span>HANN128</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HANN128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00000000, 0.00061179, 0.00244567, 0.00549715, 0.00975876, \</div>
+<div class="line">0.01522007, 0.02186772, 0.02968544, 0.03865409, 0.04875174, \</div>
+<div class="line">0.05995367, 0.07223246, 0.08555808, 0.09989790, 0.11521684, \</div>
+<div class="line">0.13147741, 0.14863981, 0.16666206, 0.18550003, 0.20510764, \</div>
+<div class="line">0.22543690, 0.24643807, 0.26805974, 0.29024901, 0.31295157, \</div>
+<div class="line">0.33611188, 0.35967324, 0.38357801, 0.40776768, 0.43218306, \</div>
+<div class="line">0.45676440, 0.48145154, 0.50618408, 0.53090148, 0.55554326, \</div>
+<div class="line">0.58004912, 0.60435908, 0.62841366, 0.65215399, 0.67552198, \</div>
+<div class="line">0.69846043, 0.72091321, 0.74282539, 0.76414333, 0.78481486, \</div>
+<div class="line">0.80478941, 0.82401809, 0.84245384, 0.86005154, 0.87676814, \</div>
+<div class="line">0.89256273, 0.90739665, 0.92123360, 0.93403973, 0.94578368, \</div>
+<div class="line">0.95643673, 0.96597280, 0.97436855, 0.98160345, 0.98765978, \</div>
+<div class="line">0.99252273, 0.99618039, 0.99862382, 0.99984703, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__hann_8h_source.html">fpu_fft_hann.h</a> 第 <a class="el" href="fpu__fft__hann_8h_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0f24e15756c9255771c23172c76b03b3" name="a0f24e15756c9255771c23172c76b03b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f24e15756c9255771c23172c76b03b3">&#9670;&#160;</a></span>HANN2048</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HANN2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__hann_8h_source.html">fpu_fft_hann.h</a> 第 <a class="el" href="fpu__fft__hann_8h_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1c8b4f62a06d495ab72f038b56ee4216" name="a1c8b4f62a06d495ab72f038b56ee4216"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c8b4f62a06d495ab72f038b56ee4216">&#9670;&#160;</a></span>HANN256</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HANN256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00000000, 0.00015177, 0.00060700, 0.00136541, 0.00242654, \</div>
+<div class="line">0.00378975, 0.00545420, 0.00741888, 0.00968261, 0.01224402, \</div>
+<div class="line">0.01510153, 0.01825343, 0.02169779, 0.02543253, 0.02945537, \</div>
+<div class="line">0.03376389, 0.03835545, 0.04322727, 0.04837640, 0.05379971, \</div>
+<div class="line">0.05949390, 0.06545553, 0.07168096, 0.07816643, 0.08490798, \</div>
+<div class="line">0.09190154, 0.09914286, 0.10662753, 0.11435102, 0.12230863, \</div>
+<div class="line">0.13049554, 0.13890677, 0.14753723, 0.15638166, 0.16543470, \</div>
+<div class="line">0.17469085, 0.18414450, 0.19378990, 0.20362120, 0.21363243, \</div>
+<div class="line">0.22381751, 0.23417027, 0.24468440, 0.25535354, 0.26617120, \</div>
+<div class="line">0.27713082, 0.28822574, 0.29944923, 0.31079447, 0.32225458, \</div>
+<div class="line">0.33382260, 0.34549150, 0.35725421, 0.36910357, 0.38103240, \</div>
+<div class="line">0.39303346, 0.40509945, 0.41722306, 0.42939692, 0.44161365, \</div>
+<div class="line">0.45386582, 0.46614600, 0.47844673, 0.49076055, 0.50307997, \</div>
+<div class="line">0.51539753, 0.52770574, 0.53999713, 0.55226423, 0.56449961, \</div>
+<div class="line">0.57669583, 0.58884548, 0.60094120, 0.61297564, 0.62494149, \</div>
+<div class="line">0.63683150, 0.64863843, 0.66035512, 0.67197446, 0.68348940, \</div>
+<div class="line">0.69489294, 0.70617816, 0.71733821, 0.72836632, 0.73925578, \</div>
+<div class="line">0.75000000, 0.76059244, 0.77102668, 0.78129638, 0.79139530, \</div>
+<div class="line">0.80131732, 0.81105641, 0.82060666, 0.82996227, 0.83911756, \</div>
+<div class="line">0.84806697, 0.85680508, 0.86532657, 0.87362627, 0.88169914, \</div>
+<div class="line">0.88954029, 0.89714494, 0.90450850, 0.91162647, 0.91849455, \</div>
+<div class="line">0.92510857, 0.93146450, 0.93755849, 0.94338684, 0.94894602, \</div>
+<div class="line">0.95423264, 0.95924349, 0.96397554, 0.96842592, 0.97259191, \</div>
+<div class="line">0.97647100, 0.98006082, 0.98335920, 0.98636414, 0.98907380, \</div>
+<div class="line">0.99148655, 0.99360092, 0.99541563, 0.99692957, 0.99814183, \</div>
+<div class="line">0.99905166, 0.99965853, 0.99996206, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__hann_8h_source.html">fpu_fft_hann.h</a> 第 <a class="el" href="fpu__fft__hann_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abda226d161f14a7bf8e5d25d8232b83e" name="abda226d161f14a7bf8e5d25d8232b83e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abda226d161f14a7bf8e5d25d8232b83e">&#9670;&#160;</a></span>HANN32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HANN32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00000000, 0.01023503, 0.04052109, 0.08961828, 0.15551654, \</div>
+<div class="line">0.23551799, 0.32634737, 0.42428611, 0.52532458, 0.62532627, \</div>
+<div class="line">0.72019708, 0.80605299, 0.87937906, 0.93717331, 0.97706963, \</div>
+<div class="line">0.99743466, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__hann_8h_source.html">fpu_fft_hann.h</a> 第 <a class="el" href="fpu__fft__hann_8h_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a46e401c3bf16b3c47859bd6c4dca20a9" name="a46e401c3bf16b3c47859bd6c4dca20a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e401c3bf16b3c47859bd6c4dca20a9">&#9670;&#160;</a></span>HANN4096</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HANN4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__hann_8h_source.html">fpu_fft_hann.h</a> 第 <a class="el" href="fpu__fft__hann_8h_source.html#l00431">431</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a20142d2846cb81f38c200c918d15af06" name="a20142d2846cb81f38c200c918d15af06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20142d2846cb81f38c200c918d15af06">&#9670;&#160;</a></span>HANN512</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HANN512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__hann_8h_source.html">fpu_fft_hann.h</a> 第 <a class="el" href="fpu__fft__hann_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a02b83ae32516a93c3da1d19cd329370a" name="a02b83ae32516a93c3da1d19cd329370a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b83ae32516a93c3da1d19cd329370a">&#9670;&#160;</a></span>HANN64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HANN64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00000000, 0.00248461, 0.00991376, 0.02221360, 0.03926189, \</div>
+<div class="line">0.06088921, 0.08688061, 0.11697778, 0.15088159, 0.18825510, \</div>
+<div class="line">0.22872687, 0.27189467, 0.31732949, 0.36457977, 0.41317591, \</div>
+<div class="line">0.46263495, 0.51246535, 0.56217185, 0.61126047, 0.65924333, \</div>
+<div class="line">0.70564355, 0.75000000, 0.79187184, 0.83084292, 0.86652594, \</div>
+<div class="line">0.89856625, 0.92664544, 0.95048443, 0.96984631, 0.98453864, \</div>
+<div class="line">0.99441541, 0.99937846, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__hann_8h_source.html">fpu_fft_hann.h</a> 第 <a class="el" href="fpu__fft__hann_8h_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_21974f642239eac7f24099953dcfa10f.html">FFT</a></li><li class="navelem"><a href="dir_aed7131e372a5760213c24165cb84e6a.html">dsp_lib</a></li><li class="navelem"><a href="dir_badc97c40bd22aec4e5786edc2ccf63e.html">win</a></li><li class="navelem"><a href="fpu__fft__hann_8h.html">fpu_fft_hann.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

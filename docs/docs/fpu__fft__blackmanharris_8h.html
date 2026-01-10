@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/FFT/dsp_lib/win/fpu_fft_blackmanharris.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('fpu__fft__blackmanharris_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fpu_fft_blackmanharris.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="fpu__fft__blackmanharris_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a18bd9d42745d16d00b6f0989fad6436d" id="r_a18bd9d42745d16d00b6f0989fad6436d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18bd9d42745d16d00b6f0989fad6436d">BLACKMANHARRIS32</a></td></tr>
+<tr class="memitem:a685e3408f13d9d481e676e51cf3b58c5" id="r_a685e3408f13d9d481e676e51cf3b58c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a685e3408f13d9d481e676e51cf3b58c5">BLACKMANHARRIS64</a></td></tr>
+<tr class="memitem:a8c4e876436eb73e033323ab47527f982" id="r_a8c4e876436eb73e033323ab47527f982"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c4e876436eb73e033323ab47527f982">BLACKMANHARRIS128</a></td></tr>
+<tr class="memitem:a1eccb04e9dac1e3cd2b7139295beb079" id="r_a1eccb04e9dac1e3cd2b7139295beb079"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1eccb04e9dac1e3cd2b7139295beb079">BLACKMANHARRIS256</a></td></tr>
+<tr class="memitem:a755bce011355731913ccfb1c44177de2" id="r_a755bce011355731913ccfb1c44177de2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a755bce011355731913ccfb1c44177de2">BLACKMANHARRIS512</a></td></tr>
+<tr class="memitem:a780103ca3d0e32f8ce6de61aa7603925" id="r_a780103ca3d0e32f8ce6de61aa7603925"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a780103ca3d0e32f8ce6de61aa7603925">BLACKMANHARRIS1024</a></td></tr>
+<tr class="memitem:a661420af0ebccca670b1a8e74c074516" id="r_a661420af0ebccca670b1a8e74c074516"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a661420af0ebccca670b1a8e74c074516">BLACKMANHARRIS2048</a></td></tr>
+<tr class="memitem:a0153314c91d138e795cdb1f34360763b" id="r_a0153314c91d138e795cdb1f34360763b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0153314c91d138e795cdb1f34360763b">BLACKMANHARRIS4096</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="a780103ca3d0e32f8ce6de61aa7603925" name="a780103ca3d0e32f8ce6de61aa7603925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a780103ca3d0e32f8ce6de61aa7603925">&#9670;&#160;</a></span>BLACKMANHARRIS1024</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLACKMANHARRIS1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__blackmanharris_8h_source.html">fpu_fft_blackmanharris.h</a> 第 <a class="el" href="fpu__fft__blackmanharris_8h_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8c4e876436eb73e033323ab47527f982" name="a8c4e876436eb73e033323ab47527f982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c4e876436eb73e033323ab47527f982">&#9670;&#160;</a></span>BLACKMANHARRIS128</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLACKMANHARRIS128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00006000, 0.00009483, 0.00020179, 0.00038830, 0.00066674, \</div>
+<div class="line">0.00105442, 0.00157356, 0.00225133, 0.00311970, 0.00421547, \</div>
+<div class="line">0.00558012, 0.00725968, 0.00930454, 0.01176921, 0.01471203, \</div>
+<div class="line">0.01819474, 0.02228210, 0.02704131, 0.03254143, 0.03885264, \</div>
+<div class="line">0.04604553, 0.05419017, 0.06335527, 0.07360708, 0.08500844, \</div>
+<div class="line">0.09761763, 0.11148723, 0.12666304, 0.14318288, 0.16107550, \</div>
+<div class="line">0.18035950, 0.20104229, 0.22311918, 0.24657249, 0.27137086, \</div>
+<div class="line">0.29746867, 0.32480555, 0.35330618, 0.38288016, 0.41342216, \</div>
+<div class="line">0.44481218, 0.47691609, 0.50958637, 0.54266298, 0.57597455, \</div>
+<div class="line">0.60933964, 0.64256825, 0.67546351, 0.70782341, 0.73944280, \</div>
+<div class="line">0.77011533, 0.79963562, 0.82780135, 0.85441543, 0.87928816, \</div>
+<div class="line">0.90223927, 0.92309999, 0.94171497, 0.95794401, 0.97166377, \</div>
+<div class="line">0.98276910, 0.99117439, 0.99681451, 0.99964560, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__blackmanharris_8h_source.html">fpu_fft_blackmanharris.h</a> 第 <a class="el" href="fpu__fft__blackmanharris_8h_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a661420af0ebccca670b1a8e74c074516" name="a661420af0ebccca670b1a8e74c074516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a661420af0ebccca670b1a8e74c074516">&#9670;&#160;</a></span>BLACKMANHARRIS2048</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLACKMANHARRIS2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__blackmanharris_8h_source.html">fpu_fft_blackmanharris.h</a> 第 <a class="el" href="fpu__fft__blackmanharris_8h_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1eccb04e9dac1e3cd2b7139295beb079" name="a1eccb04e9dac1e3cd2b7139295beb079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eccb04e9dac1e3cd2b7139295beb079">&#9670;&#160;</a></span>BLACKMANHARRIS256</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLACKMANHARRIS256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00006000, 0.00006860, 0.00009455, 0.00013832, 0.00020065, \</div>
+<div class="line">0.00028262, 0.00038560, 0.00051126, 0.00066158, 0.00083884, \</div>
+<div class="line">0.00104563, 0.00128484, 0.00155964, 0.00187355, 0.00223033, \</div>
+<div class="line">0.00263409, 0.00308920, 0.00360034, 0.00417247, 0.00481084, \</div>
+<div class="line">0.00552098, 0.00630870, 0.00718006, 0.00814141, 0.00919934, \</div>
+<div class="line">0.01036068, 0.01163251, 0.01302212, 0.01453703, 0.01618495, \</div>
+<div class="line">0.01797378, 0.01991159, 0.02200659, 0.02426716, 0.02670175, \</div>
+<div class="line">0.02931895, 0.03212740, 0.03513580, 0.03835286, 0.04178733, \</div>
+<div class="line">0.04544788, 0.04934319, 0.05348180, 0.05787218, 0.06252264, \</div>
+<div class="line">0.06744132, 0.07263615, 0.07811482, 0.08388475, 0.08995306, \</div>
+<div class="line">0.09632651, 0.10301149, 0.11001398, 0.11733952, 0.12499316, \</div>
+<div class="line">0.13297941, 0.14130228, 0.14996514, 0.15897078, 0.16832133, \</div>
+<div class="line">0.17801823, 0.18806221, 0.19845326, 0.20919063, 0.22027273, \</div>
+<div class="line">0.23169719, 0.24346078, 0.25555943, 0.26798819, 0.28074121, \</div>
+<div class="line">0.29381174, 0.30719212, 0.32087377, 0.33484718, 0.34910191, \</div>
+<div class="line">0.36362660, 0.37840896, 0.39343578, 0.40869295, 0.42416547, \</div>
+<div class="line">0.43983746, 0.45569219, 0.47171207, 0.48787873, 0.50417301, \</div>
+<div class="line">0.52057500, 0.53706408, 0.55361894, 0.57021767, 0.58683774, \</div>
+<div class="line">0.60345608, 0.62004914, 0.63659291, 0.65306299, 0.66943466, \</div>
+<div class="line">0.68568289, 0.70178248, 0.71770802, 0.73343404, 0.74893503, \</div>
+<div class="line">0.76418550, 0.77916006, 0.79383351, 0.80818084, 0.82217737, \</div>
+<div class="line">0.83579875, 0.84902107, 0.86182093, 0.87417545, 0.88606241, \</div>
+<div class="line">0.89746024, 0.90834813, 0.91870606, 0.92851487, 0.93775632, \</div>
+<div class="line">0.94641312, 0.95446901, 0.96190878, 0.96871833, 0.97488471, \</div>
+<div class="line">0.98039615, 0.98524209, 0.98941323, 0.99290156, 0.99570034, \</div>
+<div class="line">0.99780417, 0.99920899, 0.99991208, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__blackmanharris_8h_source.html">fpu_fft_blackmanharris.h</a> 第 <a class="el" href="fpu__fft__blackmanharris_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a18bd9d42745d16d00b6f0989fad6436d" name="a18bd9d42745d16d00b6f0989fad6436d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18bd9d42745d16d00b6f0989fad6436d">&#9670;&#160;</a></span>BLACKMANHARRIS32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLACKMANHARRIS32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00006000, 0.00069917, 0.00331281, 0.00997433, 0.02404092, \</div>
+<div class="line">0.04986335, 0.09217934, 0.15515234, 0.24115767, 0.34956630, \</div>
+<div class="line">0.47587082, 0.61148961, 0.74445942, 0.86100833, 0.94775351, \</div>
+<div class="line">0.99406708, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__blackmanharris_8h_source.html">fpu_fft_blackmanharris.h</a> 第 <a class="el" href="fpu__fft__blackmanharris_8h_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0153314c91d138e795cdb1f34360763b" name="a0153314c91d138e795cdb1f34360763b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0153314c91d138e795cdb1f34360763b">&#9670;&#160;</a></span>BLACKMANHARRIS4096</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLACKMANHARRIS4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__blackmanharris_8h_source.html">fpu_fft_blackmanharris.h</a> 第 <a class="el" href="fpu__fft__blackmanharris_8h_source.html#l00431">431</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a755bce011355731913ccfb1c44177de2" name="a755bce011355731913ccfb1c44177de2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a755bce011355731913ccfb1c44177de2">&#9670;&#160;</a></span>BLACKMANHARRIS512</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLACKMANHARRIS512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__blackmanharris_8h_source.html">fpu_fft_blackmanharris.h</a> 第 <a class="el" href="fpu__fft__blackmanharris_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a685e3408f13d9d481e676e51cf3b58c5" name="a685e3408f13d9d481e676e51cf3b58c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a685e3408f13d9d481e676e51cf3b58c5">&#9670;&#160;</a></span>BLACKMANHARRIS64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLACKMANHARRIS64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00006000, 0.00020410, 0.00067727, 0.00160201, 0.00318210, \</div>
+<div class="line">0.00570128, 0.00952029, 0.01507117, 0.02284778, 0.03339172, \</div>
+<div class="line">0.04727299, 0.06506514, 0.08731538, 0.11451042, 0.14703956, \</div>
+<div class="line">0.18515707, 0.22894618, 0.27828737, 0.33283350, 0.39199450, \</div>
+<div class="line">0.45493331, 0.52057500, 0.58762931, 0.65462683, 0.71996741, \</div>
+<div class="line">0.78197899, 0.83898400, 0.88936977, 0.93165927, 0.96457794, \</div>
+<div class="line">0.98711285, 0.99856051, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__blackmanharris_8h_source.html">fpu_fft_blackmanharris.h</a> 第 <a class="el" href="fpu__fft__blackmanharris_8h_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_21974f642239eac7f24099953dcfa10f.html">FFT</a></li><li class="navelem"><a href="dir_aed7131e372a5760213c24165cb84e6a.html">dsp_lib</a></li><li class="navelem"><a href="dir_badc97c40bd22aec4e5786edc2ccf63e.html">win</a></li><li class="navelem"><a href="fpu__fft__blackmanharris_8h.html">fpu_fft_blackmanharris.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

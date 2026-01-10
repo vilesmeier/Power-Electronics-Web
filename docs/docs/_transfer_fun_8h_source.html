@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/TransferFun/TransferFun.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_transfer_fun_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TransferFun.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_transfer_fun_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef TRANSFERFUN_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define TRANSFERFUN_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;stdint.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;inc/hw_types.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structdcl__df11.html">   19</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structdcl__df11.html">dcl_df11</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structdcl__df11.html#a44188336e5b776d60a9ebbb27039b067">   20</a></span>    float32_t <a class="code hl_variable" href="structdcl__df11.html#a44188336e5b776d60a9ebbb27039b067">b0</a>;   </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structdcl__df11.html#a1e42e221debe8c53e59b0d9afa92f700">   21</a></span>    float32_t <a class="code hl_variable" href="structdcl__df11.html#a1e42e221debe8c53e59b0d9afa92f700">b1</a>;   </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structdcl__df11.html#af843870d7fa4ae8f8bfb2d76f7e1ac6a">   22</a></span>    float32_t <a class="code hl_variable" href="structdcl__df11.html#af843870d7fa4ae8f8bfb2d76f7e1ac6a">a1</a>;   </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structdcl__df11.html#a156337fdcec68b1175827c0d86967304">   23</a></span>    float32_t <a class="code hl_variable" href="structdcl__df11.html#a156337fdcec68b1175827c0d86967304">d1</a>;   </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structdcl__df11.html#a1f3e8080eec87f0bbe848f4a53ebc342">   24</a></span>    float32_t <a class="code hl_variable" href="structdcl__df11.html#a1f3e8080eec87f0bbe848f4a53ebc342">d2</a>;   </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_transfer_fun_8h.html#a7375b44215b7758cf4f284e8b6106407">   25</a></span>} <a class="code hl_typedef" href="_transfer_fun_8h.html#a7375b44215b7758cf4f284e8b6106407">DCL_DF11</a>;</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structdcl__df22.html">   30</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structdcl__df22.html">dcl_df22</a> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structdcl__df22.html#a03528277f341d047fadc1e6ce7b204cd">   31</a></span>    float32_t <a class="code hl_variable" href="structdcl__df22.html#a03528277f341d047fadc1e6ce7b204cd">b0</a>;   </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structdcl__df22.html#a749a8e78827048558ef94262cb1b2da8">   32</a></span>    float32_t <a class="code hl_variable" href="structdcl__df22.html#a749a8e78827048558ef94262cb1b2da8">b1</a>;   </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structdcl__df22.html#a999dfadc0e3ccc0a21b963590c3a5db6">   33</a></span>    float32_t <a class="code hl_variable" href="structdcl__df22.html#a999dfadc0e3ccc0a21b963590c3a5db6">b2</a>;   </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structdcl__df22.html#ad2d00d026a56386ead5442159708d54e">   34</a></span>    float32_t <a class="code hl_variable" href="structdcl__df22.html#ad2d00d026a56386ead5442159708d54e">a1</a>;   </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structdcl__df22.html#a4ee7b5b4320351f1cc37f977a762a7f7">   35</a></span>    float32_t <a class="code hl_variable" href="structdcl__df22.html#a4ee7b5b4320351f1cc37f977a762a7f7">a2</a>;   </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structdcl__df22.html#ac86cbb759faec77ff1825ff3d54a0a1b">   36</a></span>    float32_t <a class="code hl_variable" href="structdcl__df22.html#ac86cbb759faec77ff1825ff3d54a0a1b">x1</a>;   </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structdcl__df22.html#a77c24c61d028a04ed87924fa69a10e8e">   37</a></span>    float32_t <a class="code hl_variable" href="structdcl__df22.html#a77c24c61d028a04ed87924fa69a10e8e">x2</a>;   </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="_transfer_fun_8h.html#af8832c3b4a1ad9070601b091b430b0e8">   38</a></span>} <a class="code hl_typedef" href="_transfer_fun_8h.html#af8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a>;</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structdcl__df23.html">   43</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structdcl__df23.html">dcl_df23</a> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structdcl__df23.html#ae2e0a3509ac2475beb0b8b9f19bd3980">   44</a></span>    float32_t <a class="code hl_variable" href="structdcl__df23.html#ae2e0a3509ac2475beb0b8b9f19bd3980">b0</a>;   </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structdcl__df23.html#ae9590782806e8502c45c92f1bbc49112">   45</a></span>    float32_t <a class="code hl_variable" href="structdcl__df23.html#ae9590782806e8502c45c92f1bbc49112">b1</a>;   </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structdcl__df23.html#a07c56dd7b56bfe8c415c0906c834532a">   46</a></span>    float32_t <a class="code hl_variable" href="structdcl__df23.html#a07c56dd7b56bfe8c415c0906c834532a">b2</a>;   </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structdcl__df23.html#a71eb0900e1ee30b9ab32eb6d5e365a74">   47</a></span>    float32_t <a class="code hl_variable" href="structdcl__df23.html#a71eb0900e1ee30b9ab32eb6d5e365a74">b3</a>;   </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structdcl__df23.html#aeed92da3002451db369c957e6d5253a3">   48</a></span>    float32_t <a class="code hl_variable" href="structdcl__df23.html#aeed92da3002451db369c957e6d5253a3">a1</a>;   </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structdcl__df23.html#af138a68cd6801cb885bab8531e334604">   49</a></span>    float32_t <a class="code hl_variable" href="structdcl__df23.html#af138a68cd6801cb885bab8531e334604">a2</a>;   </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structdcl__df23.html#aa6772887ee798889551bdda7f2dede54">   50</a></span>    float32_t <a class="code hl_variable" href="structdcl__df23.html#aa6772887ee798889551bdda7f2dede54">a3</a>;   </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structdcl__df23.html#a0dacf5c2684beb19503993139a041ece">   51</a></span>    float32_t <a class="code hl_variable" href="structdcl__df23.html#a0dacf5c2684beb19503993139a041ece">x1</a>;   </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structdcl__df23.html#acb5cd9a25b924a5ea2ed04bb8cfef85d">   52</a></span>    float32_t <a class="code hl_variable" href="structdcl__df23.html#acb5cd9a25b924a5ea2ed04bb8cfef85d">x2</a>;   </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structdcl__df23.html#a0a7283a089d042d4ab6478c1972fcec2">   53</a></span>    float32_t <a class="code hl_variable" href="structdcl__df23.html#a0a7283a089d042d4ab6478c1972fcec2">x3</a>;   </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="_transfer_fun_8h.html#a74b8909e62e7713da3898ff5ab087938">   54</a></span>} <a class="code hl_typedef" href="_transfer_fun_8h.html#a74b8909e62e7713da3898ff5ab087938">DCL_DF23</a>;</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">extern</span> int16_t <a class="code hl_variable" href="_transfer_fun_8asm.html#a70046921c48604772a0c8160ef37dcca">DCL_Clamp_Run</a>(float32_t *<a class="code hl_variable" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a>, float32_t <a class="code hl_variable" href="_transfer_fun_8asm.html#a95d1601247f5ec3ca9d78c43f56679db">Umax</a>, float32_t <a class="code hl_variable" href="_transfer_fun_8asm.html#aadac943c15058f072d200a1ac173d9b4">Umin</a>);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="_transfer_fun_8h.html#ab556770206b05822837dd13bb5b1ff05">   73</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="_transfer_fun_8h.html#ab556770206b05822837dd13bb5b1ff05">DCL_DF11_Init</a>(<a class="code hl_typedef" href="_transfer_fun_8h.html#a7375b44215b7758cf4f284e8b6106407">DCL_DF11</a> *p)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    p-&gt;<a class="code hl_variable" href="structdcl__df11.html#af843870d7fa4ae8f8bfb2d76f7e1ac6a">a1</a> = 0.0f;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    p-&gt;<a class="code hl_variable" href="structdcl__df11.html#a44188336e5b776d60a9ebbb27039b067">b0</a> = 0.0f;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    p-&gt;<a class="code hl_variable" href="structdcl__df11.html#a1e42e221debe8c53e59b0d9afa92f700">b1</a> = 0.0f;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    p-&gt;<a class="code hl_variable" href="structdcl__df11.html#a156337fdcec68b1175827c0d86967304">d1</a> = 0.0f;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    p-&gt;<a class="code hl_variable" href="structdcl__df11.html#a1f3e8080eec87f0bbe848f4a53ebc342">d2</a> = 0.0f;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">extern</span> float32_t <a class="code hl_function" href="_transfer_fun_8h.html#a7ca9b52b5a2f202f4d3890031f21c7ec">DCL_DF11_Run</a>(<a class="code hl_typedef" href="_transfer_fun_8h.html#a7375b44215b7758cf4f284e8b6106407">DCL_DF11</a> *p, float32_t <a class="code hl_variable" href="_transfer_fun_8asm.html#a9b8435420fe8aed26e0c121a179ef973">ek</a>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span></div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="_transfer_fun_8h.html#a7fed97c70a637a0c8db4e7808730eba8">   97</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="_transfer_fun_8h.html#a7fed97c70a637a0c8db4e7808730eba8">DCL_DF22_Init</a>(<a class="code hl_typedef" href="_transfer_fun_8h.html#af8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *p)</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>{</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    p-&gt;<a class="code hl_variable" href="structdcl__df22.html#ad2d00d026a56386ead5442159708d54e">a1</a> = 0.0f;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    p-&gt;<a class="code hl_variable" href="structdcl__df22.html#a4ee7b5b4320351f1cc37f977a762a7f7">a2</a> = 0.0f;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    p-&gt;<a class="code hl_variable" href="structdcl__df22.html#a03528277f341d047fadc1e6ce7b204cd">b0</a> = 0.0f;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    p-&gt;<a class="code hl_variable" href="structdcl__df22.html#a749a8e78827048558ef94262cb1b2da8">b1</a> = 0.0f;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    p-&gt;<a class="code hl_variable" href="structdcl__df22.html#a999dfadc0e3ccc0a21b963590c3a5db6">b2</a> = 0.0f;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    p-&gt;<a class="code hl_variable" href="structdcl__df22.html#ac86cbb759faec77ff1825ff3d54a0a1b">x1</a> = 0.0f;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    p-&gt;<a class="code hl_variable" href="structdcl__df22.html#a77c24c61d028a04ed87924fa69a10e8e">x2</a> = 0.0f;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keyword">extern</span> float32_t <a class="code hl_variable" href="_transfer_fun_8asm.html#a85be41f52ea5a547532f95a33309d7c7">DCL_DF22_Run</a>(<a class="code hl_typedef" href="_transfer_fun_8h.html#af8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *p, float32_t <a class="code hl_variable" href="_transfer_fun_8asm.html#a9b8435420fe8aed26e0c121a179ef973">ek</a>);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span></div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="_transfer_fun_8h.html#a6d7d3a8a8d055aeedc6d0b76f2378c83">  124</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="_transfer_fun_8h.html#a6d7d3a8a8d055aeedc6d0b76f2378c83">DCL_DF23_Init</a>(<a class="code hl_typedef" href="_transfer_fun_8h.html#a74b8909e62e7713da3898ff5ab087938">DCL_DF23</a> *p)</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>{</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    p-&gt;<a class="code hl_variable" href="structdcl__df23.html#aeed92da3002451db369c957e6d5253a3">a1</a> = 0.0f;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    p-&gt;<a class="code hl_variable" href="structdcl__df23.html#af138a68cd6801cb885bab8531e334604">a2</a> = 0.0f;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    p-&gt;<a class="code hl_variable" href="structdcl__df23.html#aa6772887ee798889551bdda7f2dede54">a3</a> = 0.0f;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    p-&gt;<a class="code hl_variable" href="structdcl__df23.html#ae2e0a3509ac2475beb0b8b9f19bd3980">b0</a> = 0.0f;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    p-&gt;<a class="code hl_variable" href="structdcl__df23.html#ae9590782806e8502c45c92f1bbc49112">b1</a> = 0.0f;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    p-&gt;<a class="code hl_variable" href="structdcl__df23.html#a07c56dd7b56bfe8c415c0906c834532a">b2</a> = 0.0f;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    p-&gt;<a class="code hl_variable" href="structdcl__df23.html#a71eb0900e1ee30b9ab32eb6d5e365a74">b3</a> = 0.0f;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    p-&gt;<a class="code hl_variable" href="structdcl__df23.html#a0dacf5c2684beb19503993139a041ece">x1</a> = 0.0f;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    p-&gt;<a class="code hl_variable" href="structdcl__df23.html#acb5cd9a25b924a5ea2ed04bb8cfef85d">x2</a> = 0.0f;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    p-&gt;<a class="code hl_variable" href="structdcl__df23.html#a0a7283a089d042d4ab6478c1972fcec2">x3</a> = 0.0f;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>}</div>
+</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keyword">extern</span> float32_t <a class="code hl_variable" href="_transfer_fun_8asm.html#ab1ae2ef78164ffb5783d368e198dfef6">DCL_DF23_Run</a>(<a class="code hl_typedef" href="_transfer_fun_8h.html#a74b8909e62e7713da3898ff5ab087938">DCL_DF23</a> *p, float32_t <a class="code hl_variable" href="_transfer_fun_8asm.html#a9b8435420fe8aed26e0c121a179ef973">ek</a>);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">// 将初始化函数放入 RAM 执行区</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="preprocessor">#pragma CODE_SECTION(DCL_DF11_Init, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="preprocessor">#pragma CODE_SECTION(DCL_DF22_Init, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">#pragma CODE_SECTION(DCL_DF23_Init, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="preprocessor">#pragma CODE_SECTION(DCL_DF11_Run, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="preprocessor">#pragma CODE_SECTION(DCL_DF22_Run, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="preprocessor">#pragma CODE_SECTION(DCL_DF23_Run, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="preprocessor">#endif </span><span class="comment">// !TRANSFERFUN_H</span></div>
+<div class="ttc" id="a_transfer_fun_8asm_html_a1f1c96545c7c8e20ffc09b6051f81f37"><div class="ttname"><a href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a></div><div class="ttdeci">&amp; data</div><div class="ttdef"><b>定义</b> <a href="_transfer_fun_8asm_source.html#l00188">TransferFun.asm:188</a></div></div>
+<div class="ttc" id="a_transfer_fun_8asm_html_a70046921c48604772a0c8160ef37dcca"><div class="ttname"><a href="_transfer_fun_8asm.html#a70046921c48604772a0c8160ef37dcca">DCL_Clamp_Run</a></div><div class="ttdeci">if _DCL_DF11_Run asg _DCL_DF22_Run asg _DCL_DF23_Run asg DCL_Clamp_Run</div><div class="ttdef"><b>定义</b> <a href="_transfer_fun_8asm_source.html#l00015">TransferFun.asm:15</a></div></div>
+<div class="ttc" id="a_transfer_fun_8asm_html_a85be41f52ea5a547532f95a33309d7c7"><div class="ttname"><a href="_transfer_fun_8asm.html#a85be41f52ea5a547532f95a33309d7c7">DCL_DF22_Run</a></div><div class="ttdeci">if _DCL_DF11_Run asg DCL_DF22_Run</div><div class="ttdef"><b>定义</b> <a href="_transfer_fun_8asm_source.html#l00013">TransferFun.asm:13</a></div></div>
+<div class="ttc" id="a_transfer_fun_8asm_html_a95d1601247f5ec3ca9d78c43f56679db"><div class="ttname"><a href="_transfer_fun_8asm.html#a95d1601247f5ec3ca9d78c43f56679db">Umax</a></div><div class="ttdeci">C float Umax</div><div class="ttdef"><b>定义</b> <a href="_transfer_fun_8asm_source.html#l00168">TransferFun.asm:168</a></div></div>
+<div class="ttc" id="a_transfer_fun_8asm_html_a9b8435420fe8aed26e0c121a179ef973"><div class="ttname"><a href="_transfer_fun_8asm.html#a9b8435420fe8aed26e0c121a179ef973">ek</a></div><div class="ttdeci">C float32_t ek</div><div class="ttdef"><b>定义</b> <a href="_transfer_fun_8asm_source.html#l00030">TransferFun.asm:31</a></div></div>
+<div class="ttc" id="a_transfer_fun_8asm_html_aadac943c15058f072d200a1ac173d9b4"><div class="ttname"><a href="_transfer_fun_8asm.html#aadac943c15058f072d200a1ac173d9b4">Umin</a></div><div class="ttdeci">C float float Umin</div><div class="ttdef"><b>定义</b> <a href="_transfer_fun_8asm_source.html#l00168">TransferFun.asm:169</a></div></div>
+<div class="ttc" id="a_transfer_fun_8asm_html_ab1ae2ef78164ffb5783d368e198dfef6"><div class="ttname"><a href="_transfer_fun_8asm.html#ab1ae2ef78164ffb5783d368e198dfef6">DCL_DF23_Run</a></div><div class="ttdeci">if _DCL_DF11_Run asg _DCL_DF22_Run asg DCL_DF23_Run</div><div class="ttdef"><b>定义</b> <a href="_transfer_fun_8asm_source.html#l00014">TransferFun.asm:14</a></div></div>
+<div class="ttc" id="a_transfer_fun_8h_html_a6d7d3a8a8d055aeedc6d0b76f2378c83"><div class="ttname"><a href="_transfer_fun_8h.html#a6d7d3a8a8d055aeedc6d0b76f2378c83">DCL_DF23_Init</a></div><div class="ttdeci">static void DCL_DF23_Init(DCL_DF23 *p)</div><div class="ttdoc">初始化 DCL_DF23 控制器结构体</div><div class="ttdef"><b>定义</b> <a href="#l00124">TransferFun.h:124</a></div></div>
+<div class="ttc" id="a_transfer_fun_8h_html_a7375b44215b7758cf4f284e8b6106407"><div class="ttname"><a href="_transfer_fun_8h.html#a7375b44215b7758cf4f284e8b6106407">DCL_DF11</a></div><div class="ttdeci">struct dcl_df11 DCL_DF11</div><div class="ttdoc">定义一阶直接形式Ⅰ（DF11）控制器结构体</div></div>
+<div class="ttc" id="a_transfer_fun_8h_html_a74b8909e62e7713da3898ff5ab087938"><div class="ttname"><a href="_transfer_fun_8h.html#a74b8909e62e7713da3898ff5ab087938">DCL_DF23</a></div><div class="ttdeci">struct dcl_df23 DCL_DF23</div><div class="ttdoc">定义三阶直接形式Ⅱ（DF23）控制器结构体</div></div>
+<div class="ttc" id="a_transfer_fun_8h_html_a7ca9b52b5a2f202f4d3890031f21c7ec"><div class="ttname"><a href="_transfer_fun_8h.html#a7ca9b52b5a2f202f4d3890031f21c7ec">DCL_DF11_Run</a></div><div class="ttdeci">float32_t DCL_DF11_Run(DCL_DF11 *p, float32_t ek)</div><div class="ttdoc">执行一阶直接形式Ⅰ控制器（DF11），在 FPU32 上运行   原函数名: float32_t DCL_runDF11_C1(DCL_DF11 *p, float32_t ek);</div><div class="ttdef"><b>定义</b> <a href="_transfer_fun_8c_source.html#l00024">TransferFun.c:24</a></div></div>
+<div class="ttc" id="a_transfer_fun_8h_html_a7fed97c70a637a0c8db4e7808730eba8"><div class="ttname"><a href="_transfer_fun_8h.html#a7fed97c70a637a0c8db4e7808730eba8">DCL_DF22_Init</a></div><div class="ttdeci">static void DCL_DF22_Init(DCL_DF22 *p)</div><div class="ttdoc">初始化 DCL_DF22 控制器结构体</div><div class="ttdef"><b>定义</b> <a href="#l00097">TransferFun.h:97</a></div></div>
+<div class="ttc" id="a_transfer_fun_8h_html_ab556770206b05822837dd13bb5b1ff05"><div class="ttname"><a href="_transfer_fun_8h.html#ab556770206b05822837dd13bb5b1ff05">DCL_DF11_Init</a></div><div class="ttdeci">static void DCL_DF11_Init(DCL_DF11 *p)</div><div class="ttdoc">初始化 DCL_DF11 控制器结构体</div><div class="ttdef"><b>定义</b> <a href="#l00073">TransferFun.h:73</a></div></div>
+<div class="ttc" id="a_transfer_fun_8h_html_af8832c3b4a1ad9070601b091b430b0e8"><div class="ttname"><a href="_transfer_fun_8h.html#af8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a></div><div class="ttdeci">struct dcl_df22 DCL_DF22</div><div class="ttdoc">定义二阶直接形式Ⅱ（DF22）控制器结构体</div></div>
+<div class="ttc" id="astructdcl__df11_html"><div class="ttname"><a href="structdcl__df11.html">dcl_df11</a></div><div class="ttdoc">定义一阶直接形式Ⅰ（DF11）控制器结构体</div><div class="ttdef"><b>定义</b> <a href="#l00019">TransferFun.h:19</a></div></div>
+<div class="ttc" id="astructdcl__df11_html_a156337fdcec68b1175827c0d86967304"><div class="ttname"><a href="structdcl__df11.html#a156337fdcec68b1175827c0d86967304">dcl_df11::d1</a></div><div class="ttdeci">float32_t d1</div><div class="ttdoc">上一次误差 e(k-1)</div><div class="ttdef"><b>定义</b> <a href="#l00023">TransferFun.h:23</a></div></div>
+<div class="ttc" id="astructdcl__df11_html_a1e42e221debe8c53e59b0d9afa92f700"><div class="ttname"><a href="structdcl__df11.html#a1e42e221debe8c53e59b0d9afa92f700">dcl_df11::b1</a></div><div class="ttdeci">float32_t b1</div><div class="ttdoc">系数 b1</div><div class="ttdef"><b>定义</b> <a href="#l00021">TransferFun.h:21</a></div></div>
+<div class="ttc" id="astructdcl__df11_html_a1f3e8080eec87f0bbe848f4a53ebc342"><div class="ttname"><a href="structdcl__df11.html#a1f3e8080eec87f0bbe848f4a53ebc342">dcl_df11::d2</a></div><div class="ttdeci">float32_t d2</div><div class="ttdoc">上一次输出 u(k-1)</div><div class="ttdef"><b>定义</b> <a href="#l00024">TransferFun.h:24</a></div></div>
+<div class="ttc" id="astructdcl__df11_html_a44188336e5b776d60a9ebbb27039b067"><div class="ttname"><a href="structdcl__df11.html#a44188336e5b776d60a9ebbb27039b067">dcl_df11::b0</a></div><div class="ttdeci">float32_t b0</div><div class="ttdoc">系数 b0</div><div class="ttdef"><b>定义</b> <a href="#l00020">TransferFun.h:20</a></div></div>
+<div class="ttc" id="astructdcl__df11_html_af843870d7fa4ae8f8bfb2d76f7e1ac6a"><div class="ttname"><a href="structdcl__df11.html#af843870d7fa4ae8f8bfb2d76f7e1ac6a">dcl_df11::a1</a></div><div class="ttdeci">float32_t a1</div><div class="ttdoc">系数 a1</div><div class="ttdef"><b>定义</b> <a href="#l00022">TransferFun.h:22</a></div></div>
+<div class="ttc" id="astructdcl__df22_html"><div class="ttname"><a href="structdcl__df22.html">dcl_df22</a></div><div class="ttdoc">定义二阶直接形式Ⅱ（DF22）控制器结构体</div><div class="ttdef"><b>定义</b> <a href="#l00030">TransferFun.h:30</a></div></div>
+<div class="ttc" id="astructdcl__df22_html_a03528277f341d047fadc1e6ce7b204cd"><div class="ttname"><a href="structdcl__df22.html#a03528277f341d047fadc1e6ce7b204cd">dcl_df22::b0</a></div><div class="ttdeci">float32_t b0</div><div class="ttdoc">系数 b0</div><div class="ttdef"><b>定义</b> <a href="#l00031">TransferFun.h:31</a></div></div>
+<div class="ttc" id="astructdcl__df22_html_a4ee7b5b4320351f1cc37f977a762a7f7"><div class="ttname"><a href="structdcl__df22.html#a4ee7b5b4320351f1cc37f977a762a7f7">dcl_df22::a2</a></div><div class="ttdeci">float32_t a2</div><div class="ttdoc">系数 a2</div><div class="ttdef"><b>定义</b> <a href="#l00035">TransferFun.h:35</a></div></div>
+<div class="ttc" id="astructdcl__df22_html_a749a8e78827048558ef94262cb1b2da8"><div class="ttname"><a href="structdcl__df22.html#a749a8e78827048558ef94262cb1b2da8">dcl_df22::b1</a></div><div class="ttdeci">float32_t b1</div><div class="ttdoc">系数 b1</div><div class="ttdef"><b>定义</b> <a href="#l00032">TransferFun.h:32</a></div></div>
+<div class="ttc" id="astructdcl__df22_html_a77c24c61d028a04ed87924fa69a10e8e"><div class="ttname"><a href="structdcl__df22.html#a77c24c61d028a04ed87924fa69a10e8e">dcl_df22::x2</a></div><div class="ttdeci">float32_t x2</div><div class="ttdoc">中间变量 x2</div><div class="ttdef"><b>定义</b> <a href="#l00037">TransferFun.h:37</a></div></div>
+<div class="ttc" id="astructdcl__df22_html_a999dfadc0e3ccc0a21b963590c3a5db6"><div class="ttname"><a href="structdcl__df22.html#a999dfadc0e3ccc0a21b963590c3a5db6">dcl_df22::b2</a></div><div class="ttdeci">float32_t b2</div><div class="ttdoc">系数 b2</div><div class="ttdef"><b>定义</b> <a href="#l00033">TransferFun.h:33</a></div></div>
+<div class="ttc" id="astructdcl__df22_html_ac86cbb759faec77ff1825ff3d54a0a1b"><div class="ttname"><a href="structdcl__df22.html#ac86cbb759faec77ff1825ff3d54a0a1b">dcl_df22::x1</a></div><div class="ttdeci">float32_t x1</div><div class="ttdoc">中间变量 x1</div><div class="ttdef"><b>定义</b> <a href="#l00036">TransferFun.h:36</a></div></div>
+<div class="ttc" id="astructdcl__df22_html_ad2d00d026a56386ead5442159708d54e"><div class="ttname"><a href="structdcl__df22.html#ad2d00d026a56386ead5442159708d54e">dcl_df22::a1</a></div><div class="ttdeci">float32_t a1</div><div class="ttdoc">系数 a1</div><div class="ttdef"><b>定义</b> <a href="#l00034">TransferFun.h:34</a></div></div>
+<div class="ttc" id="astructdcl__df23_html"><div class="ttname"><a href="structdcl__df23.html">dcl_df23</a></div><div class="ttdoc">定义三阶直接形式Ⅱ（DF23）控制器结构体</div><div class="ttdef"><b>定义</b> <a href="#l00043">TransferFun.h:43</a></div></div>
+<div class="ttc" id="astructdcl__df23_html_a07c56dd7b56bfe8c415c0906c834532a"><div class="ttname"><a href="structdcl__df23.html#a07c56dd7b56bfe8c415c0906c834532a">dcl_df23::b2</a></div><div class="ttdeci">float32_t b2</div><div class="ttdoc">系数 b2</div><div class="ttdef"><b>定义</b> <a href="#l00046">TransferFun.h:46</a></div></div>
+<div class="ttc" id="astructdcl__df23_html_a0a7283a089d042d4ab6478c1972fcec2"><div class="ttname"><a href="structdcl__df23.html#a0a7283a089d042d4ab6478c1972fcec2">dcl_df23::x3</a></div><div class="ttdeci">float32_t x3</div><div class="ttdoc">中间变量 x3</div><div class="ttdef"><b>定义</b> <a href="#l00053">TransferFun.h:53</a></div></div>
+<div class="ttc" id="astructdcl__df23_html_a0dacf5c2684beb19503993139a041ece"><div class="ttname"><a href="structdcl__df23.html#a0dacf5c2684beb19503993139a041ece">dcl_df23::x1</a></div><div class="ttdeci">float32_t x1</div><div class="ttdoc">中间变量 x1</div><div class="ttdef"><b>定义</b> <a href="#l00051">TransferFun.h:51</a></div></div>
+<div class="ttc" id="astructdcl__df23_html_a71eb0900e1ee30b9ab32eb6d5e365a74"><div class="ttname"><a href="structdcl__df23.html#a71eb0900e1ee30b9ab32eb6d5e365a74">dcl_df23::b3</a></div><div class="ttdeci">float32_t b3</div><div class="ttdoc">系数 b3</div><div class="ttdef"><b>定义</b> <a href="#l00047">TransferFun.h:47</a></div></div>
+<div class="ttc" id="astructdcl__df23_html_aa6772887ee798889551bdda7f2dede54"><div class="ttname"><a href="structdcl__df23.html#aa6772887ee798889551bdda7f2dede54">dcl_df23::a3</a></div><div class="ttdeci">float32_t a3</div><div class="ttdoc">系数 a3</div><div class="ttdef"><b>定义</b> <a href="#l00050">TransferFun.h:50</a></div></div>
+<div class="ttc" id="astructdcl__df23_html_acb5cd9a25b924a5ea2ed04bb8cfef85d"><div class="ttname"><a href="structdcl__df23.html#acb5cd9a25b924a5ea2ed04bb8cfef85d">dcl_df23::x2</a></div><div class="ttdeci">float32_t x2</div><div class="ttdoc">中间变量 x2</div><div class="ttdef"><b>定义</b> <a href="#l00052">TransferFun.h:52</a></div></div>
+<div class="ttc" id="astructdcl__df23_html_ae2e0a3509ac2475beb0b8b9f19bd3980"><div class="ttname"><a href="structdcl__df23.html#ae2e0a3509ac2475beb0b8b9f19bd3980">dcl_df23::b0</a></div><div class="ttdeci">float32_t b0</div><div class="ttdoc">系数 b0</div><div class="ttdef"><b>定义</b> <a href="#l00044">TransferFun.h:44</a></div></div>
+<div class="ttc" id="astructdcl__df23_html_ae9590782806e8502c45c92f1bbc49112"><div class="ttname"><a href="structdcl__df23.html#ae9590782806e8502c45c92f1bbc49112">dcl_df23::b1</a></div><div class="ttdeci">float32_t b1</div><div class="ttdoc">系数 b1</div><div class="ttdef"><b>定义</b> <a href="#l00045">TransferFun.h:45</a></div></div>
+<div class="ttc" id="astructdcl__df23_html_aeed92da3002451db369c957e6d5253a3"><div class="ttname"><a href="structdcl__df23.html#aeed92da3002451db369c957e6d5253a3">dcl_df23::a1</a></div><div class="ttdeci">float32_t a1</div><div class="ttdoc">系数 a1</div><div class="ttdef"><b>定义</b> <a href="#l00048">TransferFun.h:48</a></div></div>
+<div class="ttc" id="astructdcl__df23_html_af138a68cd6801cb885bab8531e334604"><div class="ttname"><a href="structdcl__df23.html#af138a68cd6801cb885bab8531e334604">dcl_df23::a2</a></div><div class="ttdeci">float32_t a2</div><div class="ttdoc">系数 a2</div><div class="ttdef"><b>定义</b> <a href="#l00049">TransferFun.h:49</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_81047815d5a852c35a382d83155d52af.html">TransferFun</a></li><li class="navelem"><a href="_transfer_fun_8h.html">TransferFun.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<map id="LCD_ShowDouble" name="LCD_ShowDouble">
+<area shape="rect" id="Node000001" title="display a float" alt="" coords="5,31,135,57"/>
+<area shape="rect" id="Node000002" href="$_l_c_d___s_t7735_s_8c.html#a819e4cb0d04d17e3cba390032dec14be" title="show a string" alt="" coords="183,31,305,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,41,167,41,167,47,135,47"/>
+<area shape="rect" id="Node000003" href="$_l_c_d___s_t7735_s_8c.html#a984dce05b86caed4b2a0a0d8dba5462b" title="show a char" alt="" coords="353,31,469,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="306,41,337,41,337,47,306,47"/>
+<area shape="rect" id="Node000004" href="$_l_c_d___s_t7735_s_8c.html#a16ab7118659faa7d9ffd28e4e0def529" title="draw point" alt="" coords="517,31,634,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="470,41,502,41,502,47,470,47"/>
+<area shape="rect" id="Node000005" href="$_l_c_d___s_t7735_s_8c.html#a5ff5d250afc92419cfc04e6e7a80936b" title="set courser position" alt="" coords="689,5,795,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="634,33,673,26,674,32,634,38"/>
+<area shape="rect" id="Node000008" href="$_l_c_d___s_t7735_s_8c.html#aba0abdc1cc1f6363bd0cf646e61094e3" title="write 16&#45;bit data" alt="" coords="682,56,802,83"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="634,50,667,55,666,60,634,55"/>
+<area shape="rect" id="Node000006" href="$_l_c_d___s_t7735_s_8c.html#a71f317c08f5a4fd34f4e66b7413e0381" title="select register" alt="" coords="850,5,974,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="795,16,835,16,835,21,795,21"/>
+<area shape="rect" id="Node000007" href="$_l_c_d___s_t7735_s_8c.html#a4c41fe8c154e5beccd73c8b5042f497f" title="write 8&#45;bit data" alt="" coords="856,56,969,83"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="790,30,851,49,850,54,789,35"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="802,67,840,67,840,72,802,72"/>
+</map>

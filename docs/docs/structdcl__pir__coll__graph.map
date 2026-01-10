@@ -1,0 +1,9 @@
+<map id="dcl_pir" name="dcl_pir">
+<area shape="rect" id="Node000001" title="使用PI和PR结构体定义PIR控制器" alt="" coords="27,203,87,229"/>
+<area shape="rect" id="Node000002" href="$structdcl__pi.html" title="定义 PI 控制器结构体" alt="" coords="5,104,61,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,145,57,202,51,203,37,147"/>
+<area shape="rect" id="Node000003" href="$structdcl__pr.html" title="使用DF22结构体定义PR控制器" alt="" coords="85,104,141,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="100,146,66,204,62,201,96,143"/>
+<area shape="rect" id="Node000004" href="$structdcl__df22.html" title="定义二阶直接形式Ⅱ（DF22）控制器结构体" alt="" coords="78,5,148,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="116,48,116,104,110,104,110,48"/>
+</map>

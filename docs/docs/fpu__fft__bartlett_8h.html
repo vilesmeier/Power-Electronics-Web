@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/FFT/dsp_lib/win/fpu_fft_bartlett.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('fpu__fft__bartlett_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fpu_fft_bartlett.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="fpu__fft__bartlett_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a0efde98691600e93abd35998aa5cec35" id="r_a0efde98691600e93abd35998aa5cec35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0efde98691600e93abd35998aa5cec35">BARTLETT32</a></td></tr>
+<tr class="memitem:a8574f4613c4701bd67b8ee4b041f5030" id="r_a8574f4613c4701bd67b8ee4b041f5030"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8574f4613c4701bd67b8ee4b041f5030">BARTLETT64</a></td></tr>
+<tr class="memitem:a01f4ec063c775798615872fc0256396d" id="r_a01f4ec063c775798615872fc0256396d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01f4ec063c775798615872fc0256396d">BARTLETT128</a></td></tr>
+<tr class="memitem:a4c9c79d585ff40c6288d2cf39cc4b8cc" id="r_a4c9c79d585ff40c6288d2cf39cc4b8cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c9c79d585ff40c6288d2cf39cc4b8cc">BARTLETT256</a></td></tr>
+<tr class="memitem:adcdc8323e1631b27c41d111cd3d6394a" id="r_adcdc8323e1631b27c41d111cd3d6394a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcdc8323e1631b27c41d111cd3d6394a">BARTLETT512</a></td></tr>
+<tr class="memitem:ae66f5d35476637ccf385be2fcf9b1f85" id="r_ae66f5d35476637ccf385be2fcf9b1f85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f5d35476637ccf385be2fcf9b1f85">BARTLETT1024</a></td></tr>
+<tr class="memitem:a473ee054abca0eb479f5e5717fde7d6a" id="r_a473ee054abca0eb479f5e5717fde7d6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a473ee054abca0eb479f5e5717fde7d6a">BARTLETT2048</a></td></tr>
+<tr class="memitem:a3e833b45d31d8da9fc5a7ba4c4fe080f" id="r_a3e833b45d31d8da9fc5a7ba4c4fe080f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e833b45d31d8da9fc5a7ba4c4fe080f">BARTLETT4096</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="ae66f5d35476637ccf385be2fcf9b1f85" name="ae66f5d35476637ccf385be2fcf9b1f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f5d35476637ccf385be2fcf9b1f85">&#9670;&#160;</a></span>BARTLETT1024</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTLETT1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__bartlett_8h_source.html">fpu_fft_bartlett.h</a> 第 <a class="el" href="fpu__fft__bartlett_8h_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a01f4ec063c775798615872fc0256396d" name="a01f4ec063c775798615872fc0256396d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01f4ec063c775798615872fc0256396d">&#9670;&#160;</a></span>BARTLETT128</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTLETT128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00000000, 0.01574803, 0.03149606, 0.04724409, 0.06299213, \</div>
+<div class="line">0.07874016, 0.09448819, 0.11023622, 0.12598425, 0.14173228, \</div>
+<div class="line">0.15748031, 0.17322835, 0.18897638, 0.20472441, 0.22047244, \</div>
+<div class="line">0.23622047, 0.25196850, 0.26771654, 0.28346457, 0.29921260, \</div>
+<div class="line">0.31496063, 0.33070866, 0.34645669, 0.36220472, 0.37795276, \</div>
+<div class="line">0.39370079, 0.40944882, 0.42519685, 0.44094488, 0.45669291, \</div>
+<div class="line">0.47244094, 0.48818898, 0.50393701, 0.51968504, 0.53543307, \</div>
+<div class="line">0.55118110, 0.56692913, 0.58267717, 0.59842520, 0.61417323, \</div>
+<div class="line">0.62992126, 0.64566929, 0.66141732, 0.67716535, 0.69291339, \</div>
+<div class="line">0.70866142, 0.72440945, 0.74015748, 0.75590551, 0.77165354, \</div>
+<div class="line">0.78740157, 0.80314961, 0.81889764, 0.83464567, 0.85039370, \</div>
+<div class="line">0.86614173, 0.88188976, 0.89763780, 0.91338583, 0.92913386, \</div>
+<div class="line">0.94488189, 0.96062992, 0.97637795, 0.99212598, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__bartlett_8h_source.html">fpu_fft_bartlett.h</a> 第 <a class="el" href="fpu__fft__bartlett_8h_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a473ee054abca0eb479f5e5717fde7d6a" name="a473ee054abca0eb479f5e5717fde7d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473ee054abca0eb479f5e5717fde7d6a">&#9670;&#160;</a></span>BARTLETT2048</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTLETT2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__bartlett_8h_source.html">fpu_fft_bartlett.h</a> 第 <a class="el" href="fpu__fft__bartlett_8h_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4c9c79d585ff40c6288d2cf39cc4b8cc" name="a4c9c79d585ff40c6288d2cf39cc4b8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c9c79d585ff40c6288d2cf39cc4b8cc">&#9670;&#160;</a></span>BARTLETT256</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTLETT256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00000000, 0.00784314, 0.01568627, 0.02352941, 0.03137255, \</div>
+<div class="line">0.03921569, 0.04705882, 0.05490196, 0.06274510, 0.07058824, \</div>
+<div class="line">0.07843137, 0.08627451, 0.09411765, 0.10196078, 0.10980392, \</div>
+<div class="line">0.11764706, 0.12549020, 0.13333333, 0.14117647, 0.14901961, \</div>
+<div class="line">0.15686275, 0.16470588, 0.17254902, 0.18039216, 0.18823529, \</div>
+<div class="line">0.19607843, 0.20392157, 0.21176471, 0.21960784, 0.22745098, \</div>
+<div class="line">0.23529412, 0.24313725, 0.25098039, 0.25882353, 0.26666667, \</div>
+<div class="line">0.27450980, 0.28235294, 0.29019608, 0.29803922, 0.30588235, \</div>
+<div class="line">0.31372549, 0.32156863, 0.32941176, 0.33725490, 0.34509804, \</div>
+<div class="line">0.35294118, 0.36078431, 0.36862745, 0.37647059, 0.38431373, \</div>
+<div class="line">0.39215686, 0.40000000, 0.40784314, 0.41568627, 0.42352941, \</div>
+<div class="line">0.43137255, 0.43921569, 0.44705882, 0.45490196, 0.46274510, \</div>
+<div class="line">0.47058824, 0.47843137, 0.48627451, 0.49411765, 0.50196078, \</div>
+<div class="line">0.50980392, 0.51764706, 0.52549020, 0.53333333, 0.54117647, \</div>
+<div class="line">0.54901961, 0.55686275, 0.56470588, 0.57254902, 0.58039216, \</div>
+<div class="line">0.58823529, 0.59607843, 0.60392157, 0.61176471, 0.61960784, \</div>
+<div class="line">0.62745098, 0.63529412, 0.64313725, 0.65098039, 0.65882353, \</div>
+<div class="line">0.66666667, 0.67450980, 0.68235294, 0.69019608, 0.69803922, \</div>
+<div class="line">0.70588235, 0.71372549, 0.72156863, 0.72941176, 0.73725490, \</div>
+<div class="line">0.74509804, 0.75294118, 0.76078431, 0.76862745, 0.77647059, \</div>
+<div class="line">0.78431373, 0.79215686, 0.80000000, 0.80784314, 0.81568627, \</div>
+<div class="line">0.82352941, 0.83137255, 0.83921569, 0.84705882, 0.85490196, \</div>
+<div class="line">0.86274510, 0.87058824, 0.87843137, 0.88627451, 0.89411765, \</div>
+<div class="line">0.90196078, 0.90980392, 0.91764706, 0.92549020, 0.93333333, \</div>
+<div class="line">0.94117647, 0.94901961, 0.95686275, 0.96470588, 0.97254902, \</div>
+<div class="line">0.98039216, 0.98823529, 0.99607843, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__bartlett_8h_source.html">fpu_fft_bartlett.h</a> 第 <a class="el" href="fpu__fft__bartlett_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0efde98691600e93abd35998aa5cec35" name="a0efde98691600e93abd35998aa5cec35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0efde98691600e93abd35998aa5cec35">&#9670;&#160;</a></span>BARTLETT32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTLETT32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00000000, 0.06451613, 0.12903226, 0.19354839, 0.25806452, \</div>
+<div class="line">0.32258065, 0.38709677, 0.45161290, 0.51612903, 0.58064516, \</div>
+<div class="line">0.64516129, 0.70967742, 0.77419355, 0.83870968, 0.90322581, \</div>
+<div class="line">0.96774194, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__bartlett_8h_source.html">fpu_fft_bartlett.h</a> 第 <a class="el" href="fpu__fft__bartlett_8h_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3e833b45d31d8da9fc5a7ba4c4fe080f" name="a3e833b45d31d8da9fc5a7ba4c4fe080f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e833b45d31d8da9fc5a7ba4c4fe080f">&#9670;&#160;</a></span>BARTLETT4096</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTLETT4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__bartlett_8h_source.html">fpu_fft_bartlett.h</a> 第 <a class="el" href="fpu__fft__bartlett_8h_source.html#l00431">431</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adcdc8323e1631b27c41d111cd3d6394a" name="adcdc8323e1631b27c41d111cd3d6394a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcdc8323e1631b27c41d111cd3d6394a">&#9670;&#160;</a></span>BARTLETT512</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTLETT512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__bartlett_8h_source.html">fpu_fft_bartlett.h</a> 第 <a class="el" href="fpu__fft__bartlett_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8574f4613c4701bd67b8ee4b041f5030" name="a8574f4613c4701bd67b8ee4b041f5030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8574f4613c4701bd67b8ee4b041f5030">&#9670;&#160;</a></span>BARTLETT64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTLETT64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00000000, 0.03174603, 0.06349206, 0.09523810, 0.12698413, \</div>
+<div class="line">0.15873016, 0.19047619, 0.22222222, 0.25396825, 0.28571429, \</div>
+<div class="line">0.31746032, 0.34920635, 0.38095238, 0.41269841, 0.44444444, \</div>
+<div class="line">0.47619048, 0.50793651, 0.53968254, 0.57142857, 0.60317460, \</div>
+<div class="line">0.63492063, 0.66666667, 0.69841270, 0.73015873, 0.76190476, \</div>
+<div class="line">0.79365079, 0.82539683, 0.85714286, 0.88888889, 0.92063492, \</div>
+<div class="line">0.95238095, 0.98412698, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__bartlett_8h_source.html">fpu_fft_bartlett.h</a> 第 <a class="el" href="fpu__fft__bartlett_8h_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_21974f642239eac7f24099953dcfa10f.html">FFT</a></li><li class="navelem"><a href="dir_aed7131e372a5760213c24165cb84e6a.html">dsp_lib</a></li><li class="navelem"><a href="dir_badc97c40bd22aec4e5786edc2ccf63e.html">win</a></li><li class="navelem"><a href="fpu__fft__bartlett_8h.html">fpu_fft_bartlett.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

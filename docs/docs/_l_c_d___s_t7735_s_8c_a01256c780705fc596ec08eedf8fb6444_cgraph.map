@@ -1,0 +1,14 @@
+<map id="LCD_DrawLine" name="LCD_DrawLine">
+<area shape="rect" id="Node000001" title="draw a line" alt="" coords="5,31,116,57"/>
+<area shape="rect" id="Node000002" href="$_l_c_d___s_t7735_s_8c.html#a16ab7118659faa7d9ffd28e4e0def529" title="draw point" alt="" coords="164,31,280,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,41,148,41,148,47,116,47"/>
+<area shape="rect" id="Node000003" href="$_l_c_d___s_t7735_s_8c.html#a5ff5d250afc92419cfc04e6e7a80936b" title="set courser position" alt="" coords="335,5,441,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="280,33,319,26,320,32,281,38"/>
+<area shape="rect" id="Node000006" href="$_l_c_d___s_t7735_s_8c.html#aba0abdc1cc1f6363bd0cf646e61094e3" title="write 16&#45;bit data" alt="" coords="328,56,448,83"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="281,50,313,55,312,60,280,55"/>
+<area shape="rect" id="Node000004" href="$_l_c_d___s_t7735_s_8c.html#a71f317c08f5a4fd34f4e66b7413e0381" title="select register" alt="" coords="496,5,621,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="442,16,481,16,481,21,442,21"/>
+<area shape="rect" id="Node000005" href="$_l_c_d___s_t7735_s_8c.html#a4c41fe8c154e5beccd73c8b5042f497f" title="write 8&#45;bit data" alt="" coords="502,56,615,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="437,30,498,49,496,54,435,35"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="449,67,486,67,486,72,449,72"/>
+</map>
