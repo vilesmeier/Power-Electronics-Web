@@ -1,0 +1,5 @@
+<map id="FLAG" name="FLAG">
+<area shape="rect" id="Node000001" title="标志位打包" alt="" coords="19,104,75,131"/>
+<area shape="rect" id="Node000002" href="$struct_f_l_a_g___b_i_t.html" title="全局标志位, 共计16位" alt="" coords="5,5,89,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,48,50,104,44,104,44,48"/>
+</map>

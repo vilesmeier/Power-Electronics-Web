@@ -1,0 +1,970 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC_Core/Code/Control_Driver/FFT/dsp_lib/win/fpu_fft_gauss.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('fpu__fft__gauss_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fpu_fft_gauss.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="fpu__fft__gauss_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//=============================================================================</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Gauss Window </span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//=============================================================================</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#ifndef _FPU_FFT_GAUSS_H_</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#define _FPU_FFT_GAUSS_H_</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00007" data-start="" data-end="">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="fpu__fft__gauss_8h.html#a3504758f50cb4ea01c2a34e6e366bbf8">    7</a></span><span class="preprocessor">#define GAUSS32 {\</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">0.04393693, 0.06490819, 0.09342675, 0.13102225, 0.17902795, \</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">0.23834095, 0.30915658, 0.39071524, 0.48110981, 0.57720502, \</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">0.67471133, 0.76843638, 0.85270705, 0.92192120, 0.97115772, \</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">0.99675346, } </span></div>
+</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="" data-end="">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="fpu__fft__gauss_8h.html#a6d1c37e2e5e4f1a32deff15671152eef">   13</a></span><span class="preprocessor">#define GAUSS64 {\</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">0.04393693, 0.05341110, 0.06452050, 0.07745125, 0.09238970, \</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">0.10951741, 0.12900521, 0.15100654, 0.17565024, 0.20303280, \</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">0.23321050, 0.26619167, 0.30192931, 0.34031458, 0.38117139, \</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">0.42425258, 0.46923797, 0.51573459, 0.56327935, 0.61134429, \</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">0.65934445, 0.70664828, 0.75259047, 0.79648680, 0.83765061, \</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">0.87541039, 0.90912781, 0.93821560, 0.96215449, 0.98050866, \</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">0.99293888, 0.99921296, } </span></div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="" data-end="">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="fpu__fft__gauss_8h.html#a6b149f2c1ceb351b5219e64a104ee519">   22</a></span><span class="preprocessor">#define GAUSS128 {\</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">0.04393693, 0.04844385, 0.05333035, 0.05861882, 0.06433193, \</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">0.07049249, 0.07712337, 0.08424731, 0.09188674, 0.10006369, \</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">0.10879954, 0.11811483, 0.12802908, 0.13856057, 0.14972612, \</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">0.16154082, 0.17401788, 0.18716829, 0.20100069, 0.21552102, \</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">0.23073240, 0.24663481, 0.26322492, 0.28049587, 0.29843708, \</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">0.31703407, 0.33626830, 0.35611705, 0.37655329, 0.39754562, \</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">0.41905819, 0.44105073, 0.46347850, 0.48629240, 0.50943903, \</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">0.53286082, 0.55649621, 0.58027982, 0.60414276, 0.62801283, \</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">0.65181493, 0.67547135, 0.69890220, 0.72202580, 0.74475920, \</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">0.76701856, 0.78871974, 0.80977879, 0.83011244, 0.84963870, \</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">0.86827740, 0.88595068, 0.90258361, 0.91810463, 0.93244614, \</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">0.94554494, 0.95734272, 0.96778646, 0.97682887, 0.98442872, \</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">0.99055115, 0.99516795, 0.99825777, 0.99980627, } </span></div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="" data-end="">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="fpu__fft__gauss_8h.html#a2e357edad8b57b8c51a73f133e86e84a">   37</a></span><span class="preprocessor">#define GAUSS256 {\</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">0.04393693, 0.04613550, 0.04842545, 0.05080953, 0.05329049, \</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">0.05587111, 0.05855418, 0.06134251, 0.06423892, 0.06724622, \</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">0.07036725, 0.07360483, 0.07696178, 0.08044089, 0.08404497, \</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">0.08777676, 0.09163902, 0.09563444, 0.09976570, 0.10403542, \</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">0.10844617, 0.11300047, 0.11770076, 0.12254945, 0.12754882, \</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">0.13270112, 0.13800847, 0.14347292, 0.14909639, 0.15488073, \</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">0.16082762, 0.16693867, 0.17321531, 0.17965885, 0.18627046, \</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">0.19305115, 0.20000177, 0.20712299, 0.21441531, 0.22187906, \</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">0.22951436, 0.23732114, 0.24529914, 0.25344788, 0.26176665, \</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">0.27025455, 0.27891041, 0.28773286, 0.29672028, 0.30587081, \</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">0.31518232, 0.32465247, 0.33427861, 0.34405787, 0.35398710, \</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">0.36406288, 0.37428153, 0.38463908, 0.39513132, 0.40575375, \</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">0.41650157, 0.42736974, 0.43835295, 0.44944559, 0.46064179, \</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">0.47193543, 0.48332009, 0.49478913, 0.50633562, 0.51795238, \</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">0.52963200, 0.54136681, 0.55314892, 0.56497019, 0.57682228, \</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">0.58869663, 0.60058447, 0.61247685, 0.62436462, 0.63623846, \</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">0.64808889, 0.65990629, 0.67168088, 0.68340276, 0.69506193, \</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">0.70664828, 0.71815160, 0.72956164, 0.74086807, 0.75206052, \</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">0.76312860, 0.77406191, 0.78485006, 0.79548266, 0.80594939, \</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">0.81623995, 0.82634415, 0.83625185, 0.84595304, 0.85543782, \</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">0.86469643, 0.87371927, 0.88249690, 0.89102008, 0.89927977, \</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">0.90726714, 0.91497361, 0.92239084, 0.92951077, 0.93632560, \</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">0.94282783, 0.94901029, 0.95486610, 0.96038873, 0.96557200, \</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">0.97041009, 0.97489753, 0.97902924, 0.98280053, 0.98620712, \</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">0.98924510, 0.99191102, 0.99420180, 0.99611483, 0.99764791, \</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">0.99879926, 0.99956757, 0.99995194, } </span></div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="" data-end="">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="fpu__fft__gauss_8h.html#a029bde43f849a3773bd94515f9f9e6f8">   65</a></span><span class="preprocessor">#define GAUSS512 {\</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">0.04393693, 0.04502281, 0.04613111, 0.04726216, 0.04841631, \</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">0.04959389, 0.05079526, 0.05202074, 0.05327069, 0.05454545, \</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">0.05584537, 0.05717079, 0.05852207, 0.05989955, 0.06130359, \</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">0.06273453, 0.06419272, 0.06567852, 0.06719228, 0.06873434, \</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">0.07030507, 0.07190480, 0.07353389, 0.07519269, 0.07688156, \</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">0.07860082, 0.08035085, 0.08213197, 0.08394454, 0.08578889, \</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">0.08766537, 0.08957432, 0.09151608, 0.09349098, 0.09549935, \</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">0.09754153, 0.09961784, 0.10172861, 0.10387416, 0.10605480, \</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">0.10827086, 0.11052264, 0.11281044, 0.11513459, 0.11749536, \</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">0.11989307, 0.12232799, 0.12480041, 0.12731061, 0.12985887, \</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">0.13244546, 0.13507063, 0.13773465, 0.14043777, 0.14318023, \</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">0.14596226, 0.14878411, 0.15164599, 0.15454812, 0.15749072, \</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">0.16047397, 0.16349808, 0.16656323, 0.16966960, 0.17281736, \</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">0.17600667, 0.17923767, 0.18251050, 0.18582531, 0.18918221, \</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">0.19258131, 0.19602272, 0.19950652, 0.20303280, 0.20660162, \</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">0.21021305, 0.21386713, 0.21756389, 0.22130337, 0.22508557, \</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">0.22891049, 0.23277813, 0.23668844, 0.24064141, 0.24463697, \</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">0.24867506, 0.25275561, 0.25687852, 0.26104369, 0.26525100, \</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">0.26950032, 0.27379149, 0.27812437, 0.28249876, 0.28691449, \</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">0.29137134, 0.29586909, 0.30040751, 0.30498635, 0.30960533, \</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">0.31426418, 0.31896259, 0.32370025, 0.32847684, 0.33329199, \</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">0.33814536, 0.34303656, 0.34796519, 0.35293084, 0.35793308, \</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">0.36297147, 0.36804555, 0.37315482, 0.37829881, 0.38347699, \</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">0.38868883, 0.39393379, 0.39921130, 0.40452078, 0.40986164, \</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">0.41523326, 0.42063500, 0.42606622, 0.43152624, 0.43701440, \</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">0.44252999, 0.44807228, 0.45364056, 0.45923406, 0.46485203, \</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">0.47049367, 0.47615819, 0.48184478, 0.48755260, 0.49328080, \</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">0.49902852, 0.50479489, 0.51057899, 0.51637994, 0.52219679, \</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">0.52802861, 0.53387445, 0.53973333, 0.54560426, 0.55148625, \</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">0.55737829, 0.56327935, 0.56918839, 0.57510435, 0.58102616, \</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">0.58695276, 0.59288304, 0.59881591, 0.60475024, 0.61068491, \</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">0.61661879, 0.62255071, 0.62847953, 0.63440406, 0.64032314, \</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">0.64623557, 0.65214016, 0.65803568, 0.66392094, 0.66979471, \</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">0.67565574, 0.68150282, 0.68733468, 0.69315009, 0.69894777, \</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">0.70472648, 0.71048494, 0.71622187, 0.72193601, 0.72762606, \</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">0.73329076, 0.73892881, 0.74453892, 0.75011980, 0.75567016, \</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">0.76118871, 0.76667416, 0.77212521, 0.77754057, 0.78291895, \</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">0.78825906, 0.79355961, 0.79881933, 0.80403692, 0.80921111, \</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">0.81434063, 0.81942422, 0.82446059, 0.82944851, 0.83438671, \</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">0.83927396, 0.84410901, 0.84889064, 0.85361762, 0.85828876, \</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">0.86290283, 0.86745865, 0.87195504, 0.87639082, 0.88076485, \</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">0.88507596, 0.88932302, 0.89350491, 0.89762053, 0.90166877, \</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">0.90564855, 0.90955882, 0.91339851, 0.91716660, 0.92086207, \</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">0.92448391, 0.92803114, 0.93150279, 0.93489792, 0.93821560, \</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">0.94145490, 0.94461495, 0.94769487, 0.95069380, 0.95361092, \</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">0.95644542, 0.95919650, 0.96186340, 0.96444537, 0.96694170, \</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">0.96935167, 0.97167462, 0.97390989, 0.97605684, 0.97811488, \</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">0.98008342, 0.98196190, 0.98374979, 0.98544659, 0.98705181, \</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">0.98856499, 0.98998570, 0.99131354, 0.99254813, 0.99368912, \</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">0.99473618, 0.99568900, 0.99654733, 0.99731090, 0.99797951, \</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">0.99855296, 0.99903109, 0.99941376, 0.99970085, 0.99989230, \</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">0.99998803, } </span></div>
+</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="foldopen" id="foldopen00119" data-start="" data-end="">
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="fpu__fft__gauss_8h.html#a91f26b753ff97f267859de6fb7ee1b3e">  119</a></span><span class="preprocessor">#define GAUSS1024 {\</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">0.04393693, 0.04447656, 0.04502174, 0.04557251, 0.04612892, \</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">0.04669100, 0.04725881, 0.04783238, 0.04841175, 0.04899697, \</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">0.04958808, 0.05018512, 0.05078814, 0.05139718, 0.05201227, \</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">0.05263347, 0.05326082, 0.05389436, 0.05453413, 0.05518017, \</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">0.05583254, 0.05649127, 0.05715641, 0.05782799, 0.05850607, \</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">0.05919069, 0.05988188, 0.06057971, 0.06128419, 0.06199540, \</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">0.06271335, 0.06343811, 0.06416970, 0.06490819, 0.06565360, \</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="preprocessor">0.06640599, 0.06716540, 0.06793187, 0.06870544, 0.06948617, \</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">0.07027408, 0.07106923, 0.07187167, 0.07268142, 0.07349855, \</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">0.07432308, 0.07515507, 0.07599456, 0.07684159, 0.07769620, \</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">0.07855844, 0.07942836, 0.08030599, 0.08119137, 0.08208456, \</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">0.08298559, 0.08389450, 0.08481135, 0.08573617, 0.08666900, \</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">0.08760988, 0.08855887, 0.08951600, 0.09048131, 0.09145484, \</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">0.09243664, 0.09342675, 0.09442521, 0.09543206, 0.09644735, \</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">0.09747110, 0.09850337, 0.09954419, 0.10059361, 0.10165166, \</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">0.10271839, 0.10379383, 0.10487803, 0.10597102, 0.10707284, \</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="preprocessor">0.10818354, 0.10930314, 0.11043170, 0.11156924, 0.11271580, \</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">0.11387143, 0.11503616, 0.11621003, 0.11739307, 0.11858532, \</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="preprocessor">0.11978682, 0.12099760, 0.12221770, 0.12344715, 0.12468599, \</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="preprocessor">0.12593426, 0.12719198, 0.12845920, 0.12973595, 0.13102225, \</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="preprocessor">0.13231814, 0.13362366, 0.13493884, 0.13626371, 0.13759830, \</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="preprocessor">0.13894264, 0.14029676, 0.14166070, 0.14303448, 0.14441813, \</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="preprocessor">0.14581168, 0.14721516, 0.14862860, 0.15005203, 0.15148547, \</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="preprocessor">0.15292895, 0.15438250, 0.15584614, 0.15731990, 0.15880380, \</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="preprocessor">0.16029787, 0.16180213, 0.16331661, 0.16484132, 0.16637630, \</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="preprocessor">0.16792155, 0.16947711, 0.17104299, 0.17261922, 0.17420581, \</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="preprocessor">0.17580278, 0.17741016, 0.17902795, 0.18065619, 0.18229487, \</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="preprocessor">0.18394403, 0.18560367, 0.18727381, 0.18895447, 0.19064565, \</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="preprocessor">0.19234738, 0.19405966, 0.19578250, 0.19751593, 0.19925994, \</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="preprocessor">0.20101454, 0.20277976, 0.20455558, 0.20634204, 0.20813912, \</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="preprocessor">0.20994683, 0.21176519, 0.21359419, 0.21543385, 0.21728415, \</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">0.21914512, 0.22101674, 0.22289903, 0.22479197, 0.22669558, \</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="preprocessor">0.22860984, 0.23053476, 0.23247033, 0.23441656, 0.23637343, \</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="preprocessor">0.23834095, 0.24031910, 0.24230788, 0.24430729, 0.24631730, \</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="preprocessor">0.24833792, 0.25036914, 0.25241094, 0.25446331, 0.25652625, \</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="preprocessor">0.25859973, 0.26068374, 0.26277827, 0.26488330, 0.26699881, \</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="preprocessor">0.26912479, 0.27126122, 0.27340808, 0.27556535, 0.27773300, \</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="preprocessor">0.27991102, 0.28209938, 0.28429805, 0.28650702, 0.28872626, \</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="preprocessor">0.29095573, 0.29319541, 0.29544528, 0.29770530, 0.29997544, \</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="preprocessor">0.30225568, 0.30454597, 0.30684628, 0.30915658, 0.31147684, \</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="preprocessor">0.31380702, 0.31614707, 0.31849697, 0.32085666, 0.32322612, \</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="preprocessor">0.32560530, 0.32799416, 0.33039265, 0.33280073, 0.33521835, \</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="preprocessor">0.33764547, 0.34008203, 0.34252800, 0.34498332, 0.34744794, \</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="preprocessor">0.34992181, 0.35240487, 0.35489708, 0.35739837, 0.35990869, \</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="preprocessor">0.36242799, 0.36495620, 0.36749328, 0.37003914, 0.37259375, \</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">0.37515703, 0.37772892, 0.38030935, 0.38289827, 0.38549560, \</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="preprocessor">0.38810128, 0.39071524, 0.39333741, 0.39596771, 0.39860608, \</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="preprocessor">0.40125245, 0.40390674, 0.40656887, 0.40923878, 0.41191637, \</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="preprocessor">0.41460158, 0.41729433, 0.41999453, 0.42270211, 0.42541698, \</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="preprocessor">0.42813906, 0.43086826, 0.43360450, 0.43634770, 0.43909776, \</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="preprocessor">0.44185459, 0.44461812, 0.44738824, 0.45016486, 0.45294790, \</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="preprocessor">0.45573726, 0.45853283, 0.46133454, 0.46414228, 0.46695595, \</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="preprocessor">0.46977546, 0.47260070, 0.47543157, 0.47826798, 0.48110981, \</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="preprocessor">0.48395697, 0.48680935, 0.48966685, 0.49252935, 0.49539675, \</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="preprocessor">0.49826894, 0.50114581, 0.50402725, 0.50691315, 0.50980339, \</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="preprocessor">0.51269787, 0.51559646, 0.51849905, 0.52140553, 0.52431577, \</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="preprocessor">0.52722967, 0.53014709, 0.53306792, 0.53599204, 0.53891933, \</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="preprocessor">0.54184966, 0.54478290, 0.54771895, 0.55065766, 0.55359891, \</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="preprocessor">0.55654258, 0.55948854, 0.56243665, 0.56538680, 0.56833884, \</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="preprocessor">0.57129264, 0.57424808, 0.57720502, 0.58016333, 0.58312287, \</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="preprocessor">0.58608350, 0.58904510, 0.59200751, 0.59497062, 0.59793427, \</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="preprocessor">0.60089833, 0.60386265, 0.60682711, 0.60979155, 0.61275583, \</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="preprocessor">0.61571981, 0.61868335, 0.62164631, 0.62460853, 0.62756988, \</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="preprocessor">0.63053020, 0.63348936, 0.63644720, 0.63940358, 0.64235834, \</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">0.64531134, 0.64826243, 0.65121146, 0.65415828, 0.65710273, \</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="preprocessor">0.66004468, 0.66298395, 0.66592041, 0.66885389, 0.67178425, \</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor">0.67471133, 0.67763497, 0.68055503, 0.68347134, 0.68638375, \</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="preprocessor">0.68929211, 0.69219625, 0.69509602, 0.69799127, 0.70088183, \</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">0.70376756, 0.70664828, 0.70952384, 0.71239409, 0.71525886, \</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="preprocessor">0.71811800, 0.72097134, 0.72381873, 0.72666001, 0.72949501, \</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="preprocessor">0.73232358, 0.73514555, 0.73796077, 0.74076908, 0.74357031, \</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="preprocessor">0.74636430, 0.74915089, 0.75192993, 0.75470124, 0.75746468, \</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="preprocessor">0.76022007, 0.76296726, 0.76570608, 0.76843638, 0.77115799, \</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="preprocessor">0.77387076, 0.77657452, 0.77926910, 0.78195436, 0.78463013, \</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="preprocessor">0.78729624, 0.78995254, 0.79259888, 0.79523508, 0.79786098, \</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="preprocessor">0.80047644, 0.80308128, 0.80567536, 0.80825850, 0.81083056, \</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="preprocessor">0.81339137, 0.81594078, 0.81847863, 0.82100475, 0.82351900, \</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="preprocessor">0.82602122, 0.82851125, 0.83098893, 0.83345412, 0.83590664, \</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">0.83834636, 0.84077311, 0.84318674, 0.84558711, 0.84797405, \</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="preprocessor">0.85034741, 0.85270705, 0.85505280, 0.85738453, 0.85970208, \</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="preprocessor">0.86200530, 0.86429405, 0.86656817, 0.86882752, 0.87107195, \</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">0.87330132, 0.87551548, 0.87771428, 0.87989759, 0.88206526, \</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">0.88421714, 0.88635310, 0.88847300, 0.89057669, 0.89266403, \</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="preprocessor">0.89473490, 0.89678915, 0.89882664, 0.90084724, 0.90285081, \</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="preprocessor">0.90483722, 0.90680635, 0.90875804, 0.91069219, 0.91260865, \</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">0.91450729, 0.91638800, 0.91825063, 0.92009508, 0.92192120, \</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">0.92372888, 0.92551800, 0.92728843, 0.92904005, 0.93077275, \</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="preprocessor">0.93248640, 0.93418089, 0.93585610, 0.93751192, 0.93914824, \</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">0.94076494, 0.94236191, 0.94393904, 0.94549622, 0.94703335, \</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="preprocessor">0.94855032, 0.95004702, 0.95152335, 0.95297921, 0.95441450, \</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor">0.95582912, 0.95722297, 0.95859595, 0.95994797, 0.96127893, \</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">0.96258874, 0.96387731, 0.96514455, 0.96639037, 0.96761468, \</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="preprocessor">0.96881740, 0.96999844, 0.97115772, 0.97229516, 0.97341068, \</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="preprocessor">0.97450420, 0.97557565, 0.97662494, 0.97765200, 0.97865677, \</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="preprocessor">0.97963916, 0.98059912, 0.98153657, 0.98245144, 0.98334368, \</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="preprocessor">0.98421322, 0.98505999, 0.98588394, 0.98668501, 0.98746314, \</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="preprocessor">0.98821828, 0.98895037, 0.98965936, 0.99034520, 0.99100784, \</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="preprocessor">0.99164723, 0.99226334, 0.99285611, 0.99342550, 0.99397147, \</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="preprocessor">0.99449399, 0.99499301, 0.99546850, 0.99592043, 0.99634876, \</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">0.99675346, 0.99713451, 0.99749187, 0.99782553, 0.99813545, \</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="preprocessor">0.99842162, 0.99868401, 0.99892261, 0.99913740, 0.99932836, \</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="preprocessor">0.99949548, 0.99963875, 0.99975816, 0.99985369, 0.99992535, \</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="preprocessor">0.99997313, 0.99999701, } </span></div>
+</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="foldopen" id="foldopen00224" data-start="" data-end="">
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="fpu__fft__gauss_8h.html#ac1cbe72ea64f9f6d62a699e6061b30b2">  224</a></span><span class="preprocessor">#define GAUSS2048 {\</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="preprocessor">0.04393693, 0.04420592, 0.04447629, 0.04474805, 0.04502120, \</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="preprocessor">0.04529575, 0.04557170, 0.04584905, 0.04612782, 0.04640801, \</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="preprocessor">0.04668962, 0.04697266, 0.04725714, 0.04754305, 0.04783041, \</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="preprocessor">0.04811921, 0.04840947, 0.04870120, 0.04899438, 0.04928904, \</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="preprocessor">0.04958518, 0.04988280, 0.05018190, 0.05048249, 0.05078459, \</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="preprocessor">0.05108818, 0.05139329, 0.05169991, 0.05200805, 0.05231771, \</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="preprocessor">0.05262890, 0.05294163, 0.05325589, 0.05357171, 0.05388907, \</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="preprocessor">0.05420799, 0.05452847, 0.05485052, 0.05517415, 0.05549935, \</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="preprocessor">0.05582614, 0.05615451, 0.05648448, 0.05681605, 0.05714922, \</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="preprocessor">0.05748401, 0.05782041, 0.05815843, 0.05849808, 0.05883937, \</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="preprocessor">0.05918229, 0.05952685, 0.05987306, 0.06022093, 0.06057046, \</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="preprocessor">0.06092165, 0.06127451, 0.06162905, 0.06198527, 0.06234318, \</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="preprocessor">0.06270278, 0.06306408, 0.06342708, 0.06379179, 0.06415822, \</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="preprocessor">0.06452636, 0.06489623, 0.06526783, 0.06564117, 0.06601624, \</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="preprocessor">0.06639307, 0.06677165, 0.06715198, 0.06753408, 0.06791795, \</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="preprocessor">0.06830359, 0.06869102, 0.06908022, 0.06947122, 0.06986402, \</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="preprocessor">0.07025862, 0.07065502, 0.07105324, 0.07145327, 0.07185513, \</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="preprocessor">0.07225882, 0.07266434, 0.07307170, 0.07348090, 0.07389196, \</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="preprocessor">0.07430488, 0.07471965, 0.07513629, 0.07555481, 0.07597520, \</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="preprocessor">0.07639747, 0.07682164, 0.07724770, 0.07767566, 0.07810552, \</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="preprocessor">0.07853729, 0.07897098, 0.07940659, 0.07984413, 0.08028360, \</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="preprocessor">0.08072500, 0.08116835, 0.08161365, 0.08206089, 0.08251010, \</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="preprocessor">0.08296127, 0.08341442, 0.08386953, 0.08432663, 0.08478571, \</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="preprocessor">0.08524678, 0.08570985, 0.08617492, 0.08664200, 0.08711109, \</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="preprocessor">0.08758219, 0.08805532, 0.08853047, 0.08900766, 0.08948689, \</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="preprocessor">0.08996816, 0.09045148, 0.09093685, 0.09142428, 0.09191378, \</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="preprocessor">0.09240534, 0.09289898, 0.09339470, 0.09389251, 0.09439240, \</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="preprocessor">0.09489439, 0.09539848, 0.09590468, 0.09641299, 0.09692341, \</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="preprocessor">0.09743595, 0.09795062, 0.09846742, 0.09898636, 0.09950744, \</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="preprocessor">0.10003066, 0.10055604, 0.10108357, 0.10161326, 0.10214512, \</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="preprocessor">0.10267915, 0.10321536, 0.10375375, 0.10429432, 0.10483709, \</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="preprocessor">0.10538205, 0.10592921, 0.10647858, 0.10703016, 0.10758395, \</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="preprocessor">0.10813996, 0.10869820, 0.10925867, 0.10982137, 0.11038632, \</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="preprocessor">0.11095350, 0.11152294, 0.11209463, 0.11266858, 0.11324479, \</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="preprocessor">0.11382327, 0.11440402, 0.11498704, 0.11557235, 0.11615995, \</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="preprocessor">0.11674984, 0.11734202, 0.11793650, 0.11853329, 0.11913239, \</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="preprocessor">0.11973380, 0.12033752, 0.12094357, 0.12155195, 0.12216266, \</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">0.12277570, 0.12339109, 0.12400882, 0.12462890, 0.12525133, \</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="preprocessor">0.12587612, 0.12650327, 0.12713279, 0.12776468, 0.12839894, \</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="preprocessor">0.12903558, 0.12967460, 0.13031601, 0.13095982, 0.13160602, \</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="preprocessor">0.13225461, 0.13290561, 0.13355902, 0.13421484, 0.13487308, \</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="preprocessor">0.13553373, 0.13619681, 0.13686232, 0.13753026, 0.13820063, \</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="preprocessor">0.13887344, 0.13954870, 0.14022640, 0.14090655, 0.14158916, \</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="preprocessor">0.14227422, 0.14296175, 0.14365174, 0.14434420, 0.14503913, \</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="preprocessor">0.14573654, 0.14643643, 0.14713880, 0.14784366, 0.14855101, \</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="preprocessor">0.14926085, 0.14997319, 0.15068803, 0.15140538, 0.15212523, \</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="preprocessor">0.15284759, 0.15357247, 0.15429986, 0.15502978, 0.15576221, \</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="preprocessor">0.15649718, 0.15723467, 0.15797470, 0.15871726, 0.15946236, \</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="preprocessor">0.16021001, 0.16096020, 0.16171293, 0.16246822, 0.16322606, \</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="preprocessor">0.16398646, 0.16474942, 0.16551494, 0.16628302, 0.16705367, \</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="preprocessor">0.16782689, 0.16860269, 0.16938106, 0.17016201, 0.17094554, \</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="preprocessor">0.17173165, 0.17252035, 0.17331164, 0.17410552, 0.17490199, \</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="preprocessor">0.17570105, 0.17650272, 0.17730698, 0.17811385, 0.17892332, \</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="preprocessor">0.17973539, 0.18055008, 0.18136737, 0.18218728, 0.18300980, \</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="preprocessor">0.18383494, 0.18466270, 0.18549308, 0.18632608, 0.18716170, \</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="preprocessor">0.18799995, 0.18884083, 0.18968434, 0.19053048, 0.19137925, \</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="preprocessor">0.19223065, 0.19308470, 0.19394137, 0.19480069, 0.19566265, \</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="preprocessor">0.19652725, 0.19739449, 0.19826437, 0.19913690, 0.20001208, \</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="preprocessor">0.20088991, 0.20177038, 0.20265350, 0.20353928, 0.20442770, \</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="preprocessor">0.20531878, 0.20621252, 0.20710890, 0.20800795, 0.20890965, \</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="preprocessor">0.20981400, 0.21072102, 0.21163069, 0.21254302, 0.21345801, \</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="preprocessor">0.21437566, 0.21529598, 0.21621895, 0.21714458, 0.21807288, \</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="preprocessor">0.21900383, 0.21993745, 0.22087373, 0.22181268, 0.22275428, \</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="preprocessor">0.22369855, 0.22464548, 0.22559508, 0.22654733, 0.22750225, \</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="preprocessor">0.22845983, 0.22942007, 0.23038298, 0.23134854, 0.23231676, \</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="preprocessor">0.23328765, 0.23426120, 0.23523740, 0.23621626, 0.23719778, \</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="preprocessor">0.23818196, 0.23916880, 0.24015829, 0.24115043, 0.24214523, \</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="preprocessor">0.24314269, 0.24414279, 0.24514555, 0.24615095, 0.24715901, \</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="preprocessor">0.24816971, 0.24918306, 0.25019905, 0.25121769, 0.25223897, \</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="preprocessor">0.25326289, 0.25428945, 0.25531865, 0.25635048, 0.25738495, \</span></div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="preprocessor">0.25842205, 0.25946178, 0.26050414, 0.26154913, 0.26259674, \</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="preprocessor">0.26364698, 0.26469984, 0.26575531, 0.26681340, 0.26787411, \</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="preprocessor">0.26893743, 0.27000336, 0.27107190, 0.27214304, 0.27321678, \</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="preprocessor">0.27429313, 0.27537207, 0.27645360, 0.27753773, 0.27862445, \</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="preprocessor">0.27971375, 0.28080564, 0.28190011, 0.28299715, 0.28409677, \</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="preprocessor">0.28519896, 0.28630372, 0.28741104, 0.28852092, 0.28963337, \</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="preprocessor">0.29074836, 0.29186591, 0.29298600, 0.29410864, 0.29523382, \</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="preprocessor">0.29636154, 0.29749178, 0.29862456, 0.29975986, 0.30089768, \</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="preprocessor">0.30203802, 0.30318088, 0.30432624, 0.30547410, 0.30662447, \</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="preprocessor">0.30777733, 0.30893268, 0.31009052, 0.31125084, 0.31241364, \</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="preprocessor">0.31357891, 0.31474665, 0.31591686, 0.31708952, 0.31826464, \</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><span class="preprocessor">0.31944221, 0.32062222, 0.32180467, 0.32298955, 0.32417686, \</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="preprocessor">0.32536660, 0.32655875, 0.32775332, 0.32895029, 0.33014967, \</span></div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="preprocessor">0.33135144, 0.33255560, 0.33376215, 0.33497107, 0.33618237, \</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="preprocessor">0.33739603, 0.33861206, 0.33983044, 0.34105117, 0.34227425, \</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="preprocessor">0.34349966, 0.34472740, 0.34595746, 0.34718985, 0.34842454, \</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="preprocessor">0.34966154, 0.35090084, 0.35214243, 0.35338630, 0.35463245, \</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="preprocessor">0.35588087, 0.35713156, 0.35838450, 0.35963969, 0.36089713, \</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="preprocessor">0.36215680, 0.36341870, 0.36468282, 0.36594916, 0.36721770, \</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="preprocessor">0.36848844, 0.36976137, 0.37103649, 0.37231378, 0.37359324, \</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="preprocessor">0.37487486, 0.37615863, 0.37744455, 0.37873260, 0.38002278, \</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="preprocessor">0.38131508, 0.38260949, 0.38390601, 0.38520462, 0.38650532, \</span></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="preprocessor">0.38780809, 0.38911294, 0.39041985, 0.39172881, 0.39303981, \</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="preprocessor">0.39435285, 0.39566791, 0.39698499, 0.39830408, 0.39962516, \</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="preprocessor">0.40094824, 0.40227330, 0.40360032, 0.40492931, 0.40626025, \</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="preprocessor">0.40759314, 0.40892796, 0.41026470, 0.41160335, 0.41294391, \</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="preprocessor">0.41428637, 0.41563070, 0.41697692, 0.41832499, 0.41967492, \</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="preprocessor">0.42102670, 0.42238031, 0.42373574, 0.42509299, 0.42645204, \</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="preprocessor">0.42781288, 0.42917551, 0.43053990, 0.43190606, 0.43327396, \</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="preprocessor">0.43464361, 0.43601498, 0.43738807, 0.43876287, 0.44013936, \</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="preprocessor">0.44151754, 0.44289739, 0.44427890, 0.44566206, 0.44704686, \</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="preprocessor">0.44843329, 0.44982133, 0.45121098, 0.45260222, 0.45399505, \</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="preprocessor">0.45538944, 0.45678539, 0.45818288, 0.45958191, 0.46098246, \</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="preprocessor">0.46238451, 0.46378807, 0.46519311, 0.46659962, 0.46800760, \</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="preprocessor">0.46941702, 0.47082788, 0.47224016, 0.47365385, 0.47506893, \</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="preprocessor">0.47648541, 0.47790325, 0.47932245, 0.48074300, 0.48216489, \</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="preprocessor">0.48358809, 0.48501260, 0.48643841, 0.48786549, 0.48929384, \</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="preprocessor">0.49072345, 0.49215430, 0.49358637, 0.49501966, 0.49645415, \</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="preprocessor">0.49788982, 0.49932667, 0.50076468, 0.50220383, 0.50364411, \</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="preprocessor">0.50508551, 0.50652801, 0.50797160, 0.50941627, 0.51086200, \</span></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="preprocessor">0.51230877, 0.51375658, 0.51520540, 0.51665523, 0.51810604, \</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="preprocessor">0.51955783, 0.52101058, 0.52246427, 0.52391890, 0.52537444, \</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="preprocessor">0.52683088, 0.52828820, 0.52974640, 0.53120545, 0.53266534, \</span></div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="preprocessor">0.53412606, 0.53558759, 0.53704991, 0.53851301, 0.53997688, \</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="preprocessor">0.54144149, 0.54290684, 0.54437291, 0.54583968, 0.54730714, \</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="preprocessor">0.54877526, 0.55024404, 0.55171347, 0.55318351, 0.55465416, \</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span><span class="preprocessor">0.55612541, 0.55759723, 0.55906961, 0.56054253, 0.56201598, \</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="preprocessor">0.56348995, 0.56496440, 0.56643934, 0.56791474, 0.56939058, \</span></div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="preprocessor">0.57086686, 0.57234354, 0.57382062, 0.57529809, 0.57677591, \</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="preprocessor">0.57825408, 0.57973258, 0.58121139, 0.58269050, 0.58416989, \</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="preprocessor">0.58564954, 0.58712943, 0.58860956, 0.59008989, 0.59157041, \</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="preprocessor">0.59305112, 0.59453198, 0.59601298, 0.59749411, 0.59897534, \</span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="preprocessor">0.60045667, 0.60193806, 0.60341951, 0.60490100, 0.60638251, \</span></div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="preprocessor">0.60786402, 0.60934551, 0.61082697, 0.61230838, 0.61378972, \</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><span class="preprocessor">0.61527097, 0.61675211, 0.61823314, 0.61971402, 0.62119474, \</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="preprocessor">0.62267529, 0.62415564, 0.62563578, 0.62711569, 0.62859534, \</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="preprocessor">0.63007473, 0.63155383, 0.63303263, 0.63451111, 0.63598924, \</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="preprocessor">0.63746701, 0.63894441, 0.64042140, 0.64189799, 0.64337413, \</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="preprocessor">0.64484983, 0.64632505, 0.64779979, 0.64927401, 0.65074771, \</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span><span class="preprocessor">0.65222086, 0.65369345, 0.65516545, 0.65663685, 0.65810762, \</span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="preprocessor">0.65957776, 0.66104724, 0.66251603, 0.66398413, 0.66545151, \</span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="preprocessor">0.66691816, 0.66838405, 0.66984917, 0.67131349, 0.67277700, \</span></div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="preprocessor">0.67423968, 0.67570150, 0.67716246, 0.67862252, 0.68008168, \</span></div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="preprocessor">0.68153990, 0.68299718, 0.68445349, 0.68590882, 0.68736313, \</span></div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="preprocessor">0.68881642, 0.69026867, 0.69171985, 0.69316995, 0.69461894, \</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="preprocessor">0.69606680, 0.69751353, 0.69895909, 0.70040346, 0.70184664, \</span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="preprocessor">0.70328859, 0.70472930, 0.70616875, 0.70760691, 0.70904378, \</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="preprocessor">0.71047932, 0.71191352, 0.71334636, 0.71477782, 0.71620788, \</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="preprocessor">0.71763652, 0.71906372, 0.72048946, 0.72191372, 0.72333648, \</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="preprocessor">0.72475772, 0.72617742, 0.72759555, 0.72901211, 0.73042707, \</span></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="preprocessor">0.73184041, 0.73325211, 0.73466214, 0.73607050, 0.73747716, \</span></div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span><span class="preprocessor">0.73888210, 0.74028529, 0.74168673, 0.74308639, 0.74448424, \</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="preprocessor">0.74588028, 0.74727447, 0.74866680, 0.75005726, 0.75144581, \</span></div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="preprocessor">0.75283244, 0.75421713, 0.75559986, 0.75698061, 0.75835935, \</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="preprocessor">0.75973608, 0.76111076, 0.76248338, 0.76385392, 0.76522235, \</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="preprocessor">0.76658867, 0.76795284, 0.76931485, 0.77067468, 0.77203230, \</span></div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span><span class="preprocessor">0.77338770, 0.77474086, 0.77609176, 0.77744037, 0.77878668, \</span></div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span><span class="preprocessor">0.78013067, 0.78147231, 0.78281159, 0.78414849, 0.78548299, \</span></div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span><span class="preprocessor">0.78681506, 0.78814468, 0.78947185, 0.79079653, 0.79211871, \</span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span><span class="preprocessor">0.79343836, 0.79475547, 0.79607002, 0.79738199, 0.79869135, \</span></div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span><span class="preprocessor">0.79999809, 0.80130219, 0.80260362, 0.80390237, 0.80519842, \</span></div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span><span class="preprocessor">0.80649174, 0.80778233, 0.80907015, 0.81035519, 0.81163743, \</span></div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span><span class="preprocessor">0.81291685, 0.81419343, 0.81546714, 0.81673798, 0.81800591, \</span></div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span><span class="preprocessor">0.81927093, 0.82053301, 0.82179212, 0.82304826, 0.82430141, \</span></div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span><span class="preprocessor">0.82555153, 0.82679862, 0.82804265, 0.82928360, 0.83052146, \</span></div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span><span class="preprocessor">0.83175621, 0.83298782, 0.83421628, 0.83544156, 0.83666365, \</span></div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span><span class="preprocessor">0.83788253, 0.83909818, 0.84031058, 0.84151971, 0.84272556, \</span></div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span><span class="preprocessor">0.84392809, 0.84512730, 0.84632317, 0.84751567, 0.84870478, \</span></div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="preprocessor">0.84989050, 0.85107279, 0.85225164, 0.85342704, 0.85459895, \</span></div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span><span class="preprocessor">0.85576737, 0.85693228, 0.85809365, 0.85925147, 0.86040571, \</span></div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span><span class="preprocessor">0.86155637, 0.86270342, 0.86384684, 0.86498662, 0.86612273, \</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="preprocessor">0.86725516, 0.86838389, 0.86950890, 0.87063018, 0.87174770, \</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="preprocessor">0.87286144, 0.87397140, 0.87507754, 0.87617986, 0.87727833, \</span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span><span class="preprocessor">0.87837294, 0.87946367, 0.88055050, 0.88163341, 0.88271238, \</span></div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span><span class="preprocessor">0.88378741, 0.88485846, 0.88592553, 0.88698859, 0.88804762, \</span></div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span><span class="preprocessor">0.88910262, 0.89015356, 0.89120043, 0.89224320, 0.89328186, \</span></div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span><span class="preprocessor">0.89431640, 0.89534679, 0.89637302, 0.89739508, 0.89841294, \</span></div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span><span class="preprocessor">0.89942659, 0.90043601, 0.90144118, 0.90244209, 0.90343872, \</span></div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="preprocessor">0.90443106, 0.90541909, 0.90640278, 0.90738213, 0.90835712, \</span></div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span><span class="preprocessor">0.90932774, 0.91029395, 0.91125576, 0.91221315, 0.91316609, \</span></div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="preprocessor">0.91411457, 0.91505857, 0.91599809, 0.91693310, 0.91786359, \</span></div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span><span class="preprocessor">0.91878954, 0.91971094, 0.92062777, 0.92154001, 0.92244766, \</span></div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="preprocessor">0.92335069, 0.92424909, 0.92514284, 0.92603194, 0.92691636, \</span></div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="preprocessor">0.92779608, 0.92867110, 0.92954141, 0.93040697, 0.93126779, \</span></div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="preprocessor">0.93212384, 0.93297511, 0.93382158, 0.93466325, 0.93550010, \</span></div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="preprocessor">0.93633210, 0.93715926, 0.93798155, 0.93879896, 0.93961148, \</span></div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="preprocessor">0.94041909, 0.94122178, 0.94201953, 0.94281234, 0.94360018, \</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="preprocessor">0.94438304, 0.94516092, 0.94593379, 0.94670165, 0.94746448, \</span></div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="preprocessor">0.94822226, 0.94897499, 0.94972265, 0.95046523, 0.95120271, \</span></div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="preprocessor">0.95193509, 0.95266234, 0.95338447, 0.95410145, 0.95481327, \</span></div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span><span class="preprocessor">0.95551992, 0.95622139, 0.95691766, 0.95760873, 0.95829458, \</span></div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="preprocessor">0.95897520, 0.95965058, 0.96032070, 0.96098556, 0.96164514, \</span></div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="preprocessor">0.96229943, 0.96294842, 0.96359211, 0.96423046, 0.96486349, \</span></div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span><span class="preprocessor">0.96549117, 0.96611349, 0.96673045, 0.96734203, 0.96794822, \</span></div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span><span class="preprocessor">0.96854901, 0.96914439, 0.96973436, 0.97031889, 0.97089798, \</span></div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span><span class="preprocessor">0.97147163, 0.97203981, 0.97260252, 0.97315975, 0.97371149, \</span></div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span><span class="preprocessor">0.97425773, 0.97479846, 0.97533368, 0.97586336, 0.97638751, \</span></div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span><span class="preprocessor">0.97690611, 0.97741915, 0.97792663, 0.97842853, 0.97892485, \</span></div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span><span class="preprocessor">0.97941558, 0.97990071, 0.98038023, 0.98085413, 0.98132241, \</span></div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span><span class="preprocessor">0.98178505, 0.98224205, 0.98269340, 0.98313909, 0.98357912, \</span></div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="preprocessor">0.98401347, 0.98444214, 0.98486512, 0.98528240, 0.98569398, \</span></div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span><span class="preprocessor">0.98609985, 0.98650000, 0.98689442, 0.98728311, 0.98766607, \</span></div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span><span class="preprocessor">0.98804327, 0.98841472, 0.98878042, 0.98914034, 0.98949449, \</span></div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span><span class="preprocessor">0.98984287, 0.99018546, 0.99052226, 0.99085326, 0.99117845, \</span></div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span><span class="preprocessor">0.99149784, 0.99181142, 0.99211917, 0.99242110, 0.99271720, \</span></div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span><span class="preprocessor">0.99300746, 0.99329188, 0.99357045, 0.99384318, 0.99411004, \</span></div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span><span class="preprocessor">0.99437105, 0.99462619, 0.99487545, 0.99511885, 0.99535636, \</span></div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span><span class="preprocessor">0.99558800, 0.99581374, 0.99603359, 0.99624755, 0.99645561, \</span></div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span><span class="preprocessor">0.99665776, 0.99685401, 0.99704435, 0.99722878, 0.99740729, \</span></div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="preprocessor">0.99757987, 0.99774654, 0.99790728, 0.99806209, 0.99821097, \</span></div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span><span class="preprocessor">0.99835391, 0.99849092, 0.99862199, 0.99874712, 0.99886630, \</span></div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span><span class="preprocessor">0.99897954, 0.99908683, 0.99918817, 0.99928356, 0.99937299, \</span></div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span><span class="preprocessor">0.99945647, 0.99953399, 0.99960556, 0.99967116, 0.99973081, \</span></div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span><span class="preprocessor">0.99978449, 0.99983221, 0.99987397, 0.99990976, 0.99993959, \</span></div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="preprocessor">0.99996346, 0.99998136, 0.99999329, 0.99999925, } </span></div>
+</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span> </div>
+<div class="foldopen" id="foldopen00431" data-start="" data-end="">
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno"><a class="line" href="fpu__fft__gauss_8h.html#abb68e2ba2bb70d8aed71c6393f498c5c">  431</a></span><span class="preprocessor">#define GAUSS4096 {\</span></div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span><span class="preprocessor">0.04393693, 0.04407122, 0.04420586, 0.04434084, 0.04447616, \</span></div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span><span class="preprocessor">0.04461183, 0.04474785, 0.04488422, 0.04502093, 0.04515800, \</span></div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span><span class="preprocessor">0.04529541, 0.04543318, 0.04557129, 0.04570976, 0.04584858, \</span></div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span><span class="preprocessor">0.04598775, 0.04612728, 0.04626716, 0.04640739, 0.04654799, \</span></div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span><span class="preprocessor">0.04668893, 0.04683024, 0.04697190, 0.04711392, 0.04725630, \</span></div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span><span class="preprocessor">0.04739904, 0.04754214, 0.04768560, 0.04782942, 0.04797361, \</span></div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span><span class="preprocessor">0.04811815, 0.04826306, 0.04840834, 0.04855398, 0.04869998, \</span></div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span><span class="preprocessor">0.04884635, 0.04899309, 0.04914020, 0.04928767, 0.04943552, \</span></div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span><span class="preprocessor">0.04958373, 0.04973231, 0.04988127, 0.05003059, 0.05018029, \</span></div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span><span class="preprocessor">0.05033036, 0.05048080, 0.05063162, 0.05078281, 0.05093438, \</span></div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span><span class="preprocessor">0.05108633, 0.05123865, 0.05139135, 0.05154442, 0.05169788, \</span></div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span><span class="preprocessor">0.05185172, 0.05200593, 0.05216053, 0.05231551, 0.05247087, \</span></div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span><span class="preprocessor">0.05262661, 0.05278274, 0.05293925, 0.05309615, 0.05325343, \</span></div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span><span class="preprocessor">0.05341110, 0.05356915, 0.05372760, 0.05388643, 0.05404565, \</span></div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span><span class="preprocessor">0.05420526, 0.05436526, 0.05452565, 0.05468643, 0.05484761, \</span></div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span><span class="preprocessor">0.05500918, 0.05517114, 0.05533349, 0.05549625, 0.05565939, \</span></div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span><span class="preprocessor">0.05582294, 0.05598688, 0.05615121, 0.05631595, 0.05648109, \</span></div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span><span class="preprocessor">0.05664662, 0.05681256, 0.05697890, 0.05714563, 0.05731278, \</span></div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span><span class="preprocessor">0.05748032, 0.05764827, 0.05781662, 0.05798538, 0.05815454, \</span></div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span><span class="preprocessor">0.05832411, 0.05849409, 0.05866448, 0.05883527, 0.05900648, \</span></div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span><span class="preprocessor">0.05917809, 0.05935011, 0.05952255, 0.05969540, 0.05986866, \</span></div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span><span class="preprocessor">0.06004233, 0.06021642, 0.06039092, 0.06056584, 0.06074117, \</span></div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span><span class="preprocessor">0.06091692, 0.06109309, 0.06126968, 0.06144668, 0.06162411, \</span></div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span><span class="preprocessor">0.06180195, 0.06198022, 0.06215890, 0.06233801, 0.06251754, \</span></div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span><span class="preprocessor">0.06269750, 0.06287788, 0.06305868, 0.06323991, 0.06342157, \</span></div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span><span class="preprocessor">0.06360366, 0.06378617, 0.06396911, 0.06415248, 0.06433627, \</span></div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span><span class="preprocessor">0.06452050, 0.06470516, 0.06489025, 0.06507578, 0.06526174, \</span></div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span><span class="preprocessor">0.06544813, 0.06563495, 0.06582221, 0.06600991, 0.06619804, \</span></div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span><span class="preprocessor">0.06638661, 0.06657562, 0.06676507, 0.06695496, 0.06714528, \</span></div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span><span class="preprocessor">0.06733605, 0.06752726, 0.06771891, 0.06791100, 0.06810353, \</span></div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span><span class="preprocessor">0.06829652, 0.06848994, 0.06868381, 0.06887813, 0.06907289, \</span></div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span><span class="preprocessor">0.06926810, 0.06946376, 0.06965987, 0.06985642, 0.07005343, \</span></div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span><span class="preprocessor">0.07025089, 0.07044880, 0.07064716, 0.07084598, 0.07104524, \</span></div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span><span class="preprocessor">0.07124497, 0.07144514, 0.07164578, 0.07184687, 0.07204841, \</span></div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span><span class="preprocessor">0.07225042, 0.07245288, 0.07265580, 0.07285918, 0.07306302, \</span></div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span><span class="preprocessor">0.07326733, 0.07347209, 0.07367732, 0.07388301, 0.07408916, \</span></div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span><span class="preprocessor">0.07429578, 0.07450286, 0.07471041, 0.07491843, 0.07512691, \</span></div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span><span class="preprocessor">0.07533586, 0.07554528, 0.07575517, 0.07596553, 0.07617636, \</span></div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span><span class="preprocessor">0.07638766, 0.07659943, 0.07681167, 0.07702439, 0.07723758, \</span></div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span><span class="preprocessor">0.07745125, 0.07766539, 0.07788001, 0.07809510, 0.07831068, \</span></div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span><span class="preprocessor">0.07852672, 0.07874325, 0.07896026, 0.07917775, 0.07939572, \</span></div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span><span class="preprocessor">0.07961417, 0.07983310, 0.08005251, 0.08027241, 0.08049279, \</span></div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span><span class="preprocessor">0.08071366, 0.08093501, 0.08115685, 0.08137917, 0.08160198, \</span></div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span><span class="preprocessor">0.08182529, 0.08204907, 0.08227335, 0.08249812, 0.08272338, \</span></div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span><span class="preprocessor">0.08294913, 0.08317537, 0.08340211, 0.08362934, 0.08385706, \</span></div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span><span class="preprocessor">0.08408528, 0.08431399, 0.08454320, 0.08477290, 0.08500311, \</span></div>
+<div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span><span class="preprocessor">0.08523381, 0.08546501, 0.08569671, 0.08592891, 0.08616161, \</span></div>
+<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span><span class="preprocessor">0.08639481, 0.08662851, 0.08686272, 0.08709743, 0.08733264, \</span></div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span><span class="preprocessor">0.08756836, 0.08780458, 0.08804131, 0.08827854, 0.08851629, \</span></div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span><span class="preprocessor">0.08875454, 0.08899330, 0.08923257, 0.08947235, 0.08971264, \</span></div>
+<div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span><span class="preprocessor">0.08995344, 0.09019475, 0.09043657, 0.09067891, 0.09092176, \</span></div>
+<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span><span class="preprocessor">0.09116513, 0.09140901, 0.09165341, 0.09189832, 0.09214376, \</span></div>
+<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span><span class="preprocessor">0.09238970, 0.09263617, 0.09288316, 0.09313066, 0.09337869, \</span></div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span><span class="preprocessor">0.09362724, 0.09387631, 0.09412590, 0.09437601, 0.09462665, \</span></div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span><span class="preprocessor">0.09487781, 0.09512950, 0.09538171, 0.09563444, 0.09588771, \</span></div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span><span class="preprocessor">0.09614150, 0.09639582, 0.09665067, 0.09690605, 0.09716196, \</span></div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span><span class="preprocessor">0.09741839, 0.09767536, 0.09793287, 0.09819090, 0.09844947, \</span></div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span><span class="preprocessor">0.09870857, 0.09896820, 0.09922837, 0.09948908, 0.09975032, \</span></div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span><span class="preprocessor">0.10001210, 0.10027442, 0.10053727, 0.10080066, 0.10106460, \</span></div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span><span class="preprocessor">0.10132907, 0.10159408, 0.10185964, 0.10212573, 0.10239237, \</span></div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span><span class="preprocessor">0.10265955, 0.10292728, 0.10319555, 0.10346437, 0.10373373, \</span></div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span><span class="preprocessor">0.10400363, 0.10427409, 0.10454509, 0.10481664, 0.10508873, \</span></div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span><span class="preprocessor">0.10536138, 0.10563458, 0.10590833, 0.10618262, 0.10645748, \</span></div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span><span class="preprocessor">0.10673288, 0.10700883, 0.10728534, 0.10756241, 0.10784002, \</span></div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span><span class="preprocessor">0.10811820, 0.10839693, 0.10867621, 0.10895605, 0.10923646, \</span></div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span><span class="preprocessor">0.10951741, 0.10979893, 0.11008101, 0.11036365, 0.11064685, \</span></div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span><span class="preprocessor">0.11093061, 0.11121493, 0.11149981, 0.11178526, 0.11207127, \</span></div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span><span class="preprocessor">0.11235784, 0.11264498, 0.11293269, 0.11322096, 0.11350980, \</span></div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span><span class="preprocessor">0.11379920, 0.11408918, 0.11437972, 0.11467083, 0.11496251, \</span></div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span><span class="preprocessor">0.11525476, 0.11554758, 0.11584097, 0.11613494, 0.11642947, \</span></div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span><span class="preprocessor">0.11672458, 0.11702026, 0.11731652, 0.11761335, 0.11791076, \</span></div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span><span class="preprocessor">0.11820874, 0.11850730, 0.11880644, 0.11910615, 0.11940644, \</span></div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span><span class="preprocessor">0.11970731, 0.12000876, 0.12031079, 0.12061340, 0.12091659, \</span></div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span><span class="preprocessor">0.12122036, 0.12152471, 0.12182965, 0.12213517, 0.12244127, \</span></div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span><span class="preprocessor">0.12274796, 0.12305523, 0.12336309, 0.12367153, 0.12398056, \</span></div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span><span class="preprocessor">0.12429018, 0.12460038, 0.12491117, 0.12522255, 0.12553452, \</span></div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span><span class="preprocessor">0.12584708, 0.12616023, 0.12647397, 0.12678830, 0.12710322, \</span></div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span><span class="preprocessor">0.12741873, 0.12773484, 0.12805154, 0.12836884, 0.12868673, \</span></div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span><span class="preprocessor">0.12900521, 0.12932429, 0.12964396, 0.12996424, 0.13028510, \</span></div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span><span class="preprocessor">0.13060657, 0.13092863, 0.13125130, 0.13157456, 0.13189842, \</span></div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span><span class="preprocessor">0.13222288, 0.13254794, 0.13287360, 0.13319987, 0.13352673, \</span></div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span><span class="preprocessor">0.13385420, 0.13418228, 0.13451095, 0.13484023, 0.13517011, \</span></div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span><span class="preprocessor">0.13550060, 0.13583170, 0.13616340, 0.13649571, 0.13682862, \</span></div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span><span class="preprocessor">0.13716214, 0.13749627, 0.13783101, 0.13816636, 0.13850231, \</span></div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span><span class="preprocessor">0.13883888, 0.13917606, 0.13951384, 0.13985224, 0.14019125, \</span></div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span><span class="preprocessor">0.14053088, 0.14087111, 0.14121196, 0.14155342, 0.14189550, \</span></div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span><span class="preprocessor">0.14223819, 0.14258150, 0.14292542, 0.14326996, 0.14361511, \</span></div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span><span class="preprocessor">0.14396088, 0.14430727, 0.14465428, 0.14500190, 0.14535015, \</span></div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span><span class="preprocessor">0.14569901, 0.14604849, 0.14639860, 0.14674932, 0.14710066, \</span></div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span><span class="preprocessor">0.14745263, 0.14780521, 0.14815842, 0.14851225, 0.14886671, \</span></div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span><span class="preprocessor">0.14922179, 0.14957749, 0.14993382, 0.15029077, 0.15064834, \</span></div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span><span class="preprocessor">0.15100654, 0.15136537, 0.15172483, 0.15208491, 0.15244562, \</span></div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span><span class="preprocessor">0.15280695, 0.15316892, 0.15353151, 0.15389473, 0.15425859, \</span></div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span><span class="preprocessor">0.15462307, 0.15498818, 0.15535392, 0.15572029, 0.15608730, \</span></div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span><span class="preprocessor">0.15645493, 0.15682320, 0.15719210, 0.15756163, 0.15793180, \</span></div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span><span class="preprocessor">0.15830260, 0.15867403, 0.15904610, 0.15941881, 0.15979214, \</span></div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span><span class="preprocessor">0.16016612, 0.16054073, 0.16091597, 0.16129186, 0.16166838, \</span></div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span><span class="preprocessor">0.16204553, 0.16242333, 0.16280176, 0.16318083, 0.16356054, \</span></div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span><span class="preprocessor">0.16394089, 0.16432188, 0.16470351, 0.16508578, 0.16546869, \</span></div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span><span class="preprocessor">0.16585224, 0.16623643, 0.16662126, 0.16700674, 0.16739286, \</span></div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="preprocessor">0.16777962, 0.16816702, 0.16855506, 0.16894375, 0.16933309, \</span></div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span><span class="preprocessor">0.16972306, 0.17011369, 0.17050495, 0.17089687, 0.17128942, \</span></div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span><span class="preprocessor">0.17168263, 0.17207648, 0.17247097, 0.17286611, 0.17326190, \</span></div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span><span class="preprocessor">0.17365834, 0.17405542, 0.17445316, 0.17485154, 0.17525057, \</span></div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span><span class="preprocessor">0.17565024, 0.17605057, 0.17645155, 0.17685317, 0.17725545, \</span></div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span><span class="preprocessor">0.17765837, 0.17806195, 0.17846617, 0.17887105, 0.17927658, \</span></div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span><span class="preprocessor">0.17968276, 0.18008959, 0.18049708, 0.18090521, 0.18131400, \</span></div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span><span class="preprocessor">0.18172345, 0.18213354, 0.18254429, 0.18295569, 0.18336775, \</span></div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span><span class="preprocessor">0.18378046, 0.18419382, 0.18460784, 0.18502251, 0.18543784, \</span></div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span><span class="preprocessor">0.18585382, 0.18627046, 0.18668776, 0.18710571, 0.18752432, \</span></div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span><span class="preprocessor">0.18794358, 0.18836350, 0.18878408, 0.18920531, 0.18962720, \</span></div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span><span class="preprocessor">0.19004975, 0.19047295, 0.19089682, 0.19132134, 0.19174652, \</span></div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span><span class="preprocessor">0.19217236, 0.19259885, 0.19302601, 0.19345382, 0.19388229, \</span></div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span><span class="preprocessor">0.19431143, 0.19474122, 0.19517167, 0.19560278, 0.19603456, \</span></div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span><span class="preprocessor">0.19646699, 0.19690008, 0.19733383, 0.19776825, 0.19820332, \</span></div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span><span class="preprocessor">0.19863906, 0.19907545, 0.19951251, 0.19995023, 0.20038861, \</span></div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span><span class="preprocessor">0.20082765, 0.20126736, 0.20170772, 0.20214875, 0.20259044, \</span></div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span><span class="preprocessor">0.20303280, 0.20347581, 0.20391949, 0.20436383, 0.20480884, \</span></div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span><span class="preprocessor">0.20525450, 0.20570083, 0.20614783, 0.20659548, 0.20704380, \</span></div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span><span class="preprocessor">0.20749279, 0.20794243, 0.20839274, 0.20884372, 0.20929536, \</span></div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span><span class="preprocessor">0.20974766, 0.21020063, 0.21065426, 0.21110855, 0.21156351, \</span></div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span><span class="preprocessor">0.21201914, 0.21247543, 0.21293238, 0.21339000, 0.21384828, \</span></div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span><span class="preprocessor">0.21430723, 0.21476684, 0.21522711, 0.21568806, 0.21614966, \</span></div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span><span class="preprocessor">0.21661193, 0.21707487, 0.21753847, 0.21800274, 0.21846767, \</span></div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span><span class="preprocessor">0.21893327, 0.21939953, 0.21986645, 0.22033405, 0.22080230, \</span></div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span><span class="preprocessor">0.22127123, 0.22174082, 0.22221107, 0.22268199, 0.22315357, \</span></div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span><span class="preprocessor">0.22362582, 0.22409874, 0.22457232, 0.22504656, 0.22552147, \</span></div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span><span class="preprocessor">0.22599705, 0.22647329, 0.22695019, 0.22742777, 0.22790600, \</span></div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span><span class="preprocessor">0.22838490, 0.22886447, 0.22934470, 0.22982560, 0.23030716, \</span></div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span><span class="preprocessor">0.23078939, 0.23127228, 0.23175584, 0.23224006, 0.23272495, \</span></div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span><span class="preprocessor">0.23321050, 0.23369671, 0.23418359, 0.23467114, 0.23515935, \</span></div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="preprocessor">0.23564822, 0.23613776, 0.23662796, 0.23711883, 0.23761036, \</span></div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="preprocessor">0.23810255, 0.23859541, 0.23908893, 0.23958312, 0.24007797, \</span></div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span><span class="preprocessor">0.24057348, 0.24106965, 0.24156649, 0.24206400, 0.24256216, \</span></div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="preprocessor">0.24306099, 0.24356048, 0.24406063, 0.24456145, 0.24506293, \</span></div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><span class="preprocessor">0.24556507, 0.24606787, 0.24657133, 0.24707546, 0.24758024, \</span></div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span><span class="preprocessor">0.24808569, 0.24859180, 0.24909858, 0.24960601, 0.25011410, \</span></div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span><span class="preprocessor">0.25062285, 0.25113227, 0.25164234, 0.25215308, 0.25266447, \</span></div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span><span class="preprocessor">0.25317653, 0.25368924, 0.25420261, 0.25471664, 0.25523134, \</span></div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span><span class="preprocessor">0.25574669, 0.25626269, 0.25677936, 0.25729668, 0.25781467, \</span></div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span><span class="preprocessor">0.25833331, 0.25885261, 0.25937256, 0.25989317, 0.26041444, \</span></div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span><span class="preprocessor">0.26093637, 0.26145895, 0.26198218, 0.26250608, 0.26303063, \</span></div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span><span class="preprocessor">0.26355583, 0.26408169, 0.26460820, 0.26513537, 0.26566319, \</span></div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span><span class="preprocessor">0.26619167, 0.26672080, 0.26725058, 0.26778102, 0.26831211, \</span></div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span><span class="preprocessor">0.26884385, 0.26937624, 0.26990929, 0.27044298, 0.27097733, \</span></div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span><span class="preprocessor">0.27151233, 0.27204798, 0.27258428, 0.27312123, 0.27365883, \</span></div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span><span class="preprocessor">0.27419708, 0.27473598, 0.27527553, 0.27581573, 0.27635657, \</span></div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span><span class="preprocessor">0.27689806, 0.27744020, 0.27798299, 0.27852642, 0.27907050, \</span></div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span><span class="preprocessor">0.27961522, 0.28016059, 0.28070661, 0.28125327, 0.28180058, \</span></div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span><span class="preprocessor">0.28234853, 0.28289712, 0.28344635, 0.28399623, 0.28454676, \</span></div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span><span class="preprocessor">0.28509792, 0.28564973, 0.28620217, 0.28675526, 0.28730899, \</span></div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span><span class="preprocessor">0.28786336, 0.28841837, 0.28897401, 0.28953030, 0.29008722, \</span></div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span><span class="preprocessor">0.29064479, 0.29120299, 0.29176182, 0.29232130, 0.29288141, \</span></div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span><span class="preprocessor">0.29344215, 0.29400354, 0.29456555, 0.29512820, 0.29569149, \</span></div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span><span class="preprocessor">0.29625540, 0.29681995, 0.29738514, 0.29795095, 0.29851740, \</span></div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span><span class="preprocessor">0.29908448, 0.29965218, 0.30022052, 0.30078949, 0.30135909, \</span></div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span><span class="preprocessor">0.30192931, 0.30250016, 0.30307164, 0.30364375, 0.30421649, \</span></div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span><span class="preprocessor">0.30478985, 0.30536383, 0.30593844, 0.30651368, 0.30708953, \</span></div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span><span class="preprocessor">0.30766601, 0.30824312, 0.30882084, 0.30939919, 0.30997816, \</span></div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span><span class="preprocessor">0.31055775, 0.31113796, 0.31171879, 0.31230023, 0.31288230, \</span></div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="preprocessor">0.31346498, 0.31404828, 0.31463219, 0.31521673, 0.31580187, \</span></div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span><span class="preprocessor">0.31638763, 0.31697401, 0.31756100, 0.31814860, 0.31873681, \</span></div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span><span class="preprocessor">0.31932564, 0.31991507, 0.32050512, 0.32109577, 0.32168704, \</span></div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span><span class="preprocessor">0.32227891, 0.32287139, 0.32346448, 0.32405817, 0.32465247, \</span></div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span><span class="preprocessor">0.32524737, 0.32584288, 0.32643899, 0.32703571, 0.32763302, \</span></div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span><span class="preprocessor">0.32823094, 0.32882946, 0.32942858, 0.33002830, 0.33062862, \</span></div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="preprocessor">0.33122954, 0.33183105, 0.33243316, 0.33303587, 0.33363917, \</span></div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><span class="preprocessor">0.33424307, 0.33484756, 0.33545264, 0.33605832, 0.33666459, \</span></div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="preprocessor">0.33727145, 0.33787890, 0.33848693, 0.33909556, 0.33970478, \</span></div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="preprocessor">0.34031458, 0.34092497, 0.34153594, 0.34214750, 0.34275964, \</span></div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="preprocessor">0.34337237, 0.34398568, 0.34459957, 0.34521404, 0.34582909, \</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="preprocessor">0.34644472, 0.34706093, 0.34767772, 0.34829508, 0.34891302, \</span></div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><span class="preprocessor">0.34953154, 0.35015063, 0.35077029, 0.35139053, 0.35201134, \</span></div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span><span class="preprocessor">0.35263272, 0.35325467, 0.35387718, 0.35450027, 0.35512393, \</span></div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="preprocessor">0.35574815, 0.35637294, 0.35699829, 0.35762420, 0.35825068, \</span></div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span><span class="preprocessor">0.35887773, 0.35950533, 0.36013350, 0.36076222, 0.36139150, \</span></div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span><span class="preprocessor">0.36202135, 0.36265174, 0.36328270, 0.36391421, 0.36454627, \</span></div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span><span class="preprocessor">0.36517889, 0.36581206, 0.36644578, 0.36708005, 0.36771487, \</span></div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span><span class="preprocessor">0.36835024, 0.36898616, 0.36962263, 0.37025964, 0.37089719, \</span></div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><span class="preprocessor">0.37153529, 0.37217394, 0.37281312, 0.37345285, 0.37409311, \</span></div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="preprocessor">0.37473391, 0.37537526, 0.37601714, 0.37665955, 0.37730250, \</span></div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span><span class="preprocessor">0.37794599, 0.37859001, 0.37923455, 0.37987964, 0.38052525, \</span></div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><span class="preprocessor">0.38117139, 0.38181805, 0.38246525, 0.38311297, 0.38376121, \</span></div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="preprocessor">0.38440998, 0.38505927, 0.38570909, 0.38635942, 0.38701027, \</span></div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="preprocessor">0.38766165, 0.38831354, 0.38896594, 0.38961886, 0.39027230, \</span></div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span><span class="preprocessor">0.39092625, 0.39158071, 0.39223568, 0.39289116, 0.39354715, \</span></div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span><span class="preprocessor">0.39420364, 0.39486065, 0.39551816, 0.39617617, 0.39683469, \</span></div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span><span class="preprocessor">0.39749370, 0.39815322, 0.39881324, 0.39947376, 0.40013477, \</span></div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="preprocessor">0.40079628, 0.40145829, 0.40212079, 0.40278378, 0.40344727, \</span></div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span><span class="preprocessor">0.40411124, 0.40477571, 0.40544066, 0.40610610, 0.40677202, \</span></div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span><span class="preprocessor">0.40743843, 0.40810532, 0.40877270, 0.40944055, 0.41010889, \</span></div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span><span class="preprocessor">0.41077770, 0.41144700, 0.41211676, 0.41278701, 0.41345772, \</span></div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span><span class="preprocessor">0.41412891, 0.41480057, 0.41547270, 0.41614530, 0.41681836, \</span></div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span><span class="preprocessor">0.41749190, 0.41816589, 0.41884035, 0.41951528, 0.42019066, \</span></div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span><span class="preprocessor">0.42086650, 0.42154281, 0.42221957, 0.42289678, 0.42357445, \</span></div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span><span class="preprocessor">0.42425258, 0.42493115, 0.42561018, 0.42628966, 0.42696958, \</span></div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span><span class="preprocessor">0.42764995, 0.42833077, 0.42901203, 0.42969373, 0.43037588, \</span></div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span><span class="preprocessor">0.43105847, 0.43174149, 0.43242495, 0.43310885, 0.43379319, \</span></div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span><span class="preprocessor">0.43447796, 0.43516316, 0.43584879, 0.43653485, 0.43722133, \</span></div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span><span class="preprocessor">0.43790825, 0.43859559, 0.43928335, 0.43997154, 0.44066015, \</span></div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span><span class="preprocessor">0.44134917, 0.44203862, 0.44272848, 0.44341876, 0.44410945, \</span></div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span><span class="preprocessor">0.44480056, 0.44549208, 0.44618400, 0.44687634, 0.44756908, \</span></div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span><span class="preprocessor">0.44826223, 0.44895578, 0.44964973, 0.45034409, 0.45103884, \</span></div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span><span class="preprocessor">0.45173400, 0.45242955, 0.45312549, 0.45382184, 0.45451857, \</span></div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span><span class="preprocessor">0.45521569, 0.45591320, 0.45661111, 0.45730939, 0.45800807, \</span></div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span><span class="preprocessor">0.45870712, 0.45940656, 0.46010638, 0.46080658, 0.46150715, \</span></div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span><span class="preprocessor">0.46220810, 0.46290943, 0.46361113, 0.46431320, 0.46501564, \</span></div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span><span class="preprocessor">0.46571845, 0.46642163, 0.46712517, 0.46782907, 0.46853334, \</span></div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="preprocessor">0.46923797, 0.46994295, 0.47064830, 0.47135400, 0.47206005, \</span></div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span><span class="preprocessor">0.47276646, 0.47347322, 0.47418032, 0.47488778, 0.47559558, \</span></div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span><span class="preprocessor">0.47630373, 0.47701222, 0.47772105, 0.47843023, 0.47913974, \</span></div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span><span class="preprocessor">0.47984958, 0.48055977, 0.48127028, 0.48198113, 0.48269231, \</span></div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span><span class="preprocessor">0.48340382, 0.48411565, 0.48482781, 0.48554030, 0.48625310, \</span></div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span><span class="preprocessor">0.48696623, 0.48767967, 0.48839343, 0.48910751, 0.48982190, \</span></div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span><span class="preprocessor">0.49053661, 0.49125162, 0.49196694, 0.49268257, 0.49339851, \</span></div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span><span class="preprocessor">0.49411475, 0.49483129, 0.49554813, 0.49626527, 0.49698271, \</span></div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span><span class="preprocessor">0.49770044, 0.49841846, 0.49913678, 0.49985539, 0.50057428, \</span></div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span><span class="preprocessor">0.50129346, 0.50201293, 0.50273268, 0.50345271, 0.50417302, \</span></div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span><span class="preprocessor">0.50489361, 0.50561448, 0.50633562, 0.50705703, 0.50777871, \</span></div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span><span class="preprocessor">0.50850066, 0.50922288, 0.50994537, 0.51066811, 0.51139112, \</span></div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span><span class="preprocessor">0.51211439, 0.51283792, 0.51356171, 0.51428575, 0.51501004, \</span></div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span><span class="preprocessor">0.51573459, 0.51645938, 0.51718442, 0.51790971, 0.51863524, \</span></div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span><span class="preprocessor">0.51936101, 0.52008702, 0.52081328, 0.52153976, 0.52226649, \</span></div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span><span class="preprocessor">0.52299344, 0.52372063, 0.52444805, 0.52517569, 0.52590356, \</span></div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span><span class="preprocessor">0.52663165, 0.52735997, 0.52808850, 0.52881725, 0.52954622, \</span></div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span><span class="preprocessor">0.53027541, 0.53100480, 0.53173441, 0.53246422, 0.53319424, \</span></div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span><span class="preprocessor">0.53392447, 0.53465490, 0.53538553, 0.53611636, 0.53684739, \</span></div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span><span class="preprocessor">0.53757861, 0.53831003, 0.53904163, 0.53977343, 0.54050541, \</span></div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span><span class="preprocessor">0.54123758, 0.54196994, 0.54270247, 0.54343519, 0.54416808, \</span></div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span><span class="preprocessor">0.54490115, 0.54563440, 0.54636781, 0.54710140, 0.54783515, \</span></div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span><span class="preprocessor">0.54856908, 0.54930316, 0.55003741, 0.55077182, 0.55150638, \</span></div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span><span class="preprocessor">0.55224110, 0.55297598, 0.55371101, 0.55444619, 0.55518152, \</span></div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span><span class="preprocessor">0.55591699, 0.55665261, 0.55738837, 0.55812427, 0.55886032, \</span></div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span><span class="preprocessor">0.55959649, 0.56033280, 0.56106925, 0.56180582, 0.56254252, \</span></div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span><span class="preprocessor">0.56327935, 0.56401630, 0.56475338, 0.56549057, 0.56622789, \</span></div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span><span class="preprocessor">0.56696532, 0.56770286, 0.56844051, 0.56917828, 0.56991615, \</span></div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span><span class="preprocessor">0.57065413, 0.57139221, 0.57213040, 0.57286868, 0.57360706, \</span></div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span><span class="preprocessor">0.57434554, 0.57508411, 0.57582277, 0.57656152, 0.57730036, \</span></div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span><span class="preprocessor">0.57803928, 0.57877829, 0.57951738, 0.58025654, 0.58099578, \</span></div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span><span class="preprocessor">0.58173510, 0.58247449, 0.58321395, 0.58395347, 0.58469307, \</span></div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span><span class="preprocessor">0.58543273, 0.58617244, 0.58691222, 0.58765206, 0.58839195, \</span></div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span><span class="preprocessor">0.58913190, 0.58987189, 0.59061194, 0.59135203, 0.59209217, \</span></div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span><span class="preprocessor">0.59283235, 0.59357256, 0.59431282, 0.59505312, 0.59579344, \</span></div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span><span class="preprocessor">0.59653380, 0.59727419, 0.59801461, 0.59875505, 0.59949551, \</span></div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span><span class="preprocessor">0.60023600, 0.60097650, 0.60171703, 0.60245756, 0.60319811, \</span></div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span><span class="preprocessor">0.60393866, 0.60467923, 0.60541980, 0.60616037, 0.60690095, \</span></div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span><span class="preprocessor">0.60764152, 0.60838209, 0.60912266, 0.60986321, 0.61060376, \</span></div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span><span class="preprocessor">0.61134429, 0.61208481, 0.61282532, 0.61356580, 0.61430627, \</span></div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span><span class="preprocessor">0.61504671, 0.61578712, 0.61652751, 0.61726787, 0.61800819, \</span></div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span><span class="preprocessor">0.61874848, 0.61948873, 0.62022895, 0.62096912, 0.62170925, \</span></div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span><span class="preprocessor">0.62244933, 0.62318937, 0.62392935, 0.62466929, 0.62540916, \</span></div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span><span class="preprocessor">0.62614899, 0.62688875, 0.62762845, 0.62836808, 0.62910765, \</span></div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span><span class="preprocessor">0.62984715, 0.63058658, 0.63132594, 0.63206522, 0.63280442, \</span></div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span><span class="preprocessor">0.63354355, 0.63428259, 0.63502154, 0.63576041, 0.63649919, \</span></div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span><span class="preprocessor">0.63723788, 0.63797648, 0.63871498, 0.63945338, 0.64019168, \</span></div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span><span class="preprocessor">0.64092987, 0.64166796, 0.64240595, 0.64314382, 0.64388158, \</span></div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span><span class="preprocessor">0.64461923, 0.64535676, 0.64609417, 0.64683145, 0.64756862, \</span></div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span><span class="preprocessor">0.64830565, 0.64904256, 0.64977934, 0.65051599, 0.65125249, \</span></div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span><span class="preprocessor">0.65198886, 0.65272509, 0.65346118, 0.65419712, 0.65493292, \</span></div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span><span class="preprocessor">0.65566856, 0.65640405, 0.65713939, 0.65787457, 0.65860959, \</span></div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span><span class="preprocessor">0.65934445, 0.66007914, 0.66081367, 0.66154803, 0.66228222, \</span></div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span><span class="preprocessor">0.66301623, 0.66375007, 0.66448373, 0.66521721, 0.66595051, \</span></div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span><span class="preprocessor">0.66668362, 0.66741654, 0.66814927, 0.66888181, 0.66961416, \</span></div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span><span class="preprocessor">0.67034630, 0.67107825, 0.67181000, 0.67254154, 0.67327287, \</span></div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span><span class="preprocessor">0.67400399, 0.67473490, 0.67546560, 0.67619608, 0.67692634, \</span></div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span><span class="preprocessor">0.67765638, 0.67838619, 0.67911578, 0.67984514, 0.68057427, \</span></div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span><span class="preprocessor">0.68130316, 0.68203182, 0.68276024, 0.68348842, 0.68421635, \</span></div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span><span class="preprocessor">0.68494404, 0.68567148, 0.68639867, 0.68712561, 0.68785229, \</span></div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span><span class="preprocessor">0.68857872, 0.68930488, 0.69003078, 0.69075641, 0.69148178, \</span></div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span><span class="preprocessor">0.69220688, 0.69293170, 0.69365625, 0.69438052, 0.69510451, \</span></div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span><span class="preprocessor">0.69582822, 0.69655165, 0.69727478, 0.69799763, 0.69872018, \</span></div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span><span class="preprocessor">0.69944244, 0.70016440, 0.70088606, 0.70160743, 0.70232848, \</span></div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span><span class="preprocessor">0.70304923, 0.70376967, 0.70448979, 0.70520961, 0.70592910, \</span></div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span><span class="preprocessor">0.70664828, 0.70736713, 0.70808566, 0.70880386, 0.70952174, \</span></div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span><span class="preprocessor">0.71023928, 0.71095649, 0.71167336, 0.71238989, 0.71310608, \</span></div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span><span class="preprocessor">0.71382192, 0.71453742, 0.71525257, 0.71596737, 0.71668181, \</span></div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span><span class="preprocessor">0.71739590, 0.71810963, 0.71882300, 0.71953600, 0.72024863, \</span></div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span><span class="preprocessor">0.72096090, 0.72167280, 0.72238432, 0.72309546, 0.72380623, \</span></div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span><span class="preprocessor">0.72451661, 0.72522661, 0.72593623, 0.72664545, 0.72735429, \</span></div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span><span class="preprocessor">0.72806273, 0.72877077, 0.72947841, 0.73018566, 0.73089250, \</span></div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span><span class="preprocessor">0.73159893, 0.73230495, 0.73301056, 0.73371576, 0.73442054, \</span></div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span><span class="preprocessor">0.73512490, 0.73582884, 0.73653236, 0.73723545, 0.73793811, \</span></div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span><span class="preprocessor">0.73864034, 0.73934214, 0.74004350, 0.74074442, 0.74144490, \</span></div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span><span class="preprocessor">0.74214493, 0.74284452, 0.74354366, 0.74424235, 0.74494058, \</span></div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span><span class="preprocessor">0.74563836, 0.74633568, 0.74703254, 0.74772893, 0.74842485, \</span></div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span><span class="preprocessor">0.74912031, 0.74981530, 0.75050981, 0.75120384, 0.75189740, \</span></div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span><span class="preprocessor">0.75259047, 0.75328306, 0.75397516, 0.75466678, 0.75535790, \</span></div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span><span class="preprocessor">0.75604852, 0.75673866, 0.75742829, 0.75811742, 0.75880604, \</span></div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span><span class="preprocessor">0.75949416, 0.76018177, 0.76086887, 0.76155545, 0.76224152, \</span></div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span><span class="preprocessor">0.76292707, 0.76361209, 0.76429659, 0.76498057, 0.76566401, \</span></div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span><span class="preprocessor">0.76634692, 0.76702930, 0.76771114, 0.76839244, 0.76907320, \</span></div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span><span class="preprocessor">0.76975342, 0.77043309, 0.77111221, 0.77179078, 0.77246879, \</span></div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span><span class="preprocessor">0.77314624, 0.77382314, 0.77449947, 0.77517524, 0.77585045, \</span></div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span><span class="preprocessor">0.77652508, 0.77719914, 0.77787263, 0.77854553, 0.77921786, \</span></div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span><span class="preprocessor">0.77988961, 0.78056077, 0.78123135, 0.78190134, 0.78257073, \</span></div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span><span class="preprocessor">0.78323953, 0.78390773, 0.78457534, 0.78524234, 0.78590873, \</span></div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span><span class="preprocessor">0.78657452, 0.78723970, 0.78790427, 0.78856822, 0.78923156, \</span></div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span><span class="preprocessor">0.78989427, 0.79055636, 0.79121783, 0.79187868, 0.79253889, \</span></div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span><span class="preprocessor">0.79319847, 0.79385741, 0.79451572, 0.79517339, 0.79583042, \</span></div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span><span class="preprocessor">0.79648680, 0.79714254, 0.79779762, 0.79845206, 0.79910583, \</span></div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span><span class="preprocessor">0.79975896, 0.80041142, 0.80106322, 0.80171436, 0.80236483, \</span></div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span><span class="preprocessor">0.80301463, 0.80366375, 0.80431221, 0.80495998, 0.80560708, \</span></div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span><span class="preprocessor">0.80625350, 0.80689923, 0.80754427, 0.80818863, 0.80883229, \</span></div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span><span class="preprocessor">0.80947526, 0.81011754, 0.81075911, 0.81139998, 0.81204015, \</span></div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span><span class="preprocessor">0.81267961, 0.81331837, 0.81395641, 0.81459373, 0.81523034, \</span></div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span><span class="preprocessor">0.81586624, 0.81650141, 0.81713586, 0.81776958, 0.81840257, \</span></div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span><span class="preprocessor">0.81903483, 0.81966636, 0.82029715, 0.82092720, 0.82155652, \</span></div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span><span class="preprocessor">0.82218509, 0.82281291, 0.82343998, 0.82406631, 0.82469188, \</span></div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span><span class="preprocessor">0.82531670, 0.82594075, 0.82656405, 0.82718659, 0.82780836, \</span></div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span><span class="preprocessor">0.82842936, 0.82904959, 0.82966905, 0.83028773, 0.83090564, \</span></div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span><span class="preprocessor">0.83152277, 0.83213911, 0.83275467, 0.83336944, 0.83398343, \</span></div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span><span class="preprocessor">0.83459662, 0.83520902, 0.83582062, 0.83643142, 0.83704142, \</span></div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span><span class="preprocessor">0.83765061, 0.83825900, 0.83886658, 0.83947335, 0.84007931, \</span></div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span><span class="preprocessor">0.84068445, 0.84128877, 0.84189227, 0.84249495, 0.84309680, \</span></div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span><span class="preprocessor">0.84369783, 0.84429802, 0.84489738, 0.84549591, 0.84609360, \</span></div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span><span class="preprocessor">0.84669045, 0.84728646, 0.84788162, 0.84847594, 0.84906940, \</span></div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span><span class="preprocessor">0.84966202, 0.85025378, 0.85084468, 0.85143473, 0.85202391, \</span></div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span><span class="preprocessor">0.85261224, 0.85319969, 0.85378628, 0.85437200, 0.85495684, \</span></div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span><span class="preprocessor">0.85554081, 0.85612390, 0.85670612, 0.85728745, 0.85786789, \</span></div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span><span class="preprocessor">0.85844745, 0.85902612, 0.85960390, 0.86018078, 0.86075677, \</span></div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span><span class="preprocessor">0.86133186, 0.86190605, 0.86247934, 0.86305172, 0.86362319, \</span></div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span><span class="preprocessor">0.86419375, 0.86476340, 0.86533214, 0.86589996, 0.86646686, \</span></div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span><span class="preprocessor">0.86703284, 0.86759789, 0.86816202, 0.86872522, 0.86928749, \</span></div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span><span class="preprocessor">0.86984883, 0.87040923, 0.87096870, 0.87152722, 0.87208480, \</span></div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span><span class="preprocessor">0.87264144, 0.87319713, 0.87375188, 0.87430567, 0.87485851, \</span></div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span><span class="preprocessor">0.87541039, 0.87596132, 0.87651128, 0.87706029, 0.87760832, \</span></div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span><span class="preprocessor">0.87815540, 0.87870150, 0.87924663, 0.87979079, 0.88033397, \</span></div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span><span class="preprocessor">0.88087618, 0.88141740, 0.88195764, 0.88249690, 0.88303517, \</span></div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span><span class="preprocessor">0.88357246, 0.88410875, 0.88464404, 0.88517835, 0.88571165, \</span></div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span><span class="preprocessor">0.88624396, 0.88677526, 0.88730556, 0.88783485, 0.88836313, \</span></div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span><span class="preprocessor">0.88889040, 0.88941666, 0.88994190, 0.89046613, 0.89098934, \</span></div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span><span class="preprocessor">0.89151152, 0.89203268, 0.89255282, 0.89307193, 0.89359000, \</span></div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="preprocessor">0.89410705, 0.89462306, 0.89513803, 0.89565196, 0.89616486, \</span></div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="preprocessor">0.89667671, 0.89718751, 0.89769727, 0.89820598, 0.89871364, \</span></div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="preprocessor">0.89922024, 0.89972579, 0.90023028, 0.90073370, 0.90123607, \</span></div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="preprocessor">0.90173737, 0.90223761, 0.90273678, 0.90323488, 0.90373190, \</span></div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span><span class="preprocessor">0.90422785, 0.90472273, 0.90521652, 0.90570924, 0.90620087, \</span></div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span><span class="preprocessor">0.90669142, 0.90718088, 0.90766925, 0.90815653, 0.90864272, \</span></div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span><span class="preprocessor">0.90912781, 0.90961181, 0.91009470, 0.91057650, 0.91105719, \</span></div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span><span class="preprocessor">0.91153677, 0.91201525, 0.91249262, 0.91296888, 0.91344403, \</span></div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span><span class="preprocessor">0.91391806, 0.91439097, 0.91486276, 0.91533344, 0.91580299, \</span></div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span><span class="preprocessor">0.91627141, 0.91673871, 0.91720488, 0.91766991, 0.91813382, \</span></div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span><span class="preprocessor">0.91859659, 0.91905822, 0.91951871, 0.91997806, 0.92043627, \</span></div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span><span class="preprocessor">0.92089334, 0.92134926, 0.92180403, 0.92225765, 0.92271011, \</span></div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span><span class="preprocessor">0.92316143, 0.92361158, 0.92406058, 0.92450842, 0.92495510, \</span></div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span><span class="preprocessor">0.92540061, 0.92584495, 0.92628813, 0.92673014, 0.92717098, \</span></div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span><span class="preprocessor">0.92761065, 0.92804914, 0.92848645, 0.92892258, 0.92935754, \</span></div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span><span class="preprocessor">0.92979131, 0.93022390, 0.93065530, 0.93108551, 0.93151453, \</span></div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span><span class="preprocessor">0.93194236, 0.93236900, 0.93279444, 0.93321869, 0.93364173, \</span></div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span><span class="preprocessor">0.93406358, 0.93448422, 0.93490366, 0.93532189, 0.93573892, \</span></div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span><span class="preprocessor">0.93615473, 0.93656933, 0.93698272, 0.93739490, 0.93780586, \</span></div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span><span class="preprocessor">0.93821560, 0.93862411, 0.93903141, 0.93943748, 0.93984233, \</span></div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span><span class="preprocessor">0.94024595, 0.94064834, 0.94104950, 0.94144943, 0.94184813, \</span></div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span><span class="preprocessor">0.94224558, 0.94264180, 0.94303679, 0.94343053, 0.94382302, \</span></div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span><span class="preprocessor">0.94421428, 0.94460428, 0.94499304, 0.94538055, 0.94576681, \</span></div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span><span class="preprocessor">0.94615182, 0.94653557, 0.94691806, 0.94729930, 0.94767928, \</span></div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span><span class="preprocessor">0.94805800, 0.94843545, 0.94881164, 0.94918656, 0.94956022, \</span></div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span><span class="preprocessor">0.94993261, 0.95030373, 0.95067357, 0.95104214, 0.95140944, \</span></div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span><span class="preprocessor">0.95177546, 0.95214020, 0.95250366, 0.95286583, 0.95322673, \</span></div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span><span class="preprocessor">0.95358634, 0.95394466, 0.95430169, 0.95465744, 0.95501189, \</span></div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span><span class="preprocessor">0.95536505, 0.95571692, 0.95606749, 0.95641677, 0.95676474, \</span></div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span><span class="preprocessor">0.95711142, 0.95745679, 0.95780086, 0.95814362, 0.95848508, \</span></div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span><span class="preprocessor">0.95882523, 0.95916407, 0.95950161, 0.95983782, 0.96017273, \</span></div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span><span class="preprocessor">0.96050632, 0.96083859, 0.96116955, 0.96149918, 0.96182750, \</span></div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span><span class="preprocessor">0.96215449, 0.96248016, 0.96280450, 0.96312752, 0.96344921, \</span></div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span><span class="preprocessor">0.96376957, 0.96408860, 0.96440630, 0.96472266, 0.96503769, \</span></div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span><span class="preprocessor">0.96535138, 0.96566373, 0.96597475, 0.96628443, 0.96659276, \</span></div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span><span class="preprocessor">0.96689975, 0.96720539, 0.96750969, 0.96781265, 0.96811425, \</span></div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span><span class="preprocessor">0.96841451, 0.96871341, 0.96901096, 0.96930716, 0.96960200, \</span></div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span><span class="preprocessor">0.96989549, 0.97018761, 0.97047838, 0.97076779, 0.97105584, \</span></div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span><span class="preprocessor">0.97134253, 0.97162785, 0.97191180, 0.97219439, 0.97247562, \</span></div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span><span class="preprocessor">0.97275547, 0.97303395, 0.97331107, 0.97358681, 0.97386117, \</span></div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span><span class="preprocessor">0.97413416, 0.97440578, 0.97467601, 0.97494487, 0.97521235, \</span></div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span><span class="preprocessor">0.97547845, 0.97574317, 0.97600650, 0.97626845, 0.97652901, \</span></div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span><span class="preprocessor">0.97678819, 0.97704597, 0.97730237, 0.97755738, 0.97781100, \</span></div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span><span class="preprocessor">0.97806323, 0.97831406, 0.97856350, 0.97881154, 0.97905818, \</span></div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span><span class="preprocessor">0.97930343, 0.97954728, 0.97978973, 0.98003077, 0.98027042, \</span></div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span><span class="preprocessor">0.98050866, 0.98074550, 0.98098093, 0.98121496, 0.98144758, \</span></div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span><span class="preprocessor">0.98167879, 0.98190859, 0.98213698, 0.98236396, 0.98258953, \</span></div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span><span class="preprocessor">0.98281368, 0.98303642, 0.98325774, 0.98347765, 0.98369614, \</span></div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span><span class="preprocessor">0.98391321, 0.98412886, 0.98434309, 0.98455590, 0.98476729, \</span></div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span><span class="preprocessor">0.98497726, 0.98518580, 0.98539292, 0.98559861, 0.98580287, \</span></div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span><span class="preprocessor">0.98600571, 0.98620712, 0.98640710, 0.98660564, 0.98680276, \</span></div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span><span class="preprocessor">0.98699845, 0.98719270, 0.98738552, 0.98757690, 0.98776685, \</span></div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span><span class="preprocessor">0.98795536, 0.98814243, 0.98832807, 0.98851227, 0.98869502, \</span></div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span><span class="preprocessor">0.98887634, 0.98905622, 0.98923465, 0.98941164, 0.98958719, \</span></div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span><span class="preprocessor">0.98976129, 0.98993395, 0.99010516, 0.99027493, 0.99044325, \</span></div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span><span class="preprocessor">0.99061012, 0.99077554, 0.99093951, 0.99110203, 0.99126310, \</span></div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span><span class="preprocessor">0.99142271, 0.99158088, 0.99173759, 0.99189285, 0.99204665, \</span></div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span><span class="preprocessor">0.99219900, 0.99234989, 0.99249932, 0.99264730, 0.99279382, \</span></div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span><span class="preprocessor">0.99293888, 0.99308248, 0.99322462, 0.99336530, 0.99350452, \</span></div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span><span class="preprocessor">0.99364228, 0.99377857, 0.99391341, 0.99404677, 0.99417868, \</span></div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span><span class="preprocessor">0.99430912, 0.99443809, 0.99456560, 0.99469164, 0.99481621, \</span></div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span><span class="preprocessor">0.99493932, 0.99506096, 0.99518113, 0.99529983, 0.99541706, \</span></div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span><span class="preprocessor">0.99553282, 0.99564711, 0.99575992, 0.99587127, 0.99598114, \</span></div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span><span class="preprocessor">0.99608954, 0.99619647, 0.99630192, 0.99640590, 0.99650840, \</span></div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span><span class="preprocessor">0.99660943, 0.99670898, 0.99680706, 0.99690366, 0.99699878, \</span></div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span><span class="preprocessor">0.99709243, 0.99718460, 0.99727529, 0.99736450, 0.99745223, \</span></div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span><span class="preprocessor">0.99753848, 0.99762326, 0.99770655, 0.99778836, 0.99786869, \</span></div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span><span class="preprocessor">0.99794754, 0.99802491, 0.99810079, 0.99817520, 0.99824812, \</span></div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span><span class="preprocessor">0.99831956, 0.99838951, 0.99845798, 0.99852497, 0.99859047, \</span></div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span><span class="preprocessor">0.99865449, 0.99871702, 0.99877807, 0.99883763, 0.99889571, \</span></div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span><span class="preprocessor">0.99895230, 0.99900740, 0.99906102, 0.99911315, 0.99916380, \</span></div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span><span class="preprocessor">0.99921296, 0.99926063, 0.99930681, 0.99935151, 0.99939471, \</span></div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span><span class="preprocessor">0.99943643, 0.99947666, 0.99951541, 0.99955266, 0.99958843, \</span></div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span><span class="preprocessor">0.99962270, 0.99965549, 0.99968679, 0.99971659, 0.99974491, \</span></div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span><span class="preprocessor">0.99977174, 0.99979708, 0.99982093, 0.99984329, 0.99986416, \</span></div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span><span class="preprocessor">0.99988353, 0.99990142, 0.99991782, 0.99993273, 0.99994614, \</span></div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span><span class="preprocessor">0.99995807, 0.99996851, 0.99997745, 0.99998491, 0.99999087, \</span></div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span><span class="preprocessor">0.99999534, 0.99999832, 0.99999981, } </span></div>
+</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span> </div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span> </div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span><span class="preprocessor"> #endif </span><span class="comment">// _FPU_FFT_GAUSS_H_</span></div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span><span class="comment">//=============================================================================</span></div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span><span class="comment">// End of File</span></div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span><span class="comment">//=============================================================================</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_96bdd7f67e65e0bcef66e25a7a540546.html">NUEDC_Core</a></li><li class="navelem"><a href="dir_549544d87b79ec47878b64312c89f956.html">Code</a></li><li class="navelem"><a href="dir_394efc67a2e5bf4097a78e7b2ce4a5dc.html">Control_Driver</a></li><li class="navelem"><a href="dir_5a99e60e144967bbc36487d27c056a1d.html">FFT</a></li><li class="navelem"><a href="dir_6dfd9d3abf76c805c78960a2d43de4e0.html">dsp_lib</a></li><li class="navelem"><a href="dir_d2622470dea13b73db8b6e0bf9749329.html">win</a></li><li class="navelem"><a href="fpu__fft__gauss_8h.html">fpu_fft_gauss.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

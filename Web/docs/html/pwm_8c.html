@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC_Core/Code/Peripheral_Driver/28335/PWM/pwm.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('pwm_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">pwm.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>pwm driver source code  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+pwm.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="pwm_8c__incl.png" border="0" usemap="#a_d_1_2_codes_2_n_u_e_d_c___core_2_code_2_peripheral___driver_228335_2_p_w_m_2pwm_8c" loading="lazy" alt=""/></div>
+<map name="a_d_1_2_codes_2_n_u_e_d_c___core_2_code_2_peripheral___driver_228335_2_p_w_m_2pwm_8c" id="a_d_1_2_codes_2_n_u_e_d_c___core_2_code_2_peripheral___driver_228335_2_p_w_m_2pwm_8c">
+<area shape="rect" title="pwm driver source code" alt="" coords="5,5,171,64"/>
+<area shape="rect" href="global_8h.html" title="全局变量声明, 头文件打包, 全局通用宏定义" alt="" coords="55,112,121,139"/>
+<area shape="poly" title=" " alt="" coords="91,64,91,96,85,96,85,64"/>
+<area shape="rect" title=" " alt="" coords="56,187,120,213"/>
+<area shape="poly" title=" " alt="" coords="91,139,91,171,85,171,85,139"/>
+</map>
+</div>
+</div>
+<p><a href="pwm_8c_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a6f7068187c566632edbcc40fb80774a6" id="r_a6f7068187c566632edbcc40fb80774a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f7068187c566632edbcc40fb80774a6">EPWM1_Init</a> (void)</td></tr>
+<tr class="memdesc:a6f7068187c566632edbcc40fb80774a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">init pwm-1  <br /></td></tr>
+<tr class="memitem:a4167cb83a1772e137250bf42d2a0cf04" id="r_a4167cb83a1772e137250bf42d2a0cf04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4167cb83a1772e137250bf42d2a0cf04">EPWM2_Init</a> (void)</td></tr>
+<tr class="memdesc:a4167cb83a1772e137250bf42d2a0cf04"><td class="mdescLeft">&#160;</td><td class="mdescRight">init pwm-2  <br /></td></tr>
+<tr class="memitem:a19ab3319e303cfcc02f1a5011aa7c012" id="r_a19ab3319e303cfcc02f1a5011aa7c012"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19ab3319e303cfcc02f1a5011aa7c012">EPWM3_Init</a> (void)</td></tr>
+<tr class="memdesc:a19ab3319e303cfcc02f1a5011aa7c012"><td class="mdescLeft">&#160;</td><td class="mdescRight">init pwm-3  <br /></td></tr>
+<tr class="memitem:a8f55165e10785eaf3e50d7010a6e66b2" id="r_a8f55165e10785eaf3e50d7010a6e66b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f55165e10785eaf3e50d7010a6e66b2">EPWM4_Init</a> (void)</td></tr>
+<tr class="memdesc:a8f55165e10785eaf3e50d7010a6e66b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">init pwm-4  <br /></td></tr>
+<tr class="memitem:a502259ba461c849a9b2c6574fc5a4f0a" id="r_a502259ba461c849a9b2c6574fc5a4f0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a502259ba461c849a9b2c6574fc5a4f0a">EPWM5_Init</a> (void)</td></tr>
+<tr class="memdesc:a502259ba461c849a9b2c6574fc5a4f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">init pwm-5  <br /></td></tr>
+<tr class="memitem:a70fb89886932215f278eae98bcc64970" id="r_a70fb89886932215f278eae98bcc64970"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70fb89886932215f278eae98bcc64970">EPWM6_Init</a> (void)</td></tr>
+<tr class="memdesc:a70fb89886932215f278eae98bcc64970"><td class="mdescLeft">&#160;</td><td class="mdescRight">init pwm-6  <br /></td></tr>
+<tr class="memitem:a16a6a31227f60674257e9715ee0c1638" id="r_a16a6a31227f60674257e9715ee0c1638"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16a6a31227f60674257e9715ee0c1638">EPWM_Init</a> (void)</td></tr>
+<tr class="memdesc:a16a6a31227f60674257e9715ee0c1638"><td class="mdescLeft">&#160;</td><td class="mdescRight">init interrupt, pwm1-6, tb sync and adc trigger  <br /></td></tr>
+<tr class="memitem:a36d090e7e692328775bd140caf554801" id="r_a36d090e7e692328775bd140caf554801"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36d090e7e692328775bd140caf554801">EPWM_TZ_Software_OST_Set</a> (void)</td></tr>
+<tr class="memdesc:a36d090e7e692328775bd140caf554801"><td class="mdescLeft">&#160;</td><td class="mdescRight">pwm off in one-shot mode  <br /></td></tr>
+<tr class="memitem:a0bc38d9171c905fdf109943209045b8d" id="r_a0bc38d9171c905fdf109943209045b8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bc38d9171c905fdf109943209045b8d">EPWM_TZ_Software_CBC_Set</a> (void)</td></tr>
+<tr class="memdesc:a0bc38d9171c905fdf109943209045b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">pwm off in cycle-by-cycle mode  <br /></td></tr>
+<tr class="memitem:ae68ef8773c30887b37eca98480b455b6" id="r_ae68ef8773c30887b37eca98480b455b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae68ef8773c30887b37eca98480b455b6">EPWM_TZ_Software_OST_Clear</a> (void)</td></tr>
+<tr class="memdesc:ae68ef8773c30887b37eca98480b455b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">clear flag bit of OST  <br /></td></tr>
+<tr class="memitem:ad15eb4d13278eb7d75a0575738cbabb5" id="r_ad15eb4d13278eb7d75a0575738cbabb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad15eb4d13278eb7d75a0575738cbabb5">EPWM_TZ_Software_CBC_Clear</a> (void)</td></tr>
+<tr class="memdesc:ad15eb4d13278eb7d75a0575738cbabb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">clear flag bit of CBC  <br /></td></tr>
+<tr class="memitem:a9caa452be413513f8a1de581b6c9190d" id="r_a9caa452be413513f8a1de581b6c9190d"><td class="memItemLeft" align="right" valign="top">interrupt void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9caa452be413513f8a1de581b6c9190d">epwm1_isr</a> (void)</td></tr>
+<tr class="memdesc:a9caa452be413513f8a1de581b6c9190d"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM interrupt serve rountine  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>pwm driver source code </p>
+
+<p class="definition">在文件 <a class="el" href="pwm_8c_source.html">pwm.c</a> 中定义.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="a6f7068187c566632edbcc40fb80774a6" name="a6f7068187c566632edbcc40fb80774a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f7068187c566632edbcc40fb80774a6">&#9670;&#160;</a></span>EPWM1_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EPWM1_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>init pwm-1 </p>
+
+<p class="definition">在文件 <a class="el" href="pwm_8c_source.html">pwm.c</a> 第 <a class="el" href="pwm_8c_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9caa452be413513f8a1de581b6c9190d" name="a9caa452be413513f8a1de581b6c9190d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9caa452be413513f8a1de581b6c9190d">&#9670;&#160;</a></span>epwm1_isr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt void epwm1_isr </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PWM interrupt serve rountine </p>
+<dl class="section note"><dt>注解</dt><dd>interrupt is trigged by epwm-1 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pwm_8c_source.html">pwm.c</a> 第 <a class="el" href="pwm_8c_source.html#l00287">287</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4167cb83a1772e137250bf42d2a0cf04" name="a4167cb83a1772e137250bf42d2a0cf04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4167cb83a1772e137250bf42d2a0cf04">&#9670;&#160;</a></span>EPWM2_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EPWM2_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>init pwm-2 </p>
+
+<p class="definition">在文件 <a class="el" href="pwm_8c_source.html">pwm.c</a> 第 <a class="el" href="pwm_8c_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a19ab3319e303cfcc02f1a5011aa7c012" name="a19ab3319e303cfcc02f1a5011aa7c012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ab3319e303cfcc02f1a5011aa7c012">&#9670;&#160;</a></span>EPWM3_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EPWM3_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>init pwm-3 </p>
+
+<p class="definition">在文件 <a class="el" href="pwm_8c_source.html">pwm.c</a> 第 <a class="el" href="pwm_8c_source.html#l00079">79</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8f55165e10785eaf3e50d7010a6e66b2" name="a8f55165e10785eaf3e50d7010a6e66b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f55165e10785eaf3e50d7010a6e66b2">&#9670;&#160;</a></span>EPWM4_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EPWM4_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>init pwm-4 </p>
+
+<p class="definition">在文件 <a class="el" href="pwm_8c_source.html">pwm.c</a> 第 <a class="el" href="pwm_8c_source.html#l00110">110</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a502259ba461c849a9b2c6574fc5a4f0a" name="a502259ba461c849a9b2c6574fc5a4f0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502259ba461c849a9b2c6574fc5a4f0a">&#9670;&#160;</a></span>EPWM5_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EPWM5_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>init pwm-5 </p>
+
+<p class="definition">在文件 <a class="el" href="pwm_8c_source.html">pwm.c</a> 第 <a class="el" href="pwm_8c_source.html#l00141">141</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a70fb89886932215f278eae98bcc64970" name="a70fb89886932215f278eae98bcc64970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70fb89886932215f278eae98bcc64970">&#9670;&#160;</a></span>EPWM6_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EPWM6_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>init pwm-6 </p>
+
+<p class="definition">在文件 <a class="el" href="pwm_8c_source.html">pwm.c</a> 第 <a class="el" href="pwm_8c_source.html#l00173">173</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a16a6a31227f60674257e9715ee0c1638" name="a16a6a31227f60674257e9715ee0c1638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a6a31227f60674257e9715ee0c1638">&#9670;&#160;</a></span>EPWM_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EPWM_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>init interrupt, pwm1-6, tb sync and adc trigger </p>
+
+<p class="definition">在文件 <a class="el" href="pwm_8c_source.html">pwm.c</a> 第 <a class="el" href="pwm_8c_source.html#l00204">204</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="pwm_8c_a16a6a31227f60674257e9715ee0c1638_cgraph.png" border="0" usemap="#apwm_8c_a16a6a31227f60674257e9715ee0c1638_cgraph" loading="lazy" alt=""/></div>
+<map name="apwm_8c_a16a6a31227f60674257e9715ee0c1638_cgraph" id="apwm_8c_a16a6a31227f60674257e9715ee0c1638_cgraph">
+<area shape="rect" title="init interrupt, pwm1&#45;6, tb sync and adc trigger" alt="" coords="5,157,94,184"/>
+<area shape="rect" href="pwm_8c.html#a6f7068187c566632edbcc40fb80774a6" title="init pwm&#45;1" alt="" coords="142,5,237,32"/>
+<area shape="poly" title=" " alt="" coords="56,156,88,102,112,71,140,42,144,39,147,43,143,46,116,74,93,105,60,158"/>
+<area shape="rect" href="pwm_8c.html#a9caa452be413513f8a1de581b6c9190d" title="PWM interrupt serve rountine" alt="" coords="147,56,232,83"/>
+<area shape="poly" title=" " alt="" coords="64,155,98,125,140,92,146,89,149,93,143,97,101,129,67,159"/>
+<area shape="rect" href="pwm_8c.html#a4167cb83a1772e137250bf42d2a0cf04" title="init pwm&#45;2" alt="" coords="142,107,237,133"/>
+<area shape="poly" title=" " alt="" coords="88,154,135,137,137,142,90,159"/>
+<area shape="rect" href="pwm_8c.html#a19ab3319e303cfcc02f1a5011aa7c012" title="init pwm&#45;3" alt="" coords="142,157,237,184"/>
+<area shape="poly" title=" " alt="" coords="94,168,126,168,126,173,94,173"/>
+<area shape="rect" href="pwm_8c.html#a8f55165e10785eaf3e50d7010a6e66b2" title="init pwm&#45;4" alt="" coords="142,208,237,235"/>
+<area shape="poly" title=" " alt="" coords="90,182,137,200,135,205,88,187"/>
+<area shape="rect" href="pwm_8c.html#a502259ba461c849a9b2c6574fc5a4f0a" title="init pwm&#45;5" alt="" coords="142,259,237,285"/>
+<area shape="poly" title=" " alt="" coords="67,183,101,212,143,244,149,248,146,253,140,249,98,216,64,187"/>
+<area shape="rect" href="pwm_8c.html#a70fb89886932215f278eae98bcc64970" title="init pwm&#45;6" alt="" coords="142,309,237,336"/>
+<area shape="poly" title=" " alt="" coords="60,183,93,236,116,267,143,295,147,298,144,302,140,299,112,270,88,239,56,186"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad15eb4d13278eb7d75a0575738cbabb5" name="ad15eb4d13278eb7d75a0575738cbabb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad15eb4d13278eb7d75a0575738cbabb5">&#9670;&#160;</a></span>EPWM_TZ_Software_CBC_Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EPWM_TZ_Software_CBC_Clear </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>clear flag bit of CBC </p>
+
+<p class="definition">在文件 <a class="el" href="pwm_8c_source.html">pwm.c</a> 第 <a class="el" href="pwm_8c_source.html#l00275">275</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0bc38d9171c905fdf109943209045b8d" name="a0bc38d9171c905fdf109943209045b8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bc38d9171c905fdf109943209045b8d">&#9670;&#160;</a></span>EPWM_TZ_Software_CBC_Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EPWM_TZ_Software_CBC_Set </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pwm off in cycle-by-cycle mode </p>
+<dl class="section warning"><dt>警告</dt><dd>pwm will keep off state, rearm is needed </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pwm_8c_source.html">pwm.c</a> 第 <a class="el" href="pwm_8c_source.html#l00251">251</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae68ef8773c30887b37eca98480b455b6" name="ae68ef8773c30887b37eca98480b455b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae68ef8773c30887b37eca98480b455b6">&#9670;&#160;</a></span>EPWM_TZ_Software_OST_Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EPWM_TZ_Software_OST_Clear </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>clear flag bit of OST </p>
+
+<p class="definition">在文件 <a class="el" href="pwm_8c_source.html">pwm.c</a> 第 <a class="el" href="pwm_8c_source.html#l00263">263</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a36d090e7e692328775bd140caf554801" name="a36d090e7e692328775bd140caf554801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36d090e7e692328775bd140caf554801">&#9670;&#160;</a></span>EPWM_TZ_Software_OST_Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EPWM_TZ_Software_OST_Set </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pwm off in one-shot mode </p>
+<dl class="section warning"><dt>警告</dt><dd>pwm only off in this tbprd, auto rearm at tbctr == 0 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pwm_8c_source.html">pwm.c</a> 第 <a class="el" href="pwm_8c_source.html#l00239">239</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_96bdd7f67e65e0bcef66e25a7a540546.html">NUEDC_Core</a></li><li class="navelem"><a href="dir_549544d87b79ec47878b64312c89f956.html">Code</a></li><li class="navelem"><a href="dir_ac0f21faf1edc0c59972a24f69f7dd6f.html">Peripheral_Driver</a></li><li class="navelem"><a href="dir_a940d98b51473a92e3b1959b727c9bcb.html">28335</a></li><li class="navelem"><a href="dir_94f6804b1977f4988f659ae5681063a5.html">PWM</a></li><li class="navelem"><a href="pwm_8c.html">pwm.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

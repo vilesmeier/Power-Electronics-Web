@@ -1,0 +1,5 @@
+<map id="LCD_DisplayOn" name="LCD_DisplayOn">
+<area shape="rect" id="Node000001" title="turn on display" alt="" coords="5,5,122,32"/>
+<area shape="rect" id="Node000002" href="$_l_c_d___s_t7735_s_8c.html#a71f317c08f5a4fd34f4e66b7413e0381" title="select register" alt="" coords="170,5,294,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,16,154,16,154,21,122,21"/>
+</map>

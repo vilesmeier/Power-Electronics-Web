@@ -1,0 +1,15 @@
+/* 让右侧目录（TOC）标题支持自动换行 */
+.md-sidebar--secondary .md-nav__link 
+{
+  white-space: normal !important;
+  word-break: break-word;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  hyphens: auto;
+  line-height: 1.4;
+}
+
+.md-sidebar--secondary .md-nav__link 
+{
+  font-size: 0.9em;
+}

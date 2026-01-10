@@ -1,0 +1,9 @@
+<map id="ECAP_Init" name="ECAP_Init">
+<area shape="rect" id="Node000001" title="module init" alt="" coords="5,56,89,83"/>
+<area shape="rect" id="Node000002" href="$cap_8c.html#aed09226843cc2d90a2dce3404d804417" title="interrupt server rountine" alt="" coords="167,5,244,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,53,151,33,153,38,90,59"/>
+<area shape="rect" id="Node000003" href="$cap_8c.html#a51aa55ea7a5c4b34d01764c01dfbbaee" title="init Ecap1 pherial" alt="" coords="137,56,274,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="89,67,121,67,121,72,89,72"/>
+<area shape="rect" id="Node000004" href="$cap_8c.html#ae185653a627aea6b835d827d7068f34c" title="init struct" alt="" coords="143,107,268,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="90,80,148,99,146,104,88,85"/>
+</map>

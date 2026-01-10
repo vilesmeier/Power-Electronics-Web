@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC_Core/Code/Control_Driver/FFT/dsp_lib/win/fpu_fft_barthann.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('fpu__fft__barthann_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fpu_fft_barthann.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="fpu__fft__barthann_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a40d20d71021879caaa628ca515c219a9" id="r_a40d20d71021879caaa628ca515c219a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40d20d71021879caaa628ca515c219a9">BARTHANN32</a></td></tr>
+<tr class="memitem:a99cdc1a659190326984eb4bd7bc32701" id="r_a99cdc1a659190326984eb4bd7bc32701"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99cdc1a659190326984eb4bd7bc32701">BARTHANN64</a></td></tr>
+<tr class="memitem:a631cb059f73dea84d390546a97c53a8a" id="r_a631cb059f73dea84d390546a97c53a8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a631cb059f73dea84d390546a97c53a8a">BARTHANN128</a></td></tr>
+<tr class="memitem:a36dcd507c9a0b46105f665d8708f167b" id="r_a36dcd507c9a0b46105f665d8708f167b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36dcd507c9a0b46105f665d8708f167b">BARTHANN256</a></td></tr>
+<tr class="memitem:a41dc5049ce2bde6b306da1d1dac4a625" id="r_a41dc5049ce2bde6b306da1d1dac4a625"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41dc5049ce2bde6b306da1d1dac4a625">BARTHANN512</a></td></tr>
+<tr class="memitem:aa7edcc50d52bbecd22d49ca0eac6149d" id="r_aa7edcc50d52bbecd22d49ca0eac6149d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7edcc50d52bbecd22d49ca0eac6149d">BARTHANN1024</a></td></tr>
+<tr class="memitem:ae344879afcc9648e11e5804cb03e6b62" id="r_ae344879afcc9648e11e5804cb03e6b62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae344879afcc9648e11e5804cb03e6b62">BARTHANN2048</a></td></tr>
+<tr class="memitem:add556396785921d6b9ffc2c6c5be4518" id="r_add556396785921d6b9ffc2c6c5be4518"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add556396785921d6b9ffc2c6c5be4518">BARTHANN4096</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="aa7edcc50d52bbecd22d49ca0eac6149d" name="aa7edcc50d52bbecd22d49ca0eac6149d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7edcc50d52bbecd22d49ca0eac6149d">&#9670;&#160;</a></span>BARTHANN1024</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTHANN1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__barthann_8h_source.html">fpu_fft_barthann.h</a> 第 <a class="el" href="fpu__fft__barthann_8h_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a631cb059f73dea84d390546a97c53a8a" name="a631cb059f73dea84d390546a97c53a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a631cb059f73dea84d390546a97c53a8a">&#9670;&#160;</a></span>BARTHANN128</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTHANN128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00000000, 0.00424449, 0.00941776, 0.01551641, 0.02253477, \</div>
+<div class="line">0.03046489, 0.03929663, 0.04901762, 0.05961333, 0.07106707, \</div>
+<div class="line">0.08336006, 0.09647148, 0.11037847, 0.12505626, 0.14047818, \</div>
+<div class="line">0.15661574, 0.17343870, 0.19091513, 0.20901152, 0.22769283, \</div>
+<div class="line">0.24692260, 0.26666301, 0.28687501, 0.30751838, 0.32855186, \</div>
+<div class="line">0.34993321, 0.37161938, 0.39356653, 0.41573021, 0.43806543, \</div>
+<div class="line">0.46052677, 0.48306853, 0.50564478, 0.52820954, 0.55071682, \</div>
+<div class="line">0.57312080, 0.59537590, 0.61743690, 0.63925908, 0.66079828, \</div>
+<div class="line">0.68201103, 0.70285467, 0.72328745, 0.74326861, 0.76275851, \</div>
+<div class="line">0.78171869, 0.80011201, 0.81790271, 0.83505650, 0.85154064, \</div>
+<div class="line">0.86732405, 0.88237736, 0.89667297, 0.91018515, 0.92289008, \</div>
+<div class="line">0.93476593, 0.94579287, 0.95595317, 0.96523122, 0.97361356, \</div>
+<div class="line">0.98108893, 0.98764828, 0.99328481, 0.99799398, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__barthann_8h_source.html">fpu_fft_barthann.h</a> 第 <a class="el" href="fpu__fft__barthann_8h_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae344879afcc9648e11e5804cb03e6b62" name="ae344879afcc9648e11e5804cb03e6b62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae344879afcc9648e11e5804cb03e6b62">&#9670;&#160;</a></span>BARTHANN2048</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTHANN2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__barthann_8h_source.html">fpu_fft_barthann.h</a> 第 <a class="el" href="fpu__fft__barthann_8h_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a36dcd507c9a0b46105f665d8708f167b" name="a36dcd507c9a0b46105f665d8708f167b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36dcd507c9a0b46105f665d8708f167b">&#9670;&#160;</a></span>BARTHANN256</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTHANN256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00000000, 0.00199770, 0.00422603, 0.00668477, 0.00937358, \</div>
+<div class="line">0.01229197, 0.01543931, 0.01881482, 0.02241761, 0.02624663, \</div>
+<div class="line">0.03030069, 0.03457849, 0.03907856, 0.04379931, 0.04873903, \</div>
+<div class="line">0.05389585, 0.05926779, 0.06485273, 0.07064842, 0.07665248, \</div>
+<div class="line">0.08286242, 0.08927561, 0.09588930, 0.10270060, 0.10970654, \</div>
+<div class="line">0.11690400, 0.12428975, 0.13186045, 0.13961266, 0.14754280, \</div>
+<div class="line">0.15564720, 0.16392209, 0.17236359, 0.18096771, 0.18973037, \</div>
+<div class="line">0.19864740, 0.20771452, 0.21692738, 0.22628152, 0.23577241, \</div>
+<div class="line">0.24539543, 0.25514587, 0.26501897, 0.27500987, 0.28511364, \</div>
+<div class="line">0.29532531, 0.30563980, 0.31605200, 0.32655674, 0.33714878, \</div>
+<div class="line">0.34782282, 0.35857354, 0.36939555, 0.38028342, 0.39123168, \</div>
+<div class="line">0.40223484, 0.41328735, 0.42438364, 0.43551813, 0.44668520, \</div>
+<div class="line">0.45787920, 0.46909449, 0.48032540, 0.49156625, 0.50281137, \</div>
+<div class="line">0.51405506, 0.52529165, 0.53651546, 0.54772082, 0.55890206, \</div>
+<div class="line">0.57005353, 0.58116963, 0.59224473, 0.60327325, 0.61424965, \</div>
+<div class="line">0.62516841, 0.63602403, 0.64681107, 0.65752412, 0.66815782, \</div>
+<div class="line">0.67870687, 0.68916599, 0.69952998, 0.70979370, 0.71995204, \</div>
+<div class="line">0.73000000, 0.73993261, 0.74974498, 0.75943230, 0.76898984, \</div>
+<div class="line">0.77841293, 0.78769699, 0.79683753, 0.80583015, 0.81467052, \</div>
+<div class="line">0.82335443, 0.83187774, 0.84023643, 0.84842655, 0.85644429, \</div>
+<div class="line">0.86428591, 0.87194781, 0.87942646, 0.88671847, 0.89382057, \</div>
+<div class="line">0.90072957, 0.90744243, 0.91395622, 0.92026812, 0.92637544, \</div>
+<div class="line">0.93227563, 0.93796623, 0.94344494, 0.94870958, 0.95375809, \</div>
+<div class="line">0.95858855, 0.96319917, 0.96758829, 0.97175439, 0.97569609, \</div>
+<div class="line">0.97941213, 0.98290140, 0.98616293, 0.98919588, 0.99199955, \</div>
+<div class="line">0.99457338, 0.99691695, 0.99902999, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__barthann_8h_source.html">fpu_fft_barthann.h</a> 第 <a class="el" href="fpu__fft__barthann_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a40d20d71021879caaa628ca515c219a9" name="a40d20d71021879caaa628ca515c219a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40d20d71021879caaa628ca515c219a9">&#9670;&#160;</a></span>BARTHANN32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTHANN32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00000000, 0.02326249, 0.06176377, 0.11456151, 0.18012805, \</div>
+<div class="line">0.25641303, 0.34092723, 0.43084454, 0.52311765, 0.61460280, \</div>
+<div class="line">0.70218849, 0.78292285, 0.85413454, 0.91354204, 0.95934711, \</div>
+<div class="line">0.99030841, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__barthann_8h_source.html">fpu_fft_barthann.h</a> 第 <a class="el" href="fpu__fft__barthann_8h_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="add556396785921d6b9ffc2c6c5be4518" name="add556396785921d6b9ffc2c6c5be4518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add556396785921d6b9ffc2c6c5be4518">&#9670;&#160;</a></span>BARTHANN4096</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTHANN4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__barthann_8h_source.html">fpu_fft_barthann.h</a> 第 <a class="el" href="fpu__fft__barthann_8h_source.html#l00431">431</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a41dc5049ce2bde6b306da1d1dac4a625" name="a41dc5049ce2bde6b306da1d1dac4a625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41dc5049ce2bde6b306da1d1dac4a625">&#9670;&#160;</a></span>BARTHANN512</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTHANN512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__barthann_8h_source.html">fpu_fft_barthann.h</a> 第 <a class="el" href="fpu__fft__barthann_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a99cdc1a659190326984eb4bd7bc32701" name="a99cdc1a659190326984eb4bd7bc32701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99cdc1a659190326984eb4bd7bc32701">&#9670;&#160;</a></span>BARTHANN64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARTHANN64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00000000, 0.00950735, 0.02277255, 0.03973948, 0.06031523, \</div>
+<div class="line">0.08437104, 0.11174355, 0.14223644, 0.17562239, 0.21164530, \</div>
+<div class="line">0.25002290, 0.29044947, 0.33259898, 0.37612824, 0.42068036, \</div>
+<div class="line">0.46588828, 0.51137842, 0.55677442, 0.60170081, 0.64578683, \</div>
+<div class="line">0.68867005, 0.73000000, 0.76944164, 0.80667871, 0.84141685, \</div>
+<div class="line">0.87338654, 0.90234577, 0.92808246, 0.95041653, 0.96920175, \</div>
+<div class="line">0.98432714, 0.99571811, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__barthann_8h_source.html">fpu_fft_barthann.h</a> 第 <a class="el" href="fpu__fft__barthann_8h_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_96bdd7f67e65e0bcef66e25a7a540546.html">NUEDC_Core</a></li><li class="navelem"><a href="dir_549544d87b79ec47878b64312c89f956.html">Code</a></li><li class="navelem"><a href="dir_394efc67a2e5bf4097a78e7b2ce4a5dc.html">Control_Driver</a></li><li class="navelem"><a href="dir_5a99e60e144967bbc36487d27c056a1d.html">FFT</a></li><li class="navelem"><a href="dir_6dfd9d3abf76c805c78960a2d43de4e0.html">dsp_lib</a></li><li class="navelem"><a href="dir_d2622470dea13b73db8b6e0bf9749329.html">win</a></li><li class="navelem"><a href="fpu__fft__barthann_8h.html">fpu_fft_barthann.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

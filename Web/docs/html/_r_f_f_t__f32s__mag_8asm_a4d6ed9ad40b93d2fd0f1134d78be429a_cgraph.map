@@ -1,0 +1,9 @@
+<map id="R" name="R">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,67,44,93"/>
+<area shape="rect" id="Node000002" href="$_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="92,29,163,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="43,71,76,58,78,63,45,76"/>
+<area shape="rect" id="Node000003" href="$_r_f_f_t__f32__mag_8asm.html#af788afeeff499e99a5ac6d282e3e8005" title=" " alt="" coords="108,104,147,131"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="45,84,95,103,93,108,43,89"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="109,30,105,20,108,11,115,5,127,3,140,5,147,12,144,16,138,10,127,8,117,10,112,14,111,20,114,28"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="109,104,105,95,108,86,115,80,127,77,140,80,147,86,144,90,138,85,127,83,117,84,112,89,111,95,114,103"/>
+</map>

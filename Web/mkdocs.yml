@@ -1,0 +1,25 @@
+site_name: NUEDC电力电子方向备赛资料
+
+repo_name: GitHub
+repo_url: https://github.com/vilesmeier/NUEDC
+edit_uri: root/Web/docs
+
+theme:
+  name: material
+
+extra_css:
+  - extra.css
+
+nav:
+  - 首页: index.md
+  - /Code: html/index.html
+  - /Datasheet: datasheet.md
+  - /PCB: pcb.md
+  - /Projects: project.md
+  - /Questions: questions.md
+  - /Reference: reference.md
+  - /Simulate: sim.md
+
+markdown_extensions:
+  - toc:
+      toc_depth: 3

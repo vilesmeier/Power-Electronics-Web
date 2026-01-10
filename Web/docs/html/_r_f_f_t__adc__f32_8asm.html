@@ -1,0 +1,974 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC_Core/Code/Control_Driver/FFT/dsp_lib/RFFT_adc_f32.asm 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_r_f_f_t__adc__f32_8asm.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RFFT_adc_f32.asm 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="_r_f_f_t__adc__f32_8asm_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:RFFT_5FADC_5FF32_5FSTRUCT" id="r_RFFT_5FADC_5FF32_5FSTRUCT"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html">RFFT_ADC_F32_STRUCT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for the Real FFT with ADC input  <a href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a35302bfed4c166b2e2ca8d613aab99ee" id="r_a35302bfed4c166b2e2ca8d613aab99ee"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">RFFT_F32_STRUCT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35302bfed4c166b2e2ca8d613aab99ee">RFFT_ADC_F32_STRUCT_Handle</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a06e18b935c5c9d432544ae98226f8a52" id="r_a06e18b935c5c9d432544ae98226f8a52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06e18b935c5c9d432544ae98226f8a52">RFFT_adc_f32</a> (<a class="el" href="fpu__rfft_8h.html#a8a977d8b9a2c1763124388928d94204a">RFFT_ADC_F32_STRUCT_Handle</a>)</td></tr>
+<tr class="memitem:a2ddd403cbeebe77d27c0688c77274808" id="r_a2ddd403cbeebe77d27c0688c77274808"><td class="memItemLeft" align="right" valign="top">*<a class="el" href="#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> must <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#aa0424600df290aab98919b3fbfd35d93">be</a> a power&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ddd403cbeebe77d27c0688c77274808">of</a> (32, 64, 128, etc)</td></tr>
+<tr class="memitem:a0fe3e72290be2f9d8b15617ddfc46101" id="r_a0fe3e72290be2f9d8b15617ddfc46101"><td class="memItemLeft" align="right" valign="top">*FFTStages must <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#aa0424600df290aab98919b3fbfd35d93">be</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fe3e72290be2f9d8b15617ddfc46101">log2</a> (<a class="el" href="#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a>)</td></tr>
+<tr class="memitem:afdb2bb7b296702d88b16dcda8837fb75" id="r_afdb2bb7b296702d88b16dcda8837fb75"><td class="memItemLeft" align="right" valign="top">Bit reverse <a class="el" href="#ad1837fed945d659444e41ff0b37333b0">input</a> <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a> and calculate &amp;In&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdb2bb7b296702d88b16dcda8837fb75">Buf</a> (read <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a> bit reverse order) Out Buf</td></tr>
+<tr class="memitem:afd0227d97e797b0053b6f42b81a6833c" id="r_afd0227d97e797b0053b6f42b81a6833c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd0227d97e797b0053b6f42b81a6833c">I1</a> (((I1+<a class="el" href="#a1e3f8ba831b756d307103d6d7ed30fb1">I2</a>)+(<a class="el" href="#a1030fe1cdffd4d97f8eeddc50b6713d8">I3</a>+<a class="el" href="#aef607171209474e2d7a348628a677651">I4</a>))+((<a class="el" href="#a3f2e87854d24df52286d8c8e356ae33d">I5</a>+<a class="el" href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">I6</a>)+(<a class="el" href="#a79931a9bc87624b5f10dc4f731985b25">I7</a>+<a class="el" href="#ac2d732d6e782e389adc2a3809207da85">I8</a>)))/8 -&gt;|I1'|</td></tr>
+<tr class="memitem:a1e3f8ba831b756d307103d6d7ed30fb1" id="r_a1e3f8ba831b756d307103d6d7ed30fb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e3f8ba831b756d307103d6d7ed30fb1">I2</a> ((<a class="el" href="#afd0227d97e797b0053b6f42b81a6833c">I1</a> - I2)+COS *((<a class="el" href="#a3f2e87854d24df52286d8c8e356ae33d">I5</a> - <a class="el" href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">I6</a>)+(<a class="el" href="#ac2d732d6e782e389adc2a3809207da85">I8</a> - <a class="el" href="#a79931a9bc87624b5f10dc4f731985b25">I7</a>)))/8 -&gt;|I2'|</td></tr>
+<tr class="memitem:a1030fe1cdffd4d97f8eeddc50b6713d8" id="r_a1030fe1cdffd4d97f8eeddc50b6713d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1030fe1cdffd4d97f8eeddc50b6713d8">I3</a> ((<a class="el" href="#afd0227d97e797b0053b6f42b81a6833c">I1</a>+<a class="el" href="#a1e3f8ba831b756d307103d6d7ed30fb1">I2</a>) -(I3+<a class="el" href="#aef607171209474e2d7a348628a677651">I4</a>))/8 -&gt;|I3'|</td></tr>
+<tr class="memitem:aef607171209474e2d7a348628a677651" id="r_aef607171209474e2d7a348628a677651"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef607171209474e2d7a348628a677651">I4</a> ((<a class="el" href="#afd0227d97e797b0053b6f42b81a6833c">I1</a> - <a class="el" href="#a1e3f8ba831b756d307103d6d7ed30fb1">I2</a>) - COS *((<a class="el" href="#a3f2e87854d24df52286d8c8e356ae33d">I5</a> - <a class="el" href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">I6</a>)+(<a class="el" href="#ac2d732d6e782e389adc2a3809207da85">I8</a> - <a class="el" href="#a79931a9bc87624b5f10dc4f731985b25">I7</a>)))/8 -&gt;|I4'|</td></tr>
+<tr class="memitem:a3f2e87854d24df52286d8c8e356ae33d" id="r_a3f2e87854d24df52286d8c8e356ae33d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f2e87854d24df52286d8c8e356ae33d">I5</a> (((<a class="el" href="#afd0227d97e797b0053b6f42b81a6833c">I1</a>+<a class="el" href="#a1e3f8ba831b756d307103d6d7ed30fb1">I2</a>)+(<a class="el" href="#a1030fe1cdffd4d97f8eeddc50b6713d8">I3</a>+<a class="el" href="#aef607171209474e2d7a348628a677651">I4</a>)) -((I5+<a class="el" href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">I6</a>)+(<a class="el" href="#a79931a9bc87624b5f10dc4f731985b25">I7</a>+<a class="el" href="#ac2d732d6e782e389adc2a3809207da85">I8</a>)))/8 -&gt;|I5'|</td></tr>
+<tr class="memitem:ae3e3eccf5e177dbfd0bfc3d4737db99b" id="r_ae3e3eccf5e177dbfd0bfc3d4737db99b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">I6</a> (COS *((<a class="el" href="#ac2d732d6e782e389adc2a3809207da85">I8</a> - <a class="el" href="#a79931a9bc87624b5f10dc4f731985b25">I7</a>) -(<a class="el" href="#a3f2e87854d24df52286d8c8e356ae33d">I5</a> - I6)) -(<a class="el" href="#aef607171209474e2d7a348628a677651">I4</a> - <a class="el" href="#a1030fe1cdffd4d97f8eeddc50b6713d8">I3</a>))/8 -&gt;|I6'|</td></tr>
+<tr class="memitem:a79931a9bc87624b5f10dc4f731985b25" id="r_a79931a9bc87624b5f10dc4f731985b25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79931a9bc87624b5f10dc4f731985b25">I7</a> ((I7+<a class="el" href="#ac2d732d6e782e389adc2a3809207da85">I8</a>) -(<a class="el" href="#a3f2e87854d24df52286d8c8e356ae33d">I5</a>+<a class="el" href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">I6</a>))/8 -&gt;|I7'|</td></tr>
+<tr class="memitem:ac2d732d6e782e389adc2a3809207da85" id="r_ac2d732d6e782e389adc2a3809207da85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2d732d6e782e389adc2a3809207da85">I8</a> (COS *((I8 - <a class="el" href="#a79931a9bc87624b5f10dc4f731985b25">I7</a>) -(<a class="el" href="#a3f2e87854d24df52286d8c8e356ae33d">I5</a> - <a class="el" href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">I6</a>))+(<a class="el" href="#aef607171209474e2d7a348628a677651">I4</a> - <a class="el" href="#a1030fe1cdffd4d97f8eeddc50b6713d8">I3</a>))/8 -&gt;|I8'|</td></tr>
+<tr class="memitem:a2c3578db5e9dc0a776fa2cbf841d09bd" id="r_a2c3578db5e9dc0a776fa2cbf841d09bd"><td class="memItemLeft" align="right" valign="top">Repeat above&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> (i.e. <a class="el" href="_transfer_fun_8asm.html#a1f927050a4c2c12e15a8064099a51bdd">if</a> FFTSize=1024, Repeat=128 times)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a0def523475297ec5ba9268d2e509a2d4" id="r_a0def523475297ec5ba9268d2e509a2d4"><td class="memItemLeft" align="right" valign="top">file source fft <a class="el" href="fpu__rfft_8h.html#aa982a487f6da0f5d2137d4ee9cea234e">RFFT_adc_f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0def523475297ec5ba9268d2e509a2d4">asm</a></td></tr>
+<tr class="memitem:ad1837fed945d659444e41ff0b37333b0" id="r_ad1837fed945d659444e41ff0b37333b0"><td class="memItemLeft" align="right" valign="top">brief Real <a class="el" href="_r_f_f_t__f32_8asm.html#af3aaa80f79c5e73016141a8be4bd99ff">FFT</a> with bit ADC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1837fed945d659444e41ff0b37333b0">input</a></td></tr>
+<tr class="memitem:a514862568f2272017ecf4f8954de2ca3" id="r_a514862568f2272017ecf4f8954de2ca3"><td class="memItemLeft" align="right" valign="top">author&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a514862568f2272017ecf4f8954de2ca3">C2000</a></td></tr>
+<tr class="memitem:a92975724c920d645cc3fae7075e9c2a1" id="r_a92975724c920d645cc3fae7075e9c2a1"><td class="memItemLeft" align="right" valign="top">DESCRIPTION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92975724c920d645cc3fae7075e9c2a1">__pad0__</a></td></tr>
+<tr class="memitem:a2caeba9dea06be6982dd0d533a04fa8a" id="r_a2caeba9dea06be6982dd0d533a04fa8a"><td class="memItemLeft" align="right" valign="top">The <a class="el" href="#ad1837fed945d659444e41ff0b37333b0">input</a> <a class="el" href="_r_f_f_t__f32_8asm.html#a784a700f8da2dd2432d27aa45de6c642">buffer</a> must <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#aa0424600df290aab98919b3fbfd35d93">be</a> aligned <a class="el" href="#a21ef755afaba4e6135f04b7a2e129713">to</a> a multiple <a class="el" href="#a2ddd403cbeebe77d27c0688c77274808">of</a> <a class="el" href="#ab12eee7397b4e1783ee90f3f16216dc3">the</a> <a class="el" href="_r_f_f_t__f32_8asm.html#af3aaa80f79c5e73016141a8be4bd99ff">FFT</a> <a class="el" href="_r_f_f_t__f32__adc__win_8asm.html#aa2fbe8499f5d5a4eb9e5c72a0a8ae296">size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2caeba9dea06be6982dd0d533a04fa8a">If</a></td></tr>
+<tr class="memitem:a45bff0c66456842c81ad34e9579b1b56" id="r_a45bff0c66456842c81ad34e9579b1b56"><td class="memItemLeft" align="right" valign="top">it <a class="el" href="_r_f_f_t__f32__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8">is</a> not aligned then <a class="el" href="#ab12eee7397b4e1783ee90f3f16216dc3">the</a> output <a class="el" href="_r_f_f_t__f32_8asm.html#a784a700f8da2dd2432d27aa45de6c642">buffer</a> will yield invalid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45bff0c66456842c81ad34e9579b1b56">results</a></td></tr>
+<tr class="memitem:a989fe007e6b139c1fb7a30c3a37d2dd5" id="r_a989fe007e6b139c1fb7a30c3a37d2dd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a2caeba9dea06be6982dd0d533a04fa8a">If</a> you do not wish <a class="el" href="#a21ef755afaba4e6135f04b7a2e129713">to</a> align <a class="el" href="#ab12eee7397b4e1783ee90f3f16216dc3">the</a> <a class="el" href="#ad1837fed945d659444e41ff0b37333b0">input</a> <a class="el" href="_r_f_f_t__f32_8asm.html#a784a700f8da2dd2432d27aa45de6c642">buffer</a> then use <a class="el" href="#ab12eee7397b4e1783ee90f3f16216dc3">the</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a989fe007e6b139c1fb7a30c3a37d2dd5">RFFT_adc_f32u</a></td></tr>
+<tr class="memitem:ab12eee7397b4e1783ee90f3f16216dc3" id="r_ab12eee7397b4e1783ee90f3f16216dc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a590668688740da1ecf707208f2630a51">function</a> Using this <a class="el" href="#a590668688740da1ecf707208f2630a51">function</a> will reduce <a class="el" href="_r_f_f_t__f32_8asm.html#ac575de2f74001cdf8519cd6321b08ab2">cycle</a> <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#a65657a1025b28cf518406be3fce8f56f">performance</a> <a class="el" href="#a2ddd403cbeebe77d27c0688c77274808">of</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab12eee7397b4e1783ee90f3f16216dc3">the</a></td></tr>
+<tr class="memitem:a8a0fd7a8363e41d8c12a90716f4f500f" id="r_a8a0fd7a8363e41d8c12a90716f4f500f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a0fd7a8363e41d8c12a90716f4f500f">algorithm</a></td></tr>
+<tr class="memitem:ae96f8def7ca7adf235664aa5da1457ce" id="r_ae96f8def7ca7adf235664aa5da1457ce"><td class="memItemLeft" align="right" valign="top">FUNCTIONS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae96f8def7ca7adf235664aa5da1457ce">__pad1__</a></td></tr>
+<tr class="memitem:aa88c25b94898272bbfc8bddf84cda00c" id="r_aa88c25b94898272bbfc8bddf84cda00c"><td class="memItemLeft" align="right" valign="top">where <a class="el" href="fpu__rfft_8h.html#a8a977d8b9a2c1763124388928d94204a">RFFT_ADC_F32_STRUCT_Handle</a> <a class="el" href="_r_f_f_t__f32__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8">is</a> defined&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa88c25b94898272bbfc8bddf84cda00c">as</a></td></tr>
+<tr class="memitem:ab1035ced270a4cf010306e7473ef1c3e" id="r_ab1035ced270a4cf010306e7473ef1c3e"><td class="memItemLeft" align="right" valign="top">ASSUMPTIONS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1035ced270a4cf010306e7473ef1c3e">__pad2__</a></td></tr>
+<tr class="memitem:a21ef755afaba4e6135f04b7a2e129713" id="r_a21ef755afaba4e6135f04b7a2e129713"><td class="memItemLeft" align="right" valign="top">*<a class="el" href="#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> must <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#aa0424600df290aab98919b3fbfd35d93">be</a> greater or equal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21ef755afaba4e6135f04b7a2e129713">to</a></td></tr>
+<tr class="memitem:a48f5d93d1b0018a28446781ddf3daef2" id="r_a48f5d93d1b0018a28446781ddf3daef2"><td class="memItemLeft" align="right" valign="top">*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48f5d93d1b0018a28446781ddf3daef2">InBuf</a></td></tr>
+<tr class="memitem:a7e9a002b321f5b629551c7750d02fd80" id="r_a7e9a002b321f5b629551c7750d02fd80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e9a002b321f5b629551c7750d02fd80">OutBuf</a></td></tr>
+<tr class="memitem:a751d2aa275fb1bfb80450c14e7d45403" id="r_a751d2aa275fb1bfb80450c14e7d45403"><td class="memItemLeft" align="right" valign="top">CosSinBuf are <a class="el" href="#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a751d2aa275fb1bfb80450c14e7d45403">length</a></td></tr>
+<tr class="memitem:a590668688740da1ecf707208f2630a51" id="r_a590668688740da1ecf707208f2630a51"><td class="memItemLeft" align="right" valign="top">*MagBuf and PhaseBuf are not used by this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a590668688740da1ecf707208f2630a51">function</a></td></tr>
+<tr class="memitem:a6694692002fc3c511834ee9d7193a935" id="r_a6694692002fc3c511834ee9d7193a935"><td class="memItemLeft" align="right" valign="top">They are only used by <a class="el" href="#ab12eee7397b4e1783ee90f3f16216dc3">the</a> magitude and phase calculation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6694692002fc3c511834ee9d7193a935">functions</a></td></tr>
+<tr class="memitem:a43f25e50b6b45e393344b819f51956e2" id="r_a43f25e50b6b45e393344b819f51956e2"><td class="memItemLeft" align="right" valign="top">ALGORITHUM&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43f25e50b6b45e393344b819f51956e2">__pad3__</a></td></tr>
+<tr class="memitem:adcbc27d8418504081cf0b718cb873633" id="r_adcbc27d8418504081cf0b718cb873633"><td class="memItemLeft" align="right" valign="top">Bit reverse <a class="el" href="#ad1837fed945d659444e41ff0b37333b0">input</a> <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a> and calculate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcbc27d8418504081cf0b718cb873633">stages</a></td></tr>
+<tr class="memitem:ac05dacc19794c74f9243db03f8f4380b" id="r_ac05dacc19794c74f9243db03f8f4380b"><td class="memItemLeft" align="right" valign="top">Note&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac05dacc19794c74f9243db03f8f4380b">__pad4__</a></td></tr>
+<tr class="memitem:a712fcebcdf8a02f91f3c2c599f5ea5d2" id="r_a712fcebcdf8a02f91f3c2c599f5ea5d2"><td class="memItemLeft" align="right" valign="top">Calculate <a class="el" href="#adcbc27d8418504081cf0b718cb873633">stages</a> and&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a712fcebcdf8a02f91f3c2c599f5ea5d2">up</a></td></tr>
+</table>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">类型定义说明</h2>
+<a id="a35302bfed4c166b2e2ca8d613aab99ee" name="a35302bfed4c166b2e2ca8d613aab99ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35302bfed4c166b2e2ca8d613aab99ee">&#9670;&#160;</a></span>RFFT_ADC_F32_STRUCT_Handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">RFFT_F32_STRUCT</a>* <a class="el" href="fpu__rfft_8h.html#a8a977d8b9a2c1763124388928d94204a">RFFT_ADC_F32_STRUCT_Handle</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00021">21</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="afdb2bb7b296702d88b16dcda8837fb75" name="afdb2bb7b296702d88b16dcda8837fb75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdb2bb7b296702d88b16dcda8837fb75">&#9670;&#160;</a></span>Buf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bit reverse <a class="el" href="#ad1837fed945d659444e41ff0b37333b0">input</a> <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a> and calculate &amp;In Buf </td>
+          <td>(</td>
+          <td class="paramtype">read <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a> bit reverse</td>          <td class="paramname"><span class="paramname"><em>order</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__adc__f32_8asm_afdb2bb7b296702d88b16dcda8837fb75_cgraph.png" border="0" usemap="#a_r_f_f_t__adc__f32_8asm_afdb2bb7b296702d88b16dcda8837fb75_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__adc__f32_8asm_afdb2bb7b296702d88b16dcda8837fb75_cgraph" id="a_r_f_f_t__adc__f32_8asm_afdb2bb7b296702d88b16dcda8837fb75_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,47,56"/>
+<area shape="poly" title=" " alt="" coords="17,29,16,12,26,3,33,6,36,13,31,15,29,9,26,8,21,14,22,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2c3578db5e9dc0a776fa2cbf841d09bd" name="a2c3578db5e9dc0a776fa2cbf841d09bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c3578db5e9dc0a776fa2cbf841d09bd">&#9670;&#160;</a></span>FFTSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Repeat above FFTSize </td>
+          <td>(</td>
+          <td class="paramtype">i.e. <a class="el" href="_transfer_fun_8asm.html#a1f927050a4c2c12e15a8064099a51bdd">if</a></td>          <td class="paramname"><span class="paramname"><em>FFTSize</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1024</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Repeat</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">128&#160;times</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__adc__f32_8asm_a2c3578db5e9dc0a776fa2cbf841d09bd_cgraph.png" border="0" usemap="#a_r_f_f_t__adc__f32_8asm_a2c3578db5e9dc0a776fa2cbf841d09bd_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__adc__f32_8asm_a2c3578db5e9dc0a776fa2cbf841d09bd_cgraph" id="a_r_f_f_t__adc__f32_8asm_a2c3578db5e9dc0a776fa2cbf841d09bd_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,77,56"/>
+<area shape="poly" title=" " alt="" coords="27,29,26,12,32,5,41,3,51,5,56,12,51,15,48,10,41,8,35,10,31,14,32,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afd0227d97e797b0053b6f42b81a6833c" name="afd0227d97e797b0053b6f42b81a6833c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd0227d97e797b0053b6f42b81a6833c">&#9670;&#160;</a></span>I1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I1 </td>
+          <td>(</td>
+          <td class="paramtype">((I1+<a class="el" href="#a1e3f8ba831b756d307103d6d7ed30fb1">I2</a>)+(<a class="el" href="#a1030fe1cdffd4d97f8eeddc50b6713d8">I3</a>+<a class="el" href="#aef607171209474e2d7a348628a677651">I4</a>))+((<a class="el" href="#a3f2e87854d24df52286d8c8e356ae33d">I5</a>+<a class="el" href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">I6</a>)+(<a class="el" href="#a79931a9bc87624b5f10dc4f731985b25">I7</a>+<a class="el" href="#ac2d732d6e782e389adc2a3809207da85">I8</a>))</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; |I1'|</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__adc__f32_8asm_afd0227d97e797b0053b6f42b81a6833c_cgraph.png" border="0" usemap="#a_r_f_f_t__adc__f32_8asm_afd0227d97e797b0053b6f42b81a6833c_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__adc__f32_8asm_afd0227d97e797b0053b6f42b81a6833c_cgraph" id="a_r_f_f_t__adc__f32_8asm_afd0227d97e797b0053b6f42b81a6833c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,225,44,252"/>
+<area shape="poly" title=" " alt="" coords="8,225,7,208,14,201,25,199,36,201,42,208,38,212,33,206,25,204,17,206,12,210,13,225"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a1e3f8ba831b756d307103d6d7ed30fb1" title=" " alt="" coords="265,48,303,75"/>
+<area shape="poly" title=" " alt="" coords="25,224,43,150,62,104,90,61,118,31,146,11,178,3,217,10,240,21,260,35,256,39,237,25,216,15,179,8,148,16,121,35,94,64,67,106,48,151,30,225"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a1030fe1cdffd4d97f8eeddc50b6713d8" title=" " alt="" coords="178,48,217,75"/>
+<area shape="poly" title=" " alt="" coords="29,224,50,172,67,142,90,115,125,92,162,76,164,81,128,97,94,119,72,145,55,175,34,226"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#aef607171209474e2d7a348628a677651" title=" " alt="" coords="265,99,303,125"/>
+<area shape="poly" title=" " alt="" coords="40,223,90,187,175,147,249,120,251,125,177,152,93,192,43,227"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a3f2e87854d24df52286d8c8e356ae33d" title=" " alt="" coords="92,225,130,252"/>
+<area shape="poly" title=" " alt="" coords="44,244,76,245,76,250,44,249"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#ae3e3eccf5e177dbfd0bfc3d4737db99b" title=" " alt="" coords="265,351,303,377"/>
+<area shape="poly" title=" " alt="" coords="34,251,53,287,84,334,127,379,152,398,179,412,197,417,216,412,238,401,257,386,261,390,241,406,217,417,197,422,177,417,149,403,123,383,80,337,49,290,30,254"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a79931a9bc87624b5f10dc4f731985b25" title=" " alt="" coords="178,376,217,403"/>
+<area shape="poly" title=" " alt="" coords="43,251,171,364,168,368,40,255"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#ac2d732d6e782e389adc2a3809207da85" title=" " alt="" coords="265,401,303,428"/>
+<area shape="poly" title=" " alt="" coords="31,252,49,316,68,354,94,388,122,410,149,421,179,423,216,421,249,418,249,423,217,427,179,429,147,426,119,415,90,391,63,357,44,318,26,253"/>
+<area shape="poly" title=" " alt="" coords="178,59,136,70,114,80,94,95,72,122,54,152,34,211,29,209,50,150,67,119,90,92,111,76,134,65,177,54"/>
+<area shape="poly" title=" " alt="" coords="217,59,249,59,249,64,217,64"/>
+<area shape="poly" title=" " alt="" coords="181,48,180,31,187,24,197,21,208,24,214,31,210,34,206,29,197,27,189,29,185,33,186,48"/>
+<area shape="poly" title=" " alt="" coords="218,70,253,91,250,96,215,75"/>
+<area shape="poly" title=" " alt="" coords="91,234,59,233,59,227,92,229"/>
+<area shape="poly" title=" " alt="" coords="124,223,257,84,260,88,128,227"/>
+<area shape="poly" title=" " alt="" coords="116,224,181,88,185,90,121,226"/>
+<area shape="poly" title=" " alt="" coords="129,228,170,208,215,179,260,136,264,139,218,184,173,213,132,233"/>
+<area shape="poly" title=" " alt="" coords="95,225,94,208,100,201,111,199,122,201,128,208,124,212,119,206,111,204,103,206,99,210,100,225"/>
+<area shape="poly" title=" " alt="" coords="132,244,173,265,218,294,263,337,259,341,215,298,170,270,129,249"/>
+<area shape="poly" title=" " alt="" coords="120,251,179,361,175,364,115,254"/>
+<area shape="poly" title=" " alt="" coords="129,251,218,338,263,388,259,392,215,342,125,254"/>
+<area shape="poly" title=" " alt="" coords="189,377,129,267,134,264,193,374"/>
+<area shape="poly" title=" " alt="" coords="216,381,249,371,251,377,218,387"/>
+<area shape="poly" title=" " alt="" coords="181,376,180,359,187,352,197,349,208,352,214,359,210,362,206,357,197,355,189,357,185,361,186,376"/>
+<area shape="poly" title=" " alt="" coords="218,392,251,402,249,408,216,398"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1e3f8ba831b756d307103d6d7ed30fb1" name="a1e3f8ba831b756d307103d6d7ed30fb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e3f8ba831b756d307103d6d7ed30fb1">&#9670;&#160;</a></span>I2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I2 </td>
+          <td>(</td>
+          <td class="paramtype">(<a class="el" href="#afd0227d97e797b0053b6f42b81a6833c">I1</a> - I2)+COS *((<a class="el" href="#a3f2e87854d24df52286d8c8e356ae33d">I5</a> - <a class="el" href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">I6</a>)+(<a class="el" href="#ac2d732d6e782e389adc2a3809207da85">I8</a> - <a class="el" href="#a79931a9bc87624b5f10dc4f731985b25">I7</a>))</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; |I2'|</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1030fe1cdffd4d97f8eeddc50b6713d8" name="a1030fe1cdffd4d97f8eeddc50b6713d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1030fe1cdffd4d97f8eeddc50b6713d8">&#9670;&#160;</a></span>I3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I3 </td>
+          <td>(</td>
+          <td class="paramtype">(<a class="el" href="#afd0227d97e797b0053b6f42b81a6833c">I1</a>+<a class="el" href="#a1e3f8ba831b756d307103d6d7ed30fb1">I2</a>) -(I3+<a class="el" href="#aef607171209474e2d7a348628a677651">I4</a>)</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; |I3'|</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__adc__f32_8asm_a1030fe1cdffd4d97f8eeddc50b6713d8_cgraph.png" border="0" usemap="#a_r_f_f_t__adc__f32_8asm_a1030fe1cdffd4d97f8eeddc50b6713d8_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__adc__f32_8asm_a1030fe1cdffd4d97f8eeddc50b6713d8_cgraph" id="a_r_f_f_t__adc__f32_8asm_a1030fe1cdffd4d97f8eeddc50b6713d8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,156,44,183"/>
+<area shape="poly" title=" " alt="" coords="8,156,7,139,14,132,25,129,36,132,42,139,38,142,33,137,25,135,17,136,12,140,13,155"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#afd0227d97e797b0053b6f42b81a6833c" title=" " alt="" coords="92,156,130,183"/>
+<area shape="poly" title=" " alt="" coords="44,174,76,175,76,181,44,180"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a1e3f8ba831b756d307103d6d7ed30fb1" title=" " alt="" coords="265,5,303,32"/>
+<area shape="poly" title=" " alt="" coords="33,154,54,124,87,86,129,49,177,20,214,12,249,11,249,17,215,17,179,25,132,53,91,90,59,127,37,157"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#aef607171209474e2d7a348628a677651" title=" " alt="" coords="265,333,303,360"/>
+<area shape="poly" title=" " alt="" coords="35,182,56,216,87,259,129,303,153,322,179,338,214,347,249,348,249,353,213,352,177,342,150,327,126,307,83,263,51,219,31,185"/>
+<area shape="poly" title=" " alt="" coords="91,164,59,163,59,158,92,159"/>
+<area shape="poly" title=" " alt="" coords="95,156,94,139,100,132,111,129,122,132,128,139,124,142,119,137,111,135,103,136,99,140,100,155"/>
+<area shape="poly" title=" " alt="" coords="114,154,135,103,153,74,177,49,212,29,248,20,250,25,214,34,180,53,157,77,139,105,119,156"/>
+<area shape="poly" title=" " alt="" coords="117,183,124,210,136,245,154,282,180,313,214,332,250,341,248,346,212,337,176,317,149,284,131,247,119,212,112,184"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a3f2e87854d24df52286d8c8e356ae33d" title=" " alt="" coords="178,181,217,208"/>
+<area shape="poly" title=" " alt="" coords="131,180,164,191,162,196,130,185"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#ae3e3eccf5e177dbfd0bfc3d4737db99b" title=" " alt="" coords="351,107,389,133"/>
+<area shape="poly" title=" " alt="" coords="126,153,149,137,177,123,219,113,262,109,336,112,335,118,262,115,220,118,179,128,152,141,129,158"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a79931a9bc87624b5f10dc4f731985b25" title=" " alt="" coords="265,181,303,208"/>
+<area shape="poly" title=" " alt="" coords="130,157,170,142,194,139,217,143,240,154,260,168,256,173,237,158,216,148,194,145,171,147,132,162"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#ac2d732d6e782e389adc2a3809207da85" title=" " alt="" coords="351,232,389,259"/>
+<area shape="poly" title=" " alt="" coords="128,181,151,200,179,218,220,231,262,239,336,244,335,249,261,245,218,236,177,222,148,205,124,185"/>
+<area shape="poly" title=" " alt="" coords="178,199,138,201,91,197,58,187,59,182,92,192,138,196,178,194"/>
+<area shape="poly" title=" " alt="" coords="177,184,144,173,146,168,179,179"/>
+<area shape="poly" title=" " alt="" coords="203,180,267,45,272,47,208,182"/>
+<area shape="poly" title=" " alt="" coords="208,207,270,318,265,321,204,209"/>
+<area shape="poly" title=" " alt="" coords="181,181,180,164,187,157,197,155,208,157,214,164,210,167,206,162,197,160,189,162,185,166,186,181"/>
+<area shape="poly" title=" " alt="" coords="212,179,235,160,263,143,300,130,335,122,336,127,301,135,266,148,238,165,215,183"/>
+<area shape="poly" title=" " alt="" coords="217,200,249,201,249,206,217,205"/>
+<area shape="poly" title=" " alt="" coords="218,200,265,217,336,236,335,241,264,223,216,205"/>
+<area shape="poly" title=" " alt="" coords="264,190,232,188,232,183,264,184"/>
+<area shape="poly" title=" " alt="" coords="299,179,340,142,344,146,302,183"/>
+<area shape="poly" title=" " alt="" coords="267,181,267,164,273,157,284,155,295,157,301,164,297,167,292,162,284,160,276,162,272,166,273,181"/>
+<area shape="poly" title=" " alt="" coords="305,203,339,224,336,229,302,208"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aef607171209474e2d7a348628a677651" name="aef607171209474e2d7a348628a677651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef607171209474e2d7a348628a677651">&#9670;&#160;</a></span>I4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I4 </td>
+          <td>(</td>
+          <td class="paramtype">(<a class="el" href="#afd0227d97e797b0053b6f42b81a6833c">I1</a> - <a class="el" href="#a1e3f8ba831b756d307103d6d7ed30fb1">I2</a>) - COS *((<a class="el" href="#a3f2e87854d24df52286d8c8e356ae33d">I5</a> - <a class="el" href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">I6</a>)+(<a class="el" href="#ac2d732d6e782e389adc2a3809207da85">I8</a> - <a class="el" href="#a79931a9bc87624b5f10dc4f731985b25">I7</a>))</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; |I4'|</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f2e87854d24df52286d8c8e356ae33d" name="a3f2e87854d24df52286d8c8e356ae33d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2e87854d24df52286d8c8e356ae33d">&#9670;&#160;</a></span>I5()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I5 </td>
+          <td>(</td>
+          <td class="paramtype">((<a class="el" href="#afd0227d97e797b0053b6f42b81a6833c">I1</a>+<a class="el" href="#a1e3f8ba831b756d307103d6d7ed30fb1">I2</a>)+(<a class="el" href="#a1030fe1cdffd4d97f8eeddc50b6713d8">I3</a>+<a class="el" href="#aef607171209474e2d7a348628a677651">I4</a>)) -((I5+<a class="el" href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">I6</a>)+(<a class="el" href="#a79931a9bc87624b5f10dc4f731985b25">I7</a>+<a class="el" href="#ac2d732d6e782e389adc2a3809207da85">I8</a>))</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; |I5'|</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__adc__f32_8asm_a3f2e87854d24df52286d8c8e356ae33d_cgraph.png" border="0" usemap="#a_r_f_f_t__adc__f32_8asm_a3f2e87854d24df52286d8c8e356ae33d_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__adc__f32_8asm_a3f2e87854d24df52286d8c8e356ae33d_cgraph" id="a_r_f_f_t__adc__f32_8asm_a3f2e87854d24df52286d8c8e356ae33d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,219,44,245"/>
+<area shape="poly" title=" " alt="" coords="8,218,7,201,14,194,25,192,36,195,42,201,38,205,33,199,25,197,17,199,12,203,13,218"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#afd0227d97e797b0053b6f42b81a6833c" title=" " alt="" coords="92,219,130,245"/>
+<area shape="poly" title=" " alt="" coords="44,237,76,238,76,243,44,242"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a1e3f8ba831b756d307103d6d7ed30fb1" title=" " alt="" coords="265,5,303,32"/>
+<area shape="poly" title=" " alt="" coords="29,217,52,169,69,141,90,114,128,82,170,57,213,38,249,25,251,30,215,43,173,61,131,86,94,118,73,144,56,172,34,219"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a1030fe1cdffd4d97f8eeddc50b6713d8" title=" " alt="" coords="178,131,217,157"/>
+<area shape="poly" title=" " alt="" coords="40,216,90,180,127,164,162,151,164,156,129,168,93,185,43,220"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#aef607171209474e2d7a348628a677651" title=" " alt="" coords="265,131,303,157"/>
+<area shape="poly" title=" " alt="" coords="33,217,54,188,87,151,128,117,152,103,177,92,197,88,217,92,240,103,260,118,256,122,237,108,216,97,197,93,179,97,155,107,132,121,91,155,58,191,37,220"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#ae3e3eccf5e177dbfd0bfc3d4737db99b" title=" " alt="" coords="265,333,303,360"/>
+<area shape="poly" title=" " alt="" coords="45,238,251,330,249,335,43,243"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a79931a9bc87624b5f10dc4f731985b25" title=" " alt="" coords="178,408,217,435"/>
+<area shape="poly" title=" " alt="" coords="31,245,51,307,69,343,94,375,128,401,164,418,162,422,125,406,90,379,65,346,46,309,25,247"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#ac2d732d6e782e389adc2a3809207da85" title=" " alt="" coords="265,408,303,435"/>
+<area shape="poly" title=" " alt="" coords="31,245,49,315,68,357,94,396,121,423,148,441,178,447,216,444,249,434,251,439,217,449,178,453,146,445,118,428,90,399,63,360,44,316,26,246"/>
+<area shape="poly" title=" " alt="" coords="91,227,59,226,59,221,92,222"/>
+<area shape="poly" title=" " alt="" coords="95,218,94,201,100,194,111,192,122,195,128,201,124,205,119,199,111,197,103,199,99,203,100,218"/>
+<area shape="poly" title=" " alt="" coords="114,217,136,160,154,125,176,93,212,59,250,34,253,38,215,63,180,96,158,128,141,162,119,219"/>
+<area shape="poly" title=" " alt="" coords="129,219,177,168,180,172,132,222"/>
+<area shape="poly" title=" " alt="" coords="129,220,250,158,252,163,132,225"/>
+<area shape="poly" title=" " alt="" coords="132,235,173,250,218,275,243,297,265,319,261,323,240,300,215,280,170,255,130,240"/>
+<area shape="poly" title=" " alt="" coords="121,245,186,393,181,395,116,247"/>
+<area shape="poly" title=" " alt="" coords="126,244,262,395,258,398,123,247"/>
+<area shape="poly" title=" " alt="" coords="180,157,131,208,128,205,176,153"/>
+<area shape="poly" title=" " alt="" coords="206,129,262,44,267,47,210,132"/>
+<area shape="poly" title=" " alt="" coords="181,130,180,113,187,106,197,104,208,107,214,113,210,117,206,111,197,109,189,111,185,115,186,130"/>
+<area shape="poly" title=" " alt="" coords="217,141,249,141,249,147,217,147"/>
+<area shape="poly" title=" " alt="" coords="177,410,135,388,111,373,90,355,71,333,56,308,35,261,40,259,61,305,76,329,94,351,114,369,137,383,180,405"/>
+<area shape="poly" title=" " alt="" coords="212,406,254,368,258,372,216,410"/>
+<area shape="poly" title=" " alt="" coords="181,408,180,391,187,384,197,381,208,384,214,391,210,394,206,389,197,387,189,388,185,392,186,407"/>
+<area shape="poly" title=" " alt="" coords="217,419,249,419,249,424,217,424"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae3e3eccf5e177dbfd0bfc3d4737db99b" name="ae3e3eccf5e177dbfd0bfc3d4737db99b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">&#9670;&#160;</a></span>I6()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I6 </td>
+          <td>(</td>
+          <td class="paramtype">COS *</td>          <td class="paramname"><span class="paramname"><em></em></span>(I8 - I7) -(I5 - I6)) -(I4 - I3</td><td>)</td>
+          <td> -&gt; |I6'|</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a79931a9bc87624b5f10dc4f731985b25" name="a79931a9bc87624b5f10dc4f731985b25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79931a9bc87624b5f10dc4f731985b25">&#9670;&#160;</a></span>I7()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I7 </td>
+          <td>(</td>
+          <td class="paramtype">(I7+<a class="el" href="#ac2d732d6e782e389adc2a3809207da85">I8</a>) -(<a class="el" href="#a3f2e87854d24df52286d8c8e356ae33d">I5</a>+<a class="el" href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">I6</a>)</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; |I7'|</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__adc__f32_8asm_a79931a9bc87624b5f10dc4f731985b25_cgraph.png" border="0" usemap="#a_r_f_f_t__adc__f32_8asm_a79931a9bc87624b5f10dc4f731985b25_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__adc__f32_8asm_a79931a9bc87624b5f10dc4f731985b25_cgraph" id="a_r_f_f_t__adc__f32_8asm_a79931a9bc87624b5f10dc4f731985b25_cgraph">
+<area shape="rect" title=" " alt="" coords="5,210,44,236"/>
+<area shape="poly" title=" " alt="" coords="8,209,7,192,14,185,25,183,36,186,42,192,38,196,33,190,25,188,17,190,12,194,13,209"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a3f2e87854d24df52286d8c8e356ae33d" title=" " alt="" coords="92,210,130,236"/>
+<area shape="poly" title=" " alt="" coords="44,228,76,229,76,234,44,233"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#ae3e3eccf5e177dbfd0bfc3d4737db99b" title=" " alt="" coords="265,198,303,224"/>
+<area shape="poly" title=" " alt="" coords="45,230,92,246,135,248,177,243,249,222,251,227,178,248,135,254,91,251,43,235"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#ac2d732d6e782e389adc2a3809207da85" title=" " alt="" coords="265,350,303,376"/>
+<area shape="poly" title=" " alt="" coords="46,233,104,271,179,314,251,347,249,352,177,319,102,275,43,237"/>
+<area shape="poly" title=" " alt="" coords="91,218,59,217,59,211,92,213"/>
+<area shape="poly" title=" " alt="" coords="95,209,94,192,100,185,111,183,122,186,128,192,124,196,119,190,111,188,103,190,99,194,100,209"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#afd0227d97e797b0053b6f42b81a6833c" title=" " alt="" coords="178,147,217,174"/>
+<area shape="poly" title=" " alt="" coords="129,215,173,182,176,186,132,219"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a1e3f8ba831b756d307103d6d7ed30fb1" title=" " alt="" coords="351,147,389,174"/>
+<area shape="poly" title=" " alt="" coords="131,227,165,237,208,245,256,245,280,241,302,234,331,213,352,185,356,189,334,216,304,239,281,247,257,251,208,250,164,242,130,232"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a1030fe1cdffd4d97f8eeddc50b6713d8" title=" " alt="" coords="265,46,303,72"/>
+<area shape="poly" title=" " alt="" coords="115,208,137,161,155,134,176,109,212,84,249,67,251,72,215,89,180,113,159,137,142,163,120,210"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#aef607171209474e2d7a348628a677651" title=" " alt="" coords="351,46,389,72"/>
+<area shape="poly" title=" " alt="" coords="114,208,129,164,159,104,179,74,203,47,231,23,264,7,284,3,304,7,326,18,346,33,343,37,324,23,302,12,284,8,265,12,234,28,207,50,183,77,163,107,134,166,119,210"/>
+<area shape="poly" title=" " alt="" coords="130,219,249,211,249,216,131,224"/>
+<area shape="poly" title=" " alt="" coords="130,235,180,278,254,338,251,342,176,282,126,239"/>
+<area shape="poly" title=" " alt="" coords="178,162,138,165,93,176,72,187,53,201,49,197,69,183,91,171,137,160,177,157"/>
+<area shape="poly" title=" " alt="" coords="180,168,135,201,132,197,176,164"/>
+<area shape="poly" title=" " alt="" coords="181,147,180,129,187,123,197,120,208,123,214,129,210,133,206,127,197,126,189,127,185,131,186,146"/>
+<area shape="poly" title=" " alt="" coords="217,158,336,158,336,163,217,163"/>
+<area shape="poly" title=" " alt="" coords="214,145,265,83,269,86,218,148"/>
+<area shape="poly" title=" " alt="" coords="216,147,337,75,339,80,218,152"/>
+<area shape="poly" title=" " alt="" coords="218,169,253,190,250,194,215,173"/>
+<area shape="poly" title=" " alt="" coords="207,173,274,335,269,337,202,175"/>
+<area shape="poly" title=" " alt="" coords="267,74,217,136,212,132,263,71"/>
+<area shape="poly" title=" " alt="" coords="298,71,350,133,346,137,294,74"/>
+<area shape="poly" title=" " alt="" coords="267,45,267,28,273,21,284,19,295,22,301,28,297,32,292,26,284,24,276,26,272,30,273,45"/>
+<area shape="poly" title=" " alt="" coords="303,56,336,56,336,62,303,62"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac2d732d6e782e389adc2a3809207da85" name="ac2d732d6e782e389adc2a3809207da85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d732d6e782e389adc2a3809207da85">&#9670;&#160;</a></span>I8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I8 </td>
+          <td>(</td>
+          <td class="paramtype">COS *</td>          <td class="paramname"><span class="paramname"><em></em></span>(I8 - I7) -(I5 - I6))+(I4 - I3</td><td>)</td>
+          <td> -&gt; |I8'|</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fe3e72290be2f9d8b15617ddfc46101" name="a0fe3e72290be2f9d8b15617ddfc46101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fe3e72290be2f9d8b15617ddfc46101">&#9670;&#160;</a></span>log2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">*FFTStages must <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#aa0424600df290aab98919b3fbfd35d93">be</a> log2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__adc__f32_8asm_a0fe3e72290be2f9d8b15617ddfc46101_cgraph.png" border="0" usemap="#a_r_f_f_t__adc__f32_8asm_a0fe3e72290be2f9d8b15617ddfc46101_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__adc__f32_8asm_a0fe3e72290be2f9d8b15617ddfc46101_cgraph" id="a_r_f_f_t__adc__f32_8asm_a0fe3e72290be2f9d8b15617ddfc46101_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,51,56"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="99,29,170,56"/>
+<area shape="poly" title=" " alt="" coords="51,40,83,40,83,45,51,45"/>
+<area shape="poly" title=" " alt="" coords="115,30,112,20,114,11,122,5,134,3,148,5,155,12,151,16,145,10,134,8,124,10,119,14,117,20,120,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2ddd403cbeebe77d27c0688c77274808" name="a2ddd403cbeebe77d27c0688c77274808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ddd403cbeebe77d27c0688c77274808">&#9670;&#160;</a></span>of()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">*<a class="el" href="#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> must <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#aa0424600df290aab98919b3fbfd35d93">be</a> a power of </td>
+          <td>(</td>
+          <td class="paramtype">32</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">64</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">128</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">etc</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__adc__f32_8asm_a2ddd403cbeebe77d27c0688c77274808_cgraph.png" border="0" usemap="#a_r_f_f_t__adc__f32_8asm_a2ddd403cbeebe77d27c0688c77274808_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__adc__f32_8asm_a2ddd403cbeebe77d27c0688c77274808_cgraph" id="a_r_f_f_t__adc__f32_8asm_a2ddd403cbeebe77d27c0688c77274808_cgraph">
+<area shape="rect" title=" " alt="" coords="6,29,44,56"/>
+<area shape="poly" title=" " alt="" coords="6,30,3,20,5,11,13,5,25,3,38,5,45,12,41,16,35,10,25,8,15,10,10,14,8,20,11,28"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="92,29,163,56"/>
+<area shape="poly" title=" " alt="" coords="44,40,76,40,76,45,44,45"/>
+<area shape="poly" title=" " alt="" coords="109,30,106,20,108,11,115,5,128,3,140,5,147,12,144,16,138,10,128,8,118,10,112,14,111,20,114,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a06e18b935c5c9d432544ae98226f8a52" name="a06e18b935c5c9d432544ae98226f8a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06e18b935c5c9d432544ae98226f8a52">&#9670;&#160;</a></span>RFFT_adc_f32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RFFT_adc_f32 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fpu__rfft_8h.html#a8a977d8b9a2c1763124388928d94204a">RFFT_ADC_F32_STRUCT_Handle</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">变量说明</h2>
+<a id="a92975724c920d645cc3fae7075e9c2a1" name="a92975724c920d645cc3fae7075e9c2a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92975724c920d645cc3fae7075e9c2a1">&#9670;&#160;</a></span>__pad0__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DESCRIPTION __pad0__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae96f8def7ca7adf235664aa5da1457ce" name="ae96f8def7ca7adf235664aa5da1457ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae96f8def7ca7adf235664aa5da1457ce">&#9670;&#160;</a></span>__pad1__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FUNCTIONS __pad1__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00016">16</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab1035ced270a4cf010306e7473ef1c3e" name="ab1035ced270a4cf010306e7473ef1c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1035ced270a4cf010306e7473ef1c3e">&#9670;&#160;</a></span>__pad2__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ASSUMPTIONS __pad2__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a43f25e50b6b45e393344b819f51956e2" name="a43f25e50b6b45e393344b819f51956e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43f25e50b6b45e393344b819f51956e2">&#9670;&#160;</a></span>__pad3__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ALGORITHUM __pad3__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac05dacc19794c74f9243db03f8f4380b" name="ac05dacc19794c74f9243db03f8f4380b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac05dacc19794c74f9243db03f8f4380b">&#9670;&#160;</a></span>__pad4__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Note __pad4__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00059">59</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8a0fd7a8363e41d8c12a90716f4f500f" name="a8a0fd7a8363e41d8c12a90716f4f500f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a0fd7a8363e41d8c12a90716f4f500f">&#9670;&#160;</a></span>algorithm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">algorithm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa88c25b94898272bbfc8bddf84cda00c" name="aa88c25b94898272bbfc8bddf84cda00c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa88c25b94898272bbfc8bddf84cda00c">&#9670;&#160;</a></span>as</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">and where <a class="el" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">RFFT_F32_STRUCT</a> <a class="el" href="_r_f_f_t__f32__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8">is</a> a structure defined as</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00020">20</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0def523475297ec5ba9268d2e509a2d4" name="a0def523475297ec5ba9268d2e509a2d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0def523475297ec5ba9268d2e509a2d4">&#9670;&#160;</a></span>asm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">file source fft <a class="el" href="fpu__rfft_8h.html#aa982a487f6da0f5d2137d4ee9cea234e">RFFT_adc_f32</a> asm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00002">2</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a514862568f2272017ecf4f8954de2ca3" name="a514862568f2272017ecf4f8954de2ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a514862568f2272017ecf4f8954de2ca3">&#9670;&#160;</a></span>C2000</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">author C2000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00005">5</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a590668688740da1ecf707208f2630a51" name="a590668688740da1ecf707208f2630a51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a590668688740da1ecf707208f2630a51">&#9670;&#160;</a></span>function</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">* MagBuf and PhaseBuf are not used by this function</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6694692002fc3c511834ee9d7193a935" name="a6694692002fc3c511834ee9d7193a935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6694692002fc3c511834ee9d7193a935">&#9670;&#160;</a></span>functions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">They are only used by <a class="el" href="#ab12eee7397b4e1783ee90f3f16216dc3">the</a> magitude and phase calculation functions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2caeba9dea06be6982dd0d533a04fa8a" name="a2caeba9dea06be6982dd0d533a04fa8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2caeba9dea06be6982dd0d533a04fa8a">&#9670;&#160;</a></span>If</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">The <a class="el" href="#ad1837fed945d659444e41ff0b37333b0">input</a> <a class="el" href="_r_f_f_t__f32_8asm.html#a784a700f8da2dd2432d27aa45de6c642">buffer</a> must <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#aa0424600df290aab98919b3fbfd35d93">be</a> aligned <a class="el" href="#a21ef755afaba4e6135f04b7a2e129713">to</a> a multiple <a class="el" href="#a2ddd403cbeebe77d27c0688c77274808">of</a> <a class="el" href="#ab12eee7397b4e1783ee90f3f16216dc3">the</a> <a class="el" href="_r_f_f_t__f32_8asm.html#af3aaa80f79c5e73016141a8be4bd99ff">FFT</a> <a class="el" href="_r_f_f_t__f32__adc__win_8asm.html#aa2fbe8499f5d5a4eb9e5c72a0a8ae296">size</a> If</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00010">10</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a48f5d93d1b0018a28446781ddf3daef2" name="a48f5d93d1b0018a28446781ddf3daef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48f5d93d1b0018a28446781ddf3daef2">&#9670;&#160;</a></span>InBuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">* InBuf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad1837fed945d659444e41ff0b37333b0" name="ad1837fed945d659444e41ff0b37333b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1837fed945d659444e41ff0b37333b0">&#9670;&#160;</a></span>input</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">This <a class="el" href="#a590668688740da1ecf707208f2630a51">function</a> calcuates a real <a class="el" href="_r_f_f_t__f32_8asm.html#af3aaa80f79c5e73016141a8be4bd99ff">FFT</a> with bit fixed point ADC input</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00004">4</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a751d2aa275fb1bfb80450c14e7d45403" name="a751d2aa275fb1bfb80450c14e7d45403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a751d2aa275fb1bfb80450c14e7d45403">&#9670;&#160;</a></span>length</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">*MagBuf and PhaseBuf are <a class="el" href="#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a> length</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7e9a002b321f5b629551c7750d02fd80" name="a7e9a002b321f5b629551c7750d02fd80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e9a002b321f5b629551c7750d02fd80">&#9670;&#160;</a></span>OutBuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OutBuf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a45bff0c66456842c81ad34e9579b1b56" name="a45bff0c66456842c81ad34e9579b1b56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45bff0c66456842c81ad34e9579b1b56">&#9670;&#160;</a></span>results</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">it <a class="el" href="_r_f_f_t__f32__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8">is</a> not aligned then <a class="el" href="#ab12eee7397b4e1783ee90f3f16216dc3">the</a> output <a class="el" href="_r_f_f_t__f32_8asm.html#a784a700f8da2dd2432d27aa45de6c642">buffer</a> will yield invalid results</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a989fe007e6b139c1fb7a30c3a37d2dd5" name="a989fe007e6b139c1fb7a30c3a37d2dd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a989fe007e6b139c1fb7a30c3a37d2dd5">&#9670;&#160;</a></span>RFFT_adc_f32u</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a2caeba9dea06be6982dd0d533a04fa8a">If</a> you do not wish <a class="el" href="#a21ef755afaba4e6135f04b7a2e129713">to</a> align <a class="el" href="#ab12eee7397b4e1783ee90f3f16216dc3">the</a> <a class="el" href="#ad1837fed945d659444e41ff0b37333b0">input</a> <a class="el" href="_r_f_f_t__f32_8asm.html#a784a700f8da2dd2432d27aa45de6c642">buffer</a> then use <a class="el" href="#ab12eee7397b4e1783ee90f3f16216dc3">the</a> RFFT_adc_f32u</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00012">12</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adcbc27d8418504081cf0b718cb873633" name="adcbc27d8418504081cf0b718cb873633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcbc27d8418504081cf0b718cb873633">&#9670;&#160;</a></span>stages</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bit reverse <a class="el" href="#ad1837fed945d659444e41ff0b37333b0">input</a> <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a> and calculate stages</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab12eee7397b4e1783ee90f3f16216dc3" name="ab12eee7397b4e1783ee90f3f16216dc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab12eee7397b4e1783ee90f3f16216dc3">&#9670;&#160;</a></span>the</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a590668688740da1ecf707208f2630a51">function</a> Using this <a class="el" href="#a590668688740da1ecf707208f2630a51">function</a> will reduce <a class="el" href="_r_f_f_t__f32_8asm.html#ac575de2f74001cdf8519cd6321b08ab2">cycle</a> <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#a65657a1025b28cf518406be3fce8f56f">performance</a> <a class="el" href="#a2ddd403cbeebe77d27c0688c77274808">of</a> the</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a21ef755afaba4e6135f04b7a2e129713" name="a21ef755afaba4e6135f04b7a2e129713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ef755afaba4e6135f04b7a2e129713">&#9670;&#160;</a></span>to</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">*<a class="el" href="#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> must <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#aa0424600df290aab98919b3fbfd35d93">be</a> greater or equal to</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a712fcebcdf8a02f91f3c2c599f5ea5d2" name="a712fcebcdf8a02f91f3c2c599f5ea5d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a712fcebcdf8a02f91f3c2c599f5ea5d2">&#9670;&#160;</a></span>up</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Calculate <a class="el" href="#adcbc27d8418504081cf0b718cb873633">stages</a> and up</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html">RFFT_adc_f32.asm</a> 第 <a class="el" href="_r_f_f_t__adc__f32_8asm_source.html#l00061">61</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_96bdd7f67e65e0bcef66e25a7a540546.html">NUEDC_Core</a></li><li class="navelem"><a href="dir_549544d87b79ec47878b64312c89f956.html">Code</a></li><li class="navelem"><a href="dir_394efc67a2e5bf4097a78e7b2ce4a5dc.html">Control_Driver</a></li><li class="navelem"><a href="dir_5a99e60e144967bbc36487d27c056a1d.html">FFT</a></li><li class="navelem"><a href="dir_6dfd9d3abf76c805c78960a2d43de4e0.html">dsp_lib</a></li><li class="navelem"><a href="_r_f_f_t__adc__f32_8asm.html">RFFT_adc_f32.asm</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

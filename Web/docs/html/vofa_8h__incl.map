@@ -1,0 +1,9 @@
+<map id="D:/Codes/NUEDC_Core/Code/Control_Driver/VOFA/vofa.h" name="D:/Codes/NUEDC_Core/Code/Control_Driver/VOFA/vofa.h">
+<area shape="rect" id="Node000001" title="VOFA上位机支持, 函数声明" alt="" coords="36,5,202,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,70,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,66,61,102,57,99,91,63"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,112,144,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,64,122,96,116,96,116,64"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="168,112,278,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,62,198,100,195,104,151,66"/>
+</map>

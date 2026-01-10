@@ -1,0 +1,9 @@
+<map id="DCL_PIR_Init" name="DCL_PIR_Init">
+<area shape="rect" id="Node000001" title="初始化PIR控制器" alt="" coords="5,31,109,57"/>
+<area shape="rect" id="Node000002" href="$_d_c_l_f32_8c.html#a9a398ae86e1ca190c08bc29f43d56919" title="初始化 DCL_PI 控制器" alt="" coords="160,5,253,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,33,144,27,145,32,110,38"/>
+<area shape="rect" id="Node000003" href="$_d_c_l_f32_8c.html#a9b6dd3c5bd8c50e9e8f0818785685f38" title="QPR控制器初始化, Tustin离散化" alt="" coords="157,56,256,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,50,142,56,141,61,109,55"/>
+<area shape="rect" id="Node000004" href="$_transfer_fun_8h.html#a7fed97c70a637a0c8db4e7808730eba8" title="初始化 DCL_DF22 控制器结构体" alt="" coords="304,56,416,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="256,67,288,67,288,72,256,72"/>
+</map>

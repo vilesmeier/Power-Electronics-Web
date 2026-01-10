@@ -1,0 +1,1372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC_Core/Code/Control_Driver/FFT/dsp_lib/RFFT_f32s_mag.asm 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_r_f_f_t__f32s__mag_8asm.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RFFT_f32s_mag.asm 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="_r_f_f_t__f32s__mag_8asm_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:RFFT_5FF32_5FSTRUCT" id="r_RFFT_5FF32_5FSTRUCT"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">RFFT_F32_STRUCT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for the Real FFT  <a href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a8e0e8c088fc134b9afc9994c3b253faf" id="r_a8e0e8c088fc134b9afc9994c3b253faf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">RFFT_F32_STRUCT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae482b9b96d3be183df01bcac5dfa08e0" id="r_ae482b9b96d3be183df01bcac5dfa08e0"><td class="memItemLeft" align="right" valign="top">optimized v1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae482b9b96d3be183df01bcac5dfa08e0">function</a> (D. <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a39630993b7e2d8c825b086370fb71324">Alter</a>)</td></tr>
+<tr class="memitem:ad4ad16e58853e258de6f3ead91710b58" id="r_ad4ad16e58853e258de6f3ead91710b58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4ad16e58853e258de6f3ead91710b58">RFFT_f32s_mag</a> (<a class="el" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a>)</td></tr>
+<tr class="memitem:a2ddd403cbeebe77d27c0688c77274808" id="r_a2ddd403cbeebe77d27c0688c77274808"><td class="memItemLeft" align="right" valign="top">*<a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> must <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#aa0424600df290aab98919b3fbfd35d93">be</a> a power&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ddd403cbeebe77d27c0688c77274808">of</a> (32, 64, 128, etc)</td></tr>
+<tr class="memitem:ab35b91818a9860727d7c7b3ed151836e" id="r_ab35b91818a9860727d7c7b3ed151836e"><td class="memItemLeft" align="right" valign="top">*FFTStages must <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#aa0424600df290aab98919b3fbfd35d93">be</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab35b91818a9860727d7c7b3ed151836e">ln</a> (<a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a>)/ln(2)</td></tr>
+<tr class="memitem:ab6167ffe8dcbeeb3cb3b6ecf95b783e8" id="r_ab6167ffe8dcbeeb3cb3b6ecf95b783e8"><td class="memItemLeft" align="right" valign="top">*MagBuf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6167ffe8dcbeeb3cb3b6ecf95b783e8">is</a> (<a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a>/2+1) <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a> <a class="el" href="_r_f_f_t__adc__f32_8asm.html#a751d2aa275fb1bfb80450c14e7d45403">length</a></td></tr>
+<tr class="memitem:a4c472a8faa2c848a76e49ce444dd00fa" id="r_a4c472a8faa2c848a76e49ce444dd00fa"><td class="memItemLeft" align="right" valign="top">*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c472a8faa2c848a76e49ce444dd00fa">RFFT_f32</a> () or <a class="el" href="fpu__rfft_8h.html#a9124e5c81f2cf7c0b2b8be3e761117bf">RFFT_f32u</a>() has been called prior <a class="el" href="_r_f_f_t__adc__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713">to</a> this <a class="el" href="_r_f_f_t__adc__f32_8asm.html#a590668688740da1ecf707208f2630a51">function</a></td></tr>
+<tr class="memitem:af788afeeff499e99a5ac6d282e3e8005" id="r_af788afeeff499e99a5ac6d282e3e8005"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af788afeeff499e99a5ac6d282e3e8005">R</a> (0)</td></tr>
+<tr class="memitem:a944d56e3d468efad7a386a90f7b4b8db" id="r_a944d56e3d468efad7a386a90f7b4b8db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a944d56e3d468efad7a386a90f7b4b8db">R</a> (1)|</td></tr>
+<tr class="memitem:a29ef98c83dc860b94fe024d3cba08aa3" id="r_a29ef98c83dc860b94fe024d3cba08aa3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29ef98c83dc860b94fe024d3cba08aa3">R</a> (2)|Real Component</td></tr>
+<tr class="memitem:ad3ad9993075deb88d686b4968d542b61" id="r_ad3ad9993075deb88d686b4968d542b61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3ad9993075deb88d686b4968d542b61">R</a> (3)|</td></tr>
+<tr class="memitem:a4d6ed9ad40b93d2fd0f1134d78be429a" id="r_a4d6ed9ad40b93d2fd0f1134d78be429a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d6ed9ad40b93d2fd0f1134d78be429a">R</a> (<a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a>/2)</td></tr>
+<tr class="memitem:ac6a8b1721551e80c2d608aa1eb291d91" id="r_ac6a8b1721551e80c2d608aa1eb291d91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6a8b1721551e80c2d608aa1eb291d91">I</a> (<a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a>/2 - 1)|</td></tr>
+<tr class="memitem:a7a0991c10cb528deca3362e7cbd28db2" id="r_a7a0991c10cb528deca3362e7cbd28db2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a0991c10cb528deca3362e7cbd28db2">I</a> (4)|Imaginary Component</td></tr>
+<tr class="memitem:a1738bcdb93c0c0f5a601a682d1ee6942" id="r_a1738bcdb93c0c0f5a601a682d1ee6942"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1738bcdb93c0c0f5a601a682d1ee6942">I</a> (3)|</td></tr>
+<tr class="memitem:a12eae03beda5a7406d0bbb9988988ee8" id="r_a12eae03beda5a7406d0bbb9988988ee8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12eae03beda5a7406d0bbb9988988ee8">I</a> (2)|</td></tr>
+<tr class="memitem:ab1eef3777f6ba6fcf3f11aacea6bec19" id="r_ab1eef3777f6ba6fcf3f11aacea6bec19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1eef3777f6ba6fcf3f11aacea6bec19">I</a> (1)|<a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> - 1</td></tr>
+<tr class="memitem:afe1bc31319654b073b6a7d105a691cb5" id="r_afe1bc31319654b073b6a7d105a691cb5"><td class="memItemLeft" align="right" valign="top">RFFT_InBuf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe1bc31319654b073b6a7d105a691cb5">set</a> (0 *2)</td></tr>
+<tr class="memitem:a42fe9ec9dbab9a38c5ab4f21b35c0899" id="r_a42fe9ec9dbab9a38c5ab4f21b35c0899"><td class="memItemLeft" align="right" valign="top">RFFT_OutBuf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42fe9ec9dbab9a38c5ab4f21b35c0899">set</a> (1 *2)</td></tr>
+<tr class="memitem:a545138f9c9405b04907b0862ad8ecc59" id="r_a545138f9c9405b04907b0862ad8ecc59"><td class="memItemLeft" align="right" valign="top">RFFT_CosSinBuf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a545138f9c9405b04907b0862ad8ecc59">set</a> (2 *2)</td></tr>
+<tr class="memitem:a1ee355b18a7a261d6ecba2d0251ada88" id="r_a1ee355b18a7a261d6ecba2d0251ada88"><td class="memItemLeft" align="right" valign="top">RFFT_MagBuf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ee355b18a7a261d6ecba2d0251ada88">set</a> (3 *2)</td></tr>
+<tr class="memitem:addcad507cb3c63090559dfa1daf70202" id="r_addcad507cb3c63090559dfa1daf70202"><td class="memItemLeft" align="right" valign="top">RFFT_PhaseBuf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addcad507cb3c63090559dfa1daf70202">set</a> (4 *2)</td></tr>
+<tr class="memitem:a071d5cb57f56ebd5a64a996e5d54094a" id="r_a071d5cb57f56ebd5a64a996e5d54094a"><td class="memItemLeft" align="right" valign="top">RFFT_FFTSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a071d5cb57f56ebd5a64a996e5d54094a">set</a> (5 *2)</td></tr>
+<tr class="memitem:a0ae3fb48be0ff6c1329c3cad2130d227" id="r_a0ae3fb48be0ff6c1329c3cad2130d227"><td class="memItemLeft" align="right" valign="top">RFFT_FFTStages&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ae3fb48be0ff6c1329c3cad2130d227">set</a> (RFFT_FFTSize+1)</td></tr>
+<tr class="memitem:ab0bbeeb083ee8165b02bfaa8d5439776" id="r_ab0bbeeb083ee8165b02bfaa8d5439776"><td class="memItemLeft" align="right" valign="top">Save&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0bbeeb083ee8165b02bfaa8d5439776">R4H</a> (save-on-entry register) MOV32 *<a class="el" href="_transfer_fun_8asm.html#a18658ce80f0b762b7e4d761f353f4ec7">SP</a>++</td></tr>
+<tr class="memitem:a49bf8fcc1a59faf949f651011e322e29" id="r_a49bf8fcc1a59faf949f651011e322e29"><td class="memItemLeft" align="right" valign="top">Save&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49bf8fcc1a59faf949f651011e322e29">R5H</a> (save-on-entry register) MOV32 *<a class="el" href="_transfer_fun_8asm.html#a18658ce80f0b762b7e4d761f353f4ec7">SP</a>++</td></tr>
+<tr class="memitem:a66d14ff73d86bc96d651666d82c20d2f" id="r_a66d14ff73d86bc96d651666d82c20d2f"><td class="memItemLeft" align="right" valign="top">Save&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66d14ff73d86bc96d651666d82c20d2f">R6H</a> (save-on-entry register) MOV32 *<a class="el" href="_transfer_fun_8asm.html#a18658ce80f0b762b7e4d761f353f4ec7">SP</a>++</td></tr>
+<tr class="memitem:a057a2a141e119a72bd7975fb20247844" id="r_a057a2a141e119a72bd7975fb20247844"><td class="memItemLeft" align="right" valign="top">Save&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a057a2a141e119a72bd7975fb20247844">R7H</a> (save-on-entry register) MOVL <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a24637272b7be23905464ac649121ffba">XAR6</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ad45d9bd97bb2f093ea5210548820e49a" id="r_ad45d9bd97bb2f093ea5210548820e49a"><td class="memItemLeft" align="right" valign="top">file source fft <a class="el" href="#a757d5457319f6231c46a88ba5458d6e5">RFFT_f32s_mag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad45d9bd97bb2f093ea5210548820e49a">asm</a></td></tr>
+<tr class="memitem:a168fedfa99ce6eb529b27557c7eea443" id="r_a168fedfa99ce6eb529b27557c7eea443"><td class="memItemLeft" align="right" valign="top">brief Real <a class="el" href="_r_f_f_t__f32_8asm.html#af3aaa80f79c5e73016141a8be4bd99ff">FFT</a> scaled magnitude&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a168fedfa99ce6eb529b27557c7eea443">calculations</a></td></tr>
+<tr class="memitem:a39630993b7e2d8c825b086370fb71324" id="r_a39630993b7e2d8c825b086370fb71324"><td class="memItemLeft" align="right" valign="top">author David M&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39630993b7e2d8c825b086370fb71324">Alter</a></td></tr>
+<tr class="memitem:ade6a701b82b93dfb7eae4e79cd3b18a6" id="r_ade6a701b82b93dfb7eae4e79cd3b18a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade6a701b82b93dfb7eae4e79cd3b18a6">date</a></td></tr>
+<tr class="memitem:a92975724c920d645cc3fae7075e9c2a1" id="r_a92975724c920d645cc3fae7075e9c2a1"><td class="memItemLeft" align="right" valign="top">DESCRIPTION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92975724c920d645cc3fae7075e9c2a1">__pad0__</a></td></tr>
+<tr class="memitem:af3aaa80f79c5e73016141a8be4bd99ff" id="r_af3aaa80f79c5e73016141a8be4bd99ff"><td class="memItemLeft" align="right" valign="top">Calculates <a class="el" href="_r_f_f_t__adc__f32_8asm.html#ab12eee7397b4e1783ee90f3f16216dc3">the</a> scaled magnitude for <a class="el" href="_r_f_f_t__adc__f32_8asm.html#ab12eee7397b4e1783ee90f3f16216dc3">the</a> bit floating point real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3aaa80f79c5e73016141a8be4bd99ff">FFT</a></td></tr>
+<tr class="memitem:ae559bb592c9e1d57b04e648259ebbcf6" id="r_ae559bb592c9e1d57b04e648259ebbcf6"><td class="memItemLeft" align="right" valign="top">HISTORY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae559bb592c9e1d57b04e648259ebbcf6">__pad1__</a></td></tr>
+<tr class="memitem:ab99c3bd878fb3d16bc6c0a1dad47174d" id="r_ab99c3bd878fb3d16bc6c0a1dad47174d"><td class="memItemLeft" align="right" valign="top">FUNCTIONS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab99c3bd878fb3d16bc6c0a1dad47174d">__pad2__</a></td></tr>
+<tr class="memitem:ae6f63385ab5882c1deef51789f9a55e0" id="r_ae6f63385ab5882c1deef51789f9a55e0"><td class="memItemLeft" align="right" valign="top">where <a class="el" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> <a class="el" href="_r_f_f_t__f32__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8">is</a> defined&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6f63385ab5882c1deef51789f9a55e0">as</a></td></tr>
+<tr class="memitem:a0c02b0e242ff8522400234897fe1dd30" id="r_a0c02b0e242ff8522400234897fe1dd30"><td class="memItemLeft" align="right" valign="top">ASSUMPTIONS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c02b0e242ff8522400234897fe1dd30">__pad3__</a></td></tr>
+<tr class="memitem:a699ed3b8cc7d8e76c199b8b8e536208a" id="r_a699ed3b8cc7d8e76c199b8b8e536208a"><td class="memItemLeft" align="right" valign="top">*<a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> must <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#aa0424600df290aab98919b3fbfd35d93">be</a> greater or equal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a699ed3b8cc7d8e76c199b8b8e536208a">to</a></td></tr>
+<tr class="memitem:a48f5d93d1b0018a28446781ddf3daef2" id="r_a48f5d93d1b0018a28446781ddf3daef2"><td class="memItemLeft" align="right" valign="top">*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48f5d93d1b0018a28446781ddf3daef2">InBuf</a></td></tr>
+<tr class="memitem:a7e9a002b321f5b629551c7750d02fd80" id="r_a7e9a002b321f5b629551c7750d02fd80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e9a002b321f5b629551c7750d02fd80">OutBuf</a></td></tr>
+<tr class="memitem:a9476346a5df6d8c815400b8a5409fca5" id="r_a9476346a5df6d8c815400b8a5409fca5"><td class="memItemLeft" align="right" valign="top">CosSinBuf are <a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9476346a5df6d8c815400b8a5409fca5">length</a></td></tr>
+<tr class="memitem:a47ec7c9bc1b85429d23be5a4cd6f0914" id="r_a47ec7c9bc1b85429d23be5a4cd6f0914"><td class="memItemLeft" align="right" valign="top">ALGORITHM&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47ec7c9bc1b85429d23be5a4cd6f0914">__pad4__</a></td></tr>
+<tr class="memitem:afee0b53b16791d12473f1e2b16704415" id="r_afee0b53b16791d12473f1e2b16704415"><td class="memItemLeft" align="right" valign="top">CODE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afee0b53b16791d12473f1e2b16704415">OPTIMIZATION</a></td></tr>
+<tr class="memitem:a815336f39fbf709d91965a31f320d348" id="r_a815336f39fbf709d91965a31f320d348"><td class="memItemLeft" align="right" valign="top">The <a class="el" href="_r_f_f_t__f32__adc__win_8asm.html#a8189228eda9278a713b5b59b5f7d6531">loop</a> was spatially <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a338f6677e220d3685c9ece097793a7e5">unrolled</a> once <a class="el" href="_r_f_f_t__adc__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713">to</a> eliminate FPU delay&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a815336f39fbf709d91965a31f320d348">slots</a></td></tr>
+<tr class="memitem:aaaf0c0b3db6673d6567bb285098e65f0" id="r_aaaf0c0b3db6673d6567bb285098e65f0"><td class="memItemLeft" align="right" valign="top">BENCHMARK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaaf0c0b3db6673d6567bb285098e65f0">__pad5__</a></td></tr>
+<tr class="memitem:ae5ff73f67e66ae70aea385abbbed3b09" id="r_ae5ff73f67e66ae70aea385abbbed3b09"><td class="memItemLeft" align="right" valign="top">On&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5ff73f67e66ae70aea385abbbed3b09">Entry</a></td></tr>
+<tr class="memitem:aef81a947e56af70ad55b66658131b179" id="r_aef81a947e56af70ad55b66658131b179"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">RFFT_F32_STRUCT</a> structure offsets from&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef81a947e56af70ad55b66658131b179">XAR4</a></td></tr>
+<tr class="memitem:a757d5457319f6231c46a88ba5458d6e5" id="r_a757d5457319f6231c46a88ba5458d6e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_transfer_fun_8asm.html#a1f927050a4c2c12e15a8064099a51bdd">if</a> __TI_EABI__ asg&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a757d5457319f6231c46a88ba5458d6e5">RFFT_f32s_mag</a></td></tr>
+<tr class="memitem:ac3ef49a945f79213e9c4fa513f15c453" id="r_ac3ef49a945f79213e9c4fa513f15c453"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_transfer_fun_8asm.html#a1f927050a4c2c12e15a8064099a51bdd">if</a> __TI_EABI__ asg _RFFT_f32s_mag endif global _RFFT_f32s_mag text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3ef49a945f79213e9c4fa513f15c453">_RFFT_f32s_mag</a></td></tr>
+<tr class="memitem:ad1802edaad10a50a895ba989e7fb827e" id="r_ad1802edaad10a50a895ba989e7fb827e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_transfer_fun_8asm.html#a1f927050a4c2c12e15a8064099a51bdd">if</a> __TI_EABI__ asg <a class="el" href="#ac3ef49a945f79213e9c4fa513f15c453">_RFFT_f32s_mag</a> endif global <a class="el" href="#ac3ef49a945f79213e9c4fa513f15c453">_RFFT_f32s_mag</a> text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1802edaad10a50a895ba989e7fb827e">R4H</a></td></tr>
+<tr class="memitem:a594ae4b4547720f2b2f14a17c7f28340" id="r_a594ae4b4547720f2b2f14a17c7f28340"><td class="memItemLeft" align="right" valign="top">Save&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a594ae4b4547720f2b2f14a17c7f28340">R5H</a></td></tr>
+<tr class="memitem:aa4672cb695cc81e192e1f213f2855475" id="r_aa4672cb695cc81e192e1f213f2855475"><td class="memItemLeft" align="right" valign="top">Save&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4672cb695cc81e192e1f213f2855475">R6H</a></td></tr>
+<tr class="memitem:a6ab2ece977a80afbee932e6840c0c5fe" id="r_a6ab2ece977a80afbee932e6840c0c5fe"><td class="memItemLeft" align="right" valign="top">Save&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ab2ece977a80afbee932e6840c0c5fe">R7H</a></td></tr>
+<tr class="memitem:a24637272b7be23905464ac649121ffba" id="r_a24637272b7be23905464ac649121ffba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24637272b7be23905464ac649121ffba">XAR6</a></td></tr>
+<tr class="memitem:a84e9e70b392caed7a06411984622f9fd" id="r_a84e9e70b392caed7a06411984622f9fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84e9e70b392caed7a06411984622f9fd">XAR5</a></td></tr>
+<tr class="memitem:a3f4f0645dc7859e47a25a5659f33bc38" id="r_a3f4f0645dc7859e47a25a5659f33bc38"><td class="memItemLeft" align="right" valign="top">Calculate <a class="el" href="_r_f_f_t__adc__f32_8asm.html#ab12eee7397b4e1783ee90f3f16216dc3">the</a> scale factor MOV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f4f0645dc7859e47a25a5659f33bc38">AL</a></td></tr>
+<tr class="memitem:a4c5b9ca60aeed15f16486eb8de3cbf90" id="r_a4c5b9ca60aeed15f16486eb8de3cbf90"><td class="memItemLeft" align="right" valign="top">B&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c5b9ca60aeed15f16486eb8de3cbf90">_rfft_f32s_mag_end</a></td></tr>
+<tr class="memitem:a35a3c06700f0e1239d26ea177c5ecfd2" id="r_a35a3c06700f0e1239d26ea177c5ecfd2"><td class="memItemLeft" align="right" valign="top">B&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35a3c06700f0e1239d26ea177c5ecfd2">LEQ</a></td></tr>
+</table>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">类型定义说明</h2>
+<a id="a8e0e8c088fc134b9afc9994c3b253faf" name="a8e0e8c088fc134b9afc9994c3b253faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0e8c088fc134b9afc9994c3b253faf">&#9670;&#160;</a></span>RFFT_F32_STRUCT_Handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">RFFT_F32_STRUCT</a>* <a class="el" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00020">20</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="ae482b9b96d3be183df01bcac5dfa08e0" name="ae482b9b96d3be183df01bcac5dfa08e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae482b9b96d3be183df01bcac5dfa08e0">&#9670;&#160;</a></span>function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">optimized v1 function </td>
+          <td>(</td>
+          <td class="paramtype">D.</td>          <td class="paramname"><span class="paramname"><em>Alter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1eef3777f6ba6fcf3f11aacea6bec19" name="ab1eef3777f6ba6fcf3f11aacea6bec19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1eef3777f6ba6fcf3f11aacea6bec19">&#9670;&#160;</a></span>I() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I </td>
+          <td>(</td>
+          <td class="paramtype">1</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__f32s__mag_8asm_ab1eef3777f6ba6fcf3f11aacea6bec19_cgraph.png" border="0" usemap="#a_r_f_f_t__f32s__mag_8asm_ab1eef3777f6ba6fcf3f11aacea6bec19_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__f32s__mag_8asm_ab1eef3777f6ba6fcf3f11aacea6bec19_cgraph" id="a_r_f_f_t__f32s__mag_8asm_ab1eef3777f6ba6fcf3f11aacea6bec19_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,44,56"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="178,29,249,56"/>
+<area shape="poly" title=" " alt="" coords="44,36,92,28,128,28,163,31,162,36,128,33,92,33,45,41"/>
+<area shape="rect" href="_r_f_f_t__f32__mag_8asm.html#ac6a8b1721551e80c2d608aa1eb291d91" title=" " alt="" coords="92,67,130,93"/>
+<area shape="poly" title=" " alt="" coords="45,48,79,63,76,68,43,53"/>
+<area shape="poly" title=" " alt="" coords="195,30,192,20,194,11,202,5,214,3,227,5,234,12,230,16,224,10,214,8,204,10,199,14,197,20,200,28"/>
+<area shape="poly" title=" " alt="" coords="130,71,163,58,164,63,132,76"/>
+<area shape="poly" title=" " alt="" coords="95,66,94,49,100,42,111,40,122,43,128,49,124,53,119,47,111,45,103,47,99,51,100,66"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a12eae03beda5a7406d0bbb9988988ee8" name="a12eae03beda5a7406d0bbb9988988ee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12eae03beda5a7406d0bbb9988988ee8">&#9670;&#160;</a></span>I() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I </td>
+          <td>(</td>
+          <td class="paramtype">2</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__f32s__mag_8asm_a12eae03beda5a7406d0bbb9988988ee8_cgraph.png" border="0" usemap="#a_r_f_f_t__f32s__mag_8asm_a12eae03beda5a7406d0bbb9988988ee8_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__f32s__mag_8asm_a12eae03beda5a7406d0bbb9988988ee8_cgraph" id="a_r_f_f_t__f32s__mag_8asm_a12eae03beda5a7406d0bbb9988988ee8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,44,56"/>
+<area shape="rect" href="_r_f_f_t__f32__mag_8asm.html#ac6a8b1721551e80c2d608aa1eb291d91" title=" " alt="" coords="92,29,130,56"/>
+<area shape="poly" title=" " alt="" coords="44,40,76,40,76,45,44,45"/>
+<area shape="poly" title=" " alt="" coords="95,29,94,12,100,5,111,3,122,5,128,12,124,15,119,10,111,8,103,10,99,14,100,29"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="178,29,249,56"/>
+<area shape="poly" title=" " alt="" coords="131,40,162,40,162,45,131,45"/>
+<area shape="poly" title=" " alt="" coords="195,30,192,20,194,11,202,5,214,3,227,5,234,12,230,16,224,10,214,8,204,10,199,14,197,20,200,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1738bcdb93c0c0f5a601a682d1ee6942" name="a1738bcdb93c0c0f5a601a682d1ee6942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1738bcdb93c0c0f5a601a682d1ee6942">&#9670;&#160;</a></span>I() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I </td>
+          <td>(</td>
+          <td class="paramtype">3</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__f32s__mag_8asm_a1738bcdb93c0c0f5a601a682d1ee6942_cgraph.png" border="0" usemap="#a_r_f_f_t__f32s__mag_8asm_a1738bcdb93c0c0f5a601a682d1ee6942_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__f32s__mag_8asm_a1738bcdb93c0c0f5a601a682d1ee6942_cgraph" id="a_r_f_f_t__f32s__mag_8asm_a1738bcdb93c0c0f5a601a682d1ee6942_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,44,56"/>
+<area shape="rect" href="_r_f_f_t__f32__mag_8asm.html#ac6a8b1721551e80c2d608aa1eb291d91" title=" " alt="" coords="92,29,130,56"/>
+<area shape="poly" title=" " alt="" coords="44,40,76,40,76,45,44,45"/>
+<area shape="poly" title=" " alt="" coords="95,29,94,12,100,5,111,3,122,5,128,12,124,15,119,10,111,8,103,10,99,14,100,29"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="178,29,249,56"/>
+<area shape="poly" title=" " alt="" coords="131,40,162,40,162,45,131,45"/>
+<area shape="poly" title=" " alt="" coords="195,30,192,20,194,11,202,5,214,3,227,5,234,12,230,16,224,10,214,8,204,10,199,14,197,20,200,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7a0991c10cb528deca3362e7cbd28db2" name="a7a0991c10cb528deca3362e7cbd28db2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a0991c10cb528deca3362e7cbd28db2">&#9670;&#160;</a></span>I() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I </td>
+          <td>(</td>
+          <td class="paramtype">4</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__f32s__mag_8asm_a7a0991c10cb528deca3362e7cbd28db2_cgraph.png" border="0" usemap="#a_r_f_f_t__f32s__mag_8asm_a7a0991c10cb528deca3362e7cbd28db2_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__f32s__mag_8asm_a7a0991c10cb528deca3362e7cbd28db2_cgraph" id="a_r_f_f_t__f32s__mag_8asm_a7a0991c10cb528deca3362e7cbd28db2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,44,56"/>
+<area shape="rect" href="_r_f_f_t__f32__mag_8asm.html#ac6a8b1721551e80c2d608aa1eb291d91" title=" " alt="" coords="92,29,130,56"/>
+<area shape="poly" title=" " alt="" coords="44,40,76,40,76,45,44,45"/>
+<area shape="poly" title=" " alt="" coords="95,29,94,12,100,5,111,3,122,5,128,12,124,15,119,10,111,8,103,10,99,14,100,29"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="178,29,249,56"/>
+<area shape="poly" title=" " alt="" coords="131,40,162,40,162,45,131,45"/>
+<area shape="poly" title=" " alt="" coords="195,30,192,20,194,11,202,5,214,3,227,5,234,12,230,16,224,10,214,8,204,10,199,14,197,20,200,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac6a8b1721551e80c2d608aa1eb291d91" name="ac6a8b1721551e80c2d608aa1eb291d91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6a8b1721551e80c2d608aa1eb291d91">&#9670;&#160;</a></span>I() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a>/2 -</td>          <td class="paramname"><span class="paramname"><em>1</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__f32s__mag_8asm_ac6a8b1721551e80c2d608aa1eb291d91_cgraph.png" border="0" usemap="#a_r_f_f_t__f32s__mag_8asm_ac6a8b1721551e80c2d608aa1eb291d91_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__f32s__mag_8asm_ac6a8b1721551e80c2d608aa1eb291d91_cgraph" id="a_r_f_f_t__f32s__mag_8asm_ac6a8b1721551e80c2d608aa1eb291d91_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,44,56"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="178,29,249,56"/>
+<area shape="poly" title=" " alt="" coords="44,36,92,28,128,28,163,31,162,36,128,33,92,33,45,41"/>
+<area shape="rect" href="_r_f_f_t__f32__mag_8asm.html#ac6a8b1721551e80c2d608aa1eb291d91" title=" " alt="" coords="92,67,130,93"/>
+<area shape="poly" title=" " alt="" coords="45,48,79,63,76,68,43,53"/>
+<area shape="poly" title=" " alt="" coords="195,30,192,20,194,11,202,5,214,3,227,5,234,12,230,16,224,10,214,8,204,10,199,14,197,20,200,28"/>
+<area shape="poly" title=" " alt="" coords="130,71,163,58,164,63,132,76"/>
+<area shape="poly" title=" " alt="" coords="95,66,94,49,100,42,111,40,122,43,128,49,124,53,119,47,111,45,103,47,99,51,100,66"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab6167ffe8dcbeeb3cb3b6ecf95b783e8" name="ab6167ffe8dcbeeb3cb3b6ecf95b783e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6167ffe8dcbeeb3cb3b6ecf95b783e8">&#9670;&#160;</a></span>is()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">*MagBuf is </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a>/2+</td>          <td class="paramname"><span class="paramname"><em>1</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__f32s__mag_8asm_ab6167ffe8dcbeeb3cb3b6ecf95b783e8_cgraph.png" border="0" usemap="#a_r_f_f_t__f32s__mag_8asm_ab6167ffe8dcbeeb3cb3b6ecf95b783e8_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__f32s__mag_8asm_ab6167ffe8dcbeeb3cb3b6ecf95b783e8_cgraph" id="a_r_f_f_t__f32s__mag_8asm_ab6167ffe8dcbeeb3cb3b6ecf95b783e8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,44,56"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="178,29,249,56"/>
+<area shape="poly" title=" " alt="" coords="44,36,92,28,128,28,163,31,162,36,128,33,92,33,45,41"/>
+<area shape="rect" href="_r_f_f_t__f32__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8" title=" " alt="" coords="92,67,130,93"/>
+<area shape="poly" title=" " alt="" coords="45,48,79,63,76,68,43,53"/>
+<area shape="poly" title=" " alt="" coords="195,30,192,20,194,11,202,5,214,3,227,5,234,12,230,16,224,10,214,8,204,10,199,14,197,20,200,28"/>
+<area shape="poly" title=" " alt="" coords="130,71,163,58,164,63,132,76"/>
+<area shape="poly" title=" " alt="" coords="95,66,94,49,100,42,111,40,122,43,128,49,124,53,119,47,111,45,103,47,99,51,100,66"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab35b91818a9860727d7c7b3ed151836e" name="ab35b91818a9860727d7c7b3ed151836e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35b91818a9860727d7c7b3ed151836e">&#9670;&#160;</a></span>ln()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">*FFTStages must <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#aa0424600df290aab98919b3fbfd35d93">be</a> ln </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__f32s__mag_8asm_ab35b91818a9860727d7c7b3ed151836e_cgraph.png" border="0" usemap="#a_r_f_f_t__f32s__mag_8asm_ab35b91818a9860727d7c7b3ed151836e_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__f32s__mag_8asm_ab35b91818a9860727d7c7b3ed151836e_cgraph" id="a_r_f_f_t__f32s__mag_8asm_ab35b91818a9860727d7c7b3ed151836e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,44,56"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="92,29,163,56"/>
+<area shape="poly" title=" " alt="" coords="44,40,76,40,76,45,44,45"/>
+<area shape="poly" title=" " alt="" coords="109,30,105,20,108,11,115,5,127,3,140,5,147,12,144,16,138,10,127,8,117,10,112,14,111,20,114,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2ddd403cbeebe77d27c0688c77274808" name="a2ddd403cbeebe77d27c0688c77274808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ddd403cbeebe77d27c0688c77274808">&#9670;&#160;</a></span>of()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">*<a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> must <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#aa0424600df290aab98919b3fbfd35d93">be</a> a power of </td>
+          <td>(</td>
+          <td class="paramtype">32</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">64</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">128</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">etc</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__f32s__mag_8asm_a2ddd403cbeebe77d27c0688c77274808_cgraph.png" border="0" usemap="#a_r_f_f_t__f32s__mag_8asm_a2ddd403cbeebe77d27c0688c77274808_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__f32s__mag_8asm_a2ddd403cbeebe77d27c0688c77274808_cgraph" id="a_r_f_f_t__f32s__mag_8asm_a2ddd403cbeebe77d27c0688c77274808_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,44,56"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="178,29,249,56"/>
+<area shape="poly" title=" " alt="" coords="44,36,92,28,128,28,163,31,162,36,128,33,92,33,45,41"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a2ddd403cbeebe77d27c0688c77274808" title=" " alt="" coords="92,67,130,93"/>
+<area shape="poly" title=" " alt="" coords="45,48,79,63,76,68,43,53"/>
+<area shape="poly" title=" " alt="" coords="195,30,192,20,194,11,202,5,214,3,227,5,234,12,230,16,224,10,214,8,204,10,199,14,197,20,200,28"/>
+<area shape="poly" title=" " alt="" coords="130,71,163,58,164,63,132,76"/>
+<area shape="poly" title=" " alt="" coords="95,66,94,49,100,42,111,40,122,43,128,49,124,53,119,47,111,45,103,47,99,51,100,66"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af788afeeff499e99a5ac6d282e3e8005" name="af788afeeff499e99a5ac6d282e3e8005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af788afeeff499e99a5ac6d282e3e8005">&#9670;&#160;</a></span>R() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">R </td>
+          <td>(</td>
+          <td class="paramtype">0</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__f32s__mag_8asm_af788afeeff499e99a5ac6d282e3e8005_cgraph.png" border="0" usemap="#a_r_f_f_t__f32s__mag_8asm_af788afeeff499e99a5ac6d282e3e8005_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__f32s__mag_8asm_af788afeeff499e99a5ac6d282e3e8005_cgraph" id="a_r_f_f_t__f32s__mag_8asm_af788afeeff499e99a5ac6d282e3e8005_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,44,56"/>
+<area shape="rect" href="_r_f_f_t__f32__mag_8asm.html#af788afeeff499e99a5ac6d282e3e8005" title=" " alt="" coords="92,29,130,56"/>
+<area shape="poly" title=" " alt="" coords="44,40,76,40,76,45,44,45"/>
+<area shape="poly" title=" " alt="" coords="95,29,94,12,100,5,111,3,122,5,128,12,124,15,119,10,111,8,103,10,99,14,100,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a944d56e3d468efad7a386a90f7b4b8db" name="a944d56e3d468efad7a386a90f7b4b8db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a944d56e3d468efad7a386a90f7b4b8db">&#9670;&#160;</a></span>R() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">R </td>
+          <td>(</td>
+          <td class="paramtype">1</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__f32s__mag_8asm_a944d56e3d468efad7a386a90f7b4b8db_cgraph.png" border="0" usemap="#a_r_f_f_t__f32s__mag_8asm_a944d56e3d468efad7a386a90f7b4b8db_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__f32s__mag_8asm_a944d56e3d468efad7a386a90f7b4b8db_cgraph" id="a_r_f_f_t__f32s__mag_8asm_a944d56e3d468efad7a386a90f7b4b8db_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,44,56"/>
+<area shape="rect" href="_r_f_f_t__f32__mag_8asm.html#af788afeeff499e99a5ac6d282e3e8005" title=" " alt="" coords="92,29,130,56"/>
+<area shape="poly" title=" " alt="" coords="44,40,76,40,76,45,44,45"/>
+<area shape="poly" title=" " alt="" coords="95,29,94,12,100,5,111,3,122,5,128,12,124,15,119,10,111,8,103,10,99,14,100,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a29ef98c83dc860b94fe024d3cba08aa3" name="a29ef98c83dc860b94fe024d3cba08aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29ef98c83dc860b94fe024d3cba08aa3">&#9670;&#160;</a></span>R() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">R </td>
+          <td>(</td>
+          <td class="paramtype">2</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__f32s__mag_8asm_a29ef98c83dc860b94fe024d3cba08aa3_cgraph.png" border="0" usemap="#a_r_f_f_t__f32s__mag_8asm_a29ef98c83dc860b94fe024d3cba08aa3_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__f32s__mag_8asm_a29ef98c83dc860b94fe024d3cba08aa3_cgraph" id="a_r_f_f_t__f32s__mag_8asm_a29ef98c83dc860b94fe024d3cba08aa3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,44,56"/>
+<area shape="rect" href="_r_f_f_t__f32__mag_8asm.html#af788afeeff499e99a5ac6d282e3e8005" title=" " alt="" coords="92,29,130,56"/>
+<area shape="poly" title=" " alt="" coords="44,40,76,40,76,45,44,45"/>
+<area shape="poly" title=" " alt="" coords="95,29,94,12,100,5,111,3,122,5,128,12,124,15,119,10,111,8,103,10,99,14,100,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad3ad9993075deb88d686b4968d542b61" name="ad3ad9993075deb88d686b4968d542b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ad9993075deb88d686b4968d542b61">&#9670;&#160;</a></span>R() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">R </td>
+          <td>(</td>
+          <td class="paramtype">3</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__f32s__mag_8asm_ad3ad9993075deb88d686b4968d542b61_cgraph.png" border="0" usemap="#a_r_f_f_t__f32s__mag_8asm_ad3ad9993075deb88d686b4968d542b61_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__f32s__mag_8asm_ad3ad9993075deb88d686b4968d542b61_cgraph" id="a_r_f_f_t__f32s__mag_8asm_ad3ad9993075deb88d686b4968d542b61_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,44,56"/>
+<area shape="rect" href="_r_f_f_t__f32__mag_8asm.html#af788afeeff499e99a5ac6d282e3e8005" title=" " alt="" coords="92,29,130,56"/>
+<area shape="poly" title=" " alt="" coords="44,40,76,40,76,45,44,45"/>
+<area shape="poly" title=" " alt="" coords="95,29,94,12,100,5,111,3,122,5,128,12,124,15,119,10,111,8,103,10,99,14,100,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4d6ed9ad40b93d2fd0f1134d78be429a" name="a4d6ed9ad40b93d2fd0f1134d78be429a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6ed9ad40b93d2fd0f1134d78be429a">&#9670;&#160;</a></span>R() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">R </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a>/</td>          <td class="paramname"><span class="paramname"><em>2</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__f32s__mag_8asm_a4d6ed9ad40b93d2fd0f1134d78be429a_cgraph.png" border="0" usemap="#a_r_f_f_t__f32s__mag_8asm_a4d6ed9ad40b93d2fd0f1134d78be429a_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__f32s__mag_8asm_a4d6ed9ad40b93d2fd0f1134d78be429a_cgraph" id="a_r_f_f_t__f32s__mag_8asm_a4d6ed9ad40b93d2fd0f1134d78be429a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,67,44,93"/>
+<area shape="rect" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="92,29,163,56"/>
+<area shape="poly" title=" " alt="" coords="43,71,76,58,78,63,45,76"/>
+<area shape="rect" href="_r_f_f_t__f32__mag_8asm.html#af788afeeff499e99a5ac6d282e3e8005" title=" " alt="" coords="108,104,147,131"/>
+<area shape="poly" title=" " alt="" coords="45,84,95,103,93,108,43,89"/>
+<area shape="poly" title=" " alt="" coords="109,30,105,20,108,11,115,5,127,3,140,5,147,12,144,16,138,10,127,8,117,10,112,14,111,20,114,28"/>
+<area shape="poly" title=" " alt="" coords="109,104,105,95,108,86,115,80,127,77,140,80,147,86,144,90,138,85,127,83,117,84,112,89,111,95,114,103"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab0bbeeb083ee8165b02bfaa8d5439776" name="ab0bbeeb083ee8165b02bfaa8d5439776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0bbeeb083ee8165b02bfaa8d5439776">&#9670;&#160;</a></span>R4H()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Save R4H </td>
+          <td>(</td>
+          <td class="paramtype">save-on-entry</td>          <td class="paramname"><span class="paramname"><em>register</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49bf8fcc1a59faf949f651011e322e29" name="a49bf8fcc1a59faf949f651011e322e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49bf8fcc1a59faf949f651011e322e29">&#9670;&#160;</a></span>R5H()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Save R5H </td>
+          <td>(</td>
+          <td class="paramtype">save-on-entry</td>          <td class="paramname"><span class="paramname"><em>register</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66d14ff73d86bc96d651666d82c20d2f" name="a66d14ff73d86bc96d651666d82c20d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66d14ff73d86bc96d651666d82c20d2f">&#9670;&#160;</a></span>R6H()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Save R6H </td>
+          <td>(</td>
+          <td class="paramtype">save-on-entry</td>          <td class="paramname"><span class="paramname"><em>register</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a057a2a141e119a72bd7975fb20247844" name="a057a2a141e119a72bd7975fb20247844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057a2a141e119a72bd7975fb20247844">&#9670;&#160;</a></span>R7H()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Save R7H </td>
+          <td>(</td>
+          <td class="paramtype">save-on-entry</td>          <td class="paramname"><span class="paramname"><em>register</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c472a8faa2c848a76e49ce444dd00fa" name="a4c472a8faa2c848a76e49ce444dd00fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c472a8faa2c848a76e49ce444dd00fa">&#9670;&#160;</a></span>RFFT_f32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">* RFFT_f32 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_r_f_f_t__f32s__mag_8asm_a4c472a8faa2c848a76e49ce444dd00fa_cgraph.png" border="0" usemap="#a_r_f_f_t__f32s__mag_8asm_a4c472a8faa2c848a76e49ce444dd00fa_cgraph" loading="lazy" alt=""/></div>
+<map name="a_r_f_f_t__f32s__mag_8asm_a4c472a8faa2c848a76e49ce444dd00fa_cgraph" id="a_r_f_f_t__f32s__mag_8asm_a4c472a8faa2c848a76e49ce444dd00fa_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,86,57"/>
+<area shape="rect" href="fpu__rfft_8h.html#a4ba62438408b6dbbe39975f316fe4429" title="Real Fast Fourier Transform (RFFT)." alt="" coords="137,5,218,32"/>
+<area shape="poly" title=" " alt="" coords="86,34,121,27,123,32,87,39"/>
+<area shape="rect" href="fpu__rfft_8h.html#a9124e5c81f2cf7c0b2b8be3e761117bf" title="Real FFT (Unaligned)." alt="" coords="134,56,221,83"/>
+<area shape="poly" title=" " alt="" coords="87,49,119,55,118,61,86,54"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad4ad16e58853e258de6f3ead91710b58" name="ad4ad16e58853e258de6f3ead91710b58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4ad16e58853e258de6f3ead91710b58">&#9670;&#160;</a></span>RFFT_f32s_mag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RFFT_f32s_mag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe1bc31319654b073b6a7d105a691cb5" name="afe1bc31319654b073b6a7d105a691cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe1bc31319654b073b6a7d105a691cb5">&#9670;&#160;</a></span>set() <span class="overload">[1/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RFFT_InBuf set </td>
+          <td>(</td>
+          <td class="paramtype">0 *</td>          <td class="paramname"><span class="paramname"><em>2</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42fe9ec9dbab9a38c5ab4f21b35c0899" name="a42fe9ec9dbab9a38c5ab4f21b35c0899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42fe9ec9dbab9a38c5ab4f21b35c0899">&#9670;&#160;</a></span>set() <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RFFT_OutBuf set </td>
+          <td>(</td>
+          <td class="paramtype">1 *</td>          <td class="paramname"><span class="paramname"><em>2</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a545138f9c9405b04907b0862ad8ecc59" name="a545138f9c9405b04907b0862ad8ecc59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a545138f9c9405b04907b0862ad8ecc59">&#9670;&#160;</a></span>set() <span class="overload">[3/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RFFT_CosSinBuf set </td>
+          <td>(</td>
+          <td class="paramtype">2 *</td>          <td class="paramname"><span class="paramname"><em>2</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ee355b18a7a261d6ecba2d0251ada88" name="a1ee355b18a7a261d6ecba2d0251ada88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ee355b18a7a261d6ecba2d0251ada88">&#9670;&#160;</a></span>set() <span class="overload">[4/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RFFT_MagBuf set </td>
+          <td>(</td>
+          <td class="paramtype">3 *</td>          <td class="paramname"><span class="paramname"><em>2</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addcad507cb3c63090559dfa1daf70202" name="addcad507cb3c63090559dfa1daf70202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addcad507cb3c63090559dfa1daf70202">&#9670;&#160;</a></span>set() <span class="overload">[5/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RFFT_PhaseBuf set </td>
+          <td>(</td>
+          <td class="paramtype">4 *</td>          <td class="paramname"><span class="paramname"><em>2</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a071d5cb57f56ebd5a64a996e5d54094a" name="a071d5cb57f56ebd5a64a996e5d54094a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a071d5cb57f56ebd5a64a996e5d54094a">&#9670;&#160;</a></span>set() <span class="overload">[6/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RFFT_FFTSize set </td>
+          <td>(</td>
+          <td class="paramtype">5 *</td>          <td class="paramname"><span class="paramname"><em>2</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ae3fb48be0ff6c1329c3cad2130d227" name="a0ae3fb48be0ff6c1329c3cad2130d227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ae3fb48be0ff6c1329c3cad2130d227">&#9670;&#160;</a></span>set() <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RFFT_FFTStages set </td>
+          <td>(</td>
+          <td class="paramtype">RFFT_FFTSize+</td>          <td class="paramname"><span class="paramname"><em>1</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">变量说明</h2>
+<a id="a92975724c920d645cc3fae7075e9c2a1" name="a92975724c920d645cc3fae7075e9c2a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92975724c920d645cc3fae7075e9c2a1">&#9670;&#160;</a></span>__pad0__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DESCRIPTION __pad0__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00008">8</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae559bb592c9e1d57b04e648259ebbcf6" name="ae559bb592c9e1d57b04e648259ebbcf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae559bb592c9e1d57b04e648259ebbcf6">&#9670;&#160;</a></span>__pad1__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HISTORY __pad1__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00012">12</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab99c3bd878fb3d16bc6c0a1dad47174d" name="ab99c3bd878fb3d16bc6c0a1dad47174d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab99c3bd878fb3d16bc6c0a1dad47174d">&#9670;&#160;</a></span>__pad2__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FUNCTIONS __pad2__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0c02b0e242ff8522400234897fe1dd30" name="a0c02b0e242ff8522400234897fe1dd30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c02b0e242ff8522400234897fe1dd30">&#9670;&#160;</a></span>__pad3__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ASSUMPTIONS __pad3__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a47ec7c9bc1b85429d23be5a4cd6f0914" name="a47ec7c9bc1b85429d23be5a4cd6f0914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47ec7c9bc1b85429d23be5a4cd6f0914">&#9670;&#160;</a></span>__pad4__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ALGORITHM __pad4__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaaf0c0b3db6673d6567bb285098e65f0" name="aaaf0c0b3db6673d6567bb285098e65f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf0c0b3db6673d6567bb285098e65f0">&#9670;&#160;</a></span>__pad5__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BENCHMARK __pad5__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00075">75</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac3ef49a945f79213e9c4fa513f15c453" name="ac3ef49a945f79213e9c4fa513f15c453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3ef49a945f79213e9c4fa513f15c453">&#9670;&#160;</a></span>_RFFT_f32s_mag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_transfer_fun_8asm.html#a1f927050a4c2c12e15a8064099a51bdd">if</a> __TI_EABI__ asg _RFFT_f32s_mag endif global _RFFT_f32s_mag text _RFFT_f32s_mag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00100">100</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4c5b9ca60aeed15f16486eb8de3cbf90" name="a4c5b9ca60aeed15f16486eb8de3cbf90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c5b9ca60aeed15f16486eb8de3cbf90">&#9670;&#160;</a></span>_rfft_f32s_mag_end</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">B _rfft_f32s_mag_end</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00115">115</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3f4f0645dc7859e47a25a5659f33bc38" name="a3f4f0645dc7859e47a25a5659f33bc38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f4f0645dc7859e47a25a5659f33bc38">&#9670;&#160;</a></span>AL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= FFTStages</div>
+<div class="line">        SUBB     <a class="code hl_variable" href="_r_f_f_t__f32__adc__win_8asm.html#a479183a729761d1f0518b6271a0ff6a3">AL</a></div>
+<div class="ttc" id="a_r_f_f_t__f32__adc__win_8asm_html_a479183a729761d1f0518b6271a0ff6a3"><div class="ttname"><a href="_r_f_f_t__f32__adc__win_8asm.html#a479183a729761d1f0518b6271a0ff6a3">AL</a></div><div class="ttdeci">AL</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32__adc__win_8asm_source.html#l00065">RFFT_f32_adc_win.asm:65</a></div></div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00113">113</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a39630993b7e2d8c825b086370fb71324" name="a39630993b7e2d8c825b086370fb71324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39630993b7e2d8c825b086370fb71324">&#9670;&#160;</a></span>Alter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">author David M Alter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00005">5</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae6f63385ab5882c1deef51789f9a55e0" name="ae6f63385ab5882c1deef51789f9a55e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f63385ab5882c1deef51789f9a55e0">&#9670;&#160;</a></span>as</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Calculate <a class="el" href="_r_f_f_t__adc__f32_8asm.html#ab12eee7397b4e1783ee90f3f16216dc3">the</a> real <a class="el" href="_r_f_f_t__f32_8asm.html#af3aaa80f79c5e73016141a8be4bd99ff">FFT</a> scaled magnitude The <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a> <a class="el" href="_r_f_f_t__f32__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8">is</a> organized as</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00019">19</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad45d9bd97bb2f093ea5210548820e49a" name="ad45d9bd97bb2f093ea5210548820e49a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad45d9bd97bb2f093ea5210548820e49a">&#9670;&#160;</a></span>asm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">file source fft <a class="el" href="#a757d5457319f6231c46a88ba5458d6e5">RFFT_f32s_mag</a> asm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00002">2</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a168fedfa99ce6eb529b27557c7eea443" name="a168fedfa99ce6eb529b27557c7eea443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a168fedfa99ce6eb529b27557c7eea443">&#9670;&#160;</a></span>calculations</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">brief Real <a class="el" href="_r_f_f_t__f32_8asm.html#af3aaa80f79c5e73016141a8be4bd99ff">FFT</a> scaled magnitude calculations</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00004">4</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ade6a701b82b93dfb7eae4e79cd3b18a6" name="ade6a701b82b93dfb7eae4e79cd3b18a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade6a701b82b93dfb7eae4e79cd3b18a6">&#9670;&#160;</a></span>date</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">date</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00006">6</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae5ff73f67e66ae70aea385abbbed3b09" name="ae5ff73f67e66ae70aea385abbbed3b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5ff73f67e66ae70aea385abbbed3b09">&#9670;&#160;</a></span>Entry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">On Entry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00077">77</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af3aaa80f79c5e73016141a8be4bd99ff" name="af3aaa80f79c5e73016141a8be4bd99ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3aaa80f79c5e73016141a8be4bd99ff">&#9670;&#160;</a></span>FFT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">follows <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a> <a class="el" href="_r_f_f_t__adc__f32_8asm.html#ab12eee7397b4e1783ee90f3f16216dc3">the</a> output <a class="el" href="_r_f_f_t__f32_8asm.html#a784a700f8da2dd2432d27aa45de6c642">buffer</a> after calculating FFT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00010">10</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a48f5d93d1b0018a28446781ddf3daef2" name="a48f5d93d1b0018a28446781ddf3daef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48f5d93d1b0018a28446781ddf3daef2">&#9670;&#160;</a></span>InBuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">* InBuf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9476346a5df6d8c815400b8a5409fca5" name="a9476346a5df6d8c815400b8a5409fca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9476346a5df6d8c815400b8a5409fca5">&#9670;&#160;</a></span>length</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">* PhaseBuf <a class="el" href="_r_f_f_t__f32__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8">is</a> <a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a> length</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a35a3c06700f0e1239d26ea177c5ecfd2" name="a35a3c06700f0e1239d26ea177c5ecfd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35a3c06700f0e1239d26ea177c5ecfd2">&#9670;&#160;</a></span>LEQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">B LEQ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00115">115</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afee0b53b16791d12473f1e2b16704415" name="afee0b53b16791d12473f1e2b16704415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afee0b53b16791d12473f1e2b16704415">&#9670;&#160;</a></span>OPTIMIZATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CODE OPTIMIZATION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00071">71</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7e9a002b321f5b629551c7750d02fd80" name="a7e9a002b321f5b629551c7750d02fd80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e9a002b321f5b629551c7750d02fd80">&#9670;&#160;</a></span>OutBuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OutBuf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad1802edaad10a50a895ba989e7fb827e" name="ad1802edaad10a50a895ba989e7fb827e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1802edaad10a50a895ba989e7fb827e">&#9670;&#160;</a></span>R4H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_transfer_fun_8asm.html#a1f927050a4c2c12e15a8064099a51bdd">if</a> __TI_EABI__ asg <a class="el" href="#ac3ef49a945f79213e9c4fa513f15c453">_RFFT_f32s_mag</a> endif global <a class="el" href="#ac3ef49a945f79213e9c4fa513f15c453">_RFFT_f32s_mag</a> text R4H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00102">102</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a594ae4b4547720f2b2f14a17c7f28340" name="a594ae4b4547720f2b2f14a17c7f28340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a594ae4b4547720f2b2f14a17c7f28340">&#9670;&#160;</a></span>R5H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Save R5H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00103">103</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa4672cb695cc81e192e1f213f2855475" name="aa4672cb695cc81e192e1f213f2855475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4672cb695cc81e192e1f213f2855475">&#9670;&#160;</a></span>R6H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Save R6H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00104">104</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6ab2ece977a80afbee932e6840c0c5fe" name="a6ab2ece977a80afbee932e6840c0c5fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ab2ece977a80afbee932e6840c0c5fe">&#9670;&#160;</a></span>R7H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Save R7H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00105">105</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a757d5457319f6231c46a88ba5458d6e5" name="a757d5457319f6231c46a88ba5458d6e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757d5457319f6231c46a88ba5458d6e5">&#9670;&#160;</a></span>RFFT_f32s_mag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_transfer_fun_8asm.html#a1f927050a4c2c12e15a8064099a51bdd">if</a> __TI_EABI__ asg RFFT_f32s_mag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00094">94</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a815336f39fbf709d91965a31f320d348" name="a815336f39fbf709d91965a31f320d348"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815336f39fbf709d91965a31f320d348">&#9670;&#160;</a></span>slots</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">The <a class="el" href="_r_f_f_t__f32__adc__win_8asm.html#a8189228eda9278a713b5b59b5f7d6531">loop</a> was spatially <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a338f6677e220d3685c9ece097793a7e5">unrolled</a> once <a class="el" href="_r_f_f_t__adc__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713">to</a> eliminate FPU delay slots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00073">73</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a699ed3b8cc7d8e76c199b8b8e536208a" name="a699ed3b8cc7d8e76c199b8b8e536208a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a699ed3b8cc7d8e76c199b8b8e536208a">&#9670;&#160;</a></span>to</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">* <a class="el" href="_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> must <a class="el" href="_r_f_f_t__adc__f32u_8asm.html#aa0424600df290aab98919b3fbfd35d93">be</a> greater or equal to</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aef81a947e56af70ad55b66658131b179" name="aef81a947e56af70ad55b66658131b179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef81a947e56af70ad55b66658131b179">&#9670;&#160;</a></span>XAR4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Calculate <a class="el" href="_r_f_f_t__adc__f32_8asm.html#ab12eee7397b4e1783ee90f3f16216dc3">the</a> scale factor MOV * XAR4[1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00082">82</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a84e9e70b392caed7a06411984622f9fd" name="a84e9e70b392caed7a06411984622f9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e9e70b392caed7a06411984622f9fd">&#9670;&#160;</a></span>XAR5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XAR5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= &amp;MagBuf</div>
+<div class="line"> </div>
+<div class="line">        ADDB     <a class="code hl_variable" href="_r_f_f_t__f32__adc__win_8asm.html#a2a56c0b858f77d8cfa5de925db821819">XAR4</a></div>
+<div class="ttc" id="a_r_f_f_t__f32__adc__win_8asm_html_a2a56c0b858f77d8cfa5de925db821819"><div class="ttname"><a href="_r_f_f_t__f32__adc__win_8asm.html#a2a56c0b858f77d8cfa5de925db821819">XAR4</a></div><div class="ttdeci">align RPTB AR7 MOV * XAR4</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32__adc__win_8asm_source.html#l00086">RFFT_f32_adc_win.asm:86</a></div></div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00108">108</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a24637272b7be23905464ac649121ffba" name="a24637272b7be23905464ac649121ffba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24637272b7be23905464ac649121ffba">&#9670;&#160;</a></span>XAR6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XAR6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= Rptr = &amp;<a class="code hl_variable" href="_r_f_f_t__adc__f32_8asm.html#a7e9a002b321f5b629551c7750d02fd80">OutBuf</a>[0]</div>
+<div class="line">        MOVL     <a class="code hl_variable" href="_r_f_f_t__f32__adc__win_8asm.html#af48782485855841167ccb49015d7da04">XAR5</a></div>
+<div class="ttc" id="a_r_f_f_t__adc__f32_8asm_html_a7e9a002b321f5b629551c7750d02fd80"><div class="ttname"><a href="_r_f_f_t__adc__f32_8asm.html#a7e9a002b321f5b629551c7750d02fd80">OutBuf</a></div><div class="ttdeci">OutBuf</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__adc__f32_8asm_source.html#l00035">RFFT_adc_f32.asm:35</a></div></div>
+<div class="ttc" id="a_r_f_f_t__f32__adc__win_8asm_html_af48782485855841167ccb49015d7da04"><div class="ttname"><a href="_r_f_f_t__f32__adc__win_8asm.html#af48782485855841167ccb49015d7da04">XAR5</a></div><div class="ttdeci">* XAR5</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32__adc__win_8asm_source.html#l00087">RFFT_f32_adc_win.asm:87</a></div></div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html">RFFT_f32s_mag.asm</a> 第 <a class="el" href="_r_f_f_t__f32s__mag_8asm_source.html#l00107">107</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_96bdd7f67e65e0bcef66e25a7a540546.html">NUEDC_Core</a></li><li class="navelem"><a href="dir_549544d87b79ec47878b64312c89f956.html">Code</a></li><li class="navelem"><a href="dir_394efc67a2e5bf4097a78e7b2ce4a5dc.html">Control_Driver</a></li><li class="navelem"><a href="dir_5a99e60e144967bbc36487d27c056a1d.html">FFT</a></li><li class="navelem"><a href="dir_6dfd9d3abf76c805c78960a2d43de4e0.html">dsp_lib</a></li><li class="navelem"><a href="_r_f_f_t__f32s__mag_8asm.html">RFFT_f32s_mag.asm</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,804 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC_Core/Code/Control_Driver/FFT/dsp_lib/win/fpu_filter.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('fpu__filter_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fpu_filter.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="fpu__filter_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef _FPU_FILTER_H_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define _FPU_FILTER_H_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//#############################################################################</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//#############################################################################</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// includes</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="fpu__types_8h.html">fpu_types.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// defines</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//#define NULL    0</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#if (USE_LEGACY_NAMES==0U)</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#add9386010098027cc8dcb95ada4194a1">   24</a></span><span class="preprocessor">#define FIR_FP          FIR_f32          </span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a956f1c43c27c31af00cac9f8577b6046">   26</a></span><span class="preprocessor">#define FIR_FP_Handle   FIR_f32_Handle  </span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#ae4f5073cbfaab618a758509c6544cf03">   28</a></span><span class="preprocessor">#define FIR_FP_init     FIR_f32_init </span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#acad71da750c7eb15e1eb38b126af3bd3">   30</a></span><span class="preprocessor">#define FIR_FP_calc     FIR_f32_calc    </span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif </span><span class="comment">// USE_LEGACY_NAMES</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// typedefs</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">//*****************************************************************************</span></div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_f_i_r__f32.html">   38</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{ </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_f_i_r__f32.html#a28dedc05452ba862c2f37422856458b0">   39</a></span>    <span class="keywordtype">float</span> *<a class="code hl_variable" href="struct_f_i_r__f32.html#a28dedc05452ba862c2f37422856458b0">coeff_ptr</a>;        </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="struct_f_i_r__f32.html#afef3d8453b65c7a36e0f593f9cdcbd26">   40</a></span>    <span class="keywordtype">float</span> *<a class="code hl_variable" href="struct_f_i_r__f32.html#afef3d8453b65c7a36e0f593f9cdcbd26">dbuffer_ptr</a>;      </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_f_i_r__f32.html#a01db0ec18c3bbadffd65e9a235a615fa">   41</a></span>    int16_t <a class="code hl_variable" href="struct_f_i_r__f32.html#a01db0ec18c3bbadffd65e9a235a615fa">cbindex</a>;         </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_f_i_r__f32.html#a375bb0d33fdc67ba6c838d7b52a8ca0b">   42</a></span>    int16_t <a class="code hl_variable" href="struct_f_i_r__f32.html#a375bb0d33fdc67ba6c838d7b52a8ca0b">order</a>;           </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="struct_f_i_r__f32.html#ad2dc272dbb0aa32fb114312e2aad2d80">   43</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_f_i_r__f32.html#ad2dc272dbb0aa32fb114312e2aad2d80">input</a>;             </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="struct_f_i_r__f32.html#a65232f257c08aea4b17ea502b31106f7">   44</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_f_i_r__f32.html#a65232f257c08aea4b17ea502b31106f7">output</a>;            </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="struct_f_i_r__f32.html#af2547fdb70765aa89647bd16233bec8d">   45</a></span>    void (*<a class="code hl_variable" href="struct_f_i_r__f32.html#af2547fdb70765aa89647bd16233bec8d">init</a>)(<span class="keywordtype">void</span> *);    </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="struct_f_i_r__f32.html#a45a1f5d37ad45d88ab5bd8cd0b7f118e">   46</a></span>    void (*<a class="code hl_variable" href="struct_f_i_r__f32.html#a45a1f5d37ad45d88ab5bd8cd0b7f118e">calc</a>)(<span class="keywordtype">void</span> *);    </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }<a class="code hl_struct" href="struct_f_i_r__f32.html">FIR_f32</a>;</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">   50</a></span><span class="keyword">typedef</span> <a class="code hl_struct" href="struct_f_i_r__f32.html">FIR_f32</a>     *<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="foldopen" id="foldopen00053" data-start="" data-end="">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a622943bda64fa2d4e94e68b42c530a24">   53</a></span><span class="preprocessor">#define FIR_f32_DEFAULTS { (float *)NULL, \</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">             (float *)NULL,  \</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">             0,              \</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">             50,             \</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">             0,              \</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">             0,              \</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">             (void (*)(void *))FIR_f32_init,\</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">             (void (*)(void *))FIR_f32_calc}    </span></div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="};">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="struct_i_i_r__f32.html">   64</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{ </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="struct_i_i_r__f32.html#a1bf2ac0867c80778cdc6b400ec4a4378">   65</a></span>    <span class="keywordtype">float</span> *<a class="code hl_variable" href="struct_i_i_r__f32.html#a1bf2ac0867c80778cdc6b400ec4a4378">p_coeff_A</a>;        </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="struct_i_i_r__f32.html#a0e6c962519c1d3d46d447f2cb1d4aaf0">   66</a></span>    <span class="keywordtype">float</span> *<a class="code hl_variable" href="struct_i_i_r__f32.html#a0e6c962519c1d3d46d447f2cb1d4aaf0">p_coeff_B</a>;        </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="struct_i_i_r__f32.html#a8b4157f6b31dfad2209eaecb6b1cf5dd">   67</a></span>    <span class="keywordtype">float</span> *<a class="code hl_variable" href="struct_i_i_r__f32.html#a8b4157f6b31dfad2209eaecb6b1cf5dd">p_dbuffer</a>;        </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="struct_i_i_r__f32.html#a26138b9ee39b9cc4bec00dcb32a8d8ea">   68</a></span>    <span class="keywordtype">float</span> *<a class="code hl_variable" href="struct_i_i_r__f32.html#a26138b9ee39b9cc4bec00dcb32a8d8ea">p_input</a>;          </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="struct_i_i_r__f32.html#aa21307c77d0db79612c42f7059fe0485">   69</a></span>    <span class="keywordtype">float</span> *<a class="code hl_variable" href="struct_i_i_r__f32.html#aa21307c77d0db79612c42f7059fe0485">p_output</a>;         </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="struct_i_i_r__f32.html#a53aba82c830bb8b8215f3fc43242c9c3">   70</a></span>    <span class="keywordtype">float</span> *<a class="code hl_variable" href="struct_i_i_r__f32.html#a53aba82c830bb8b8215f3fc43242c9c3">p_scale</a>;          </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="struct_i_i_r__f32.html#aae8f9f3e3336903c95ce2a22bd448094">   71</a></span>    uint16_t <a class="code hl_variable" href="struct_i_i_r__f32.html#aae8f9f3e3336903c95ce2a22bd448094">order</a>;          </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="struct_i_i_r__f32.html#a393d635298646ce069ae0010e6fbf12f">   72</a></span>    void (*<a class="code hl_variable" href="struct_i_i_r__f32.html#a393d635298646ce069ae0010e6fbf12f">init</a>)(<span class="keywordtype">void</span> *);    </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="struct_i_i_r__f32.html#abf0308784cde5e39e3b08e2435a995b7">   73</a></span>    void (*<a class="code hl_variable" href="struct_i_i_r__f32.html#abf0308784cde5e39e3b08e2435a995b7">calc</a>)(<span class="keywordtype">void</span> *);    </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}<a class="code hl_struct" href="struct_i_i_r__f32.html">IIR_f32</a>;</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">   77</a></span><span class="keyword">typedef</span> <a class="code hl_struct" href="struct_i_i_r__f32.html">IIR_f32</a> *<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">// &#39;inline&#39; function</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">//*****************************************************************************</span></div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#abbb5b62177b0f9a5626c70a445bd74dd">   86</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#abbb5b62177b0f9a5626c70a445bd74dd">FIR_f32_setCoefficientsPtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> *pc)</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>{</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    fh-&gt;<a class="code hl_variable" href="struct_f_i_r__f32.html#a28dedc05452ba862c2f37422856458b0">coeff_ptr</a> = (<span class="keywordtype">float</span> *)pc;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span></div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#af6dbe17335070c15d50ed1766f8c6875">   96</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> * <a class="code hl_function" href="fpu__filter_8h.html#af6dbe17335070c15d50ed1766f8c6875">FIR_f32_getCoefficientsPtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>{</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_f_i_r__f32.html#a28dedc05452ba862c2f37422856458b0">coeff_ptr</a>);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span></div>
+<div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a7ca1a6a70367f45184faee05264b4516">  105</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#a7ca1a6a70367f45184faee05264b4516">FIR_f32_setDelayLinePtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> *pdl)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>{</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    fh-&gt;<a class="code hl_variable" href="struct_f_i_r__f32.html#afef3d8453b65c7a36e0f593f9cdcbd26">dbuffer_ptr</a> = (<span class="keywordtype">float</span> *)pdl;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span></div>
+<div class="foldopen" id="foldopen00115" data-start="{" data-end="}">
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a52812cf8024e656beb1513adff100b36">  115</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> * <a class="code hl_function" href="fpu__filter_8h.html#a52812cf8024e656beb1513adff100b36">FIR_f32_getDelayLinePtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>{</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_f_i_r__f32.html#afef3d8453b65c7a36e0f593f9cdcbd26">dbuffer_ptr</a>);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
+</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span></div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a265afda13f4dc6ba5935a3a854827140">  124</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#a265afda13f4dc6ba5935a3a854827140">FIR_f32_setInput</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a>)</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>{</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    fh-&gt;<a class="code hl_variable" href="struct_f_i_r__f32.html#ad2dc272dbb0aa32fb114312e2aad2d80">input</a> = <a class="code hl_variable" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span></div>
+<div class="foldopen" id="foldopen00134" data-start="{" data-end="}">
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a06be3827cc5a07d1df1ef8d8534403d6">  134</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code hl_function" href="fpu__filter_8h.html#a06be3827cc5a07d1df1ef8d8534403d6">FIR_f32_getInput</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>{</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_f_i_r__f32.html#ad2dc272dbb0aa32fb114312e2aad2d80">input</a>);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}</div>
+</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span></div>
+<div class="foldopen" id="foldopen00143" data-start="{" data-end="}">
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a9000258986a557dfac32ca11d76c962f">  143</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#a9000258986a557dfac32ca11d76c962f">FIR_f32_setOutput</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> out)</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>{</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    fh-&gt;<a class="code hl_variable" href="struct_f_i_r__f32.html#a65232f257c08aea4b17ea502b31106f7">output</a> = out;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
+</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span></div>
+<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#af4c5c9886092ca8a8d0734c97879fc53">  153</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code hl_function" href="fpu__filter_8h.html#af4c5c9886092ca8a8d0734c97879fc53">FIR_f32_getOutput</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>{</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_f_i_r__f32.html#a65232f257c08aea4b17ea502b31106f7">output</a>);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
+</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span></div>
+<div class="foldopen" id="foldopen00163" data-start="{" data-end="}">
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#ade5562a5b65560106b174da71ac20713">  163</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#ade5562a5b65560106b174da71ac20713">FIR_f32_setOrder</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh, <span class="keyword">const</span> uint16_t order)</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>{</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    fh-&gt;<a class="code hl_variable" href="struct_f_i_r__f32.html#a375bb0d33fdc67ba6c838d7b52a8ca0b">order</a> = order;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
+</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span></div>
+<div class="foldopen" id="foldopen00172" data-start="{" data-end="}">
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a41d08dccd66df4a28b0ba12e7b89c228">  172</a></span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t <a class="code hl_function" href="fpu__filter_8h.html#a41d08dccd66df4a28b0ba12e7b89c228">FIR_f32_getOrder</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>{</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_f_i_r__f32.html#a375bb0d33fdc67ba6c838d7b52a8ca0b">order</a>);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}</div>
+</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span></div>
+<div class="foldopen" id="foldopen00181" data-start="{" data-end="}">
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#ab1b66e745c92c76eb9f79d84f3be5be2">  181</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#ab1b66e745c92c76eb9f79d84f3be5be2">FIR_f32_setInitFunction</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh, </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                    <span class="keyword">const</span> v_pfn_v pfn)</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>{</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    fh-&gt;<a class="code hl_variable" href="struct_f_i_r__f32.html#af2547fdb70765aa89647bd16233bec8d">init</a> = pfn;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>}</div>
+</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span></div>
+<div class="foldopen" id="foldopen00191" data-start="{" data-end="}">
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a012efcbc7a253ee80fcc41655ce59061">  191</a></span><span class="keyword">static</span> <span class="keyword">inline</span> v_pfn_v <a class="code hl_function" href="fpu__filter_8h.html#a012efcbc7a253ee80fcc41655ce59061">FIR_f32_getInitFunction</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>{</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_f_i_r__f32.html#af2547fdb70765aa89647bd16233bec8d">init</a>);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>}</div>
+</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span></div>
+<div class="foldopen" id="foldopen00200" data-start="{" data-end="}">
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a31bc14bf5d435a72a971393d04c0faa3">  200</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#a31bc14bf5d435a72a971393d04c0faa3">FIR_f32_setCalcFunction</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh, </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                    <span class="keyword">const</span> v_pfn_v pfn)</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>{</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    fh-&gt;<a class="code hl_variable" href="struct_f_i_r__f32.html#a45a1f5d37ad45d88ab5bd8cd0b7f118e">calc</a> = pfn;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>}</div>
+</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span></div>
+<div class="foldopen" id="foldopen00210" data-start="{" data-end="}">
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a4ce49175ef8f72c597f4a7b05bbcb57e">  210</a></span><span class="keyword">static</span> <span class="keyword">inline</span> v_pfn_v <a class="code hl_function" href="fpu__filter_8h.html#a4ce49175ef8f72c597f4a7b05bbcb57e">FIR_f32_getCalcFunction</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>{</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_f_i_r__f32.html#a45a1f5d37ad45d88ab5bd8cd0b7f118e">calc</a>);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>}</div>
+</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span></div>
+<div class="foldopen" id="foldopen00219" data-start="{" data-end="}">
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#ab930fb0b94b4c24fa71b8df73d3a6231">  219</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#ab930fb0b94b4c24fa71b8df73d3a6231">IIR_f32_setCoefficientsAPtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh,</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> *pca)</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>{</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#a1bf2ac0867c80778cdc6b400ec4a4378">p_coeff_A</a> = (<span class="keywordtype">float</span> *)pca;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>}</div>
+</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span></div>
+<div class="foldopen" id="foldopen00229" data-start="{" data-end="}">
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#afbd8b9acf3fe8e54144c0a68f99aa97a">  229</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> * <a class="code hl_function" href="fpu__filter_8h.html#afbd8b9acf3fe8e54144c0a68f99aa97a">IIR_f32_getCoefficientsAPtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>{</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#a1bf2ac0867c80778cdc6b400ec4a4378">p_coeff_A</a>);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>}</div>
+</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span></div>
+<div class="foldopen" id="foldopen00238" data-start="{" data-end="}">
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a7c704ea4e050319463dcb5cb96af29e3">  238</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#a7c704ea4e050319463dcb5cb96af29e3">IIR_f32_setCoefficientsBPtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh,</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> *pcb)</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>{</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#a0e6c962519c1d3d46d447f2cb1d4aaf0">p_coeff_B</a> = (<span class="keywordtype">float</span> *)pcb;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>}</div>
+</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span></div>
+<div class="foldopen" id="foldopen00248" data-start="{" data-end="}">
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a549fe4f13c55b489f6444a3d40cc9244">  248</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> * <a class="code hl_function" href="fpu__filter_8h.html#a549fe4f13c55b489f6444a3d40cc9244">IIR_f32_getCoefficientsBPtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>{</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#a0e6c962519c1d3d46d447f2cb1d4aaf0">p_coeff_B</a>);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>}</div>
+</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span></div>
+<div class="foldopen" id="foldopen00257" data-start="{" data-end="}">
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#ab6d91e07752fb317772d72169b41c338">  257</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#ab6d91e07752fb317772d72169b41c338">IIR_f32_setDelayLinePtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh,</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> *pdl)</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>{</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#a8b4157f6b31dfad2209eaecb6b1cf5dd">p_dbuffer</a> = (<span class="keywordtype">float</span> *)pdl;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>}</div>
+</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span></div>
+<div class="foldopen" id="foldopen00267" data-start="{" data-end="}">
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a07eb7ad049b788263143342c7e638605">  267</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> * <a class="code hl_function" href="fpu__filter_8h.html#a07eb7ad049b788263143342c7e638605">IIR_f32_getDelayLinePtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>{</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#a8b4157f6b31dfad2209eaecb6b1cf5dd">p_dbuffer</a>);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>}</div>
+</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span></div>
+<div class="foldopen" id="foldopen00276" data-start="{" data-end="}">
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#aa35937f21fdd218c719b1771c49c672c">  276</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#aa35937f21fdd218c719b1771c49c672c">IIR_f32_setInputPtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh,</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> *pi)</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>{</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#a26138b9ee39b9cc4bec00dcb32a8d8ea">p_input</a> = (<span class="keywordtype">float</span> *)pi;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>}</div>
+</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span></div>
+<div class="foldopen" id="foldopen00286" data-start="{" data-end="}">
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#ad28faae8948f23c0b1e7eca4a6b5a428">  286</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> * <a class="code hl_function" href="fpu__filter_8h.html#ad28faae8948f23c0b1e7eca4a6b5a428">IIR_f32_getInputPtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>{</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#a26138b9ee39b9cc4bec00dcb32a8d8ea">p_input</a>);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>}</div>
+</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span></div>
+<div class="foldopen" id="foldopen00295" data-start="{" data-end="}">
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#aaf79f81477f95483247fe6f6ac8d2614">  295</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#aaf79f81477f95483247fe6f6ac8d2614">IIR_f32_setOutputPtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh,</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> *po)</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>{</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#aa21307c77d0db79612c42f7059fe0485">p_output</a> = (<span class="keywordtype">float</span> *)po;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>}</div>
+</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span></div>
+<div class="foldopen" id="foldopen00305" data-start="{" data-end="}">
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#aa7f56c67679751de28d7fe3f0529b62a">  305</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> * <a class="code hl_function" href="fpu__filter_8h.html#aa7f56c67679751de28d7fe3f0529b62a">IIR_f32_getOutputPtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>{</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#aa21307c77d0db79612c42f7059fe0485">p_output</a>);</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>}</div>
+</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span></div>
+<div class="foldopen" id="foldopen00314" data-start="{" data-end="}">
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a461932a8056512c18f14e6cf9e87cbbd">  314</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#a461932a8056512c18f14e6cf9e87cbbd">IIR_f32_setScalePtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh,</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> *psv)</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>{</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#a53aba82c830bb8b8215f3fc43242c9c3">p_scale</a> = (<span class="keywordtype">float</span> *)psv;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>}</div>
+</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span></div>
+<div class="foldopen" id="foldopen00324" data-start="{" data-end="}">
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#ac5acc669de6153b0450339e5265a98d3">  324</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> * <a class="code hl_function" href="fpu__filter_8h.html#ac5acc669de6153b0450339e5265a98d3">IIR_f32_getScalePtr</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>{</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#a53aba82c830bb8b8215f3fc43242c9c3">p_scale</a>);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>}</div>
+</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span></div>
+<div class="foldopen" id="foldopen00333" data-start="{" data-end="}">
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#ac996516da35ae3166a2ae5d80a79e019">  333</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#ac996516da35ae3166a2ae5d80a79e019">IIR_f32_setOrder</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, <span class="keyword">const</span> uint16_t order)</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>{</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#aae8f9f3e3336903c95ce2a22bd448094">order</a> = order;</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>}</div>
+</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span></div>
+<div class="foldopen" id="foldopen00342" data-start="{" data-end="}">
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a8c85f57dabd1aeb4d44cbf4b2fc65562">  342</a></span><span class="keyword">static</span> <span class="keyword">inline</span> uint16_t <a class="code hl_function" href="fpu__filter_8h.html#a8c85f57dabd1aeb4d44cbf4b2fc65562">IIR_f32_getOrder</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>{</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#aae8f9f3e3336903c95ce2a22bd448094">order</a>);</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>}</div>
+</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span></div>
+<div class="foldopen" id="foldopen00351" data-start="{" data-end="}">
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#aef5caa989819051f4d13b027e7e3820c">  351</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#aef5caa989819051f4d13b027e7e3820c">IIR_f32_setInitFunction</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, </div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                    <span class="keyword">const</span> v_pfn_v pfn)</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>{</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#a393d635298646ce069ae0010e6fbf12f">init</a> = pfn;</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>}</div>
+</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span></div>
+<div class="foldopen" id="foldopen00361" data-start="{" data-end="}">
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a391f962db381ac11b1246c4a1b81c2d5">  361</a></span><span class="keyword">static</span> <span class="keyword">inline</span> v_pfn_v <a class="code hl_function" href="fpu__filter_8h.html#a391f962db381ac11b1246c4a1b81c2d5">IIR_f32_getInitFunction</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>{</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#a393d635298646ce069ae0010e6fbf12f">init</a>);</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>}</div>
+</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span></div>
+<div class="foldopen" id="foldopen00370" data-start="{" data-end="}">
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a834c90a3898f8320ecd18482ffe37c5d">  370</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#a834c90a3898f8320ecd18482ffe37c5d">IIR_f32_setCalcFunction</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, </div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>                    <span class="keyword">const</span> v_pfn_v pfn)</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>{</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#abf0308784cde5e39e3b08e2435a995b7">calc</a> = pfn;</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>}</div>
+</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span></div>
+<div class="foldopen" id="foldopen00380" data-start="{" data-end="}">
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#af8c4bb74dc08b04fa0b38fd938c15dba">  380</a></span><span class="keyword">static</span> <span class="keyword">inline</span> v_pfn_v <a class="code hl_function" href="fpu__filter_8h.html#af8c4bb74dc08b04fa0b38fd938c15dba">IIR_f32_getCalcFunction</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>{</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    <span class="keywordflow">return</span>(fh-&gt;<a class="code hl_variable" href="struct_i_i_r__f32.html#abf0308784cde5e39e3b08e2435a995b7">calc</a>);</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>}</div>
+</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="comment">// &#39;extern&#39; function prototypes</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="comment">//*****************************************************************************</span></div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span><span class="comment">//</span></div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a98c7b0c7adf5b8f06278e9b998f42f38">  418</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#a98c7b0c7adf5b8f06278e9b998f42f38">FIR_f32_calc</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> hndFIR_f32);</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span></div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span><span class="comment">//</span></div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a1a053927c3b86c878392a84b1a0e73ca">  445</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#a1a053927c3b86c878392a84b1a0e73ca">FIR_f32_init</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> hndFIR_f32);</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span></div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span><span class="comment">//</span></div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a95a6b475d3028a5b89511c368e0dfde7">  473</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#a95a6b475d3028a5b89511c368e0dfde7">IIR_f32_calc</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> hndIIR_f32);</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span></div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span><span class="comment">//</span></div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#ae00f063903782174bfe7da592229b704">  490</a></span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="fpu__filter_8h.html#ae00f063903782174bfe7da592229b704">IIR_f32_init</a>(<a class="code hl_typedef" href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> hndIIR_f32);</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span> </div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span><span class="comment">// @} //addtogroup</span></div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span> </div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span><span class="comment">/*********** Sample FIR Co-efficients **************************/</span></div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span> </div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span><span class="comment">/* 5th order LPF co-efficients for FIR_f32 module   */</span></div>
+<div class="foldopen" id="foldopen00497" data-start="" data-end="">
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a75ba6f8331b13686fe749fa13da8d4fa">  497</a></span><span class="preprocessor">#define FIR_F32_LPF6 {\</span></div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span><span class="preprocessor">    -0.0805727691,  0.1966465116,  0.4776741266,  0.4776741266, \</span></div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span><span class="preprocessor">    0.1966465116, -0.0805727691}</span></div>
+</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span> </div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span><span class="comment">/* 31st order LPF co-efficients for FIR_f32 module  */</span>  </div>
+<div class="foldopen" id="foldopen00502" data-start="" data-end="">
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#ab871c3f449ffd4bd23095eccea0fc9e8">  502</a></span><span class="preprocessor">#define FIR_F32_LPF32 {\</span></div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span><span class="preprocessor">-0.0009375925, -0.0018498098,  0.0028200552,  0.0037323495, \</span></div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span><span class="preprocessor">-0.0056770989, -0.0075621097,  0.0106198033,  0.0136981048, \</span></div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span><span class="preprocessor">-0.0185259376, -0.0237575006,  0.0318195596,  0.0418184102, \</span></div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span><span class="preprocessor">-0.0582660958, -0.0851156115,  0.1475527734,  0.4489050806, \</span></div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span><span class="preprocessor"> 0.4489050806,  0.1475527734, -0.0851156115, -0.0582660958, \</span></div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span><span class="preprocessor"> 0.0418184102,  0.0318195596, -0.0237575006, -0.0185259376, \</span></div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span><span class="preprocessor"> 0.0136981048,  0.0106198033, -0.0075621097, -0.0056770989, \</span></div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span><span class="preprocessor"> 0.0037323495,  0.0028200552, -0.0018498098, -0.0009375925,}</span></div>
+</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span> </div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span><span class="comment">/* 50th order LPF co-efficients for FIR_f32 module  */</span></div>
+<div class="foldopen" id="foldopen00513" data-start="" data-end="">
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#ad08597e43177bdd511b8deada9c8115f">  513</a></span><span class="preprocessor">#define FIR_F32_LPF50 {\</span></div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span><span class="preprocessor">-7.5203931190e-04, -3.4963795920e-03, -2.5768701450e-03, -2.9541992120e-03,\</span></div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span><span class="preprocessor">-1.9022732740e-03,  7.5785334050e-05,  2.9216345870e-03,  6.0432236640e-03,\</span></div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span><span class="preprocessor"> 8.6036063730e-03,  9.6314987170e-03,  8.2863057030e-03,  4.1323564950e-03,\</span></div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span><span class="preprocessor">-2.6098575910e-03, -1.0932658800e-02, -1.9081210720e-02, -2.4793250490e-02,\</span></div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span><span class="preprocessor">-2.5703735650e-02, -1.9845590000e-02, -6.1563691120e-03,  1.5153512360e-02,\</span></div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span><span class="preprocessor"> 4.2456313970e-02,  7.2834178810e-02,  1.0249938820e-01,  1.2741793690e-01,\</span></div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span><span class="preprocessor"> 1.4401510360e-01,  1.4983779190e-01,  1.4401510360e-01,  1.2741793690e-01,\</span></div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span><span class="preprocessor"> 1.0249938820e-01,  7.2834178810e-02,  4.2456313970e-02,  1.5153512360e-02,\</span></div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span><span class="preprocessor">-6.1563691120e-03, -1.9845590000e-02, -2.5703735650e-02, -2.4793250490e-02,\</span></div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span><span class="preprocessor">-1.9081210720e-02, -1.0932658800e-02, -2.6098575910e-03,  4.1323564950e-03,\</span></div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span><span class="preprocessor"> 8.2863057030e-03,  9.6314987170e-03,  8.6036063730e-03,  6.0432236640e-03,\</span></div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span><span class="preprocessor"> 2.9216345870e-03,  7.5785334050e-05, -1.9022732740e-03, -2.9541992120e-03,\</span></div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span><span class="preprocessor">-2.5768701450e-03, -3.4963795920e-03, -7.5203931190e-04, }</span></div>
+</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span> </div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span><span class="comment">/* 63rd order LPF co-efficients for FIR_f32 module  */</span>  </div>
+<div class="foldopen" id="foldopen00529" data-start="" data-end="">
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a66333be2b94ed11d1c7b0d5ad6a01fd0">  529</a></span><span class="preprocessor">#define FIR_F32_LPF64 {\</span></div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span><span class="preprocessor"> 1.2839649800e-02,  2.2292095240e-03,  1.9878095480e-03,  1.4185620240e-03,\</span></div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span><span class="preprocessor"> 5.1166024060e-04, -7.1911053960e-04, -2.2336612460e-03, -3.9673773570e-03,\</span></div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="preprocessor">-5.8279242370e-03, -7.6969428920e-03, -9.4345659020e-03, -1.0890865700e-02,\</span></div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span><span class="preprocessor">-1.1906139550e-02, -1.2328188870e-02, -1.2016832830e-02, -1.0844063950e-02,\</span></div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span><span class="preprocessor">-8.7080327790e-03, -5.5583743380e-03, -1.4110758200e-03,  3.7384047170e-03,\</span></div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span><span class="preprocessor"> 9.7692636770e-03,  1.6556531190e-02,  2.3915413770e-02,  3.1625773760e-02,\</span></div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span><span class="preprocessor"> 3.9436016230e-02,  4.7077395020e-02,  5.4273974150e-02,  6.0760140420e-02,\</span></div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span><span class="preprocessor"> 6.6282063720e-02,  7.0633381610e-02,  7.3633328080e-02,  7.5161464510e-02,\</span></div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span><span class="preprocessor"> 7.5161464510e-02,  7.3633328080e-02,  7.0633381610e-02,  6.6282063720e-02,\</span></div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span><span class="preprocessor"> 6.0760140420e-02,  5.4273974150e-02,  4.7077395020e-02,  3.9436016230e-02,\</span></div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span><span class="preprocessor"> 3.1625773760e-02,  2.3915413770e-02,  1.6556531190e-02,  9.7692636770e-03,\</span></div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span><span class="preprocessor"> 3.7384047170e-03, -1.4110758200e-03, -5.5583743380e-03, -8.7080327790e-03,\</span></div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span><span class="preprocessor">-1.0844063950e-02, -1.2016832830e-02, -1.2328188870e-02, -1.1906139550e-02,\</span></div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span><span class="preprocessor">-1.0890865700e-02, -9.4345659020e-03, -7.6969428920e-03, -5.8279242370e-03,\</span></div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span><span class="preprocessor">-3.9673773570e-03, -2.2336612460e-03, -7.1911053960e-04,  5.1166024060e-04,\</span></div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span><span class="preprocessor"> 1.4185620240e-03,  1.9878095480e-03,  2.2292095240e-03,  1.2839649800e-02,}</span></div>
+</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>    </div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>    </div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span><span class="comment">/* 127th order LPF co-efficients for FIR_f32 module */</span>  </div>
+<div class="foldopen" id="foldopen00549" data-start="" data-end="">
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a55484608f6bb9d1a797b46766fcea40f">  549</a></span><span class="preprocessor">#define FIR_F32_LPF128 {\</span></div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span><span class="preprocessor">-5.0361973080e-07, -8.4154989960e-06, -1.0349400330e-05, -5.8855544010e-06,\</span></div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span><span class="preprocessor"> 9.1910196720e-06,  2.8685428330e-05,  3.7397850970e-05,  1.9508090190e-05,\</span></div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span><span class="preprocessor">-2.6992138370e-05, -8.0040139440e-05, -9.9044016680e-05, -4.9611899160e-05,\</span></div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span><span class="preprocessor"> 6.4349056630e-05,  1.8490898950e-04,  2.2145068210e-04,  1.0800584280e-04,\</span></div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span><span class="preprocessor">-1.3433356070e-04, -3.7753640210e-04, -4.4174649520e-04, -2.1128321530e-04,\</span></div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span><span class="preprocessor"> 2.5497740720e-04,  7.0462777510e-04,  8.1000913630e-04,  3.8161687550e-04,\</span></div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span><span class="preprocessor">-4.5005651190e-04, -1.2273221510e-03, -1.3913452860e-03, -6.4770405880e-04,\</span></div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span><span class="preprocessor"> 7.5010029830e-04,  2.0240161100e-03,  2.2691879420e-03,  1.0463795620e-03,\</span></div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span><span class="preprocessor">-1.1943303980e-03, -3.1960245690e-03, -3.5522116810e-03, -1.6261441630e-03,\</span></div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span><span class="preprocessor"> 1.8349840540e-03,  4.8805172560e-03,  5.3903660740e-03,  2.4554035630e-03,\</span></div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span><span class="preprocessor">-2.7475596870e-03, -7.2813183070e-03, -8.0133378510e-03, -3.6424295980e-03,\</span></div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span><span class="preprocessor"> 4.0559638290e-03,  1.0745704170e-02,  1.1828300540e-02,  5.3872759450e-03,\</span></div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span><span class="preprocessor">-5.9996559280e-03, -1.5976045280e-02, -1.7699496820e-02, -8.1367669630e-03,\</span></div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="preprocessor"> 9.1444076970e-03,  2.4733832110e-02,  2.7942722660e-02,  1.3180750420e-02,\</span></div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="preprocessor">-1.5270783570e-02, -4.3150499460e-02, -5.1665931940e-02, -2.6430377740e-02,\</span></div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span><span class="preprocessor"> 3.4355875100e-02,  1.1681985110e-01,  1.9554567340e-01,  2.4352604150e-01,\</span></div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="preprocessor"> 2.4352604150e-01,  1.9554567340e-01,  1.1681985110e-01,  3.4355875100e-02,\</span></div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><span class="preprocessor">-2.6430377740e-02, -5.1665931940e-02, -4.3150499460e-02, -1.5270783570e-02,\</span></div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span><span class="preprocessor"> 1.3180750420e-02,  2.7942722660e-02,  2.4733832110e-02,  9.1444076970e-03,\</span></div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span><span class="preprocessor">-8.1367669630e-03, -1.7699496820e-02, -1.5976045280e-02, -5.9996559280e-03,\</span></div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span><span class="preprocessor"> 5.3872759450e-03,  1.1828300540e-02,  1.0745704170e-02,  4.0559638290e-03,\</span></div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span><span class="preprocessor">-3.6424295980e-03, -8.0133378510e-03, -7.2813183070e-03, -2.7475596870e-03,\</span></div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span><span class="preprocessor"> 2.4554035630e-03,  5.3903660740e-03,  4.8805172560e-03,  1.8349840540e-03,\</span></div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span><span class="preprocessor">-1.6261441630e-03, -3.5522116810e-03, -3.1960245690e-03, -1.1943303980e-03,\</span></div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span><span class="preprocessor"> 1.0463795620e-03,  2.2691879420e-03,  2.0240161100e-03,  7.5010029830e-04,\</span></div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span><span class="preprocessor">-6.4770405880e-04, -1.3913452860e-03, -1.2273221510e-03, -4.5005651190e-04,\</span></div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span><span class="preprocessor"> 3.8161687550e-04,  8.1000913630e-04,  7.0462777510e-04,  2.5497740720e-04,\</span></div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span><span class="preprocessor">-2.1128321530e-04, -4.4174649520e-04, -3.7753640210e-04, -1.3433356070e-04,\</span></div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span><span class="preprocessor"> 1.0800584280e-04,  2.2145068210e-04,  1.8490898950e-04,  6.4349056630e-05,\</span></div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span><span class="preprocessor">-4.9611899160e-05, -9.9044016680e-05, -8.0040139440e-05, -2.6992138370e-05,\</span></div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span><span class="preprocessor"> 1.9508090190e-05,  3.7397850970e-05,  2.8685428330e-05,  9.1910196720e-06,\</span></div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span><span class="preprocessor">-5.8855544010e-06, -1.0349400330e-05, -8.4154989960e-06, -5.0361973080e-07,}</span></div>
+</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span> </div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span> </div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span><span class="comment">/* 255th order LPF co-efficients for FIR_f32 module*/</span></div>
+<div class="foldopen" id="foldopen00585" data-start="" data-end="">
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a7c042333161c2c38e36597d2c4c32ed4">  585</a></span><span class="preprocessor">#define FIR_F32_LPF256 {\</span></div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span><span class="preprocessor">-1.8082486900e-10, -8.3152790210e-10, -1.3506141760e-09, -8.0812773140e-10,\</span></div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span><span class="preprocessor"> 1.8871173510e-09,  6.1408687020e-09,  8.7328073660e-09,  4.6682653300e-09,\</span></div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span><span class="preprocessor">-8.8180964750e-09, -2.7041595630e-08, -3.5969922150e-08, -1.8527675390e-08,\</span></div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span><span class="preprocessor"> 3.0848244850e-08,  9.1680234960e-08,  1.1723442840e-07,  5.8974940490e-08,\</span></div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span><span class="preprocessor">-9.0449574940e-08, -2.6313000490e-07, -3.2726495650e-07, -1.6173993340e-07,\</span></div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span><span class="preprocessor"> 2.3401274520e-07,  6.6967595560e-07,  8.1537734790e-07,  3.9725074430e-07,\</span></div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="preprocessor">-5.5003812350e-07, -1.5530424660e-06, -1.8587631980e-06, -8.9475622640e-07,\</span></div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span><span class="preprocessor"> 1.1966824330e-06,  3.3405972320e-06,  3.9412771000e-06,  1.8776036090e-06,\</span></div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span><span class="preprocessor">-2.4412147470e-06, -6.7477158150e-06, -7.8638231570e-06, -3.7121740210e-06,\</span></div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span><span class="preprocessor"> 4.7137141340e-06,  1.2915747900e-05,  1.4891493270e-05,  6.9724947020e-06,\</span></div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span><span class="preprocessor">-8.6767022370e-06, -2.3589276680e-05, -2.6940600950e-05, -1.2521628380e-05,\</span></div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span><span class="preprocessor"> 1.5311356040e-05,  4.1333612900e-05,  4.6805835150e-05,  2.1609650500e-05,\</span></div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="preprocessor">-2.6019530200e-05, -6.9790003180e-05, -7.8424149250e-05, -3.5986544390e-05,\</span></div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><span class="preprocessor"> 4.2739371570e-05,  1.1396245830e-04,  1.2716864880e-04,  5.8026955230e-05,\</span></div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="preprocessor">-6.8070999990e-05, -1.8052752420e-04, -2.0016334020e-04, -9.0863082730e-05,\</span></div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="preprocessor"> 1.0540846420e-04,  2.7815802600e-04,  3.0661071650e-04,  1.3852263510e-04,\</span></div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="preprocessor">-1.5907530910e-04, -4.1785626670e-04, -4.5812921600e-04, -2.0607188340e-04,\</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="preprocessor"> 2.3446521660e-04,  6.1330373860e-04,  6.6911266190e-04,  2.9977058880e-04,\</span></div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><span class="preprocessor">-3.3819739470e-04, -8.8125746700e-04, -9.5714943020e-04, -4.2725869570e-04,\</span></div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span><span class="preprocessor"> 4.7831103440e-04,  1.2420648710e-03,  1.3435874130e-03,  5.9781654270e-04,\</span></div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="preprocessor">-6.6454982150e-04, -1.7204389440e-03, -1.8544123740e-03, -8.2278024640e-04,\</span></div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span><span class="preprocessor"> 9.0883136730e-04,  2.3467652500e-03,  2.5217537770e-03,  1.1162633310e-03,\</span></div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span><span class="preprocessor">-1.2260798830e-03, -3.1594373290e-03, -3.3866043670e-03, -1.4964704170e-03,\</span></div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span><span class="preprocessor"> 1.6357579730e-03,  4.2091854850e-03,  4.5038890090e-03,  1.9881615880e-03,\</span></div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span><span class="preprocessor">-2.1647673570e-03, -5.5673290040e-03, -5.9522208760e-03, -2.6274400300e-03,\</span></div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><span class="preprocessor"> 2.8531441930e-03,  7.3421779090e-03,  7.8535396610e-03,  3.4715342340e-03,\</span></div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="preprocessor">-3.7658882790e-03, -9.7137158740e-03, -1.0415488850e-02, -4.6203802340e-03,\</span></div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span><span class="preprocessor"> 5.0196954980e-03,  1.3014130290e-02,  1.4032759700e-02,  6.2699439000e-03,\</span></div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><span class="preprocessor">-6.8514184090e-03, -1.7942406240e-02, -1.9569339230e-02, -8.8682193310e-03,\</span></div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="preprocessor"> 9.8296413200e-03,  2.6269955560e-02,  2.9354233290e-02,  1.3711811970e-02,\</span></div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="preprocessor">-1.5743294730e-02, -4.4151373210e-02, -5.2521537990e-02, -2.6723828170e-02,\</span></div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span><span class="preprocessor"> 3.4582778810e-02,  1.1721494790e-01,  1.9578456880e-01,  2.4356070160e-01,\</span></div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span><span class="preprocessor"> 2.4356070160e-01,  1.9578456880e-01,  1.1721494790e-01,  3.4582778810e-02,\</span></div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span><span class="preprocessor">-2.6723828170e-02, -5.2521537990e-02, -4.4151373210e-02, -1.5743294730e-02,\</span></div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="preprocessor"> 1.3711811970e-02,  2.9354233290e-02,  2.6269955560e-02,  9.8296413200e-03,\</span></div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span><span class="preprocessor">-8.8682193310e-03, -1.9569339230e-02, -1.7942406240e-02, -6.8514184090e-03,\</span></div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span><span class="preprocessor"> 6.2699439000e-03,  1.4032759700e-02,  1.3014130290e-02,  5.0196954980e-03,\</span></div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span><span class="preprocessor">-4.6203802340e-03, -1.0415488850e-02, -9.7137158740e-03, -3.7658882790e-03,\</span></div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span><span class="preprocessor"> 3.4715342340e-03,  7.8535396610e-03,  7.3421779090e-03,  2.8531441930e-03,\</span></div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span><span class="preprocessor">-2.6274400300e-03, -5.9522208760e-03, -5.5673290040e-03, -2.1647673570e-03,\</span></div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span><span class="preprocessor"> 1.9881615880e-03,  4.5038890090e-03,  4.2091854850e-03,  1.6357579730e-03,\</span></div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span><span class="preprocessor">-1.4964704170e-03, -3.3866043670e-03, -3.1594373290e-03, -1.2260798830e-03,\</span></div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span><span class="preprocessor"> 1.1162633310e-03,  2.5217537770e-03,  2.3467652500e-03,  9.0883136730e-04,\</span></div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span><span class="preprocessor">-8.2278024640e-04, -1.8544123740e-03, -1.7204389440e-03, -6.6454982150e-04,\</span></div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span><span class="preprocessor"> 5.9781654270e-04,  1.3435874130e-03,  1.2420648710e-03,  4.7831103440e-04,\</span></div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span><span class="preprocessor">-4.2725869570e-04, -9.5714943020e-04, -8.8125746700e-04, -3.3819739470e-04,\</span></div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span><span class="preprocessor"> 2.9977058880e-04,  6.6911266190e-04,  6.1330373860e-04,  2.3446521660e-04,\</span></div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span><span class="preprocessor">-2.0607188340e-04, -4.5812921600e-04, -4.1785626670e-04, -1.5907530910e-04,\</span></div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span><span class="preprocessor"> 1.3852263510e-04,  3.0661071650e-04,  2.7815802600e-04,  1.0540846420e-04,\</span></div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span><span class="preprocessor">-9.0863082730e-05, -2.0016334020e-04, -1.8052752420e-04, -6.8070999990e-05,\</span></div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span><span class="preprocessor"> 5.8026955230e-05,  1.2716864880e-04,  1.1396245830e-04,  4.2739371570e-05,\</span></div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span><span class="preprocessor">-3.5986544390e-05, -7.8424149250e-05, -6.9790003180e-05, -2.6019530200e-05,\</span></div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span><span class="preprocessor"> 2.1609650500e-05,  4.6805835150e-05,  4.1333612900e-05,  1.5311356040e-05,\</span></div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span><span class="preprocessor">-1.2521628380e-05, -2.6940600950e-05, -2.3589276680e-05, -8.6767022370e-06,\</span></div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="preprocessor"> 6.9724947020e-06,  1.4891493270e-05,  1.2915747900e-05,  4.7137141340e-06,\</span></div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span><span class="preprocessor">-3.7121740210e-06, -7.8638231570e-06, -6.7477158150e-06, -2.4412147470e-06,\</span></div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span><span class="preprocessor"> 1.8776036090e-06,  3.9412771000e-06,  3.3405972320e-06,  1.1966824330e-06,\</span></div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span><span class="preprocessor">-8.9475622640e-07, -1.8587631980e-06, -1.5530424660e-06, -5.5003812350e-07,\</span></div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span><span class="preprocessor"> 3.9725074430e-07,  8.1537734790e-07,  6.6967595560e-07,  2.3401274520e-07,\</span></div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span><span class="preprocessor">-1.6173993340e-07, -3.2726495650e-07, -2.6313000490e-07, -9.0449574940e-08,\</span></div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span><span class="preprocessor"> 5.8974940490e-08,  1.1723442840e-07,  9.1680234960e-08,  3.0848244850e-08,\</span></div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span><span class="preprocessor">-1.8527675390e-08, -3.5969922150e-08, -2.7041595630e-08, -8.8180964750e-09,\</span></div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span><span class="preprocessor"> 4.6682653300e-09,  8.7328073660e-09,  6.1408687020e-09,  1.8871173510e-09,\</span></div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span><span class="preprocessor">-8.0812773140e-10, -1.3506141760e-09, -8.3152790210e-10, -1.8082486900e-10,}</span></div>
+</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span> </div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span><span class="comment">/* 511th order LPF co-efficients for FIR_f32 module */</span>  </div>
+<div class="foldopen" id="foldopen00652" data-start="" data-end="">
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno"><a class="line" href="fpu__filter_8h.html#a5714433ad6fd456e6105f6d1c01f4f80">  652</a></span><span class="preprocessor">#define FIR_F32_LPF512 {\</span></div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span><span class="preprocessor"> 1.5366772420e-03, -3.1265773580e-04, -3.6620986070e-04, -4.2624506750e-04,\</span></div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span><span class="preprocessor">-4.4552556940e-04, -3.9897102400e-04, -2.8469192330e-04, -1.3570292500e-04,\</span></div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span><span class="preprocessor"> 2.4069706800e-06,  7.9712488510e-05,  7.2710259700e-05, -1.4868024660e-05,\</span></div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span><span class="preprocessor">-1.4177299450e-04, -2.5478427410e-04, -2.9924057890e-04, -2.5218218800e-04,\</span></div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span><span class="preprocessor">-1.2210835120e-04,  4.1659779530e-05,  1.7924915300e-04,  2.3195783430e-04,\</span></div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span><span class="preprocessor"> 1.8011311480e-04,  3.7679044910e-05, -1.3445687360e-04, -2.6774249270e-04,\</span></div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span><span class="preprocessor">-3.0653100110e-04, -2.2751484360e-04, -5.7254892450e-05,  1.3800534360e-04,\</span></div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span><span class="preprocessor"> 2.8112938160e-04,  3.1062896600e-04,  2.1161373300e-04,  1.8231185090e-05,\</span></div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span><span class="preprocessor">-1.9226010770e-04, -3.3563654870e-04, -3.4849866640e-04, -2.2172898750e-04,\</span></div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span><span class="preprocessor"> 2.7932469490e-07,  2.2890744730e-04,  3.7270589380e-04,  3.6796150380e-04,\</span></div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span><span class="preprocessor"> 2.1264099630e-04, -3.7077930760e-05, -2.8113074950e-04, -4.2070497880e-04,\</span></div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span><span class="preprocessor">-3.9395567730e-04, -2.0592521470e-04,  7.3972150860e-05,  3.3257255560e-04,\</span></div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span><span class="preprocessor"> 4.6583957740e-04,  4.1263317690e-04,  1.8979668680e-04, -1.1986734900e-04,\</span></div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span><span class="preprocessor">-3.9100673170e-04, -5.1343539960e-04, -4.2979631690e-04, -1.6876660810e-04,\</span></div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span><span class="preprocessor"> 1.7138499240e-04,  4.5271177080e-04,  5.6021841010e-04,  4.4198546680e-04,\</span></div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span><span class="preprocessor"> 1.4018993530e-04, -2.3033772600e-04, -5.1894830540e-04, -6.0684431810e-04,\</span></div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span><span class="preprocessor">-4.4935729240e-04, -1.0411562110e-04,  2.9655016260e-04,  5.8866286420e-04,\</span></div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span><span class="preprocessor"> 6.5199035450e-04,  4.5066923490e-04,  5.9798207080e-05, -3.6953037490e-04,\</span></div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span><span class="preprocessor">-6.6156755200e-04, -6.9465278650e-04, -4.4477239130e-04, -6.3375955510e-06,\</span></div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span><span class="preprocessor"> 4.5007374140e-04,  7.3712284210e-04,  7.3416862870e-04,  4.3105075020e-04,\</span></div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span><span class="preprocessor">-5.6564036640e-05, -5.3784198830e-04, -8.1455742470e-04, -7.6929130590e-04,\</span></div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span><span class="preprocessor">-4.0825316680e-04,  1.2961155150e-04,  6.3281517940e-04,  8.9326506710e-04,\</span></div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span><span class="preprocessor"> 7.9925509640e-04,  3.7598676860e-04, -2.1290653970e-04, -7.3432800130e-04,\</span></div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span><span class="preprocessor">-9.7221042960e-04, -8.2261161880e-04, -3.3266886020e-04,  3.0701310610e-04,\</span></div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span><span class="preprocessor"> 8.4233056990e-04,  1.0504223170e-03,  8.3821109730e-04,  2.7747399870e-04,\</span></div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span><span class="preprocessor">-4.1250794310e-04, -9.5653929750e-04, -1.1270459510e-03, -8.4495125340e-04,\</span></div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span><span class="preprocessor">-2.0962757120e-04,  5.2942964250e-04,  1.0762673340e-03,  1.2009154310e-03,\</span></div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span><span class="preprocessor"> 8.4150978360e-04,  1.2817145030e-04, -6.5805349730e-04, -1.2008317280e-03,\</span></div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span><span class="preprocessor">-1.2705730040e-03, -8.2637293960e-04, -3.1932711860e-05,  7.9840136460e-04,\</span></div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span><span class="preprocessor"> 1.3294470260e-03,  1.3346933990e-03,  7.9796451610e-04, -8.0058598540e-05,\</span></div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span><span class="preprocessor">-9.5078087180e-04, -1.4613348760e-03, -1.3918422630e-03, -7.5490417660e-04,\</span></div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span><span class="preprocessor"> 2.0869511350e-04,  1.1151914950e-03,  1.5956527790e-03,  1.4406156260e-03,\</span></div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span><span class="preprocessor"> 6.9581362190e-04, -3.5465223480e-04, -1.2911494120e-03, -1.7308398380e-03,\</span></div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span><span class="preprocessor">-1.4787906550e-03, -6.1864202140e-04,  5.1931728380e-04,  1.4789485140e-03,\</span></div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span><span class="preprocessor"> 1.8661186330e-03,  1.5050419610e-03,  5.2186945690e-04, -7.0338562360e-04,\</span></div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span><span class="preprocessor">-1.6781854210e-03, -2.0000112710e-03, -1.5172283170e-03, -4.0362530850e-04,\</span></div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span><span class="preprocessor"> 9.0798485330e-04,  1.8887098410e-03,  2.1311144810e-03,  1.5132231640e-03,\</span></div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span><span class="preprocessor"> 2.6191581860e-04, -1.1341570640e-03, -2.1101837050e-03, -2.2578192870e-03,\</span></div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span><span class="preprocessor">-1.4906791040e-03, -9.4481023550e-05,  1.3832362600e-03,  2.3425191180e-03,\</span></div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span><span class="preprocessor"> 2.3784984370e-03,  1.4471571190e-03, -1.0111072330e-04, -1.6565744300e-03,\</span></div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span><span class="preprocessor">-2.5854052510e-03, -2.4914005770e-03, -1.3798897850e-03,  3.2744588680e-04,\</span></div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span><span class="preprocessor"> 1.9556165210e-03,  2.8384041510e-03,  2.5941035710e-03,  1.2852711370e-03,\</span></div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span><span class="preprocessor">-5.8819074180e-04, -2.2828623190e-03, -3.1020359600e-03, -2.6849620040e-03,\</span></div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span><span class="preprocessor">-1.1601699520e-03,  8.8669196700e-04,  2.6403584050e-03,  3.3760208170e-03,\</span></div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span><span class="preprocessor"> 2.7611323170e-03,  1.0000101760e-03, -1.2277270430e-03, -3.0313828030e-03,\</span></div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span><span class="preprocessor">-3.6606837530e-03, -2.8197497600e-03, -7.9937669220e-04,  1.6173768090e-03,\</span></div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span><span class="preprocessor"> 3.4603935200e-03,  3.9571449160e-03,  2.8578261840e-03,  5.5213773160e-04,\</span></div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span><span class="preprocessor">-2.0628105850e-03, -3.9327945560e-03, -4.2666057120e-03, -2.8713194190e-03,\</span></div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span><span class="preprocessor">-2.4997862060e-04,  2.5738363620e-03,  4.4562169350e-03,  4.5912321660e-03,\</span></div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span><span class="preprocessor"> 2.8554275630e-03, -1.1789538980e-04, -3.1636881180e-03, -5.0414353610e-03,\</span></div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span><span class="preprocessor">-4.9346401360e-03, -2.8042627960e-03,  5.6577468060e-04,  3.8504342080e-03,\</span></div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span><span class="preprocessor"> 5.7033216580e-03,  5.3020534110e-03,  2.7096574190e-03, -1.1139704150e-03,\</span></div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span><span class="preprocessor">-4.6601528300e-03, -6.4639919440e-03, -5.7018222290e-03, -2.5605142580e-03,\</span></div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span><span class="preprocessor"> 1.7917327350e-03,  5.6312237870e-03,  7.3566329670e-03,  6.1470652000e-03,\</span></div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span><span class="preprocessor"> 2.3406527470e-03, -2.6433386370e-03, -6.8227876910e-03, -8.4331352260e-03,\</span></div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span><span class="preprocessor">-6.6588716580e-03, -2.0248284560e-03,  3.7395444230e-03,  8.3309244360e-03,\</span></div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span><span class="preprocessor"> 9.7791804000e-03,  7.2730388490e-03,  1.5712674940e-03, -5.2008908240e-03,\</span></div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span><span class="preprocessor">-1.0322242040e-02, -1.1546259750e-02, -8.0544976520e-03, -9.0471399020e-04,\</span></div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span><span class="preprocessor"> 7.2504994460e-03,  1.3112223710e-02,  1.4027953150e-02,  9.1326814140e-03,\</span></div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span><span class="preprocessor">-1.2672258890e-04, -1.0352934710e-02, -1.7377879470e-02, -1.7874922600e-02,\</span></div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span><span class="preprocessor">-1.0804970750e-02,  1.8844022420e-03,  1.5662357210e-02,  2.4881962690e-02,\</span></div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span><span class="preprocessor"> 2.4872578680e-02,  1.3937847690e-02, -5.4891151380e-03, -2.7049291880e-02,\</span></div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span><span class="preprocessor">-4.2090248320e-02, -4.2302932590e-02, -2.2550765420e-02,  1.7043987290e-02,\</span></div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span><span class="preprocessor"> 7.0507064460e-02,  1.2720665340e-01,  1.7456042770e-01,  2.0147448780e-01,\</span></div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span><span class="preprocessor"> 2.0147448780e-01,  1.7456042770e-01,  1.2720665340e-01,  7.0507064460e-02,\</span></div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span><span class="preprocessor"> 1.7043987290e-02, -2.2550765420e-02, -4.2302932590e-02, -4.2090248320e-02,\</span></div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span><span class="preprocessor">-2.7049291880e-02, -5.4891151380e-03,  1.3937847690e-02,  2.4872578680e-02,\</span></div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span><span class="preprocessor"> 2.4881962690e-02,  1.5662357210e-02,  1.8844022420e-03, -1.0804970750e-02,\</span></div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span><span class="preprocessor">-1.7874922600e-02, -1.7377879470e-02, -1.0352934710e-02, -1.2672258890e-04,\</span></div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span><span class="preprocessor"> 9.1326814140e-03,  1.4027953150e-02,  1.3112223710e-02,  7.2504994460e-03,\</span></div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span><span class="preprocessor">-9.0471399020e-04, -8.0544976520e-03, -1.1546259750e-02, -1.0322242040e-02,\</span></div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span><span class="preprocessor">-5.2008908240e-03,  1.5712674940e-03,  7.2730388490e-03,  9.7791804000e-03,\</span></div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span><span class="preprocessor"> 8.3309244360e-03,  3.7395444230e-03, -2.0248284560e-03, -6.6588716580e-03,\</span></div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span><span class="preprocessor">-8.4331352260e-03, -6.8227876910e-03, -2.6433386370e-03,  2.3406527470e-03,\</span></div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span><span class="preprocessor"> 6.1470652000e-03,  7.3566329670e-03,  5.6312237870e-03,  1.7917327350e-03,\</span></div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span><span class="preprocessor">-2.5605142580e-03, -5.7018222290e-03, -6.4639919440e-03, -4.6601528300e-03,\</span></div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span><span class="preprocessor">-1.1139704150e-03,  2.7096574190e-03,  5.3020534110e-03,  5.7033216580e-03,\</span></div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span><span class="preprocessor"> 3.8504342080e-03,  5.6577468060e-04, -2.8042627960e-03, -4.9346401360e-03,\</span></div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span><span class="preprocessor">-5.0414353610e-03, -3.1636881180e-03, -1.1789538980e-04,  2.8554275630e-03,\</span></div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span><span class="preprocessor"> 4.5912321660e-03,  4.4562169350e-03,  2.5738363620e-03, -2.4997862060e-04,\</span></div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span><span class="preprocessor">-2.8713194190e-03, -4.2666057120e-03, -3.9327945560e-03, -2.0628105850e-03,\</span></div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span><span class="preprocessor"> 5.5213773160e-04,  2.8578261840e-03,  3.9571449160e-03,  3.4603935200e-03,\</span></div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span><span class="preprocessor"> 1.6173768090e-03, -7.9937669220e-04, -2.8197497600e-03, -3.6606837530e-03,\</span></div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span><span class="preprocessor">-3.0313828030e-03, -1.2277270430e-03,  1.0000101760e-03,  2.7611323170e-03,\</span></div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span><span class="preprocessor"> 3.3760208170e-03,  2.6403584050e-03,  8.8669196700e-04, -1.1601699520e-03,\</span></div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span><span class="preprocessor">-2.6849620040e-03, -3.1020359600e-03, -2.2828623190e-03, -5.8819074180e-04,\</span></div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span><span class="preprocessor"> 1.2852711370e-03,  2.5941035710e-03,  2.8384041510e-03,  1.9556165210e-03,\</span></div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span><span class="preprocessor"> 3.2744588680e-04, -1.3798897850e-03, -2.4914005770e-03, -2.5854052510e-03,\</span></div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span><span class="preprocessor">-1.6565744300e-03, -1.0111072330e-04,  1.4471571190e-03,  2.3784984370e-03,\</span></div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span><span class="preprocessor"> 2.3425191180e-03,  1.3832362600e-03, -9.4481023550e-05, -1.4906791040e-03,\</span></div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span><span class="preprocessor">-2.2578192870e-03, -2.1101837050e-03, -1.1341570640e-03,  2.6191581860e-04,\</span></div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span><span class="preprocessor"> 1.5132231640e-03,  2.1311144810e-03,  1.8887098410e-03,  9.0798485330e-04,\</span></div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span><span class="preprocessor">-4.0362530850e-04, -1.5172283170e-03, -2.0000112710e-03, -1.6781854210e-03,\</span></div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span><span class="preprocessor">-7.0338562360e-04,  5.2186945690e-04,  1.5050419610e-03,  1.8661186330e-03,\</span></div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span><span class="preprocessor"> 1.4789485140e-03,  5.1931728380e-04, -6.1864202140e-04, -1.4787906550e-03,\</span></div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span><span class="preprocessor">-1.7308398380e-03, -1.2911494120e-03, -3.5465223480e-04,  6.9581362190e-04,\</span></div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span><span class="preprocessor"> 1.4406156260e-03,  1.5956527790e-03,  1.1151914950e-03,  2.0869511350e-04,\</span></div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span><span class="preprocessor">-7.5490417660e-04, -1.3918422630e-03, -1.4613348760e-03, -9.5078087180e-04,\</span></div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span><span class="preprocessor">-8.0058598540e-05,  7.9796451610e-04,  1.3346933990e-03,  1.3294470260e-03,\</span></div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span><span class="preprocessor"> 7.9840136460e-04, -3.1932711860e-05, -8.2637293960e-04, -1.2705730040e-03,\</span></div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span><span class="preprocessor">-1.2008317280e-03, -6.5805349730e-04,  1.2817145030e-04,  8.4150978360e-04,\</span></div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span><span class="preprocessor"> 1.2009154310e-03,  1.0762673340e-03,  5.2942964250e-04, -2.0962757120e-04,\</span></div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span><span class="preprocessor">-8.4495125340e-04, -1.1270459510e-03, -9.5653929750e-04, -4.1250794310e-04,\</span></div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span><span class="preprocessor"> 2.7747399870e-04,  8.3821109730e-04,  1.0504223170e-03,  8.4233056990e-04,\</span></div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span><span class="preprocessor"> 3.0701310610e-04, -3.3266886020e-04, -8.2261161880e-04, -9.7221042960e-04,\</span></div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span><span class="preprocessor">-7.3432800130e-04, -2.1290653970e-04,  3.7598676860e-04,  7.9925509640e-04,\</span></div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span><span class="preprocessor"> 8.9326506710e-04,  6.3281517940e-04,  1.2961155150e-04, -4.0825316680e-04,\</span></div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span><span class="preprocessor">-7.6929130590e-04, -8.1455742470e-04, -5.3784198830e-04, -5.6564036640e-05,\</span></div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span><span class="preprocessor"> 4.3105075020e-04,  7.3416862870e-04,  7.3712284210e-04,  4.5007374140e-04,\</span></div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span><span class="preprocessor">-6.3375955510e-06, -4.4477239130e-04, -6.9465278650e-04, -6.6156755200e-04,\</span></div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span><span class="preprocessor">-3.6953037490e-04,  5.9798207080e-05,  4.5066923490e-04,  6.5199035450e-04,\</span></div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="preprocessor"> 5.8866286420e-04,  2.9655016260e-04, -1.0411562110e-04, -4.4935729240e-04,\</span></div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="preprocessor">-6.0684431810e-04, -5.1894830540e-04, -2.3033772600e-04,  1.4018993530e-04,\</span></div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="preprocessor"> 4.4198546680e-04,  5.6021841010e-04,  4.5271177080e-04,  1.7138499240e-04,\</span></div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="preprocessor">-1.6876660810e-04, -4.2979631690e-04, -5.1343539960e-04, -3.9100673170e-04,\</span></div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span><span class="preprocessor">-1.1986734900e-04,  1.8979668680e-04,  4.1263317690e-04,  4.6583957740e-04,\</span></div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span><span class="preprocessor"> 3.3257255560e-04,  7.3972150860e-05, -2.0592521470e-04, -3.9395567730e-04,\</span></div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span><span class="preprocessor">-4.2070497880e-04, -2.8113074950e-04, -3.7077930760e-05,  2.1264099630e-04,\</span></div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span><span class="preprocessor"> 3.6796150380e-04,  3.7270589380e-04,  2.2890744730e-04,  2.7932469490e-07,\</span></div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span><span class="preprocessor">-2.2172898750e-04, -3.4849866640e-04, -3.3563654870e-04, -1.9226010770e-04,\</span></div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span><span class="preprocessor"> 1.8231185090e-05,  2.1161373300e-04,  3.1062896600e-04,  2.8112938160e-04,\</span></div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span><span class="preprocessor"> 1.3800534360e-04, -5.7254892450e-05, -2.2751484360e-04, -3.0653100110e-04,\</span></div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span><span class="preprocessor">-2.6774249270e-04, -1.3445687360e-04,  3.7679044910e-05,  1.8011311480e-04,\</span></div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span><span class="preprocessor"> 2.3195783430e-04,  1.7924915300e-04,  4.1659779530e-05, -1.2210835120e-04,\</span></div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span><span class="preprocessor">-2.5218218800e-04, -2.9924057890e-04, -2.5478427410e-04, -1.4177299450e-04,\</span></div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span><span class="preprocessor">-1.4868024660e-05,  7.2710259700e-05,  7.9712488510e-05,  2.4069706800e-06,\</span></div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span><span class="preprocessor">-1.3570292500e-04, -2.8469192330e-04, -3.9897102400e-04, -4.4552556940e-04,\</span></div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span><span class="preprocessor">-4.2624506750e-04, -3.6620986070e-04, -3.1265773580e-04,  1.5366772420e-03,}</span></div>
+</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span> </div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>}</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span><span class="preprocessor">#endif </span><span class="comment">/* extern &quot;C&quot; */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span> </div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span><span class="preprocessor">#endif   </span><span class="comment">// - end of _FPU_FILTER_H_</span></div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span> </div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span><span class="comment">// End of File</span></div>
+<div class="ttc" id="a_r_f_f_t__f32__mag_8asm_html_a2dca1e84a5e665f0def1baede53a101d"><div class="ttname"><a href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a></div><div class="ttdeci">Calculate the real FFT magnitude The data is organized as follows in</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32__mag_8asm_source.html#l00047">RFFT_f32_mag.asm:48</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a012efcbc7a253ee80fcc41655ce59061"><div class="ttname"><a href="fpu__filter_8h.html#a012efcbc7a253ee80fcc41655ce59061">FIR_f32_getInitFunction</a></div><div class="ttdeci">static v_pfn_v FIR_f32_getInitFunction(FIR_f32_Handle fh)</div><div class="ttdoc">Get the init function</div><div class="ttdef"><b>定义</b> <a href="#l00191">fpu_filter.h:191</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a057284a9e70073f70e2bb6f838231768"><div class="ttname"><a href="fpu__filter_8h.html#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a></div><div class="ttdeci">FIR_f32 * FIR_f32_Handle</div><div class="ttdoc">Handle to the Filter Structure Object</div><div class="ttdef"><b>定义</b> <a href="#l00050">fpu_filter.h:50</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a06be3827cc5a07d1df1ef8d8534403d6"><div class="ttname"><a href="fpu__filter_8h.html#a06be3827cc5a07d1df1ef8d8534403d6">FIR_f32_getInput</a></div><div class="ttdeci">static float FIR_f32_getInput(FIR_f32_Handle fh)</div><div class="ttdoc">Get the input</div><div class="ttdef"><b>定义</b> <a href="#l00134">fpu_filter.h:134</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a07eb7ad049b788263143342c7e638605"><div class="ttname"><a href="fpu__filter_8h.html#a07eb7ad049b788263143342c7e638605">IIR_f32_getDelayLinePtr</a></div><div class="ttdeci">static float * IIR_f32_getDelayLinePtr(IIR_f32_Handle fh)</div><div class="ttdoc">Get the delay line pointer</div><div class="ttdef"><b>定义</b> <a href="#l00267">fpu_filter.h:267</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a1a053927c3b86c878392a84b1a0e73ca"><div class="ttname"><a href="fpu__filter_8h.html#a1a053927c3b86c878392a84b1a0e73ca">FIR_f32_init</a></div><div class="ttdeci">void FIR_f32_init(FIR_f32_Handle hndFIR_f32)</div><div class="ttdoc">Finite Impulse Response Filter Initialization.</div></div>
+<div class="ttc" id="afpu__filter_8h_html_a265afda13f4dc6ba5935a3a854827140"><div class="ttname"><a href="fpu__filter_8h.html#a265afda13f4dc6ba5935a3a854827140">FIR_f32_setInput</a></div><div class="ttdeci">static void FIR_f32_setInput(FIR_f32_Handle fh, const float in)</div><div class="ttdoc">Set the input</div><div class="ttdef"><b>定义</b> <a href="#l00124">fpu_filter.h:124</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a31bc14bf5d435a72a971393d04c0faa3"><div class="ttname"><a href="fpu__filter_8h.html#a31bc14bf5d435a72a971393d04c0faa3">FIR_f32_setCalcFunction</a></div><div class="ttdeci">static void FIR_f32_setCalcFunction(FIR_f32_Handle fh, const v_pfn_v pfn)</div><div class="ttdoc">Set the calc function</div><div class="ttdef"><b>定义</b> <a href="#l00200">fpu_filter.h:200</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a391f962db381ac11b1246c4a1b81c2d5"><div class="ttname"><a href="fpu__filter_8h.html#a391f962db381ac11b1246c4a1b81c2d5">IIR_f32_getInitFunction</a></div><div class="ttdeci">static v_pfn_v IIR_f32_getInitFunction(IIR_f32_Handle fh)</div><div class="ttdoc">Get the init function</div><div class="ttdef"><b>定义</b> <a href="#l00361">fpu_filter.h:361</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a41d08dccd66df4a28b0ba12e7b89c228"><div class="ttname"><a href="fpu__filter_8h.html#a41d08dccd66df4a28b0ba12e7b89c228">FIR_f32_getOrder</a></div><div class="ttdeci">static uint16_t FIR_f32_getOrder(FIR_f32_Handle fh)</div><div class="ttdoc">Get the order of the filter</div><div class="ttdef"><b>定义</b> <a href="#l00172">fpu_filter.h:172</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a461932a8056512c18f14e6cf9e87cbbd"><div class="ttname"><a href="fpu__filter_8h.html#a461932a8056512c18f14e6cf9e87cbbd">IIR_f32_setScalePtr</a></div><div class="ttdeci">static void IIR_f32_setScalePtr(IIR_f32_Handle fh, const float *psv)</div><div class="ttdoc">Set the scale value pointer</div><div class="ttdef"><b>定义</b> <a href="#l00314">fpu_filter.h:314</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a4ce49175ef8f72c597f4a7b05bbcb57e"><div class="ttname"><a href="fpu__filter_8h.html#a4ce49175ef8f72c597f4a7b05bbcb57e">FIR_f32_getCalcFunction</a></div><div class="ttdeci">static v_pfn_v FIR_f32_getCalcFunction(FIR_f32_Handle fh)</div><div class="ttdoc">Get the calc function</div><div class="ttdef"><b>定义</b> <a href="#l00210">fpu_filter.h:210</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a52812cf8024e656beb1513adff100b36"><div class="ttname"><a href="fpu__filter_8h.html#a52812cf8024e656beb1513adff100b36">FIR_f32_getDelayLinePtr</a></div><div class="ttdeci">static float * FIR_f32_getDelayLinePtr(FIR_f32_Handle fh)</div><div class="ttdoc">Get the delay line pointer</div><div class="ttdef"><b>定义</b> <a href="#l00115">fpu_filter.h:115</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a549fe4f13c55b489f6444a3d40cc9244"><div class="ttname"><a href="fpu__filter_8h.html#a549fe4f13c55b489f6444a3d40cc9244">IIR_f32_getCoefficientsBPtr</a></div><div class="ttdeci">static float * IIR_f32_getCoefficientsBPtr(IIR_f32_Handle fh)</div><div class="ttdoc">Get the numerator coefficients pointer</div><div class="ttdef"><b>定义</b> <a href="#l00248">fpu_filter.h:248</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a7c704ea4e050319463dcb5cb96af29e3"><div class="ttname"><a href="fpu__filter_8h.html#a7c704ea4e050319463dcb5cb96af29e3">IIR_f32_setCoefficientsBPtr</a></div><div class="ttdeci">static void IIR_f32_setCoefficientsBPtr(IIR_f32_Handle fh, const float *pcb)</div><div class="ttdoc">Set the numerator coefficients pointer</div><div class="ttdef"><b>定义</b> <a href="#l00238">fpu_filter.h:238</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a7ca1a6a70367f45184faee05264b4516"><div class="ttname"><a href="fpu__filter_8h.html#a7ca1a6a70367f45184faee05264b4516">FIR_f32_setDelayLinePtr</a></div><div class="ttdeci">static void FIR_f32_setDelayLinePtr(FIR_f32_Handle fh, const float *pdl)</div><div class="ttdoc">Set the delay line pointer</div><div class="ttdef"><b>定义</b> <a href="#l00105">fpu_filter.h:105</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a834c90a3898f8320ecd18482ffe37c5d"><div class="ttname"><a href="fpu__filter_8h.html#a834c90a3898f8320ecd18482ffe37c5d">IIR_f32_setCalcFunction</a></div><div class="ttdeci">static void IIR_f32_setCalcFunction(IIR_f32_Handle fh, const v_pfn_v pfn)</div><div class="ttdoc">Set the calc function</div><div class="ttdef"><b>定义</b> <a href="#l00370">fpu_filter.h:370</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a8c85f57dabd1aeb4d44cbf4b2fc65562"><div class="ttname"><a href="fpu__filter_8h.html#a8c85f57dabd1aeb4d44cbf4b2fc65562">IIR_f32_getOrder</a></div><div class="ttdeci">static uint16_t IIR_f32_getOrder(IIR_f32_Handle fh)</div><div class="ttdoc">Get the order of the filter</div><div class="ttdef"><b>定义</b> <a href="#l00342">fpu_filter.h:342</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a9000258986a557dfac32ca11d76c962f"><div class="ttname"><a href="fpu__filter_8h.html#a9000258986a557dfac32ca11d76c962f">FIR_f32_setOutput</a></div><div class="ttdeci">static void FIR_f32_setOutput(FIR_f32_Handle fh, const float out)</div><div class="ttdoc">Set the output</div><div class="ttdef"><b>定义</b> <a href="#l00143">fpu_filter.h:143</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_a95a6b475d3028a5b89511c368e0dfde7"><div class="ttname"><a href="fpu__filter_8h.html#a95a6b475d3028a5b89511c368e0dfde7">IIR_f32_calc</a></div><div class="ttdeci">void IIR_f32_calc(IIR_f32_Handle hndIIR_f32)</div><div class="ttdoc">Infinite Impulse Response Filter.</div></div>
+<div class="ttc" id="afpu__filter_8h_html_a98c7b0c7adf5b8f06278e9b998f42f38"><div class="ttname"><a href="fpu__filter_8h.html#a98c7b0c7adf5b8f06278e9b998f42f38">FIR_f32_calc</a></div><div class="ttdeci">void FIR_f32_calc(FIR_f32_Handle hndFIR_f32)</div><div class="ttdoc">Finite Impulse Response Filter.</div></div>
+<div class="ttc" id="afpu__filter_8h_html_aa35937f21fdd218c719b1771c49c672c"><div class="ttname"><a href="fpu__filter_8h.html#aa35937f21fdd218c719b1771c49c672c">IIR_f32_setInputPtr</a></div><div class="ttdeci">static void IIR_f32_setInputPtr(IIR_f32_Handle fh, const float *pi)</div><div class="ttdoc">Set the input pointer</div><div class="ttdef"><b>定义</b> <a href="#l00276">fpu_filter.h:276</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_aa7f56c67679751de28d7fe3f0529b62a"><div class="ttname"><a href="fpu__filter_8h.html#aa7f56c67679751de28d7fe3f0529b62a">IIR_f32_getOutputPtr</a></div><div class="ttdeci">static float * IIR_f32_getOutputPtr(IIR_f32_Handle fh)</div><div class="ttdoc">Get the output pointer</div><div class="ttdef"><b>定义</b> <a href="#l00305">fpu_filter.h:305</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_aaf79f81477f95483247fe6f6ac8d2614"><div class="ttname"><a href="fpu__filter_8h.html#aaf79f81477f95483247fe6f6ac8d2614">IIR_f32_setOutputPtr</a></div><div class="ttdeci">static void IIR_f32_setOutputPtr(IIR_f32_Handle fh, const float *po)</div><div class="ttdoc">Set the output pointer</div><div class="ttdef"><b>定义</b> <a href="#l00295">fpu_filter.h:295</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_ab1b66e745c92c76eb9f79d84f3be5be2"><div class="ttname"><a href="fpu__filter_8h.html#ab1b66e745c92c76eb9f79d84f3be5be2">FIR_f32_setInitFunction</a></div><div class="ttdeci">static void FIR_f32_setInitFunction(FIR_f32_Handle fh, const v_pfn_v pfn)</div><div class="ttdoc">Set the init function</div><div class="ttdef"><b>定义</b> <a href="#l00181">fpu_filter.h:181</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_ab6d91e07752fb317772d72169b41c338"><div class="ttname"><a href="fpu__filter_8h.html#ab6d91e07752fb317772d72169b41c338">IIR_f32_setDelayLinePtr</a></div><div class="ttdeci">static void IIR_f32_setDelayLinePtr(IIR_f32_Handle fh, const float *pdl)</div><div class="ttdoc">Set the delay line pointer</div><div class="ttdef"><b>定义</b> <a href="#l00257">fpu_filter.h:257</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_ab930fb0b94b4c24fa71b8df73d3a6231"><div class="ttname"><a href="fpu__filter_8h.html#ab930fb0b94b4c24fa71b8df73d3a6231">IIR_f32_setCoefficientsAPtr</a></div><div class="ttdeci">static void IIR_f32_setCoefficientsAPtr(IIR_f32_Handle fh, const float *pca)</div><div class="ttdoc">Set the denominator coefficients pointer</div><div class="ttdef"><b>定义</b> <a href="#l00219">fpu_filter.h:219</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_abbb5b62177b0f9a5626c70a445bd74dd"><div class="ttname"><a href="fpu__filter_8h.html#abbb5b62177b0f9a5626c70a445bd74dd">FIR_f32_setCoefficientsPtr</a></div><div class="ttdeci">static void FIR_f32_setCoefficientsPtr(FIR_f32_Handle fh, const float *pc)</div><div class="ttdoc">Set the coefficients pointer</div><div class="ttdef"><b>定义</b> <a href="#l00086">fpu_filter.h:86</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_ac5acc669de6153b0450339e5265a98d3"><div class="ttname"><a href="fpu__filter_8h.html#ac5acc669de6153b0450339e5265a98d3">IIR_f32_getScalePtr</a></div><div class="ttdeci">static float * IIR_f32_getScalePtr(IIR_f32_Handle fh)</div><div class="ttdoc">Get the scale value pointer</div><div class="ttdef"><b>定义</b> <a href="#l00324">fpu_filter.h:324</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_ac996516da35ae3166a2ae5d80a79e019"><div class="ttname"><a href="fpu__filter_8h.html#ac996516da35ae3166a2ae5d80a79e019">IIR_f32_setOrder</a></div><div class="ttdeci">static void IIR_f32_setOrder(IIR_f32_Handle fh, const uint16_t order)</div><div class="ttdoc">Set the order of the filter</div><div class="ttdef"><b>定义</b> <a href="#l00333">fpu_filter.h:333</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_ad28faae8948f23c0b1e7eca4a6b5a428"><div class="ttname"><a href="fpu__filter_8h.html#ad28faae8948f23c0b1e7eca4a6b5a428">IIR_f32_getInputPtr</a></div><div class="ttdeci">static float * IIR_f32_getInputPtr(IIR_f32_Handle fh)</div><div class="ttdoc">Get the input pointer</div><div class="ttdef"><b>定义</b> <a href="#l00286">fpu_filter.h:286</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_ad65545f76f4aa2b8ad3d7037ecdc293f"><div class="ttname"><a href="fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a></div><div class="ttdeci">IIR_f32 * IIR_f32_Handle</div><div class="ttdoc">Handle to the Filter Structure Object</div><div class="ttdef"><b>定义</b> <a href="#l00077">fpu_filter.h:77</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_ade5562a5b65560106b174da71ac20713"><div class="ttname"><a href="fpu__filter_8h.html#ade5562a5b65560106b174da71ac20713">FIR_f32_setOrder</a></div><div class="ttdeci">static void FIR_f32_setOrder(FIR_f32_Handle fh, const uint16_t order)</div><div class="ttdoc">Set the order of the filter</div><div class="ttdef"><b>定义</b> <a href="#l00163">fpu_filter.h:163</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_ae00f063903782174bfe7da592229b704"><div class="ttname"><a href="fpu__filter_8h.html#ae00f063903782174bfe7da592229b704">IIR_f32_init</a></div><div class="ttdeci">void IIR_f32_init(IIR_f32_Handle hndIIR_f32)</div><div class="ttdoc">Infinite Impulse Response Filter Initialization.</div></div>
+<div class="ttc" id="afpu__filter_8h_html_aef5caa989819051f4d13b027e7e3820c"><div class="ttname"><a href="fpu__filter_8h.html#aef5caa989819051f4d13b027e7e3820c">IIR_f32_setInitFunction</a></div><div class="ttdeci">static void IIR_f32_setInitFunction(IIR_f32_Handle fh, const v_pfn_v pfn)</div><div class="ttdoc">Set the init function</div><div class="ttdef"><b>定义</b> <a href="#l00351">fpu_filter.h:351</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_af4c5c9886092ca8a8d0734c97879fc53"><div class="ttname"><a href="fpu__filter_8h.html#af4c5c9886092ca8a8d0734c97879fc53">FIR_f32_getOutput</a></div><div class="ttdeci">static float FIR_f32_getOutput(FIR_f32_Handle fh)</div><div class="ttdoc">Get the output</div><div class="ttdef"><b>定义</b> <a href="#l00153">fpu_filter.h:153</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_af6dbe17335070c15d50ed1766f8c6875"><div class="ttname"><a href="fpu__filter_8h.html#af6dbe17335070c15d50ed1766f8c6875">FIR_f32_getCoefficientsPtr</a></div><div class="ttdeci">static float * FIR_f32_getCoefficientsPtr(FIR_f32_Handle fh)</div><div class="ttdoc">Get the coefficients pointer</div><div class="ttdef"><b>定义</b> <a href="#l00096">fpu_filter.h:96</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_af8c4bb74dc08b04fa0b38fd938c15dba"><div class="ttname"><a href="fpu__filter_8h.html#af8c4bb74dc08b04fa0b38fd938c15dba">IIR_f32_getCalcFunction</a></div><div class="ttdeci">static v_pfn_v IIR_f32_getCalcFunction(IIR_f32_Handle fh)</div><div class="ttdoc">Get the calc function</div><div class="ttdef"><b>定义</b> <a href="#l00380">fpu_filter.h:380</a></div></div>
+<div class="ttc" id="afpu__filter_8h_html_afbd8b9acf3fe8e54144c0a68f99aa97a"><div class="ttname"><a href="fpu__filter_8h.html#afbd8b9acf3fe8e54144c0a68f99aa97a">IIR_f32_getCoefficientsAPtr</a></div><div class="ttdeci">static float * IIR_f32_getCoefficientsAPtr(IIR_f32_Handle fh)</div><div class="ttdoc">Get the denominator coefficients pointer</div><div class="ttdef"><b>定义</b> <a href="#l00229">fpu_filter.h:229</a></div></div>
+<div class="ttc" id="afpu__types_8h_html"><div class="ttname"><a href="fpu__types_8h.html">fpu_types.h</a></div><div class="ttdoc">Prototypes and Definitions for the C28x FPU Library</div></div>
+<div class="ttc" id="astruct_f_i_r__f32_html"><div class="ttname"><a href="struct_f_i_r__f32.html">FIR_f32</a></div><div class="ttdef"><b>定义</b> <a href="#l00038">fpu_filter.h:38</a></div></div>
+<div class="ttc" id="astruct_f_i_r__f32_html_a01db0ec18c3bbadffd65e9a235a615fa"><div class="ttname"><a href="struct_f_i_r__f32.html#a01db0ec18c3bbadffd65e9a235a615fa">FIR_f32::cbindex</a></div><div class="ttdeci">int16_t cbindex</div><div class="ttdoc">Circular Buffer Index</div><div class="ttdef"><b>定义</b> <a href="#l00041">fpu_filter.h:41</a></div></div>
+<div class="ttc" id="astruct_f_i_r__f32_html_a28dedc05452ba862c2f37422856458b0"><div class="ttname"><a href="struct_f_i_r__f32.html#a28dedc05452ba862c2f37422856458b0">FIR_f32::coeff_ptr</a></div><div class="ttdeci">float * coeff_ptr</div><div class="ttdoc">Pointer to Filter coefficient</div><div class="ttdef"><b>定义</b> <a href="#l00039">fpu_filter.h:39</a></div></div>
+<div class="ttc" id="astruct_f_i_r__f32_html_a375bb0d33fdc67ba6c838d7b52a8ca0b"><div class="ttname"><a href="struct_f_i_r__f32.html#a375bb0d33fdc67ba6c838d7b52a8ca0b">FIR_f32::order</a></div><div class="ttdeci">int16_t order</div><div class="ttdoc">Order of the Filter</div><div class="ttdef"><b>定义</b> <a href="#l00042">fpu_filter.h:42</a></div></div>
+<div class="ttc" id="astruct_f_i_r__f32_html_a45a1f5d37ad45d88ab5bd8cd0b7f118e"><div class="ttname"><a href="struct_f_i_r__f32.html#a45a1f5d37ad45d88ab5bd8cd0b7f118e">FIR_f32::calc</a></div><div class="ttdeci">void(* calc)(void *)</div><div class="ttdoc">Pointer to the calculation function</div><div class="ttdef"><b>定义</b> <a href="#l00046">fpu_filter.h:46</a></div></div>
+<div class="ttc" id="astruct_f_i_r__f32_html_a65232f257c08aea4b17ea502b31106f7"><div class="ttname"><a href="struct_f_i_r__f32.html#a65232f257c08aea4b17ea502b31106f7">FIR_f32::output</a></div><div class="ttdeci">float output</div><div class="ttdoc">Filter Output</div><div class="ttdef"><b>定义</b> <a href="#l00044">fpu_filter.h:44</a></div></div>
+<div class="ttc" id="astruct_f_i_r__f32_html_ad2dc272dbb0aa32fb114312e2aad2d80"><div class="ttname"><a href="struct_f_i_r__f32.html#ad2dc272dbb0aa32fb114312e2aad2d80">FIR_f32::input</a></div><div class="ttdeci">float input</div><div class="ttdoc">Latest Input sample</div><div class="ttdef"><b>定义</b> <a href="#l00043">fpu_filter.h:43</a></div></div>
+<div class="ttc" id="astruct_f_i_r__f32_html_af2547fdb70765aa89647bd16233bec8d"><div class="ttname"><a href="struct_f_i_r__f32.html#af2547fdb70765aa89647bd16233bec8d">FIR_f32::init</a></div><div class="ttdeci">void(* init)(void *)</div><div class="ttdoc">Pointer to Initialization function</div><div class="ttdef"><b>定义</b> <a href="#l00045">fpu_filter.h:45</a></div></div>
+<div class="ttc" id="astruct_f_i_r__f32_html_afef3d8453b65c7a36e0f593f9cdcbd26"><div class="ttname"><a href="struct_f_i_r__f32.html#afef3d8453b65c7a36e0f593f9cdcbd26">FIR_f32::dbuffer_ptr</a></div><div class="ttdeci">float * dbuffer_ptr</div><div class="ttdoc">Delay buffer pointer</div><div class="ttdef"><b>定义</b> <a href="#l00040">fpu_filter.h:40</a></div></div>
+<div class="ttc" id="astruct_i_i_r__f32_html"><div class="ttname"><a href="struct_i_i_r__f32.html">IIR_f32</a></div><div class="ttdef"><b>定义</b> <a href="#l00064">fpu_filter.h:64</a></div></div>
+<div class="ttc" id="astruct_i_i_r__f32_html_a0e6c962519c1d3d46d447f2cb1d4aaf0"><div class="ttname"><a href="struct_i_i_r__f32.html#a0e6c962519c1d3d46d447f2cb1d4aaf0">IIR_f32::p_coeff_B</a></div><div class="ttdeci">float * p_coeff_B</div><div class="ttdoc">Pointer to the numerator coefficients</div><div class="ttdef"><b>定义</b> <a href="#l00066">fpu_filter.h:66</a></div></div>
+<div class="ttc" id="astruct_i_i_r__f32_html_a1bf2ac0867c80778cdc6b400ec4a4378"><div class="ttname"><a href="struct_i_i_r__f32.html#a1bf2ac0867c80778cdc6b400ec4a4378">IIR_f32::p_coeff_A</a></div><div class="ttdeci">float * p_coeff_A</div><div class="ttdoc">Pointer to the denominator coefficients</div><div class="ttdef"><b>定义</b> <a href="#l00065">fpu_filter.h:65</a></div></div>
+<div class="ttc" id="astruct_i_i_r__f32_html_a26138b9ee39b9cc4bec00dcb32a8d8ea"><div class="ttname"><a href="struct_i_i_r__f32.html#a26138b9ee39b9cc4bec00dcb32a8d8ea">IIR_f32::p_input</a></div><div class="ttdeci">float * p_input</div><div class="ttdoc">Pointer to the latest input sample</div><div class="ttdef"><b>定义</b> <a href="#l00068">fpu_filter.h:68</a></div></div>
+<div class="ttc" id="astruct_i_i_r__f32_html_a393d635298646ce069ae0010e6fbf12f"><div class="ttname"><a href="struct_i_i_r__f32.html#a393d635298646ce069ae0010e6fbf12f">IIR_f32::init</a></div><div class="ttdeci">void(* init)(void *)</div><div class="ttdoc">Pointer to the initialization function</div><div class="ttdef"><b>定义</b> <a href="#l00072">fpu_filter.h:72</a></div></div>
+<div class="ttc" id="astruct_i_i_r__f32_html_a53aba82c830bb8b8215f3fc43242c9c3"><div class="ttname"><a href="struct_i_i_r__f32.html#a53aba82c830bb8b8215f3fc43242c9c3">IIR_f32::p_scale</a></div><div class="ttdeci">float * p_scale</div><div class="ttdoc">Pointer to the biquad(s) scale values</div><div class="ttdef"><b>定义</b> <a href="#l00070">fpu_filter.h:70</a></div></div>
+<div class="ttc" id="astruct_i_i_r__f32_html_a8b4157f6b31dfad2209eaecb6b1cf5dd"><div class="ttname"><a href="struct_i_i_r__f32.html#a8b4157f6b31dfad2209eaecb6b1cf5dd">IIR_f32::p_dbuffer</a></div><div class="ttdeci">float * p_dbuffer</div><div class="ttdoc">Delay buffer pointer</div><div class="ttdef"><b>定义</b> <a href="#l00067">fpu_filter.h:67</a></div></div>
+<div class="ttc" id="astruct_i_i_r__f32_html_aa21307c77d0db79612c42f7059fe0485"><div class="ttname"><a href="struct_i_i_r__f32.html#aa21307c77d0db79612c42f7059fe0485">IIR_f32::p_output</a></div><div class="ttdeci">float * p_output</div><div class="ttdoc">Pointer to the filter output</div><div class="ttdef"><b>定义</b> <a href="#l00069">fpu_filter.h:69</a></div></div>
+<div class="ttc" id="astruct_i_i_r__f32_html_aae8f9f3e3336903c95ce2a22bd448094"><div class="ttname"><a href="struct_i_i_r__f32.html#aae8f9f3e3336903c95ce2a22bd448094">IIR_f32::order</a></div><div class="ttdeci">uint16_t order</div><div class="ttdoc">Order of the filter</div><div class="ttdef"><b>定义</b> <a href="#l00071">fpu_filter.h:71</a></div></div>
+<div class="ttc" id="astruct_i_i_r__f32_html_abf0308784cde5e39e3b08e2435a995b7"><div class="ttname"><a href="struct_i_i_r__f32.html#abf0308784cde5e39e3b08e2435a995b7">IIR_f32::calc</a></div><div class="ttdeci">void(* calc)(void *)</div><div class="ttdoc">Pointer to the calculation function</div><div class="ttdef"><b>定义</b> <a href="#l00073">fpu_filter.h:73</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_96bdd7f67e65e0bcef66e25a7a540546.html">NUEDC_Core</a></li><li class="navelem"><a href="dir_549544d87b79ec47878b64312c89f956.html">Code</a></li><li class="navelem"><a href="dir_394efc67a2e5bf4097a78e7b2ce4a5dc.html">Control_Driver</a></li><li class="navelem"><a href="dir_5a99e60e144967bbc36487d27c056a1d.html">FFT</a></li><li class="navelem"><a href="dir_6dfd9d3abf76c805c78960a2d43de4e0.html">dsp_lib</a></li><li class="navelem"><a href="dir_d2622470dea13b73db8b6e0bf9749329.html">win</a></li><li class="navelem"><a href="fpu__filter_8h.html">fpu_filter.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

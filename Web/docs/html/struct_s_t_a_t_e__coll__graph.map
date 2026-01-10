@@ -1,0 +1,11 @@
+<map id="STATE" name="STATE">
+<area shape="rect" id="Node000001" title="全局状态机" alt="" coords="68,203,130,229"/>
+<area shape="rect" id="Node000002" href="$union_f_l_a_g.html" title="标志位打包" alt="" coords="21,104,76,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,146,50,162,55,177,65,190,77,200,74,204,61,194,50,180,45,163,43,146"/>
+<area shape="rect" id="Node000003" href="$struct_f_l_a_g___b_i_t.html" title="全局标志位, 共计16位" alt="" coords="5,5,89,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="50,48,51,104,45,104,45,48"/>
+<area shape="rect" id="Node000004" href="$union_k_e_y.html" title="按键驱动打包" alt="" coords="127,104,175,131"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,146,124,180,110,204,105,201,119,177,137,144"/>
+<area shape="rect" id="Node000005" href="$struct_k_e_y___b_i_t.html" title="边沿触发型按键驱动" alt="" coords="113,5,189,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="154,48,154,104,148,104,148,48"/>
+</map>

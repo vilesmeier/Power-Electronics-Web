@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['s_0',['S',['../struct_p_o_w_e_r__3_p_h.html#a000eccc97a80cf21ae0b3593c25accc0',1,'POWER_3PH']]],
+  ['sample_5fnum_1',['sample_num',['../struct_p_o_w_e_r__3_p_h.html#a785361f788d4e99cef9972be83afdddd',1,'POWER_3PH']]],
+  ['samplefreq_2',['sampleFreq',['../struct_p_o_w_e_r__1_p_h.html#a3948bcdff5ab51f40654a7d3047c92f8',1,'POWER_1PH']]],
+  ['sector_3',['Sector',['../struct_s_v_p_w_m.html#ad788b5586f2098e155f1d000b7a74717',1,'SVPWM']]],
+  ['sep_4',['Sep',['../_r_f_f_t__f32__adc__win_8asm.html#a20f497a9ab0bfe02eb8675b88ff1a0e0',1,'RFFT_f32_adc_win.asm']]],
+  ['set_5',['set',['../_transfer_fun_8asm.html#a6e7a351a49fe5546a049cdcb2a8f63ee',1,'TransferFun.asm']]],
+  ['signal_5fthd_6',['Signal_THD',['../struct_r_f_f_t___analyser.html#a49ef4b5a7426e2ffcc06cd8f763fadd6',1,'RFFT_Analyser']]],
+  ['sin_7',['sin',['../struct_d_q.html#a145def2452bd485accfca0743b354596',1,'DQ']]],
+  ['sin_5f2theta_8',['sin_2theta',['../struct_d_d_s_r_f__3_p_h.html#aceb3ccf456af95825dfaf84889683d54',1,'DDSRF_3PH']]],
+  ['sine_9',['sine',['../struct_s_o_g_i__1_p_h.html#a9da44f49feda19037072dd9270d4b8b6',1,'SOGI_1PH']]],
+  ['slots_10',['slots',['../_r_f_f_t__f32__mag_8asm.html#a2757e5069465ea8b1937182a589e49df',1,'slots:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32s__mag_8asm.html#a815336f39fbf709d91965a31f320d348',1,'slots:&#160;RFFT_f32s_mag.asm']]],
+  ['sp_11',['SP',['../_transfer_fun_8asm.html#a18658ce80f0b762b7e4d761f353f4ec7',1,'TransferFun.asm']]],
+  ['spm_12',['SPM',['../_r_f_f_t__f32__adc__win_8asm.html#a20aebb4deab4ac0db96e89b3fa4d1d6b',1,'RFFT_f32_adc_win.asm']]],
+  ['sqrt_5finverse_5fnsamples_13',['sqrt_inverse_nSamples',['../struct_p_o_w_e_r__1_p_h.html#a7431c5ab045079613f280b19009565da',1,'POWER_1PH']]],
+  ['stages_14',['stages',['../_r_f_f_t__adc__f32_8asm.html#adcbc27d8418504081cf0b718cb873633',1,'stages:&#160;RFFT_adc_f32.asm'],['../_r_f_f_t__adc__f32u_8asm.html#adcbc27d8418504081cf0b718cb873633',1,'stages:&#160;RFFT_adc_f32u.asm'],['../_r_f_f_t__f32_8asm.html#adcbc27d8418504081cf0b718cb873633',1,'stages:&#160;RFFT_f32.asm'],['../_r_f_f_t__f32u_8asm.html#adcbc27d8418504081cf0b718cb873633',1,'stages:&#160;RFFT_f32u.asm']]],
+  ['state_15',['state',['../struct_v_o_f_a___d_a_t_a.html#a35bd8e70baf22c6c1afaed0037cb1c57',1,'VOFA_DATA']]],
+  ['state_5fflag_16',['state_Flag',['../struct_s_t_a_t_e.html#a69bb683d675df87f1af5f2dbe5669831',1,'STATE']]],
+  ['step_5flength_17',['step_length',['../struct_r_a_m_p.html#a75f2ac00b90671292394edc670f821a1',1,'RAMP']]],
+  ['stepfirst_18',['StepFirst',['../struct_m_p_p_t___i_n_c_c.html#a0941380d1d97d38c6fd220c74701adea',1,'MPPT_INCC::StepFirst'],['../struct_m_p_p_t___i_n_c_c___i.html#a4da60efd34b28084bb9e9616cf1bb9cc',1,'MPPT_INCC_I::StepFirst']]],
+  ['steps_19',['steps',['../_r_f_f_t__f32__adc__win_8asm.html#a0e5deab30f4ff2f45a43f9c4e8905369',1,'RFFT_f32_adc_win.asm']]],
+  ['stepsize_20',['Stepsize',['../struct_m_p_p_t___i_n_c_c.html#a4a52ddcb71a2885c655d8325eb8f0cca',1,'MPPT_INCC::Stepsize'],['../struct_m_p_p_t___i_n_c_c___i.html#affbc18d5a6a3f3f4328dab562b7031ab',1,'MPPT_INCC_I::Stepsize'],['../struct_m_p_p_t___p_n_o.html#adf5c3f50a431a9384fd1979c96cb6014',1,'MPPT_PNO::Stepsize']]]
+];

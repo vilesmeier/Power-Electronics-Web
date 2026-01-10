@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC_Core/Code/Control_Driver/FFT/dsp_lib/win/fpu_fft_rect.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('fpu__fft__rect_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fpu_fft_rect.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="fpu__fft__rect_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:abd0411861de594f6a92cb57cd8ca4d03" id="r_abd0411861de594f6a92cb57cd8ca4d03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd0411861de594f6a92cb57cd8ca4d03">RECT32</a></td></tr>
+<tr class="memitem:ae33e672f10119430f2bbbeaf2e207a0c" id="r_ae33e672f10119430f2bbbeaf2e207a0c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae33e672f10119430f2bbbeaf2e207a0c">RECT64</a></td></tr>
+<tr class="memitem:acc39a72166eb8281a103844ac4fdc5d6" id="r_acc39a72166eb8281a103844ac4fdc5d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc39a72166eb8281a103844ac4fdc5d6">RECT128</a></td></tr>
+<tr class="memitem:a41f76ae40b2629dc1f3a6aa0b6b8796e" id="r_a41f76ae40b2629dc1f3a6aa0b6b8796e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41f76ae40b2629dc1f3a6aa0b6b8796e">RECT256</a></td></tr>
+<tr class="memitem:acb0199a592a0f5374f6bf2538d2ed49a" id="r_acb0199a592a0f5374f6bf2538d2ed49a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb0199a592a0f5374f6bf2538d2ed49a">RECT512</a></td></tr>
+<tr class="memitem:ab9c8b6261892f63cbdc4bcb2aa8b39a9" id="r_ab9c8b6261892f63cbdc4bcb2aa8b39a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9c8b6261892f63cbdc4bcb2aa8b39a9">RECT1024</a></td></tr>
+<tr class="memitem:abb493cf5640c4c0a3d2b69c927a512c6" id="r_abb493cf5640c4c0a3d2b69c927a512c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb493cf5640c4c0a3d2b69c927a512c6">RECT2048</a></td></tr>
+<tr class="memitem:abb41763d1b45fdf29d61a53944145b46" id="r_abb41763d1b45fdf29d61a53944145b46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb41763d1b45fdf29d61a53944145b46">RECT4096</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="ab9c8b6261892f63cbdc4bcb2aa8b39a9" name="ab9c8b6261892f63cbdc4bcb2aa8b39a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c8b6261892f63cbdc4bcb2aa8b39a9">&#9670;&#160;</a></span>RECT1024</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RECT1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__rect_8h_source.html">fpu_fft_rect.h</a> 第 <a class="el" href="fpu__fft__rect_8h_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acc39a72166eb8281a103844ac4fdc5d6" name="acc39a72166eb8281a103844ac4fdc5d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc39a72166eb8281a103844ac4fdc5d6">&#9670;&#160;</a></span>RECT128</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RECT128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__rect_8h_source.html">fpu_fft_rect.h</a> 第 <a class="el" href="fpu__fft__rect_8h_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abb493cf5640c4c0a3d2b69c927a512c6" name="abb493cf5640c4c0a3d2b69c927a512c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb493cf5640c4c0a3d2b69c927a512c6">&#9670;&#160;</a></span>RECT2048</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RECT2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__rect_8h_source.html">fpu_fft_rect.h</a> 第 <a class="el" href="fpu__fft__rect_8h_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a41f76ae40b2629dc1f3a6aa0b6b8796e" name="a41f76ae40b2629dc1f3a6aa0b6b8796e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41f76ae40b2629dc1f3a6aa0b6b8796e">&#9670;&#160;</a></span>RECT256</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RECT256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__rect_8h_source.html">fpu_fft_rect.h</a> 第 <a class="el" href="fpu__fft__rect_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abd0411861de594f6a92cb57cd8ca4d03" name="abd0411861de594f6a92cb57cd8ca4d03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd0411861de594f6a92cb57cd8ca4d03">&#9670;&#160;</a></span>RECT32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RECT32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__rect_8h_source.html">fpu_fft_rect.h</a> 第 <a class="el" href="fpu__fft__rect_8h_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abb41763d1b45fdf29d61a53944145b46" name="abb41763d1b45fdf29d61a53944145b46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb41763d1b45fdf29d61a53944145b46">&#9670;&#160;</a></span>RECT4096</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RECT4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__rect_8h_source.html">fpu_fft_rect.h</a> 第 <a class="el" href="fpu__fft__rect_8h_source.html#l00431">431</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acb0199a592a0f5374f6bf2538d2ed49a" name="acb0199a592a0f5374f6bf2538d2ed49a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb0199a592a0f5374f6bf2538d2ed49a">&#9670;&#160;</a></span>RECT512</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RECT512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__rect_8h_source.html">fpu_fft_rect.h</a> 第 <a class="el" href="fpu__fft__rect_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae33e672f10119430f2bbbeaf2e207a0c" name="ae33e672f10119430f2bbbeaf2e207a0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae33e672f10119430f2bbbeaf2e207a0c">&#9670;&#160;</a></span>RECT64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RECT64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, 1.00000000, 1.00000000, 1.00000000, \</div>
+<div class="line">1.00000000, 1.00000000, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__rect_8h_source.html">fpu_fft_rect.h</a> 第 <a class="el" href="fpu__fft__rect_8h_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_96bdd7f67e65e0bcef66e25a7a540546.html">NUEDC_Core</a></li><li class="navelem"><a href="dir_549544d87b79ec47878b64312c89f956.html">Code</a></li><li class="navelem"><a href="dir_394efc67a2e5bf4097a78e7b2ce4a5dc.html">Control_Driver</a></li><li class="navelem"><a href="dir_5a99e60e144967bbc36487d27c056a1d.html">FFT</a></li><li class="navelem"><a href="dir_6dfd9d3abf76c805c78960a2d43de4e0.html">dsp_lib</a></li><li class="navelem"><a href="dir_d2622470dea13b73db8b6e0bf9749329.html">win</a></li><li class="navelem"><a href="fpu__fft__rect_8h.html">fpu_fft_rect.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

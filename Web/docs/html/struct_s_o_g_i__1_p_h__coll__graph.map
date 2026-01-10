@@ -1,0 +1,7 @@
+<map id="SOGI_1PH" name="SOGI_1PH">
+<area shape="rect" id="Node000001" title="定义SOGI&#45;单相锁相环结构体" alt="" coords="148,104,235,131"/>
+<area shape="rect" id="Node000002" href="$struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f.html" title="SOGI 单相 正交信号发生器 参数" alt="" coords="5,5,181,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,41,181,102,177,106,115,45"/>
+<area shape="rect" id="Node000003" href="$struct_s_o_g_i__1_p_h___l_p_f___c_o_e_f_f.html" title="定义SOGI内置一阶低通滤波器参数" alt="" coords="205,5,376,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="269,45,206,106,202,102,265,41"/>
+</map>

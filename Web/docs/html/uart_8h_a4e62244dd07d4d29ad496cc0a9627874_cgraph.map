@@ -1,0 +1,5 @@
+<map id="UART_ReceiveString" name="UART_ReceiveString">
+<area shape="rect" id="Node000001" title="get data from rxfifo" alt="" coords="5,5,152,32"/>
+<area shape="rect" id="Node000002" href="$uart_8c.html#a82e92c56017c6ef93fc5098c3227306c" title="receive data from UART" alt="" coords="200,5,340,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,16,184,16,184,21,152,21"/>
+</map>

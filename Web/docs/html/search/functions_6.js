@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['fft_0',['FFT',['../_r_f_f_t__f32__adc__win_8asm.html#a65734f42b93781061948b45d674b6f6b',1,'FFT(ADC input) Windowing Function:&#160;RFFT_f32_adc_win.asm'],['../_r_f_f_t__f32u_8asm.html#aa8b679f21919659966b582c169fb9d8a',1,'FFT(Unaligned):&#160;RFFT_f32u.asm']]],
+  ['fftsize_1',['FFTSize',['../_r_f_f_t__adc__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd',1,'FFTSize(i.e. if FFTSize=1024, Repeat=128 times):&#160;RFFT_adc_f32.asm'],['../_r_f_f_t__adc__f32u_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd',1,'FFTSize(i.e. if FFTSize=1024, Repeat=128 times):&#160;RFFT_adc_f32u.asm'],['../_r_f_f_t__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd',1,'FFTSize(i.e. if FFTSize=1024, Repeat=128 times):&#160;RFFT_f32.asm'],['../_r_f_f_t__f32u_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd',1,'FFTSize(i.e. if FFTSize=1024, Repeat=128 times):&#160;RFFT_f32u.asm']]],
+  ['filter_5finit_2',['Filter_Init',['../filter_8c.html#a6bf8811531a98a51e7a794c2a27c0b04',1,'Filter_Init(FILTER *fil):&#160;filter.c'],['../filter_8h.html#a6bf8811531a98a51e7a794c2a27c0b04',1,'Filter_Init(FILTER *fil):&#160;filter.c']]],
+  ['filter_5frun_3',['Filter_Run',['../filter_8c.html#a4cfa9560b200b52280bc1e06532289ee',1,'Filter_Run(FILTER *fil, float32_t input):&#160;filter.c'],['../filter_8h.html#a4cfa9560b200b52280bc1e06532289ee',1,'Filter_Run(FILTER *fil, float32_t input):&#160;filter.c']]],
+  ['filter_5fset_4',['Filter_Set',['../filter_8c.html#aeb072f0b39f2c1c227d2f9a14de3f56b',1,'Filter_Set(FILTER *fil, FilterType type, float32_t wc, float32_t damp, float32_t isr_freq):&#160;filter.c'],['../filter_8h.html#aeb072f0b39f2c1c227d2f9a14de3f56b',1,'Filter_Set(FILTER *fil, FilterType type, float32_t wc, float32_t damp, float32_t isr_freq):&#160;filter.c']]],
+  ['fir_5ff32_5fcalc_5',['FIR_f32_calc',['../fpu__filter_8h.html#a98c7b0c7adf5b8f06278e9b998f42f38',1,'fpu_filter.h']]],
+  ['fir_5ff32_5fgetcalcfunction_6',['FIR_f32_getCalcFunction',['../fpu__filter_8h.html#a4ce49175ef8f72c597f4a7b05bbcb57e',1,'fpu_filter.h']]],
+  ['fir_5ff32_5fgetcoefficientsptr_7',['FIR_f32_getCoefficientsPtr',['../fpu__filter_8h.html#af6dbe17335070c15d50ed1766f8c6875',1,'fpu_filter.h']]],
+  ['fir_5ff32_5fgetdelaylineptr_8',['FIR_f32_getDelayLinePtr',['../fpu__filter_8h.html#a52812cf8024e656beb1513adff100b36',1,'fpu_filter.h']]],
+  ['fir_5ff32_5fgetinitfunction_9',['FIR_f32_getInitFunction',['../fpu__filter_8h.html#a012efcbc7a253ee80fcc41655ce59061',1,'fpu_filter.h']]],
+  ['fir_5ff32_5fgetinput_10',['FIR_f32_getInput',['../fpu__filter_8h.html#a06be3827cc5a07d1df1ef8d8534403d6',1,'fpu_filter.h']]],
+  ['fir_5ff32_5fgetorder_11',['FIR_f32_getOrder',['../fpu__filter_8h.html#a41d08dccd66df4a28b0ba12e7b89c228',1,'fpu_filter.h']]],
+  ['fir_5ff32_5fgetoutput_12',['FIR_f32_getOutput',['../fpu__filter_8h.html#af4c5c9886092ca8a8d0734c97879fc53',1,'fpu_filter.h']]],
+  ['fir_5ff32_5finit_13',['FIR_f32_init',['../fpu__filter_8h.html#a1a053927c3b86c878392a84b1a0e73ca',1,'fpu_filter.h']]],
+  ['fir_5ff32_5fsetcalcfunction_14',['FIR_f32_setCalcFunction',['../fpu__filter_8h.html#a31bc14bf5d435a72a971393d04c0faa3',1,'fpu_filter.h']]],
+  ['fir_5ff32_5fsetcoefficientsptr_15',['FIR_f32_setCoefficientsPtr',['../fpu__filter_8h.html#abbb5b62177b0f9a5626c70a445bd74dd',1,'fpu_filter.h']]],
+  ['fir_5ff32_5fsetdelaylineptr_16',['FIR_f32_setDelayLinePtr',['../fpu__filter_8h.html#a7ca1a6a70367f45184faee05264b4516',1,'fpu_filter.h']]],
+  ['fir_5ff32_5fsetinitfunction_17',['FIR_f32_setInitFunction',['../fpu__filter_8h.html#ab1b66e745c92c76eb9f79d84f3be5be2',1,'fpu_filter.h']]],
+  ['fir_5ff32_5fsetinput_18',['FIR_f32_setInput',['../fpu__filter_8h.html#a265afda13f4dc6ba5935a3a854827140',1,'fpu_filter.h']]],
+  ['fir_5ff32_5fsetorder_19',['FIR_f32_setOrder',['../fpu__filter_8h.html#ade5562a5b65560106b174da71ac20713',1,'fpu_filter.h']]],
+  ['fir_5ff32_5fsetoutput_20',['FIR_f32_setOutput',['../fpu__filter_8h.html#a9000258986a557dfac32ca11d76c962f',1,'fpu_filter.h']]],
+  ['function_21',['function',['../_r_f_f_t__f32__mag_8asm.html#ae482b9b96d3be183df01bcac5dfa08e0',1,'function(D. Alter):&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32s__mag_8asm.html#ae482b9b96d3be183df01bcac5dfa08e0',1,'function(D. Alter):&#160;RFFT_f32s_mag.asm']]]
+];
