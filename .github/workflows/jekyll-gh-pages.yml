@@ -18,7 +18,7 @@ jobs:
     - name: Checkout NUEDC
       uses: actions/checkout@v4
       with:
-        submodules: true  # 如果 Core 是 submodule，需要拉取
+        submodules: true  
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -36,8 +36,6 @@ jobs:
 
     - name: Generate Doxygen
       run: |
-        # 假设私有 Core 在 NUEDC/Core 子目录
-        # Doxyfile 输出到 docs/api
         doxygen Core/Doxyfile
 
     - name: Build and Deploy MkDocs
