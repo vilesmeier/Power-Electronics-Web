@@ -1,4 +1,4 @@
 [submodule "NUEDC-Core"]
 	path = NUEDC-Core
 	url = git@github.com:vilesmeier/NUEDC-Core.git
-	update = none
+	# update = none
