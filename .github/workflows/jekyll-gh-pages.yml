@@ -39,5 +39,4 @@ jobs:
         doxygen Doxyfile
 
     - name: Build and Deploy MkDocs
-      working-directory: Web
       run: mkdocs gh-deploy --force
