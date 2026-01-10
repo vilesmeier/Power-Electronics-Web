@@ -39,19 +39,17 @@ jobs:
           --site-dir site
 
     # 4. 发布到 gh-pages（完全覆盖）
-    - name: Deploy to gh-pages
+    - name: Deploy to gh-pages (partial)
       run: |
         git config user.name "github-actions"
         git config user.email "actions@github.com"
 
-        git fetch origin gh-pages || true
-        git checkout gh-pages || git checkout --orphan gh-pages
-        git rm -rf .
+        git fetch origin gh-pages
+        git checkout gh-pages
 
-        cp -r site/* .
         touch .nojekyll
 
-        git add .
-        git commit -m "Deploy site" || echo "No changes"
-        git push origin gh-pages --force
+        git add docs .nojekyll
+        git commit -m "Update MkDocs site" || echo "No changes"
+        git push origin gh-pages
 
