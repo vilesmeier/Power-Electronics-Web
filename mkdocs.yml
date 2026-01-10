@@ -2,7 +2,7 @@ site_name: NUEDC电力电子方向备赛资料
 
 repo_name: GitHub
 repo_url: https://github.com/vilesmeier/NUEDC
-edit_uri: root/Web/docs
+edit_uri: root/docs
 
 theme:
   name: material
