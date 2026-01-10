@@ -36,7 +36,7 @@ jobs:
 
     - name: Generate Doxygen
       run: |
-        doxygen Web/Doxyfile
+        doxygen Doxyfile
 
     - name: Build and Deploy MkDocs
       working-directory: Web
