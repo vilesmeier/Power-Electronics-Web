@@ -1,5 +1,0 @@
-<map id="OLED_Clear" name="OLED_Clear">
-<area shape="rect" id="Node000001" title="将OLED显存数组全部清零" alt="" coords="5,5,101,32"/>
-<area shape="rect" id="Node000002" href="$_peripheral___driver_228335_2_o_l_e_d_2oled_8c.html#a5afff1be901cd9738f1c9652a0676f62" title="send data ot screen" alt="" coords="149,5,228,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,16,133,16,133,21,101,21"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="LCD_Init" name="LCD_Init">
-<area shape="rect" id="Node000001" title="init screen" alt="" coords="5,56,79,83"/>
-<area shape="rect" id="Node000002" href="$_l_c_d___s_t7735_s_8c.html#ace1079bba7113da93a044cf179aa34d2" title="init GPIO" alt="" coords="147,5,230,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,54,133,35,134,40,80,59"/>
-<area shape="rect" id="Node000003" href="$_l_c_d___s_t7735_s_8c.html#a71f317c08f5a4fd34f4e66b7413e0381" title="select register" alt="" coords="127,56,251,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="79,67,111,67,111,72,79,72"/>
-<area shape="rect" id="Node000004" href="$_l_c_d___s_t7735_s_8c.html#a4c41fe8c154e5beccd73c8b5042f497f" title="write 8&#45;bit data" alt="" coords="132,107,246,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="80,79,134,99,133,104,78,84"/>
-</map>

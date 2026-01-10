@@ -1,8 +1,0 @@
-<map id="OLED_ShowChar" name="OLED_ShowChar">
-<area shape="rect" id="Node000001" title="display a char" alt="" coords="5,31,131,57"/>
-<area shape="rect" id="Node000002" href="$_peripheral___driver_228335_2_o_l_e_d_2oled_8c.html#aa14bb13c0cd2c797c9974b82ce0df267" title="set courser position" alt="" coords="179,5,293,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,32,163,27,164,32,132,37"/>
-<area shape="rect" id="Node000003" href="$_peripheral___driver_228335_2_o_l_e_d_2oled_8c.html#a5afff1be901cd9738f1c9652a0676f62" title="send data ot screen" alt="" coords="341,31,420,57"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="131,41,325,41,325,47,131,47"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,26,326,32,325,37,293,31"/>
-</map>
