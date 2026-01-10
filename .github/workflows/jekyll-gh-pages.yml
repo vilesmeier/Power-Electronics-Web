@@ -20,19 +20,27 @@ jobs:
       with:
         submodules: true
 
+    - name: Setup SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.NUEDC_CORE_SSH_KEY }}" > ~/.ssh/id_ed25519
+        chmod 600 ~/.ssh/id_ed25519
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+    - name: Checkout NUEDC-Core
+      run: |
+        git clone git@github.com:vilesmeier/NUEDC-Core.git NUEDC-Core
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.x'
 
-    - name: Install MkDocs
-      run: |
-        pip install mkdocs mkdocs-material
-
-    - name: Install Doxygen
+    - name: Install Doxygen MkDocs
       run: |
         sudo apt-get update
         sudo apt-get install -y doxygen graphviz
+        pip install mkdocs mkdocs-material
 
     - name: Generate Doxygen
       run: |
