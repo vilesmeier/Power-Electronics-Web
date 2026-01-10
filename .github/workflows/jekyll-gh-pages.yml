@@ -1,4 +1,4 @@
-name: Build and Deploy MkDocs
+name: Build and Deploy (full overwrite)
 
 on:
   push:
@@ -15,13 +15,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # 1. Checkout 源分支（main 或 api-docs）
     - name: Checkout source
       uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
 
-    # 2. Python 环境
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
@@ -31,25 +27,23 @@ jobs:
       run: |
         pip install mkdocs mkdocs-material
 
-    # 3. 构建 MkDocs（注意 mkdocs.yml 在 Web/）
     - name: Build MkDocs
       run: |
         mkdocs build \
           --config-file Web/mkdocs.yml \
           --site-dir site
 
-    # 4. 发布到 gh-pages（完全覆盖）
-    - name: Deploy to gh-pages (partial)
+    - name: Deploy to gh-pages (full overwrite)
       run: |
         git config user.name "github-actions"
         git config user.email "actions@github.com"
 
-        git fetch origin gh-pages
-        git checkout gh-pages
+        git checkout --orphan gh-pages
+        git rm -rf .
 
+        cp -r site/* .
         touch .nojekyll
 
-        git add docs .nojekyll
-        git commit -m "Update MkDocs site" || echo "No changes"
-        git push origin gh-pages
-
+        git add .
+        git commit -m "Deploy site"
+        git push origin gh-pages --force
