@@ -29,14 +29,14 @@ jobs:
       run: |
         pip install mkdocs mkdocs-material
 
-    - name: Install Doxygen
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y doxygen graphviz
+    # - name: Install Doxygen
+    #   run: |
+    #     sudo apt-get update
+    #     sudo apt-get install -y doxygen graphviz
 
-    - name: Generate Doxygen
-      run: |
-        doxygen Doxyfile
+    # - name: Generate Doxygen
+    #   run: |
+    #     doxygen Doxyfile
 
     - name: Build and Deploy MkDocs
       run: mkdocs gh-deploy --force
