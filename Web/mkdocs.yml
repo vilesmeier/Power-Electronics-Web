@@ -12,7 +12,7 @@ extra_css:
 
 nav:
   - 首页: index.md
-  - /Code: html/index.html
+  - /Code: docs/index.html
   - /Datasheet: datasheet.md
   - /PCB: pcb.md
   - /Projects: project.md
