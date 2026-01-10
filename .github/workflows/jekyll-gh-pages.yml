@@ -1,4 +1,4 @@
-name: Build and Deploy MkDocs
+name: Build Doxygen + MkDocs + Deploy
 
 on:
   push:
@@ -11,14 +11,14 @@ permissions:
   contents: write
 
 jobs:
-  deploy:
+  build-docs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout source
+    - name: Checkout NUEDC
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0
+        submodules: true  # 如果 Core 是 submodule，需要拉取
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -29,11 +29,16 @@ jobs:
       run: |
         pip install mkdocs mkdocs-material
 
-    - name: Build MkDocs site
+    - name: Install Doxygen
       run: |
-        mkdocs build \
-          --config-file Web/mkdocs.yml \
-          --site-dir site
+        sudo apt-get update
+        sudo apt-get install -y doxygen graphviz
+
+    - name: Generate Doxygen
+      run: |
+        # 假设私有 Core 在 NUEDC/Core 子目录
+        # Doxyfile 输出到 docs/api
+        doxygen Core/Doxyfile
 
     - name: Build and Deploy MkDocs
       working-directory: Web
