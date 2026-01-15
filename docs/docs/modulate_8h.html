@@ -136,32 +136,30 @@ modulate.h 的引用(Include)关系图:</div>
 <tr class="memitem:a949d1486d9ae2ea4797d744850b93002" id="r_a949d1486d9ae2ea4797d744850b93002"><td class="memItemLeft" align="right" valign="top">typedef struct MOD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a949d1486d9ae2ea4797d744850b93002">MOD</a></td></tr>
 <tr class="memdesc:a949d1486d9ae2ea4797d744850b93002"><td class="mdescLeft">&#160;</td><td class="mdescRight">调制器结构体定义  <br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
-枚举</h2></td></tr>
-<tr class="memitem:aa711c7be5b142535583a1841942a8eed" id="r_aa711c7be5b142535583a1841942a8eed"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa711c7be5b142535583a1841942a8eed">ModType</a> { <br />
-&#160;&#160;<a class="el" href="#aa711c7be5b142535583a1841942a8eedac66edaee4736a93612f465c6ca34fe06">MOD_NULL</a> = 0U
-, <a class="el" href="#aa711c7be5b142535583a1841942a8eeda86a977d3a8f91d516f8be6b06b82cef4">BIPOLAR</a> = 1U
-, <a class="el" href="#aa711c7be5b142535583a1841942a8eedae38b3cf708e767fc2df786e2d2532c7c">UNIPOLAR_DOUBLE_FREQ</a> = 2U
-, <a class="el" href="#aa711c7be5b142535583a1841942a8eedaaa4f9989908bde8e49cacc0f3d8d637a">SPWM_3PH</a> = 3U
-, <br />
-&#160;&#160;<a class="el" href="#aa711c7be5b142535583a1841942a8eeda58b05c57643ed7237595ce0c390a51e8">SVPWM</a> = 4U
-, <a class="el" href="#aa711c7be5b142535583a1841942a8eedaed647f4c7add1386359d6def4edb0917">DPWM_1</a> = 5U
-, <a class="el" href="#aa711c7be5b142535583a1841942a8eedaab01ec6400ba87f114a5a651242c61e7">DPWM_MAX</a> = 6U
-, <a class="el" href="#aa711c7be5b142535583a1841942a8eedad7390ac50996b9acc1b7176a12908ce2">DPWM_MIN</a> = 7U
-, <br />
-&#160;&#160;<a class="el" href="#aa711c7be5b142535583a1841942a8eedacad738adf9adfa64365e5c6b30f049bd">GDPWM</a> = 8U
-<br />
- }</td></tr>
-<tr class="memdesc:aa711c7be5b142535583a1841942a8eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">调制器类型定义  <a href="#aa711c7be5b142535583a1841942a8eed">更多...</a><br /></td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
 <tr class="memitem:a996f9b6a559031309fa6639bddf1b852" id="r_a996f9b6a559031309fa6639bddf1b852"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a996f9b6a559031309fa6639bddf1b852">Modulate_Init</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod)</td></tr>
 <tr class="memdesc:a996f9b6a559031309fa6639bddf1b852"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
-<tr class="memitem:a2cb4413f0dc84f786da0eade47d3207f" id="r_a2cb4413f0dc84f786da0eade47d3207f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cb4413f0dc84f786da0eade47d3207f">Modulate_Set</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, <a class="el" href="#aa711c7be5b142535583a1841942a8eed">ModType</a> type, uint16_t tbprd)</td></tr>
-<tr class="memdesc:a2cb4413f0dc84f786da0eade47d3207f"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体配置  <br /></td></tr>
-<tr class="memitem:a71005631482793cfed01e1fc452d1135" id="r_a71005631482793cfed01e1fc452d1135"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71005631482793cfed01e1fc452d1135">Modulate_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, float32_t ua, float32_t ub, float32_t uc, float32_t pf_angle)</td></tr>
-<tr class="memdesc:a71005631482793cfed01e1fc452d1135"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行调制与PWM发波, 需要手动更新到ePWM的COMP寄存器  <br /></td></tr>
+<tr class="memitem:a7ec773e0dd3b93e350d1f4b3c9932813" id="r_a7ec773e0dd3b93e350d1f4b3c9932813"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ec773e0dd3b93e350d1f4b3c9932813">Modulate_Set</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, uint16_t tbprd)</td></tr>
+<tr class="memdesc:a7ec773e0dd3b93e350d1f4b3c9932813"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置调制器的TBPRD寄存器值, 用于计算COMP寄存器值  <br /></td></tr>
+<tr class="memitem:ab63b4a5468af7691b623930d5dae1009" id="r_ab63b4a5468af7691b623930d5dae1009"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab63b4a5468af7691b623930d5dae1009">Modulate_Bipolar_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, float32_t ua)</td></tr>
+<tr class="memdesc:ab63b4a5468af7691b623930d5dae1009"><td class="mdescLeft">&#160;</td><td class="mdescRight">双极性调制  <br /></td></tr>
+<tr class="memitem:a16efd57f27f25829b5ceadbf180b1dde" id="r_a16efd57f27f25829b5ceadbf180b1dde"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16efd57f27f25829b5ceadbf180b1dde">Modulate_Unipolar_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, float32_t ua)</td></tr>
+<tr class="memdesc:a16efd57f27f25829b5ceadbf180b1dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">单极性调制  <br /></td></tr>
+<tr class="memitem:a43426a9d8c7c9d8b024415a0b2f912e7" id="r_a43426a9d8c7c9d8b024415a0b2f912e7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43426a9d8c7c9d8b024415a0b2f912e7">Modulate_Unipolar_DoubleFreq_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, float32_t ua)</td></tr>
+<tr class="memdesc:a43426a9d8c7c9d8b024415a0b2f912e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">单极性倍频调制  <br /></td></tr>
+<tr class="memitem:a0c51eea0d414fcbcdb8632a9a18b29e5" id="r_a0c51eea0d414fcbcdb8632a9a18b29e5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c51eea0d414fcbcdb8632a9a18b29e5">Modulate_SPWM_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, float32_t ua, float32_t ub, float32_t uc)</td></tr>
+<tr class="memdesc:a0c51eea0d414fcbcdb8632a9a18b29e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">三相SPWM调制  <br /></td></tr>
+<tr class="memitem:abffdc55b3324200eaf48fa31f17eb65a" id="r_abffdc55b3324200eaf48fa31f17eb65a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abffdc55b3324200eaf48fa31f17eb65a">Modulate_SVPWM_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, float32_t ua, float32_t ub, float32_t uc)</td></tr>
+<tr class="memdesc:abffdc55b3324200eaf48fa31f17eb65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SVPWM调制  <br /></td></tr>
+<tr class="memitem:a10dcc11acc0ba8bca1cd5f1a91d20549" id="r_a10dcc11acc0ba8bca1cd5f1a91d20549"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10dcc11acc0ba8bca1cd5f1a91d20549">Modulate_DPWM1_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, float32_t ua, float32_t ub, float32_t uc)</td></tr>
+<tr class="memdesc:a10dcc11acc0ba8bca1cd5f1a91d20549"><td class="mdescLeft">&#160;</td><td class="mdescRight">DPWM-1调制  <br /></td></tr>
+<tr class="memitem:ac275ed2324b92a837086f1cb2fa564bf" id="r_ac275ed2324b92a837086f1cb2fa564bf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac275ed2324b92a837086f1cb2fa564bf">Modulate_DPWMMax_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, float32_t ua, float32_t ub, float32_t uc)</td></tr>
+<tr class="memdesc:ac275ed2324b92a837086f1cb2fa564bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">DPWM-Max调制  <br /></td></tr>
+<tr class="memitem:af9ef4575568028ab2d5bbb89407f5f82" id="r_af9ef4575568028ab2d5bbb89407f5f82"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9ef4575568028ab2d5bbb89407f5f82">Modulate_DPWMMin_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, float32_t ua, float32_t ub, float32_t uc)</td></tr>
+<tr class="memdesc:af9ef4575568028ab2d5bbb89407f5f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">DPWM-Min调制  <br /></td></tr>
+<tr class="memitem:ac663e42bb9b07f2c2c414d8be8f9b8a0" id="r_ac663e42bb9b07f2c2c414d8be8f9b8a0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac663e42bb9b07f2c2c414d8be8f9b8a0">Modulate_GDPWM_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, float32_t ua, float32_t ub, float32_t uc, float32_t pf_angle)</td></tr>
+<tr class="memdesc:ac663e42bb9b07f2c2c414d8be8f9b8a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">GDPWM调制  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>调制函数声明 </p>
@@ -191,82 +189,214 @@ modulate.h 的引用(Include)关系图:</div>
 
 </div>
 </div>
-<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">枚举类型说明</h2>
-<a id="aa711c7be5b142535583a1841942a8eed" name="aa711c7be5b142535583a1841942a8eed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa711c7be5b142535583a1841942a8eed">&#9670;&#160;</a></span>ModType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#aa711c7be5b142535583a1841942a8eed">ModType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>调制器类型定义 </p>
-<dl class="section note"><dt>注解</dt><dd>三相调制均使用三次谐波注入法 </dd></dl>
-<table class="fieldtable">
-<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="aa711c7be5b142535583a1841942a8eedac66edaee4736a93612f465c6ca34fe06" name="aa711c7be5b142535583a1841942a8eedac66edaee4736a93612f465c6ca34fe06"></a>MOD_NULL&#160;</td><td class="fielddoc"><p>初始化默认值, 未配置时为 NULL 类型 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa711c7be5b142535583a1841942a8eeda86a977d3a8f91d516f8be6b06b82cef4" name="aa711c7be5b142535583a1841942a8eeda86a977d3a8f91d516f8be6b06b82cef4"></a>BIPOLAR&#160;</td><td class="fielddoc"><p>双极性SPWM调制 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa711c7be5b142535583a1841942a8eedae38b3cf708e767fc2df786e2d2532c7c" name="aa711c7be5b142535583a1841942a8eedae38b3cf708e767fc2df786e2d2532c7c"></a>UNIPOLAR_DOUBLE_FREQ&#160;</td><td class="fielddoc"><p>单极性倍频SPWM调制 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa711c7be5b142535583a1841942a8eedaaa4f9989908bde8e49cacc0f3d8d637a" name="aa711c7be5b142535583a1841942a8eedaaa4f9989908bde8e49cacc0f3d8d637a"></a>SPWM_3PH&#160;</td><td class="fielddoc"><p>三相SPWM调制 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa711c7be5b142535583a1841942a8eeda58b05c57643ed7237595ce0c390a51e8" name="aa711c7be5b142535583a1841942a8eeda58b05c57643ed7237595ce0c390a51e8"></a>SVPWM&#160;</td><td class="fielddoc"><p>SVPWM调制 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa711c7be5b142535583a1841942a8eedaed647f4c7add1386359d6def4edb0917" name="aa711c7be5b142535583a1841942a8eedaed647f4c7add1386359d6def4edb0917"></a>DPWM_1&#160;</td><td class="fielddoc"><p>DPWM-1调制 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa711c7be5b142535583a1841942a8eedaab01ec6400ba87f114a5a651242c61e7" name="aa711c7be5b142535583a1841942a8eedaab01ec6400ba87f114a5a651242c61e7"></a>DPWM_MAX&#160;</td><td class="fielddoc"><p>DPWM-MAX调制 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa711c7be5b142535583a1841942a8eedad7390ac50996b9acc1b7176a12908ce2" name="aa711c7be5b142535583a1841942a8eedad7390ac50996b9acc1b7176a12908ce2"></a>DPWM_MIN&#160;</td><td class="fielddoc"><p>DPWM-MIN调制 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa711c7be5b142535583a1841942a8eedacad738adf9adfa64365e5c6b30f049bd" name="aa711c7be5b142535583a1841942a8eedacad738adf9adfa64365e5c6b30f049bd"></a>GDPWM&#160;</td><td class="fielddoc"><p>通用DPWM调制 </p>
-</td></tr>
-</table>
-
-<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00025">25</a> 行定义.</p>
-
-</div>
-</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
-<a id="a996f9b6a559031309fa6639bddf1b852" name="a996f9b6a559031309fa6639bddf1b852"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a996f9b6a559031309fa6639bddf1b852">&#9670;&#160;</a></span>Modulate_Init()</h2>
+<a id="ab63b4a5468af7691b623930d5dae1009" name="ab63b4a5468af7691b623930d5dae1009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab63b4a5468af7691b623930d5dae1009">&#9670;&#160;</a></span>Modulate_Bipolar_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Modulate_Init </td>
+          <td class="memname">void Modulate_Bipolar_Run </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>结构体初始化 </p>
+<p>双极性调制 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">mod</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">ua</td><td>调制波 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8c_source.html">modulate.c</a> 第 <a class="el" href="modulate_8c_source.html#l00010">10</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00056">56</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a71005631482793cfed01e1fc452d1135" name="a71005631482793cfed01e1fc452d1135"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71005631482793cfed01e1fc452d1135">&#9670;&#160;</a></span>Modulate_Run()</h2>
+<a id="a10dcc11acc0ba8bca1cd5f1a91d20549" name="a10dcc11acc0ba8bca1cd5f1a91d20549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10dcc11acc0ba8bca1cd5f1a91d20549">&#9670;&#160;</a></span>Modulate_DPWM1_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Modulate_Run </td>
+          <td class="memname">void Modulate_DPWM1_Run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>DPWM-1调制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mod</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">ua</td><td>a相调制波 </td></tr>
+    <tr><td class="paramname">ub</td><td>b相调制波 </td></tr>
+    <tr><td class="paramname">uc</td><td>c相调制波 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00140">140</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac275ed2324b92a837086f1cb2fa564bf" name="ac275ed2324b92a837086f1cb2fa564bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac275ed2324b92a837086f1cb2fa564bf">&#9670;&#160;</a></span>Modulate_DPWMMax_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Modulate_DPWMMax_Run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>DPWM-Max调制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mod</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">ua</td><td>a相调制波 </td></tr>
+    <tr><td class="paramname">ub</td><td>b相调制波 </td></tr>
+    <tr><td class="paramname">uc</td><td>c相调制波 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00179">179</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af9ef4575568028ab2d5bbb89407f5f82" name="af9ef4575568028ab2d5bbb89407f5f82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ef4575568028ab2d5bbb89407f5f82">&#9670;&#160;</a></span>Modulate_DPWMMin_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Modulate_DPWMMin_Run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>DPWM-Min调制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mod</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">ua</td><td>a相调制波 </td></tr>
+    <tr><td class="paramname">ub</td><td>b相调制波 </td></tr>
+    <tr><td class="paramname">uc</td><td>c相调制波 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00210">210</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac663e42bb9b07f2c2c414d8be8f9b8a0" name="ac663e42bb9b07f2c2c414d8be8f9b8a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac663e42bb9b07f2c2c414d8be8f9b8a0">&#9670;&#160;</a></span>Modulate_GDPWM_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Modulate_GDPWM_Run </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
         </tr>
@@ -291,32 +421,60 @@ modulate.h 的引用(Include)关系图:</div>
           <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>pf_angle</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>执行调制与PWM发波, 需要手动更新到ePWM的COMP寄存器 </p>
-<dl class="section warning"><dt>警告</dt><dd><ul>
-<li>在Mod_type为MOD_NULL时, COMP寄存器更新为 TBPRF/2</li>
-<li>调制数据范围[-1.0f, 1.0f], 需要预先经过归一化</li>
-<li>功率因数角范围：[-pi/6,pi/6] </li>
-</ul>
-</dd></dl>
+<p>GDPWM调制 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">mod</td><td>结构体指针 </td></tr>
-    <tr><td class="paramname">ua</td><td>A相数据(三相), 调制数据(单相) </td></tr>
-    <tr><td class="paramname">ub</td><td>B相数据(三相), 单相下无意义 </td></tr>
-    <tr><td class="paramname">uc</td><td>C相数据(三相), 单相下无意义 </td></tr>
-    <tr><td class="paramname">pf_angle</td><td>功率因数角, 弧度制, 只有GDPWM时有意义, 其余调制方式无意义 </td></tr>
+    <tr><td class="paramname">ua</td><td>a相调制波 </td></tr>
+    <tr><td class="paramname">ub</td><td>b相调制波 </td></tr>
+    <tr><td class="paramname">uc</td><td>c相调制波 </td></tr>
+    <tr><td class="paramname">pf_angle</td><td>功率因数角, 单位: 弧度</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section warning"><dt>警告</dt><dd>功率因数角范围:[-pi/6 - pi/6] </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8c_source.html">modulate.c</a> 第 <a class="el" href="modulate_8c_source.html#l00028">28</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00243">243</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a2cb4413f0dc84f786da0eade47d3207f" name="a2cb4413f0dc84f786da0eade47d3207f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cb4413f0dc84f786da0eade47d3207f">&#9670;&#160;</a></span>Modulate_Set()</h2>
+<a id="a996f9b6a559031309fa6639bddf1b852" name="a996f9b6a559031309fa6639bddf1b852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996f9b6a559031309fa6639bddf1b852">&#9670;&#160;</a></span>Modulate_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Modulate_Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>结构体初始化 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mod</td><td>结构体指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>结构体初始化 </p>
+
+<p class="definition">在文件 <a class="el" href="modulate_8c_source.html">modulate.c</a> 第 <a class="el" href="modulate_8c_source.html#l00019">19</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7ec773e0dd3b93e350d1f4b3c9932813" name="a7ec773e0dd3b93e350d1f4b3c9932813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec773e0dd3b93e350d1f4b3c9932813">&#9670;&#160;</a></span>Modulate_Set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,27 +487,205 @@ modulate.h 的引用(Include)关系图:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#aa711c7be5b142535583a1841942a8eed">ModType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>tbprd</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>结构体配置 </p>
+<p>配置调制器的TBPRD寄存器值, 用于计算COMP寄存器值 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">mod</td><td>结构体指针 </td></tr>
-    <tr><td class="paramname">type</td><td>调制方式 </td></tr>
     <tr><td class="paramname">tbprd</td><td>TBPRD寄存器值 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8c_source.html">modulate.c</a> 第 <a class="el" href="modulate_8c_source.html#l00021">21</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8c_source.html">modulate.c</a> 第 <a class="el" href="modulate_8c_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0c51eea0d414fcbcdb8632a9a18b29e5" name="a0c51eea0d414fcbcdb8632a9a18b29e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c51eea0d414fcbcdb8632a9a18b29e5">&#9670;&#160;</a></span>Modulate_SPWM_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Modulate_SPWM_Run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>三相SPWM调制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mod</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">ua</td><td>a相调制波 </td></tr>
+    <tr><td class="paramname">ub</td><td>b相调制波 </td></tr>
+    <tr><td class="paramname">uc</td><td>c相调制波 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00096">96</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abffdc55b3324200eaf48fa31f17eb65a" name="abffdc55b3324200eaf48fa31f17eb65a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abffdc55b3324200eaf48fa31f17eb65a">&#9670;&#160;</a></span>Modulate_SVPWM_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Modulate_SVPWM_Run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SVPWM调制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mod</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">ua</td><td>a相调制波 </td></tr>
+    <tr><td class="paramname">ub</td><td>b相调制波 </td></tr>
+    <tr><td class="paramname">uc</td><td>c相调制波 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00112">112</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a43426a9d8c7c9d8b024415a0b2f912e7" name="a43426a9d8c7c9d8b024415a0b2f912e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43426a9d8c7c9d8b024415a0b2f912e7">&#9670;&#160;</a></span>Modulate_Unipolar_DoubleFreq_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Modulate_Unipolar_DoubleFreq_Run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>单极性倍频调制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mod</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">ua</td><td>调制波 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00081">81</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a16efd57f27f25829b5ceadbf180b1dde" name="a16efd57f27f25829b5ceadbf180b1dde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16efd57f27f25829b5ceadbf180b1dde">&#9670;&#160;</a></span>Modulate_Unipolar_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Modulate_Unipolar_Run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>单极性调制 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mod</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">ua</td><td>调制波 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00069">69</a> 行定义.</p>
 
 </div>
 </div>

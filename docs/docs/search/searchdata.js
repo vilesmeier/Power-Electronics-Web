@@ -6,8 +6,8 @@ var indexSectionsWithContent =
   3: "$abcdefiklmnoprstuvwx",
   4: "_abcdefghijklmnopqrstuvwxyz",
   5: "cdefiklmoprstv",
-  6: "cefmov",
-  7: "bcdefghlmnoprsuvwy",
+  6: "cefov",
+  7: "bcdefghlmnoprvwy",
   8: "bcfghiklmnoprstuv",
   9: "t全基开文特电相简"
 };

@@ -145,10 +145,10 @@ ramp.h 的引用(Include)关系图:</div>
 <tr class="memdesc:a3e743c6f7b3d3cace6e21e22f9722466"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
 <tr class="memitem:a2e5990d2aba3b0277df88a6bb0871b2a" id="r_a2e5990d2aba3b0277df88a6bb0871b2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e5990d2aba3b0277df88a6bb0871b2a">Ramp_Set</a> (<a class="el" href="struct_r_a_m_p.html">RAMP</a> *ramp, float32_t grad_freq, float32_t isr_freq)</td></tr>
 <tr class="memdesc:a2e5990d2aba3b0277df88a6bb0871b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">set parameters,frequent in Hz  <br /></td></tr>
-<tr class="memitem:a13ee21603380a6fc844665d60e8be737" id="r_a13ee21603380a6fc844665d60e8be737"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13ee21603380a6fc844665d60e8be737">Ramp_Run</a> (<a class="el" href="struct_r_a_m_p.html">RAMP</a> *ramp)</td></tr>
-<tr class="memdesc:a13ee21603380a6fc844665d60e8be737"><td class="mdescLeft">&#160;</td><td class="mdescRight">产生参考相位  <br /></td></tr>
-<tr class="memitem:a6eb3d271e9c058c7d450ed800ae1e89b" id="r_a6eb3d271e9c058c7d450ed800ae1e89b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6eb3d271e9c058c7d450ed800ae1e89b">Ramp_Presync</a> (<a class="el" href="struct_r_a_m_p.html">RAMP</a> *ramp, float32_t phase)</td></tr>
-<tr class="memdesc:a6eb3d271e9c058c7d450ed800ae1e89b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前相位, 用于并网预同步  <br /></td></tr>
+<tr class="memitem:ae2e0c71c0fe9a608875d295f970e9236" id="r_ae2e0c71c0fe9a608875d295f970e9236"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2e0c71c0fe9a608875d295f970e9236">Ramp_Run</a> (<a class="el" href="struct_r_a_m_p.html">RAMP</a> *ramp)</td></tr>
+<tr class="memdesc:ae2e0c71c0fe9a608875d295f970e9236"><td class="mdescLeft">&#160;</td><td class="mdescRight">产生参考相位  <br /></td></tr>
+<tr class="memitem:a0bdd6f4685504bc20e96a3dbf860b51d" id="r_a0bdd6f4685504bc20e96a3dbf860b51d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bdd6f4685504bc20e96a3dbf860b51d">Ramp_Presync</a> (<a class="el" href="struct_r_a_m_p.html">RAMP</a> *ramp, float32_t phase)</td></tr>
+<tr class="memdesc:a0bdd6f4685504bc20e96a3dbf860b51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前相位, 用于并网预同步  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>参考相位生成 函数声明 </p>
@@ -191,20 +191,24 @@ ramp.h 的引用(Include)关系图:</div>
 <p>结构体初始化 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ramp</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">ramp</td><td>结构体指针</td></tr>
   </table>
   </dd>
 </dl>
+<p>结构体初始化 </p>
 
-<p class="definition">在文件 <a class="el" href="ramp_8c_source.html">ramp.c</a> 第 <a class="el" href="ramp_8c_source.html#l00010">10</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="ramp_8c_source.html">ramp.c</a> 第 <a class="el" href="ramp_8c_source.html#l00018">18</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a6eb3d271e9c058c7d450ed800ae1e89b" name="a6eb3d271e9c058c7d450ed800ae1e89b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6eb3d271e9c058c7d450ed800ae1e89b">&#9670;&#160;</a></span>Ramp_Presync()</h2>
+<a id="a0bdd6f4685504bc20e96a3dbf860b51d" name="a0bdd6f4685504bc20e96a3dbf860b51d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bdd6f4685504bc20e96a3dbf860b51d">&#9670;&#160;</a></span>Ramp_Presync()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Ramp_Presync </td>
@@ -217,6 +221,11 @@ ramp.h 的引用(Include)关系图:</div>
           <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>phase</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>设置当前相位, 用于并网预同步 </p>
@@ -228,15 +237,18 @@ ramp.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="ramp_8c_source.html">ramp.c</a> 第 <a class="el" href="ramp_8c_source.html#l00034">34</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="ramp_8h_source.html">ramp.h</a> 第 <a class="el" href="ramp_8h_source.html#l00064">64</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a13ee21603380a6fc844665d60e8be737" name="a13ee21603380a6fc844665d60e8be737"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13ee21603380a6fc844665d60e8be737">&#9670;&#160;</a></span>Ramp_Run()</h2>
+<a id="ae2e0c71c0fe9a608875d295f970e9236" name="ae2e0c71c0fe9a608875d295f970e9236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e0c71c0fe9a608875d295f970e9236">&#9670;&#160;</a></span>Ramp_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Ramp_Run </td>
@@ -245,6 +257,11 @@ ramp.h 的引用(Include)关系图:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>产生参考相位 </p>
@@ -255,7 +272,7 @@ ramp.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="ramp_8c_source.html">ramp.c</a> 第 <a class="el" href="ramp_8c_source.html#l00025">25</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="ramp_8h_source.html">ramp.h</a> 第 <a class="el" href="ramp_8h_source.html#l00048">48</a> 行定义.</p>
 
 </div>
 </div>
@@ -293,7 +310,7 @@ ramp.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="ramp_8c_source.html">ramp.c</a> 第 <a class="el" href="ramp_8c_source.html#l00018">18</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="ramp_8c_source.html">ramp.c</a> 第 <a class="el" href="ramp_8c_source.html#l00026">26</a> 行定义.</p>
 
 </div>
 </div>

@@ -16,10 +16,9 @@ var searchData=
   ['umax_13',['Umax',['../structdcl__pi.html#a0a101ad35b271d1a013a490ab3e5122f',1,'dcl_pi::Umax'],['../_transfer_fun_8asm.html#a95d1601247f5ec3ca9d78c43f56679db',1,'Umax:&#160;TransferFun.asm']]],
   ['umin_14',['Umin',['../structdcl__pi.html#a40ecba56643e5392c7ea2e0c18b1454b',1,'dcl_pi::Umin'],['../_transfer_fun_8asm.html#aadac943c15058f072d200a1ac173d9b4',1,'Umin:&#160;TransferFun.asm']]],
   ['unc_15',['UNC',['../_transfer_fun_8asm.html#a274db5c5bd1229fd97d76a0048981c44',1,'TransferFun.asm']]],
-  ['unipolar_5fdouble_5ffreq_16',['UNIPOLAR_DOUBLE_FREQ',['../modulate_8h.html#aa711c7be5b142535583a1841942a8eedae38b3cf708e767fc2df786e2d2532c7c',1,'modulate.h']]],
-  ['unrolled_17',['unrolled',['../_r_f_f_t__f32__mag_8asm.html#a338f6677e220d3685c9ece097793a7e5',1,'RFFT_f32_mag.asm']]],
-  ['up_18',['up',['../_r_f_f_t__adc__f32_8asm.html#a712fcebcdf8a02f91f3c2c599f5ea5d2',1,'up:&#160;RFFT_adc_f32.asm'],['../_r_f_f_t__adc__f32u_8asm.html#a712fcebcdf8a02f91f3c2c599f5ea5d2',1,'up:&#160;RFFT_adc_f32u.asm'],['../_r_f_f_t__f32_8asm.html#a712fcebcdf8a02f91f3c2c599f5ea5d2',1,'up:&#160;RFFT_f32.asm'],['../_r_f_f_t__f32u_8asm.html#a712fcebcdf8a02f91f3c2c599f5ea5d2',1,'up:&#160;RFFT_f32u.asm']]],
-  ['usage_19',['Usage',['../_r_f_f_t__f32__adc__win_8asm.html#a698bdc0e319abc6f495b4c8830e8c2dc',1,'RFFT_f32_adc_win.asm']]],
-  ['use_5flegacy_5fnames_20',['USE_LEGACY_NAMES',['../fpu__types_8h.html#a5e488e682033365f0f7a9a2ae7c67622',1,'fpu_types.h']]],
-  ['used_5fchannel_5fmax_21',['used_channel_max',['../struct_v_o_f_a___d_a_t_a.html#afdc56c7fb17e9a3f54a81b34d82a307d',1,'VOFA_DATA']]]
+  ['unrolled_16',['unrolled',['../_r_f_f_t__f32__mag_8asm.html#a338f6677e220d3685c9ece097793a7e5',1,'RFFT_f32_mag.asm']]],
+  ['up_17',['up',['../_r_f_f_t__adc__f32_8asm.html#a712fcebcdf8a02f91f3c2c599f5ea5d2',1,'up:&#160;RFFT_adc_f32.asm'],['../_r_f_f_t__adc__f32u_8asm.html#a712fcebcdf8a02f91f3c2c599f5ea5d2',1,'up:&#160;RFFT_adc_f32u.asm'],['../_r_f_f_t__f32_8asm.html#a712fcebcdf8a02f91f3c2c599f5ea5d2',1,'up:&#160;RFFT_f32.asm'],['../_r_f_f_t__f32u_8asm.html#a712fcebcdf8a02f91f3c2c599f5ea5d2',1,'up:&#160;RFFT_f32u.asm']]],
+  ['usage_18',['Usage',['../_r_f_f_t__f32__adc__win_8asm.html#a698bdc0e319abc6f495b4c8830e8c2dc',1,'RFFT_f32_adc_win.asm']]],
+  ['use_5flegacy_5fnames_19',['USE_LEGACY_NAMES',['../fpu__types_8h.html#a5e488e682033365f0f7a9a2ae7c67622',1,'fpu_types.h']]],
+  ['used_5fchannel_5fmax_20',['used_channel_max',['../struct_v_o_f_a___d_a_t_a.html#afdc56c7fb17e9a3f54a81b34d82a307d',1,'VOFA_DATA']]]
 ];

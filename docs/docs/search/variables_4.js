@@ -16,14 +16,13 @@ var searchData=
   ['dcl_5fclamp_5frun_13',['DCL_Clamp_Run',['../_transfer_fun_8asm.html#a70046921c48604772a0c8160ef37dcca',1,'TransferFun.asm']]],
   ['dcl_5fdf22_5frun_14',['DCL_DF22_Run',['../_transfer_fun_8asm.html#a85be41f52ea5a547532f95a33309d7c7',1,'TransferFun.asm']]],
   ['dcl_5fdf23_5frun_15',['DCL_DF23_Run',['../_transfer_fun_8asm.html#ab1ae2ef78164ffb5783d368e198dfef6',1,'TransferFun.asm']]],
-  ['dclfuncs_16',['dclfuncs',['../_transfer_fun_8asm.html#abfe1cf325b5aa8746690355392eaadd1',1,'TransferFun.asm']]],
-  ['delta_5ft_17',['delta_t',['../struct_s_o_g_i__1_p_h.html#a02ee1a02a8fabc010e43199372a77ddd',1,'SOGI_1PH::delta_t'],['../struct_s_r_f__3_p_h.html#a3ec7736e531b31d141d7c8a603d2fecb',1,'SRF_3PH::delta_t'],['../struct_d_d_s_r_f__3_p_h.html#a693a8c6f6767aa439d1684220eaa87b8',1,'DDSRF_3PH::delta_t']]],
-  ['deltai_18',['DeltaI',['../struct_m_p_p_t___i_n_c_c.html#a75624ee1905add71d3f7b05bdcd166fc',1,'MPPT_INCC::DeltaI'],['../struct_m_p_p_t___i_n_c_c___i.html#a265b7b3b4d880970b450428b4e96e687',1,'MPPT_INCC_I::DeltaI']]],
-  ['deltap_19',['DeltaP',['../struct_m_p_p_t___p_n_o.html#a8677705ff20fff2e43d37f8354046b68',1,'MPPT_PNO']]],
-  ['deltapmin_20',['DeltaPmin',['../struct_m_p_p_t___p_n_o.html#a8fc80609e9c916ad30adfdca92e9b008',1,'MPPT_PNO']]],
-  ['deltav_21',['DeltaV',['../struct_m_p_p_t___i_n_c_c.html#aec7b428b3bbc594ce90ef6d0999fed90',1,'MPPT_INCC::DeltaV'],['../struct_m_p_p_t___i_n_c_c___i.html#aa7ff07413939cdaaa6dcda7b9d7f63f2',1,'MPPT_INCC_I::DeltaV']]],
-  ['done_22',['done',['../_r_f_f_t__adc__f32u_8asm.html#ad604cff3eb5d475cdc9f8eb5ab570fee',1,'done:&#160;RFFT_adc_f32u.asm'],['../_r_f_f_t__f32u_8asm.html#acb8af5d6d7315ed856ac6597a882a1b5',1,'done:&#160;RFFT_f32u.asm']]],
-  ['duty1_23',['duty1',['../struct_s_v_p_w_m.html#a88734692650ce71905abdd8c131163ad',1,'SVPWM::duty1'],['../struct_c_a_p___d_u_t_y.html#a9267e9ffebef4e2c26e6420f93a8d0d7',1,'CAP_DUTY::duty1']]],
-  ['duty2_24',['duty2',['../struct_s_v_p_w_m.html#a0853403719d045fccf8869e584ee8e1c',1,'SVPWM::duty2'],['../struct_c_a_p___d_u_t_y.html#adfaab0790a0911c2142ca9bad584de68',1,'CAP_DUTY::duty2']]],
-  ['duty3_25',['duty3',['../struct_s_v_p_w_m.html#acc0b19e70630b866801885ce1ad59890',1,'SVPWM']]]
+  ['delta_5ft_16',['delta_t',['../struct_s_o_g_i__1_p_h.html#a02ee1a02a8fabc010e43199372a77ddd',1,'SOGI_1PH::delta_t'],['../struct_s_r_f__3_p_h.html#a3ec7736e531b31d141d7c8a603d2fecb',1,'SRF_3PH::delta_t'],['../struct_d_d_s_r_f__3_p_h.html#a693a8c6f6767aa439d1684220eaa87b8',1,'DDSRF_3PH::delta_t']]],
+  ['deltai_17',['DeltaI',['../struct_m_p_p_t___i_n_c_c.html#a75624ee1905add71d3f7b05bdcd166fc',1,'MPPT_INCC::DeltaI'],['../struct_m_p_p_t___i_n_c_c___i.html#a265b7b3b4d880970b450428b4e96e687',1,'MPPT_INCC_I::DeltaI']]],
+  ['deltap_18',['DeltaP',['../struct_m_p_p_t___p_n_o.html#a8677705ff20fff2e43d37f8354046b68',1,'MPPT_PNO']]],
+  ['deltapmin_19',['DeltaPmin',['../struct_m_p_p_t___p_n_o.html#a8fc80609e9c916ad30adfdca92e9b008',1,'MPPT_PNO']]],
+  ['deltav_20',['DeltaV',['../struct_m_p_p_t___i_n_c_c.html#aec7b428b3bbc594ce90ef6d0999fed90',1,'MPPT_INCC::DeltaV'],['../struct_m_p_p_t___i_n_c_c___i.html#aa7ff07413939cdaaa6dcda7b9d7f63f2',1,'MPPT_INCC_I::DeltaV']]],
+  ['done_21',['done',['../_r_f_f_t__adc__f32u_8asm.html#ad604cff3eb5d475cdc9f8eb5ab570fee',1,'done:&#160;RFFT_adc_f32u.asm'],['../_r_f_f_t__f32u_8asm.html#acb8af5d6d7315ed856ac6597a882a1b5',1,'done:&#160;RFFT_f32u.asm']]],
+  ['duty1_22',['duty1',['../struct_s_v_p_w_m.html#a88734692650ce71905abdd8c131163ad',1,'SVPWM::duty1'],['../struct_c_a_p___d_u_t_y.html#a9267e9ffebef4e2c26e6420f93a8d0d7',1,'CAP_DUTY::duty1']]],
+  ['duty2_23',['duty2',['../struct_s_v_p_w_m.html#a0853403719d045fccf8869e584ee8e1c',1,'SVPWM::duty2'],['../struct_c_a_p___d_u_t_y.html#adfaab0790a0911c2142ca9bad584de68',1,'CAP_DUTY::duty2']]],
+  ['duty3_24',['duty3',['../struct_s_v_p_w_m.html#acc0b19e70630b866801885ce1ad59890',1,'SVPWM']]]
 ];

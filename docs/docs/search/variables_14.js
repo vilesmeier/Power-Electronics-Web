@@ -16,6 +16,5 @@ var searchData=
   ['threshold_13',['threshold',['../struct_p_o_w_e_r__1_p_h.html#a47901b99cb34a03122d5a331a5989b6c',1,'POWER_1PH']]],
   ['to_14',['to',['../_r_f_f_t__adc__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713',1,'to:&#160;RFFT_adc_f32.asm'],['../_r_f_f_t__adc__f32u_8asm.html#a699ed3b8cc7d8e76c199b8b8e536208a',1,'to:&#160;RFFT_adc_f32u.asm'],['../_r_f_f_t__f32_8asm.html#a699ed3b8cc7d8e76c199b8b8e536208a',1,'to:&#160;RFFT_f32.asm'],['../_r_f_f_t__f32__adc__win_8asm.html#ae73de61ea9d6744100dc65527c2419ad',1,'to:&#160;RFFT_f32_adc_win.asm'],['../_r_f_f_t__f32__mag_8asm.html#a41ae2e4e517a88e8fb1378a8e8ad6f13',1,'to:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32s__mag_8asm.html#a699ed3b8cc7d8e76c199b8b8e536208a',1,'to:&#160;RFFT_f32s_mag.asm'],['../_r_f_f_t__f32u_8asm.html#a699ed3b8cc7d8e76c199b8b8e536208a',1,'to:&#160;RFFT_f32u.asm']]],
   ['ts_15',['Ts',['../struct_s_v_p_w_m.html#a9f04e7fbd755e887796a6e22f0d26920',1,'SVPWM']]],
-  ['twiddlefactors_16',['twiddleFactors',['../struct_r_f_f_t___analyser.html#ad0ce5b5c5a11d93f48172694d3540355',1,'RFFT_Analyser']]],
-  ['type_17',['type',['../struct_f_i_l_t_e_r.html#a4d16fd8ac384955a96ce84b7d873c749',1,'FILTER::type'],['../struct_m_o_d.html#a1a2fd186d055e853f5b32b6e33eece2c',1,'MOD::type']]]
+  ['twiddlefactors_16',['twiddleFactors',['../struct_r_f_f_t___analyser.html#ad0ce5b5c5a11d93f48172694d3540355',1,'RFFT_Analyser']]]
 ];

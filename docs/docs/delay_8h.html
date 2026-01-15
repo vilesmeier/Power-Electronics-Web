@@ -147,12 +147,12 @@ delay.h 的引用(Include)关系图:</div>
 函数</h2></td></tr>
 <tr class="memitem:a1d1f6ac6440c9beb1b7c6051c8fa15e0" id="r_a1d1f6ac6440c9beb1b7c6051c8fa15e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d1f6ac6440c9beb1b7c6051c8fa15e0">DELAY_Init</a> (<a class="el" href="struct_d_e_l_a_y.html">DELAY</a> *delay_addr)</td></tr>
 <tr class="memdesc:a1d1f6ac6440c9beb1b7c6051c8fa15e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化延迟链  <br /></td></tr>
-<tr class="memitem:aa5cf6eb866fedb545c357995c7382ad4" id="r_aa5cf6eb866fedb545c357995c7382ad4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5cf6eb866fedb545c357995c7382ad4">DELAY_Push</a> (<a class="el" href="struct_d_e_l_a_y.html">DELAY</a> *delay_addr, float32_t <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a>)</td></tr>
-<tr class="memdesc:aa5cf6eb866fedb545c357995c7382ad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">送入数据到延迟链  <br /></td></tr>
 <tr class="memitem:a7f6f301d186e73e3449b5136447dbb11" id="r_a7f6f301d186e73e3449b5136447dbb11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f6f301d186e73e3449b5136447dbb11">DELAY_Set</a> (<a class="el" href="struct_d_e_l_a_y.html">DELAY</a> *delay_addr, float32_t isr_freq, float32_t grid_freq)</td></tr>
 <tr class="memdesc:a7f6f301d186e73e3449b5136447dbb11"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置延时链  <br /></td></tr>
-<tr class="memitem:a674a8a8cfa5959ded7609a9f97e4f347" id="r_a674a8a8cfa5959ded7609a9f97e4f347"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a674a8a8cfa5959ded7609a9f97e4f347">DELAY_Pop</a> (<a class="el" href="struct_d_e_l_a_y.html">DELAY</a> *delay_addr, float32_t phase)</td></tr>
-<tr class="memdesc:a674a8a8cfa5959ded7609a9f97e4f347"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出特定延迟相位的数据  <br /></td></tr>
+<tr class="memitem:ab12603b239fc84d00450dded1a9629ee" id="r_ab12603b239fc84d00450dded1a9629ee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab12603b239fc84d00450dded1a9629ee">DELAY_Push</a> (<a class="el" href="struct_d_e_l_a_y.html">DELAY</a> *delay_addr, float32_t <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a>)</td></tr>
+<tr class="memdesc:ab12603b239fc84d00450dded1a9629ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">送入数据到延迟链  <br /></td></tr>
+<tr class="memitem:a09696418bb8d13d744d744fca5f28973" id="r_a09696418bb8d13d744d744fca5f28973"><td class="memItemLeft" align="right" valign="top">static float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09696418bb8d13d744d744fca5f28973">DELAY_Pop</a> (<a class="el" href="struct_d_e_l_a_y.html">DELAY</a> *delay_addr, float32_t phase)</td></tr>
+<tr class="memdesc:a09696418bb8d13d744d744fca5f28973"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出特定延迟相位的数据  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>数组延迟链驱动函数声明 </p>
@@ -196,20 +196,25 @@ delay.h 的引用(Include)关系图:</div>
 <p>初始化延迟链 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">delay_addr</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">delay_addr</td><td>结构体指针</td></tr>
   </table>
   </dd>
 </dl>
+<p>初始化延迟链</p>
+<dl class="section note"><dt>注解</dt><dd>需要在.cmd文件中配置 .TI.ramfunc 段位置, 并预留足够空间 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="delay_8c_source.html">delay.c</a> 第 <a class="el" href="delay_8c_source.html#l00011">11</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="delay_8c_source.html">delay.c</a> 第 <a class="el" href="delay_8c_source.html#l00018">18</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a674a8a8cfa5959ded7609a9f97e4f347" name="a674a8a8cfa5959ded7609a9f97e4f347"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a674a8a8cfa5959ded7609a9f97e4f347">&#9670;&#160;</a></span>DELAY_Pop()</h2>
+<a id="a09696418bb8d13d744d744fca5f28973" name="a09696418bb8d13d744d744fca5f28973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09696418bb8d13d744d744fca5f28973">&#9670;&#160;</a></span>DELAY_Pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float32_t DELAY_Pop </td>
@@ -222,6 +227,11 @@ delay.h 的引用(Include)关系图:</div>
           <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>phase</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>输出特定延迟相位的数据 </p>
@@ -235,15 +245,18 @@ delay.h 的引用(Include)关系图:</div>
 <dl class="section note"><dt>注解</dt><dd>在调用此函数前,必须将本周期输入送入延迟链</dd></dl>
 <dl class="section return"><dt>返回</dt><dd>float32_t 延迟后的数据 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="delay_8c_source.html">delay.c</a> 第 <a class="el" href="delay_8c_source.html#l00041">41</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="delay_8h_source.html">delay.h</a> 第 <a class="el" href="delay_8h_source.html#l00074">74</a> 行定义.</p>
 
 </div>
 </div>
-<a id="aa5cf6eb866fedb545c357995c7382ad4" name="aa5cf6eb866fedb545c357995c7382ad4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5cf6eb866fedb545c357995c7382ad4">&#9670;&#160;</a></span>DELAY_Push()</h2>
+<a id="ab12603b239fc84d00450dded1a9629ee" name="ab12603b239fc84d00450dded1a9629ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab12603b239fc84d00450dded1a9629ee">&#9670;&#160;</a></span>DELAY_Push()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void DELAY_Push </td>
@@ -256,6 +269,11 @@ delay.h 的引用(Include)关系图:</div>
           <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>送入数据到延迟链 </p>
@@ -267,7 +285,7 @@ delay.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="delay_8c_source.html">delay.c</a> 第 <a class="el" href="delay_8c_source.html#l00031">31</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="delay_8h_source.html">delay.h</a> 第 <a class="el" href="delay_8h_source.html#l00055">55</a> 行定义.</p>
 
 </div>
 </div>
@@ -305,7 +323,7 @@ delay.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="delay_8c_source.html">delay.c</a> 第 <a class="el" href="delay_8c_source.html#l00024">24</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="delay_8c_source.html">delay.c</a> 第 <a class="el" href="delay_8c_source.html#l00031">31</a> 行定义.</p>
 
 </div>
 </div>

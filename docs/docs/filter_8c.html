@@ -124,8 +124,6 @@ filter.c 的引用(Include)关系图:</div>
 <tr class="memdesc:a6bf8811531a98a51e7a794c2a27c0b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化一阶结构体  <br /></td></tr>
 <tr class="memitem:aeb072f0b39f2c1c227d2f9a14de3f56b" id="r_aeb072f0b39f2c1c227d2f9a14de3f56b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb072f0b39f2c1c227d2f9a14de3f56b">Filter_Set</a> (<a class="el" href="struct_f_i_l_t_e_r.html">FILTER</a> *fil, <a class="el" href="filter_8h.html#a7ef0ab496f57e183b484e62e2053c94f">FilterType</a> type, float32_t wc, float32_t damp, float32_t isr_freq)</td></tr>
 <tr class="memdesc:aeb072f0b39f2c1c227d2f9a14de3f56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置数字滤波器, Tustin离散化实现  <br /></td></tr>
-<tr class="memitem:a4cfa9560b200b52280bc1e06532289ee" id="r_a4cfa9560b200b52280bc1e06532289ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cfa9560b200b52280bc1e06532289ee">Filter_Run</a> (<a class="el" href="struct_f_i_l_t_e_r.html">FILTER</a> *fil, float32_t <a class="el" href="_r_f_f_t__adc__f32_8asm.html#ad1837fed945d659444e41ff0b37333b0">input</a>)</td></tr>
-<tr class="memdesc:a4cfa9560b200b52280bc1e06532289ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行数字滤波器  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>数字滤波器函数定义 </p>
@@ -163,54 +161,9 @@ filter.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="filter_8c_a6bf8811531a98a51e7a794c2a27c0b04_cgraph.png" border="0" usemap="#afilter_8c_a6bf8811531a98a51e7a794c2a27c0b04_cgraph" loading="lazy" alt=""/></div>
 <map name="afilter_8c_a6bf8811531a98a51e7a794c2a27c0b04_cgraph" id="afilter_8c_a6bf8811531a98a51e7a794c2a27c0b04_cgraph">
-<area shape="rect" title="初始化一阶结构体" alt="" coords="5,31,81,57"/>
-<area shape="rect" href="_transfer_fun_8h.html#ab556770206b05822837dd13bb5b1ff05" title="初始化 DCL_DF11 控制器结构体" alt="" coords="129,5,240,32"/>
-<area shape="poly" title=" " alt="" coords="81,35,113,29,114,34,82,40"/>
-<area shape="rect" href="_transfer_fun_8h.html#a7fed97c70a637a0c8db4e7808730eba8" title="初始化 DCL_DF22 控制器结构体" alt="" coords="129,56,241,83"/>
-<area shape="poly" title=" " alt="" coords="82,48,114,54,113,59,81,53"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a4cfa9560b200b52280bc1e06532289ee" name="a4cfa9560b200b52280bc1e06532289ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cfa9560b200b52280bc1e06532289ee">&#9670;&#160;</a></span>Filter_Run()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Filter_Run </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_f_i_l_t_e_r.html">FILTER</a> *</td>          <td class="paramname"><span class="paramname"><em>fil</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>input</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>执行数字滤波器 </p>
-<dl class="section warning"><dt>警告</dt><dd>在Type为 FIL_NULL 时, 直接输出输入值 </dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fil</td><td>结构体指针 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>输入数据 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="filter_8c_source.html">filter.c</a> 第 <a class="el" href="filter_8c_source.html#l00090">90</a> 行定义.</p>
-<div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="filter_8c_a4cfa9560b200b52280bc1e06532289ee_cgraph.png" border="0" usemap="#afilter_8c_a4cfa9560b200b52280bc1e06532289ee_cgraph" loading="lazy" alt=""/></div>
-<map name="afilter_8c_a4cfa9560b200b52280bc1e06532289ee_cgraph" id="afilter_8c_a4cfa9560b200b52280bc1e06532289ee_cgraph">
-<area shape="rect" title="执行数字滤波器" alt="" coords="5,5,87,32"/>
-<area shape="rect" href="_transfer_fun_8c.html#a7ca9b52b5a2f202f4d3890031f21c7ec" title="执行一阶直接形式Ⅰ控制器（DF11），在 FPU32 上运行 &#160;&#160;原函数名: float32_t DCL_runDF11_C1(DCL_DF11 *p, float32_t ek);" alt="" coords="135,5,252,32"/>
-<area shape="poly" title=" " alt="" coords="87,16,119,16,119,21,87,21"/>
+<area shape="rect" title="初始化一阶结构体" alt="" coords="5,5,81,32"/>
+<area shape="rect" href="_transfer_fun_8h.html#a7fed97c70a637a0c8db4e7808730eba8" title="初始化 DCL_DF22 控制器结构体" alt="" coords="129,5,241,32"/>
+<area shape="poly" title=" " alt="" coords="81,16,113,16,113,21,81,21"/>
 </map>
 </div>
 
@@ -262,8 +215,9 @@ filter.c 的引用(Include)关系图:</div>
   </dd>
 </dl>
 <dl class="section note"><dt>注解</dt><dd>带通/带阻滤波器, 推荐 2 * wc * damp = 50 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>在Type为 FIL_NULL 时, 直接输出输入值 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="filter_8c_source.html">filter.c</a> 第 <a class="el" href="filter_8c_source.html#l00019">19</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="filter_8c_source.html">filter.c</a> 第 <a class="el" href="filter_8c_source.html#l00017">17</a> 行定义.</p>
 
 </div>
 </div>

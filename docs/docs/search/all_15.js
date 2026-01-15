@@ -58,6 +58,5 @@ var searchData=
   ['tukey512_55',['TUKEY512',['../fpu__fft__tukey_8h.html#a041c78c3467931d7e0ffbf363ae90790',1,'fpu_fft_tukey.h']]],
   ['tukey64_56',['TUKEY64',['../fpu__fft__tukey_8h.html#afbe967db3577a244cffffe277b7c8a61',1,'fpu_fft_tukey.h']]],
   ['twiddlefactors_57',['twiddleFactors',['../struct_r_f_f_t___analyser.html#ad0ce5b5c5a11d93f48172694d3540355',1,'RFFT_Analyser']]],
-  ['type_58',['type',['../struct_f_i_l_t_e_r.html#a4d16fd8ac384955a96ce84b7d873c749',1,'FILTER::type'],['../struct_m_o_d.html#a1a2fd186d055e853f5b32b6e33eece2c',1,'MOD::type']]],
-  ['type_5ftransform_59',['TYPE_TRANSFORM',['../union_t_y_p_e___t_r_a_n_s_f_o_r_m.html',1,'TYPE_TRANSFORM'],['../vofa_8h.html#a26b5eae5bf51e0a793ffbb2a0e592523',1,'TYPE_TRANSFORM:&#160;vofa.h']]]
+  ['type_5ftransform_58',['TYPE_TRANSFORM',['../union_t_y_p_e___t_r_a_n_s_f_o_r_m.html',1,'TYPE_TRANSFORM'],['../vofa_8h.html#a26b5eae5bf51e0a793ffbb2a0e592523',1,'TYPE_TRANSFORM:&#160;vofa.h']]]
 ];

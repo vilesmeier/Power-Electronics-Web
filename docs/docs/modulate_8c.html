@@ -119,11 +119,9 @@ modulate.c 的引用(Include)关系图:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
 <tr class="memitem:a996f9b6a559031309fa6639bddf1b852" id="r_a996f9b6a559031309fa6639bddf1b852"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a996f9b6a559031309fa6639bddf1b852">Modulate_Init</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod)</td></tr>
-<tr class="memdesc:a996f9b6a559031309fa6639bddf1b852"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
-<tr class="memitem:a2cb4413f0dc84f786da0eade47d3207f" id="r_a2cb4413f0dc84f786da0eade47d3207f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cb4413f0dc84f786da0eade47d3207f">Modulate_Set</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, <a class="el" href="modulate_8h.html#aa711c7be5b142535583a1841942a8eed">ModType</a> type, uint16_t tbprd)</td></tr>
-<tr class="memdesc:a2cb4413f0dc84f786da0eade47d3207f"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体配置  <br /></td></tr>
-<tr class="memitem:a71005631482793cfed01e1fc452d1135" id="r_a71005631482793cfed01e1fc452d1135"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71005631482793cfed01e1fc452d1135">Modulate_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, float32_t ua, float32_t ub, float32_t uc, float32_t pf_angle)</td></tr>
-<tr class="memdesc:a71005631482793cfed01e1fc452d1135"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行调制与PWM发波, 需要手动更新到ePWM的COMP寄存器  <br /></td></tr>
+<tr class="memdesc:a996f9b6a559031309fa6639bddf1b852"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flash 启动支持, 将函数搬运至RAM  <br /></td></tr>
+<tr class="memitem:a7ec773e0dd3b93e350d1f4b3c9932813" id="r_a7ec773e0dd3b93e350d1f4b3c9932813"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ec773e0dd3b93e350d1f4b3c9932813">Modulate_Set</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *mod, uint16_t tbprd)</td></tr>
+<tr class="memdesc:a7ec773e0dd3b93e350d1f4b3c9932813"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置调制器的TBPRD寄存器值, 用于计算COMP寄存器值  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>调制函数定义 </p>
@@ -146,76 +144,15 @@ modulate.c 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Flash 启动支持, 将函数搬运至RAM </p>
 <p>结构体初始化 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mod</td><td>结构体指针 </td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8c_source.html">modulate.c</a> 第 <a class="el" href="modulate_8c_source.html#l00010">10</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8c_source.html">modulate.c</a> 第 <a class="el" href="modulate_8c_source.html#l00019">19</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a71005631482793cfed01e1fc452d1135" name="a71005631482793cfed01e1fc452d1135"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71005631482793cfed01e1fc452d1135">&#9670;&#160;</a></span>Modulate_Run()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Modulate_Run </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>uc</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>pf_angle</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>执行调制与PWM发波, 需要手动更新到ePWM的COMP寄存器 </p>
-<dl class="section warning"><dt>警告</dt><dd><ul>
-<li>在Mod_type为MOD_NULL时, COMP寄存器更新为 TBPRF/2</li>
-<li>调制数据范围[-1.0f, 1.0f], 需要预先经过归一化</li>
-<li>功率因数角范围：[-pi/6,pi/6] </li>
-</ul>
-</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mod</td><td>结构体指针 </td></tr>
-    <tr><td class="paramname">ua</td><td>A相数据(三相), 调制数据(单相) </td></tr>
-    <tr><td class="paramname">ub</td><td>B相数据(三相), 单相下无意义 </td></tr>
-    <tr><td class="paramname">uc</td><td>C相数据(三相), 单相下无意义 </td></tr>
-    <tr><td class="paramname">pf_angle</td><td>功率因数角, 弧度制, 只有GDPWM时有意义, 其余调制方式无意义 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="modulate_8c_source.html">modulate.c</a> 第 <a class="el" href="modulate_8c_source.html#l00028">28</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a2cb4413f0dc84f786da0eade47d3207f" name="a2cb4413f0dc84f786da0eade47d3207f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cb4413f0dc84f786da0eade47d3207f">&#9670;&#160;</a></span>Modulate_Set()</h2>
+<a id="a7ec773e0dd3b93e350d1f4b3c9932813" name="a7ec773e0dd3b93e350d1f4b3c9932813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec773e0dd3b93e350d1f4b3c9932813">&#9670;&#160;</a></span>Modulate_Set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,27 +165,21 @@ modulate.c 的引用(Include)关系图:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="modulate_8h.html#aa711c7be5b142535583a1841942a8eed">ModType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>tbprd</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>结构体配置 </p>
+<p>配置调制器的TBPRD寄存器值, 用于计算COMP寄存器值 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">mod</td><td>结构体指针 </td></tr>
-    <tr><td class="paramname">type</td><td>调制方式 </td></tr>
     <tr><td class="paramname">tbprd</td><td>TBPRD寄存器值 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8c_source.html">modulate.c</a> 第 <a class="el" href="modulate_8c_source.html#l00021">21</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8c_source.html">modulate.c</a> 第 <a class="el" href="modulate_8c_source.html#l00028">28</a> 行定义.</p>
 
 </div>
 </div>

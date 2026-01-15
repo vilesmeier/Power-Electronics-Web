@@ -66,13 +66,11 @@ var searchData=
   ['input_63',['input',['../struct_f_i_r__f32.html#ad2dc272dbb0aa32fb114312e2aad2d80',1,'FIR_f32::input'],['../struct_r_f_f_t___analyser.html#ab302bb9e99786f1c28620507ee8fc27b',1,'RFFT_Analyser::input'],['../_r_f_f_t__adc__f32_8asm.html#ad1837fed945d659444e41ff0b37333b0',1,'input:&#160;RFFT_adc_f32.asm'],['../_r_f_f_t__adc__f32u_8asm.html#ad1837fed945d659444e41ff0b37333b0',1,'input:&#160;RFFT_adc_f32u.asm']]],
   ['input_5fpointer_64',['input_pointer',['../struct_v_o_f_a___d_a_t_a.html#a573551cb73433755020bad73ec8f11b9',1,'VOFA_DATA']]],
   ['inv_5fgrid_5ffreq_65',['inv_grid_freq',['../struct_d_e_l_a_y.html#a9e482f39a0b4196f56ab78ba54839ece',1,'DELAY']]],
-  ['inverse_5fclark_5frun_66',['Inverse_Clark_Run',['../dq_8c.html#a07bcdfe79032d45a49bb284c2c849d35',1,'Inverse_Clark_Run(DQ *dq):&#160;dq.c'],['../dq_8h.html#a07bcdfe79032d45a49bb284c2c849d35',1,'Inverse_Clark_Run(DQ *dq):&#160;dq.c']]],
-  ['inverse_5fnsamples_67',['inverse_nSamples',['../struct_p_o_w_e_r__1_p_h.html#a6e1ee018eaa4c5a9af4ac89dec261d29',1,'POWER_1PH']]],
-  ['inverse_5fpark_5frun_68',['Inverse_Park_Run',['../dq_8c.html#ac4852fb1ad53b8ee087d95dcefdd5792',1,'Inverse_Park_Run(DQ *dq):&#160;dq.c'],['../dq_8h.html#ac4852fb1ad53b8ee087d95dcefdd5792',1,'Inverse_Park_Run(DQ *dq):&#160;dq.c']]],
-  ['ipv_69',['Ipv',['../struct_m_p_p_t___i_n_c_c.html#afcb6da9ad470aceab7edc379fc1e4c81',1,'MPPT_INCC::Ipv'],['../struct_m_p_p_t___i_n_c_c___i.html#a9383c5d32dd6d00136352dfd1c77646e',1,'MPPT_INCC_I::Ipv'],['../struct_m_p_p_t___p_n_o.html#ae3ea62e29378a5178f192a1543160fc3',1,'MPPT_PNO::Ipv']]],
-  ['ipvold_70',['IpvOld',['../struct_m_p_p_t___i_n_c_c.html#adbe41cc9acb5b838910497a19ca35ca2',1,'MPPT_INCC::IpvOld'],['../struct_m_p_p_t___i_n_c_c___i.html#af805b0ab4e4b51a8905c4d506fa1ba2f',1,'MPPT_INCC_I::IpvOld']]],
-  ['irms_71',['iRms',['../struct_p_o_w_e_r__1_p_h.html#a57d13453c7fdfaddf54559c647461bcb',1,'POWER_1PH']]],
-  ['is_72',['is',['../_r_f_f_t__f32__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8',1,'is(FFTSize/2+1) in length:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32s__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8',1,'is(FFTSize/2+1) in length:&#160;RFFT_f32s_mag.asm']]],
-  ['isqrsum_73',['iSqrSum',['../struct_p_o_w_e_r__1_p_h.html#a7a89cb87ad927a6cb8fe3188a8509543',1,'POWER_1PH']]],
-  ['isr_5ffreq_74',['isr_freq',['../struct_d_e_l_a_y.html#a2b07ae3a33ab42fd5cc26599cbec4bc0',1,'DELAY::isr_freq'],['../struct_p_o_w_e_r__3_p_h.html#ad0047a77d96e1611ccd3c7751d3db9a0',1,'POWER_3PH::isr_freq'],['../struct_r_a_m_p.html#a2c25dd32e7d0d8c40882b97ba49f29fc',1,'RAMP::isr_freq']]]
+  ['inverse_5fnsamples_66',['inverse_nSamples',['../struct_p_o_w_e_r__1_p_h.html#a6e1ee018eaa4c5a9af4ac89dec261d29',1,'POWER_1PH']]],
+  ['ipv_67',['Ipv',['../struct_m_p_p_t___i_n_c_c.html#afcb6da9ad470aceab7edc379fc1e4c81',1,'MPPT_INCC::Ipv'],['../struct_m_p_p_t___i_n_c_c___i.html#a9383c5d32dd6d00136352dfd1c77646e',1,'MPPT_INCC_I::Ipv'],['../struct_m_p_p_t___p_n_o.html#ae3ea62e29378a5178f192a1543160fc3',1,'MPPT_PNO::Ipv']]],
+  ['ipvold_68',['IpvOld',['../struct_m_p_p_t___i_n_c_c.html#adbe41cc9acb5b838910497a19ca35ca2',1,'MPPT_INCC::IpvOld'],['../struct_m_p_p_t___i_n_c_c___i.html#af805b0ab4e4b51a8905c4d506fa1ba2f',1,'MPPT_INCC_I::IpvOld']]],
+  ['irms_69',['iRms',['../struct_p_o_w_e_r__1_p_h.html#a57d13453c7fdfaddf54559c647461bcb',1,'POWER_1PH']]],
+  ['is_70',['is',['../_r_f_f_t__f32__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8',1,'is(FFTSize/2+1) in length:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32s__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8',1,'is(FFTSize/2+1) in length:&#160;RFFT_f32s_mag.asm']]],
+  ['isqrsum_71',['iSqrSum',['../struct_p_o_w_e_r__1_p_h.html#a7a89cb87ad927a6cb8fe3188a8509543',1,'POWER_1PH']]],
+  ['isr_5ffreq_72',['isr_freq',['../struct_d_e_l_a_y.html#a2b07ae3a33ab42fd5cc26599cbec4bc0',1,'DELAY::isr_freq'],['../struct_p_o_w_e_r__3_p_h.html#ad0047a77d96e1611ccd3c7751d3db9a0',1,'POWER_3PH::isr_freq'],['../struct_r_a_m_p.html#a2c25dd32e7d0d8c40882b97ba49f29fc',1,'RAMP::isr_freq']]]
 ];

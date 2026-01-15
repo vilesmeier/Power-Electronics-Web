@@ -35,7 +35,5 @@ var searchData=
   ['iir_5ff32_5fsetorder_32',['IIR_f32_setOrder',['../fpu__filter_8h.html#ac996516da35ae3166a2ae5d80a79e019',1,'fpu_filter.h']]],
   ['iir_5ff32_5fsetoutputptr_33',['IIR_f32_setOutputPtr',['../fpu__filter_8h.html#aaf79f81477f95483247fe6f6ac8d2614',1,'fpu_filter.h']]],
   ['iir_5ff32_5fsetscaleptr_34',['IIR_f32_setScalePtr',['../fpu__filter_8h.html#a461932a8056512c18f14e6cf9e87cbbd',1,'fpu_filter.h']]],
-  ['inverse_5fclark_5frun_35',['Inverse_Clark_Run',['../dq_8c.html#a07bcdfe79032d45a49bb284c2c849d35',1,'Inverse_Clark_Run(DQ *dq):&#160;dq.c'],['../dq_8h.html#a07bcdfe79032d45a49bb284c2c849d35',1,'Inverse_Clark_Run(DQ *dq):&#160;dq.c']]],
-  ['inverse_5fpark_5frun_36',['Inverse_Park_Run',['../dq_8c.html#ac4852fb1ad53b8ee087d95dcefdd5792',1,'Inverse_Park_Run(DQ *dq):&#160;dq.c'],['../dq_8h.html#ac4852fb1ad53b8ee087d95dcefdd5792',1,'Inverse_Park_Run(DQ *dq):&#160;dq.c']]],
-  ['is_37',['is',['../_r_f_f_t__f32__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8',1,'is(FFTSize/2+1) in length:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32s__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8',1,'is(FFTSize/2+1) in length:&#160;RFFT_f32s_mag.asm']]]
+  ['is_35',['is',['../_r_f_f_t__f32__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8',1,'is(FFTSize/2+1) in length:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32s__mag_8asm.html#ab6167ffe8dcbeeb3cb3b6ecf95b783e8',1,'is(FFTSize/2+1) in length:&#160;RFFT_f32s_mag.asm']]]
 ];

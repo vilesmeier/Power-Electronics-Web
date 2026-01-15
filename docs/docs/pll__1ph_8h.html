@@ -140,8 +140,8 @@ pll_1ph.h 的引用(Include)关系图:</div>
 <tr class="memdesc:af15b995d2b03597fb9b39932285bdf85"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算SOGI结构体参数  <br /></td></tr>
 <tr class="memitem:aac5dc41f65a9efa844ad311c51cf3c7f" id="r_aac5dc41f65a9efa844ad311c51cf3c7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac5dc41f65a9efa844ad311c51cf3c7f">SOGI_1PH_Set</a> (<a class="el" href="struct_s_o_g_i__1_p_h.html">SOGI_1PH</a> *spll_obj, float32_t acFreq, float32_t isrFrequency, float32_t lpf_b0, float32_t lpf_b1)</td></tr>
 <tr class="memdesc:aac5dc41f65a9efa844ad311c51cf3c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置SOGI结构体  <br /></td></tr>
-<tr class="memitem:ac68357b197b5778d423968938fe59e29" id="r_ac68357b197b5778d423968938fe59e29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac68357b197b5778d423968938fe59e29">SOGI_1PH_Run</a> (<a class="el" href="struct_s_o_g_i__1_p_h.html">SOGI_1PH</a> *spll_obj, float32_t acValue)</td></tr>
-<tr class="memdesc:ac68357b197b5778d423968938fe59e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行 SOGI 单相锁相环  <br /></td></tr>
+<tr class="memitem:a7ad5f0b47f7b1a56c843d2d4f44e912e" id="r_a7ad5f0b47f7b1a56c843d2d4f44e912e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ad5f0b47f7b1a56c843d2d4f44e912e">SOGI_1PH_Run</a> (<a class="el" href="struct_s_o_g_i__1_p_h.html">SOGI_1PH</a> *spll_obj, float32_t acValue)</td></tr>
+<tr class="memdesc:a7ad5f0b47f7b1a56c843d2d4f44e912e"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行 SOGI 单相锁相环  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>单相电网锁相环, SOGI </p>
@@ -173,8 +173,6 @@ pll_1ph.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="pll__1ph_8c_source.html">pll_1ph.c</a> 第 <a class="el" href="pll__1ph_8c_source.html#l00042">42</a> 行定义.</p>
-
 </div>
 </div>
 <a id="a6af2cb6d025984e7461176621118d8da" name="a6af2cb6d025984e7461176621118d8da"></a>
@@ -195,20 +193,24 @@ pll_1ph.h 的引用(Include)关系图:</div>
 <p>结构体初始化 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">spll_obj</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">spll_obj</td><td>结构体指针</td></tr>
   </table>
   </dd>
 </dl>
+<p>结构体初始化 </p>
 
-<p class="definition">在文件 <a class="el" href="pll__1ph_8c_source.html">pll_1ph.c</a> 第 <a class="el" href="pll__1ph_8c_source.html#l00011">11</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="pll__1ph_8c_source.html">pll_1ph.c</a> 第 <a class="el" href="pll__1ph_8c_source.html#l00019">19</a> 行定义.</p>
 
 </div>
 </div>
-<a id="ac68357b197b5778d423968938fe59e29" name="ac68357b197b5778d423968938fe59e29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac68357b197b5778d423968938fe59e29">&#9670;&#160;</a></span>SOGI_1PH_Run()</h2>
+<a id="a7ad5f0b47f7b1a56c843d2d4f44e912e" name="a7ad5f0b47f7b1a56c843d2d4f44e912e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad5f0b47f7b1a56c843d2d4f44e912e">&#9670;&#160;</a></span>SOGI_1PH_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void SOGI_1PH_Run </td>
@@ -221,6 +223,11 @@ pll_1ph.h 的引用(Include)关系图:</div>
           <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>acValue</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>执行 SOGI 单相锁相环 </p>
@@ -232,7 +239,7 @@ pll_1ph.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="pll__1ph_8c_source.html">pll_1ph.c</a> 第 <a class="el" href="pll__1ph_8c_source.html#l00076">76</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="pll__1ph_8h_source.html">pll_1ph.h</a> 第 <a class="el" href="pll__1ph_8h_source.html#l00103">103</a> 行定义.</p>
 
 </div>
 </div>
@@ -282,17 +289,7 @@ pll_1ph.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="pll__1ph_8c_source.html">pll_1ph.c</a> 第 <a class="el" href="pll__1ph_8c_source.html#l00061">61</a> 行定义.</p>
-<div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="pll__1ph_8h_aac5dc41f65a9efa844ad311c51cf3c7f_cgraph.png" border="0" usemap="#apll__1ph_8h_aac5dc41f65a9efa844ad311c51cf3c7f_cgraph" loading="lazy" alt=""/></div>
-<map name="apll__1ph_8h_aac5dc41f65a9efa844ad311c51cf3c7f_cgraph" id="apll__1ph_8h_aac5dc41f65a9efa844ad311c51cf3c7f_cgraph">
-<area shape="rect" title="配置SOGI结构体" alt="" coords="5,5,120,32"/>
-<area shape="rect" href="pll__1ph_8c.html#af15b995d2b03597fb9b39932285bdf85" title="计算SOGI结构体参数" alt="" coords="168,5,321,32"/>
-<area shape="poly" title=" " alt="" coords="120,16,152,16,152,21,120,21"/>
-</map>
-</div>
+<p class="definition">在文件 <a class="el" href="pll__1ph_8c_source.html">pll_1ph.c</a> 第 <a class="el" href="pll__1ph_8c_source.html#l00051">51</a> 行定义.</p>
 
 </div>
 </div>

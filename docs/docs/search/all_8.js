@@ -9,14 +9,13 @@ var searchData=
   ['gauss512_6',['GAUSS512',['../fpu__fft__gauss_8h.html#a029bde43f849a3773bd94515f9f9e6f8',1,'fpu_fft_gauss.h']]],
   ['gauss64_7',['GAUSS64',['../fpu__fft__gauss_8h.html#a6d1c37e2e5e4f1a32deff15671152eef',1,'fpu_fft_gauss.h']]],
   ['gblue_8',['GBLUE',['../_l_c_d___s_t7735_s_8h.html#ab87bacfdad76e61b9412d7124be44c1cabd2999182571f8430b7f38af7476db9a',1,'LCD_ST7735S.h']]],
-  ['gdpwm_9',['GDPWM',['../modulate_8h.html#aa711c7be5b142535583a1841942a8eedacad738adf9adfa64365e5c6b30f049bd',1,'modulate.h']]],
-  ['global_2ec_10',['global.c',['../global_8c.html',1,'']]],
-  ['global_2eh_11',['global.h',['../global_8h.html',1,'']]],
-  ['globals_12',['globals',['../_r_f_f_t__f32__adc__win_8asm.html#a184901539d18f8cc781a5c0f83ebd20b',1,'RFFT_f32_adc_win.asm']]],
-  ['grad_5ffreq_13',['grad_freq',['../struct_r_a_m_p.html#a8c9314b80da3ea2a2a2a826a0d63844e',1,'RAMP']]],
-  ['gray_14',['GRAY',['../_l_c_d___s_t7735_s_8h.html#ab87bacfdad76e61b9412d7124be44c1ca3fb6c4ad00f4ad98553e01229d1803ac',1,'LCD_ST7735S.h']]],
-  ['grayblue_15',['GRAYBLUE',['../_l_c_d___s_t7735_s_8h.html#ab87bacfdad76e61b9412d7124be44c1caf0813fa73d558d8c19e93dc9c7575fe5',1,'LCD_ST7735S.h']]],
-  ['gred_16',['GRED',['../_l_c_d___s_t7735_s_8h.html#ab87bacfdad76e61b9412d7124be44c1ca66af9f9737563b6fbbf14a8bd3bfba1d',1,'LCD_ST7735S.h']]],
-  ['green_17',['GREEN',['../_l_c_d___s_t7735_s_8h.html#ab87bacfdad76e61b9412d7124be44c1caa60bd322f93178d68184e30e162571ca',1,'LCD_ST7735S.h']]],
-  ['grid_5ffreq_18',['grid_freq',['../struct_d_e_l_a_y.html#a34a01da59a67e92b7108bce3736ac713',1,'DELAY::grid_freq'],['../struct_p_o_w_e_r__3_p_h.html#a4650684ea0ef84858c3dc4acc4e8277e',1,'POWER_3PH::grid_freq']]]
+  ['global_2ec_9',['global.c',['../global_8c.html',1,'']]],
+  ['global_2eh_10',['global.h',['../global_8h.html',1,'']]],
+  ['globals_11',['globals',['../_r_f_f_t__f32__adc__win_8asm.html#a184901539d18f8cc781a5c0f83ebd20b',1,'RFFT_f32_adc_win.asm']]],
+  ['grad_5ffreq_12',['grad_freq',['../struct_r_a_m_p.html#a8c9314b80da3ea2a2a2a826a0d63844e',1,'RAMP']]],
+  ['gray_13',['GRAY',['../_l_c_d___s_t7735_s_8h.html#ab87bacfdad76e61b9412d7124be44c1ca3fb6c4ad00f4ad98553e01229d1803ac',1,'LCD_ST7735S.h']]],
+  ['grayblue_14',['GRAYBLUE',['../_l_c_d___s_t7735_s_8h.html#ab87bacfdad76e61b9412d7124be44c1caf0813fa73d558d8c19e93dc9c7575fe5',1,'LCD_ST7735S.h']]],
+  ['gred_15',['GRED',['../_l_c_d___s_t7735_s_8h.html#ab87bacfdad76e61b9412d7124be44c1ca66af9f9737563b6fbbf14a8bd3bfba1d',1,'LCD_ST7735S.h']]],
+  ['green_16',['GREEN',['../_l_c_d___s_t7735_s_8h.html#ab87bacfdad76e61b9412d7124be44c1caa60bd322f93178d68184e30e162571ca',1,'LCD_ST7735S.h']]],
+  ['grid_5ffreq_17',['grid_freq',['../struct_d_e_l_a_y.html#a34a01da59a67e92b7108bce3736ac713',1,'DELAY::grid_freq'],['../struct_p_o_w_e_r__3_p_h.html#a4650684ea0ef84858c3dc4acc4e8277e',1,'POWER_3PH::grid_freq']]]
 ];
