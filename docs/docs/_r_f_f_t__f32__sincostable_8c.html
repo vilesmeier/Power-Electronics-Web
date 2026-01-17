@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NUEDC: NUEDC-Core/Code/Control_Driver/FFT/dsp_lib/RFFT_f32_sincostable.c 文件参考</title>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/rfft/RFFT_f32_sincostable.c 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -101,14 +101,14 @@ $(function(){initNavTree('_r_f_f_t__f32__sincostable_8c.html','',''); });
 </div><div class="textblock"><div class="dynheader">
 RFFT_f32_sincostable.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="_r_f_f_t__f32__sincostable_8c__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2_f_f_t_2dsp__lib_2_r_f_f_t__f32__sincostable_8c" loading="lazy" alt=""/></div>
-<map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2_f_f_t_2dsp__lib_2_r_f_f_t__f32__sincostable_8c" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2_f_f_t_2dsp__lib_2_r_f_f_t__f32__sincostable_8c">
+<div class="center"><img src="_r_f_f_t__f32__sincostable_8c__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2_r_f_f_t__f32__sincostable_8c" loading="lazy" alt=""/></div>
+<map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2_r_f_f_t__f32__sincostable_8c" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2_r_f_f_t__f32__sincostable_8c">
 <area shape="rect" title="32&#45;bit floating point Real FFT Sin/Cos Table Generation" alt="" coords="5,5,189,64"/>
 <area shape="rect" title=" " alt="" coords="21,112,82,139"/>
 <area shape="poly" title=" " alt="" coords="85,66,67,99,63,97,80,63"/>
-<area shape="rect" href="fpu__rfft_8h.html" title="Prototypes and Definitions for the C28x FPU Library" alt="" coords="106,112,178,139"/>
+<area shape="rect" href="fpu__rfft_8h.html" title=" " alt="" coords="106,112,178,139"/>
 <area shape="poly" title=" " alt="" coords="114,63,131,97,127,99,109,66"/>
-<area shape="rect" href="fpu__types_8h.html" title="Prototypes and Definitions for the C28x FPU Library" alt="" coords="98,187,187,213"/>
+<area shape="rect" href="fpu__types_8h.html" title=" " alt="" coords="98,187,187,213"/>
 <area shape="poly" title=" " alt="" coords="145,139,145,171,140,171,140,139"/>
 <area shape="rect" title=" " alt="" coords="68,261,132,288"/>
 <area shape="poly" title=" " alt="" coords="137,215,117,249,112,247,133,213"/>
@@ -138,22 +138,30 @@ RFFT_f32_sincostable.c 的引用(Include)关系图:</div>
         <tr>
           <td class="memname">void RFFT_f32_sincostable </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a></td>          <td class="paramname"><span class="paramname"><em>hndRFFT_F32</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a></td>          <td class="paramname"><span class="paramname"><em>fft</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Generate twiddle factors for the Real FFT. </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hndRFFT_F32</td><td>Pointer to the RFFT_F32 object </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section attention"><dt>注意</dt><dd>This function is written in C and compiled without optimization turned on. </dd></dl>
+<p>Copyright: Copyright (C) 2023 Texas Instruments Incorporated - All rights reserved not granted herein. Limited License.</p>
+<p>Texas Instruments Incorporated grants a world-wide, royalty-free, non-exclusive license under copyrights and patents it now or hereafter owns or controls to make, have made, use, import, offer to sell and sell ("Utilize") this software subject to the terms herein. With respect to the foregoing patent license, such license is granted solely to the extent that any such patent is necessary to Utilize the software alone. The patent license shall not apply to any combinations which include this software, other than combinations with devices manufactured by or for TI ("TI Devices"). No hardware patent is licensed hereunder.</p>
+<p>Redistributions must preserve existing copyright notices and reproduce this license (including the above copyright notice and the disclaimer and (if applicable) source code license limitations below) in the documentation and/or other materials provided with the distribution.</p>
+<p>Redistribution and use in binary form, without modification, are permitted provided that the following conditions are met:</p>
+<ul>
+<li>No reverse engineering, decompilation, or disassembly of this software is permitted with respect to any software provided in binary form.</li>
+<li>Any redistribution and use are licensed by TI for use only with TI Devices.</li>
+<li>Nothing shall obligate TI to provide you with source code for the software licensed and provided to you in object code.</li>
+</ul>
+<p>If software source code is provided to you, modification and redistribution of the source code are permitted provided that the following conditions are met:</p>
+<ul>
+<li>any redistribution and use of the source code, including any resulting derivative works, are licensed by TI for use only with TI Devices.</li>
+<li>any redistribution and use of any object code compiled from the source code and any resulting derivative works, are licensed by TI for use only with TI Devices.</li>
+</ul>
+<p>Neither the name of Texas Instruments Incorporated nor the names of its suppliers may be used to endorse or promote products derived from this software without specific prior written permission. </p>
 
-<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32__sincostable_8c_source.html">RFFT_f32_sincostable.c</a> 第 <a class="el" href="_r_f_f_t__f32__sincostable_8c_source.html#l00077">77</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_r_f_f_t__f32__sincostable_8c_source.html">RFFT_f32_sincostable.c</a> 第 <a class="el" href="_r_f_f_t__f32__sincostable_8c_source.html#l00123">123</a> 行定义.</p>
 
 </div>
 </div>
@@ -170,7 +178,7 @@ RFFT_f32_sincostable.c 的引用(Include)关系图:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_21974f642239eac7f24099953dcfa10f.html">FFT</a></li><li class="navelem"><a href="dir_aed7131e372a5760213c24165cb84e6a.html">dsp_lib</a></li><li class="navelem"><a href="_r_f_f_t__f32__sincostable_8c.html">RFFT_f32_sincostable.c</a></li>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_0fd93c14012f780a2e81c2f5b80c75ff.html">rfft</a></li><li class="navelem"><a href="_r_f_f_t__f32__sincostable_8c.html">RFFT_f32_sincostable.c</a></li>
     <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

@@ -98,7 +98,7 @@ $(function(){initNavTree('_d_c_l_f32_8h.html','',''); });
  包含支持FPU32的结构体定义与函数声明 <br  />
  PI/QPR/QPIR/QPMR/RC  
 <a href="#details">更多...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="transferfun_8h_source.html">TransferFun.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="delay_8h_source.html">delay.h</a>&quot;</code><br />
 <code>#include &quot;stdint.h&quot;</code><br />
 <code>#include &quot;inc/hw_types.h&quot;</code><br />
@@ -107,24 +107,19 @@ DCLF32.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="_d_c_l_f32_8h__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2_d_c_l_2_d_c_l_f32_8h" loading="lazy" alt=""/></div>
 <map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2_d_c_l_2_d_c_l_f32_8h" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2_d_c_l_2_d_c_l_f32_8h">
-<area shape="rect" title="数字控制库函数定义 &#160;&#160;包含支持FPU32的结构体定义与函数声明 &#160;&#160;PI/QPR/QPIR/QPMR/RC" alt="" coords="143,5,326,48"/>
-<area shape="rect" href="_transfer_fun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="227,96,330,123"/>
-<area shape="poly" title=" " alt="" coords="248,47,266,81,262,83,243,50"/>
-<area shape="rect" title=" " alt="" coords="186,245,250,272"/>
-<area shape="poly" title=" " alt="" coords="289,46,319,66,343,95,347,109,344,123,330,164,304,199,281,221,256,239,253,235,278,217,300,196,325,162,338,122,342,109,339,97,316,70,286,51"/>
-<area shape="rect" title=" " alt="" coords="160,171,269,197"/>
-<area shape="poly" title=" " alt="" coords="230,49,218,96,216,155,210,155,213,96,225,48"/>
-<area shape="rect" href="delay_8h.html" title="数组延迟链驱动函数声明" alt="" coords="91,96,154,123"/>
-<area shape="poly" title=" " alt="" coords="207,51,154,89,151,85,204,46"/>
-<area shape="poly" title=" " alt="" coords="284,123,290,157,289,178,283,198,270,220,252,237,249,234,266,217,279,196,284,177,284,158,279,123"/>
-<area shape="poly" title=" " alt="" coords="269,125,237,161,234,157,265,121"/>
-<area shape="poly" title=" " alt="" coords="126,122,133,157,150,196,167,217,188,234,184,238,163,220,145,199,128,159,121,123"/>
-<area shape="poly" title=" " alt="" coords="140,121,188,159,185,163,137,125"/>
-<area shape="rect" href="mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="5,171,85,197"/>
-<area shape="poly" title=" " alt="" coords="111,125,71,162,68,158,107,121"/>
-<area shape="poly" title=" " alt="" coords="76,195,175,236,173,241,74,200"/>
-<area shape="rect" title=" " alt="" coords="14,245,76,272"/>
-<area shape="poly" title=" " alt="" coords="48,198,48,230,42,230,42,198"/>
+<area shape="rect" title="数字控制库函数定义 &#160;&#160;包含支持FPU32的结构体定义与函数声明 &#160;&#160;PI/QPR/QPIR/QPMR/RC" alt="" coords="34,5,217,48"/>
+<area shape="rect" href="transferfun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="21,96,124,123"/>
+<area shape="poly" title=" " alt="" coords="114,50,92,84,87,81,110,47"/>
+<area shape="rect" title=" " alt="" coords="38,171,102,197"/>
+<area shape="poly" title=" " alt="" coords="67,51,36,70,12,97,8,113,14,130,25,145,40,159,37,163,21,149,9,132,3,114,7,95,33,66,64,46"/>
+<area shape="rect" title=" " alt="" coords="126,171,235,197"/>
+<area shape="poly" title=" " alt="" coords="173,46,202,67,224,95,228,112,225,130,206,161,202,158,220,128,223,112,219,97,198,71,170,51"/>
+<area shape="rect" href="delay_8h.html" title="数组延迟链驱动函数声明" alt="" coords="148,96,210,123"/>
+<area shape="poly" title=" " alt="" coords="142,47,165,81,160,84,137,50"/>
+<area shape="poly" title=" " alt="" coords="75,123,73,155,68,155,69,123"/>
+<area shape="poly" title=" " alt="" coords="93,121,150,159,147,164,90,125"/>
+<area shape="poly" title=" " alt="" coords="162,125,103,164,100,160,159,121"/>
+<area shape="poly" title=" " alt="" coords="182,123,183,155,177,155,177,123"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -177,34 +172,36 @@ DCLF32.h 的引用(Include)关系图:</div>
 <tr class="memdesc:a9a398ae86e1ca190c08bc29f43d56919"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化 <a class="el" href="#ad3535921d2d0c60eddf8442429c7e81f" title="定义 PI 控制器结构体">DCL_PI</a> 控制器  <br /></td></tr>
 <tr class="memitem:a86714c924f890be6942cb921c5d4c79e" id="r_a86714c924f890be6942cb921c5d4c79e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86714c924f890be6942cb921c5d4c79e">DCL_PI_Set</a> (<a class="el" href="#ad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *p, float32_t Kp, float32_t Ki, float32_t <a class="el" href="_transfer_fun_8asm.html#a95d1601247f5ec3ca9d78c43f56679db">Umax</a>, float32_t <a class="el" href="_transfer_fun_8asm.html#aadac943c15058f072d200a1ac173d9b4">Umin</a>, float32_t Imax, float32_t isr_freq)</td></tr>
 <tr class="memdesc:a86714c924f890be6942cb921c5d4c79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置 <a class="el" href="#ad3535921d2d0c60eddf8442429c7e81f" title="定义 PI 控制器结构体">DCL_PI</a> 控制器  <br /></td></tr>
-<tr class="memitem:a55925a82f04c8cf0a3fda5528362cf10" id="r_a55925a82f04c8cf0a3fda5528362cf10"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55925a82f04c8cf0a3fda5528362cf10">DCL_PI_Run</a> (<a class="el" href="#ad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *p, float32_t rk, float32_t yk)</td></tr>
-<tr class="memdesc:a55925a82f04c8cf0a3fda5528362cf10"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行串联式PI控制器, <b>需要FPU32</b> 支持  <br /></td></tr>
+<tr class="memitem:a35475e1bee96bb73d5a2e5a3d11d05ad" id="r_a35475e1bee96bb73d5a2e5a3d11d05ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35475e1bee96bb73d5a2e5a3d11d05ad">DCL_PI_Run</a> (<a class="el" href="#ad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *p, float32_t rk, float32_t yk)</td></tr>
+<tr class="memdesc:a35475e1bee96bb73d5a2e5a3d11d05ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行串联式PI控制器, <b>需要FPU32</b> 支持  <br /></td></tr>
 <tr class="memitem:a9b6dd3c5bd8c50e9e8f0818785685f38" id="r_a9b6dd3c5bd8c50e9e8f0818785685f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b6dd3c5bd8c50e9e8f0818785685f38">DCL_PR_Init</a> (<a class="el" href="#aebf58688fc35694aefe4fdfdb1b5f007">DCL_PR</a> *p)</td></tr>
 <tr class="memdesc:a9b6dd3c5bd8c50e9e8f0818785685f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">QPR控制器初始化, Tustin离散化  <br /></td></tr>
 <tr class="memitem:a1cb2b700f568e956025f0b9ef4484d1e" id="r_a1cb2b700f568e956025f0b9ef4484d1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cb2b700f568e956025f0b9ef4484d1e">DCL_PR_Set</a> (<a class="el" href="#aebf58688fc35694aefe4fdfdb1b5f007">DCL_PR</a> *p, float32_t Kp, float32_t Kr, float32_t wc, float32_t w0, float32_t isr_freq)</td></tr>
 <tr class="memdesc:a1cb2b700f568e956025f0b9ef4484d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置QPR控制器  <br /></td></tr>
-<tr class="memitem:a9147e492c58cb83f5da9d12d5b53dd2f" id="r_a9147e492c58cb83f5da9d12d5b53dd2f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9147e492c58cb83f5da9d12d5b53dd2f">DCL_PR_Run</a> (<a class="el" href="#aebf58688fc35694aefe4fdfdb1b5f007">DCL_PR</a> *p, float32_t rk, float32_t yk, float32_t fk)</td></tr>
-<tr class="memdesc:a9147e492c58cb83f5da9d12d5b53dd2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行QPR控制器  <br /></td></tr>
+<tr class="memitem:a5ec3520722379b80a5ce753e6a0376b7" id="r_a5ec3520722379b80a5ce753e6a0376b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ec3520722379b80a5ce753e6a0376b7">DCL_PR_Run</a> (<a class="el" href="#aebf58688fc35694aefe4fdfdb1b5f007">DCL_PR</a> *p, float32_t rk, float32_t yk, float32_t fk)</td></tr>
+<tr class="memdesc:a5ec3520722379b80a5ce753e6a0376b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行QPR控制器  <br /></td></tr>
 <tr class="memitem:ad7ac26c52e21de3bbbc37e75c702b431" id="r_ad7ac26c52e21de3bbbc37e75c702b431"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7ac26c52e21de3bbbc37e75c702b431">DCL_PIR_Init</a> (<a class="el" href="#aeb5fc5e61a59fbdf844da49b6c570b44">DCL_PIR</a> *p)</td></tr>
 <tr class="memdesc:ad7ac26c52e21de3bbbc37e75c702b431"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化PIR控制器  <br /></td></tr>
 <tr class="memitem:abc7b18fb5267c19ce189644d9c43c18b" id="r_abc7b18fb5267c19ce189644d9c43c18b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc7b18fb5267c19ce189644d9c43c18b">DCL_PIR_Set</a> (<a class="el" href="#aeb5fc5e61a59fbdf844da49b6c570b44">DCL_PIR</a> *p, float32_t kp, float32_t ki, float32_t kr, float32_t <a class="el" href="_transfer_fun_8asm.html#a95d1601247f5ec3ca9d78c43f56679db">Umax</a>, float32_t <a class="el" href="_transfer_fun_8asm.html#aadac943c15058f072d200a1ac173d9b4">Umin</a>, float32_t Imax, float32_t wc, float32_t w0, float32_t isr_freq)</td></tr>
 <tr class="memdesc:abc7b18fb5267c19ce189644d9c43c18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置PIR控制器, Tustin离散化  <br /></td></tr>
-<tr class="memitem:a04263ff617043408598d3aea073155f9" id="r_a04263ff617043408598d3aea073155f9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04263ff617043408598d3aea073155f9">DCL_PIR_Run</a> (<a class="el" href="#aeb5fc5e61a59fbdf844da49b6c570b44">DCL_PIR</a> *p, float32_t rk, float32_t yk, float32_t fk)</td></tr>
-<tr class="memdesc:a04263ff617043408598d3aea073155f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run <a class="el" href="#aeb5fc5e61a59fbdf844da49b6c570b44" title="使用PI和PR结构体定义PIR控制器">DCL_PIR</a> controler  <br /></td></tr>
+<tr class="memitem:ae2fe2278d2f44f140a1330f071db5043" id="r_ae2fe2278d2f44f140a1330f071db5043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2fe2278d2f44f140a1330f071db5043">DCL_PIR_Run</a> (<a class="el" href="#aeb5fc5e61a59fbdf844da49b6c570b44">DCL_PIR</a> *p, float32_t rk, float32_t yk, float32_t fk)</td></tr>
+<tr class="memdesc:ae2fe2278d2f44f140a1330f071db5043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run <a class="el" href="#aeb5fc5e61a59fbdf844da49b6c570b44" title="使用PI和PR结构体定义PIR控制器">DCL_PIR</a> controler  <br /></td></tr>
 <tr class="memitem:a2eeab76047a5c09041165c6c17848c65" id="r_a2eeab76047a5c09041165c6c17848c65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2eeab76047a5c09041165c6c17848c65">DCL_PMR_Init</a> (<a class="el" href="#aeba8ab7d44fef1cb8c260f2c035aef96">DCL_PMR</a> *p)</td></tr>
 <tr class="memdesc:a2eeab76047a5c09041165c6c17848c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化PMR控制器  <br /></td></tr>
-<tr class="memitem:abbb3f4b532c83513aa68e9189567fe07" id="r_abbb3f4b532c83513aa68e9189567fe07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbb3f4b532c83513aa68e9189567fe07">DCL_PMR_Harmonic_Set</a> (<a class="el" href="#aeba8ab7d44fef1cb8c260f2c035aef96">DCL_PMR</a> *p, uint16_t *harmonic_set[], float32_t *Kr[])</td></tr>
-<tr class="memdesc:abbb3f4b532c83513aa68e9189567fe07"><td class="mdescLeft">&#160;</td><td class="mdescRight">为PMR控制器设置跟踪谐波次数和Kr系数  <br /></td></tr>
+<tr class="memitem:ac7bad5ee87e6e9c9c9d1c811edb8c76f" id="r_ac7bad5ee87e6e9c9c9d1c811edb8c76f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7bad5ee87e6e9c9c9d1c811edb8c76f">DCL_PMR_KR_Set</a> (<a class="el" href="#aeba8ab7d44fef1cb8c260f2c035aef96">DCL_PMR</a> *p, float32_t *Kr[])</td></tr>
+<tr class="memdesc:ac7bad5ee87e6e9c9c9d1c811edb8c76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">为PMR控制器设置Kr系数  <br /></td></tr>
+<tr class="memitem:a1e4eb34c9d78edd0af6d382c58cc1e3c" id="r_a1e4eb34c9d78edd0af6d382c58cc1e3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e4eb34c9d78edd0af6d382c58cc1e3c">DCL_PMR_Harmonic_Set</a> (<a class="el" href="#aeba8ab7d44fef1cb8c260f2c035aef96">DCL_PMR</a> *p, uint16_t *harmonic_set)</td></tr>
+<tr class="memdesc:a1e4eb34c9d78edd0af6d382c58cc1e3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">为PMR控制器设置跟踪谐波次数  <br /></td></tr>
 <tr class="memitem:a78d3ccf8ba69629925b8a19e74faae2f" id="r_a78d3ccf8ba69629925b8a19e74faae2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78d3ccf8ba69629925b8a19e74faae2f">DCL_PMR_Set</a> (<a class="el" href="#aeba8ab7d44fef1cb8c260f2c035aef96">DCL_PMR</a> *p, float32_t Kp, float32_t wc, float32_t w0, float32_t isr_freq)</td></tr>
 <tr class="memdesc:a78d3ccf8ba69629925b8a19e74faae2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置PMR控制器  <br /></td></tr>
-<tr class="memitem:a76af882a1c5365d2f3f647c08ef8a45d" id="r_a76af882a1c5365d2f3f647c08ef8a45d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76af882a1c5365d2f3f647c08ef8a45d">DCL_PMR_Run</a> (<a class="el" href="#aeba8ab7d44fef1cb8c260f2c035aef96">DCL_PMR</a> *p, float32_t rk, float32_t yk, float32_t *fk)</td></tr>
-<tr class="memdesc:a76af882a1c5365d2f3f647c08ef8a45d"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行PMR控制器  <br /></td></tr>
+<tr class="memitem:a1b39bfa28debcf62ab6a4dab6e486284" id="r_a1b39bfa28debcf62ab6a4dab6e486284"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b39bfa28debcf62ab6a4dab6e486284">DCL_PMR_Run</a> (<a class="el" href="#aeba8ab7d44fef1cb8c260f2c035aef96">DCL_PMR</a> *p, float32_t rk, float32_t yk, float32_t *fk)</td></tr>
+<tr class="memdesc:a1b39bfa28debcf62ab6a4dab6e486284"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行PMR控制器  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>数字控制库函数定义 <br  />
  包含支持FPU32的结构体定义与函数声明 <br  />
  PI/QPR/QPIR/QPMR/RC </p>
-<dl class="section warning"><dt>警告</dt><dd>include this file after <a class="el" href="_transfer_fun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件">TransferFun.h</a> </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>include this file after <a class="el" href="transferfun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件">TransferFun.h</a> </dd></dl>
 <dl class="section author"><dt>作者</dt><dd>Mao Chenbin (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="_d_c_l_f32_8h_source.html">DCLF32.h</a> 中定义.</p>
@@ -223,7 +220,7 @@ DCLF32.h 的引用(Include)关系图:</div>
 
 <p>PMR控制器谐波数 </p>
 
-<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8h_source.html">DCLF32.h</a> 第 <a class="el" href="_d_c_l_f32_8h_source.html#l00021">21</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8h_source.html">DCLF32.h</a> 第 <a class="el" href="_d_c_l_f32_8h_source.html#l00022">22</a> 行定义.</p>
 
 </div>
 </div>
@@ -327,25 +324,20 @@ DCLF32.h 的引用(Include)关系图:</div>
 <p>初始化 <a class="el" href="#ad3535921d2d0c60eddf8442429c7e81f" title="定义 PI 控制器结构体">DCL_PI</a> 控制器 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>结构体指针</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>结构体指针 </td></tr>
   </table>
   </dd>
 </dl>
-<p>初始化 <a class="el" href="#ad3535921d2d0c60eddf8442429c7e81f" title="定义 PI 控制器结构体">DCL_PI</a> 控制器</p>
-<dl class="section note"><dt>注解</dt><dd>需要在.cmd文件中配置 .TI.ramfunc 段位置, 并预留足够空间 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00025">25</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00012">12</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a55925a82f04c8cf0a3fda5528362cf10" name="a55925a82f04c8cf0a3fda5528362cf10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55925a82f04c8cf0a3fda5528362cf10">&#9670;&#160;</a></span>DCL_PI_Run()</h2>
+<a id="a35475e1bee96bb73d5a2e5a3d11d05ad" name="a35475e1bee96bb73d5a2e5a3d11d05ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35475e1bee96bb73d5a2e5a3d11d05ad">&#9670;&#160;</a></span>DCL_PI_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void DCL_PI_Run </td>
@@ -363,11 +355,6 @@ DCLF32.h 的引用(Include)关系图:</div>
           <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>yk</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>执行串联式PI控制器, <b>需要FPU32</b> 支持 </p>
@@ -381,7 +368,7 @@ DCLF32.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8h_source.html">DCLF32.h</a> 第 <a class="el" href="_d_c_l_f32_8h_source.html#l00120">120</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00036">36</a> 行定义.</p>
 
 </div>
 </div>
@@ -443,7 +430,7 @@ DCLF32.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00039">39</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00026">26</a> 行定义.</p>
 
 </div>
 </div>
@@ -470,32 +457,29 @@ DCLF32.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00071">71</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00085">85</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="_d_c_l_f32_8h_ad7ac26c52e21de3bbbc37e75c702b431_cgraph.png" border="0" usemap="#a_d_c_l_f32_8h_ad7ac26c52e21de3bbbc37e75c702b431_cgraph" loading="lazy" alt=""/></div>
 <map name="a_d_c_l_f32_8h_ad7ac26c52e21de3bbbc37e75c702b431_cgraph" id="a_d_c_l_f32_8h_ad7ac26c52e21de3bbbc37e75c702b431_cgraph">
 <area shape="rect" title="初始化PIR控制器" alt="" coords="5,31,109,57"/>
-<area shape="rect" href="_d_c_l_f32_8c.html#a9a398ae86e1ca190c08bc29f43d56919" title="Flash 启动支持, 将函数搬运至RAM内执行" alt="" coords="160,5,253,32"/>
+<area shape="rect" href="_d_c_l_f32_8c.html#a9a398ae86e1ca190c08bc29f43d56919" title="初始化 DCL_PI 控制器" alt="" coords="160,5,253,32"/>
 <area shape="poly" title=" " alt="" coords="109,33,144,27,145,32,110,38"/>
 <area shape="rect" href="_d_c_l_f32_8c.html#a9b6dd3c5bd8c50e9e8f0818785685f38" title="QPR控制器初始化, Tustin离散化" alt="" coords="157,56,256,83"/>
 <area shape="poly" title=" " alt="" coords="110,50,142,56,141,61,109,55"/>
-<area shape="rect" href="_transfer_fun_8h.html#a7fed97c70a637a0c8db4e7808730eba8" title="初始化 DCL_DF22 控制器结构体" alt="" coords="304,56,416,83"/>
+<area shape="rect" href="transferfun_8h.html#a7fed97c70a637a0c8db4e7808730eba8" title="初始化 DCL_DF22 控制器结构体" alt="" coords="304,56,416,83"/>
 <area shape="poly" title=" " alt="" coords="256,67,288,67,288,72,256,72"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a04263ff617043408598d3aea073155f9" name="a04263ff617043408598d3aea073155f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04263ff617043408598d3aea073155f9">&#9670;&#160;</a></span>DCL_PIR_Run()</h2>
+<a id="ae2fe2278d2f44f140a1330f071db5043" name="ae2fe2278d2f44f140a1330f071db5043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2fe2278d2f44f140a1330f071db5043">&#9670;&#160;</a></span>DCL_PIR_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void DCL_PIR_Run </td>
@@ -518,11 +502,6 @@ DCLF32.h 的引用(Include)关系图:</div>
           <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>fk</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Run <a class="el" href="#aeb5fc5e61a59fbdf844da49b6c570b44" title="使用PI和PR结构体定义PIR控制器">DCL_PIR</a> controler </p>
@@ -536,16 +515,16 @@ DCLF32.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8h_source.html">DCLF32.h</a> 第 <a class="el" href="_d_c_l_f32_8h_source.html#l00205">205</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00101">101</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
-<div class="center"><img src="_d_c_l_f32_8h_a04263ff617043408598d3aea073155f9_cgraph.png" border="0" usemap="#a_d_c_l_f32_8h_a04263ff617043408598d3aea073155f9_cgraph" loading="lazy" alt=""/></div>
-<map name="a_d_c_l_f32_8h_a04263ff617043408598d3aea073155f9_cgraph" id="a_d_c_l_f32_8h_a04263ff617043408598d3aea073155f9_cgraph">
+<div class="center"><img src="_d_c_l_f32_8h_ae2fe2278d2f44f140a1330f071db5043_cgraph.png" border="0" usemap="#a_d_c_l_f32_8h_ae2fe2278d2f44f140a1330f071db5043_cgraph" loading="lazy" alt=""/></div>
+<map name="a_d_c_l_f32_8h_ae2fe2278d2f44f140a1330f071db5043_cgraph" id="a_d_c_l_f32_8h_ae2fe2278d2f44f140a1330f071db5043_cgraph">
 <area shape="rect" title="Run DCL_PIR controler" alt="" coords="5,31,115,57"/>
-<area shape="rect" href="_d_c_l_f32_8h.html#a55925a82f04c8cf0a3fda5528362cf10" title="执行串联式PI控制器, 需要FPU32 支持" alt="" coords="166,5,265,32"/>
+<area shape="rect" href="_d_c_l_f32_8c.html#a35475e1bee96bb73d5a2e5a3d11d05ad" title="执行串联式PI控制器, 需要FPU32 支持" alt="" coords="166,5,265,32"/>
 <area shape="poly" title=" " alt="" coords="115,32,150,27,151,32,116,38"/>
-<area shape="rect" href="_d_c_l_f32_8h.html#a9147e492c58cb83f5da9d12d5b53dd2f" title="执行QPR控制器" alt="" coords="163,56,268,83"/>
+<area shape="rect" href="_d_c_l_f32_8c.html#a5ec3520722379b80a5ce753e6a0376b7" title="执行QPR控制器" alt="" coords="163,56,268,83"/>
 <area shape="poly" title=" " alt="" coords="116,50,148,56,147,61,115,56"/>
 </map>
 </div>
@@ -628,7 +607,7 @@ DCLF32.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00081">81</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00095">95</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -644,8 +623,8 @@ DCLF32.h 的引用(Include)关系图:</div>
 
 </div>
 </div>
-<a id="abbb3f4b532c83513aa68e9189567fe07" name="abbb3f4b532c83513aa68e9189567fe07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbb3f4b532c83513aa68e9189567fe07">&#9670;&#160;</a></span>DCL_PMR_Harmonic_Set()</h2>
+<a id="a1e4eb34c9d78edd0af6d382c58cc1e3c" name="a1e4eb34c9d78edd0af6d382c58cc1e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4eb34c9d78edd0af6d382c58cc1e3c">&#9670;&#160;</a></span>DCL_PMR_Harmonic_Set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -658,27 +637,21 @@ DCLF32.h 的引用(Include)关系图:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>harmonic_set</em></span>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t *</td>          <td class="paramname"><span class="paramname"><em>Kr</em></span>[]&#160;)</td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>harmonic_set</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>为PMR控制器设置跟踪谐波次数和Kr系数 </p>
+<p>为PMR控制器设置跟踪谐波次数 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>结构体指针 </td></tr>
     <tr><td class="paramname">harmonic_set</td><td>谐波次数数组 </td></tr>
-    <tr><td class="paramname">Kr</td><td>Kr系数数组 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00102">102</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00130">130</a> 行定义.</p>
 
 </div>
 </div>
@@ -705,28 +678,57 @@ DCLF32.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00089">89</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00108">108</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="_d_c_l_f32_8h_a2eeab76047a5c09041165c6c17848c65_cgraph.png" border="0" usemap="#a_d_c_l_f32_8h_a2eeab76047a5c09041165c6c17848c65_cgraph" loading="lazy" alt=""/></div>
 <map name="a_d_c_l_f32_8h_a2eeab76047a5c09041165c6c17848c65_cgraph" id="a_d_c_l_f32_8h_a2eeab76047a5c09041165c6c17848c65_cgraph">
 <area shape="rect" title="初始化PMR控制器" alt="" coords="5,5,116,32"/>
-<area shape="rect" href="_transfer_fun_8h.html#a7fed97c70a637a0c8db4e7808730eba8" title="初始化 DCL_DF22 控制器结构体" alt="" coords="164,5,276,32"/>
+<area shape="rect" href="transferfun_8h.html#a7fed97c70a637a0c8db4e7808730eba8" title="初始化 DCL_DF22 控制器结构体" alt="" coords="164,5,276,32"/>
 <area shape="poly" title=" " alt="" coords="116,16,148,16,148,21,116,21"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a76af882a1c5365d2f3f647c08ef8a45d" name="a76af882a1c5365d2f3f647c08ef8a45d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76af882a1c5365d2f3f647c08ef8a45d">&#9670;&#160;</a></span>DCL_PMR_Run()</h2>
+<a id="ac7bad5ee87e6e9c9c9d1c811edb8c76f" name="ac7bad5ee87e6e9c9c9d1c811edb8c76f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7bad5ee87e6e9c9c9d1c811edb8c76f">&#9670;&#160;</a></span>DCL_PMR_KR_Set()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_PMR_KR_Set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aeba8ab7d44fef1cb8c260f2c035aef96">DCL_PMR</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t *</td>          <td class="paramname"><span class="paramname"><em>Kr</em></span>[]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>为PMR控制器设置Kr系数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">Kr</td><td>Kr系数数组 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00121">121</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1b39bfa28debcf62ab6a4dab6e486284" name="a1b39bfa28debcf62ab6a4dab6e486284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b39bfa28debcf62ab6a4dab6e486284">&#9670;&#160;</a></span>DCL_PMR_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void DCL_PMR_Run </td>
@@ -749,11 +751,6 @@ DCLF32.h 的引用(Include)关系图:</div>
           <td class="paramtype">float32_t *</td>          <td class="paramname"><span class="paramname"><em>fk</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>执行PMR控制器 </p>
@@ -767,7 +764,7 @@ DCLF32.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8h_source.html">DCLF32.h</a> 第 <a class="el" href="_d_c_l_f32_8h_source.html#l00251">251</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00144">144</a> 行定义.</p>
 
 </div>
 </div>
@@ -818,7 +815,7 @@ DCLF32.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section warning"><dt>警告</dt><dd>在配置这个函数前,应该先配置Kr和谐波次数 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00112">112</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00139">139</a> 行定义.</p>
 
 </div>
 </div>
@@ -845,28 +842,25 @@ DCLF32.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00049">49</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00057">57</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
 <div class="center"><img src="_d_c_l_f32_8h_a9b6dd3c5bd8c50e9e8f0818785685f38_cgraph.png" border="0" usemap="#a_d_c_l_f32_8h_a9b6dd3c5bd8c50e9e8f0818785685f38_cgraph" loading="lazy" alt=""/></div>
 <map name="a_d_c_l_f32_8h_a9b6dd3c5bd8c50e9e8f0818785685f38_cgraph" id="a_d_c_l_f32_8h_a9b6dd3c5bd8c50e9e8f0818785685f38_cgraph">
 <area shape="rect" title="QPR控制器初始化, Tustin离散化" alt="" coords="5,5,105,32"/>
-<area shape="rect" href="_transfer_fun_8h.html#a7fed97c70a637a0c8db4e7808730eba8" title="初始化 DCL_DF22 控制器结构体" alt="" coords="153,5,265,32"/>
+<area shape="rect" href="transferfun_8h.html#a7fed97c70a637a0c8db4e7808730eba8" title="初始化 DCL_DF22 控制器结构体" alt="" coords="153,5,265,32"/>
 <area shape="poly" title=" " alt="" coords="105,16,137,16,137,21,105,21"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a9147e492c58cb83f5da9d12d5b53dd2f" name="a9147e492c58cb83f5da9d12d5b53dd2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9147e492c58cb83f5da9d12d5b53dd2f">&#9670;&#160;</a></span>DCL_PR_Run()</h2>
+<a id="a5ec3520722379b80a5ce753e6a0376b7" name="a5ec3520722379b80a5ce753e6a0376b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec3520722379b80a5ce753e6a0376b7">&#9670;&#160;</a></span>DCL_PR_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void DCL_PR_Run </td>
@@ -889,11 +883,6 @@ DCLF32.h 的引用(Include)关系图:</div>
           <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>fk</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>执行QPR控制器 </p>
@@ -907,7 +896,7 @@ DCLF32.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8h_source.html">DCLF32.h</a> 第 <a class="el" href="_d_c_l_f32_8h_source.html#l00168">168</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00079">79</a> 行定义.</p>
 
 </div>
 </div>
@@ -963,7 +952,7 @@ DCLF32.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00057">57</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_f32_8c_source.html">DCLF32.c</a> 第 <a class="el" href="_d_c_l_f32_8c_source.html#l00065">65</a> 行定义.</p>
 
 </div>
 </div>

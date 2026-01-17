@@ -1,16 +1,16 @@
 <map id="OLED_Init" name="OLED_Init">
 <area shape="rect" id="Node000001" title="OLED init" alt="" coords="5,81,88,108"/>
-<area shape="rect" id="Node000002" href="$_control___driver_2_o_l_e_d_2oled_8c.html#a6960de38d41ba87c52e40f8bd4b094d3" title="将OLED显存数组全部清零" alt="" coords="141,5,236,32"/>
+<area shape="rect" id="Node000002" href="$_control___driver_2oled_2oled_8c.html#a6960de38d41ba87c52e40f8bd4b094d3" title="将OLED显存数组全部清零" alt="" coords="141,5,236,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,78,147,37,150,42,75,83"/>
-<area shape="rect" id="Node000003" href="$_control___driver_2_o_l_e_d_2oled_8c.html#a82c9cd4f8d003e9dffca9817fa43349c" title="将OLED显存数组更新到OLED屏幕" alt="" coords="136,107,242,133"/>
+<area shape="rect" id="Node000003" href="$_control___driver_2oled_2oled_8c.html#a82c9cd4f8d003e9dffca9817fa43349c" title="将OLED显存数组更新到OLED屏幕" alt="" coords="136,107,242,133"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="89,99,121,105,120,110,88,105"/>
-<area shape="rect" id="Node000005" href="$_control___driver_2_o_l_e_d_2oled_8c.html#a568697a02d0fdf503ea2ded50a1bfe5d" title="OLED 写命令" alt="" coords="461,107,616,133"/>
+<area shape="rect" id="Node000005" href="$_control___driver_2oled_2oled_8c.html#a568697a02d0fdf503ea2ded50a1bfe5d" title="OLED 写命令" alt="" coords="461,107,616,133"/>
 <area shape="poly" id="edge12_Node000001_Node000005" title=" " alt="" coords="88,89,232,85,322,86,414,92,467,100,466,106,413,97,322,91,232,90,88,95"/>
 <area shape="rect" id="Node000010" href="$_peripheral___driver_228335_2_o_l_e_d_2oled_8c.html#a5afff1be901cd9738f1c9652a0676f62" title="send data ot screen" alt="" coords="149,157,228,184"/>
 <area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="72,106,137,143,146,148,144,152,134,148,70,111"/>
-<area shape="rect" id="Node000004" href="$_control___driver_2_o_l_e_d_2oled_8c.html#aad16e65bcb5fa05008b3801d5ac5ef07" title="OLED设置显示光标位置" alt="" coords="290,107,413,133"/>
+<area shape="rect" id="Node000004" href="$_control___driver_2oled_2oled_8c.html#aad16e65bcb5fa05008b3801d5ac5ef07" title="OLED设置显示光标位置" alt="" coords="290,107,413,133"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="243,117,274,117,274,123,243,123"/>
-<area shape="rect" id="Node000009" href="$_control___driver_2_o_l_e_d_2oled_8c.html#a034549a1e1b554b2cd1e8359c3119d24" title="OLED 写数据" alt="" coords="477,157,600,184"/>
+<area shape="rect" id="Node000009" href="$_control___driver_2oled_2oled_8c.html#a034549a1e1b554b2cd1e8359c3119d24" title="OLED 写数据" alt="" coords="477,157,600,184"/>
 <area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="240,131,290,143,379,155,462,163,462,169,379,161,290,148,239,137"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="414,117,446,117,446,123,414,123"/>
 <area shape="rect" id="Node000006" href="$i2c_8c.html#a5352523aad8f6cef92cef0174e2d0d6e" title=" " alt="" coords="692,56,787,83"/>

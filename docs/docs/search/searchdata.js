@@ -1,15 +1,16 @@
 var indexSectionsWithContent =
 {
-  0: "$_abcdefghijklmnopqrstuvwxyz全基开文特电相简",
+  0: "!$_abcdefghijklmnopqrstuvwxyz全基开文特电相简",
   1: "cdfikmprstv",
   2: "acdfgiklmoprstuvx",
-  3: "$abcdefiklmnoprstuvwx",
-  4: "_abcdefghijklmnopqrstuvwxyz",
+  3: "!$abcdefiklmnopqrstuvwx",
+  4: "!_abcdefghijklmnopqrstuvwxyz",
   5: "cdefiklmoprstv",
   6: "cefov",
   7: "bcdefghlmnoprvwy",
-  8: "bcfghiklmnoprstuv",
-  9: "t全基开文特电相简"
+  8: "abcdfghiklmnoprstuv",
+  9: "dfloprstv",
+  10: "t全基开文特电相简"
 };
 
 var indexSectionNames =
@@ -23,7 +24,8 @@ var indexSectionNames =
   6: "enums",
   7: "enumvalues",
   8: "defines",
-  9: "pages"
+  9: "groups",
+  10: "pages"
 };
 
 var indexSectionLabels =
@@ -37,6 +39,7 @@ var indexSectionLabels =
   6: "枚举",
   7: "枚举值",
   8: "宏定义",
-  9: "页"
+  9: "组",
+  10: "页"
 };
 

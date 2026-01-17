@@ -1,6 +1,5 @@
 var _r_f_f_t__f32_8asm =
 [
-    [ "RFFT_F32_STRUCT", "struct_r_f_f_t___f32___s_t_r_u_c_t.html", "struct_r_f_f_t___f32___s_t_r_u_c_t" ],
     [ "RFFT_F32_STRUCT_Handle", "_r_f_f_t__f32_8asm.html#a8e0e8c088fc134b9afc9994c3b253faf", null ],
     [ "Buf", "_r_f_f_t__f32_8asm.html#afdb2bb7b296702d88b16dcda8837fb75", null ],
     [ "FFTSize", "_r_f_f_t__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd", null ],
@@ -26,13 +25,13 @@ var _r_f_f_t__f32_8asm =
     [ "buffer", "_r_f_f_t__f32_8asm.html#a784a700f8da2dd2432d27aa45de6c642", null ],
     [ "C2000", "_r_f_f_t__f32_8asm.html#a514862568f2272017ecf4f8954de2ca3", null ],
     [ "cycle", "_r_f_f_t__f32_8asm.html#ac575de2f74001cdf8519cd6321b08ab2", null ],
-    [ "FFT", "_r_f_f_t__f32_8asm.html#af3aaa80f79c5e73016141a8be4bd99ff", null ],
+    [ "FFT", "_r_f_f_t__f32_8asm.html#adda56382c7482dd58777fa297fa747ab", null ],
     [ "function", "_r_f_f_t__f32_8asm.html#a590668688740da1ecf707208f2630a51", null ],
     [ "functions", "_r_f_f_t__f32_8asm.html#a6694692002fc3c511834ee9d7193a935", null ],
     [ "InBuf", "_r_f_f_t__f32_8asm.html#a48f5d93d1b0018a28446781ddf3daef2", null ],
-    [ "length", "_r_f_f_t__f32_8asm.html#abab2139d42b2a65d638e9cc7c1196af6", null ],
+    [ "length", "_r_f_f_t__f32_8asm.html#a751d2aa275fb1bfb80450c14e7d45403", null ],
     [ "OutBuf", "_r_f_f_t__f32_8asm.html#a7e9a002b321f5b629551c7750d02fd80", null ],
     [ "stages", "_r_f_f_t__f32_8asm.html#adcbc27d8418504081cf0b718cb873633", null ],
-    [ "to", "_r_f_f_t__f32_8asm.html#a699ed3b8cc7d8e76c199b8b8e536208a", null ],
+    [ "to", "_r_f_f_t__f32_8asm.html#a41ae2e4e517a88e8fb1378a8e8ad6f13", null ],
     [ "up", "_r_f_f_t__f32_8asm.html#a712fcebcdf8a02f91f3c2c599f5ea5d2", null ]
 ];

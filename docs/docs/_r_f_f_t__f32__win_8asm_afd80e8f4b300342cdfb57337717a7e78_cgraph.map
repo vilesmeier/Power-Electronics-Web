@@ -1,0 +1,11 @@
+<map id="buffer" name="buffer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,59,81"/>
+<area shape="rect" id="Node000002" href="$_r_f_f_t__f32_8asm.html#a2ddd403cbeebe77d27c0688c77274808" title=" " alt="" coords="110,29,149,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,59,95,49,96,54,60,64"/>
+<area shape="rect" id="Node000004" href="$_r_f_f_t__f32__win_8asm.html#aa2fbe8499f5d5a4eb9e5c72a0a8ae296" title=" " alt="" coords="107,80,152,107"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="60,72,92,81,91,86,59,77"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="111,30,108,20,110,11,118,5,129,3,142,5,148,12,144,16,139,10,129,8,120,10,115,14,114,20,116,28"/>
+<area shape="rect" id="Node000003" href="$_r_f_f_t__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="200,29,271,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="149,40,184,40,184,45,149,45"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="216,30,213,20,215,11,223,5,236,3,249,5,256,12,252,16,246,10,236,8,225,10,220,14,218,20,221,28"/>
+</map>

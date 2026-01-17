@@ -1,23 +1,11 @@
 var searchData=
 [
-  ['oled_5fdisplaybuf_0',['OLED_DisplayBuf',['../_control___driver_2_o_l_e_d_2oled_8h.html#a93569f4971c2477678a8be40110fea3e',1,'OLED_DisplayBuf:&#160;oled_var.c'],['../oled__var_8c.html#a93569f4971c2477678a8be40110fea3e',1,'OLED_DisplayBuf:&#160;oled_var.c']]],
-  ['oled_5ff6x8_1',['OLED_F6x8',['../_control___driver_2_o_l_e_d_2oled_8h.html#a7fc722b0b02713a9ed54aaa4cabef2e1',1,'OLED_F6x8:&#160;oled_var.c'],['../oled__var_8c.html#a7fc722b0b02713a9ed54aaa4cabef2e1',1,'OLED_F6x8:&#160;oled_var.c']]],
-  ['optimization_2',['OPTIMIZATION',['../_r_f_f_t__f32__mag_8asm.html#afee0b53b16791d12473f1e2b16704415',1,'OPTIMIZATION:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32s__mag_8asm.html#afee0b53b16791d12473f1e2b16704415',1,'OPTIMIZATION:&#160;RFFT_f32s_mag.asm']]],
-  ['order_3',['order',['../struct_f_i_r__f32.html#a375bb0d33fdc67ba6c838d7b52a8ca0b',1,'FIR_f32::order'],['../struct_i_i_r__f32.html#aae8f9f3e3336903c95ce2a22bd448094',1,'IIR_f32::order']]],
-  ['osg_5fa1_4',['osg_a1',['../struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f.html#ac0dcc59da6481e2ea3ed5b94417c47d3',1,'SOGI_1PH_OSG_COEFF']]],
-  ['osg_5fa2_5',['osg_a2',['../struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f.html#a88c59e95a3f0c677600bbeaf0f466298',1,'SOGI_1PH_OSG_COEFF']]],
-  ['osg_5fb0_6',['osg_b0',['../struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f.html#af46ac1d6b418a29f0c1314aa6ccc4faa',1,'SOGI_1PH_OSG_COEFF']]],
-  ['osg_5fb2_7',['osg_b2',['../struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f.html#a097aae0ea5cbd2f311691f6015275d3b',1,'SOGI_1PH_OSG_COEFF']]],
-  ['osg_5fcoeff_8',['osg_coeff',['../struct_s_o_g_i__1_p_h.html#a04537ffb34e278b1aa5e66676eff4b83',1,'SOGI_1PH']]],
-  ['osg_5fk_9',['osg_k',['../struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f.html#aa7b8c764d92fa890fedfdef209f180ab',1,'SOGI_1PH_OSG_COEFF']]],
-  ['osg_5fqb0_10',['osg_qb0',['../struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f.html#a4cb7703b3a7a5ce97e43558028e2dd62',1,'SOGI_1PH_OSG_COEFF']]],
-  ['osg_5fqb1_11',['osg_qb1',['../struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f.html#a5cab553d935e504057707d70af0b1504',1,'SOGI_1PH_OSG_COEFF']]],
-  ['osg_5fqb2_12',['osg_qb2',['../struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f.html#ad27b896d3a3ab50e6f3b9c1beedf26e3',1,'SOGI_1PH_OSG_COEFF']]],
-  ['osg_5fqu_13',['osg_qu',['../struct_s_o_g_i__1_p_h.html#a3b5e05397878bdd57e87708e0accc1c7',1,'SOGI_1PH']]],
-  ['osg_5fu_14',['osg_u',['../struct_s_o_g_i__1_p_h.html#a6e8243762a0ce9be882dd7ca2467fbbf',1,'SOGI_1PH']]],
-  ['osg_5fx_15',['osg_x',['../struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f.html#ae984d17a76177969fe171bac5c5977cc',1,'SOGI_1PH_OSG_COEFF']]],
-  ['osg_5fy_16',['osg_y',['../struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f.html#a5c97c6cd032e2da9beb71aaafad7724f',1,'SOGI_1PH_OSG_COEFF']]],
-  ['outbuf_17',['OutBuf',['../struct_r_f_f_t___f32___s_t_r_u_c_t.html#a9b5615538b5e6a334697e9540aefffea',1,'RFFT_F32_STRUCT::OutBuf'],['../_r_f_f_t__adc__f32_8asm.html#a7e9a002b321f5b629551c7750d02fd80',1,'OutBuf:&#160;RFFT_adc_f32.asm'],['../_r_f_f_t__adc__f32u_8asm.html#a7e9a002b321f5b629551c7750d02fd80',1,'OutBuf:&#160;RFFT_adc_f32u.asm'],['../_r_f_f_t__f32_8asm.html#a7e9a002b321f5b629551c7750d02fd80',1,'OutBuf:&#160;RFFT_f32.asm'],['../_r_f_f_t__f32__mag_8asm.html#a7e9a002b321f5b629551c7750d02fd80',1,'OutBuf:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32s__mag_8asm.html#a7e9a002b321f5b629551c7750d02fd80',1,'OutBuf:&#160;RFFT_f32s_mag.asm'],['../_r_f_f_t__f32u_8asm.html#a7e9a002b321f5b629551c7750d02fd80',1,'OutBuf:&#160;RFFT_f32u.asm']]],
-  ['output_18',['Output',['../structdcl__pi.html#a675420ffb9edea8ba70e68451c691062',1,'dcl_pi::Output'],['../structdcl__pr.html#a918e4c7f925a6fc7ead78c88337cbb41',1,'dcl_pr::Output'],['../structdcl__pir.html#a12b18ce5b76e4a13e75d8178a0fd0f97',1,'dcl_pir::Output'],['../structdcl__pmr.html#aa564b86a86e22385acfb679c2228d414',1,'dcl_pmr::Output']]],
-  ['output_19',['output',['../struct_f_i_r__f32.html#a65232f257c08aea4b17ea502b31106f7',1,'FIR_f32::output'],['../struct_r_f_f_t___analyser.html#a8a1fea76d6dbf0246429eb2d321948dc',1,'RFFT_Analyser::output'],['../struct_f_i_l_t_e_r.html#a85c4e172c23b4241932be68ab7df9e26',1,'FILTER::output']]]
+  ['n_0',['N',['../_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877',1,'TransferFun.asm']]],
+  ['nf_1',['NF',['../_transfer_fun_8asm.html#a50feba91d89be680d3c9636d63c3bc28',1,'TransferFun.asm']]],
+  ['nop_2',['NOP',['../_r_f_f_t__f32__phase___t_m_u0_8asm.html#a8bfa365d5042f23b7abaf232776b2870',1,'RFFT_f32_phase_TMU0.asm']]],
+  ['nsample_3',['nsample',['../struct_p_o_w_e_r__3_p_h.html#aaa770e26f785bb47a5aa885a398820b1',1,'POWER_3PH']]],
+  ['nsample_5finv_4',['nsample_inv',['../struct_p_o_w_e_r__3_p_h.html#afd12161063c2f67da0381e2f4e21b5eb',1,'POWER_3PH']]],
+  ['nsamples_5',['nSamples',['../struct_p_o_w_e_r__1_p_h.html#ace46e91fac36ee337218f2ed4a9c6bd3',1,'POWER_1PH']]],
+  ['nsamplesmax_6',['nSamplesMax',['../struct_p_o_w_e_r__1_p_h.html#a996180447483e16470055b6b041fde4b',1,'POWER_1PH']]],
+  ['nsamplesmin_7',['nSamplesMin',['../struct_p_o_w_e_r__1_p_h.html#a5777ab6a79285dd5d96a52bae4e8b8eb',1,'POWER_1PH']]]
 ];

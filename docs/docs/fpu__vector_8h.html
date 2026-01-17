@@ -1,0 +1,2066 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/rfft/fpu_vector.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('fpu__vector_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fpu_vector.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="fpu__types_8h_source.html">fpu_types.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+fpu_vector.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="fpu__vector_8h__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu__vector_8h" loading="lazy" alt=""/></div>
+<map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu__vector_8h" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu__vector_8h">
+<area shape="rect" title=" " alt="" coords="5,5,189,48"/>
+<area shape="rect" href="fpu__types_8h.html" title=" " alt="" coords="52,96,142,123"/>
+<area shape="poly" title=" " alt="" coords="100,49,100,80,94,80,94,49"/>
+<area shape="rect" title=" " alt="" coords="22,171,86,197"/>
+<area shape="poly" title=" " alt="" coords="92,125,72,159,67,156,87,122"/>
+<area shape="rect" title=" " alt="" coords="111,171,168,197"/>
+<area shape="poly" title=" " alt="" coords="107,122,127,156,122,159,102,125"/>
+</map>
+</div>
+</div>
+<p><a href="fpu__vector_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ac07d1db21b15453ad65751c3c3ade65b" id="r_ac07d1db21b15453ad65751c3c3ade65b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac07d1db21b15453ad65751c3c3ade65b">abs_SP_CV</a>&#160;&#160;&#160;abs_SP_CV</td></tr>
+<tr class="memitem:a7eea8a521763acaf67f5c16c1dada9c0" id="r_a7eea8a521763acaf67f5c16c1dada9c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7eea8a521763acaf67f5c16c1dada9c0">iabs_SP_CV</a>&#160;&#160;&#160;iabs_SP_CV</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a07b80de5b5a5cda0bfc9b095f7200d25" id="r_a07b80de5b5a5cda0bfc9b095f7200d25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07b80de5b5a5cda0bfc9b095f7200d25">abs_SP_CV</a> (<a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *y, const <a class="el" href="structcomplex__float.html">complex_float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a07b80de5b5a5cda0bfc9b095f7200d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute Value of a Complex Vector.  <br /></td></tr>
+<tr class="memitem:a2c69934e94e47f81b1de6da7709b46c8" id="r_a2c69934e94e47f81b1de6da7709b46c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c69934e94e47f81b1de6da7709b46c8">abs_SP_CV_2</a> (<a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *y, const <a class="el" href="structcomplex__float.html">complex_float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a2c69934e94e47f81b1de6da7709b46c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute Value of an Even Length Complex Vector.  <br /></td></tr>
+<tr class="memitem:a9658f1d3e1be3ad1084a99ab2b8c0927" id="r_a9658f1d3e1be3ad1084a99ab2b8c0927"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9658f1d3e1be3ad1084a99ab2b8c0927">abs_SP_CV_TMU0</a> (<a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *y, const <a class="el" href="structcomplex__float.html">complex_float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a9658f1d3e1be3ad1084a99ab2b8c0927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute Value of a Complex Vector (TMU0).  <br /></td></tr>
+<tr class="memitem:a9a96d7c79f8beaeb838578c0bd6d4023" id="r_a9a96d7c79f8beaeb838578c0bd6d4023"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a96d7c79f8beaeb838578c0bd6d4023">add_SP_CSxCV</a> (<a class="el" href="structcomplex__float.html">complex_float</a> *y, const <a class="el" href="structcomplex__float.html">complex_float</a> *x, const <a class="el" href="structcomplex__float.html">complex_float</a> c, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a9a96d7c79f8beaeb838578c0bd6d4023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition (Element-Wise) of a Complex Scalar to a Complex Vector.  <br /></td></tr>
+<tr class="memitem:af512718f43d5cdc45cbd9931a49bc889" id="r_af512718f43d5cdc45cbd9931a49bc889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af512718f43d5cdc45cbd9931a49bc889">add_SP_CVxCV</a> (<a class="el" href="structcomplex__float.html">complex_float</a> *y, const <a class="el" href="structcomplex__float.html">complex_float</a> *w, const <a class="el" href="structcomplex__float.html">complex_float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:af512718f43d5cdc45cbd9931a49bc889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition of Two Complex Vectors.  <br /></td></tr>
+<tr class="memitem:a5481ed662197fa30103446a2ec28725e" id="r_a5481ed662197fa30103446a2ec28725e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5481ed662197fa30103446a2ec28725e">iabs_SP_CV</a> (<a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *y, const <a class="el" href="structcomplex__float.html">complex_float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a5481ed662197fa30103446a2ec28725e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse Absolute Value of a Complex Vector.  <br /></td></tr>
+<tr class="memitem:ade4284755c31a11f42e88caab0dd1c14" id="r_ade4284755c31a11f42e88caab0dd1c14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade4284755c31a11f42e88caab0dd1c14">iabs_SP_CV_2</a> (<a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *y, const <a class="el" href="structcomplex__float.html">complex_float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:ade4284755c31a11f42e88caab0dd1c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse Absolute Value of an Even Length Complex Vector.  <br /></td></tr>
+<tr class="memitem:a715bdcbb84ea1c4fd2b2e540b89d8d3e" id="r_a715bdcbb84ea1c4fd2b2e540b89d8d3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a715bdcbb84ea1c4fd2b2e540b89d8d3e">iabs_SP_CV_TMU0</a> (<a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *y, const <a class="el" href="structcomplex__float.html">complex_float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a715bdcbb84ea1c4fd2b2e540b89d8d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse Absolute Value of a Complex Vector (TMU0).  <br /></td></tr>
+<tr class="memitem:a22127595580a2fc6fc548d06e926e5c8" id="r_a22127595580a2fc6fc548d06e926e5c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcomplex__float.html">complex_float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22127595580a2fc6fc548d06e926e5c8">mac_SP_CVxCV</a> (const <a class="el" href="structcomplex__float.html">complex_float</a> *w, const <a class="el" href="structcomplex__float.html">complex_float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a22127595580a2fc6fc548d06e926e5c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply-and-Accumulate of a Complex Vector and a Complex Vector.  <br /></td></tr>
+<tr class="memitem:a5d729107e1daa75690b24f2ba325dce3" id="r_a5d729107e1daa75690b24f2ba325dce3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcomplex__float.html">complex_float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d729107e1daa75690b24f2ba325dce3">mac_SP_RVxCV</a> (const <a class="el" href="structcomplex__float.html">complex_float</a> *w, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a5d729107e1daa75690b24f2ba325dce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply-and-Accumulate of a Real Vector and a Complex Vector.  <br /></td></tr>
+<tr class="memitem:afffd8aacb9f56e7d1d3908be7d5e600a" id="r_afffd8aacb9f56e7d1d3908be7d5e600a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcomplex__float.html">complex_float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afffd8aacb9f56e7d1d3908be7d5e600a">mac_SP_i16RVxCV</a> (const <a class="el" href="structcomplex__float.html">complex_float</a> *w, const int16_t *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:afffd8aacb9f56e7d1d3908be7d5e600a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply-and-Accumulate of a Real Vector and a Complex Vector.  <br /></td></tr>
+<tr class="memitem:acf2605c9604967eba61d9c8ef04028e8" id="r_acf2605c9604967eba61d9c8ef04028e8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf2605c9604967eba61d9c8ef04028e8">maxidx_SP_RV_2</a> (const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:acf2605c9604967eba61d9c8ef04028e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of Maximum Value of an Even Length Real Array.  <br /></td></tr>
+<tr class="memitem:ad13d5b0ebd1102b651356df025165edf" id="r_ad13d5b0ebd1102b651356df025165edf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcomplex__float.html">complex_float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad13d5b0ebd1102b651356df025165edf">mean_SP_CV_2</a> (const <a class="el" href="structcomplex__float.html">complex_float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:ad13d5b0ebd1102b651356df025165edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mean of Real and Imaginary Parts of a Complex Vector.  <br /></td></tr>
+<tr class="memitem:ad8334c6be19b5c58ababcbe014beca97" id="r_ad8334c6be19b5c58ababcbe014beca97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8334c6be19b5c58ababcbe014beca97">median_noreorder_SP_RV</a> (const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:ad8334c6be19b5c58ababcbe014beca97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Median of a Real Valued Array of Floats (Preserved Inputs).  <br /></td></tr>
+<tr class="memitem:aa1508674ea8a31be88f0f0f4a82e22db" id="r_aa1508674ea8a31be88f0f0f4a82e22db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1508674ea8a31be88f0f0f4a82e22db">median_SP_RV</a> (<a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:aa1508674ea8a31be88f0f0f4a82e22db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Median of a real array of floats.  <br /></td></tr>
+<tr class="memitem:a4f9d104895731cd658504db41f8eb4e1" id="r_a4f9d104895731cd658504db41f8eb4e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f9d104895731cd658504db41f8eb4e1">memcpy_fast</a> (void *dst, const void *src, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a4f9d104895731cd658504db41f8eb4e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimized Memory Copy.  <br /></td></tr>
+<tr class="memitem:ab59279fc41aeee8ad4c9e14f1f317375" id="r_ab59279fc41aeee8ad4c9e14f1f317375"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab59279fc41aeee8ad4c9e14f1f317375">memset_fast</a> (void *dst, const int16_t value, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:ab59279fc41aeee8ad4c9e14f1f317375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimized Memory Set.  <br /></td></tr>
+<tr class="memitem:a7087eb1592b6a032d5510a72c86a1321" id="r_a7087eb1592b6a032d5510a72c86a1321"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcomplex__float.html">complex_float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7087eb1592b6a032d5510a72c86a1321">mpy_SP_CSxCS</a> (const <a class="el" href="structcomplex__float.html">complex_float</a> w, const <a class="el" href="structcomplex__float.html">complex_float</a> x)</td></tr>
+<tr class="memdesc:a7087eb1592b6a032d5510a72c86a1321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complex Multiply of Two Floating Point Numbers.  <br /></td></tr>
+<tr class="memitem:ab2adfca09fabe93efce564640817e526" id="r_ab2adfca09fabe93efce564640817e526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2adfca09fabe93efce564640817e526">mpy_SP_CVxCV</a> (<a class="el" href="structcomplex__float.html">complex_float</a> *y, const <a class="el" href="structcomplex__float.html">complex_float</a> *w, const <a class="el" href="structcomplex__float.html">complex_float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:ab2adfca09fabe93efce564640817e526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complex Multiply of Two Complex Vectors.  <br /></td></tr>
+<tr class="memitem:a075dcb0c77e695926fc60789b330151d" id="r_a075dcb0c77e695926fc60789b330151d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a075dcb0c77e695926fc60789b330151d">mpy_SP_CVxCVC</a> (<a class="el" href="structcomplex__float.html">complex_float</a> *y, const <a class="el" href="structcomplex__float.html">complex_float</a> *w, const <a class="el" href="structcomplex__float.html">complex_float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a075dcb0c77e695926fc60789b330151d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication of a Complex Vector and the Complex Conjugate of another Vector.  <br /></td></tr>
+<tr class="memitem:aed36c97ba3d26dfae3cbf5e94487f561" id="r_aed36c97ba3d26dfae3cbf5e94487f561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed36c97ba3d26dfae3cbf5e94487f561">mpy_SP_RMxRM</a> (<a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *y, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *w, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *x, const uint16_t m, const uint16_t n, const uint16_t p)</td></tr>
+<tr class="memdesc:aed36c97ba3d26dfae3cbf5e94487f561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication of Two Real Matrices.  <br /></td></tr>
+<tr class="memitem:a533dbe603cbcc2a107296b5784ca0822" id="r_a533dbe603cbcc2a107296b5784ca0822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a533dbe603cbcc2a107296b5784ca0822">mpy_SP_RMxRM_2</a> (<a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *y, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *w, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *x, const uint16_t m, const uint16_t n, const uint16_t p)</td></tr>
+<tr class="memdesc:a533dbe603cbcc2a107296b5784ca0822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication of Two Real Matrices (n even).  <br /></td></tr>
+<tr class="memitem:a208e1dfeb8337d4a5bf86afafd12cd39" id="r_a208e1dfeb8337d4a5bf86afafd12cd39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a208e1dfeb8337d4a5bf86afafd12cd39">mpy_SP_RSxRV_2</a> (<a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *y, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *x, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> c, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a208e1dfeb8337d4a5bf86afafd12cd39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication of a Real scalar and a Real Vector.  <br /></td></tr>
+<tr class="memitem:ae1d9c3fa590a5b8499ccf092139358bd" id="r_ae1d9c3fa590a5b8499ccf092139358bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1d9c3fa590a5b8499ccf092139358bd">mpy_SP_RSxRVxRV_2</a> (<a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *y, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *w, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *x, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> c, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:ae1d9c3fa590a5b8499ccf092139358bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication of a Real Scalar, a Real Vector, and another Real Vector.  <br /></td></tr>
+<tr class="memitem:a55c7666c791c9768a94dc7d98318acd7" id="r_a55c7666c791c9768a94dc7d98318acd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55c7666c791c9768a94dc7d98318acd7">mpy_SP_RVxCV</a> (<a class="el" href="structcomplex__float.html">complex_float</a> *y, const <a class="el" href="structcomplex__float.html">complex_float</a> *w, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a55c7666c791c9768a94dc7d98318acd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication of a Real Vector and a Complex Vector.  <br /></td></tr>
+<tr class="memitem:af6acd3f5d0572ba2adabf277460553d3" id="r_af6acd3f5d0572ba2adabf277460553d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6acd3f5d0572ba2adabf277460553d3">mpy_SP_RVxRV_2</a> (<a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *y, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *w, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:af6acd3f5d0572ba2adabf277460553d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication of a Real Vector and a Real Vector.  <br /></td></tr>
+<tr class="memitem:a5530dc94d4012981d176fd42022d3b9a" id="r_a5530dc94d4012981d176fd42022d3b9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5530dc94d4012981d176fd42022d3b9a">qsort_SP_RV</a> (void *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a5530dc94d4012981d176fd42022d3b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort an Array of Floats.  <br /></td></tr>
+<tr class="memitem:a774c114b99dd665464355b73d6c0b72d" id="r_a774c114b99dd665464355b73d6c0b72d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a774c114b99dd665464355b73d6c0b72d">rnd_SP_RS</a> (const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> x)</td></tr>
+<tr class="memdesc:a774c114b99dd665464355b73d6c0b72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rounding (Unbiased) of a Floating Point Scalar.  <br /></td></tr>
+<tr class="memitem:a7cffaf3c7d82391c2178257d66fee812" id="r_a7cffaf3c7d82391c2178257d66fee812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cffaf3c7d82391c2178257d66fee812">sub_SP_CSxCV</a> (<a class="el" href="structcomplex__float.html">complex_float</a> *y, const <a class="el" href="structcomplex__float.html">complex_float</a> *x, const <a class="el" href="structcomplex__float.html">complex_float</a> c, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a7cffaf3c7d82391c2178257d66fee812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction of a Complex Scalar from a Complex Vector.  <br /></td></tr>
+<tr class="memitem:a89ae1e6f6012e4e9cb48320842fcef39" id="r_a89ae1e6f6012e4e9cb48320842fcef39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89ae1e6f6012e4e9cb48320842fcef39">sub_SP_CVxCV</a> (<a class="el" href="structcomplex__float.html">complex_float</a> *y, const <a class="el" href="structcomplex__float.html">complex_float</a> *w, const <a class="el" href="structcomplex__float.html">complex_float</a> *x, const uint16_t <a class="el" href="_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877">N</a>)</td></tr>
+<tr class="memdesc:a89ae1e6f6012e4e9cb48320842fcef39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction of a Complex Vector and another Complex Vector.  <br /></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="ac07d1db21b15453ad65751c3c3ade65b" name="ac07d1db21b15453ad65751c3c3ade65b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac07d1db21b15453ad65751c3c3ade65b">&#9670;&#160;</a></span>abs_SP_CV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define abs_SP_CV&#160;&#160;&#160;abs_SP_CV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__vector_8h_source.html">fpu_vector.h</a> 第 <a class="el" href="fpu__vector_8h_source.html#l00078">78</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7eea8a521763acaf67f5c16c1dada9c0" name="a7eea8a521763acaf67f5c16c1dada9c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eea8a521763acaf67f5c16c1dada9c0">&#9670;&#160;</a></span>iabs_SP_CV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define iabs_SP_CV&#160;&#160;&#160;iabs_SP_CV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__vector_8h_source.html">fpu_vector.h</a> 第 <a class="el" href="fpu__vector_8h_source.html#l00079">79</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="a07b80de5b5a5cda0bfc9b095f7200d25" name="a07b80de5b5a5cda0bfc9b095f7200d25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07b80de5b5a5cda0bfc9b095f7200d25">&#9670;&#160;</a></span>abs_SP_CV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void abs_SP_CV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Absolute Value of a Complex Vector. </p>
+<p>This module computes the absolute value of a complex vector. If N is even, use <a class="el" href="#a2c69934e94e47f81b1de6da7709b46c8" title="Absolute Value of an Even Length Complex Vector.">abs_SP_CV_2()</a> for better performance. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y[i]&amp;=&amp; \sqrt(x_{re}[i]^{2} + x_{im}[i]^{2}) \]" src="form_2.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the output vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the x and y vectors</td></tr>
+  </table>
+  </dd>
+</dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>28*N + 9 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a2c69934e94e47f81b1de6da7709b46c8" name="a2c69934e94e47f81b1de6da7709b46c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c69934e94e47f81b1de6da7709b46c8">&#9670;&#160;</a></span>abs_SP_CV_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void abs_SP_CV_2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Absolute Value of an Even Length Complex Vector. </p>
+<p>This module computes the absolute value of an even length complex vector. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ y[i]&amp;=&amp; \sqrt(x_{re}[i]^{2} + x_{im}[i]^{2})\]" src="form_3.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the output vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the x and y vectors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>N must be even</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>18*N + 22 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9658f1d3e1be3ad1084a99ab2b8c0927" name="a9658f1d3e1be3ad1084a99ab2b8c0927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9658f1d3e1be3ad1084a99ab2b8c0927">&#9670;&#160;</a></span>abs_SP_CV_TMU0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void abs_SP_CV_TMU0 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Absolute Value of a Complex Vector (TMU0). </p>
+<p>This module computes the absolute value of a complex vector. It uses the TMU Type 0 accelerator to speed up the calculation of square roots. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y[i]&amp;=&amp; \sqrt(x_{re}[i]^{2} + x_{im}[i]^{2}) \]" src="form_2.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the output vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the x and y vectors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd><ol type="1">
+<li>This function is optimized for N&gt;=8. It is less cycle efficient when N&lt;8. For very small N (e.g., N=1, 2, maybe 3) the user might consider using the TMU intrinsics in the compiler instead of this function.</li>
+</ol>
+</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td></td><td>Cycle count includes the call and return </td></tr>
+<tr>
+<td>30 </td><td>N = 1 (N - vector size) </td></tr>
+<tr>
+<td>7.5*(N)+21 </td><td>1 &lt; N &lt; 8 and N even </td></tr>
+<tr>
+<td>7.5*(N-1)+38 </td><td>1 &lt; N &lt; 8 and N odd </td></tr>
+<tr>
+<td>4*(N-6)+56 </td><td>N &gt;= 8 and N even </td></tr>
+<tr>
+<td>4*(N-7)+73 </td><td>N &gt;= 8 and N odd </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9a96d7c79f8beaeb838578c0bd6d4023" name="a9a96d7c79f8beaeb838578c0bd6d4023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a96d7c79f8beaeb838578c0bd6d4023">&#9670;&#160;</a></span>add_SP_CSxCV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_SP_CSxCV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a></td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Addition (Element-Wise) of a Complex Scalar to a Complex Vector. </p>
+<p>This module adds a complex scalar element-wise to a complex vector. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{re}[i]&amp;=&amp; x_{re}[i] + c_{re}\]" src="form_4.png"/>
+</p>
+ <p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{im}[i]&amp;=&amp; x_{im}[i] + c_{im}\]" src="form_5.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the complex output vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the complex input vector </td></tr>
+    <tr><td class="paramname">c</td><td>complex input scalar </td></tr>
+    <tr><td class="paramname">N</td><td>length of the x and y vectors</td></tr>
+  </table>
+  </dd>
+</dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>4*N + 19 </td><td>Cycle count includes the call and return (COFF) </td></tr>
+<tr>
+<td>4*N + 16 </td><td>Cycle count includes the call and return (EABI) </td></tr>
+</table>
+
+</div>
+</div>
+<a id="af512718f43d5cdc45cbd9931a49bc889" name="af512718f43d5cdc45cbd9931a49bc889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af512718f43d5cdc45cbd9931a49bc889">&#9670;&#160;</a></span>add_SP_CVxCV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_SP_CVxCV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Addition of Two Complex Vectors. </p>
+<p>This module adds two complex vectors. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{re}[i]&amp;=&amp; w_{re}[i] + x_{re}[i]\]" src="form_6.png"/>
+</p>
+ <p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{im}[i]&amp;=&amp; w_{im}[i] + x_{im}[i]\]" src="form_7.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the complex output vector </td></tr>
+    <tr><td class="paramname">w</td><td>pointer to the first complex input vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the second complex input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the w x and y vectors</td></tr>
+  </table>
+  </dd>
+</dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>6*N + 15 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5481ed662197fa30103446a2ec28725e" name="a5481ed662197fa30103446a2ec28725e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5481ed662197fa30103446a2ec28725e">&#9670;&#160;</a></span>iabs_SP_CV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iabs_SP_CV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inverse Absolute Value of a Complex Vector. </p>
+<p>This module computes the inverse absolute value of a complex vector. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y[i]&amp;=&amp; \frac{1}{\sqrt(x_{re}[i]^{2} + x_{im}[i]^{2})}\]" src="form_8.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the output vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the x and y vectors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>N must be at least 2</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>25*N + 13 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="ade4284755c31a11f42e88caab0dd1c14" name="ade4284755c31a11f42e88caab0dd1c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade4284755c31a11f42e88caab0dd1c14">&#9670;&#160;</a></span>iabs_SP_CV_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iabs_SP_CV_2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inverse Absolute Value of an Even Length Complex Vector. </p>
+<p>This module calculates the inverse absolute value of an even length complex vector. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y[i]&amp;=&amp; \frac{1}{\sqrt(x_{re}[i]^{2} + x_{im}[i]^{2})}\]" src="form_8.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the output vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the x and y vectors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>N must be even</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>15*N + 22 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a715bdcbb84ea1c4fd2b2e540b89d8d3e" name="a715bdcbb84ea1c4fd2b2e540b89d8d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a715bdcbb84ea1c4fd2b2e540b89d8d3e">&#9670;&#160;</a></span>iabs_SP_CV_TMU0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iabs_SP_CV_TMU0 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inverse Absolute Value of a Complex Vector (TMU0). </p>
+<p>This module computes the inverse absolute value of a complex vector. It uses the TMU Type 0 accelerator to speed up the calculation of square roots. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y[i]&amp;=&amp; \frac{1}{\sqrt(x_{re}[i]^{2} + x_{im}[i]^{2})}\]" src="form_8.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the output vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the x and y vectors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd><ol type="1">
+<li>This function is optimized for N&gt;=8. It is less cycle efficient when N&lt;8. For very small N (e.g., N=1, 2, maybe 3) the user might consider using the TMU intrinsics in the compiler instead of this function.</li>
+</ol>
+</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td></td><td>Cycle count includes the call and return </td></tr>
+<tr>
+<td>35 </td><td>N = 1 (N - vector size) </td></tr>
+<tr>
+<td>10*(N)+24 </td><td>1 &lt; N &lt; 8 and N even </td></tr>
+<tr>
+<td>10*(N-1)+46 </td><td>1 &lt; N &lt; 8 and N odd </td></tr>
+<tr>
+<td>5*(N-6)+67 </td><td>N &gt;= 8 and N even </td></tr>
+<tr>
+<td>5*(N-7)+89 </td><td>N &gt;= 8 and N odd </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a22127595580a2fc6fc548d06e926e5c8" name="a22127595580a2fc6fc548d06e926e5c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22127595580a2fc6fc548d06e926e5c8">&#9670;&#160;</a></span>mac_SP_CVxCV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcomplex__float.html">complex_float</a> mac_SP_CVxCV </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiply-and-Accumulate of a Complex Vector and a Complex Vector. </p>
+<p>This module multiplies and accumulates a complex vector and another complex vector. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{re} &amp;=&amp; \sum(w_{re}[i]* x_{re}[i] - w_{im}[i] * x_{im}[i]) \]" src="form_9.png"/>
+</p>
+ <p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{im} &amp;=&amp; \sum(w_{re}[i]* x_{im}[i] + w_{im}[i] * x_{re}[i]) \]" src="form_10.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>complex result </td></tr>
+    <tr><td class="paramname">w</td><td>pointer to the first complex input vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the second complex input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the w and x vectors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>N must be a minimum of 3</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>5*N + 24 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="afffd8aacb9f56e7d1d3908be7d5e600a" name="afffd8aacb9f56e7d1d3908be7d5e600a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afffd8aacb9f56e7d1d3908be7d5e600a">&#9670;&#160;</a></span>mac_SP_i16RVxCV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcomplex__float.html">complex_float</a> mac_SP_i16RVxCV </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int16_t *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiply-and-Accumulate of a Real Vector and a Complex Vector. </p>
+<p>This module multiplies and accumulates a 16-bit integer real vector and a floating pt. complex vector. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{re} &amp;=&amp; sum(x[i]*w_{re}[i]) \]" src="form_13.png"/>
+</p>
+ <p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{im} &amp;=&amp; sum(x[i]*w_{im}[i]) \]" src="form_14.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>pointer to the complex input vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the real input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the w and x vectors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>complex floating pt. accumulation result </dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>N must be a minimum of 5</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td></td><td>Cycle count includes the call and return </td></tr>
+<tr>
+<td>3*N + 28 </td><td>N is even </td></tr>
+<tr>
+<td>3*N + 29 </td><td>N is odd </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5d729107e1daa75690b24f2ba325dce3" name="a5d729107e1daa75690b24f2ba325dce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d729107e1daa75690b24f2ba325dce3">&#9670;&#160;</a></span>mac_SP_RVxCV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcomplex__float.html">complex_float</a> mac_SP_RVxCV </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiply-and-Accumulate of a Real Vector and a Complex Vector. </p>
+<p>This module multiplies and accumulates a real vector and a complex vector. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{re} &amp;=&amp; \sum(x[i]*w_{re}[i]) \]" src="form_11.png"/>
+</p>
+ <p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{im} &amp;=&amp; \sum(x[i]*w_{im}[i]) \]" src="form_12.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>complex result </td></tr>
+    <tr><td class="paramname">w</td><td>pointer to the complex input vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the real input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the w and x vectors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>N must be a minimum of 5</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>3*N + 27 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="acf2605c9604967eba61d9c8ef04028e8" name="acf2605c9604967eba61d9c8ef04028e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf2605c9604967eba61d9c8ef04028e8">&#9670;&#160;</a></span>maxidx_SP_RV_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t maxidx_SP_RV_2 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Index of Maximum Value of an Even Length Real Array. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>pointer to the input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the x vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd><ol type="1">
+<li>N must be even</li>
+<li>If more than one instance of the max value exists in x[], the function will return the index of the first occurrence (lowest index value)</li>
+</ol>
+</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>3*N + 21 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad13d5b0ebd1102b651356df025165edf" name="ad13d5b0ebd1102b651356df025165edf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13d5b0ebd1102b651356df025165edf">&#9670;&#160;</a></span>mean_SP_CV_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcomplex__float.html">complex_float</a> mean_SP_CV_2 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mean of Real and Imaginary Parts of a Complex Vector. </p>
+<p>This module calculates the mean of real and imaginary parts of a complex vector. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{re} &amp;=&amp; \frac{\Sigma x_{re}}{N} \]" src="form_15.png"/>
+</p>
+ <p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{im} &amp;=&amp; \frac{\Sigma x_{im}}{N} \]" src="form_16.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>pointer to the input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the x vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>N must be even and a minimum of 4</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>2*N + 34 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad8334c6be19b5c58ababcbe014beca97" name="ad8334c6be19b5c58ababcbe014beca97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8334c6be19b5c58ababcbe014beca97">&#9670;&#160;</a></span>median_noreorder_SP_RV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> median_noreorder_SP_RV </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Median of a Real Valued Array of Floats (Preserved Inputs). </p>
+<p>This module computes the median of a real valued array of floats. The input array is preserved. If input array preservation is not required, use <a class="el" href="#aa1508674ea8a31be88f0f0f4a82e22db" title="Median of a real array of floats.">median_SP_RV()</a> for better performance. This function calls <a class="el" href="#aa1508674ea8a31be88f0f0f4a82e22db" title="Median of a real array of floats.">median_SP_RV()</a> and <a class="el" href="#a4f9d104895731cd658504db41f8eb4e1" title="Optimized Memory Copy.">memcpy_fast()</a>. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>pointer to the real input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the x vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>This function simply makes a local copy of the input array, and then calls median_SP_CV() using the copy </dd>
+<dd>
+The length of the copy of the input array is allocated at compile time by the constant "K" defined in the code. If the passed parameter N is greater than K memory corruption will result. Be sure to recompile the library with an appropriate value <img class="formulaInl" alt="$K &gt;= N$" src="form_17.png"/> before executing this code. The library uses K = 256 as the default value. </dd>
+<dd>
+The first stage of this function (memory copy) is not interruptible. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>median of the vector x</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>N/A </td><td>This is a C function </td></tr>
+</table>
+
+</div>
+</div>
+<a id="aa1508674ea8a31be88f0f0f4a82e22db" name="aa1508674ea8a31be88f0f0f4a82e22db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1508674ea8a31be88f0f0f4a82e22db">&#9670;&#160;</a></span>median_SP_RV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> median_SP_RV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Median of a real array of floats. </p>
+<p>This module computes the median of a real array of floats. The Input array is NOT preserved. If input array preservation is required, use <a class="el" href="#ad8334c6be19b5c58ababcbe014beca97" title="Median of a Real Valued Array of Floats (Preserved Inputs).">median_noreorder_SP_RV()</a>. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>pointer to the real input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the x vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd><ol type="1">
+<li>This function is destructive to the input array x in that it will be sorted during function execution. If this is not allowable, use median_noreorder_SP_CV().</li>
+<li>This function should be compiled with -o4, -mf5, and no -g compiler options for best performance. </li>
+</ol>
+</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>median of the vector x</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>N/A </td><td>This is a C function </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a4f9d104895731cd658504db41f8eb4e1" name="a4f9d104895731cd658504db41f8eb4e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f9d104895731cd658504db41f8eb4e1">&#9670;&#160;</a></span>memcpy_fast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void memcpy_fast </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>dst</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>src</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Optimized Memory Copy. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>pointer to the source buffer </td></tr>
+    <tr><td class="paramname">dst</td><td>pointer to the destination buffer </td></tr>
+    <tr><td class="paramname">N</td><td>size (16-bits) of the buffer to be copied </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>The function checks for the case of N=0 and just returns if true </dd>
+<dd>
+This function is not interruptible. Use memcpy_fast_far instead for interruptibility. </dd>
+<dd>
+This function does not support memory above 22 bits address. For input data above 22 bits address, use memcpy_fast_far instead.</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>N + 20 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="ab59279fc41aeee8ad4c9e14f1f317375" name="ab59279fc41aeee8ad4c9e14f1f317375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab59279fc41aeee8ad4c9e14f1f317375">&#9670;&#160;</a></span>memset_fast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void memset_fast </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>dst</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int16_t</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Optimized Memory Set. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>pointer to the destination buffer </td></tr>
+    <tr><td class="paramname">value</td><td>value to write to all the buffer locations </td></tr>
+    <tr><td class="paramname">N</td><td>size (16-bits) of the buffer to be written </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>The function checks for the case of N=0 and just returns if true </dd>
+<dd>
+This function is not interruptible</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>N + 20 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a7087eb1592b6a032d5510a72c86a1321" name="a7087eb1592b6a032d5510a72c86a1321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7087eb1592b6a032d5510a72c86a1321">&#9670;&#160;</a></span>mpy_SP_CSxCS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcomplex__float.html">complex_float</a> mpy_SP_CSxCS </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a></td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Complex Multiply of Two Floating Point Numbers. </p>
+<p>This module multiplies two floating point complex values. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{re} &amp;=&amp; w_{re}*x_{re} - w_{im}*x_{im}\]" src="form_18.png"/>
+</p>
+ <p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{im} &amp;=&amp; w_{re}*x_{im} + w_{im}*x_{re}\]" src="form_19.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>First complex input </td></tr>
+    <tr><td class="paramname">x</td><td>Second complex input </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>complex product of the first and second complex input</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>19 </td><td>Cycle count includes the call and return (COFF) </td></tr>
+<tr>
+<td>17 </td><td>Cycle count includes the call and return (EABI) </td></tr>
+</table>
+
+</div>
+</div>
+<a id="ab2adfca09fabe93efce564640817e526" name="ab2adfca09fabe93efce564640817e526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2adfca09fabe93efce564640817e526">&#9670;&#160;</a></span>mpy_SP_CVxCV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpy_SP_CVxCV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Complex Multiply of Two Complex Vectors. </p>
+<p>This module performs complex multiplication on two input complex vectors. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{re}[i] &amp;=&amp; w_{re}[i]*x_{re}[i] - w_{im}[i]*x_{im}[i] \]" src="form_20.png"/>
+</p>
+ <p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{im}[i] &amp;=&amp; w_{re}[i]*x_{im}[i] + w_{im}[i]*x_{re}[i] \]" src="form_21.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the complex product of the first and second complex vectors </td></tr>
+    <tr><td class="paramname">w</td><td>pointer to the first complex input vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the second complex input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the w x and y vectors</td></tr>
+  </table>
+  </dd>
+</dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>10*N + 16 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a075dcb0c77e695926fc60789b330151d" name="a075dcb0c77e695926fc60789b330151d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a075dcb0c77e695926fc60789b330151d">&#9670;&#160;</a></span>mpy_SP_CVxCVC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpy_SP_CVxCVC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplication of a Complex Vector and the Complex Conjugate of another Vector. </p>
+<p>This module multiplies a complex vector (w) and the complex conjugate of another complex vector (x). </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[x^{*}_{re}[i] &amp;=&amp; x_{re}[i]\]" src="form_22.png"/>
+</p>
+ <p class="formulaDsp">
+<img class="formulaDsp" alt="\[x^{*}_{im}[i] &amp;=&amp; - x_{im}[i]\]" src="form_23.png"/>
+</p>
+ <p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{re}[i] &amp;=&amp; w_{re}[i]*x_{re}[i] - w_{im}[i]*x^{*}_{im}[i]\]" src="form_24.png"/>
+</p>
+ <p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{im}[i] &amp;=&amp; w_{re}[i]*x^{*}_{im}[i] + w_{im}[i]*x_{re}[i]\]" src="form_25.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the complex conjugate product of the first and second complex vectors </td></tr>
+    <tr><td class="paramname">w</td><td>pointer to the first complex input vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the second complex input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the w x and y vectors</td></tr>
+  </table>
+  </dd>
+</dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>11*N + 16 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="aed36c97ba3d26dfae3cbf5e94487f561" name="aed36c97ba3d26dfae3cbf5e94487f561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed36c97ba3d26dfae3cbf5e94487f561">&#9670;&#160;</a></span>mpy_SP_RMxRM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpy_SP_RMxRM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplication of Two Real Matrices. </p>
+<p>This module multiplies two real matrices. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y[] &amp;=&amp; w[]*x[] \]" src="form_26.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to result matrix </td></tr>
+    <tr><td class="paramname">w</td><td>pointer to 1st source matrix </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to 2nd source matrix </td></tr>
+    <tr><td class="paramname">m</td><td>number of rows in the first and output matrices </td></tr>
+    <tr><td class="paramname">n</td><td>number of columns in the first and rows in the second matrix </td></tr>
+    <tr><td class="paramname">p</td><td>number of columns in the second and output matrices </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd><ol type="1">
+<li>There are no restrictions on the values for n, m, and pwith this function.</li>
+<li>If n is even and at least 4, you can use <a class="el" href="#a533dbe603cbcc2a107296b5784ca0822" title="Multiplication of Two Real Matrices (n even).">mpy_SP_RMxRM_2()</a> for better performance if desired.</li>
+</ol>
+</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>5*m*n*p + overhead </td><td>Cycle count includes the call and return </td></tr>
+<tr>
+<td>m=2 n=8, p=2 takes ~274 cycles </td><td>versus 5*m*n*p = 160 <br  />
+ </td></tr>
+<tr>
+<td>m=8, n=8, p=8 takes ~3694 cycles </td><td>versus 5*m*n*p = 2560 <br  />
+ </td></tr>
+<tr>
+<td>m=64, n=64, p=64 takes ~718030 cycles </td><td>versus 5*m*n*p = 1310720 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a533dbe603cbcc2a107296b5784ca0822" name="a533dbe603cbcc2a107296b5784ca0822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a533dbe603cbcc2a107296b5784ca0822">&#9670;&#160;</a></span>mpy_SP_RMxRM_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpy_SP_RMxRM_2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplication of Two Real Matrices (n even). </p>
+<p>This module multiplies two real matrices. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y[] &amp;=&amp; w[]*x[] \]" src="form_26.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to result matrix </td></tr>
+    <tr><td class="paramname">w</td><td>pointer to 1st source matrix </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to 2nd source matrix </td></tr>
+    <tr><td class="paramname">m</td><td>number of rows in the first and output matrices </td></tr>
+    <tr><td class="paramname">n</td><td>number of columns in the first and rows in the second matrix </td></tr>
+    <tr><td class="paramname">p</td><td>number of columns in the second and output matrices </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd><ol type="1">
+<li>n must be even and at least 4. If not, use <a class="el" href="#aed36c97ba3d26dfae3cbf5e94487f561" title="Multiplication of Two Real Matrices.">mpy_SP_RMxRM()</a>.</li>
+<li>There are no restrictions on the values of m and p with this function.</li>
+</ol>
+</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>2.5*m*n*p + overhead </td><td>Cycle count includes the call and return </td></tr>
+<tr>
+<td>m=2 n=8, p=2 takes ~199 cycles </td><td>versus 2.5*m*n*p = 80 </td></tr>
+<tr>
+<td>m=8, n=8, p=8 takes ~2479 cycles </td><td>versus 2.5*m*n*p = 1280 </td></tr>
+<tr>
+<td>m=64, n=64, p=64 takes ~725663 cycles </td><td>versus 2.5*m*n*p = 655360 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a208e1dfeb8337d4a5bf86afafd12cd39" name="a208e1dfeb8337d4a5bf86afafd12cd39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a208e1dfeb8337d4a5bf86afafd12cd39">&#9670;&#160;</a></span>mpy_SP_RSxRV_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpy_SP_RSxRV_2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a></td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplication of a Real scalar and a Real Vector. </p>
+<p>This module multiplies a real scalar and a real vector. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y[i] &amp;=&amp; c*x[i] \]" src="form_27.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the product of the scalar and a real vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the real input vector </td></tr>
+    <tr><td class="paramname">c</td><td>scalar multiplier </td></tr>
+    <tr><td class="paramname">N</td><td>length of the x and y vectors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>N must be even and a minimum of 4.</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>2*N + 15 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="ae1d9c3fa590a5b8499ccf092139358bd" name="ae1d9c3fa590a5b8499ccf092139358bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1d9c3fa590a5b8499ccf092139358bd">&#9670;&#160;</a></span>mpy_SP_RSxRVxRV_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpy_SP_RSxRVxRV_2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a></td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplication of a Real Scalar, a Real Vector, and another Real Vector. </p>
+<p>This module multiplies a real scalar with a real vector and another real vector. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y[i] &amp;=&amp; c*w[i]*x[i] \]" src="form_28.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the product of the scalar and two real vectors </td></tr>
+    <tr><td class="paramname">w</td><td>pointer to the first real input vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the second real input vector </td></tr>
+    <tr><td class="paramname">c</td><td>scalar multiplier </td></tr>
+    <tr><td class="paramname">N</td><td>length of the w x and y vectors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>N must be even and a minimum of 4.</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>3*N + 22 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a55c7666c791c9768a94dc7d98318acd7" name="a55c7666c791c9768a94dc7d98318acd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55c7666c791c9768a94dc7d98318acd7">&#9670;&#160;</a></span>mpy_SP_RVxCV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpy_SP_RVxCV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplication of a Real Vector and a Complex Vector. </p>
+<p>This module multiplies a real vector and a complex vector. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{re}[i] &amp;=&amp; x[i]*w_{re}[i] \]" src="form_29.png"/>
+</p>
+ <p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{im}[i] &amp;=&amp; x[i]*w_{im}[i] \]" src="form_30.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the product of the real and complex vectors </td></tr>
+    <tr><td class="paramname">w</td><td>pointer to the complex input vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the real input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the w x and y vectors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>N must be at least 2</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>5*N + 15 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="af6acd3f5d0572ba2adabf277460553d3" name="af6acd3f5d0572ba2adabf277460553d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6acd3f5d0572ba2adabf277460553d3">&#9670;&#160;</a></span>mpy_SP_RVxRV_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpy_SP_RVxRV_2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplication of a Real Vector and a Real Vector. </p>
+<p>This module multiplies two real vectors. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y[i] &amp;=&amp; w[i]*x[i]\]" src="form_31.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the product of two real vectors </td></tr>
+    <tr><td class="paramname">w</td><td>pointer to the first real input vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the second real input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the w x and y vectors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>N must be even and a minimum of 4.</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>3*N + 17 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5530dc94d4012981d176fd42022d3b9a" name="a5530dc94d4012981d176fd42022d3b9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5530dc94d4012981d176fd42022d3b9a">&#9670;&#160;</a></span>qsort_SP_RV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void qsort_SP_RV </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort an Array of Floats. </p>
+<p>This module sorts an array of floats. This function is a partially optimized version of qsort.c from the C28x cgtools lib qsort() v6.0.1. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>pointer to the input array </td></tr>
+    <tr><td class="paramname">N</td><td>size of the input array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>Performance is best with -o1, -mf3 compiler options (cgtools v6.0.1)</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>N/A </td><td>This is a C function </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a774c114b99dd665464355b73d6c0b72d" name="a774c114b99dd665464355b73d6c0b72d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a774c114b99dd665464355b73d6c0b72d">&#9670;&#160;</a></span>rnd_SP_RS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> rnd_SP_RS </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rounding (Unbiased) of a Floating Point Scalar. </p>
+<p>numerical examples: rnd_SP_RS(+4.4) = +4.0 \ rnd_SP_RS(-4.4) = -4.0 \ rnd_SP_RS(+4.5) = +5.0 \ rnd_SP_RS(-4.5) = -5.0 \ rnd_SP_RS(+4.6) = +5.0 \ rnd_SP_RS(-4.6) = -5.0 \ </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>input value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>rounded</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>18 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a7cffaf3c7d82391c2178257d66fee812" name="a7cffaf3c7d82391c2178257d66fee812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cffaf3c7d82391c2178257d66fee812">&#9670;&#160;</a></span>sub_SP_CSxCV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sub_SP_CSxCV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a></td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtraction of a Complex Scalar from a Complex Vector. </p>
+<p>This module subtracts a complex scalar from a complex vector. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{re}[i] &amp;=&amp; x_{re}[i] - c_{re} \]" src="form_32.png"/>
+</p>
+ <p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{im}[i] &amp;=&amp; x_{im}[i] - c_{im} \]" src="form_33.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the difference of a complex scalar from a complex vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the complex input vector </td></tr>
+    <tr><td class="paramname">c</td><td>complex input scalar </td></tr>
+    <tr><td class="paramname">N</td><td>length of the x and y vectors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>N must be at least 2</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>4*N + 19 </td><td>Cycle count includes the call and return (COFF) </td></tr>
+<tr>
+<td>4*N + 16 </td><td>Cycle count includes the call and return (EABI) </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a89ae1e6f6012e4e9cb48320842fcef39" name="a89ae1e6f6012e4e9cb48320842fcef39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89ae1e6f6012e4e9cb48320842fcef39">&#9670;&#160;</a></span>sub_SP_CVxCV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sub_SP_CVxCV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcomplex__float.html">complex_float</a> *</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>N</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtraction of a Complex Vector and another Complex Vector. </p>
+<p>This module subtracts a complex vector from another complex vector. </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{re}[i] &amp;=&amp; w_{re}[i] - x_{re}[i] \]" src="form_34.png"/>
+</p>
+ <p class="formulaDsp">
+<img class="formulaDsp" alt="\[y_{im}[i] &amp;=&amp; w_{im}[i] - x_{im}[i] \]" src="form_35.png"/>
+</p>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>pointer to the difference of two complex vectors </td></tr>
+    <tr><td class="paramname">w</td><td>pointer to the first complex input vector </td></tr>
+    <tr><td class="paramname">x</td><td>pointer to the second complex input vector </td></tr>
+    <tr><td class="paramname">N</td><td>length of the w x and y vectors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>N must be at least 2</dd></dl>
+<a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>Performance Data</caption>
+<tr>
+<th>Cycles </th><th>Comment </th></tr>
+<tr>
+<td>6*N + 15 </td><td>Cycle count includes the call and return </td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_0fd93c14012f780a2e81c2f5b80c75ff.html">rfft</a></li><li class="navelem"><a href="fpu__vector_8h.html">fpu_vector.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

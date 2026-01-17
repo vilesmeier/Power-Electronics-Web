@@ -1,22 +1,10 @@
 var searchData=
 [
-  ['r0h_0',['R0H',['../_r_f_f_t__f32__adc__win_8asm.html#a45ea94823bb7ce3da03c0f57f5d89e7b',1,'R0H:&#160;RFFT_f32_adc_win.asm'],['../_transfer_fun_8asm.html#a45ea94823bb7ce3da03c0f57f5d89e7b',1,'R0H:&#160;TransferFun.asm']]],
-  ['r1h_1',['R1H',['../_r_f_f_t__f32__adc__win_8asm.html#af93bccdebf1a9b088b6d5512757825a4',1,'R1H:&#160;RFFT_f32_adc_win.asm'],['../_transfer_fun_8asm.html#af93bccdebf1a9b088b6d5512757825a4',1,'R1H:&#160;TransferFun.asm']]],
-  ['r2h_2',['R2H',['../_r_f_f_t__f32__adc__win_8asm.html#a4ee963e2881a211d4c4139bb672b1b5f',1,'R2H:&#160;RFFT_f32_adc_win.asm'],['../_transfer_fun_8asm.html#a4ee963e2881a211d4c4139bb672b1b5f',1,'R2H:&#160;TransferFun.asm']]],
-  ['r3h_3',['R3H',['../_r_f_f_t__f32__adc__win_8asm.html#a8c7d1149d47c2e02b576057191bfc881',1,'R3H:&#160;RFFT_f32_adc_win.asm'],['../_transfer_fun_8asm.html#a8c7d1149d47c2e02b576057191bfc881',1,'R3H:&#160;TransferFun.asm']]],
-  ['r4h_4',['R4H',['../_r_f_f_t__f32__mag_8asm.html#a7edb5f39eb583edfa24c84eee8c41889',1,'R4H:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32s__mag_8asm.html#ad1802edaad10a50a895ba989e7fb827e',1,'R4H:&#160;RFFT_f32s_mag.asm'],['../_transfer_fun_8asm.html#a7edb5f39eb583edfa24c84eee8c41889',1,'R4H:&#160;TransferFun.asm']]],
-  ['r5h_5',['R5H',['../_r_f_f_t__f32__mag_8asm.html#a556498f1b9673d8a851b33e408b83bfa',1,'R5H:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32s__mag_8asm.html#a594ae4b4547720f2b2f14a17c7f28340',1,'R5H:&#160;RFFT_f32s_mag.asm'],['../_transfer_fun_8asm.html#a556498f1b9673d8a851b33e408b83bfa',1,'R5H:&#160;TransferFun.asm']]],
-  ['r6h_6',['R6H',['../_r_f_f_t__f32__mag_8asm.html#ab3924acd02e2394f9acfab699ee389ec',1,'R6H:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32s__mag_8asm.html#aa4672cb695cc81e192e1f213f2855475',1,'R6H:&#160;RFFT_f32s_mag.asm'],['../_transfer_fun_8asm.html#ab3924acd02e2394f9acfab699ee389ec',1,'R6H:&#160;TransferFun.asm']]],
-  ['r7h_7',['R7H',['../_r_f_f_t__f32__mag_8asm.html#a6ab2ece977a80afbee932e6840c0c5fe',1,'R7H:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32s__mag_8asm.html#a6ab2ece977a80afbee932e6840c0c5fe',1,'R7H:&#160;RFFT_f32s_mag.asm'],['../_transfer_fun_8asm.html#a47ddb6f37b60f205e9f04a1384dca9ce',1,'R7H:&#160;TransferFun.asm']]],
-  ['ramfunc_8',['ramfunc',['../_transfer_fun_8asm.html#aa0d0c767390ebab00eff15bf75878399',1,'TransferFun.asm']]],
-  ['ref_5fangle_9',['ref_angle',['../struct_r_a_m_p.html#a541ce5d020b53c11658bb0e7292893db',1,'RAMP']]],
-  ['results_10',['results',['../_r_f_f_t__adc__f32_8asm.html#a45bff0c66456842c81ad34e9579b1b56',1,'RFFT_adc_f32.asm']]],
-  ['return_11',['return',['../_transfer_fun_8asm.html#a55e1b31bc65388c3a79389b7a250b4de',1,'TransferFun.asm']]],
-  ['returns_12',['returns',['../_transfer_fun_8asm.html#a6e83c8cb4e9a4538f3f97ca27ddd297f',1,'TransferFun.asm']]],
-  ['rfft_13',['rfft',['../struct_r_f_f_t___analyser.html#a19ba40aaa96c51c2e158ebfb20103bf9',1,'RFFT_Analyser']]],
-  ['rfft_5fadc_5ff32_5fwin_14',['RFFT_adc_f32_win',['../_r_f_f_t__f32__adc__win_8asm.html#aece64baebe81ff6fbb7a74540a221fc3',1,'RFFT_f32_adc_win.asm']]],
-  ['rfft_5fadc_5ff32u_15',['RFFT_adc_f32u',['../_r_f_f_t__adc__f32_8asm.html#a989fe007e6b139c1fb7a30c3a37d2dd5',1,'RFFT_adc_f32.asm']]],
-  ['rfft_5ff32_5fmag_16',['RFFT_f32_mag',['../_r_f_f_t__f32__mag_8asm.html#ae0e430848795df457d5610979de05789',1,'RFFT_f32_mag.asm']]],
-  ['rfft_5ff32_5ftwiddlefactors_17',['RFFT_f32_twiddleFactors',['../fpu__rfft_8h.html#a7ee4950c0f3a0aa89000ac36ffffcd16',1,'fpu_rfft.h']]],
-  ['rfft_5ff32s_5fmag_18',['RFFT_f32s_mag',['../_r_f_f_t__f32s__mag_8asm.html#a757d5457319f6231c46a88ba5458d6e5',1,'RFFT_f32s_mag.asm']]]
+  ['q_0',['Q',['../struct_p_o_w_e_r__3_p_h.html#a57a6fadaccf788e17708f490b56ac617',1,'POWER_3PH']]],
+  ['q_1',['q',['../struct_d_q.html#ae2eb8f5f4dc30164453cbd9c0f9d7b0a',1,'DQ']]],
+  ['q_5fn_5fdecoupl_2',['q_n_decoupl',['../struct_d_d_s_r_f__3_p_h.html#a73e0789f22aa05b6d14a6fc77d86526c',1,'DDSRF_3PH']]],
+  ['q_5fn_5fdecoupl_5flpf_3',['q_n_decoupl_lpf',['../struct_d_d_s_r_f__3_p_h.html#a68e01e5fb13a9db1098ac0ebdb40ec34',1,'DDSRF_3PH']]],
+  ['q_5fp_5fdecoupl_4',['q_p_decoupl',['../struct_d_d_s_r_f__3_p_h.html#ab6260536edf63ad563a0b603f6015641',1,'DDSRF_3PH']]],
+  ['q_5fp_5fdecoupl_5flpf_5',['q_p_decoupl_lpf',['../struct_d_d_s_r_f__3_p_h.html#a894ab118c703a13d6ce8d6b7e301a767',1,'DDSRF_3PH']]],
+  ['quadf32_6',['QUADF32',['../_r_f_f_t__f32__phase___t_m_u0_8asm.html#a2d5ab0f1b2e4deb1dc161feb23798f68',1,'RFFT_f32_phase_TMU0.asm']]]
 ];

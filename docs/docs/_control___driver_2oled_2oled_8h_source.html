@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/oled/oled.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_control___driver_2oled_2oled_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">oled.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_control___driver_2oled_2oled_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef OLED_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define OLED_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// 头文件包含</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;stdint.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;inc/hw_types.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="i2c_8h.html">i2c.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;math.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// 全局宏定义</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#a372bc446b37ea7d91fe11d671f234c58">   18</a></span><span class="preprocessor">#define OLED_I2C_BASE           I2CA_BASE   </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#a764efb1655297fd3db7678610851ea7d">   19</a></span><span class="preprocessor">#define OLED_6X8                6           </span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#a986f0e172f995979409d2b38de51a2ec">   20</a></span><span class="preprocessor">#define OLED_MAX_ROW            8           </span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#af4264dad14d2960b6d186d244f7ab258">   21</a></span><span class="preprocessor">#define OLED_MAX_COLUMN         128         </span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#af4541768e95e8d3c6e6b17ead91d1a8c">   22</a></span><span class="preprocessor">#define OLED_MAX_PAGE           8           </span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#a7dfa2c4cfbfcba36416046052e7943e8">   23</a></span><span class="preprocessor">#define OLED_ADDR               0x3C        </span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// 结构体定义</span></div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33">   31</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33">OLED_FROMAT</a> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33adba5bb88007809e69fb73934de9dee87">   33</a></span>    <a class="code hl_enumvalue" href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33adba5bb88007809e69fb73934de9dee87">OLED_BIN</a> = 0U,      </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33a3ea7faa0807dae628745a7e42c79711d">   34</a></span>    <a class="code hl_enumvalue" href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33a3ea7faa0807dae628745a7e42c79711d">OLED_OCT</a> = 1U,      </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33a07ac7b1fe980a51aa95772d41525600d">   35</a></span>    <a class="code hl_enumvalue" href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33a07ac7b1fe980a51aa95772d41525600d">OLED_DEC</a> = 2U,      </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33acd741b13bba1545f157d8b416b89c760">   36</a></span>    <a class="code hl_enumvalue" href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33acd741b13bba1545f157d8b416b89c760">OLED_HEX</a> = 3U       </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#a7ce25ca717affa983000aad4a3165a13">   37</a></span>}<a class="code hl_typedef" href="_control___driver_2oled_2oled_8h.html#a7ce25ca717affa983000aad4a3165a13">OLED_FORMAT</a>;</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deb">   44</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deba1f996243e5dd71dbfbad07212118b019">   46</a></span>    <a class="code hl_enumvalue" href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deba1f996243e5dd71dbfbad07212118b019">OLED_UNFILLED</a> = 0U,     </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deba09dbc4ed7d071d8fd9ca5ff31d39f83c">   47</a></span>    <a class="code hl_enumvalue" href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deba09dbc4ed7d071d8fd9ca5ff31d39f83c">OLED_FILLED</a>   = 1U      </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="_control___driver_2oled_2oled_8h.html#a7ff3f3b7ef4fa3b3a3267d6d97a317ab">   48</a></span>}<a class="code hl_enumeration" href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a>;</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">extern</span> uint8_t <a class="code hl_variable" href="_control___driver_2oled_2oled_8h.html#a93569f4971c2477678a8be40110fea3e">OLED_DisplayBuf</a>[8][128];</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">extern</span> <span class="keyword">const</span> uint8_t <a class="code hl_variable" href="_control___driver_2oled_2oled_8h.html#a7fc722b0b02713a9ed54aaa4cabef2e1">OLED_F6x8</a>[95][6];</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a7372e46460a371e4d94a0ee7f5f1a1fd">OLED_Init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a82c9cd4f8d003e9dffca9817fa43349c">OLED_Update</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a029e37b9cbbc17649fa02a3cc2c98a29">OLED_UpdateArea</a>(int16_t X, int16_t Y, uint8_t Width, uint8_t Height);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a6960de38d41ba87c52e40f8bd4b094d3">OLED_Clear</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#aac92cfe1899db8eb779d133c987c6751">OLED_ClearArea</a>(int16_t X, int16_t Y, uint8_t Width, uint8_t Height);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a23c6cc85fd664c7c8c40e0799b0ae261">OLED_Reverse</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a4c1e02aa74ddc41d8c4e168ebc643a3c">OLED_ReverseArea</a>(int16_t X, int16_t Y, uint8_t Width, uint8_t Height);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#aa331dbadc06f4c13afb97120aae62825">OLED_ShowImage</a>(int16_t X, int16_t Y, uint8_t Width, uint8_t Height, <span class="keyword">const</span> uint8_t *Image);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a702041c412b420edd94a154681664202">OLED_ShowChar</a>(int16_t X, int16_t Y, <span class="keywordtype">char</span> Char);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a7869abbb812853dbd5673ecd64ccfeab">OLED_ShowString</a>(int16_t X, int16_t Y, <span class="keywordtype">char</span> *String);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a9a8496051d3f0c10130d9d471f0c124e">OLED_ShowUnsignedNum</a>(int16_t X, int16_t Y, uint32_t Number, uint8_t Length, <a class="code hl_typedef" href="_control___driver_2oled_2oled_8h.html#a7ce25ca717affa983000aad4a3165a13">OLED_FORMAT</a> format);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a4a403791ec36b102b18a11d01ec6b8e3">OLED_ShowSignedNum</a>(int16_t X, int16_t Y, int32_t Number, uint8_t Length, <a class="code hl_typedef" href="_control___driver_2oled_2oled_8h.html#a7ce25ca717affa983000aad4a3165a13">OLED_FORMAT</a> format);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#ad44b9ca6c1f8ca222561fe145e4eb450">OLED_ShowFloatNum</a>(int16_t X, int16_t Y, float32_t Number, uint8_t IntLength, uint8_t FraLength);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a844ceaa4803f82d5936ba3dd45e65022">OLED_DrawPoint</a>(int16_t X, int16_t Y);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>uint8_t <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#accbfe61ff6d99f9b65bb0ab7d2bc508b">OLED_GetPoint</a>(int16_t X, int16_t Y);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#acabff6f3f4a5ea26544cec21aa0b93d8">OLED_DrawLine</a>(int16_t X0, int16_t Y0, int16_t X1, int16_t Y1);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#ad9deca36e5b2cc2dcbf23444ceb3c59c">OLED_DrawRectangle</a>(int16_t X, int16_t Y, uint8_t Width, uint8_t Height, <a class="code hl_enumeration" href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a0705d9e553afe7f32062ea10898e7771">OLED_DrawTriangle</a>(int16_t X0, int16_t Y0, int16_t X1, int16_t Y1, int16_t X2, int16_t Y2, <a class="code hl_enumeration" href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a0c7425c5ba85794625dcfa028c91e134">OLED_DrawCircle</a>(int16_t X, int16_t Y, uint8_t Radius, <a class="code hl_enumeration" href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#ab080f4a3b1740662e187efc2384b9801">OLED_DrawEllipse</a>(int16_t X, int16_t Y, uint8_t A, uint8_t B, <a class="code hl_enumeration" href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#adfeafdf82e5d4ad40918809cef92a6fa">OLED_DrawArc</a>(int16_t X, int16_t Y, uint8_t Radius, int16_t StartAngle, int16_t EndAngle, <a class="code hl_enumeration" href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a568697a02d0fdf503ea2ded50a1bfe5d">OLED_WriteCommand</a>(uint8_t Command);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a034549a1e1b554b2cd1e8359c3119d24">OLED_WriteData</a>(uint8_t *Data, uint8_t Count);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="keywordtype">void</span> <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#aad16e65bcb5fa05008b3801d5ac5ef07">OLED_SetCursor</a>(uint8_t Page, uint8_t X);</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>uint32_t <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a7803502eeddd959ac51b71974318de1a">OLED_Pow</a>(uint32_t X, uint32_t Y);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>uint8_t <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#addeab9dc9aea233b5d5e741fb7c1cc3d">OLED_pnpoly</a>(uint8_t nvert, int16_t *vertx, int16_t *verty, int16_t testx, int16_t testy);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>uint8_t <a class="code hl_function" href="_control___driver_2oled_2oled_8h.html#a1b6950930269c5f1d1d25d59a4600381">OLED_IsInAngle</a>(int16_t X, int16_t Y, int16_t StartAngle, int16_t EndAngle);</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a029e37b9cbbc17649fa02a3cc2c98a29"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a029e37b9cbbc17649fa02a3cc2c98a29">OLED_UpdateArea</a></div><div class="ttdeci">void OLED_UpdateArea(int16_t X, int16_t Y, uint8_t Width, uint8_t Height)</div><div class="ttdoc">将OLED显存数组部分更新到OLED屏幕</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00175">oled.c:175</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a034549a1e1b554b2cd1e8359c3119d24"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a034549a1e1b554b2cd1e8359c3119d24">OLED_WriteData</a></div><div class="ttdeci">void OLED_WriteData(uint8_t *Data, uint8_t Count)</div><div class="ttdoc">OLED 写数据</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00030">oled.c:30</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a0705d9e553afe7f32062ea10898e7771"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a0705d9e553afe7f32062ea10898e7771">OLED_DrawTriangle</a></div><div class="ttdeci">void OLED_DrawTriangle(int16_t X0, int16_t Y0, int16_t X1, int16_t Y1, int16_t X2, int16_t Y2, OLED_FILL IsFilled)</div><div class="ttdoc">OLED三角形</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00650">oled.c:650</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a0c7425c5ba85794625dcfa028c91e134"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a0c7425c5ba85794625dcfa028c91e134">OLED_DrawCircle</a></div><div class="ttdeci">void OLED_DrawCircle(int16_t X, int16_t Y, uint8_t Radius, OLED_FILL IsFilled)</div><div class="ttdoc">OLED画圆</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00694">oled.c:694</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a1b6950930269c5f1d1d25d59a4600381"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a1b6950930269c5f1d1d25d59a4600381">OLED_IsInAngle</a></div><div class="ttdeci">uint8_t OLED_IsInAngle(int16_t X, int16_t Y, int16_t StartAngle, int16_t EndAngle)</div><div class="ttdoc">判断指定点是否在指定角度内部</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00139">oled.c:139</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a23c6cc85fd664c7c8c40e0799b0ae261"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a23c6cc85fd664c7c8c40e0799b0ae261">OLED_Reverse</a></div><div class="ttdeci">void OLED_Reverse(void)</div><div class="ttdoc">将OLED显存数组全部取反</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00231">oled.c:231</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a4a403791ec36b102b18a11d01ec6b8e3"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a4a403791ec36b102b18a11d01ec6b8e3">OLED_ShowSignedNum</a></div><div class="ttdeci">void OLED_ShowSignedNum(int16_t X, int16_t Y, int32_t Number, uint8_t Length, OLED_FORMAT format)</div><div class="ttdoc">OLED显示有符号数字</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00382">oled.c:382</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a4c1e02aa74ddc41d8c4e168ebc643a3c"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a4c1e02aa74ddc41d8c4e168ebc643a3c">OLED_ReverseArea</a></div><div class="ttdeci">void OLED_ReverseArea(int16_t X, int16_t Y, uint8_t Width, uint8_t Height)</div><div class="ttdoc">将OLED显存数组部分取反</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00243">oled.c:243</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a568697a02d0fdf503ea2ded50a1bfe5d"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a568697a02d0fdf503ea2ded50a1bfe5d">OLED_WriteCommand</a></div><div class="ttdeci">void OLED_WriteCommand(uint8_t Command)</div><div class="ttdoc">OLED 写命令</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00010">oled.c:10</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a6960de38d41ba87c52e40f8bd4b094d3"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a6960de38d41ba87c52e40f8bd4b094d3">OLED_Clear</a></div><div class="ttdeci">void OLED_Clear(void)</div><div class="ttdoc">将OLED显存数组全部清零</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00203">oled.c:203</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a702041c412b420edd94a154681664202"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a702041c412b420edd94a154681664202">OLED_ShowChar</a></div><div class="ttdeci">void OLED_ShowChar(int16_t X, int16_t Y, char Char)</div><div class="ttdoc">OLED显示一个字符</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00301">oled.c:301</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a7372e46460a371e4d94a0ee7f5f1a1fd"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a7372e46460a371e4d94a0ee7f5f1a1fd">OLED_Init</a></div><div class="ttdeci">void OLED_Init(void)</div><div class="ttdoc">OLED初始化</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00059">oled.c:59</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a7803502eeddd959ac51b71974318de1a"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a7803502eeddd959ac51b71974318de1a">OLED_Pow</a></div><div class="ttdeci">uint32_t OLED_Pow(uint32_t X, uint32_t Y)</div><div class="ttdoc">次方函数</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00112">oled.c:112</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a7869abbb812853dbd5673ecd64ccfeab"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a7869abbb812853dbd5673ecd64ccfeab">OLED_ShowString</a></div><div class="ttdeci">void OLED_ShowString(int16_t X, int16_t Y, char *String)</div><div class="ttdoc">OLED显示字符串</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00308">oled.c:308</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a7ce25ca717affa983000aad4a3165a13"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a7ce25ca717affa983000aad4a3165a13">OLED_FORMAT</a></div><div class="ttdeci">enum OLED_FROMAT OLED_FORMAT</div><div class="ttdoc">枚举, 指定OLED显示整型方式</div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a7fc722b0b02713a9ed54aaa4cabef2e1"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a7fc722b0b02713a9ed54aaa4cabef2e1">OLED_F6x8</a></div><div class="ttdeci">const uint8_t OLED_F6x8[95][6]</div><div class="ttdoc">OLED字库</div><div class="ttdef"><b>定义</b> <a href="oled__var_8c_source.html#l00012">oled_var.c:12</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a82c9cd4f8d003e9dffca9817fa43349c"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a82c9cd4f8d003e9dffca9817fa43349c">OLED_Update</a></div><div class="ttdeci">void OLED_Update(void)</div><div class="ttdoc">将OLED显存数组更新到OLED屏幕</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00162">oled.c:162</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a844ceaa4803f82d5936ba3dd45e65022"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a844ceaa4803f82d5936ba3dd45e65022">OLED_DrawPoint</a></div><div class="ttdeci">void OLED_DrawPoint(int16_t X, int16_t Y)</div><div class="ttdoc">指定位置画一个点</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00492">oled.c:492</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a85e5b201fc32f48e7fd9fe2177735c33"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33">OLED_FROMAT</a></div><div class="ttdeci">OLED_FROMAT</div><div class="ttdoc">枚举, 指定OLED显示整型方式</div><div class="ttdef"><b>定义</b> <a href="#l00031">oled.h:32</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a85e5b201fc32f48e7fd9fe2177735c33a07ac7b1fe980a51aa95772d41525600d"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33a07ac7b1fe980a51aa95772d41525600d">OLED_DEC</a></div><div class="ttdeci">@ OLED_DEC</div><div class="ttdoc">十进制</div><div class="ttdef"><b>定义</b> <a href="#l00035">oled.h:35</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a85e5b201fc32f48e7fd9fe2177735c33a3ea7faa0807dae628745a7e42c79711d"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33a3ea7faa0807dae628745a7e42c79711d">OLED_OCT</a></div><div class="ttdeci">@ OLED_OCT</div><div class="ttdoc">八进制</div><div class="ttdef"><b>定义</b> <a href="#l00034">oled.h:34</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a85e5b201fc32f48e7fd9fe2177735c33acd741b13bba1545f157d8b416b89c760"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33acd741b13bba1545f157d8b416b89c760">OLED_HEX</a></div><div class="ttdeci">@ OLED_HEX</div><div class="ttdoc">十六进制</div><div class="ttdef"><b>定义</b> <a href="#l00036">oled.h:36</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a85e5b201fc32f48e7fd9fe2177735c33adba5bb88007809e69fb73934de9dee87"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a85e5b201fc32f48e7fd9fe2177735c33adba5bb88007809e69fb73934de9dee87">OLED_BIN</a></div><div class="ttdeci">@ OLED_BIN</div><div class="ttdoc">二进制</div><div class="ttdef"><b>定义</b> <a href="#l00033">oled.h:33</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a93569f4971c2477678a8be40110fea3e"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a93569f4971c2477678a8be40110fea3e">OLED_DisplayBuf</a></div><div class="ttdeci">uint8_t OLED_DisplayBuf[8][128]</div><div class="ttdoc">GDDRAM 显存数组镜像数组</div><div class="ttdef"><b>定义</b> <a href="oled__var_8c_source.html#l00010">oled_var.c:10</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a976bfab42b37c5ae0b31992fb3705deb"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a></div><div class="ttdeci">OLED_FILL</div><div class="ttdoc">枚举, 显示多边形显示方式</div><div class="ttdef"><b>定义</b> <a href="#l00044">oled.h:45</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a976bfab42b37c5ae0b31992fb3705deba09dbc4ed7d071d8fd9ca5ff31d39f83c"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deba09dbc4ed7d071d8fd9ca5ff31d39f83c">OLED_FILLED</a></div><div class="ttdeci">@ OLED_FILLED</div><div class="ttdoc">填充</div><div class="ttdef"><b>定义</b> <a href="#l00047">oled.h:47</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a976bfab42b37c5ae0b31992fb3705deba1f996243e5dd71dbfbad07212118b019"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a976bfab42b37c5ae0b31992fb3705deba1f996243e5dd71dbfbad07212118b019">OLED_UNFILLED</a></div><div class="ttdeci">@ OLED_UNFILLED</div><div class="ttdoc">不填充</div><div class="ttdef"><b>定义</b> <a href="#l00046">oled.h:46</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_a9a8496051d3f0c10130d9d471f0c124e"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#a9a8496051d3f0c10130d9d471f0c124e">OLED_ShowUnsignedNum</a></div><div class="ttdeci">void OLED_ShowUnsignedNum(int16_t X, int16_t Y, uint32_t Number, uint8_t Length, OLED_FORMAT format)</div><div class="ttdoc">OLED显示数字</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00318">oled.c:318</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_aa331dbadc06f4c13afb97120aae62825"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#aa331dbadc06f4c13afb97120aae62825">OLED_ShowImage</a></div><div class="ttdeci">void OLED_ShowImage(int16_t X, int16_t Y, uint8_t Width, uint8_t Height, const uint8_t *Image)</div><div class="ttdoc">OLED显示图像</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00259">oled.c:259</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_aac92cfe1899db8eb779d133c987c6751"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#aac92cfe1899db8eb779d133c987c6751">OLED_ClearArea</a></div><div class="ttdeci">void OLED_ClearArea(int16_t X, int16_t Y, uint8_t Width, uint8_t Height)</div><div class="ttdoc">将OLED显存数组部分清零</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00215">oled.c:215</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_aad16e65bcb5fa05008b3801d5ac5ef07"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#aad16e65bcb5fa05008b3801d5ac5ef07">OLED_SetCursor</a></div><div class="ttdeci">void OLED_SetCursor(uint8_t Page, uint8_t X)</div><div class="ttdoc">OLED设置显示光标位置</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00104">oled.c:104</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_ab080f4a3b1740662e187efc2384b9801"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#ab080f4a3b1740662e187efc2384b9801">OLED_DrawEllipse</a></div><div class="ttdeci">void OLED_DrawEllipse(int16_t X, int16_t Y, uint8_t A, uint8_t B, OLED_FILL IsFilled)</div><div class="ttdoc">画椭圆</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00766">oled.c:766</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_acabff6f3f4a5ea26544cec21aa0b93d8"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#acabff6f3f4a5ea26544cec21aa0b93d8">OLED_DrawLine</a></div><div class="ttdeci">void OLED_DrawLine(int16_t X0, int16_t Y0, int16_t X1, int16_t Y1)</div><div class="ttdoc">OLED画线</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00515">oled.c:515</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_accbfe61ff6d99f9b65bb0ab7d2bc508b"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#accbfe61ff6d99f9b65bb0ab7d2bc508b">OLED_GetPoint</a></div><div class="ttdeci">uint8_t OLED_GetPoint(int16_t X, int16_t Y)</div><div class="ttdoc">获取指定位置点的值</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00501">oled.c:501</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_ad44b9ca6c1f8ca222561fe145e4eb450"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#ad44b9ca6c1f8ca222561fe145e4eb450">OLED_ShowFloatNum</a></div><div class="ttdeci">void OLED_ShowFloatNum(int16_t X, int16_t Y, float32_t Number, uint8_t IntLength, uint8_t FraLength)</div><div class="ttdoc">OLED显示浮点数字</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00461">oled.c:461</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_ad9deca36e5b2cc2dcbf23444ceb3c59c"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#ad9deca36e5b2cc2dcbf23444ceb3c59c">OLED_DrawRectangle</a></div><div class="ttdeci">void OLED_DrawRectangle(int16_t X, int16_t Y, uint8_t Width, uint8_t Height, OLED_FILL IsFilled)</div><div class="ttdoc">OLED矩形</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00617">oled.c:617</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_addeab9dc9aea233b5d5e741fb7c1cc3d"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#addeab9dc9aea233b5d5e741fb7c1cc3d">OLED_pnpoly</a></div><div class="ttdeci">uint8_t OLED_pnpoly(uint8_t nvert, int16_t *vertx, int16_t *verty, int16_t testx, int16_t testy)</div><div class="ttdoc">判断指定点是否在指定多边形内部</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00122">oled.c:122</a></div></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html_adfeafdf82e5d4ad40918809cef92a6fa"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html#adfeafdf82e5d4ad40918809cef92a6fa">OLED_DrawArc</a></div><div class="ttdeci">void OLED_DrawArc(int16_t X, int16_t Y, uint8_t Radius, int16_t StartAngle, int16_t EndAngle, OLED_FILL IsFilled)</div><div class="ttdoc">OLED画圆弧</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00864">oled.c:864</a></div></div>
+<div class="ttc" id="ai2c_8h_html"><div class="ttname"><a href="i2c_8h.html">i2c.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_c38e7e6077b5427c3d80136a5cbe2b61.html">oled</a></li><li class="navelem"><a href="_control___driver_2oled_2oled_8h.html">oled.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

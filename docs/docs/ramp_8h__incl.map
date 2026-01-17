@@ -1,4 +1,4 @@
-<map id="NUEDC&#45;Core/Code/Control_Driver/RAMP/ramp.h" name="NUEDC&#45;Core/Code/Control_Driver/RAMP/ramp.h">
+<map id="NUEDC&#45;Core/Code/Control_Driver/ramp/ramp.h" name="NUEDC&#45;Core/Code/Control_Driver/ramp/ramp.h">
 <area shape="rect" id="Node000001" title="参考相位生成 函数声明" alt="" coords="5,5,189,48"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="36,171,100,197"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,50,49,71,33,97,30,112,33,128,49,157,44,160,28,130,25,112,28,95,45,68,66,47"/>

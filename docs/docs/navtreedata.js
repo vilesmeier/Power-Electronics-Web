@@ -26,6 +26,7 @@ var NAVTREE =
 [
   [ "NUEDC", "index.html", [
     [ "全国大学生电子设计竞赛 电力电子方向软件库", "index.html", "index" ],
+    [ "专题", "topics.html", "topics" ],
     [ "结构体", "annotated.html", [
       [ "结构体", "annotated.html", "annotated_dup" ],
       [ "结构体索引", "classes.html", null ],
@@ -51,14 +52,18 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_control___driver_2_o_l_e_d_2oled_8c.html",
-"_r_f_f_t__adc__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713",
-"_r_f_f_t__f32s__mag_8asm.html#a92975724c920d645cc3fae7075e9c2a1",
-"filter_8h.html#ac11d127292fe897a054b665cf5985e83",
-"fpu__rfft_8h.html#aa8570a2cefb6e9f92fdfc14007e3e2f7",
-"mathdef_8h.html#a560d9528aa2f6cab7c51a8681c3586ff",
-"struct_d_d_s_r_f__3_p_h.html#a9a99be98f04fbc34aaf475f8f2e4e112",
-"struct_s_v_p_w_m.html#ad788b5586f2098e155f1d000b7a74717"
+"_control___driver_2oled_2oled_8c.html",
+"_r_f_f_t__f32__mag_8asm.html#a24637272b7be23905464ac649121ffba",
+"_r_f_f_t__f32__phase_8asm.html#acb68fd4d5f308cd6af4951e060cee2d7",
+"_r_f_f_t__f32__twiddle_factors_8asm.html#a3243c1a388d2cadc6ab4d71ab13b00fb",
+"_r_f_f_t__f32__twiddle_factors_8asm.html#aa4411f6d31be8385ed72cb1bb1db58eb",
+"_r_f_f_t__f32__win_8asm.html#aa2fbe8499f5d5a4eb9e5c72a0a8ae296",
+"fpu__fft__blackman_8h.html#a639569a3412ce84bc477387b1cefd8b6",
+"fpu__vector_8h.html#a7087eb1592b6a032d5510a72c86a1321",
+"mathdef_8h.html#a295453dbba3d1c7a0e028919947d9d28",
+"rfft_8h.html#a375c03b6ba7682f23a46a642bc7c35ea",
+"struct_r_f_f_t.html#a30277556531fca121dc4afc6a478c47c",
+"vofa_8h.html#a8b37353f7cbbd178e8f995dba7eaae73"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

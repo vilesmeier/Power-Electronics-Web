@@ -1,25 +1,11 @@
 var searchData=
 [
-  ['c_0',['c',['../struct_d_q.html#a1aded4068d266a4dc8948695ca06e15a',1,'DQ']]],
-  ['c2000_1',['C2000',['../_r_f_f_t__adc__f32_8asm.html#a514862568f2272017ecf4f8954de2ca3',1,'C2000:&#160;RFFT_adc_f32.asm'],['../_r_f_f_t__f32_8asm.html#a514862568f2272017ecf4f8954de2ca3',1,'C2000:&#160;RFFT_f32.asm'],['../_r_f_f_t__f32u_8asm.html#a514862568f2272017ecf4f8954de2ca3',1,'C2000:&#160;RFFT_f32u.asm']]],
-  ['c2000_2',['c2000',['../_r_f_f_t__adc__f32u_8asm.html#acea50da3fcf5dbd1ff9aa0b028fa370e',1,'RFFT_adc_f32u.asm']]],
-  ['calc_3',['calc',['../struct_f_i_r__f32.html#a45a1f5d37ad45d88ab5bd8cd0b7f118e',1,'FIR_f32::calc'],['../struct_i_i_r__f32.html#abf0308784cde5e39e3b08e2435a995b7',1,'IIR_f32::calc']]],
-  ['calculations_4',['calculations',['../_r_f_f_t__f32__mag_8asm.html#aea070ea264390b3cdc2f95f950449d14',1,'calculations:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32s__mag_8asm.html#a168fedfa99ce6eb529b27557c7eea443',1,'calculations:&#160;RFFT_f32s_mag.asm']]],
-  ['cap1_5',['cap1',['../struct_c_a_p___d_u_t_y.html#a119a1c5101a0bf00b4803784bc701f1c',1,'CAP_DUTY']]],
-  ['cap2_6',['cap2',['../struct_c_a_p___d_u_t_y.html#a378758cb7879c53f36bbf9a7ed501fc6',1,'CAP_DUTY']]],
-  ['cap3_7',['cap3',['../struct_c_a_p___d_u_t_y.html#a786c4a2eed6c7c9b3115f73f24a84678',1,'CAP_DUTY']]],
-  ['cap4_8',['cap4',['../struct_c_a_p___d_u_t_y.html#a747bbef8832cff4f4a66cf46149c0992',1,'CAP_DUTY']]],
-  ['cbindex_9',['cbindex',['../struct_f_i_r__f32.html#a01db0ec18c3bbadffd65e9a235a615fa',1,'FIR_f32']]],
-  ['coeff_5fptr_10',['coeff_ptr',['../struct_f_i_r__f32.html#a28dedc05452ba862c2f37422856458b0',1,'FIR_f32']]],
-  ['coelho_11',['Coelho',['../_r_f_f_t__f32__adc__win_8asm.html#af8d670651fef3a12a928a25e7a4b0135',1,'RFFT_f32_adc_win.asm']]],
-  ['comp1_12',['comp1',['../struct_m_o_d.html#ade1a8ab96bf2ce8065a077ba30389b19',1,'MOD::comp1'],['../struct_s_v_p_w_m.html#a800ea40ae7e0bb82ad90c076198aa6a3',1,'SVPWM::comp1']]],
-  ['comp2_13',['comp2',['../struct_m_o_d.html#a994ce35cce6865415e109e13bd3a8bd2',1,'MOD::comp2'],['../struct_s_v_p_w_m.html#ae733b87ec6ec37b78181c02d7f6f10cd',1,'SVPWM::comp2']]],
-  ['comp3_14',['comp3',['../struct_m_o_d.html#a03aa7e9f47c04a7afd4b98593c845741',1,'MOD::comp3'],['../struct_s_v_p_w_m.html#a181d409d38e4345fca4accaa9d059272',1,'SVPWM::comp3']]],
-  ['cond_15',['Cond',['../struct_m_p_p_t___i_n_c_c.html#afce71122a37f47de0dca6c1f0b93828e',1,'MPPT_INCC::Cond'],['../struct_m_p_p_t___i_n_c_c___i.html#a16047155c63f4432c2ed7759f3b37588',1,'MPPT_INCC_I::Cond']]],
-  ['cos_16',['cos',['../struct_d_q.html#a61371fbd4d8d45c19504bd2bb55779f7',1,'DQ']]],
-  ['cos_5f2theta_17',['cos_2theta',['../struct_d_d_s_r_f__3_p_h.html#a9a99be98f04fbc34aaf475f8f2e4e112',1,'DDSRF_3PH']]],
-  ['cosine_18',['cosine',['../struct_s_o_g_i__1_p_h.html#a636c3cd5bb5f9b6b6cc723d28ff5c0e4',1,'SOGI_1PH']]],
-  ['cossinbuf_19',['CosSinBuf',['../struct_r_f_f_t___f32___s_t_r_u_c_t.html#ab1180d10df01c6b2aef2650e057d3cb0',1,'RFFT_F32_STRUCT']]],
-  ['currsign_20',['currSign',['../struct_p_o_w_e_r__1_p_h.html#a0e5efa0754e70939f5f89b432b9fcfdc',1,'POWER_1PH']]],
-  ['cycle_21',['cycle',['../_r_f_f_t__f32_8asm.html#ac575de2f74001cdf8519cd6321b08ab2',1,'RFFT_f32.asm']]]
+  ['b_0',['b',['../struct_d_q.html#aa2803cc4cddc4ad21a0ef5fec72405c3',1,'DQ']]],
+  ['b0_1',['b0',['../struct_s_o_g_i__1_p_h___l_p_f___c_o_e_f_f.html#a2f33605b2c1d4ff6c8d625149abdc3e9',1,'SOGI_1PH_LPF_COEFF::b0'],['../struct_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html#a238687adace75bfb633d7f28e3373318',1,'SRF_3PH_LPF_COEFF::b0'],['../struct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html#a5fb26ee5069a8e11fd35ac3c7eb2de0d',1,'DDSRF_3PH_LPF_COEFF::b0'],['../structdcl__df11.html#a44188336e5b776d60a9ebbb27039b067',1,'dcl_df11::b0'],['../structdcl__df22.html#a03528277f341d047fadc1e6ce7b204cd',1,'dcl_df22::b0'],['../structdcl__df23.html#ae2e0a3509ac2475beb0b8b9f19bd3980',1,'dcl_df23::b0']]],
+  ['b1_2',['b1',['../struct_s_o_g_i__1_p_h___l_p_f___c_o_e_f_f.html#af78650fe5443ac6a8ec9a8f59da882d2',1,'SOGI_1PH_LPF_COEFF::b1'],['../struct_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html#a65e0af57c121c3a143702f5dd06f8734',1,'SRF_3PH_LPF_COEFF::b1'],['../struct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html#a9f3bd4e98d513b121820a1bc688d741a',1,'DDSRF_3PH_LPF_COEFF::b1'],['../structdcl__df11.html#a1e42e221debe8c53e59b0d9afa92f700',1,'dcl_df11::b1'],['../structdcl__df22.html#a749a8e78827048558ef94262cb1b2da8',1,'dcl_df22::b1'],['../structdcl__df23.html#ae9590782806e8502c45c92f1bbc49112',1,'dcl_df23::b1']]],
+  ['b2_3',['b2',['../structdcl__df22.html#a999dfadc0e3ccc0a21b963590c3a5db6',1,'dcl_df22::b2'],['../structdcl__df23.html#a07c56dd7b56bfe8c415c0906c834532a',1,'dcl_df23::b2']]],
+  ['b3_4',['b3',['../structdcl__df23.html#a71eb0900e1ee30b9ab32eb6d5e365a74',1,'dcl_df23']]],
+  ['beta_5',['beta',['../struct_d_q.html#a6bbac8cb900c1e2e5e33d609288e28e1',1,'DQ']]],
+  ['bits_6',['bits',['../union_f_l_a_g.html#a16052fc60ef5076072673c586afed04d',1,'FLAG::bits'],['../union_k_e_y.html#a7ae3686140c8e0e6e133a0f10544190a',1,'KEY::bits']]],
+  ['buffer_7',['buffer',['../_r_f_f_t__f32_8asm.html#a784a700f8da2dd2432d27aa45de6c642',1,'RFFT_f32.asm']]]
 ];

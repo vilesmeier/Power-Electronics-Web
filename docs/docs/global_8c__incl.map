@@ -1,7 +1,91 @@
-<map id="NUEDC&#45;Core/Code/Control_Driver/Global/global.c" name="NUEDC&#45;Core/Code/Control_Driver/Global/global.c">
-<area shape="rect" id="Node000001" title="全局变量定义" alt="" coords="5,5,189,48"/>
-<area shape="rect" id="Node000002" href="$global_8h.html" title="全局变量声明, 头文件打包, 全局通用宏定义" alt="" coords="64,96,130,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,49,100,80,94,80,94,49"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="65,171,129,197"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="100,123,100,155,94,155,94,123"/>
+<map id="NUEDC&#45;Core/Code/Control_Driver/global/global.c" name="NUEDC&#45;Core/Code/Control_Driver/global/global.c">
+<area shape="rect" id="Node000001" title="全局变量定义" alt="" coords="1065,5,1248,48"/>
+<area shape="rect" id="Node000002" href="$global_8h.html" title="全局变量声明, 头文件打包, 全局通用宏定义" alt="" coords="1123,96,1190,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1159,49,1159,80,1154,80,1154,49"/>
+<area shape="rect" id="Node000003" href="$dcl_8h.html" title="数字控制库函数定义 &#160;&#160;包含支持FPU32的结构体定义与函数声明 &#160;&#160;PI/QPR/QPIR/QPMR/RC" alt="" coords="1209,171,1280,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1174,121,1219,159,1216,163,1170,125"/>
+<area shape="rect" id="Node000004" href="$transferfun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="1105,245,1208,272"/>
+<area shape="poly" id="edge52_Node000002_Node000004" title=" " alt="" coords="1159,123,1159,230,1154,230,1154,123"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="1124,395,1189,421"/>
+<area shape="poly" id="edge62_Node000002_Node000005" title=" " alt="" coords="1190,111,1305,125,1457,150,1532,168,1600,189,1654,214,1674,229,1689,244,1693,258,1690,272,1689,314,1685,331,1671,349,1646,360,1600,370,1470,387,1204,407,1204,402,1469,382,1599,365,1644,355,1668,345,1680,329,1684,313,1685,272,1688,258,1685,247,1671,233,1651,219,1598,194,1531,173,1455,156,1304,130,1190,116"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="1007,320,1116,347"/>
+<area shape="poly" id="edge61_Node000002_Node000006" title=" " alt="" coords="1153,124,1096,246,1073,306,1068,305,1091,244,1148,122"/>
+<area shape="rect" id="Node000007" href="$delay_8h.html" title="数组延迟链驱动函数声明" alt="" coords="1503,245,1565,272"/>
+<area shape="poly" id="edge14_Node000002_Node000007" title=" " alt="" coords="1191,119,1331,168,1493,236,1491,241,1329,173,1189,124"/>
+<area shape="rect" id="Node000008" href="$mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="1737,320,1816,347"/>
+<area shape="poly" id="edge19_Node000002_Node000008" title=" " alt="" coords="1190,109,1312,113,1480,123,1646,141,1715,153,1765,168,1797,182,1821,196,1840,215,1858,244,1860,265,1852,284,1836,300,1817,314,1814,310,1833,296,1847,281,1855,264,1853,246,1836,218,1818,200,1795,187,1764,173,1714,158,1646,146,1480,128,1312,118,1190,114"/>
+<area shape="rect" id="Node000010" href="$filter_8h.html" title="数字滤波器函数声明" alt="" coords="945,171,1032,197"/>
+<area shape="poly" id="edge15_Node000002_Node000010" title=" " alt="" coords="1128,126,1033,167,1031,162,1126,121"/>
+<area shape="rect" id="Node000011" href="$modulate_8h.html" title="调制函数声明" alt="" coords="669,245,812,272"/>
+<area shape="poly" id="edge20_Node000002_Node000011" title=" " alt="" coords="1123,119,1024,138,964,154,905,173,834,206,774,239,772,235,832,201,904,168,963,149,1023,133,1122,113"/>
+<area shape="rect" id="Node000013" href="$mppt_8h.html" title="TI 官方MPPT(最大功率点跟踪)库移植 TI Solar Lib参考官方用户手册" alt="" coords="5,245,100,272"/>
+<area shape="poly" id="edge24_Node000002_Node000013" title=" " alt="" coords="1123,114,1001,117,819,126,603,144,384,173,232,207,107,243,105,238,231,202,383,168,603,139,818,121,1001,112,1123,108"/>
+<area shape="rect" id="Node000014" href="$_control___driver_2oled_2oled_8h.html" title="OLED函数声明&#45;SSD1306/SSD1315" alt="" coords="1918,245,2003,272"/>
+<area shape="poly" id="edge27_Node000002_Node000014" title=" " alt="" coords="1190,109,1573,127,1782,144,1857,156,1900,168,1917,181,1932,197,1952,230,1947,233,1927,200,1914,185,1898,173,1856,161,1781,150,1572,132,1190,114"/>
+<area shape="rect" id="Node000017" href="$pll__1ph_8h.html" title="单相电网锁相环, SOGI" alt="" coords="123,245,214,272"/>
+<area shape="poly" id="edge33_Node000002_Node000017" title=" " alt="" coords="1123,115,869,131,692,148,513,173,356,207,225,243,224,238,355,202,512,168,692,143,868,125,1123,109"/>
+<area shape="rect" id="Node000018" href="$pll__3ph_8h.html" title="三相电网锁相环" alt="" coords="238,245,328,272"/>
+<area shape="poly" id="edge36_Node000002_Node000018" title=" " alt="" coords="1123,116,916,135,777,151,636,173,475,208,342,243,340,238,474,203,635,168,776,146,916,129,1122,110"/>
+<area shape="rect" id="Node000019" href="$power__1ph_8h.html" title="单相功率分析" alt="" coords="352,245,486,272"/>
+<area shape="poly" id="edge39_Node000002_Node000019" title=" " alt="" coords="1123,117,962,138,750,173,601,209,476,243,475,238,600,203,749,168,961,132,1123,112"/>
+<area shape="rect" id="Node000020" href="$power__3ph_8h.html" title="三相功率分析 函数声明" alt="" coords="511,245,645,272"/>
+<area shape="poly" id="edge42_Node000002_Node000020" title=" " alt="" coords="1123,118,1000,139,844,173,726,208,627,242,625,237,725,203,843,168,999,134,1122,113"/>
+<area shape="rect" id="Node000021" href="$ramp_8h.html" title="参考相位生成 函数声明" alt="" coords="1749,245,1844,272"/>
+<area shape="poly" id="edge45_Node000002_Node000021" title=" " alt="" coords="1190,108,1308,110,1467,118,1623,136,1686,150,1732,168,1750,181,1765,197,1787,230,1782,233,1761,200,1746,185,1730,173,1685,156,1622,142,1466,124,1307,116,1190,113"/>
+<area shape="rect" id="Node000022" href="$state_8h.html" title="全局状态机声明" alt="" coords="836,245,930,272"/>
+<area shape="poly" id="edge49_Node000002_Node000022" title=" " alt="" coords="1123,115,1082,119,1033,129,982,146,936,173,911,201,894,233,890,230,906,198,932,169,980,141,1031,124,1081,114,1123,109"/>
+<area shape="rect" id="Node000023" href="$transform_8h.html" title="常用坐标变换" alt="" coords="1333,245,1479,272"/>
+<area shape="poly" id="edge53_Node000002_Node000023" title=" " alt="" coords="1191,121,1240,141,1293,168,1341,201,1382,233,1379,237,1338,205,1290,173,1238,146,1189,126"/>
+<area shape="rect" id="Node000024" href="$vofa_8h.html" title="VOFA上位机支持, 函数声明" alt="" coords="1589,245,1676,272"/>
+<area shape="poly" id="edge57_Node000002_Node000024" title=" " alt="" coords="1191,116,1380,168,1585,237,1583,242,1378,173,1190,122"/>
+<area shape="rect" id="Node000026" title=" " alt="" coords="1968,171,2033,197"/>
+<area shape="poly" id="edge63_Node000002_Node000026" title=" " alt="" coords="1190,109,1314,113,1502,122,1724,140,1950,168,1954,169,1953,174,1949,173,1723,145,1501,128,1314,118,1190,114"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1231,200,1185,237,1182,233,1227,196"/>
+<area shape="poly" id="edge12_Node000003_Node000005" title=" " alt="" coords="1250,197,1253,232,1248,273,1235,305,1218,336,1181,385,1176,381,1213,333,1230,303,1243,271,1248,231,1244,198"/>
+<area shape="poly" id="edge13_Node000003_Node000006" title=" " alt="" coords="1247,198,1241,235,1233,255,1221,274,1202,291,1179,304,1133,322,1131,317,1177,300,1199,287,1217,270,1229,253,1236,233,1242,197"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="1281,191,1488,242,1487,247,1280,196"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1159,273,1159,379,1154,379,1154,273"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="1142,275,1092,313,1089,308,1138,270"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="1511,275,1439,310,1349,349,1274,376,1205,396,1203,391,1272,371,1348,344,1437,305,1509,270"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="1503,272,1492,275,1297,308,1133,328,1132,322,1296,302,1491,269,1502,267"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="1566,267,1723,313,1721,318,1565,272"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="1737,346,1718,349,1572,369,1426,386,1204,406,1204,400,1426,380,1571,364,1717,344,1736,341"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1806,395,1867,421"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="1789,346,1819,381,1815,385,1785,349"/>
+<area shape="poly" id="edge16_Node000010_Node000004" title=" " alt="" coords="1019,195,1114,236,1112,241,1017,200"/>
+<area shape="poly" id="edge17_Node000010_Node000005" title=" " alt="" coords="987,198,981,227,977,266,981,308,987,327,997,345,1020,368,1049,384,1080,394,1109,400,1108,405,1078,399,1047,388,1017,372,993,348,982,329,976,309,972,266,976,226,982,197"/>
+<area shape="poly" id="edge18_Node000010_Node000006" title=" " alt="" coords="997,197,1051,305,1047,307,992,199"/>
+<area shape="poly" id="edge21_Node000011_Node000005" title=" " alt="" coords="721,275,700,290,681,308,672,327,672,336,677,345,698,356,739,366,859,382,1109,402,1109,407,859,388,738,371,696,361,673,349,667,338,666,326,677,305,696,286,718,270"/>
+<area shape="poly" id="edge22_Node000011_Node000006" title=" " alt="" coords="797,270,993,314,991,319,796,275"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="687,320,879,347"/>
+<area shape="poly" id="edge23_Node000011_Node000012" title=" " alt="" coords="750,271,770,305,766,308,746,274"/>
+<area shape="poly" id="edge25_Node000013_Node000005" title=" " alt="" coords="86,270,197,308,267,328,338,344,449,362,563,376,784,394,976,402,1109,404,1109,410,975,408,784,399,562,381,448,367,337,349,266,333,195,313,84,275"/>
+<area shape="poly" id="edge26_Node000013_Node000006" title=" " alt="" coords="100,268,112,269,330,293,500,302,672,307,891,317,992,324,991,330,891,323,671,312,500,307,329,298,111,275,99,273"/>
+<area shape="poly" id="edge28_Node000014_Node000005" title=" " alt="" coords="1952,274,1911,313,1883,333,1852,349,1796,365,1720,378,1535,396,1346,405,1204,409,1204,403,1346,400,1534,391,1719,373,1794,360,1850,344,1880,329,1908,308,1948,270"/>
+<area shape="poly" id="edge29_Node000014_Node000006" title=" " alt="" coords="1918,268,1855,275,1446,309,1132,330,1132,325,1445,303,1855,269,1918,263"/>
+<area shape="poly" id="edge32_Node000014_Node000009" title=" " alt="" coords="1960,273,1948,309,1925,348,1902,371,1877,389,1874,384,1899,367,1921,345,1943,307,1955,271"/>
+<area shape="rect" id="Node000015" href="$i2c_8h.html" title=" " alt="" coords="1993,320,2042,347"/>
+<area shape="poly" id="edge30_Node000014_Node000015" title=" " alt="" coords="1973,271,2001,306,1996,309,1968,274"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="1953,395,2082,421"/>
+<area shape="poly" id="edge31_Node000015_Node000016" title=" " alt="" coords="2020,347,2020,379,2015,379,2015,347"/>
+<area shape="poly" id="edge34_Node000017_Node000005" title=" " alt="" coords="201,270,308,308,375,328,444,344,636,374,826,391,991,400,1109,404,1109,409,991,406,825,397,635,379,443,349,374,333,306,313,200,275"/>
+<area shape="poly" id="edge35_Node000017_Node000006" title=" " alt="" coords="215,267,226,269,992,324,992,330,226,275,214,273"/>
+<area shape="poly" id="edge37_Node000018_Node000005" title=" " alt="" coords="314,270,415,308,479,328,544,344,705,371,866,389,1007,399,1110,403,1109,408,1006,404,865,394,704,377,543,349,477,333,413,313,312,275"/>
+<area shape="poly" id="edge38_Node000018_Node000006" title=" " alt="" coords="329,267,341,269,627,295,992,324,991,329,626,301,340,275,328,273"/>
+<area shape="poly" id="edge40_Node000019_Node000005" title=" " alt="" coords="443,270,522,308,572,328,624,344,760,372,897,390,1018,399,1109,403,1109,409,1018,405,896,395,759,378,622,349,570,333,520,313,441,275"/>
+<area shape="poly" id="edge41_Node000019_Node000006" title=" " alt="" coords="487,268,499,269,772,301,992,323,991,328,772,306,499,275,486,273"/>
+<area shape="poly" id="edge43_Node000020_Node000005" title=" " alt="" coords="588,271,619,309,640,329,664,344,701,357,751,369,875,386,1005,396,1109,402,1108,408,1004,402,874,391,750,374,699,363,662,349,637,333,615,312,584,274"/>
+<area shape="poly" id="edge44_Node000020_Node000006" title=" " alt="" coords="646,268,658,269,992,319,992,324,657,275,645,273"/>
+<area shape="poly" id="edge46_Node000021_Node000005" title=" " alt="" coords="1810,271,1823,287,1834,307,1838,329,1831,348,1817,357,1796,365,1734,378,1556,395,1358,405,1204,409,1204,403,1358,400,1556,390,1733,372,1795,360,1815,352,1826,345,1833,328,1829,309,1818,290,1806,274"/>
+<area shape="poly" id="edge47_Node000021_Node000006" title=" " alt="" coords="1749,268,1687,275,1133,328,1132,323,1687,269,1749,263"/>
+<area shape="poly" id="edge48_Node000021_Node000008" title=" " alt="" coords="1796,273,1787,306,1781,304,1790,272"/>
+<area shape="poly" id="edge50_Node000022_Node000005" title=" " alt="" coords="892,271,914,308,931,328,950,344,989,366,1031,382,1110,399,1108,404,1029,387,987,371,947,349,927,331,910,311,887,274"/>
+<area shape="poly" id="edge51_Node000022_Node000006" title=" " alt="" coords="915,270,1018,311,1016,316,913,275"/>
+<area shape="poly" id="edge54_Node000023_Node000005" title=" " alt="" coords="1398,274,1363,310,1315,349,1259,377,1204,397,1203,392,1257,372,1312,344,1360,306,1394,270"/>
+<area shape="poly" id="edge55_Node000023_Node000006" title=" " alt="" coords="1346,275,1132,320,1131,315,1345,270"/>
+<area shape="poly" id="edge56_Node000023_Node000008" title=" " alt="" coords="1471,270,1722,319,1721,324,1470,275"/>
+<area shape="poly" id="edge58_Node000024_Node000005" title=" " alt="" coords="1603,275,1512,310,1399,349,1295,378,1205,399,1203,394,1294,373,1397,344,1510,305,1601,270"/>
+<area shape="poly" id="edge60_Node000024_Node000006" title=" " alt="" coords="1590,272,1577,275,1333,308,1132,329,1132,323,1332,303,1576,269,1589,267"/>
+<area shape="rect" id="Node000025" title=" " alt="" coords="1608,320,1657,347"/>
+<area shape="poly" id="edge59_Node000024_Node000025" title=" " alt="" coords="1635,273,1635,304,1630,304,1630,273"/>
 </map>

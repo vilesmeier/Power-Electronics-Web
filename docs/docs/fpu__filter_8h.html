@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NUEDC: NUEDC-Core/Code/Control_Driver/FFT/dsp_lib/win/fpu_filter.h 文件参考</title>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/rfft/fpu_filter.h 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,22 +93,19 @@ $(function(){initNavTree('fpu__filter_8h.html','',''); });
   <div class="headertitle"><div class="title">fpu_filter.h 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Prototypes and Definitions for the C28x FPU Library  
-<a href="#details">更多...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="fpu__types_8h_source.html">fpu_types.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 fpu_filter.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="fpu__filter_8h__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2_f_f_t_2dsp__lib_2win_2fpu__filter_8h" loading="lazy" alt=""/></div>
-<map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2_f_f_t_2dsp__lib_2win_2fpu__filter_8h" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2_f_f_t_2dsp__lib_2win_2fpu__filter_8h">
-<area shape="rect" title="Prototypes and Definitions for the C28x FPU Library" alt="" coords="5,5,189,64"/>
-<area shape="rect" href="fpu__types_8h.html" title="Prototypes and Definitions for the C28x FPU Library" alt="" coords="52,112,142,139"/>
-<area shape="poly" title=" " alt="" coords="100,64,100,96,94,96,94,64"/>
-<area shape="rect" title=" " alt="" coords="22,187,86,213"/>
-<area shape="poly" title=" " alt="" coords="92,141,72,175,67,172,87,138"/>
-<area shape="rect" title=" " alt="" coords="111,187,168,213"/>
-<area shape="poly" title=" " alt="" coords="107,138,127,172,122,175,102,141"/>
+<div class="center"><img src="fpu__filter_8h__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu__filter_8h" loading="lazy" alt=""/></div>
+<map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu__filter_8h" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu__filter_8h">
+<area shape="rect" title=" " alt="" coords="5,5,189,48"/>
+<area shape="rect" href="fpu__types_8h.html" title=" " alt="" coords="52,96,142,123"/>
+<area shape="poly" title=" " alt="" coords="100,49,100,80,94,80,94,49"/>
+<area shape="rect" title=" " alt="" coords="22,171,86,197"/>
+<area shape="poly" title=" " alt="" coords="92,125,72,159,67,156,87,122"/>
+<area shape="rect" title=" " alt="" coords="111,171,168,197"/>
+<area shape="poly" title=" " alt="" coords="107,122,127,156,122,159,102,125"/>
 </map>
 </div>
 </div>
@@ -148,21 +145,21 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:abbb5b62177b0f9a5626c70a445bd74dd" id="r_abbb5b62177b0f9a5626c70a445bd74dd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbb5b62177b0f9a5626c70a445bd74dd">FIR_f32_setCoefficientsPtr</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh, const float *pc)</td></tr>
+<tr class="memitem:abbb5b62177b0f9a5626c70a445bd74dd" id="r_abbb5b62177b0f9a5626c70a445bd74dd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbb5b62177b0f9a5626c70a445bd74dd">FIR_f32_setCoefficientsPtr</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *pc)</td></tr>
 <tr class="memdesc:abbb5b62177b0f9a5626c70a445bd74dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the coefficients pointer  <br /></td></tr>
-<tr class="memitem:af6dbe17335070c15d50ed1766f8c6875" id="r_af6dbe17335070c15d50ed1766f8c6875"><td class="memItemLeft" align="right" valign="top">static float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6dbe17335070c15d50ed1766f8c6875">FIR_f32_getCoefficientsPtr</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</td></tr>
+<tr class="memitem:af6dbe17335070c15d50ed1766f8c6875" id="r_af6dbe17335070c15d50ed1766f8c6875"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6dbe17335070c15d50ed1766f8c6875">FIR_f32_getCoefficientsPtr</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</td></tr>
 <tr class="memdesc:af6dbe17335070c15d50ed1766f8c6875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the coefficients pointer  <br /></td></tr>
-<tr class="memitem:a7ca1a6a70367f45184faee05264b4516" id="r_a7ca1a6a70367f45184faee05264b4516"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ca1a6a70367f45184faee05264b4516">FIR_f32_setDelayLinePtr</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh, const float *pdl)</td></tr>
+<tr class="memitem:a7ca1a6a70367f45184faee05264b4516" id="r_a7ca1a6a70367f45184faee05264b4516"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ca1a6a70367f45184faee05264b4516">FIR_f32_setDelayLinePtr</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *pdl)</td></tr>
 <tr class="memdesc:a7ca1a6a70367f45184faee05264b4516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the delay line pointer  <br /></td></tr>
-<tr class="memitem:a52812cf8024e656beb1513adff100b36" id="r_a52812cf8024e656beb1513adff100b36"><td class="memItemLeft" align="right" valign="top">static float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52812cf8024e656beb1513adff100b36">FIR_f32_getDelayLinePtr</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</td></tr>
+<tr class="memitem:a52812cf8024e656beb1513adff100b36" id="r_a52812cf8024e656beb1513adff100b36"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52812cf8024e656beb1513adff100b36">FIR_f32_getDelayLinePtr</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</td></tr>
 <tr class="memdesc:a52812cf8024e656beb1513adff100b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the delay line pointer  <br /></td></tr>
-<tr class="memitem:a265afda13f4dc6ba5935a3a854827140" id="r_a265afda13f4dc6ba5935a3a854827140"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a265afda13f4dc6ba5935a3a854827140">FIR_f32_setInput</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh, const float <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a>)</td></tr>
+<tr class="memitem:a265afda13f4dc6ba5935a3a854827140" id="r_a265afda13f4dc6ba5935a3a854827140"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a265afda13f4dc6ba5935a3a854827140">FIR_f32_setInput</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a>)</td></tr>
 <tr class="memdesc:a265afda13f4dc6ba5935a3a854827140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the input  <br /></td></tr>
-<tr class="memitem:a06be3827cc5a07d1df1ef8d8534403d6" id="r_a06be3827cc5a07d1df1ef8d8534403d6"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06be3827cc5a07d1df1ef8d8534403d6">FIR_f32_getInput</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</td></tr>
+<tr class="memitem:a06be3827cc5a07d1df1ef8d8534403d6" id="r_a06be3827cc5a07d1df1ef8d8534403d6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06be3827cc5a07d1df1ef8d8534403d6">FIR_f32_getInput</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</td></tr>
 <tr class="memdesc:a06be3827cc5a07d1df1ef8d8534403d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the input  <br /></td></tr>
-<tr class="memitem:a9000258986a557dfac32ca11d76c962f" id="r_a9000258986a557dfac32ca11d76c962f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9000258986a557dfac32ca11d76c962f">FIR_f32_setOutput</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh, const float out)</td></tr>
+<tr class="memitem:a9000258986a557dfac32ca11d76c962f" id="r_a9000258986a557dfac32ca11d76c962f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9000258986a557dfac32ca11d76c962f">FIR_f32_setOutput</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> out)</td></tr>
 <tr class="memdesc:a9000258986a557dfac32ca11d76c962f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the output  <br /></td></tr>
-<tr class="memitem:af4c5c9886092ca8a8d0734c97879fc53" id="r_af4c5c9886092ca8a8d0734c97879fc53"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4c5c9886092ca8a8d0734c97879fc53">FIR_f32_getOutput</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</td></tr>
+<tr class="memitem:af4c5c9886092ca8a8d0734c97879fc53" id="r_af4c5c9886092ca8a8d0734c97879fc53"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4c5c9886092ca8a8d0734c97879fc53">FIR_f32_getOutput</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</td></tr>
 <tr class="memdesc:af4c5c9886092ca8a8d0734c97879fc53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output  <br /></td></tr>
 <tr class="memitem:ade5562a5b65560106b174da71ac20713" id="r_ade5562a5b65560106b174da71ac20713"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade5562a5b65560106b174da71ac20713">FIR_f32_setOrder</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh, const uint16_t order)</td></tr>
 <tr class="memdesc:ade5562a5b65560106b174da71ac20713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the order of the filter  <br /></td></tr>
@@ -176,29 +173,29 @@ fpu_filter.h 的引用(Include)关系图:</div>
 <tr class="memdesc:a31bc14bf5d435a72a971393d04c0faa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the calc function  <br /></td></tr>
 <tr class="memitem:a4ce49175ef8f72c597f4a7b05bbcb57e" id="r_a4ce49175ef8f72c597f4a7b05bbcb57e"><td class="memItemLeft" align="right" valign="top">static v_pfn_v&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ce49175ef8f72c597f4a7b05bbcb57e">FIR_f32_getCalcFunction</a> (<a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a> fh)</td></tr>
 <tr class="memdesc:a4ce49175ef8f72c597f4a7b05bbcb57e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the calc function  <br /></td></tr>
-<tr class="memitem:ab930fb0b94b4c24fa71b8df73d3a6231" id="r_ab930fb0b94b4c24fa71b8df73d3a6231"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab930fb0b94b4c24fa71b8df73d3a6231">IIR_f32_setCoefficientsAPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, const float *pca)</td></tr>
+<tr class="memitem:ab930fb0b94b4c24fa71b8df73d3a6231" id="r_ab930fb0b94b4c24fa71b8df73d3a6231"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab930fb0b94b4c24fa71b8df73d3a6231">IIR_f32_setCoefficientsAPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *pca)</td></tr>
 <tr class="memdesc:ab930fb0b94b4c24fa71b8df73d3a6231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the denominator coefficients pointer  <br /></td></tr>
-<tr class="memitem:afbd8b9acf3fe8e54144c0a68f99aa97a" id="r_afbd8b9acf3fe8e54144c0a68f99aa97a"><td class="memItemLeft" align="right" valign="top">static float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbd8b9acf3fe8e54144c0a68f99aa97a">IIR_f32_getCoefficientsAPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</td></tr>
+<tr class="memitem:afbd8b9acf3fe8e54144c0a68f99aa97a" id="r_afbd8b9acf3fe8e54144c0a68f99aa97a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbd8b9acf3fe8e54144c0a68f99aa97a">IIR_f32_getCoefficientsAPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</td></tr>
 <tr class="memdesc:afbd8b9acf3fe8e54144c0a68f99aa97a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the denominator coefficients pointer  <br /></td></tr>
-<tr class="memitem:a7c704ea4e050319463dcb5cb96af29e3" id="r_a7c704ea4e050319463dcb5cb96af29e3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c704ea4e050319463dcb5cb96af29e3">IIR_f32_setCoefficientsBPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, const float *pcb)</td></tr>
+<tr class="memitem:a7c704ea4e050319463dcb5cb96af29e3" id="r_a7c704ea4e050319463dcb5cb96af29e3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c704ea4e050319463dcb5cb96af29e3">IIR_f32_setCoefficientsBPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *pcb)</td></tr>
 <tr class="memdesc:a7c704ea4e050319463dcb5cb96af29e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the numerator coefficients pointer  <br /></td></tr>
-<tr class="memitem:a549fe4f13c55b489f6444a3d40cc9244" id="r_a549fe4f13c55b489f6444a3d40cc9244"><td class="memItemLeft" align="right" valign="top">static float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a549fe4f13c55b489f6444a3d40cc9244">IIR_f32_getCoefficientsBPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</td></tr>
+<tr class="memitem:a549fe4f13c55b489f6444a3d40cc9244" id="r_a549fe4f13c55b489f6444a3d40cc9244"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a549fe4f13c55b489f6444a3d40cc9244">IIR_f32_getCoefficientsBPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</td></tr>
 <tr class="memdesc:a549fe4f13c55b489f6444a3d40cc9244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the numerator coefficients pointer  <br /></td></tr>
-<tr class="memitem:ab6d91e07752fb317772d72169b41c338" id="r_ab6d91e07752fb317772d72169b41c338"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6d91e07752fb317772d72169b41c338">IIR_f32_setDelayLinePtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, const float *pdl)</td></tr>
+<tr class="memitem:ab6d91e07752fb317772d72169b41c338" id="r_ab6d91e07752fb317772d72169b41c338"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6d91e07752fb317772d72169b41c338">IIR_f32_setDelayLinePtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *pdl)</td></tr>
 <tr class="memdesc:ab6d91e07752fb317772d72169b41c338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the delay line pointer  <br /></td></tr>
-<tr class="memitem:a07eb7ad049b788263143342c7e638605" id="r_a07eb7ad049b788263143342c7e638605"><td class="memItemLeft" align="right" valign="top">static float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07eb7ad049b788263143342c7e638605">IIR_f32_getDelayLinePtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</td></tr>
+<tr class="memitem:a07eb7ad049b788263143342c7e638605" id="r_a07eb7ad049b788263143342c7e638605"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07eb7ad049b788263143342c7e638605">IIR_f32_getDelayLinePtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</td></tr>
 <tr class="memdesc:a07eb7ad049b788263143342c7e638605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the delay line pointer  <br /></td></tr>
-<tr class="memitem:aa35937f21fdd218c719b1771c49c672c" id="r_aa35937f21fdd218c719b1771c49c672c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa35937f21fdd218c719b1771c49c672c">IIR_f32_setInputPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, const float *pi)</td></tr>
+<tr class="memitem:aa35937f21fdd218c719b1771c49c672c" id="r_aa35937f21fdd218c719b1771c49c672c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa35937f21fdd218c719b1771c49c672c">IIR_f32_setInputPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *pi)</td></tr>
 <tr class="memdesc:aa35937f21fdd218c719b1771c49c672c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the input pointer  <br /></td></tr>
-<tr class="memitem:ad28faae8948f23c0b1e7eca4a6b5a428" id="r_ad28faae8948f23c0b1e7eca4a6b5a428"><td class="memItemLeft" align="right" valign="top">static float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad28faae8948f23c0b1e7eca4a6b5a428">IIR_f32_getInputPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</td></tr>
+<tr class="memitem:ad28faae8948f23c0b1e7eca4a6b5a428" id="r_ad28faae8948f23c0b1e7eca4a6b5a428"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad28faae8948f23c0b1e7eca4a6b5a428">IIR_f32_getInputPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</td></tr>
 <tr class="memdesc:ad28faae8948f23c0b1e7eca4a6b5a428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the input pointer  <br /></td></tr>
-<tr class="memitem:aaf79f81477f95483247fe6f6ac8d2614" id="r_aaf79f81477f95483247fe6f6ac8d2614"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf79f81477f95483247fe6f6ac8d2614">IIR_f32_setOutputPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, const float *po)</td></tr>
+<tr class="memitem:aaf79f81477f95483247fe6f6ac8d2614" id="r_aaf79f81477f95483247fe6f6ac8d2614"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf79f81477f95483247fe6f6ac8d2614">IIR_f32_setOutputPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *po)</td></tr>
 <tr class="memdesc:aaf79f81477f95483247fe6f6ac8d2614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the output pointer  <br /></td></tr>
-<tr class="memitem:aa7f56c67679751de28d7fe3f0529b62a" id="r_aa7f56c67679751de28d7fe3f0529b62a"><td class="memItemLeft" align="right" valign="top">static float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7f56c67679751de28d7fe3f0529b62a">IIR_f32_getOutputPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</td></tr>
+<tr class="memitem:aa7f56c67679751de28d7fe3f0529b62a" id="r_aa7f56c67679751de28d7fe3f0529b62a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7f56c67679751de28d7fe3f0529b62a">IIR_f32_getOutputPtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</td></tr>
 <tr class="memdesc:aa7f56c67679751de28d7fe3f0529b62a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output pointer  <br /></td></tr>
-<tr class="memitem:a461932a8056512c18f14e6cf9e87cbbd" id="r_a461932a8056512c18f14e6cf9e87cbbd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a461932a8056512c18f14e6cf9e87cbbd">IIR_f32_setScalePtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, const float *psv)</td></tr>
+<tr class="memitem:a461932a8056512c18f14e6cf9e87cbbd" id="r_a461932a8056512c18f14e6cf9e87cbbd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a461932a8056512c18f14e6cf9e87cbbd">IIR_f32_setScalePtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *psv)</td></tr>
 <tr class="memdesc:a461932a8056512c18f14e6cf9e87cbbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the scale value pointer  <br /></td></tr>
-<tr class="memitem:ac5acc669de6153b0450339e5265a98d3" id="r_ac5acc669de6153b0450339e5265a98d3"><td class="memItemLeft" align="right" valign="top">static float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5acc669de6153b0450339e5265a98d3">IIR_f32_getScalePtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</td></tr>
+<tr class="memitem:ac5acc669de6153b0450339e5265a98d3" id="r_ac5acc669de6153b0450339e5265a98d3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5acc669de6153b0450339e5265a98d3">IIR_f32_getScalePtr</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh)</td></tr>
 <tr class="memdesc:ac5acc669de6153b0450339e5265a98d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the scale value pointer  <br /></td></tr>
 <tr class="memitem:ac996516da35ae3166a2ae5d80a79e019" id="r_ac996516da35ae3166a2ae5d80a79e019"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac996516da35ae3166a2ae5d80a79e019">IIR_f32_setOrder</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> fh, const uint16_t order)</td></tr>
 <tr class="memdesc:ac996516da35ae3166a2ae5d80a79e019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the order of the filter  <br /></td></tr>
@@ -221,11 +218,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 <tr class="memitem:ae00f063903782174bfe7da592229b704" id="r_ae00f063903782174bfe7da592229b704"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae00f063903782174bfe7da592229b704">IIR_f32_init</a> (<a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a> hndIIR_f32)</td></tr>
 <tr class="memdesc:ae00f063903782174bfe7da592229b704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Infinite Impulse Response Filter Initialization.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
-<div class="textblock"><p>Prototypes and Definitions for the C28x FPU Library </p>
-
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 中定义.</p>
-</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
 <a id="a622943bda64fa2d4e94e68b42c530a24" name="a622943bda64fa2d4e94e68b42c530a24"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a622943bda64fa2d4e94e68b42c530a24">&#9670;&#160;</a></span>FIR_f32_DEFAULTS</h2>
 
@@ -250,7 +243,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </div><!-- fragment -->
 <p>The default FIR object initializer </p>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00053">53</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00106">106</a> 行定义.</p>
 
 </div>
 </div>
@@ -266,7 +259,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00549">549</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00602">602</a> 行定义.</p>
 
 </div>
 </div>
@@ -282,7 +275,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00585">585</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00638">638</a> 行定义.</p>
 
 </div>
 </div>
@@ -307,7 +300,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 <div class="line"> 0.0136981048,  0.0106198033, -0.0075621097, -0.0056770989, \</div>
 <div class="line"> 0.0037323495,  0.0028200552, -0.0018498098, -0.0009375925,}</div>
 </div><!-- fragment -->
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00502">502</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00555">555</a> 行定义.</p>
 
 </div>
 </div>
@@ -337,7 +330,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 <div class="line"> 2.9216345870e-03,  7.5785334050e-05, -1.9022732740e-03, -2.9541992120e-03,\</div>
 <div class="line">-2.5768701450e-03, -3.4963795920e-03, -7.5203931190e-04, }</div>
 </div><!-- fragment -->
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00513">513</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00566">566</a> 行定义.</p>
 
 </div>
 </div>
@@ -353,7 +346,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00652">652</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00705">705</a> 行定义.</p>
 
 </div>
 </div>
@@ -372,7 +365,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 <div class="line">    -0.0805727691,  0.1966465116,  0.4776741266,  0.4776741266, \</div>
 <div class="line">    0.1966465116, -0.0805727691}</div>
 </div><!-- fragment -->
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00497">497</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00550">550</a> 行定义.</p>
 
 </div>
 </div>
@@ -405,7 +398,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 <div class="line">-3.9673773570e-03, -2.2336612460e-03, -7.1911053960e-04,  5.1166024060e-04,\</div>
 <div class="line"> 1.4185620240e-03,  1.9878095480e-03,  2.2292095240e-03,  1.2839649800e-02,}</div>
 </div><!-- fragment -->
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00529">529</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00582">582</a> 行定义.</p>
 
 </div>
 </div>
@@ -423,7 +416,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 
 <p>FIR_FP is the legacy name of the FIR structure </p>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00024">24</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00077">77</a> 行定义.</p>
 
 </div>
 </div>
@@ -441,7 +434,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 
 <p>FIR_FP_calc is the legacy name of the FIR calculation function </p>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00030">30</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00083">83</a> 行定义.</p>
 
 </div>
 </div>
@@ -459,7 +452,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 
 <p>FIR_FP_Handle is the legacy name of the FIR structure handle </p>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00026">26</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00079">79</a> 行定义.</p>
 
 </div>
 </div>
@@ -477,7 +470,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 
 <p>FIR_FP_init is the legacy name of the FIR initialization function </p>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00028">28</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00081">81</a> 行定义.</p>
 
 </div>
 </div>
@@ -496,7 +489,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 
 <p>Handle to the Filter Structure Object </p>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00050">50</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00103">103</a> 行定义.</p>
 
 </div>
 </div>
@@ -514,7 +507,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 
 <p>Handle to the Filter Structure Object </p>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00077">77</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00130">130</a> 行定义.</p>
 
 </div>
 </div>
@@ -602,7 +595,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pfn pointer to the calc function </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00210">210</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00263">263</a> 行定义.</p>
 
 </div>
 </div>
@@ -616,7 +609,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float * FIR_f32_getCoefficientsPtr </td>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> * FIR_f32_getCoefficientsPtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a></td>          <td class="paramname"><span class="paramname"><em>fh</em></span></td><td>)</td>
           <td></td>
@@ -638,7 +631,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pc pointer to the coefficients </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00096">96</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00149">149</a> 行定义.</p>
 
 </div>
 </div>
@@ -652,7 +645,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float * FIR_f32_getDelayLinePtr </td>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> * FIR_f32_getDelayLinePtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a></td>          <td class="paramname"><span class="paramname"><em>fh</em></span></td><td>)</td>
           <td></td>
@@ -674,7 +667,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pdl pointer to the delay line </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00115">115</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00168">168</a> 行定义.</p>
 
 </div>
 </div>
@@ -710,7 +703,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pfn pointer to the init function </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00191">191</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00244">244</a> 行定义.</p>
 
 </div>
 </div>
@@ -724,7 +717,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float FIR_f32_getInput </td>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> FIR_f32_getInput </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a></td>          <td class="paramname"><span class="paramname"><em>fh</em></span></td><td>)</td>
           <td></td>
@@ -746,7 +739,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pin current input pointer </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00134">134</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00187">187</a> 行定义.</p>
 
 </div>
 </div>
@@ -782,7 +775,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>order Order of the filter </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00172">172</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00225">225</a> 行定义.</p>
 
 </div>
 </div>
@@ -796,7 +789,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float FIR_f32_getOutput </td>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> FIR_f32_getOutput </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#a057284a9e70073f70e2bb6f838231768">FIR_f32_Handle</a></td>          <td class="paramname"><span class="paramname"><em>fh</em></span></td><td>)</td>
           <td></td>
@@ -818,7 +811,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>out current output </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00153">153</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00206">206</a> 行定义.</p>
 
 </div>
 </div>
@@ -909,7 +902,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00200">200</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00253">253</a> 行定义.</p>
 
 </div>
 </div>
@@ -930,7 +923,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *</td>          <td class="paramname"><span class="paramname"><em>pc</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>pc</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -949,7 +942,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00086">86</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00139">139</a> 行定义.</p>
 
 </div>
 </div>
@@ -970,7 +963,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *</td>          <td class="paramname"><span class="paramname"><em>pdl</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>pdl</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -989,7 +982,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00105">105</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00158">158</a> 行定义.</p>
 
 </div>
 </div>
@@ -1029,7 +1022,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00181">181</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00234">234</a> 行定义.</p>
 
 </div>
 </div>
@@ -1050,7 +1043,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>in</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a></td>          <td class="paramname"><span class="paramname"><em>in</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1069,7 +1062,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00124">124</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00177">177</a> 行定义.</p>
 
 </div>
 </div>
@@ -1109,7 +1102,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00163">163</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00216">216</a> 行定义.</p>
 
 </div>
 </div>
@@ -1130,7 +1123,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>out</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a></td>          <td class="paramname"><span class="paramname"><em>out</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1149,7 +1142,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00143">143</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00196">196</a> 行定义.</p>
 
 </div>
 </div>
@@ -1235,7 +1228,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pfn pointer to the calc function </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00380">380</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00433">433</a> 行定义.</p>
 
 </div>
 </div>
@@ -1249,7 +1242,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float * IIR_f32_getCoefficientsAPtr </td>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> * IIR_f32_getCoefficientsAPtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a></td>          <td class="paramname"><span class="paramname"><em>fh</em></span></td><td>)</td>
           <td></td>
@@ -1271,7 +1264,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pca pointer to the denominator coefficients </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00229">229</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00282">282</a> 行定义.</p>
 
 </div>
 </div>
@@ -1285,7 +1278,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float * IIR_f32_getCoefficientsBPtr </td>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> * IIR_f32_getCoefficientsBPtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a></td>          <td class="paramname"><span class="paramname"><em>fh</em></span></td><td>)</td>
           <td></td>
@@ -1307,7 +1300,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pca pointer to the numerator coefficients </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00248">248</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00301">301</a> 行定义.</p>
 
 </div>
 </div>
@@ -1321,7 +1314,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float * IIR_f32_getDelayLinePtr </td>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> * IIR_f32_getDelayLinePtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a></td>          <td class="paramname"><span class="paramname"><em>fh</em></span></td><td>)</td>
           <td></td>
@@ -1343,7 +1336,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pdl pointer to the delay line </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00267">267</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00320">320</a> 行定义.</p>
 
 </div>
 </div>
@@ -1379,7 +1372,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pfn pointer to the init function </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00361">361</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00414">414</a> 行定义.</p>
 
 </div>
 </div>
@@ -1393,7 +1386,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float * IIR_f32_getInputPtr </td>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> * IIR_f32_getInputPtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a></td>          <td class="paramname"><span class="paramname"><em>fh</em></span></td><td>)</td>
           <td></td>
@@ -1415,7 +1408,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pi pointer to the current input </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00286">286</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00339">339</a> 行定义.</p>
 
 </div>
 </div>
@@ -1451,7 +1444,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>order Order of the filter </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00342">342</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00395">395</a> 行定义.</p>
 
 </div>
 </div>
@@ -1465,7 +1458,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float * IIR_f32_getOutputPtr </td>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> * IIR_f32_getOutputPtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a></td>          <td class="paramname"><span class="paramname"><em>fh</em></span></td><td>)</td>
           <td></td>
@@ -1487,7 +1480,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>po pointer to the current output </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00305">305</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00358">358</a> 行定义.</p>
 
 </div>
 </div>
@@ -1501,7 +1494,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float * IIR_f32_getScalePtr </td>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> * IIR_f32_getScalePtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#ad65545f76f4aa2b8ad3d7037ecdc293f">IIR_f32_Handle</a></td>          <td class="paramname"><span class="paramname"><em>fh</em></span></td><td>)</td>
           <td></td>
@@ -1523,7 +1516,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>psv pointer to the scale values for the biquads </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00324">324</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00377">377</a> 行定义.</p>
 
 </div>
 </div>
@@ -1609,7 +1602,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00370">370</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00423">423</a> 行定义.</p>
 
 </div>
 </div>
@@ -1630,7 +1623,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *</td>          <td class="paramname"><span class="paramname"><em>pca</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>pca</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1649,7 +1642,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00219">219</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00272">272</a> 行定义.</p>
 
 </div>
 </div>
@@ -1670,7 +1663,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *</td>          <td class="paramname"><span class="paramname"><em>pcb</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>pcb</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1689,7 +1682,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00238">238</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00291">291</a> 行定义.</p>
 
 </div>
 </div>
@@ -1710,7 +1703,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *</td>          <td class="paramname"><span class="paramname"><em>pdl</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>pdl</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1729,7 +1722,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00257">257</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00310">310</a> 行定义.</p>
 
 </div>
 </div>
@@ -1769,7 +1762,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00351">351</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00404">404</a> 行定义.</p>
 
 </div>
 </div>
@@ -1790,7 +1783,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *</td>          <td class="paramname"><span class="paramname"><em>pi</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>pi</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1809,7 +1802,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00276">276</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00329">329</a> 行定义.</p>
 
 </div>
 </div>
@@ -1849,7 +1842,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00333">333</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00386">386</a> 行定义.</p>
 
 </div>
 </div>
@@ -1870,7 +1863,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *</td>          <td class="paramname"><span class="paramname"><em>po</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>po</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1889,7 +1882,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00295">295</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00348">348</a> 行定义.</p>
 
 </div>
 </div>
@@ -1910,7 +1903,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *</td>          <td class="paramname"><span class="paramname"><em>psv</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> *</td>          <td class="paramname"><span class="paramname"><em>psv</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1929,7 +1922,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00314">314</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__filter_8h_source.html">fpu_filter.h</a> 第 <a class="el" href="fpu__filter_8h_source.html#l00367">367</a> 行定义.</p>
 
 </div>
 </div>
@@ -1946,7 +1939,7 @@ fpu_filter.h 的引用(Include)关系图:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_21974f642239eac7f24099953dcfa10f.html">FFT</a></li><li class="navelem"><a href="dir_aed7131e372a5760213c24165cb84e6a.html">dsp_lib</a></li><li class="navelem"><a href="dir_badc97c40bd22aec4e5786edc2ccf63e.html">win</a></li><li class="navelem"><a href="fpu__filter_8h.html">fpu_filter.h</a></li>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_0fd93c14012f780a2e81c2f5b80c75ff.html">rfft</a></li><li class="navelem"><a href="fpu__filter_8h.html">fpu_filter.h</a></li>
     <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

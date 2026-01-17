@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NUEDC: NUEDC-Core/Code/Control_Driver/Filter/filter.h 源文件</title>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/filter/filter.h 源文件</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,7 +98,7 @@ $(function(){initNavTree('filter_8h_source.html','',''); });
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef FILTER_H</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define FILTER_H</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_transfer_fun_8h.html">TransferFun.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="transferfun_8h.html">TransferFun.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;stdint.h&quot;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;inc/hw_types.h&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
@@ -121,7 +121,7 @@ $(function(){initNavTree('filter_8h_source.html','',''); });
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_f_i_l_t_e_r.html">   39</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_f_i_l_t_e_r.html">FILTER</a></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_f_i_l_t_e_r.html#a85c4e172c23b4241932be68ab7df9e26">   41</a></span>    float32_t <a class="code hl_variable" href="struct_f_i_l_t_e_r.html#a85c4e172c23b4241932be68ab7df9e26">output</a>;       </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_f_i_l_t_e_r.html#ae718d75ee25e7d6901ecc83ac76b13c3">   42</a></span>    <a class="code hl_typedef" href="_transfer_fun_8h.html#af8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> <a class="code hl_variable" href="struct_f_i_l_t_e_r.html#ae718d75ee25e7d6901ecc83ac76b13c3">filter</a>;   </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_f_i_l_t_e_r.html#ae718d75ee25e7d6901ecc83ac76b13c3">   42</a></span>    <a class="code hl_typedef" href="transferfun_8h.html#af8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> <a class="code hl_variable" href="struct_f_i_l_t_e_r.html#ae718d75ee25e7d6901ecc83ac76b13c3">filter</a>;   </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="filter_8h.html#ac86c6b6fa8a4126f68837d61aa7d9633">   43</a></span>} <a class="code hl_struct" href="struct_f_i_l_t_e_r.html">FILTER</a>;</div>
 </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
@@ -131,19 +131,16 @@ $(function(){initNavTree('filter_8h_source.html','',''); });
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">void</span> <a class="code hl_function" href="filter_8h.html#aeb072f0b39f2c1c227d2f9a14de3f56b">Filter_Set</a>(<a class="code hl_struct" href="struct_f_i_l_t_e_r.html">FILTER</a> *fil, <a class="code hl_enumeration" href="filter_8h.html#a7ef0ab496f57e183b484e62e2053c94f">FilterType</a> type, float32_t wc, float32_t damp, float32_t isr_freq);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
 <div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="filter_8h.html#acc49dc6e7958ff297d763394dd0432cd">   73</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="filter_8h.html#acc49dc6e7958ff297d763394dd0432cd">Filter_Run</a>(<a class="code hl_struct" href="struct_f_i_l_t_e_r.html">FILTER</a> *fil, float32_t <a class="code hl_variable" href="_r_f_f_t__adc__f32_8asm.html#ad1837fed945d659444e41ff0b37333b0">input</a>)</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="filter_8h.html#acc49dc6e7958ff297d763394dd0432cd">   73</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="filter_8h.html#acc49dc6e7958ff297d763394dd0432cd">Filter_Run</a>(<a class="code hl_struct" href="struct_f_i_l_t_e_r.html">FILTER</a> *fil, float32_t <a class="code hl_variable" href="rfft_8c.html#a5a0f4b49baab36db0c5e1922cdbc6c71">input</a>)</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">// 共用DCL_DF22结构体, 不再区分执行函数</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    fil-&gt;<a class="code hl_variable" href="struct_f_i_l_t_e_r.html#a85c4e172c23b4241932be68ab7df9e26">output</a> = <a class="code hl_variable" href="_transfer_fun_8asm.html#a85be41f52ea5a547532f95a33309d7c7">DCL_DF22_Run</a>(&amp;(fil-&gt;<a class="code hl_variable" href="struct_f_i_l_t_e_r.html#ae718d75ee25e7d6901ecc83ac76b13c3">filter</a>),<a class="code hl_variable" href="_r_f_f_t__adc__f32_8asm.html#ad1837fed945d659444e41ff0b37333b0">input</a>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    fil-&gt;<a class="code hl_variable" href="struct_f_i_l_t_e_r.html#a85c4e172c23b4241932be68ab7df9e26">output</a> = <a class="code hl_variable" href="_transfer_fun_8asm.html#a85be41f52ea5a547532f95a33309d7c7">DCL_DF22_Run</a>(&amp;(fil-&gt;<a class="code hl_variable" href="struct_f_i_l_t_e_r.html#ae718d75ee25e7d6901ecc83ac76b13c3">filter</a>),<a class="code hl_variable" href="rfft_8c.html#a5a0f4b49baab36db0c5e1922cdbc6c71">input</a>);</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
 </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif </span><span class="comment">// !FILTER_H</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="ttc" id="a_r_f_f_t__adc__f32_8asm_html_ad1837fed945d659444e41ff0b37333b0"><div class="ttname"><a href="_r_f_f_t__adc__f32_8asm.html#ad1837fed945d659444e41ff0b37333b0">input</a></div><div class="ttdeci">brief Real FFT with bit ADC input</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__adc__f32_8asm_source.html#l00004">RFFT_adc_f32.asm:5</a></div></div>
 <div class="ttc" id="a_transfer_fun_8asm_html_a85be41f52ea5a547532f95a33309d7c7"><div class="ttname"><a href="_transfer_fun_8asm.html#a85be41f52ea5a547532f95a33309d7c7">DCL_DF22_Run</a></div><div class="ttdeci">if _DCL_DF11_Run asg DCL_DF22_Run</div><div class="ttdef"><b>定义</b> <a href="_transfer_fun_8asm_source.html#l00005">TransferFun.asm:5</a></div></div>
-<div class="ttc" id="a_transfer_fun_8h_html"><div class="ttname"><a href="_transfer_fun_8h.html">TransferFun.h</a></div><div class="ttdoc">适用于 C2000 与 STM32（带 FPU）的差分方程支持文件</div></div>
-<div class="ttc" id="a_transfer_fun_8h_html_af8832c3b4a1ad9070601b091b430b0e8"><div class="ttname"><a href="_transfer_fun_8h.html#af8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a></div><div class="ttdeci">struct dcl_df22 DCL_DF22</div><div class="ttdoc">定义二阶直接形式Ⅱ（DF22）控制器结构体</div></div>
 <div class="ttc" id="afilter_8h_html_a6bf8811531a98a51e7a794c2a27c0b04"><div class="ttname"><a href="filter_8h.html#a6bf8811531a98a51e7a794c2a27c0b04">Filter_Init</a></div><div class="ttdeci">void Filter_Init(FILTER *fil)</div><div class="ttdoc">初始化一阶结构体</div><div class="ttdef"><b>定义</b> <a href="filter_8c_source.html#l00011">filter.c:11</a></div></div>
 <div class="ttc" id="afilter_8h_html_a7ef0ab496f57e183b484e62e2053c94f"><div class="ttname"><a href="filter_8h.html#a7ef0ab496f57e183b484e62e2053c94f">FilterType</a></div><div class="ttdeci">FilterType</div><div class="ttdoc">定义滤波器类型 FilterType</div><div class="ttdef"><b>定义</b> <a href="#l00023">filter.h:24</a></div></div>
 <div class="ttc" id="afilter_8h_html_a7ef0ab496f57e183b484e62e2053c94fa0cd4611d2ee5837a0c5221cdb19dd23b"><div class="ttname"><a href="filter_8h.html#a7ef0ab496f57e183b484e62e2053c94fa0cd4611d2ee5837a0c5221cdb19dd23b">LPF_1_ORDER</a></div><div class="ttdeci">@ LPF_1_ORDER</div><div class="ttdoc">一阶低通滤波器</div><div class="ttdef"><b>定义</b> <a href="#l00026">filter.h:26</a></div></div>
@@ -155,16 +152,19 @@ $(function(){initNavTree('filter_8h_source.html','',''); });
 <div class="ttc" id="afilter_8h_html_a7ef0ab496f57e183b484e62e2053c94fafb52d3ebd5405cad8bb301af9437dccb"><div class="ttname"><a href="filter_8h.html#a7ef0ab496f57e183b484e62e2053c94fafb52d3ebd5405cad8bb301af9437dccb">HPF_2_ORDER</a></div><div class="ttdeci">@ HPF_2_ORDER</div><div class="ttdoc">二阶高通滤波器</div><div class="ttdef"><b>定义</b> <a href="#l00029">filter.h:29</a></div></div>
 <div class="ttc" id="afilter_8h_html_acc49dc6e7958ff297d763394dd0432cd"><div class="ttname"><a href="filter_8h.html#acc49dc6e7958ff297d763394dd0432cd">Filter_Run</a></div><div class="ttdeci">static void Filter_Run(FILTER *fil, float32_t input)</div><div class="ttdoc">执行数字滤波器, 一阶和二阶滤波器共用DF22结构体</div><div class="ttdef"><b>定义</b> <a href="#l00073">filter.h:73</a></div></div>
 <div class="ttc" id="afilter_8h_html_aeb072f0b39f2c1c227d2f9a14de3f56b"><div class="ttname"><a href="filter_8h.html#aeb072f0b39f2c1c227d2f9a14de3f56b">Filter_Set</a></div><div class="ttdeci">void Filter_Set(FILTER *fil, FilterType type, float32_t wc, float32_t damp, float32_t isr_freq)</div><div class="ttdoc">配置数字滤波器, Tustin离散化实现</div><div class="ttdef"><b>定义</b> <a href="filter_8c_source.html#l00017">filter.c:17</a></div></div>
+<div class="ttc" id="arfft_8c_html_a5a0f4b49baab36db0c5e1922cdbc6c71"><div class="ttname"><a href="rfft_8c.html#a5a0f4b49baab36db0c5e1922cdbc6c71">input</a></div><div class="ttdeci">float32_t input[FFT_SIZE]</div><div class="ttdoc">输入数组</div><div class="ttdef"><b>定义</b> <a href="rfft_8c_source.html#l00013">rfft.c:13</a></div></div>
 <div class="ttc" id="astruct_f_i_l_t_e_r_html"><div class="ttname"><a href="struct_f_i_l_t_e_r.html">FILTER</a></div><div class="ttdoc">定义通用数字滤波器结构体</div><div class="ttdef"><b>定义</b> <a href="#l00039">filter.h:40</a></div></div>
 <div class="ttc" id="astruct_f_i_l_t_e_r_html_a85c4e172c23b4241932be68ab7df9e26"><div class="ttname"><a href="struct_f_i_l_t_e_r.html#a85c4e172c23b4241932be68ab7df9e26">FILTER::output</a></div><div class="ttdeci">float32_t output</div><div class="ttdoc">滤波器输出</div><div class="ttdef"><b>定义</b> <a href="#l00041">filter.h:41</a></div></div>
 <div class="ttc" id="astruct_f_i_l_t_e_r_html_ae718d75ee25e7d6901ecc83ac76b13c3"><div class="ttname"><a href="struct_f_i_l_t_e_r.html#ae718d75ee25e7d6901ecc83ac76b13c3">FILTER::filter</a></div><div class="ttdeci">DCL_DF22 filter</div><div class="ttdoc">二阶差分方程, 直接形式2</div><div class="ttdef"><b>定义</b> <a href="#l00042">filter.h:42</a></div></div>
+<div class="ttc" id="atransferfun_8h_html"><div class="ttname"><a href="transferfun_8h.html">transferfun.h</a></div><div class="ttdoc">适用于 C2000 与 STM32（带 FPU）的差分方程支持文件</div></div>
+<div class="ttc" id="atransferfun_8h_html_af8832c3b4a1ad9070601b091b430b0e8"><div class="ttname"><a href="transferfun_8h.html#af8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a></div><div class="ttdeci">struct dcl_df22 DCL_DF22</div><div class="ttdoc">定义二阶直接形式Ⅱ（DF22）控制器结构体</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_be64513f606d33daece43a81cfaa97de.html">Filter</a></li><li class="navelem"><a href="filter_8h.html">filter.h</a></li>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_5244f9a5f7ec141c83a3e0bf5c4097b9.html">filter</a></li><li class="navelem"><a href="filter_8h.html">filter.h</a></li>
     <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

@@ -1,4 +1,4 @@
-<map id="NUEDC&#45;Core/Code/Control_Driver/VOFA/vofa.c" name="NUEDC&#45;Core/Code/Control_Driver/VOFA/vofa.c">
+<map id="NUEDC&#45;Core/Code/Control_Driver/vofa/vofa.c" name="NUEDC&#45;Core/Code/Control_Driver/vofa/vofa.c">
 <area shape="rect" id="Node000001" title="VOFA上位机支持, 函数定义" alt="" coords="27,5,210,48"/>
 <area shape="rect" id="Node000002" href="$vofa_8h.html" title="VOFA上位机支持, 函数声明" alt="" coords="90,96,148,123"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,49,122,80,116,80,116,49"/>

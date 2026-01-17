@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NUEDC: NUEDC-Core/Code/Control_Driver/RAMP/ramp.h 源文件</title>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/ramp/ramp.h 源文件</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -128,13 +128,14 @@ $(function(){initNavTree('ramp_8h_source.html','',''); });
 </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
 <div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="ramp_8h.html#a0bdd6f4685504bc20e96a3dbf860b51d">   64</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="ramp_8h.html#a0bdd6f4685504bc20e96a3dbf860b51d">Ramp_Presync</a>(<a class="code hl_struct" href="struct_r_a_m_p.html">RAMP</a>* ramp, float32_t phase)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="ramp_8h.html#a0bdd6f4685504bc20e96a3dbf860b51d">   64</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="ramp_8h.html#a0bdd6f4685504bc20e96a3dbf860b51d">Ramp_Presync</a>(<a class="code hl_struct" href="struct_r_a_m_p.html">RAMP</a>* ramp, float32_t <a class="code hl_variable" href="_r_f_f_t__f32__phase___t_m_u0_8asm.html#a0385929a5c757b177a4c3116b41669d4">phase</a>)</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    ramp-&gt;<a class="code hl_variable" href="struct_r_a_m_p.html#a541ce5d020b53c11658bb0e7292893db">ref_angle</a> = phase;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    ramp-&gt;<a class="code hl_variable" href="struct_r_a_m_p.html#a541ce5d020b53c11658bb0e7292893db">ref_angle</a> = <a class="code hl_variable" href="_r_f_f_t__f32__phase___t_m_u0_8asm.html#a0385929a5c757b177a4c3116b41669d4">phase</a>;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif </span><span class="comment">// !RAMP_H</span></div>
+<div class="ttc" id="a_r_f_f_t__f32__phase___t_m_u0_8asm_html_a0385929a5c757b177a4c3116b41669d4"><div class="ttname"><a href="_r_f_f_t__f32__phase___t_m_u0_8asm.html#a0385929a5c757b177a4c3116b41669d4">phase</a></div><div class="ttdeci">Store phase</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32__phase___t_m_u0_8asm_source.html#l00089">RFFT_f32_phase_TMU0.asm:90</a></div></div>
 <div class="ttc" id="amathdef_8h_html"><div class="ttname"><a href="mathdef_8h.html">mathdef.h</a></div><div class="ttdoc">添加常用常数的全局定义</div></div>
 <div class="ttc" id="amathdef_8h_html_a56296334ffdd8edad8bb96c2062e2704"><div class="ttname"><a href="mathdef_8h.html#a56296334ffdd8edad8bb96c2062e2704">MATH_2PI</a></div><div class="ttdeci">#define MATH_2PI</div><div class="ttdoc">2 * pi</div><div class="ttdef"><b>定义</b> <a href="mathdef_8h_source.html#l00018">mathdef.h:18</a></div></div>
 <div class="ttc" id="aramp_8h_html_a0bdd6f4685504bc20e96a3dbf860b51d"><div class="ttname"><a href="ramp_8h.html#a0bdd6f4685504bc20e96a3dbf860b51d">Ramp_Presync</a></div><div class="ttdeci">static void Ramp_Presync(RAMP *ramp, float32_t phase)</div><div class="ttdoc">设置当前相位, 用于并网预同步</div><div class="ttdef"><b>定义</b> <a href="#l00064">ramp.h:64</a></div></div>
@@ -152,7 +153,7 @@ $(function(){initNavTree('ramp_8h_source.html','',''); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_88cab64c8887eb8cb680f273d07765d7.html">RAMP</a></li><li class="navelem"><a href="ramp_8h.html">ramp.h</a></li>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_c3b185a5774b8e0397ec9b90c395f3c6.html">ramp</a></li><li class="navelem"><a href="ramp_8h.html">ramp.h</a></li>
     <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

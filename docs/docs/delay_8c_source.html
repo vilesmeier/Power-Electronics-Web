@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NUEDC: NUEDC-Core/Code/Control_Driver/Delay/delay.c 源文件</title>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/delay/delay.c 源文件</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,10 +103,10 @@ $(function(){initNavTree('delay_8c_source.html','',''); });
 <div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="delay_8c.html#a1d1f6ac6440c9beb1b7c6051c8fa15e0">   18</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="delay_8c.html#a1d1f6ac6440c9beb1b7c6051c8fa15e0">DELAY_Init</a>(<a class="code hl_struct" href="struct_d_e_l_a_y.html">DELAY</a>* delay_addr)</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="_r_f_f_t__f32__adc__win_8asm.html#a6857792694fa350a810460709429c48a">i</a> = 0;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">for</span>(<a class="code hl_variable" href="_r_f_f_t__f32__adc__win_8asm.html#a6857792694fa350a810460709429c48a">i</a> = 0 ; <a class="code hl_variable" href="_r_f_f_t__f32__adc__win_8asm.html#a6857792694fa350a810460709429c48a">i</a> &lt; 400 ; <a class="code hl_variable" href="_r_f_f_t__f32__adc__win_8asm.html#a6857792694fa350a810460709429c48a">i</a>++)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="_r_f_f_t__f32__win_8asm.html#a6857792694fa350a810460709429c48a">i</a> = 0;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">for</span>(<a class="code hl_variable" href="_r_f_f_t__f32__win_8asm.html#a6857792694fa350a810460709429c48a">i</a> = 0 ; <a class="code hl_variable" href="_r_f_f_t__f32__win_8asm.html#a6857792694fa350a810460709429c48a">i</a> &lt; 400 ; <a class="code hl_variable" href="_r_f_f_t__f32__win_8asm.html#a6857792694fa350a810460709429c48a">i</a>++)</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        delay_addr-&gt;<a class="code hl_variable" href="struct_d_e_l_a_y.html#a522e0fb78699481ded0edcf5d50071c7">data</a>[<a class="code hl_variable" href="_r_f_f_t__f32__adc__win_8asm.html#a6857792694fa350a810460709429c48a">i</a>] = 0;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        delay_addr-&gt;<a class="code hl_variable" href="struct_d_e_l_a_y.html#a522e0fb78699481ded0edcf5d50071c7">data</a>[<a class="code hl_variable" href="_r_f_f_t__f32__win_8asm.html#a6857792694fa350a810460709429c48a">i</a>] = 0;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    delay_addr -&gt; index = 0;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    delay_addr -&gt; grid_freq = 50.0f;</div>
@@ -123,7 +123,7 @@ $(function(){initNavTree('delay_8c_source.html','',''); });
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    delay_addr -&gt; inv_grid_freq = 1.0f / grid_freq;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 </div>
-<div class="ttc" id="a_r_f_f_t__f32__adc__win_8asm_html_a6857792694fa350a810460709429c48a"><div class="ttname"><a href="_r_f_f_t__f32__adc__win_8asm.html#a6857792694fa350a810460709429c48a">i</a></div><div class="ttdeci">Loop for i</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32__adc__win_8asm_source.html#l00039">RFFT_f32_adc_win.asm:39</a></div></div>
+<div class="ttc" id="a_r_f_f_t__f32__win_8asm_html_a6857792694fa350a810460709429c48a"><div class="ttname"><a href="_r_f_f_t__f32__win_8asm.html#a6857792694fa350a810460709429c48a">i</a></div><div class="ttdeci">Loop for i</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32__win_8asm_source.html#l00087">RFFT_f32_win.asm:87</a></div></div>
 <div class="ttc" id="adelay_8c_html_a1d1f6ac6440c9beb1b7c6051c8fa15e0"><div class="ttname"><a href="delay_8c.html#a1d1f6ac6440c9beb1b7c6051c8fa15e0">DELAY_Init</a></div><div class="ttdeci">void DELAY_Init(DELAY *delay_addr)</div><div class="ttdoc">Flash 启动支持, 将函数搬运至RAM内执行</div><div class="ttdef"><b>定义</b> <a href="#l00018">delay.c:18</a></div></div>
 <div class="ttc" id="adelay_8c_html_a7f6f301d186e73e3449b5136447dbb11"><div class="ttname"><a href="delay_8c.html#a7f6f301d186e73e3449b5136447dbb11">DELAY_Set</a></div><div class="ttdeci">void DELAY_Set(DELAY *delay_addr, float32_t isr_freq, float32_t grid_freq)</div><div class="ttdoc">配置延时链</div><div class="ttdef"><b>定义</b> <a href="#l00031">delay.c:31</a></div></div>
 <div class="ttc" id="adelay_8h_html"><div class="ttname"><a href="delay_8h.html">delay.h</a></div><div class="ttdoc">数组延迟链驱动函数声明</div></div>
@@ -135,7 +135,7 @@ $(function(){initNavTree('delay_8c_source.html','',''); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_92deeed8706179aabb56425907aff052.html">Delay</a></li><li class="navelem"><a href="delay_8c.html">delay.c</a></li>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_18303dec2931d175ba475094c384322b.html">delay</a></li><li class="navelem"><a href="delay_8c.html">delay.c</a></li>
     <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

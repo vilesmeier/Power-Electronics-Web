@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NUEDC: NUEDC-Core/Code/Control_Driver/Global/global.h 源文件</title>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/global/global.h 源文件</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -100,30 +100,64 @@ $(function(){initNavTree('global_8h_source.html','',''); });
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// 头文件包含</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// 控制环路层</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// 硬件驱动层</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// IDE 编译器文件</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;stdint.h&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// 全局宏定义</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="global_8h.html#a127fe3c0c00af4f7ff22a2291973153a">   21</a></span><span class="preprocessor">#define T_ISR         0.00005f          </span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="global_8h.html#a0979f47c3b374bec8f15b572a911f99c">   22</a></span><span class="preprocessor">#define T_GRID        0.02f             </span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="global_8h.html#adcd382ac73269e1100e36dd182b07ad6">   23</a></span><span class="preprocessor">#define FREQ_ISR      20000U            </span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="global_8h.html#a0a14df39eea4daf9ae69e2be90a7a7b7">   24</a></span><span class="preprocessor">#define FREQ_GRID     50U               </span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// 全局变量声明</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif </span><span class="comment">// !GLOBAL_H</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="dcl_8h.html">dcl/dcl.h</a>&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;<a class="code" href="delay_8h.html">delay/delay.h</a>&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;<a class="code" href="filter_8h.html">filter/filter.h</a>&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;<a class="code" href="mathdef_8h.html">mathdef/mathdef.h</a>&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="modulate_8h.html">modulate/modulate.h</a>&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="mppt_8h.html">mppt/mppt.h</a>&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="_control___driver_2oled_2oled_8h.html">oled/oled.h</a>&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;<a class="code" href="pll__1ph_8h.html">pll/pll_1ph.h</a>&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="pll__3ph_8h.html">pll/pll_3ph.h</a>&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;<a class="code" href="power__1ph_8h.html">power/power_1ph.h</a>&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="power__3ph_8h.html">power/power_3ph.h</a>&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;<a class="code" href="ramp_8h.html">ramp/ramp.h</a>&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;<a class="code" href="state_8h.html">state/state.h</a>&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;<a class="code" href="transferfun_8h.html">transferfun/transferfun.h</a>&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;<a class="code" href="transform_8h.html">transform/transform.h</a>&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;<a class="code" href="vofa_8h.html">vofa/vofa.h</a>&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// 硬件驱动层</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;inc/hw_types.h&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// IDE 编译器文件</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;stdint.h&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;string.h&quot;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// 全局宏定义</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="global_8h.html#a127fe3c0c00af4f7ff22a2291973153a">   39</a></span><span class="preprocessor">#define T_ISR         0.00005f          </span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="global_8h.html#a0979f47c3b374bec8f15b572a911f99c">   40</a></span><span class="preprocessor">#define T_GRID        0.02f             </span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="global_8h.html#adcd382ac73269e1100e36dd182b07ad6">   41</a></span><span class="preprocessor">#define FREQ_ISR      20000U            </span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="global_8h.html#a0a14df39eea4daf9ae69e2be90a7a7b7">   42</a></span><span class="preprocessor">#define FREQ_GRID     50U               </span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// 全局变量声明</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">// !GLOBAL_H</span></div>
+<div class="ttc" id="a_control___driver_2oled_2oled_8h_html"><div class="ttname"><a href="_control___driver_2oled_2oled_8h.html">oled.h</a></div><div class="ttdoc">OLED函数声明-SSD1306/SSD1315</div></div>
+<div class="ttc" id="adcl_8h_html"><div class="ttname"><a href="dcl_8h.html">dcl.h</a></div><div class="ttdoc">数字控制库函数定义   包含支持FPU32的结构体定义与函数声明   PI/QPR/QPIR/QPMR/RC</div></div>
+<div class="ttc" id="adelay_8h_html"><div class="ttname"><a href="delay_8h.html">delay.h</a></div><div class="ttdoc">数组延迟链驱动函数声明</div></div>
+<div class="ttc" id="afilter_8h_html"><div class="ttname"><a href="filter_8h.html">filter.h</a></div><div class="ttdoc">数字滤波器函数声明</div></div>
+<div class="ttc" id="amathdef_8h_html"><div class="ttname"><a href="mathdef_8h.html">mathdef.h</a></div><div class="ttdoc">添加常用常数的全局定义</div></div>
+<div class="ttc" id="amodulate_8h_html"><div class="ttname"><a href="modulate_8h.html">modulate.h</a></div><div class="ttdoc">调制函数声明</div></div>
+<div class="ttc" id="amppt_8h_html"><div class="ttname"><a href="mppt_8h.html">mppt.h</a></div><div class="ttdoc">TI 官方MPPT(最大功率点跟踪)库移植 TI Solar Lib参考官方用户手册</div></div>
+<div class="ttc" id="apll__1ph_8h_html"><div class="ttname"><a href="pll__1ph_8h.html">pll_1ph.h</a></div><div class="ttdoc">单相电网锁相环, SOGI</div></div>
+<div class="ttc" id="apll__3ph_8h_html"><div class="ttname"><a href="pll__3ph_8h.html">pll_3ph.h</a></div><div class="ttdoc">三相电网锁相环</div></div>
+<div class="ttc" id="apower__1ph_8h_html"><div class="ttname"><a href="power__1ph_8h.html">power_1ph.h</a></div><div class="ttdoc">单相功率分析</div></div>
+<div class="ttc" id="apower__3ph_8h_html"><div class="ttname"><a href="power__3ph_8h.html">power_3ph.h</a></div><div class="ttdoc">三相功率分析 函数声明</div></div>
+<div class="ttc" id="aramp_8h_html"><div class="ttname"><a href="ramp_8h.html">ramp.h</a></div><div class="ttdoc">参考相位生成 函数声明</div></div>
+<div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">全局状态机声明</div></div>
+<div class="ttc" id="atransferfun_8h_html"><div class="ttname"><a href="transferfun_8h.html">transferfun.h</a></div><div class="ttdoc">适用于 C2000 与 STM32（带 FPU）的差分方程支持文件</div></div>
+<div class="ttc" id="atransform_8h_html"><div class="ttname"><a href="transform_8h.html">transform.h</a></div><div class="ttdoc">常用坐标变换</div></div>
+<div class="ttc" id="avofa_8h_html"><div class="ttname"><a href="vofa_8h.html">vofa.h</a></div><div class="ttdoc">VOFA上位机支持, 函数声明</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_1b88af91dd447239a694b9ee28570ad1.html">Global</a></li><li class="navelem"><a href="global_8h.html">global.h</a></li>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_e5c627fd0942d91e87d0a9041b203ab5.html">global</a></li><li class="navelem"><a href="global_8h.html">global.h</a></li>
     <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

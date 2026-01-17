@@ -1,0 +1,139 @@
+\documentclass{article}
+\usepackage{iftex}
+\usepackage{ifthen}
+\usepackage{epsfig}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\ifPDFTeX
+\usepackage{newunicodechar}
+  \makeatletter
+    \def\doxynewunicodechar#1#2{%
+    \@tempswafalse
+    \edef\nuc@tempa{\detokenize{#1}}%
+    \if\relax\nuc@tempa\relax
+      \nuc@emptyargerr
+    \else
+      \edef\@tempb{\expandafter\@car\nuc@tempa\@nil}%
+      \nuc@check
+      \if@tempswa
+        \@namedef{u8:\nuc@tempa}{#2}%
+      \fi
+    \fi
+  }
+  \makeatother
+  \doxynewunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \doxynewunicodechar{²}{${}^{2}$}% Superscript two
+  \doxynewunicodechar{³}{${}^{3}$}% Superscript three
+
+\fi
+\pagestyle{empty}
+\begin{document}
+$ N = 2^{n}, n = 5 : 10$
+\pagebreak
+
+$\frac{1}{[2^{FFT\_STAGES-1}]}$
+\pagebreak
+
+\[y[i]&=& \sqrt(x_{re}[i]^{2} + x_{im}[i]^{2}) \]
+\pagebreak
+
+\[ y[i]&=& \sqrt(x_{re}[i]^{2} + x_{im}[i]^{2})\]
+\pagebreak
+
+\[y_{re}[i]&=& x_{re}[i] + c_{re}\]
+\pagebreak
+
+\[y_{im}[i]&=& x_{im}[i] + c_{im}\]
+\pagebreak
+
+\[y_{re}[i]&=& w_{re}[i] + x_{re}[i]\]
+\pagebreak
+
+\[y_{im}[i]&=& w_{im}[i] + x_{im}[i]\]
+\pagebreak
+
+\[y[i]&=& \frac{1}{\sqrt(x_{re}[i]^{2} + x_{im}[i]^{2})}\]
+\pagebreak
+
+\[y_{re} &=& \sum(w_{re}[i]* x_{re}[i] - w_{im}[i] * x_{im}[i]) \]
+\pagebreak
+
+\[y_{im} &=& \sum(w_{re}[i]* x_{im}[i] + w_{im}[i] * x_{re}[i]) \]
+\pagebreak
+
+\[y_{re} &=& \sum(x[i]*w_{re}[i]) \]
+\pagebreak
+
+\[y_{im} &=& \sum(x[i]*w_{im}[i]) \]
+\pagebreak
+
+\[y_{re} &=& sum(x[i]*w_{re}[i]) \]
+\pagebreak
+
+\[y_{im} &=& sum(x[i]*w_{im}[i]) \]
+\pagebreak
+
+\[y_{re} &=& \frac{\Sigma x_{re}}{N} \]
+\pagebreak
+
+\[y_{im} &=& \frac{\Sigma x_{im}}{N} \]
+\pagebreak
+
+$K >= N$
+\pagebreak
+
+\[y_{re} &=& w_{re}*x_{re} - w_{im}*x_{im}\]
+\pagebreak
+
+\[y_{im} &=& w_{re}*x_{im} + w_{im}*x_{re}\]
+\pagebreak
+
+\[y_{re}[i] &=& w_{re}[i]*x_{re}[i] - w_{im}[i]*x_{im}[i] \]
+\pagebreak
+
+\[y_{im}[i] &=& w_{re}[i]*x_{im}[i] + w_{im}[i]*x_{re}[i] \]
+\pagebreak
+
+\[x^{*}_{re}[i] &=& x_{re}[i]\]
+\pagebreak
+
+\[x^{*}_{im}[i] &=& - x_{im}[i]\]
+\pagebreak
+
+\[y_{re}[i] &=& w_{re}[i]*x_{re}[i] - w_{im}[i]*x^{*}_{im}[i]\]
+\pagebreak
+
+\[y_{im}[i] &=& w_{re}[i]*x^{*}_{im}[i] + w_{im}[i]*x_{re}[i]\]
+\pagebreak
+
+\[y[] &=& w[]*x[] \]
+\pagebreak
+
+\[y[i] &=& c*x[i] \]
+\pagebreak
+
+\[y[i] &=& c*w[i]*x[i] \]
+\pagebreak
+
+\[y_{re}[i] &=& x[i]*w_{re}[i] \]
+\pagebreak
+
+\[y_{im}[i] &=& x[i]*w_{im}[i] \]
+\pagebreak
+
+\[y[i] &=& w[i]*x[i]\]
+\pagebreak
+
+\[y_{re}[i] &=& x_{re}[i] - c_{re} \]
+\pagebreak
+
+\[y_{im}[i] &=& x_{im}[i] - c_{im} \]
+\pagebreak
+
+\[y_{re}[i] &=& w_{re}[i] - x_{re}[i] \]
+\pagebreak
+
+\[y_{im}[i] &=& w_{im}[i] - x_{im}[i] \]
+\pagebreak
+
+\end{document}

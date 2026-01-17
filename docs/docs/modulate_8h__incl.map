@@ -1,5 +1,5 @@
-<map id="NUEDC&#45;Core/Code/Control_Driver/Modulation/modulate.h" name="NUEDC&#45;Core/Code/Control_Driver/Modulation/modulate.h">
-<area shape="rect" id="Node000001" title="调制函数声明" alt="" coords="49,5,247,48"/>
+<map id="NUEDC&#45;Core/Code/Control_Driver/modulate/modulate.h" name="NUEDC&#45;Core/Code/Control_Driver/modulate/modulate.h">
+<area shape="rect" id="Node000001" title="调制函数声明" alt="" coords="54,5,242,48"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,96,70,123"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,51,69,89,65,85,118,46"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="94,96,203,123"/>
