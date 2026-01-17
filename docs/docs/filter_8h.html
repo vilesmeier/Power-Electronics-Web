@@ -96,23 +96,23 @@ $(function(){initNavTree('filter_8h.html','',''); });
 
 <p>数字滤波器函数声明  
 <a href="#details">更多...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="transferfun_8h_source.html">TransferFun.h</a>&quot;</code><br />
-<code>#include &quot;stdint.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;stdint.h&quot;</code><br />
 <code>#include &quot;inc/hw_types.h&quot;</code><br />
+<code>#include &lt;<a class="el" href="_transfer_fun_8h_source.html">transferfun/transferfun.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 filter.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="filter_8h__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2filter_2filter_8h" loading="lazy" alt=""/></div>
 <map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2filter_2filter_8h" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2filter_2filter_8h">
-<area shape="rect" title="数字滤波器函数声明" alt="" coords="18,5,201,48"/>
-<area shape="rect" href="transferfun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="58,96,161,123"/>
-<area shape="poly" title=" " alt="" coords="112,49,112,80,107,80,107,49"/>
+<area shape="rect" title="数字滤波器函数声明" alt="" coords="60,5,244,48"/>
 <area shape="rect" title=" " alt="" coords="5,171,70,197"/>
-<area shape="poly" title=" " alt="" coords="86,50,66,72,49,97,41,126,39,156,33,155,36,126,44,95,61,68,82,47"/>
-<area shape="rect" title=" " alt="" coords="126,171,235,197"/>
-<area shape="poly" title=" " alt="" coords="137,47,158,68,175,95,183,126,185,155,179,155,178,126,170,97,154,72,133,50"/>
-<area shape="poly" title=" " alt="" coords="99,125,62,161,59,158,95,121"/>
-<area shape="poly" title=" " alt="" coords="124,121,159,158,156,161,120,125"/>
+<area shape="poly" title=" " alt="" coords="115,51,86,71,62,97,49,127,42,156,37,155,44,125,58,95,83,67,112,46"/>
+<area shape="rect" title=" " alt="" coords="156,171,266,197"/>
+<area shape="poly" title=" " alt="" coords="197,46,225,67,247,95,251,112,249,129,233,160,229,157,243,127,245,112,242,97,221,71,194,51"/>
+<area shape="rect" href="_transfer_fun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="72,96,232,123"/>
+<area shape="poly" title=" " alt="" coords="155,49,155,80,150,80,150,49"/>
+<area shape="poly" title=" " alt="" coords="134,125,72,164,69,160,131,121"/>
+<area shape="poly" title=" " alt="" coords="164,122,193,157,189,160,160,125"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -187,8 +187,8 @@ filter.h 的引用(Include)关系图:</div>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>数字滤波器函数声明 </p>
-<dl class="section warning"><dt>警告</dt><dd>此文件应该先include <a class="el" href="transferfun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件">TransferFun.h</a> </dd></dl>
-<dl class="section note"><dt>注解</dt><dd>在使用本文件时,不应该由 <a class="el" href="global_8h.html" title="全局变量声明, 头文件打包, 全局通用宏定义">global.h</a> 直接 include <a class="el" href="transferfun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件">TransferFun.h</a> </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>此文件应该先include <a class="el" href="_transfer_fun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件">transferfun.h</a> </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>在使用本文件时,不应该由 <a class="el" href="global_8h.html" title="全局变量声明, 头文件打包, 全局通用宏定义">global.h</a> 直接 include <a class="el" href="_transfer_fun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件">transferfun.h</a> </dd></dl>
 <dl class="section author"><dt>作者</dt><dd>Mao Chenbin (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="filter_8h_source.html">filter.h</a> 中定义.</p>
@@ -208,7 +208,7 @@ filter.h 的引用(Include)关系图:</div>
 <p>定义通用数字滤波器结构体 </p>
 <dl class="section note"><dt>注解</dt><dd>在调用 Filter_Run 之前, 必须先调用 Filter_Init 和 Filter_Set 进行初始化和配置 </dd>
 <dd>
-一阶和二阶滤波器均使用 <a class="el" href="transferfun_8h.html#af8832c3b4a1ad9070601b091b430b0e8" title="定义二阶直接形式Ⅱ（DF22）控制器结构体">DCL_DF22</a> 结构 </dd></dl>
+一阶和二阶滤波器均使用 <a class="el" href="_transfer_fun_8h.html#af8832c3b4a1ad9070601b091b430b0e8" title="定义二阶直接形式Ⅱ（DF22）控制器结构体">DCL_DF22</a> 结构 </dd></dl>
 
 </div>
 </div>
@@ -259,7 +259,7 @@ filter.h 的引用(Include)关系图:</div>
 </td></tr>
 </table>
 
-<p class="definition">在文件 <a class="el" href="filter_8h_source.html">filter.h</a> 第 <a class="el" href="filter_8h_source.html#l00023">23</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="filter_8h_source.html">filter.h</a> 第 <a class="el" href="filter_8h_source.html#l00022">22</a> 行定义.</p>
 
 </div>
 </div>
@@ -295,7 +295,7 @@ filter.h 的引用(Include)关系图:</div>
 <div class="center"><img src="filter_8h_a6bf8811531a98a51e7a794c2a27c0b04_cgraph.png" border="0" usemap="#afilter_8h_a6bf8811531a98a51e7a794c2a27c0b04_cgraph" loading="lazy" alt=""/></div>
 <map name="afilter_8h_a6bf8811531a98a51e7a794c2a27c0b04_cgraph" id="afilter_8h_a6bf8811531a98a51e7a794c2a27c0b04_cgraph">
 <area shape="rect" title="初始化一阶结构体" alt="" coords="5,5,81,32"/>
-<area shape="rect" href="transferfun_8h.html#a7fed97c70a637a0c8db4e7808730eba8" title="初始化 DCL_DF22 控制器结构体" alt="" coords="129,5,241,32"/>
+<area shape="rect" href="_transfer_fun_8h.html#a7fed97c70a637a0c8db4e7808730eba8" title="初始化 DCL_DF22 控制器结构体" alt="" coords="129,5,241,32"/>
 <area shape="poly" title=" " alt="" coords="81,16,113,16,113,21,81,21"/>
 </map>
 </div>
@@ -338,7 +338,7 @@ filter.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="filter_8h_source.html">filter.h</a> 第 <a class="el" href="filter_8h_source.html#l00073">73</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="filter_8h_source.html">filter.h</a> 第 <a class="el" href="filter_8h_source.html#l00072">72</a> 行定义.</p>
 
 </div>
 </div>

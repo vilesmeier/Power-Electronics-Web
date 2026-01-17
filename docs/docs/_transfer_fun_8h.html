@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NUEDC: NUEDC-Core/Code/Control_Driver/TransferFun/TransferFun.h 文件参考</title>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/transferfun/TransferFun.h 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -101,31 +101,54 @@ $(function(){initNavTree('_transfer_fun_8h.html','',''); });
 </div><div class="textblock"><div class="dynheader">
 TransferFun.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="_transfer_fun_8h__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2_transfer_fun_2_transfer_fun_8h" loading="lazy" alt=""/></div>
-<map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2_transfer_fun_2_transfer_fun_8h" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2_transfer_fun_2_transfer_fun_8h">
-<area shape="rect" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="5,5,228,48"/>
-<area shape="rect" title=" " alt="" coords="30,96,94,123"/>
-<area shape="poly" title=" " alt="" coords="105,50,81,85,77,82,100,47"/>
-<area shape="rect" title=" " alt="" coords="118,96,227,123"/>
-<area shape="poly" title=" " alt="" coords="133,47,157,82,153,85,129,50"/>
+<div class="center"><img src="_transfer_fun_8h__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2transferfun_2_transfer_fun_8h" loading="lazy" alt=""/></div>
+<map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2transferfun_2_transfer_fun_8h" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2transferfun_2_transfer_fun_8h">
+<area shape="rect" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="5,5,220,48"/>
+<area shape="rect" title=" " alt="" coords="26,96,90,123"/>
+<area shape="poly" title=" " alt="" coords="101,50,77,85,73,82,96,47"/>
+<area shape="rect" title=" " alt="" coords="114,96,223,123"/>
+<area shape="poly" title=" " alt="" coords="129,47,153,82,149,85,125,50"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 此图展示该文件被哪些文件直接或间接地引用了:</div>
 <div class="dyncontent">
-<div class="center"><img src="_transfer_fun_8h__dep__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2_transfer_fun_2_transfer_fun_8hdep" loading="lazy" alt=""/></div>
-<map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2_transfer_fun_2_transfer_fun_8hdep" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2_transfer_fun_2_transfer_fun_8hdep">
-<area shape="rect" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="194,5,416,48"/>
-<area shape="rect" href="_d_c_l_f32_8h.html" title="数字控制库函数定义 &#160;&#160;包含支持FPU32的结构体定义与函数声明 &#160;&#160;PI/QPR/QPIR/QPMR/RC" alt="" coords="5,96,189,139"/>
-<area shape="poly" title=" " alt="" coords="244,57,147,98,145,93,241,52"/>
-<area shape="rect" href="filter_8h.html" title="数字滤波器函数声明" alt="" coords="213,96,397,139"/>
-<area shape="poly" title=" " alt="" coords="308,64,308,96,302,96,302,64"/>
-<area shape="rect" href="_transfer_fun_8c.html" title="STM32 C语言实现差分方程支持" alt="" coords="420,96,643,139"/>
-<area shape="poly" title=" " alt="" coords="373,52,479,93,477,98,371,57"/>
-<area shape="rect" href="_d_c_l_f32_8c.html" title="DCL库浮点型控制器函数定义" alt="" coords="5,187,189,229"/>
-<area shape="poly" title=" " alt="" coords="100,154,100,186,94,186,94,154"/>
-<area shape="rect" href="filter_8c.html" title="数字滤波器函数定义" alt="" coords="213,187,397,229"/>
-<area shape="poly" title=" " alt="" coords="308,154,308,186,302,186,302,154"/>
+<div class="center"><img src="_transfer_fun_8h__dep__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2transferfun_2_transfer_fun_8hdep" loading="lazy" alt=""/></div>
+<map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2transferfun_2_transfer_fun_8hdep" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2transferfun_2_transfer_fun_8hdep">
+<area shape="rect" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="779,5,994,48"/>
+<area shape="rect" href="dcl_8h.html" title="数字控制库函数定义 &#160;&#160;包含支持FPU32的结构体定义与函数声明 &#160;&#160;PI/QPR/QPIR/QPMR/RC" alt="" coords="601,96,785,139"/>
+<area shape="poly" title=" " alt="" coords="828,57,739,98,737,93,826,53"/>
+<area shape="rect" href="global_8h.html" title="全局变量声明, 头文件打包, 全局通用宏定义" alt="" coords="731,187,914,229"/>
+<area shape="poly" title=" " alt="" coords="867,63,850,97,836,145,828,187,823,186,831,143,845,95,862,61"/>
+<area shape="rect" href="filter_8h.html" title="数字滤波器函数声明" alt="" coords="860,96,1043,139"/>
+<area shape="poly" title=" " alt="" coords="913,59,939,94,934,97,908,62"/>
+<area shape="rect" href="_transfer_fun_8c.html" title="STM32 C语言实现差分方程支持" alt="" coords="1067,96,1282,139"/>
+<area shape="poly" title=" " alt="" coords="969,50,1108,93,1106,98,968,56"/>
+<area shape="rect" href="dcl_8c.html" title="DCL库浮点型控制器函数定义" alt="" coords="523,187,706,229"/>
+<area shape="poly" title=" " alt="" coords="667,152,634,188,630,185,663,149"/>
+<area shape="poly" title=" " alt="" coords="737,145,794,184,791,188,734,150"/>
+<area shape="rect" href="global_8c.html" title="全局变量定义" alt="" coords="5,277,189,320"/>
+<area shape="poly" title=" " alt="" coords="716,232,571,249,457,256,344,264,201,280,189,282,188,277,201,275,343,258,456,251,570,243,715,227"/>
+<area shape="rect" href="adc_8c.html" title="ADC Driver for ADC Module of F28335" alt="" coords="213,277,413,320"/>
+<area shape="poly" title=" " alt="" coords="716,232,432,280,413,283,412,278,431,275,715,227"/>
+<area shape="rect" href="_peripheral___driver_228335_2_o_l_e_d_2oled_8c.html" title="driver for OLED" alt="" coords="421,368,621,411"/>
+<area shape="poly" title=" " alt="" coords="716,232,477,280,472,289,470,300,475,323,487,346,503,366,499,369,483,349,470,325,465,300,467,287,474,275,715,227"/>
+<area shape="rect" href="oled__font_8h.html" title="Font libiary for OLED screen" alt="" coords="488,277,698,320"/>
+<area shape="poly" title=" " alt="" coords="755,238,648,279,646,274,753,233"/>
+<area shape="rect" href="pwm_8c.html" title="pwm driver source code" alt="" coords="723,277,922,320"/>
+<area shape="poly" title=" " alt="" coords="825,245,825,277,820,277,820,245"/>
+<area shape="rect" href="spi_8c.html" title="spi driver source code" alt="" coords="947,277,1146,320"/>
+<area shape="poly" title=" " alt="" coords="890,233,995,274,993,279,888,238"/>
+<area shape="rect" href="tim_8c.html" title="CPU timer driver source code" alt="" coords="1171,277,1370,320"/>
+<area shape="poly" title=" " alt="" coords="930,228,1171,275,1170,280,929,233"/>
+<area shape="rect" href="uart_8c.html" title=" " alt="" coords="1395,277,1594,320"/>
+<area shape="poly" title=" " alt="" coords="929,227,1057,243,1158,251,1257,260,1383,275,1395,276,1394,282,1382,280,1256,265,1157,257,1057,248,929,232"/>
+<area shape="rect" href="xint_8c.html" title="external interrupt driver source code" alt="" coords="1619,277,1818,320"/>
+<area shape="poly" title=" " alt="" coords="929,227,1120,245,1269,251,1418,257,1607,275,1619,276,1618,282,1606,280,1418,262,1269,257,1120,251,929,232"/>
+<area shape="poly" title=" " alt="" coords="569,334,540,369,536,366,565,330"/>
+<area shape="poly" title=" " alt="" coords="911,150,854,188,851,184,908,145"/>
+<area shape="rect" href="filter_8c.html" title="数字滤波器函数定义" alt="" coords="939,187,1122,229"/>
+<area shape="poly" title=" " alt="" coords="982,149,1014,185,1010,188,978,152"/>
 </map>
 </div>
 </div>
@@ -151,27 +174,27 @@ TransferFun.h 的引用(Include)关系图:</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:ada098e9f6b937c06c3de5e0c3693c006" id="r_ada098e9f6b937c06c3de5e0c3693c006"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada098e9f6b937c06c3de5e0c3693c006">DCL_Clamp_Run</a> (float32_t *<a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a>, float32_t <a class="el" href="_transfer_fun_8asm.html#a95d1601247f5ec3ca9d78c43f56679db">Umax</a>, float32_t <a class="el" href="_transfer_fun_8asm.html#aadac943c15058f072d200a1ac173d9b4">Umin</a>)</td></tr>
+<tr class="memitem:ada098e9f6b937c06c3de5e0c3693c006" id="r_ada098e9f6b937c06c3de5e0c3693c006"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada098e9f6b937c06c3de5e0c3693c006">DCL_Clamp_Run</a> (float32_t *<a class="el" href="transferfun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a>, float32_t <a class="el" href="transferfun_8asm.html#a95d1601247f5ec3ca9d78c43f56679db">Umax</a>, float32_t <a class="el" href="transferfun_8asm.html#aadac943c15058f072d200a1ac173d9b4">Umin</a>)</td></tr>
 <tr class="memdesc:ada098e9f6b937c06c3de5e0c3693c006"><td class="mdescLeft">&#160;</td><td class="mdescRight">限幅函数，判断输入是否被限幅 <br  />
  此函数在汇编模块中实现  <br /></td></tr>
 <tr class="memitem:ab556770206b05822837dd13bb5b1ff05" id="r_ab556770206b05822837dd13bb5b1ff05"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab556770206b05822837dd13bb5b1ff05">DCL_DF11_Init</a> (<a class="el" href="#a7375b44215b7758cf4f284e8b6106407">DCL_DF11</a> *p)</td></tr>
 <tr class="memdesc:ab556770206b05822837dd13bb5b1ff05"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化 <a class="el" href="#a7375b44215b7758cf4f284e8b6106407" title="定义一阶直接形式Ⅰ（DF11）控制器结构体">DCL_DF11</a> 控制器结构体  <br /></td></tr>
-<tr class="memitem:a7ca9b52b5a2f202f4d3890031f21c7ec" id="r_a7ca9b52b5a2f202f4d3890031f21c7ec"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ca9b52b5a2f202f4d3890031f21c7ec">DCL_DF11_Run</a> (<a class="el" href="#a7375b44215b7758cf4f284e8b6106407">DCL_DF11</a> *p, float32_t <a class="el" href="_transfer_fun_8asm.html#a9b8435420fe8aed26e0c121a179ef973">ek</a>)</td></tr>
+<tr class="memitem:a7ca9b52b5a2f202f4d3890031f21c7ec" id="r_a7ca9b52b5a2f202f4d3890031f21c7ec"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ca9b52b5a2f202f4d3890031f21c7ec">DCL_DF11_Run</a> (<a class="el" href="#a7375b44215b7758cf4f284e8b6106407">DCL_DF11</a> *p, float32_t <a class="el" href="transferfun_8asm.html#a9b8435420fe8aed26e0c121a179ef973">ek</a>)</td></tr>
 <tr class="memdesc:a7ca9b52b5a2f202f4d3890031f21c7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行一阶直接形式Ⅰ控制器（DF11），在 FPU32 上运行 <br  />
  原函数名: float32_t DCL_runDF11_C1(DCL_DF11 *p, float32_t ek);  <br /></td></tr>
 <tr class="memitem:a7fed97c70a637a0c8db4e7808730eba8" id="r_a7fed97c70a637a0c8db4e7808730eba8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fed97c70a637a0c8db4e7808730eba8">DCL_DF22_Init</a> (<a class="el" href="#af8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *p)</td></tr>
 <tr class="memdesc:a7fed97c70a637a0c8db4e7808730eba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化 <a class="el" href="#af8832c3b4a1ad9070601b091b430b0e8" title="定义二阶直接形式Ⅱ（DF22）控制器结构体">DCL_DF22</a> 控制器结构体  <br /></td></tr>
-<tr class="memitem:a9d959ef0d3a467ed15b6a50179c436a8" id="r_a9d959ef0d3a467ed15b6a50179c436a8"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d959ef0d3a467ed15b6a50179c436a8">DCL_DF22_Run</a> (<a class="el" href="#af8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *p, float32_t <a class="el" href="_transfer_fun_8asm.html#a9b8435420fe8aed26e0c121a179ef973">ek</a>)</td></tr>
+<tr class="memitem:a9d959ef0d3a467ed15b6a50179c436a8" id="r_a9d959ef0d3a467ed15b6a50179c436a8"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d959ef0d3a467ed15b6a50179c436a8">DCL_DF22_Run</a> (<a class="el" href="#af8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *p, float32_t <a class="el" href="transferfun_8asm.html#a9b8435420fe8aed26e0c121a179ef973">ek</a>)</td></tr>
 <tr class="memdesc:a9d959ef0d3a467ed15b6a50179c436a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行完整二阶直接形式Ⅱ（DF22）控制器，在 FPU32 上运行, 汇编函数  <br /></td></tr>
 <tr class="memitem:a6d7d3a8a8d055aeedc6d0b76f2378c83" id="r_a6d7d3a8a8d055aeedc6d0b76f2378c83"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d7d3a8a8d055aeedc6d0b76f2378c83">DCL_DF23_Init</a> (<a class="el" href="#a74b8909e62e7713da3898ff5ab087938">DCL_DF23</a> *p)</td></tr>
 <tr class="memdesc:a6d7d3a8a8d055aeedc6d0b76f2378c83"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化 <a class="el" href="#a74b8909e62e7713da3898ff5ab087938" title="定义三阶直接形式Ⅱ（DF23）控制器结构体">DCL_DF23</a> 控制器结构体  <br /></td></tr>
-<tr class="memitem:aa02c334985fd995b3cab85d02976a528" id="r_aa02c334985fd995b3cab85d02976a528"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa02c334985fd995b3cab85d02976a528">DCL_DF23_Run</a> (<a class="el" href="#a74b8909e62e7713da3898ff5ab087938">DCL_DF23</a> *p, float32_t <a class="el" href="_transfer_fun_8asm.html#a9b8435420fe8aed26e0c121a179ef973">ek</a>)</td></tr>
+<tr class="memitem:aa02c334985fd995b3cab85d02976a528" id="r_aa02c334985fd995b3cab85d02976a528"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa02c334985fd995b3cab85d02976a528">DCL_DF23_Run</a> (<a class="el" href="#a74b8909e62e7713da3898ff5ab087938">DCL_DF23</a> *p, float32_t <a class="el" href="transferfun_8asm.html#a9b8435420fe8aed26e0c121a179ef973">ek</a>)</td></tr>
 <tr class="memdesc:aa02c334985fd995b3cab85d02976a528"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行完整三阶直接形式Ⅱ（DF23）控制器，在 FPU32 上运行, 汇编函数 原函数名: extern float32_t DCL_runDF23_C1(DCL_DF23 *p, float32_t ek);  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>适用于 C2000 与 STM32（带 FPU）的差分方程支持文件 </p>
 <dl class="section author"><dt>作者</dt><dd>Mao Chenbin (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section warning"><dt>警告</dt><dd>请在包含 <a class="el" href="_d_c_l_f32_8h.html" title="数字控制库函数定义   包含支持FPU32的结构体定义与函数声明   PI/QPR/QPIR/QPMR/RC">DCLF32.h</a> 之前包含此文件 </dd>
+<dl class="section warning"><dt>警告</dt><dd>请在包含 DCLF32.h 之前包含此文件 </dd>
 <dd>
 此文件不应被 <a class="el" href="global_8h.html" title="全局变量声明, 头文件打包, 全局通用宏定义">global.h</a> 直接包含 </dd></dl>
 
@@ -342,12 +365,12 @@ TransferFun.h 的引用(Include)关系图:</div>
   <table class="params">
     <tr><td class="paramname">p</td><td>控制器结构体指针 <br  />
  </td></tr>
-    <tr><td class="paramname">ek</td><td>当前误差 <a class="el" href="_transfer_fun_8asm.html#ab597f4476abfdc8fe43f612007f905ec">e(k)</a> <br  />
+    <tr><td class="paramname">ek</td><td>当前误差 <a class="el" href="transferfun_8asm.html#ab597f4476abfdc8fe43f612007f905ec">e(k)</a> <br  />
  </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>float32_t 控制输出 <a class="el" href="_transfer_fun_8asm.html#aa8fa7c47d0781c24b170262cecda1a19">u(k)</a> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>float32_t 控制输出 <a class="el" href="transferfun_8asm.html#aa8fa7c47d0781c24b170262cecda1a19">u(k)</a> </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="_transfer_fun_8c_source.html">TransferFun.c</a> 第 <a class="el" href="_transfer_fun_8c_source.html#l00024">24</a> 行定义.</p>
 
@@ -422,12 +445,12 @@ TransferFun.h 的引用(Include)关系图:</div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>控制器结构体指针 <br  />
  </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ek</td><td>当前误差 <a class="el" href="_transfer_fun_8asm.html#ab597f4476abfdc8fe43f612007f905ec">e(k)</a> <br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">ek</td><td>当前误差 <a class="el" href="transferfun_8asm.html#ab597f4476abfdc8fe43f612007f905ec">e(k)</a> <br  />
  </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>float32_t 控制输出 <a class="el" href="_transfer_fun_8asm.html#aa8fa7c47d0781c24b170262cecda1a19">u(k)</a> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>float32_t 控制输出 <a class="el" href="transferfun_8asm.html#aa8fa7c47d0781c24b170262cecda1a19">u(k)</a> </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="_transfer_fun_8c_source.html">TransferFun.c</a> 第 <a class="el" href="_transfer_fun_8c_source.html#l00033">33</a> 行定义.</p>
 
@@ -500,12 +523,12 @@ TransferFun.h 的引用(Include)关系图:</div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>控制器结构体指针 <br  />
  </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ek</td><td>当前误差 <a class="el" href="_transfer_fun_8asm.html#ab597f4476abfdc8fe43f612007f905ec">e(k)</a> <br  />
+    <tr><td class="paramdir">[in]</td><td class="paramname">ek</td><td>当前误差 <a class="el" href="transferfun_8asm.html#ab597f4476abfdc8fe43f612007f905ec">e(k)</a> <br  />
  </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>float32_t 控制输出 <a class="el" href="_transfer_fun_8asm.html#aa8fa7c47d0781c24b170262cecda1a19">u(k)</a> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>float32_t 控制输出 <a class="el" href="transferfun_8asm.html#aa8fa7c47d0781c24b170262cecda1a19">u(k)</a> </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="_transfer_fun_8c_source.html">TransferFun.c</a> 第 <a class="el" href="_transfer_fun_8c_source.html#l00044">44</a> 行定义.</p>
 
@@ -524,7 +547,7 @@ TransferFun.h 的引用(Include)关系图:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_81047815d5a852c35a382d83155d52af.html">TransferFun</a></li><li class="navelem"><a href="_transfer_fun_8h.html">TransferFun.h</a></li>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_ec80777730a45e0d08ba365534f6468c.html">transferfun</a></li><li class="navelem"><a href="_transfer_fun_8h.html">TransferFun.h</a></li>
     <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

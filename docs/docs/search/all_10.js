@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['n_0',['N',['../_transfer_fun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877',1,'N:&#160;TransferFun.asm'],['../_r_f_f_t__f32__win_8asm.html#af92fc0cfe03f78ecafb17c4f9e597f07',1,'N(they are symmetrical).:&#160;RFFT_f32_win.asm']]],
+  ['n_0',['N',['../transferfun_8asm.html#a2298fc01d28a72c06f7457aa55c3e877',1,'N:&#160;transferfun.asm'],['../_r_f_f_t__f32__win_8asm.html#af92fc0cfe03f78ecafb17c4f9e597f07',1,'N(they are symmetrical).:&#160;RFFT_f32_win.asm']]],
   ['negedge_1',['NEGEDGE',['../cap_8h.html#a76eb5a1497136b9e7bb7ab7a8a359135ab5082d97d82be2b7da954da00900a1ee',1,'cap.h']]],
-  ['nf_2',['NF',['../_transfer_fun_8asm.html#a50feba91d89be680d3c9636d63c3bc28',1,'TransferFun.asm']]],
+  ['nf_2',['NF',['../transferfun_8asm.html#a50feba91d89be680d3c9636d63c3bc28',1,'transferfun.asm']]],
   ['noaction_3',['NOACTION',['../cap_8h.html#a7ddea606ee19f50c31837ae7bcf8ced9a8bb584db01e5ebc3a3d4d84157cebc3d',1,'cap.h']]],
   ['nop_4',['NOP',['../_r_f_f_t__f32__phase___t_m_u0_8asm.html#a8bfa365d5042f23b7abaf232776b2870',1,'RFFT_f32_phase_TMU0.asm']]],
   ['nsample_5',['nsample',['../struct_p_o_w_e_r__3_p_h.html#aaa770e26f785bb47a5aa885a398820b1',1,'POWER_3PH']]],
