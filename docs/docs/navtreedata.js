@@ -58,11 +58,11 @@ var NAVTREEINDEX =
 "_r_f_f_t__f32__twiddle_factors_8asm.html#a3243c1a388d2cadc6ab4d71ab13b00fb",
 "_r_f_f_t__f32__twiddle_factors_8asm.html#aa4411f6d31be8385ed72cb1bb1db58eb",
 "_r_f_f_t__f32__win_8asm.html#aa2fbe8499f5d5a4eb9e5c72a0a8ae296",
-"fpu__fft__cheb_8h.html#a77b7f40c85b3f7a2898df828a1b8e636",
-"functions_j.html",
-"mathdef_8h.html#a703c7e3cb265f1740a04de9ceeb6576e",
-"rfft_8h.html#af9cc97e722abd383b4fc27941672c7a7",
-"struct_s_o_g_i__1_p_h.html#ae5d557aac7dae3e333b23e602077a351",
+"fpu__fft__bartlett_8h.html",
+"fpu__vector_8h.html",
+"key_8h.html#ae61205d7dde289872522cb4b549a5aeb",
+"rfft_8c.html#ad1e815d931ea459fc390f308cd553710",
+"struct_p_o_w_e_r__3_p_h.html#ad6e84bc7046dec3b61c7ef8f8c085104",
 "vofa_8h.html#a8b37353f7cbbd178e8f995dba7eaae73"
 ];
 

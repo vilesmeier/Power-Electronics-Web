@@ -9,7 +9,7 @@ var dir_e45d108cfc6c3eeeb7e1740d8d399ae0 =
     [ "mppt", "dir_a2fa5afdddbe638eace2099c238643e0.html", "dir_a2fa5afdddbe638eace2099c238643e0" ],
     [ "oled", "dir_c38e7e6077b5427c3d80136a5cbe2b61.html", "dir_c38e7e6077b5427c3d80136a5cbe2b61" ],
     [ "pll", "dir_91f7cf44f3c4053cada356e4d04c4e99.html", "dir_91f7cf44f3c4053cada356e4d04c4e99" ],
-    [ "power", "dir_3f267e491a3cd44942483e32bf2157ee.html", "dir_3f267e491a3cd44942483e32bf2157ee" ],
+    [ "Power", "dir_019e8e729eae4d96cade4071efa5b189.html", "dir_019e8e729eae4d96cade4071efa5b189" ],
     [ "ramp", "dir_c3b185a5774b8e0397ec9b90c395f3c6.html", "dir_c3b185a5774b8e0397ec9b90c395f3c6" ],
     [ "rfft", "dir_0fd93c14012f780a2e81c2f5b80c75ff.html", "dir_0fd93c14012f780a2e81c2f5b80c75ff" ],
     [ "state", "dir_7b3d9767a068712293247f04c7d5a439.html", "dir_7b3d9767a068712293247f04c7d5a439" ],

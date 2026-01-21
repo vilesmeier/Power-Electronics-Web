@@ -124,11 +124,11 @@ $(function(){initNavTree('i2c_8c_source.html','',''); });
 </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="i2c_8c.html#a5352523aad8f6cef92cef0174e2d0d6e">   34</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="i2c_8c.html#a5352523aad8f6cef92cef0174e2d0d6e">I2C_putData</a>(Uint32 base,Uint16 <a class="code hl_variable" href="transferfun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a>)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="i2c_8c.html#a5352523aad8f6cef92cef0174e2d0d6e">   34</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="i2c_8c.html#a5352523aad8f6cef92cef0174e2d0d6e">I2C_putData</a>(Uint32 base,Uint16 <a class="code hl_variable" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a>)</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span> (base == <a class="code hl_define" href="i2c_8h.html#a32bd7b0e98a96d55221c76b0aff4cbff">I2CA_BASE</a>)</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        I2caRegs.I2CDXR = <a class="code hl_variable" href="transferfun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        I2caRegs.I2CDXR = <a class="code hl_variable" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a>;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        I2caRegs.I2CMDR.all = 0x6E20;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
@@ -163,6 +163,7 @@ $(function(){initNavTree('i2c_8c_source.html','',''); });
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
 </div>
+<div class="ttc" id="a_transfer_fun_8asm_html_a1f1c96545c7c8e20ffc09b6051f81f37"><div class="ttname"><a href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a></div><div class="ttdeci">&amp; data</div><div class="ttdef"><b>定义</b> <a href="_transfer_fun_8asm_source.html#l00180">TransferFun.asm:180</a></div></div>
 <div class="ttc" id="ai2c_8c_html_a08f9a3e4a9e29d2710030a547813fef8"><div class="ttname"><a href="i2c_8c.html#a08f9a3e4a9e29d2710030a547813fef8">I2C_setDataCount</a></div><div class="ttdeci">void I2C_setDataCount(Uint32 base, Uint16 count)</div><div class="ttdoc">Set number of bytes to be to transfer or receive when repeat mode is off.</div><div class="ttdef"><b>定义</b> <a href="#l00043">i2c.c:43</a></div></div>
 <div class="ttc" id="ai2c_8c_html_a3822a8c9581d825bb52165867cd7deee"><div class="ttname"><a href="i2c_8c.html#a3822a8c9581d825bb52165867cd7deee">I2C_setTargetAddress</a></div><div class="ttdeci">void I2C_setTargetAddress(Uint32 base, Uint16 targetAddr)</div><div class="ttdoc">Sets the address that the I2C Controller places on the bus.</div><div class="ttdef"><b>定义</b> <a href="#l00051">i2c.c:51</a></div></div>
 <div class="ttc" id="ai2c_8c_html_a5352523aad8f6cef92cef0174e2d0d6e"><div class="ttname"><a href="i2c_8c.html#a5352523aad8f6cef92cef0174e2d0d6e">I2C_putData</a></div><div class="ttdeci">void I2C_putData(Uint32 base, Uint16 data)</div><div class="ttdef"><b>定义</b> <a href="#l00034">i2c.c:34</a></div></div>
@@ -170,7 +171,6 @@ $(function(){initNavTree('i2c_8c_source.html','',''); });
 <div class="ttc" id="ai2c_8c_html_ac6bdeec8754bab865931d047b1a1e8fd"><div class="ttname"><a href="i2c_8c.html#ac6bdeec8754bab865931d047b1a1e8fd">I2C_isBusBusy</a></div><div class="ttdeci">Uint16 I2C_isBusBusy(Uint32 base)</div><div class="ttdoc">Indicates whether or not the I2C bus is busy.</div><div class="ttdef"><b>定义</b> <a href="#l00059">i2c.c:59</a></div></div>
 <div class="ttc" id="ai2c_8h_html"><div class="ttname"><a href="i2c_8h.html">i2c.h</a></div></div>
 <div class="ttc" id="ai2c_8h_html_a32bd7b0e98a96d55221c76b0aff4cbff"><div class="ttname"><a href="i2c_8h.html#a32bd7b0e98a96d55221c76b0aff4cbff">I2CA_BASE</a></div><div class="ttdeci">#define I2CA_BASE</div><div class="ttdoc">determine which I2C module to use</div><div class="ttdef"><b>定义</b> <a href="i2c_8h_source.html#l00015">i2c.h:15</a></div></div>
-<div class="ttc" id="atransferfun_8asm_html_a1f1c96545c7c8e20ffc09b6051f81f37"><div class="ttname"><a href="transferfun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a></div><div class="ttdeci">&amp; data</div><div class="ttdef"><b>定义</b> <a href="transferfun_8asm_source.html#l00180">transferfun.asm:180</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

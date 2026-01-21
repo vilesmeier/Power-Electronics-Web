@@ -1,0 +1,25 @@
+var struct_v_s_g =
+[
+    [ "D", "struct_v_s_g.html#a3bf8330a84a79cc6847454e059c077c7", null ],
+    [ "delay_u_grid", "struct_v_s_g.html#a0af0834343892bd3a21d6e6e8d88a65d", null ],
+    [ "delta_t", "struct_v_s_g.html#a48c352893311ab182c000425abbb361f", null ],
+    [ "freq", "struct_v_s_g.html#a9705ac2a1e1d167f6aa0f9373d111149", null ],
+    [ "i_grid", "struct_v_s_g.html#a2377c3f96850771bdf1f60df42b8f066", null ],
+    [ "i_output", "struct_v_s_g.html#a2ce1e14301aa9502efaf792a14abd6c1", null ],
+    [ "J", "struct_v_s_g.html#a0068898ea2b6db483b739846e05cffbe", null ],
+    [ "L_vsg", "struct_v_s_g.html#a8be7e84ca3d9c11bb03d85d168697e04", null ],
+    [ "lpf_p", "struct_v_s_g.html#aca3fc0e2f3170d292c2e17b9249879d4", null ],
+    [ "lpf_q", "struct_v_s_g.html#a2c9065e78c69a5eaeffc26f321773c01", null ],
+    [ "p", "struct_v_s_g.html#aafa544c6a7533f7856901b6d956bf3bd", null ],
+    [ "p_ref", "struct_v_s_g.html#afe0a3bcc768d5810786b4b5040636030", null ],
+    [ "q", "struct_v_s_g.html#a6bd252b38aa999595cbb1b44b674dd08", null ],
+    [ "q_droop", "struct_v_s_g.html#a6ba51d65d7cdc5a51a467abd0838de7e", null ],
+    [ "q_ref", "struct_v_s_g.html#a765573a93bbc83cf1d3062a833612608", null ],
+    [ "R_vsg", "struct_v_s_g.html#acbaaa4587be2ced950661ad6ee1e989e", null ],
+    [ "theta", "struct_v_s_g.html#a1ba80adfe88d2b38d74db795b50c28ed", null ],
+    [ "u_grid", "struct_v_s_g.html#af6dec3fcceb08fed8e8147ec13d06b9d", null ],
+    [ "u_inverter", "struct_v_s_g.html#ada5bb6f9011cb26500e0f1c51b2a0c7c", null ],
+    [ "u_ref", "struct_v_s_g.html#a3bbeffadf1e5bb891c0c49f385d06d9f", null ],
+    [ "virtual_impedance", "struct_v_s_g.html#af6c33aeede17bc157bc9422501fd40de", null ],
+    [ "w", "struct_v_s_g.html#aa86e30b7689e6b6a980a9865e544a006", null ]
+];

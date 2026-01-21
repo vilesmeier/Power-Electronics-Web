@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/VSG/vsg.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('vsg_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">vsg.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>虚拟同步机控制函数声明  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;stdint.h&quot;</code><br />
+<code>#include &quot;inc/hw_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="delay_8h_source.html">delay.h</a>&quot;</code><br />
+<code>#include &quot;math.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+vsg.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="vsg_8h__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2_v_s_g_2vsg_8h" loading="lazy" alt=""/></div>
+<map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2_v_s_g_2vsg_8h" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2_v_s_g_2vsg_8h">
+<area shape="rect" title="虚拟同步机控制函数声明" alt="" coords="74,5,257,48"/>
+<area shape="rect" title=" " alt="" coords="104,245,168,272"/>
+<area shape="poly" title=" " alt="" coords="78,51,43,70,17,97,9,116,10,136,17,155,29,173,64,208,102,235,99,239,61,212,25,177,12,157,4,137,4,115,12,95,40,66,75,46"/>
+<area shape="rect" title=" " alt="" coords="81,171,191,197"/>
+<area shape="poly" title=" " alt="" coords="164,49,144,156,138,155,159,48"/>
+<area shape="rect" href="_transfer_fun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="26,96,128,123"/>
+<area shape="poly" title=" " alt="" coords="144,51,104,87,100,83,141,47"/>
+<area shape="rect" href="delay_8h.html" title="数组延迟链驱动函数声明" alt="" coords="202,96,264,123"/>
+<area shape="poly" title=" " alt="" coords="185,47,215,82,211,86,181,50"/>
+<area shape="rect" title=" " alt="" coords="351,245,412,272"/>
+<area shape="poly" title=" " alt="" coords="238,46,284,65,332,91,376,126,395,146,410,170,415,186,414,202,402,233,397,231,409,201,410,186,405,172,390,150,372,130,329,96,282,70,236,51"/>
+<area shape="poly" title=" " alt="" coords="75,124,67,158,67,177,72,196,85,217,103,234,100,238,81,220,67,198,62,178,62,157,70,122"/>
+<area shape="poly" title=" " alt="" coords="89,122,118,157,114,160,85,125"/>
+<area shape="poly" title=" " alt="" coords="233,124,224,159,205,199,187,220,168,238,164,234,183,216,200,196,219,157,228,123"/>
+<area shape="poly" title=" " alt="" coords="218,125,166,164,163,159,215,121"/>
+<area shape="rect" href="mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="265,171,396,197"/>
+<area shape="poly" title=" " alt="" coords="252,121,303,159,300,164,249,125"/>
+<area shape="poly" title=" " alt="" coords="298,200,183,243,181,238,296,195"/>
+<area shape="poly" title=" " alt="" coords="342,196,366,231,362,234,337,199"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="vsg_8h__dep__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2_v_s_g_2vsg_8hdep" loading="lazy" alt=""/></div>
+<map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2_v_s_g_2vsg_8hdep" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2_v_s_g_2vsg_8hdep">
+<area shape="rect" title="虚拟同步机控制函数声明" alt="" coords="5,5,189,48"/>
+<area shape="rect" href="vsg_8c.html" title="虚拟同步机函数定义" alt="" coords="5,96,189,139"/>
+<area shape="poly" title=" " alt="" coords="100,64,100,96,94,96,94,64"/>
+</map>
+</div>
+</div>
+<p><a href="vsg_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:VSG" id="r_VSG"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_v_s_g.html">VSG</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚拟同步机控制 结构体定义  <a href="struct_v_s_g.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ab6c8831828de3aabbfa25acfe1ff1a6a" id="r_ab6c8831828de3aabbfa25acfe1ff1a6a"><td class="memItemLeft" align="right" valign="top">typedef struct VSG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6c8831828de3aabbfa25acfe1ff1a6a">VSG</a></td></tr>
+<tr class="memdesc:ab6c8831828de3aabbfa25acfe1ff1a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚拟同步机控制 结构体定义  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ad4f7fcf280acfe5aa4dd66a4edc7d566" id="r_ad4f7fcf280acfe5aa4dd66a4edc7d566"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4f7fcf280acfe5aa4dd66a4edc7d566">VSG_Init</a> (<a class="el" href="struct_v_s_g.html">VSG</a> *vsg)</td></tr>
+<tr class="memdesc:ad4f7fcf280acfe5aa4dd66a4edc7d566"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
+<tr class="memitem:adfb7ff951ec0e231972cf410a3c70104" id="r_adfb7ff951ec0e231972cf410a3c70104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfb7ff951ec0e231972cf410a3c70104">VSG_Parameter_Set</a> (<a class="el" href="struct_v_s_g.html">VSG</a> *vsg, float32_t D, float32_t J, float32_t R_vsg, float32_t L_vsg, float32_t Q_droop, float32_t fs)</td></tr>
+<tr class="memdesc:adfb7ff951ec0e231972cf410a3c70104"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置同步机运行参数  <br /></td></tr>
+<tr class="memitem:a5e83d047c7fe45eea9c03424f82b5291" id="r_a5e83d047c7fe45eea9c03424f82b5291"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e83d047c7fe45eea9c03424f82b5291">VSG_Ref_Set</a> (<a class="el" href="struct_v_s_g.html">VSG</a> *vsg, float32_t p_ref, float32_t q_ref, float32_t u_ref)</td></tr>
+<tr class="memdesc:a5e83d047c7fe45eea9c03424f82b5291"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置虚拟同步机输出参考值  <br /></td></tr>
+<tr class="memitem:a34cd383dfec923d3daedbb68e3c28d44" id="r_a34cd383dfec923d3daedbb68e3c28d44"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34cd383dfec923d3daedbb68e3c28d44">VSG_Run</a> (<a class="el" href="struct_v_s_g.html">VSG</a> *vsg, float32_t u_grid, float32_t i_grid)</td></tr>
+<tr class="memdesc:a34cd383dfec923d3daedbb68e3c28d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行虚拟同步机控制环路  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>虚拟同步机控制函数声明 </p>
+<dl class="section author"><dt>作者</dt><dd>Mao Chenbin (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="vsg_8h_source.html">vsg.h</a> 中定义.</p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">类型定义说明</h2>
+<a id="ab6c8831828de3aabbfa25acfe1ff1a6a" name="ab6c8831828de3aabbfa25acfe1ff1a6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c8831828de3aabbfa25acfe1ff1a6a">&#9670;&#160;</a></span>VSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct VSG VSG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>虚拟同步机控制 结构体定义 </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="ad4f7fcf280acfe5aa4dd66a4edc7d566" name="ad4f7fcf280acfe5aa4dd66a4edc7d566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f7fcf280acfe5aa4dd66a4edc7d566">&#9670;&#160;</a></span>VSG_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VSG_Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_v_s_g.html">VSG</a> *</td>          <td class="paramname"><span class="paramname"><em>vsg</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>结构体初始化 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vsg</td><td>结构体指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="vsg_8c_source.html">vsg.c</a> 第 <a class="el" href="vsg_8c_source.html#l00017">17</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adfb7ff951ec0e231972cf410a3c70104" name="adfb7ff951ec0e231972cf410a3c70104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfb7ff951ec0e231972cf410a3c70104">&#9670;&#160;</a></span>VSG_Parameter_Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VSG_Parameter_Set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_v_s_g.html">VSG</a> *</td>          <td class="paramname"><span class="paramname"><em>vsg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>D</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>J</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>R_vsg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>L_vsg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>Q_droop</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>fs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置同步机运行参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vsg</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">D</td><td>阻尼系数 </td></tr>
+    <tr><td class="paramname">J</td><td>转动惯量 </td></tr>
+    <tr><td class="paramname">R_vsg</td><td>虚拟同步机电阻 </td></tr>
+    <tr><td class="paramname">L_vsg</td><td>虚拟同步机电感 </td></tr>
+    <tr><td class="paramname">Q_droop</td><td>无功下垂系数 </td></tr>
+    <tr><td class="paramname">fs</td><td>离散步长 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="vsg_8c_source.html">vsg.c</a> 第 <a class="el" href="vsg_8c_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5e83d047c7fe45eea9c03424f82b5291" name="a5e83d047c7fe45eea9c03424f82b5291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e83d047c7fe45eea9c03424f82b5291">&#9670;&#160;</a></span>VSG_Ref_Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VSG_Ref_Set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_v_s_g.html">VSG</a> *</td>          <td class="paramname"><span class="paramname"><em>vsg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>p_ref</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>q_ref</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>u_ref</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置虚拟同步机输出参考值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vsg</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">p_ref</td><td>有功参考值 </td></tr>
+    <tr><td class="paramname">q_ref</td><td>无功参考值 </td></tr>
+    <tr><td class="paramname">u_ref</td><td>电压参考值, RMS值, V </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="vsg_8c_source.html">vsg.c</a> 第 <a class="el" href="vsg_8c_source.html#l00047">47</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a34cd383dfec923d3daedbb68e3c28d44" name="a34cd383dfec923d3daedbb68e3c28d44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34cd383dfec923d3daedbb68e3c28d44">&#9670;&#160;</a></span>VSG_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VSG_Run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_v_s_g.html">VSG</a> *</td>          <td class="paramname"><span class="paramname"><em>vsg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>u_grid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>i_grid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>执行虚拟同步机控制环路 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vsg</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">u_grid</td><td>电网电压 </td></tr>
+    <tr><td class="paramname">i_grid</td><td>输出的 <b>电感</b> 电流 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="vsg_8h_source.html">vsg.h</a> 第 <a class="el" href="vsg_8h_source.html#l00101">101</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="vsg_8h_a34cd383dfec923d3daedbb68e3c28d44_cgraph.png" border="0" usemap="#avsg_8h_a34cd383dfec923d3daedbb68e3c28d44_cgraph" loading="lazy" alt=""/></div>
+<map name="avsg_8h_a34cd383dfec923d3daedbb68e3c28d44_cgraph" id="avsg_8h_a34cd383dfec923d3daedbb68e3c28d44_cgraph">
+<area shape="rect" title="执行虚拟同步机控制环路" alt="" coords="5,5,86,32"/>
+<area shape="rect" href="_transfer_fun_8c.html#a7ca9b52b5a2f202f4d3890031f21c7ec" title="执行一阶直接形式Ⅰ控制器（DF11），在 FPU32 上运行 &#160;&#160;原函数名: float32_t DCL_runDF11_C1(DCL_DF11 *p, float32_t ek);" alt="" coords="134,5,251,32"/>
+<area shape="poly" title=" " alt="" coords="86,16,118,16,118,21,86,21"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_76e41c4918113a00cca58619c9b1f975.html">VSG</a></li><li class="navelem"><a href="vsg_8h.html">vsg.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
