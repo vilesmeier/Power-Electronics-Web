@@ -48,9 +48,9 @@ var mathdef_8h =
     [ "MATH_LOG10E", "mathdef_8h.html#a19f345f917847c0770162a49255d3934", null ],
     [ "MATH_LOG2E", "mathdef_8h.html#ab15c60d02eab5731a6f01ca253a89a97", null ],
     [ "MATH_M", "mathdef_8h.html#a88f87569260291e4355d1eddcbbdd8e2", null ],
-    [ "MATH_M", "mathdef_8h.html#a88f87569260291e4355d1eddcbbdd8e2", null ],
-    [ "MATH_N", "mathdef_8h.html#ac3d9317cfaed7e21bb4279c6b1a2af4a", null ],
-    [ "MATH_P", "mathdef_8h.html#a51ca8c0e3df4079315ccae70dc00b56b", null ],
+    [ "MATH_m", "mathdef_8h.html#aa1b9747437e1622ebd38795a654ef0ff", null ],
+    [ "MATH_n", "mathdef_8h.html#a42eb0f74f33833a78982d4d62fc5ba12", null ],
+    [ "MATH_p", "mathdef_8h.html#aac6fc795bebde513a742e1281a82ec3d", null ],
     [ "MATH_PI", "mathdef_8h.html#ac58cbaeae310f551049f77b7c098599e", null ],
     [ "MATH_PI_180", "mathdef_8h.html#ac77c1dfbd430efa89ad856f695a3da86", null ],
     [ "MATH_PI_2", "mathdef_8h.html#a182b2cd95357301e812531ab2a4b9d4c", null ],
@@ -93,5 +93,5 @@ var mathdef_8h =
     [ "MATH_SQUARE_7_9", "mathdef_8h.html#a4ea694e97695452c74166a75ec888af7", null ],
     [ "MATH_SQUARE_8_9", "mathdef_8h.html#a7fe602b8823500921afb1bb83d808976", null ],
     [ "MATH_SQUARE_9_10", "mathdef_8h.html#af1cdaaf37affb059ee9c6564ac85aa50", null ],
-    [ "MATH_U", "mathdef_8h.html#a37fc58e774e2ef1ebb14d2a0024ce320", null ]
+    [ "MATH_u", "mathdef_8h.html#ae4837bcf596ce9b8cb8419d12fc47386", null ]
 ];
