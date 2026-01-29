@@ -28,7 +28,7 @@ var _r_f_f_t__adc__f32u_8asm =
     [ "function", "_r_f_f_t__adc__f32u_8asm.html#a590668688740da1ecf707208f2630a51", null ],
     [ "functions", "_r_f_f_t__adc__f32u_8asm.html#a6694692002fc3c511834ee9d7193a935", null ],
     [ "InBuf", "_r_f_f_t__adc__f32u_8asm.html#a48f5d93d1b0018a28446781ddf3daef2", null ],
-    [ "input", "_r_f_f_t__adc__f32u_8asm.html#ad1837fed945d659444e41ff0b37333b0", null ],
+    [ "input", "group___d_s_p___r_f_f_t___f32.html#ga5a0f4b49baab36db0c5e1922cdbc6c71", null ],
     [ "length", "_r_f_f_t__adc__f32u_8asm.html#abab2139d42b2a65d638e9cc7c1196af6", null ],
     [ "OutBuf", "_r_f_f_t__adc__f32u_8asm.html#a7e9a002b321f5b629551c7750d02fd80", null ],
     [ "performance", "_r_f_f_t__adc__f32u_8asm.html#a65657a1025b28cf518406be3fce8f56f", null ],

@@ -1,0 +1,14 @@
+digraph "NUEDC-Core/Projects/280049C/Test_Projects/PR_Test/device"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=msyh,fontsize=10,labelfontname=msyh,labelfontsize=10];
+  node [fontname=msyh,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_60a2f8b48dbae1aa5d121fd95cfb63f0 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="PR_Test", fontname=msyh,fontsize=10 style="filled,dashed", URL="dir_60a2f8b48dbae1aa5d121fd95cfb63f0.html",tooltip=""]
+  dir_cd8cf149e3044eebcf0974adbde760d6 [label="device", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_cd8cf149e3044eebcf0974adbde760d6.html",tooltip=""];
+  }
+  dir_4d14047a1bc6cdf1f97ad185528cc692 [label="Code", fillcolor="#edf0f7", color="red", style="filled,dashed", URL="dir_4d14047a1bc6cdf1f97ad185528cc692.html",tooltip=""];
+  dir_cd8cf149e3044eebcf0974adbde760d6->dir_4d14047a1bc6cdf1f97ad185528cc692 [headlabel="3", labeldistance=1.5 headhref="dir_000080_000033.html" href="dir_000080_000033.html" color="steelblue1" fontcolor="steelblue1"];
+}

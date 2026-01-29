@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: FPU_REG结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('struct_f_p_u___r_e_g.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">FPU_REG结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>FPU register space  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="fpu_8h_source.html">fpu.h</a>&gt;</code></p>
+<div class="dynheader">
+FPU_REG 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_f_p_u___r_e_g__coll__graph.png" border="0" usemap="#a_f_p_u___r_e_g_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:ad4b7c64ae00a5337fc5ba109fe89c330" id="r_ad4b7c64ae00a5337fc5ba109fe89c330"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4b7c64ae00a5337fc5ba109fe89c330">_RB</a></td></tr>
+<tr class="memitem:aaf50ea727aaab453e41e752d1c697f34" id="r_aaf50ea727aaab453e41e752d1c697f34"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="union_s_t_f___r_e_g.html">STF_REG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf50ea727aaab453e41e752d1c697f34">_STF</a></td></tr>
+<tr class="memitem:acf4102563d1b95bd24e411ed7475418b" id="r_acf4102563d1b95bd24e411ed7475418b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf4102563d1b95bd24e411ed7475418b">rsvd1</a> [6]</td></tr>
+<tr class="memitem:a9958ed58640e60ebe8143bb04f0510fa" id="r_a9958ed58640e60ebe8143bb04f0510fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionreg64__t.html">reg64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9958ed58640e60ebe8143bb04f0510fa">_R0</a></td></tr>
+<tr class="memitem:aaf67e06997d2e7ef462c5fe15f277d59" id="r_aaf67e06997d2e7ef462c5fe15f277d59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionreg64__t.html">reg64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf67e06997d2e7ef462c5fe15f277d59">_R1</a></td></tr>
+<tr class="memitem:ab0ab1e0b36885bf90b3002b765f11db7" id="r_ab0ab1e0b36885bf90b3002b765f11db7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionreg64__t.html">reg64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0ab1e0b36885bf90b3002b765f11db7">_R2</a></td></tr>
+<tr class="memitem:a0f6988cb0ba31689efde31457be5cc27" id="r_a0f6988cb0ba31689efde31457be5cc27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionreg64__t.html">reg64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f6988cb0ba31689efde31457be5cc27">_R3</a></td></tr>
+<tr class="memitem:a7eb4cf6425c6e337995d287da04f4668" id="r_a7eb4cf6425c6e337995d287da04f4668"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionreg64__t.html">reg64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7eb4cf6425c6e337995d287da04f4668">_R4</a></td></tr>
+<tr class="memitem:af671c20b0062c8865f843256d1f55cb6" id="r_af671c20b0062c8865f843256d1f55cb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionreg64__t.html">reg64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af671c20b0062c8865f843256d1f55cb6">_R5</a></td></tr>
+<tr class="memitem:a5080d3d925db558234877515fb8251ef" id="r_a5080d3d925db558234877515fb8251ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionreg64__t.html">reg64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5080d3d925db558234877515fb8251ef">_R6</a></td></tr>
+<tr class="memitem:ab74618fd6835ccdd070cbb6b6ff71be5" id="r_ab74618fd6835ccdd070cbb6b6ff71be5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionreg64__t.html">reg64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab74618fd6835ccdd070cbb6b6ff71be5">_R7</a></td></tr>
+<tr class="memitem:aee6f7519047b9aca2fb87ca3122706c8" id="r_aee6f7519047b9aca2fb87ca3122706c8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee6f7519047b9aca2fb87ca3122706c8">rsvd2</a> [104]</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>FPU register space </p>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>The registers are mapped to data space only (like peripherals on C28x devices). Program space data reads or writes are ignored. debug reads/writes work</li>
+<li>All registers are reset to zero on system reset (SYSRSn).</li>
+<li>The RB register is part of the C28-CPI core but is made visible (read only to CPU) in the memory map. Refer to "CPI Specification" for more details. </li>
+</ul>
+</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="fpu_8h_source.html">fpu.h</a> 第 <a class="el" href="fpu_8h_source.html#l00097">97</a> 行定义.</p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">结构体成员变量说明</h2>
+<a id="a9958ed58640e60ebe8143bb04f0510fa" name="a9958ed58640e60ebe8143bb04f0510fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9958ed58640e60ebe8143bb04f0510fa">&#9670;&#160;</a></span>_R0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="unionreg64__t.html">reg64_t</a> FPU_REG::_R0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu_8h_source.html">fpu.h</a> 第 <a class="el" href="fpu_8h_source.html#l00101">101</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaf67e06997d2e7ef462c5fe15f277d59" name="aaf67e06997d2e7ef462c5fe15f277d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf67e06997d2e7ef462c5fe15f277d59">&#9670;&#160;</a></span>_R1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="unionreg64__t.html">reg64_t</a> FPU_REG::_R1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu_8h_source.html">fpu.h</a> 第 <a class="el" href="fpu_8h_source.html#l00102">102</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab0ab1e0b36885bf90b3002b765f11db7" name="ab0ab1e0b36885bf90b3002b765f11db7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ab1e0b36885bf90b3002b765f11db7">&#9670;&#160;</a></span>_R2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="unionreg64__t.html">reg64_t</a> FPU_REG::_R2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu_8h_source.html">fpu.h</a> 第 <a class="el" href="fpu_8h_source.html#l00103">103</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0f6988cb0ba31689efde31457be5cc27" name="a0f6988cb0ba31689efde31457be5cc27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f6988cb0ba31689efde31457be5cc27">&#9670;&#160;</a></span>_R3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="unionreg64__t.html">reg64_t</a> FPU_REG::_R3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu_8h_source.html">fpu.h</a> 第 <a class="el" href="fpu_8h_source.html#l00104">104</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7eb4cf6425c6e337995d287da04f4668" name="a7eb4cf6425c6e337995d287da04f4668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb4cf6425c6e337995d287da04f4668">&#9670;&#160;</a></span>_R4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="unionreg64__t.html">reg64_t</a> FPU_REG::_R4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu_8h_source.html">fpu.h</a> 第 <a class="el" href="fpu_8h_source.html#l00105">105</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af671c20b0062c8865f843256d1f55cb6" name="af671c20b0062c8865f843256d1f55cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af671c20b0062c8865f843256d1f55cb6">&#9670;&#160;</a></span>_R5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="unionreg64__t.html">reg64_t</a> FPU_REG::_R5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu_8h_source.html">fpu.h</a> 第 <a class="el" href="fpu_8h_source.html#l00106">106</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5080d3d925db558234877515fb8251ef" name="a5080d3d925db558234877515fb8251ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5080d3d925db558234877515fb8251ef">&#9670;&#160;</a></span>_R6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="unionreg64__t.html">reg64_t</a> FPU_REG::_R6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu_8h_source.html">fpu.h</a> 第 <a class="el" href="fpu_8h_source.html#l00107">107</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab74618fd6835ccdd070cbb6b6ff71be5" name="ab74618fd6835ccdd070cbb6b6ff71be5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74618fd6835ccdd070cbb6b6ff71be5">&#9670;&#160;</a></span>_R7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="unionreg64__t.html">reg64_t</a> FPU_REG::_R7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu_8h_source.html">fpu.h</a> 第 <a class="el" href="fpu_8h_source.html#l00108">108</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad4b7c64ae00a5337fc5ba109fe89c330" name="ad4b7c64ae00a5337fc5ba109fe89c330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4b7c64ae00a5337fc5ba109fe89c330">&#9670;&#160;</a></span>_RB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t FPU_REG::_RB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu_8h_source.html">fpu.h</a> 第 <a class="el" href="fpu_8h_source.html#l00098">98</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaf50ea727aaab453e41e752d1c697f34" name="aaf50ea727aaab453e41e752d1c697f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf50ea727aaab453e41e752d1c697f34">&#9670;&#160;</a></span>_STF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union <a class="el" href="union_s_t_f___r_e_g.html">STF_REG</a> FPU_REG::_STF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu_8h_source.html">fpu.h</a> 第 <a class="el" href="fpu_8h_source.html#l00099">99</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acf4102563d1b95bd24e411ed7475418b" name="acf4102563d1b95bd24e411ed7475418b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf4102563d1b95bd24e411ed7475418b">&#9670;&#160;</a></span>rsvd1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t FPU_REG::rsvd1[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu_8h_source.html">fpu.h</a> 第 <a class="el" href="fpu_8h_source.html#l00100">100</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aee6f7519047b9aca2fb87ca3122706c8" name="aee6f7519047b9aca2fb87ca3122706c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6f7519047b9aca2fb87ca3122706c8">&#9670;&#160;</a></span>rsvd2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t FPU_REG::rsvd2[104]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu_8h_source.html">fpu.h</a> 第 <a class="el" href="fpu_8h_source.html#l00109">109</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>NUEDC-Core/Projects/28335/24B/24B/Library/<a class="el" href="fpu_8h_source.html">fpu.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="struct_f_p_u___r_e_g.html">FPU_REG</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

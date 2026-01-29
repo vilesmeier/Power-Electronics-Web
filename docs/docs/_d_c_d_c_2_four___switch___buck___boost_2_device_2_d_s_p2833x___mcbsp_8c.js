@@ -1,0 +1,28 @@
+var _d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c =
+[
+    [ "CLKGDV_VAL", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a986e313fcd65ae6dd9440bb6a0d2ada1", null ],
+    [ "CPU_SPD", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#adda246a7546ccfc95b0ebdc18b7103db", null ],
+    [ "MCBSP_CLKG_DELAY", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a469745d6025ee14807ac8e81024e44d6", null ],
+    [ "MCBSP_INIT_DELAY", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a4a613e88d1d2469517fb6a7fb97364f8", null ],
+    [ "MCBSP_SRG_FREQ", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a7dd38602dd960cb54c57446abb164b0b", null ],
+    [ "clkg_delay_loop", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a37e7d8825cfa48fac25e522d9827158f", null ],
+    [ "delay_loop", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a43e53eea971611d3b56555c0b8543384", null ],
+    [ "InitMcbsp", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a444cebe0a0ae0c15e57ececb614b63e0", null ],
+    [ "InitMcbspa", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a3cf74bfb42a622f3ab0d81d96c87abff", null ],
+    [ "InitMcbspa12bit", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#aad47d7f2a6c2ca70eb3e0cfb7676bc87", null ],
+    [ "InitMcbspa16bit", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#ac19ff4ca1f0bb4205e7d2d3e85843ad2", null ],
+    [ "InitMcbspa20bit", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#ad8df80c77cca8d90d956b45371e5205d", null ],
+    [ "InitMcbspa24bit", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#aac876364c98bce76fe9d1ee5d51a990b", null ],
+    [ "InitMcbspa32bit", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a73ac6905dd700ab29413e5884a610e39", null ],
+    [ "InitMcbspa8bit", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a1a7325b34ddef16c703fbe3b0d5d3147", null ],
+    [ "InitMcbspaGpio", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#aa6e7f58e0c4ee3c9fc2ef7827bf10450", null ],
+    [ "InitMcbspb", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a2e8ad2ab8a8af247e24e4a00b522783f", null ],
+    [ "InitMcbspb12bit", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a703cc03e802a6fabee67bf3d49651f78", null ],
+    [ "InitMcbspb16bit", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#aea4e665ab439a54a6ef2477ea11d095e", null ],
+    [ "InitMcbspb20bit", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a8f84d78dae13df08252feb77a3593d5c", null ],
+    [ "InitMcbspb24bit", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a0a3fb1878750fae69caa61e91eafdfe4", null ],
+    [ "InitMcbspb32bit", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a96faafe20987657eb818a8bfc5e3dc21", null ],
+    [ "InitMcbspb8bit", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a7894b0cbe0f1ab41c2fdc22f7f0c5e8a", null ],
+    [ "InitMcbspbGpio", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#a25b801dfab2a81f9e8ba242d9ecdd778", null ],
+    [ "InitMcbspGpio", "_d_c_d_c_2_four___switch___buck___boost_2_device_2_d_s_p2833x___mcbsp_8c.html#aadb88bf53d7b85d5bdadaf786852abd2", null ]
+];

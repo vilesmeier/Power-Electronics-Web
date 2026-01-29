@@ -1,0 +1,12 @@
+digraph "NUEDC-Core/Projects/28335/22A/Rectifier_20k/Library"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=msyh,fontsize=10,labelfontname=msyh,labelfontsize=10];
+  node [fontname=msyh,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_42d5913c9afce0b3dcf5798a31449368 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="Rectifier_20k", fontname=msyh,fontsize=10 style="filled,dashed", URL="dir_42d5913c9afce0b3dcf5798a31449368.html",tooltip=""]
+  dir_d59f16e4705b1991749b4dfed2b8a9dc [label="Library", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_d59f16e4705b1991749b4dfed2b8a9dc.html",tooltip=""];
+  }
+}

@@ -1,0 +1,19 @@
+digraph "LCD_Init"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=msyh,fontsize=10,labelfontname=msyh,labelfontsize=10];
+  node [fontname=msyh,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="LCD_Init",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="init screen"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="DSP28x_usDelay",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$22_a_2_p_q_2_device_2_d_s_p2833x___global_prototypes_8h.html#a7892f304956b765c7d33b9b13894803f",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="lcdGpioInit",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group___d_r_v___f28335___l_c_d.html#gace1079bba7113da93a044cf179aa34d2",tooltip="init GPIO"];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="InitGpio",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$_test___projects_2_u_a_r_t___test_2_device_2_d_s_p2833x___gpio_8c.html#a689b89d10bed4779688743f7832195ca",tooltip=" "];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="lcdSelectRegister",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group___d_r_v___f28335___l_c_d.html#ga71f317c08f5a4fd34f4e66b7413e0381",tooltip="select register"];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="lcdWriteDataU8",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group___d_r_v___f28335___l_c_d.html#ga4c41fe8c154e5beccd73c8b5042f497f",tooltip="write 8-bit data"];
+}

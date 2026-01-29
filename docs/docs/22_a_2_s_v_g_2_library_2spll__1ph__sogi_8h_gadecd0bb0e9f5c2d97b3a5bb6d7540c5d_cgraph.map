@@ -1,0 +1,5 @@
+<map id="SOGI_Set" name="SOGI_Set">
+<area shape="rect" id="Node000001" title="Configures the SPLL_1PH_SOGI module" alt="" coords="5,5,82,33"/>
+<area shape="rect" id="Node000002" href="$group___s_p_l_l__1_p_h___s_o_g_i.html#ga25e0823e2e85bfde0a21e8eb8682157e" title="Calculates the SPLL_1PH_SOGI coefficient" alt="" coords="130,5,245,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,16,114,16,114,22,82,22"/>
+</map>

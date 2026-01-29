@@ -1,0 +1,5 @@
+<map id="POWER_MEAS_SINE_ANALYZER_Run" name="POWER_MEAS_SINE_ANALYZER_Run">
+<area shape="rect" id="Node000001" title="Perform calculations using the POWER_MEAS_SINE_ANALYZER module" alt="" coords="5,5,240,33"/>
+<area shape="rect" id="Node000002" href="$22_a_2_p_q_2_library_2c28x__fpu__fastrts_8h.html#a6169864128f541ef7ee5bccd56b310f3" title="Single&#45;Precision Floating&#45;Point Square Root" alt="" coords="288,5,335,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,16,272,16,272,22,240,22"/>
+</map>

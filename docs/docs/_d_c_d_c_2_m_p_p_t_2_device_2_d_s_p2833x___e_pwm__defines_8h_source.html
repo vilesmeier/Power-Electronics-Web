@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Projects/28335/DCDC/MPPT/Device/DSP2833x_EPwm_defines.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DSP2833x_EPwm_defines.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// TI File $Revision: /main/1 $</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Checkin $Date: August 18, 2006   13:45:39 $</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//###########################################################################</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// FILE:   DSP2833x_EPwm_defines.h</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// TITLE:  #defines used in ePWM examples examples</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// </span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//###########################################################################</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// $TI Release: $</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// $Release Date: $</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// $Copyright:</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// Copyright (C) 2009-2024 Texas Instruments Incorporated - http://www.ti.com/</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// Redistribution and use in source and binary forms, with or without </span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// modification, are permitted provided that the following conditions </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// are met:</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//   Redistributions of source code must retain the above copyright </span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//   notice, this list of conditions and the following disclaimer.</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// </span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//   Redistributions in binary form must reproduce the above copyright</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">//   notice, this list of conditions and the following disclaimer in the </span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">//   documentation and/or other materials provided with the   </span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">//   distribution.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// </span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">//   Neither the name of Texas Instruments Incorporated nor the names of</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">//   its contributors may be used to endorse or promote products derived</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">//   from this software without specific prior written permission.</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// </span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS </span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT </span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT </span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, </span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT </span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT </span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE </span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// $</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//###########################################################################</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#ifndef DSP2833x_EPWM_DEFINES_H</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#define DSP2833x_EPWM_DEFINES_H</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">//</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// TBCTL (Time-Base Control)</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">//</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// CTRMODE bits</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">//</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a877642d28034bb4de94b13ab3385162f">   58</a></span><span class="preprocessor">#define TB_COUNT_UP     0x0</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a0b860b962e543d5409d58f753a8cd745">   59</a></span><span class="preprocessor">#define TB_COUNT_DOWN   0x1</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#af7a5c969c3efef4cec5041ccbc5139d5">   60</a></span><span class="preprocessor">#define TB_COUNT_UPDOWN 0x2</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#ac44f421ab6aa534dd83c7b24f7e817e5">   61</a></span><span class="preprocessor">#define TB_FREEZE       0x3</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">//</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">// PHSEN bit</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#aaf07045c1ad7f8db37eaa035250fa479">   66</a></span><span class="preprocessor">#define TB_DISABLE      0x0</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#afa00734036a43ef496563a0c14d3731a">   67</a></span><span class="preprocessor">#define TB_ENABLE       0x1</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">//</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">// PRDLD bit</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">//</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#adf609bdca6b89ab4e5a1a71e85721b3a">   72</a></span><span class="preprocessor">#define TB_SHADOW       0x0</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#ab92c81c4b0ac5b98c5af5c08a87976b5">   73</a></span><span class="preprocessor">#define TB_IMMEDIATE    0x1</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">//</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">// SYNCOSEL bits</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">//</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a9a31fa055305f8dee67754c5e96ad6c1">   78</a></span><span class="preprocessor">#define TB_SYNC_IN      0x0</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a59be28b83ee218c2cf60a0074216e841">   79</a></span><span class="preprocessor">#define TB_CTR_ZERO     0x1</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a311d89fd350baea001ea54d5f693fa25">   80</a></span><span class="preprocessor">#define TB_CTR_CMPB     0x2</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a2393eeb5bdbc55d6c44a89d485d5fe17">   81</a></span><span class="preprocessor">#define TB_SYNC_DISABLE 0x3</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">//</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">// HSPCLKDIV and CLKDIV bits</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">//</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a504d6dd7e1a412d9d0b0681736cf425e">   86</a></span><span class="preprocessor">#define TB_DIV1         0x0</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#af38bdb2070749ec78e1434cd4fa008bc">   87</a></span><span class="preprocessor">#define TB_DIV2         0x1</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a1e6da90e7185db4f213e0523e42637ce">   88</a></span><span class="preprocessor">#define TB_DIV4         0x2</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">//</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">// PHSDIR bit</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">//</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#ac8d0dbcf44fe16b5c4412eeb961c0064">   93</a></span><span class="preprocessor">#define TB_DOWN         0x0</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a18503b87c6629a220ca03aa95fb627c4">   94</a></span><span class="preprocessor">#define TB_UP           0x1</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">//</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">// CMPCTL (Compare Control)</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">//</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">// LOADAMODE and LOADBMODE bits</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">//</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a37f7cb48dca3f2445c95f010885c9523">  101</a></span><span class="preprocessor">#define CC_CTR_ZERO     0x0</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#accff7aee2a54cd4e7467b7ffb57d9e56">  102</a></span><span class="preprocessor">#define CC_CTR_PRD      0x1</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#aff11d26be6b1f85f49041c2fb90581ca">  103</a></span><span class="preprocessor">#define CC_CTR_ZERO_PRD 0x2</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#af3889137a35fa8735de3d6157c46d21f">  104</a></span><span class="preprocessor">#define CC_LD_DISABLE   0x3</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">//</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">// SHDWAMODE and SHDWBMODE bits</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">//</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a17657320dda1ed3d2ebc6a259b424cbe">  109</a></span><span class="preprocessor">#define CC_SHADOW       0x0</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#aa336f99610035176317f4e7558323385">  110</a></span><span class="preprocessor">#define CC_IMMEDIATE    0x1</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">//</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">// AQCTLA and AQCTLB (Action Qualifier Control)</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">//</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">// ZRO, PRD, CAU, CAD, CBU, CBD bits</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">//</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a85e8de815220277b156fd638841af4f8">  117</a></span><span class="preprocessor">#define AQ_NO_ACTION    0x0</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a157af85dd2ca5a11c22fc499a9bc5802">  118</a></span><span class="preprocessor">#define AQ_CLEAR        0x1</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#ac92e483c82bd83c7a0d36a3271667820">  119</a></span><span class="preprocessor">#define AQ_SET          0x2</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a0cd2bc0656998412b31b6fe494ec9e02">  120</a></span><span class="preprocessor">#define AQ_TOGGLE       0x3</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">//</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">// DBCTL (Dead-Band Control)</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">//</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">// OUT MODE bits</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">//</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#ac7bbadc431bd96bd77a7fc1ada0dfe69">  127</a></span><span class="preprocessor">#define DB_DISABLE      0x0</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a2e7c72c286a47832f045954fb55eb85c">  128</a></span><span class="preprocessor">#define DBB_ENABLE      0x1</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a87ef18e067d7065030149eb90ce82135">  129</a></span><span class="preprocessor">#define DBA_ENABLE      0x2</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a7e7865e3b6b09fbeaa5945d8a26319b7">  130</a></span><span class="preprocessor">#define DB_FULL_ENABLE  0x3</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">//</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">// POLSEL bits</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">//</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a3e58a425149d255c9ce0ae915dd87afc">  135</a></span><span class="preprocessor">#define DB_ACTV_HI      0x0</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a28291b6ad738d411f5fffaccc2c5b317">  136</a></span><span class="preprocessor">#define DB_ACTV_LOC     0x1</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a07b52247db683b9089d0b2209b3cbc0a">  137</a></span><span class="preprocessor">#define DB_ACTV_HIC     0x2</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#aa3936a1fcce41dae733d3b34d1d9d790">  138</a></span><span class="preprocessor">#define DB_ACTV_LO      0x3</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">//</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">// IN MODE</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">//</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a422947a59dcae5ba572ed3828763f820">  143</a></span><span class="preprocessor">#define DBA_ALL         0x0</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a28b9eabe7a49f142f132722ab22d807e">  144</a></span><span class="preprocessor">#define DBB_RED_DBA_FED 0x1</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#af386a7fb6dde8a8757c6fc52be442e82">  145</a></span><span class="preprocessor">#define DBA_RED_DBB_FED 0x2</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#abe949e9376c95c7a1185de3d2b9dee4f">  146</a></span><span class="preprocessor">#define DBB_ALL         0x3</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">//</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">// CHPCTL (chopper control)</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">//</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">// CHPEN bit</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">//</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a59b7d604ee651b64e60f5e8536bd72c1">  153</a></span><span class="preprocessor">#define CHP_DISABLE     0x0</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a185f5a4a33df3c943b0bdc2c1f3c87bc">  154</a></span><span class="preprocessor">#define CHP_ENABLE      0x1</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">//</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">// CHPFREQ bits</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">//</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#aaca3b6e41c86972d21e90307893799c4">  159</a></span><span class="preprocessor">#define CHP_DIV1        0x0</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a04e6beb4846396226aece9e7c08cb335">  160</a></span><span class="preprocessor">#define CHP_DIV2        0x1</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#afdacacec7a6a44a3f448155a2d006236">  161</a></span><span class="preprocessor">#define CHP_DIV3        0x2</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a60fc9ee6d9311546d79399c3b470a32d">  162</a></span><span class="preprocessor">#define CHP_DIV4        0x3</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a3a2c33c220d2706c20ef49de196cafd5">  163</a></span><span class="preprocessor">#define CHP_DIV5        0x4</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a0b861dba6afc0d77b505197321b3420f">  164</a></span><span class="preprocessor">#define CHP_DIV6        0x5</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#afaa8f419d11ff418b39ef06b7a468047">  165</a></span><span class="preprocessor">#define CHP_DIV7        0x6</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a2474a167612bdbf1a6c714f990c72836">  166</a></span><span class="preprocessor">#define CHP_DIV8        0x7</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">//</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">// CHPDUTY bits</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">//</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#ac6aeaaa4eafac676819ee87e8dad78ba">  171</a></span><span class="preprocessor">#define CHP1_8TH        0x0</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a037a02815434d8bed59f02683b3215fa">  172</a></span><span class="preprocessor">#define CHP2_8TH        0x1</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a61b2bb44032cc2eed51c0164dc8ae65a">  173</a></span><span class="preprocessor">#define CHP3_8TH        0x2</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a5688e1690bcdc1087b45029f712e0ee2">  174</a></span><span class="preprocessor">#define CHP4_8TH        0x3</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a7c2df524407e9344e6c99d444b986e24">  175</a></span><span class="preprocessor">#define CHP5_8TH        0x4</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#aceecdd5e2a978f6757d23270591e74e7">  176</a></span><span class="preprocessor">#define CHP6_8TH        0x5</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a043e65100f71cc77bcdca136a57d40d4">  177</a></span><span class="preprocessor">#define CHP7_8TH        0x6</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">//</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">// TZSEL (Trip Zone Select)</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">//</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">// CBCn and OSHTn bits</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">//</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#ac9e906f0268383db19852919cf8c346f">  184</a></span><span class="preprocessor">#define TZ_DISABLE      0x0</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#abba91019031c76e49c932dd42b2d022d">  185</a></span><span class="preprocessor">#define TZ_ENABLE       0x1</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">//</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">// TZCTL (Trip Zone Control)</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">//</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">// TZA and TZB bits</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">//</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#aa2adf49741fb53d647600c169c0ba2d7">  192</a></span><span class="preprocessor">#define TZ_HIZ          0x0</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a8eaf3e3a9cc9d8b6dccc5aad80e713a4">  193</a></span><span class="preprocessor">#define TZ_FORCE_HI     0x1</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#aca83faef4c08222cd74011ae745a2901">  194</a></span><span class="preprocessor">#define TZ_FORCE_LO     0x2</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#ab7647227ee98344ce924d15db54d5ebd">  195</a></span><span class="preprocessor">#define TZ_NO_CHANGE    0x3</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">//</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">// ETSEL (Event Trigger Select)</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">//</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a7aba167bea4207bd9d508b4b31753a9a">  200</a></span><span class="preprocessor">#define ET_CTR_ZERO     0x1</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a6152f21e45782992a90405f64a6564f9">  201</a></span><span class="preprocessor">#define ET_CTR_PRD      0x2</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a3c09ccaba0499d43cc2cf6135dd9d50b">  202</a></span><span class="preprocessor">#define ET_CTRU_CMPA    0x4</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#aa37228ca41fd6ef65276d39e12859f1e">  203</a></span><span class="preprocessor">#define ET_CTRD_CMPA    0x5</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#ac20f9566d874b050bdfb8277a9a08004">  204</a></span><span class="preprocessor">#define ET_CTRU_CMPB    0x6</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a8559f86f723b591820c9f2e9d2d47025">  205</a></span><span class="preprocessor">#define ET_CTRD_CMPB    0x7</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">//</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">// ETPS (Event Trigger Pre-scale)</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">//</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">// INTPRD, SOCAPRD, SOCBPRD bits</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">//</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a092372deb11f27480234f479e5624823">  212</a></span><span class="preprocessor">#define ET_DISABLE      0x0</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a45ea60f493f1f87282bf43d711b0f93a">  213</a></span><span class="preprocessor">#define ET_1ST          0x1</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#ab01198b9981edcc7b089166836ec1adc">  214</a></span><span class="preprocessor">#define ET_2ND          0x2</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#ae8680a8094eb48e77af3d4c791f22f49">  215</a></span><span class="preprocessor">#define ET_3RD          0x3</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">//</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">// HRPWM (High Resolution PWM)</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">//</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">// HRCNFG</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">//</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a02bb318a2eaa021ff34633ef719a02f2">  222</a></span><span class="preprocessor">#define HR_Disable      0x0</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a8fc40aa9e309d12b2ac0a7fdd857ae75">  223</a></span><span class="preprocessor">#define HR_REP          0x1</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a9d013569bbc9da31e340f4d708db76b9">  224</a></span><span class="preprocessor">#define HR_FEP          0x2</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a46054e238f48d048f65b4dc4ceea7de0">  225</a></span><span class="preprocessor">#define HR_BEP          0x3</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#afd4095c858e1b4894d6cc0a9e86c3416">  227</a></span><span class="preprocessor">#define HR_CMP          0x0</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#af0221bd1b82e369f1e0649086f81a522">  228</a></span><span class="preprocessor">#define HR_PHS          0x1</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#ae81fd31cc7e6e8928598bc1f26a347d4">  230</a></span><span class="preprocessor">#define HR_CTR_ZERO     0x0</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html#a31dd39d45b6632272373103cc48262c0">  231</a></span><span class="preprocessor">#define HR_CTR_PRD      0x1</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>}</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="preprocessor">#endif </span><span class="comment">/* extern &quot;C&quot; */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="preprocessor">#endif   </span><span class="comment">// - end of DSP2833x_EPWM_DEFINES_H</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment">//</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">// End of file</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">//</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_5506101b76382283adbe76592e28ea78.html">Projects</a></li><li class="navelem"><a href="dir_7dd5ed44a494c219ca67de2f65681ad1.html">28335</a></li><li class="navelem"><a href="dir_be19c663e73035d37f1ad70e7ca2cb6c.html">DCDC</a></li><li class="navelem"><a href="dir_bcf1b55bfb89a40caa0081e20857cee4.html">MPPT</a></li><li class="navelem"><a href="dir_82812a43ceb5b9f72b91e39916f65f89.html">Device</a></li><li class="navelem"><a href="_d_c_d_c_2_m_p_p_t_2_device_2_d_s_p2833x___e_pwm__defines_8h.html">DSP2833x_EPwm_defines.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

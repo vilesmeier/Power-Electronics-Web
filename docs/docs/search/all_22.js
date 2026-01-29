@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['基础功能_0',['基础功能',['../index.html#autotoc_md5',1,'']]]
+  ['参考相位生成_0',['参考相位生成',['../group___c_t_r_l___r_a_m_p.html',1,'']]]
 ];

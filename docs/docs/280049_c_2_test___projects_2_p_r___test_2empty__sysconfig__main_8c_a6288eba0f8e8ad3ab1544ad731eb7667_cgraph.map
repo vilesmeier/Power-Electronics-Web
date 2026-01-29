@@ -1,0 +1,17 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,136,55,164"/>
+<area shape="rect" id="Node000002" href="$group___c_t_r_l___d_c_l.html#ga9b6dd3c5bd8c50e9e8f0818785685f38" title="QPR控制器初始化, Tustin离散化" alt="" coords="140,5,234,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="35,134,60,90,78,65,101,44,124,31,126,36,104,48,82,69,64,93,40,137"/>
+<area shape="rect" id="Node000004" href="$group___c_t_r_l___d_c_l.html#ga1cb2b700f568e956025f0b9ef4484d1e" title="配置QPR控制器" alt="" coords="141,57,233,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="46,133,71,114,101,95,125,85,127,90,104,100,74,118,50,137"/>
+<area shape="rect" id="Node000005" href="$group___c_t_r_l___r_a_m_p.html#ga3e743c6f7b3d3cace6e21e22f9722466" title="结构体初始化" alt="" coords="147,109,227,137"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="55,143,131,130,132,135,56,148"/>
+<area shape="rect" id="Node000006" href="$group___c_t_r_l___r_a_m_p.html#ga2e5990d2aba3b0277df88a6bb0871b2a" title="set parameters,frequent in Hz" alt="" coords="147,161,226,189"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="56,151,133,164,132,169,55,156"/>
+<area shape="rect" id="Node000007" href="$group___c_t_r_l___v_o_f_a.html#ga77c9aea85bbaf41bbce8fc26c9cf846e" title="初始化结构体" alt="" coords="147,213,226,241"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="50,162,74,180,104,198,133,210,131,215,101,203,72,185,46,166"/>
+<area shape="rect" id="Node000008" href="$group___c_t_r_l___v_o_f_a.html#ga8b37353f7cbbd178e8f995dba7eaae73" title="通道输入源关联变量" alt="" coords="103,265,271,293"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="40,163,64,206,82,230,104,250,113,256,110,260,101,255,78,234,60,209,35,165"/>
+<area shape="rect" id="Node000003" href="$group___c_t_r_l___t_r_a_n_s_f_u_n.html#ga7fed97c70a637a0c8db4e7808730eba8" title="初始化 DCL_DF22 控制器结构体" alt="" coords="319,5,427,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="234,16,304,16,304,22,234,22"/>
+</map>

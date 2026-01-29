@@ -1,0 +1,29 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,240,55,268"/>
+<area shape="rect" id="Node000002" href="$group___d_r_v___f28335___a_d_c.html#ga5137b551f1b83b0f4d8df7d071a3d3a6" title="ADC Init" alt="" coords="108,59,180,86"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="38,238,124,98,129,101,42,241"/>
+<area shape="rect" id="Node000004" href="$group___d_r_v___f28335___p_w_m.html#ga16a6a31227f60674257e9715ee0c1638" title="init interrupt, pwm1&#45;6, tb sync and adc trigger" alt="" coords="103,188,186,216"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="54,240,97,220,100,225,56,245"/>
+<area shape="rect" id="Node000012" href="$group___s_y_s___s_t_a_t_e.html#ga4448d628c7c103a33e51e52f2e111de4" title="全局状态机初始化" alt="" coords="106,240,182,268"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="55,251,91,251,91,256,55,256"/>
+<area shape="rect" id="Node000013" href="$group___d_r_v___f28335___u_a_r_t.html#gad7d9735eb6d12d58232f616020798946" title="Init SCI&#45;c" alt="" coords="104,292,184,320"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="56,262,100,283,97,287,54,267"/>
+<area shape="rect" id="Node000014" href="$group___d_r_v___f28335___u_a_r_t.html#ga62cd2632b61f0f11f05a028d7d7cea13" title="config baud rate" alt="" coords="105,344,184,372"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="45,266,71,296,104,329,109,333,105,337,101,333,67,300,41,270"/>
+<area shape="rect" id="Node000003" href="$group___d_r_v___f28335___a_d_c.html#ga3812a7e6a8dc85e545d21c6e3a59598d" title="Interrupt Service Routine For ADC" alt="" coords="235,5,323,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,56,227,37,229,42,182,61"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___f28335___p_w_m.html#ga6f7068187c566632edbcc40fb80774a6" title="init pwm&#45;1" alt="" coords="234,57,324,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="153,186,186,143,232,96,237,92,240,96,236,100,190,147,158,189"/>
+<area shape="rect" id="Node000006" href="$group___d_r_v___f28335___p_w_m.html#ga9caa452be413513f8a1de581b6c9190d" title="PWM interrupt serve rountine" alt="" coords="237,109,321,137"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="169,185,240,143,243,147,171,190"/>
+<area shape="rect" id="Node000007" href="$group___d_r_v___f28335___p_w_m.html#ga4167cb83a1772e137250bf42d2a0cf04" title="init pwm&#45;2" alt="" coords="234,161,324,189"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="186,191,219,184,220,190,187,196"/>
+<area shape="rect" id="Node000008" href="$group___d_r_v___f28335___p_w_m.html#ga19ab3319e303cfcc02f1a5011aa7c012" title="init pwm&#45;3" alt="" coords="234,213,324,241"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="187,207,220,213,219,219,186,212"/>
+<area shape="rect" id="Node000009" href="$group___d_r_v___f28335___p_w_m.html#ga8f55165e10785eaf3e50d7010a6e66b2" title="init pwm&#45;4" alt="" coords="234,265,324,293"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="171,214,241,255,239,259,169,218"/>
+<area shape="rect" id="Node000010" href="$group___d_r_v___f28335___p_w_m.html#ga502259ba461c849a9b2c6574fc5a4f0a" title="init pwm&#45;5" alt="" coords="234,317,324,345"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="173,214,188,227,204,247,212,266,221,283,236,303,239,306,236,310,232,306,216,286,207,268,199,250,184,230,169,218"/>
+<area shape="rect" id="Node000011" href="$group___d_r_v___f28335___p_w_m.html#ga70fb89886932215f278eae98bcc64970" title="init pwm&#45;6" alt="" coords="234,369,324,397"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="175,214,188,227,200,244,207,261,212,292,218,323,225,338,236,355,238,357,234,361,232,358,220,341,213,324,207,293,201,263,195,247,184,230,171,218"/>
+</map>

@@ -51,8 +51,9 @@ var searchData=
   ['count_5frun_48',['COUNT_RUN',['../group___d_r_v___f28335___c_a_p.html#gga113b6a30f163ccfaf0bd11ec2b6cc582acc0e9b0b8e17762597b86f1e02f0c063',1,'cap.h']]],
   ['cpu定时器驱动_49',['CPU定时器驱动',['../group___d_r_v___f28335___t_i_m.html',1,'']]],
   ['cpu_5ftimer0_5fisr_50',['cpu_timer0_isr',['../group___d_r_v___f28335___t_i_m.html#ga0950d135719562f192fb7fd782cd58be',1,'cpu_timer0_isr(void):&#160;tim.c'],['../group___d_r_v___f28335___t_i_m.html#ga0950d135719562f192fb7fd782cd58be',1,'cpu_timer0_isr(void):&#160;tim.c']]],
-  ['current_5fmode_51',['current_mode',['../struct_s_t_a_t_e.html#ac184da0633659bb62bf794119ecde656',1,'STATE']]],
-  ['currsign_52',['currSign',['../struct_p_o_w_e_r__1_p_h.html#a0e5efa0754e70939f5f89b432b9fcfdc',1,'POWER_1PH']]],
-  ['cyan_53',['CYAN',['../group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caafe71cad474c15ce63b300c470eef8cc',1,'LCD_ST7735S.h']]],
-  ['cycle_54',['cycle',['../_r_f_f_t__f32_8asm.html#ac575de2f74001cdf8519cd6321b08ab2',1,'RFFT_f32.asm']]]
+  ['cputimer测试_51',['CPUTimer测试',['../group___p_r_j___t_e_s_t___f28335___t_i_m_e_r.html',1,'']]],
+  ['current_5fmode_52',['current_mode',['../struct_s_t_a_t_e.html#ac184da0633659bb62bf794119ecde656',1,'STATE']]],
+  ['currsign_53',['currSign',['../struct_p_o_w_e_r__1_p_h.html#a0e5efa0754e70939f5f89b432b9fcfdc',1,'POWER_1PH']]],
+  ['cyan_54',['CYAN',['../group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caafe71cad474c15ce63b300c470eef8cc',1,'LCD_ST7735S.h']]],
+  ['cycle_55',['cycle',['../_r_f_f_t__f32_8asm.html#ac575de2f74001cdf8519cd6321b08ab2',1,'RFFT_f32.asm']]]
 ];

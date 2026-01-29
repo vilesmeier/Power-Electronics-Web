@@ -1,0 +1,65 @@
+digraph "DMA_REGS"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=msyh,fontsize=10,labelfontname=msyh,labelfontsize=10];
+  node [fontname=msyh,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="DMA_REGS",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [id="edge1_Node000001_Node000002",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">DMACTRL</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node2 [id="Node000002",label="DMACTRL_REG",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$union_d_m_a_c_t_r_l___r_e_g.html",tooltip=" "];
+  Node3 -> Node2 [id="edge2_Node000002_Node000003",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">bit</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node3 [id="Node000003",label="DMACTRL_BITS",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_d_m_a_c_t_r_l___b_i_t_s.html",tooltip=" "];
+  Node4 -> Node1 [id="edge3_Node000001_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">DEBUGCTRL</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node4 [id="Node000004",label="DEBUGCTRL_REG",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$union_d_e_b_u_g_c_t_r_l___r_e_g.html",tooltip=" "];
+  Node5 -> Node4 [id="edge4_Node000004_Node000005",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">bit</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node5 [id="Node000005",label="DEBUGCTRL_BITS",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_d_e_b_u_g_c_t_r_l___b_i_t_s.html",tooltip=" "];
+  Node6 -> Node1 [id="edge5_Node000001_Node000006",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">PRIORITYCTRL1</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node6 [id="Node000006",label="PRIORITYCTRL1_REG",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$union_p_r_i_o_r_i_t_y_c_t_r_l1___r_e_g.html",tooltip=" "];
+  Node7 -> Node6 [id="edge6_Node000006_Node000007",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">bit</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node7 [id="Node000007",label="PRIORITYCTRL1_BITS",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_p_r_i_o_r_i_t_y_c_t_r_l1___b_i_t_s.html",tooltip=" "];
+  Node8 -> Node1 [id="edge7_Node000001_Node000008",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">PRIORITYSTAT</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node8 [id="Node000008",label="PRIORITYSTAT_REG",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$union_p_r_i_o_r_i_t_y_s_t_a_t___r_e_g.html",tooltip=" "];
+  Node9 -> Node8 [id="edge8_Node000008_Node000009",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">bit</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node9 [id="Node000009",label="PRIORITYSTAT_BITS",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_p_r_i_o_r_i_t_y_s_t_a_t___b_i_t_s.html",tooltip=" "];
+  Node10 -> Node1 [id="edge9_Node000001_Node000010",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">CH1</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">CH2</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">CH3</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">CH4</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">CH5</TD></TR>
+<TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">CH6</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node10 [id="Node000010",label="CH_REGS",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_c_h___r_e_g_s.html",tooltip=" "];
+  Node11 -> Node10 [id="edge10_Node000010_Node000011",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">MODE</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node11 [id="Node000011",label="MODE_REG",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$union_m_o_d_e___r_e_g.html",tooltip=" "];
+  Node12 -> Node11 [id="edge11_Node000011_Node000012",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">bit</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node12 [id="Node000012",label="MODE_BITS",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_m_o_d_e___b_i_t_s.html",tooltip=" "];
+  Node13 -> Node10 [id="edge12_Node000010_Node000013",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">CONTROL</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node13 [id="Node000013",label="CONTROL_REG",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$union_c_o_n_t_r_o_l___r_e_g.html",tooltip=" "];
+  Node14 -> Node13 [id="edge13_Node000013_Node000014",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">bit</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node14 [id="Node000014",label="CONTROL_BITS",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_c_o_n_t_r_o_l___b_i_t_s.html",tooltip=" "];
+  Node15 -> Node10 [id="edge14_Node000010_Node000015",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">BURST_SIZE</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node15 [id="Node000015",label="BURST_SIZE_REG",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$union_b_u_r_s_t___s_i_z_e___r_e_g.html",tooltip=" "];
+  Node16 -> Node15 [id="edge15_Node000015_Node000016",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">bit</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node16 [id="Node000016",label="BURST_SIZE_BITS",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_b_u_r_s_t___s_i_z_e___b_i_t_s.html",tooltip=" "];
+  Node17 -> Node10 [id="edge16_Node000010_Node000017",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">BURST_COUNT</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node17 [id="Node000017",label="BURST_COUNT_REG",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$union_b_u_r_s_t___c_o_u_n_t___r_e_g.html",tooltip=" "];
+  Node18 -> Node17 [id="edge17_Node000017_Node000018",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">bit</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node18 [id="Node000018",label="BURST_COUNT_BITS",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_b_u_r_s_t___c_o_u_n_t___b_i_t_s.html",tooltip=" "];
+}

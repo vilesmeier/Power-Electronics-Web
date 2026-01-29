@@ -1,0 +1,12 @@
+digraph "NUEDC-Core/Projects/28335/24Invitation/Solar_Sim/Library"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=msyh,fontsize=10,labelfontname=msyh,labelfontsize=10];
+  node [fontname=msyh,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_b19a3d9fcc67dbb5c7e9375b06add273 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="Solar_Sim", fontname=msyh,fontsize=10 style="filled,dashed", URL="dir_b19a3d9fcc67dbb5c7e9375b06add273.html",tooltip=""]
+  dir_40d016b293bcb3e5cec2a6e43397457a [label="Library", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_40d016b293bcb3e5cec2a6e43397457a.html",tooltip=""];
+  }
+}

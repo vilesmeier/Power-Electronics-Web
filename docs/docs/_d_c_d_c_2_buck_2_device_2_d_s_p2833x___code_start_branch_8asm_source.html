@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Projects/28335/DCDC/Buck/Device/DSP2833x_CodeStartBranch.asm 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_d_c_d_c_2_buck_2_device_2_d_s_p2833x___code_start_branch_8asm_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DSP2833x_CodeStartBranch.asm</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_d_c_d_c_2_buck_2_device_2_d_s_p2833x___code_start_branch_8asm.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>;<span class="comment">// TI File $Revision: /main/1 $</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>;<span class="comment">// Checkin $Date: August 18, 2006   13:45:55 $</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>;<span class="comment">//###########################################################################</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>;<span class="comment">// FILE:  DSP2833x_CodeStartBranch.asm </span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>;<span class="comment">// TITLE: Branch for redirecting code execution after boot. </span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>;<span class="comment">// For these examples, code_start is the first code that is executed after</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>;<span class="comment">// exiting the boot ROM code. </span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>;<span class="comment">// The codestart section in the linker cmd file is used to physically place</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>;<span class="comment">// this code at the correct memory location.  This section should be placed </span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>;<span class="comment">// at the location the BOOT ROM will re-direct the code to.  For example, </span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>;<span class="comment">// for boot to FLASH this code will be located at 0x3f7ff6. </span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>;<span class="comment">// In addition, the example DSP2833x projects are setup such that the codegen</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>;<span class="comment">// entry point is also set to the code_start label.  This is done by linker </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>;<span class="comment">// option -e in the project build options.  When the debugger loads the code,</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>;<span class="comment">// it will automatically set the PC to the &quot;entry point&quot; address indicated by</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>;<span class="comment">// the -e linker option.  In this case the debugger is simply assigning the PC, </span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>;<span class="comment">// it is not the same as a full reset of the device. </span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>;<span class="comment">// </span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>;<span class="comment">// The compiler may warn that the entry point for the project is other then</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>;<span class="comment">//  _c_init00.  _c_init00 is the C environment setup and is run before </span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>;<span class="comment">// main() is entered. The code_start code will re-direct the execution </span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>;<span class="comment">// to _c_init00 and thus there is no worry and this warning can be ignored. </span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>;<span class="comment">// </span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>;<span class="comment">//###########################################################################</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>;<span class="comment">// $TI Release: 2833x/2823x Header Files V1.32 $</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>;<span class="comment">// $Release Date: June 28, 2010 $</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>;<span class="comment">// $Copyright:</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>;<span class="comment">// Copyright (C) 2009-2023 Texas Instruments Incorporated - http://www.ti.com/</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>;<span class="comment">// Redistribution and use in source and binary forms, with or without </span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>;<span class="comment">// modification, are permitted provided that the following conditions </span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>;<span class="comment">// are met:</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>;<span class="comment">// </span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>;<span class="comment">//   Redistributions of source code must retain the above copyright </span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>;<span class="comment">//   notice, this list of conditions and the following disclaimer.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>;<span class="comment">// </span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>;<span class="comment">//   Redistributions in binary form must reproduce the above copyright</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>;<span class="comment">//   notice, this list of conditions and the following disclaimer in the </span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>;<span class="comment">//   documentation and/or other materials provided with the   </span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>;<span class="comment">//   distribution.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>;<span class="comment">// </span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>;<span class="comment">//   Neither the name of Texas Instruments Incorporated nor the names of</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>;<span class="comment">//   its contributors may be used to endorse or promote products derived</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>;<span class="comment">//   from this software without specific prior written permission.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>;<span class="comment">// </span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>;<span class="comment">// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS </span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>;<span class="comment">// &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT </span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>;<span class="comment">// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>;<span class="comment">// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT </span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>;<span class="comment">// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, </span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>;<span class="comment">// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT </span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>;<span class="comment">// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>;<span class="comment">// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>;<span class="comment">// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT </span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>;<span class="comment">// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE </span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>;<span class="comment">// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>;<span class="comment">// $</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>;<span class="comment">//###########################################################################</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>***********************************************************************</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_buck_2_device_2_d_s_p2833x___code_start_branch_8asm.html#ab9eea8458dac999a8136bff9c949ced2">   68</a></span>WD_DISABLE  .set    1       ;<a class="code hl_variable" href="_transfer_fun_8asm.html#a6e7a351a49fe5546a049cdcb2a8f63ee">set</a> <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713">to</a> 1 <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713">to</a> disable <a class="code hl_variable" href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm.html#ac5078d6d4980dbc037be35170f86796f">WD</a>, <span class="keywordflow">else</span> <a class="code hl_variable" href="_transfer_fun_8asm.html#a6e7a351a49fe5546a049cdcb2a8f63ee">set</a> <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713">to</a> 0</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    .ref <a class="code hl_variable" href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm.html#a692e3d784fa196eac97e54fa7bd2e328">_c_int00</a></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    .global code_start</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>***********************************************************************</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_buck_2_device_2_d_s_p2833x___code_start_branch_8asm.html#a2f403c6f8af63bfaa4b56e07a30578f5">   74</a></span>* <a class="code hl_variable" href="_r_f_f_t__f32__win_8asm.html#a8c8a02e6835e1ffbe57d0c2867ee90b4">Function</a>: codestart section</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>*</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>* Description: Branch <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713">to</a> <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a7b0e14291ce700ceec739166a45303a2">code</a> starting point</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>***********************************************************************</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    .sect <span class="stringliteral">&quot;codestart&quot;</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>code_start:</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    .if WD_DISABLE == 1</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        LB wd_disable       ;Branch <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713">to</a> watchdog disable <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a7b0e14291ce700ceec739166a45303a2">code</a></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    .else</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_buck_2_device_2_d_s_p2833x___code_start_branch_8asm.html#a692e3d784fa196eac97e54fa7bd2e328">   85</a></span>        LB <a class="code hl_variable" href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm.html#a692e3d784fa196eac97e54fa7bd2e328">_c_int00</a>         ;Branch <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713">to</a> start <a class="code hl_function" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#a2ddd403cbeebe77d27c0688c77274808">of</a> boot.asm <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a> RTS library</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_buck_2_device_2_d_s_p2833x___code_start_branch_8asm.html#a409487b149c5c96bb51427258dcf9c19">   86</a></span>    .endif</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>;<a class="code hl_variable" href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm.html#a15571a164112b0a37990095e6dc10a2c">end</a> codestart section</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>***********************************************************************</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>* <a class="code hl_variable" href="_r_f_f_t__f32__win_8asm.html#a8c8a02e6835e1ffbe57d0c2867ee90b4">Function</a>: wd_disable</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>*</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>* Description: Disables <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a21b0e46c20558e7fe3cda6ff07e0455a">the</a> watchdog timer</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>***********************************************************************</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    .if WD_DISABLE == 1</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    .text</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>wd_disable:</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    SETC OBJMODE        ;Set OBJMODE <span class="keywordflow">for</span> 28x <span class="keywordtype">object</span> <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a7b0e14291ce700ceec739166a45303a2">code</a></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_buck_2_device_2_d_s_p2833x___code_start_branch_8asm.html#afdf91d60963aa184230234da99e1c720">  101</a></span>    <a class="code hl_define" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a1a95377ebb4695a49196cd666e26d97d">EALLOW</a>              ;Enable <a class="code hl_define" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a1a95377ebb4695a49196cd666e26d97d">EALLOW</a> <span class="keyword">protected</span> <span class="keyword">register</span> access</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_buck_2_device_2_d_s_p2833x___code_start_branch_8asm.html#a7da1b3b67a8062aabc8c37104249ce46">  102</a></span>    MOVZ <a class="code hl_variable" href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm.html#a7da1b3b67a8062aabc8c37104249ce46">DP</a>, #7029h&gt;&gt;6  ;Set <a class="code hl_variable" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a> page <span class="keywordflow">for</span> WDCR <span class="keyword">register</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_buck_2_device_2_d_s_p2833x___code_start_branch_8asm.html#a73371a14d82e5a28899106a9942bcf83">  103</a></span>    <a class="code hl_variable" href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm.html#a7b31e8db6ec07e512c312a70378a80b7">MOV</a> @7029h, #0068h  ;Set WDDIS bit <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a> WDCR <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713">to</a> disable <a class="code hl_variable" href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm.html#ac5078d6d4980dbc037be35170f86796f">WD</a></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_buck_2_device_2_d_s_p2833x___code_start_branch_8asm.html#a8cc60f7005348aa2ee5ab541ff1a0ab0">  104</a></span>    <a class="code hl_define" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a4b430256ca8934310dac586331dd358f">EDIS</a>                ;Disable <a class="code hl_define" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a1a95377ebb4695a49196cd666e26d97d">EALLOW</a> <span class="keyword">protected</span> <span class="keyword">register</span> access</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    LB <a class="code hl_variable" href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm.html#a692e3d784fa196eac97e54fa7bd2e328">_c_int00</a>         ;Branch <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713">to</a> start <a class="code hl_function" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#a2ddd403cbeebe77d27c0688c77274808">of</a> boot.asm <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a> RTS library</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    .endif</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>;<a class="code hl_variable" href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm.html#a15571a164112b0a37990095e6dc10a2c">end</a> wd_disable</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="_d_c_d_c_2_buck_2_device_2_d_s_p2833x___code_start_branch_8asm.html#a15571a164112b0a37990095e6dc10a2c">  113</a></span>    .end</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>;<span class="comment">//===========================================================================</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>;<span class="comment">// End of file.</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>;<span class="comment">//===========================================================================</span></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x___device_8h_html_a1a95377ebb4695a49196cd666e26d97d"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a1a95377ebb4695a49196cd666e26d97d">EALLOW</a></div><div class="ttdeci">#define EALLOW</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h_source.html#l00076">DSP2833x_Device.h:76</a></div></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x___device_8h_html_a4b430256ca8934310dac586331dd358f"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a4b430256ca8934310dac586331dd358f">EDIS</a></div><div class="ttdeci">#define EDIS</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h_source.html#l00077">DSP2833x_Device.h:77</a></div></div>
+<div class="ttc" id="a_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm_html_a21ef755afaba4e6135f04b7a2e129713"><div class="ttname"><a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713">to</a></div><div class="ttdeci">This function computes a real FFT The input buffer must be aligned to</div><div class="ttdef"><b>定义</b> <a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm_source.html#l00009">RFFT_f32.asm:10</a></div></div>
+<div class="ttc" id="a_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm_html_a2ddd403cbeebe77d27c0688c77274808"><div class="ttname"><a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#a2ddd403cbeebe77d27c0688c77274808">of</a></div><div class="ttdeci">*FFTSize must be a power of(32, 64, 128, etc)</div></div>
+<div class="ttc" id="a_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm_html_a21b0e46c20558e7fe3cda6ff07e0455a"><div class="ttname"><a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a21b0e46c20558e7fe3cda6ff07e0455a">the</a></div><div class="ttdeci">Utilize this software subject to the terms herein With respect to the</div><div class="ttdef"><b>定义</b> <a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm_source.html#l00089">RFFT_f32_mag.asm:90</a></div></div>
+<div class="ttc" id="a_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm_html_a2dca1e84a5e665f0def1baede53a101d"><div class="ttname"><a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a></div><div class="ttdeci">Calculate the real FFT magnitude The data is organized as follows in</div><div class="ttdef"><b>定义</b> <a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm_source.html#l00047">RFFT_f32_mag.asm:48</a></div></div>
+<div class="ttc" id="a_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm_html_a7b0e14291ce700ceec739166a45303a2"><div class="ttname"><a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a7b0e14291ce700ceec739166a45303a2">code</a></div><div class="ttdeci">!software licensed and provided to you in object code</div><div class="ttdef"><b>定义</b> <a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm_source.html#l00110">RFFT_f32_mag.asm:111</a></div></div>
+<div class="ttc" id="a_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm_html_a15571a164112b0a37990095e6dc10a2c"><div class="ttname"><a href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm.html#a15571a164112b0a37990095e6dc10a2c">end</a></div><div class="ttdeci">end wd_disable end</div><div class="ttdef"><b>定义</b> <a href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm_source.html#l00108">f28004x_codestartbranch.asm:110</a></div></div>
+<div class="ttc" id="a_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm_html_a692e3d784fa196eac97e54fa7bd2e328"><div class="ttname"><a href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm.html#a692e3d784fa196eac97e54fa7bd2e328">_c_int00</a></div><div class="ttdeci">Branch to watchdog disable code else LB _c_int00</div><div class="ttdef"><b>定义</b> <a href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm_source.html#l00083">f28004x_codestartbranch.asm:83</a></div></div>
+<div class="ttc" id="a_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm_html_a7b31e8db6ec07e512c312a70378a80b7"><div class="ttname"><a href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm.html#a7b31e8db6ec07e512c312a70378a80b7">MOV</a></div><div class="ttdeci">register access MOVZ MOV</div><div class="ttdef"><b>定义</b> <a href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm_source.html#l00100">f28004x_codestartbranch.asm:100</a></div></div>
+<div class="ttc" id="a_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm_html_a7da1b3b67a8062aabc8c37104249ce46"><div class="ttname"><a href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm.html#a7da1b3b67a8062aabc8c37104249ce46">DP</a></div><div class="ttdeci">register access MOVZ DP</div><div class="ttdef"><b>定义</b> <a href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm_source.html#l00099">f28004x_codestartbranch.asm:99</a></div></div>
+<div class="ttc" id="a_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm_html_ac5078d6d4980dbc037be35170f86796f"><div class="ttname"><a href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm.html#ac5078d6d4980dbc037be35170f86796f">WD</a></div><div class="ttdeci">set to to disable WD</div><div class="ttdef"><b>定义</b> <a href="_o_l_e_d___s_s_d1306___test_2device_2f28004x__codestartbranch_8asm_source.html#l00065">f28004x_codestartbranch.asm:65</a></div></div>
+<div class="ttc" id="a_r_f_f_t__f32__win_8asm_html_a8c8a02e6835e1ffbe57d0c2867ee90b4"><div class="ttname"><a href="_r_f_f_t__f32__win_8asm.html#a8c8a02e6835e1ffbe57d0c2867ee90b4">Function</a></div><div class="ttdeci">brief Real FFT Windowing Function</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32__win_8asm_source.html#l00004">RFFT_f32_win.asm:5</a></div></div>
+<div class="ttc" id="a_transfer_fun_8asm_html_a1f1c96545c7c8e20ffc09b6051f81f37"><div class="ttname"><a href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a></div><div class="ttdeci">&amp; data</div><div class="ttdef"><b>定义</b> <a href="_transfer_fun_8asm_source.html#l00180">TransferFun.asm:180</a></div></div>
+<div class="ttc" id="a_transfer_fun_8asm_html_a6e7a351a49fe5546a049cdcb2a8f63ee"><div class="ttname"><a href="_transfer_fun_8asm.html#a6e7a351a49fe5546a049cdcb2a8f63ee">set</a></div><div class="ttdeci">if _DCL_DF11_Run asg _DCL_DF22_Run asg _DCL_DF23_Run asg _DCL_Clamp_Run endif endif FASTCR_DF22_C1 set</div><div class="ttdef"><b>定义</b> <a href="_transfer_fun_8asm_source.html#l00011">TransferFun.asm:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_5506101b76382283adbe76592e28ea78.html">Projects</a></li><li class="navelem"><a href="dir_7dd5ed44a494c219ca67de2f65681ad1.html">28335</a></li><li class="navelem"><a href="dir_be19c663e73035d37f1ad70e7ca2cb6c.html">DCDC</a></li><li class="navelem"><a href="dir_fc6b6756b522c3828d140f1fc3ada4bd.html">Buck</a></li><li class="navelem"><a href="dir_05c1517689e12fd112e699e157c716bb.html">Device</a></li><li class="navelem"><a href="_d_c_d_c_2_buck_2_device_2_d_s_p2833x___code_start_branch_8asm.html">DSP2833x_CodeStartBranch.asm</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

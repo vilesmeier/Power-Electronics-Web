@@ -1,0 +1,12 @@
+digraph "NUEDC-Core/Projects/28335/25A/25A_V5/Device"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=msyh,fontsize=10,labelfontname=msyh,labelfontsize=10];
+  node [fontname=msyh,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_8b7f342dcf0657a6273485c9f3ba54ab {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="25A_V5", fontname=msyh,fontsize=10 style="filled,dashed", URL="dir_8b7f342dcf0657a6273485c9f3ba54ab.html",tooltip=""]
+  dir_e1767e66f8b5774e26021c76c8c56c68 [label="Device", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_e1767e66f8b5774e26021c76c8c56c68.html",tooltip=""];
+  }
+}

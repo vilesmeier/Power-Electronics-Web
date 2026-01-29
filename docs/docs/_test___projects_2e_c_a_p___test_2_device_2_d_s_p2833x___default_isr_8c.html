@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Projects/28335/Test_Projects/eCAP_Test/Device/DSP2833x_DefaultIsr.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DSP2833x_DefaultIsr.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___device_8h_source.html">DSP2833x_Device.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___examples_8h_source.html">DSP2833x_Examples.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+DSP2833x_DefaultIsr.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_projects_228335_2_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c" loading="lazy" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div>
+<p><a href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a8b9eb702eb3f9bcba3923532d1e801db" id="r_a8b9eb702eb3f9bcba3923532d1e801db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b9eb702eb3f9bcba3923532d1e801db">for</a> (;;)</td></tr>
+<tr class="memitem:a1fe0495efef81c4d32b0595a636e1d04" id="r_a1fe0495efef81c4d32b0595a636e1d04"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fe0495efef81c4d32b0595a636e1d04">DATALOG_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a15b5962c4575717c62b2a57b99db9f27" id="r_a15b5962c4575717c62b2a57b99db9f27"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15b5962c4575717c62b2a57b99db9f27">RTOSINT_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a2ed6a4fb2464036c6489e04dd5a87742" id="r_a2ed6a4fb2464036c6489e04dd5a87742"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ed6a4fb2464036c6489e04dd5a87742">EMUINT_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a33ea4f3dcec26aac08b7b2b95f2d8d5d" id="r_a33ea4f3dcec26aac08b7b2b95f2d8d5d"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33ea4f3dcec26aac08b7b2b95f2d8d5d">NMI_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a2f1713200b9036759300788c22447833" id="r_a2f1713200b9036759300788c22447833"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f1713200b9036759300788c22447833">ILLEGAL_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a0096ca5615f2a5ada60adf38ce6a2cef" id="r_a0096ca5615f2a5ada60adf38ce6a2cef"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0096ca5615f2a5ada60adf38ce6a2cef">USER1_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:aa25a026caf528c6901f7623758a02613" id="r_aa25a026caf528c6901f7623758a02613"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa25a026caf528c6901f7623758a02613">USER2_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a7234f6adc7e8284844b092c6aa20a887" id="r_a7234f6adc7e8284844b092c6aa20a887"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7234f6adc7e8284844b092c6aa20a887">USER3_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:ad614a34133d093d19a883a9a0cfbd9fc" id="r_ad614a34133d093d19a883a9a0cfbd9fc"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad614a34133d093d19a883a9a0cfbd9fc">USER4_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a459ed69754f20d5c4674cf402d12d818" id="r_a459ed69754f20d5c4674cf402d12d818"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a459ed69754f20d5c4674cf402d12d818">USER5_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a1e1f4c2c1bb9ced4a5ebac2b1089c2b2" id="r_a1e1f4c2c1bb9ced4a5ebac2b1089c2b2"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e1f4c2c1bb9ced4a5ebac2b1089c2b2">USER6_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a143f7d2ca12ac256324357fca6a0f7bd" id="r_a143f7d2ca12ac256324357fca6a0f7bd"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a143f7d2ca12ac256324357fca6a0f7bd">USER7_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:ac1e75f24f880102b570982677144086e" id="r_ac1e75f24f880102b570982677144086e"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1e75f24f880102b570982677144086e">USER8_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:aaac4ad7708b08511472d66375c73d3cf" id="r_aaac4ad7708b08511472d66375c73d3cf"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaac4ad7708b08511472d66375c73d3cf">USER9_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a217cf729d040ba6b71a5567933e3ae6a" id="r_a217cf729d040ba6b71a5567933e3ae6a"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a217cf729d040ba6b71a5567933e3ae6a">USER10_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a0ca8030c60009d79f5f6ddf2fe6dac26" id="r_a0ca8030c60009d79f5f6ddf2fe6dac26"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ca8030c60009d79f5f6ddf2fe6dac26">USER11_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a2c6e7a8960ebbabc420517b87b14eb3c" id="r_a2c6e7a8960ebbabc420517b87b14eb3c"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c6e7a8960ebbabc420517b87b14eb3c">USER12_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a3b40de8dc3d3f0b3a31b727b2d5117d7" id="r_a3b40de8dc3d3f0b3a31b727b2d5117d7"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b40de8dc3d3f0b3a31b727b2d5117d7">XINT1_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a2b775ed268112b0181699a64f80e91e3" id="r_a2b775ed268112b0181699a64f80e91e3"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b775ed268112b0181699a64f80e91e3">XINT2_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a9f8a62206451f24f15e59f3ce2cefe55" id="r_a9f8a62206451f24f15e59f3ce2cefe55"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f8a62206451f24f15e59f3ce2cefe55">PIE_RESERVED</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+<tr class="memitem:a6d6766c223a793e30b9d8f52addf907f" id="r_a6d6766c223a793e30b9d8f52addf907f"><td class="memItemLeft" align="right" valign="top">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d6766c223a793e30b9d8f52addf907f">rsvd_ISR</a> (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ae9380d6f8620b92d01fe003529ce3e93" id="r_ae9380d6f8620b92d01fe003529ce3e93"><td class="memItemLeft" align="right" valign="top">interrupt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9380d6f8620b92d01fe003529ce3e93">void</a></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="a1fe0495efef81c4d32b0595a636e1d04" name="a1fe0495efef81c4d32b0595a636e1d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fe0495efef81c4d32b0595a636e1d04">&#9670;&#160;</a></span>DATALOG_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> DATALOG_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00103">103</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2ed6a4fb2464036c6489e04dd5a87742" name="a2ed6a4fb2464036c6489e04dd5a87742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ed6a4fb2464036c6489e04dd5a87742">&#9670;&#160;</a></span>EMUINT_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> EMUINT_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00139">139</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8b9eb702eb3f9bcba3923532d1e801db" name="a8b9eb702eb3f9bcba3923532d1e801db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b9eb702eb3f9bcba3923532d1e801db">&#9670;&#160;</a></span>for()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">for </td>
+          <td>(</td>
+          <td class="paramtype">;;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f1713200b9036759300788c22447833" name="a2f1713200b9036759300788c22447833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f1713200b9036759300788c22447833">&#9670;&#160;</a></span>ILLEGAL_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> ILLEGAL_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00175">175</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a33ea4f3dcec26aac08b7b2b95f2d8d5d" name="a33ea4f3dcec26aac08b7b2b95f2d8d5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33ea4f3dcec26aac08b7b2b95f2d8d5d">&#9670;&#160;</a></span>NMI_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> NMI_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00157">157</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9f8a62206451f24f15e59f3ce2cefe55" name="a9f8a62206451f24f15e59f3ce2cefe55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8a62206451f24f15e59f3ce2cefe55">&#9670;&#160;</a></span>PIE_RESERVED()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> PIE_RESERVED </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l02005">2005</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6d6766c223a793e30b9d8f52addf907f" name="a6d6766c223a793e30b9d8f52addf907f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6766c223a793e30b9d8f52addf907f">&#9670;&#160;</a></span>rsvd_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> rsvd_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l02015">2015</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a15b5962c4575717c62b2a57b99db9f27" name="a15b5962c4575717c62b2a57b99db9f27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b5962c4575717c62b2a57b99db9f27">&#9670;&#160;</a></span>RTOSINT_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> RTOSINT_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00121">121</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a217cf729d040ba6b71a5567933e3ae6a" name="a217cf729d040ba6b71a5567933e3ae6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a217cf729d040ba6b71a5567933e3ae6a">&#9670;&#160;</a></span>USER10_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> USER10_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00355">355</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0ca8030c60009d79f5f6ddf2fe6dac26" name="a0ca8030c60009d79f5f6ddf2fe6dac26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ca8030c60009d79f5f6ddf2fe6dac26">&#9670;&#160;</a></span>USER11_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> USER11_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00373">373</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2c6e7a8960ebbabc420517b87b14eb3c" name="a2c6e7a8960ebbabc420517b87b14eb3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c6e7a8960ebbabc420517b87b14eb3c">&#9670;&#160;</a></span>USER12_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> USER12_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00391">391</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0096ca5615f2a5ada60adf38ce6a2cef" name="a0096ca5615f2a5ada60adf38ce6a2cef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0096ca5615f2a5ada60adf38ce6a2cef">&#9670;&#160;</a></span>USER1_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> USER1_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00193">193</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa25a026caf528c6901f7623758a02613" name="aa25a026caf528c6901f7623758a02613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa25a026caf528c6901f7623758a02613">&#9670;&#160;</a></span>USER2_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> USER2_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00211">211</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7234f6adc7e8284844b092c6aa20a887" name="a7234f6adc7e8284844b092c6aa20a887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7234f6adc7e8284844b092c6aa20a887">&#9670;&#160;</a></span>USER3_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> USER3_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00229">229</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad614a34133d093d19a883a9a0cfbd9fc" name="ad614a34133d093d19a883a9a0cfbd9fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad614a34133d093d19a883a9a0cfbd9fc">&#9670;&#160;</a></span>USER4_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> USER4_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00247">247</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a459ed69754f20d5c4674cf402d12d818" name="a459ed69754f20d5c4674cf402d12d818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a459ed69754f20d5c4674cf402d12d818">&#9670;&#160;</a></span>USER5_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> USER5_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00265">265</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1e1f4c2c1bb9ced4a5ebac2b1089c2b2" name="a1e1f4c2c1bb9ced4a5ebac2b1089c2b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e1f4c2c1bb9ced4a5ebac2b1089c2b2">&#9670;&#160;</a></span>USER6_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> USER6_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00283">283</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a143f7d2ca12ac256324357fca6a0f7bd" name="a143f7d2ca12ac256324357fca6a0f7bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a143f7d2ca12ac256324357fca6a0f7bd">&#9670;&#160;</a></span>USER7_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> USER7_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00301">301</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac1e75f24f880102b570982677144086e" name="ac1e75f24f880102b570982677144086e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1e75f24f880102b570982677144086e">&#9670;&#160;</a></span>USER8_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> USER8_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00319">319</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaac4ad7708b08511472d66375c73d3cf" name="aaac4ad7708b08511472d66375c73d3cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaac4ad7708b08511472d66375c73d3cf">&#9670;&#160;</a></span>USER9_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> USER9_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00337">337</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3b40de8dc3d3f0b3a31b727b2d5117d7" name="a3b40de8dc3d3f0b3a31b727b2d5117d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b40de8dc3d3f0b3a31b727b2d5117d7">&#9670;&#160;</a></span>XINT1_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> XINT1_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00465">465</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2b775ed268112b0181699a64f80e91e3" name="a2b775ed268112b0181699a64f80e91e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b775ed268112b0181699a64f80e91e3">&#9670;&#160;</a></span>XINT2_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> XINT2_ISR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00489">489</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">变量说明</h2>
+<a id="ae9380d6f8620b92d01fe003529ce3e93" name="ae9380d6f8620b92d01fe003529ce3e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9380d6f8620b92d01fe003529ce3e93">&#9670;&#160;</a></span>void</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt void</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    </div>
+<div class="line">    </div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    </div>
+<div class="line">    </div>
+<div class="line">    </div>
+<div class="line">    </div>
+<div class="line">    <span class="keyword">asm</span> (<span class="stringliteral">&quot;      ESTOP0&quot;</span>)</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html">DSP2833x_DefaultIsr.c</a> 第 <a class="el" href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c_source.html#l00066">66</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_5506101b76382283adbe76592e28ea78.html">Projects</a></li><li class="navelem"><a href="dir_7dd5ed44a494c219ca67de2f65681ad1.html">28335</a></li><li class="navelem"><a href="dir_f1957c8de7adafad6fa83230438a4f34.html">Test_Projects</a></li><li class="navelem"><a href="dir_52600f62b24a947d3578ced601f1c7e7.html">eCAP_Test</a></li><li class="navelem"><a href="dir_9afb5faea879444504e478c65abb21c2.html">Device</a></li><li class="navelem"><a href="_test___projects_2e_c_a_p___test_2_device_2_d_s_p2833x___default_isr_8c.html">DSP2833x_DefaultIsr.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

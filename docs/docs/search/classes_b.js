@@ -1,4 +1,21 @@
 var searchData=
 [
-  ['vofa_5fdata_0',['VOFA_DATA',['../struct_v_o_f_a___d_a_t_a.html',1,'']]]
+  ['mapcnf_5fbits_0',['MAPCNF_BITS',['../struct_m_a_p_c_n_f___b_i_t_s.html',1,'']]],
+  ['mapcnf_5freg_1',['MAPCNF_REG',['../union_m_a_p_c_n_f___r_e_g.html',1,'']]],
+  ['mbox_2',['MBOX',['../struct_m_b_o_x.html',1,'']]],
+  ['mcbsp_5fregs_3',['MCBSP_REGS',['../struct_m_c_b_s_p___r_e_g_s.html',1,'']]],
+  ['mcr1_5fbits_4',['MCR1_BITS',['../struct_m_c_r1___b_i_t_s.html',1,'']]],
+  ['mcr1_5freg_5',['MCR1_REG',['../union_m_c_r1___r_e_g.html',1,'']]],
+  ['mcr2_5fbits_6',['MCR2_BITS',['../struct_m_c_r2___b_i_t_s.html',1,'']]],
+  ['mcr2_5freg_7',['MCR2_REG',['../union_m_c_r2___r_e_g.html',1,'']]],
+  ['mffint_5fbits_8',['MFFINT_BITS',['../struct_m_f_f_i_n_t___b_i_t_s.html',1,'']]],
+  ['mffint_5freg_9',['MFFINT_REG',['../union_m_f_f_i_n_t___r_e_g.html',1,'']]],
+  ['mod_10',['MOD',['../struct_m_o_d.html',1,'']]],
+  ['mode_5fbits_11',['MODE_BITS',['../struct_m_o_d_e___b_i_t_s.html',1,'']]],
+  ['mode_5freg_12',['MODE_REG',['../union_m_o_d_e___r_e_g.html',1,'']]],
+  ['moto_5fregs_13',['MOTO_REGS',['../struct_m_o_t_o___r_e_g_s.html',1,'']]],
+  ['mots_5fregs_14',['MOTS_REGS',['../struct_m_o_t_s___r_e_g_s.html',1,'']]],
+  ['mppt_5fincc_15',['MPPT_INCC',['../struct_m_p_p_t___i_n_c_c.html',1,'']]],
+  ['mppt_5fincc_5fi_16',['MPPT_INCC_I',['../struct_m_p_p_t___i_n_c_c___i.html',1,'']]],
+  ['mppt_5fpno_17',['MPPT_PNO',['../struct_m_p_p_t___p_n_o.html',1,'']]]
 ];

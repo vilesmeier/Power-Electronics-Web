@@ -1,5 +1,5 @@
 <map id="资料库软件部分" name="资料库软件部分">
 <area shape="rect" id="Node000002" href="$group___l_i_b.html" title="模块化功能代码库" alt="" coords="172,5,258,30"/>
 <area shape="rect" id="Node000001" title="电力电子方向备赛资料库, 代码, 工程, 测试例程部分" alt="" coords="5,31,118,55"/>
-<area shape="rect" id="Node000003" href="$group___p_r_j.html" title="代码工程库, 包含每个主控的工程模板, 模块代码测试工程, 对应拓扑/赛题的代码工程. 测试工程兼做该模块例程." alt="" coords="166,55,265,79"/>
+<area shape="rect" id="Node000003" href="$group___p_r_j.html" title="包含每个主控的工程模板, 模块代码测试工程, 对应拓扑/赛题的代码工程. 测试工程兼做该模块例程." alt="" coords="166,55,265,79"/>
 </map>

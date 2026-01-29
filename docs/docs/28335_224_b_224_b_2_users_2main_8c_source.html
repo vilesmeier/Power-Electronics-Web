@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Projects/28335/24B/24B/Users/main.c 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('28335_224_b_224_b_2_users_2main_8c_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">main.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="28335_224_b_224_b_2_users_2main_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;Hardware/Global.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="28335_224_b_224_b_2_users_2main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">   12</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="280049_c_2_template___projects_2_template___project___f280049_c_2user_2main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">main</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="comment">//系统初始化</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    InitSysCtrl();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">//MemCopy(&amp;RamfuncsLoadStart, &amp;RamfuncsLoadEnd, &amp;RamfuncsRunStart);</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">//InitFlash();</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    InitGpio();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    DINT;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    InitPieCtrl();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    IER = 0x0000;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    IFR = 0x0000;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    InitPieVectTable();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    EINT;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    ERTM;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">//低功耗</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    System_Clock_Close();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">//模块初始化</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    lcdInit();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(0 ,0  ,32, 16, <span class="stringliteral">&quot;IRMS&quot;</span>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//电流有效值</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(0 ,16 ,32, 16, <span class="stringliteral">&quot;VRMS&quot;</span>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//电压有效值</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(0 ,32 ,8 , 16, <span class="stringliteral">&quot;n&quot;</span>   , <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//匝数比</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(0 ,48 ,8 , 16, <span class="stringliteral">&quot;P&quot;</span>   , <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//有功功率</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(0 ,64 ,8 , 16, <span class="stringliteral">&quot;K&quot;</span>   , <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//功率因数</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(0 ,80 ,24, 16, <span class="stringliteral">&quot;THD&quot;</span> , <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//THD</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(0 ,96 ,8 , 16, <span class="stringliteral">&quot;2&quot;</span>  , <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//谐波电流1</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(0 ,112,8 , 16, <span class="stringliteral">&quot;3&quot;</span>  , <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//谐波电流2</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(0 ,128,8 , 16, <span class="stringliteral">&quot;4&quot;</span>  , <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//谐波电流3</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(0 ,144,8 , 16, <span class="stringliteral">&quot;5&quot;</span>  , <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//谐波电流4</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(68,32 ,8 , 16, <span class="stringliteral">&quot;6&quot;</span>  , <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//谐波电流5</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(68,96 ,8 , 16, <span class="stringliteral">&quot;7&quot;</span>  , <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//谐波电流6</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(68,112,8 , 16, <span class="stringliteral">&quot;8&quot;</span>  , <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//谐波电流7</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(68,128,8 , 16, <span class="stringliteral">&quot;9&quot;</span>  , <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//谐波电流8</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_function" href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a>(68,144,16, 16, <span class="stringliteral">&quot;10&quot;</span> , <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a>, <a class="code hl_enumvalue" href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a>);<span class="comment">//谐波电流9</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="group___d_r_v___f28335___x_i_n_t.html#gaffd07a9b3a14f2b8b71c64e5e87d68e2">XINT_Init</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    Power_Measure_Init();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    RFFT_ADC_Init();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    Sample_Init();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_function" href="group___d_r_v___f28335___p_w_m.html#ga6f7068187c566632edbcc40fb80774a6">EPWM1_Init</a>(36621);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">while</span>(1)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+</div>
+<div class="ttc" id="a280049_c_2_template___projects_2_template___project___f280049_c_2user_2main_8c_html_a6288eba0f8e8ad3ab1544ad731eb7667"><div class="ttname"><a href="280049_c_2_template___projects_2_template___project___f280049_c_2user_2main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">main</a></div><div class="ttdeci">void main(void)</div><div class="ttdef"><b>定义</b> <a href="280049_c_2_template___projects_2_template___project___f280049_c_2user_2main_8c_source.html#l00025">main.c:25</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___l_c_d_html_ga819e4cb0d04d17e3cba390032dec14be"><div class="ttname"><a href="group___d_r_v___f28335___l_c_d.html#ga819e4cb0d04d17e3cba390032dec14be">LCD_ShowString</a></div><div class="ttdeci">void LCD_ShowString(unsigned short x, unsigned short y, unsigned short width, unsigned short height, unsigned char *p, unsigned short pen_color, unsigned short back_color)</div><div class="ttdoc">show a string</div><div class="ttdef"><b>定义</b> <a href="_l_c_d___s_t7735_s_8c_source.html#l00466">LCD_ST7735S.c:466</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___l_c_d_html_ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50"><div class="ttname"><a href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50">WHITE</a></div><div class="ttdeci">@ WHITE</div><div class="ttdef"><b>定义</b> <a href="_l_c_d___s_t7735_s_8h_source.html#l00027">LCD_ST7735S.h:27</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___l_c_d_html_ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3"><div class="ttname"><a href="group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3">BLACK</a></div><div class="ttdeci">@ BLACK</div><div class="ttdef"><b>定义</b> <a href="_l_c_d___s_t7735_s_8h_source.html#l00028">LCD_ST7735S.h:28</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___p_w_m_html_ga6f7068187c566632edbcc40fb80774a6"><div class="ttname"><a href="group___d_r_v___f28335___p_w_m.html#ga6f7068187c566632edbcc40fb80774a6">EPWM1_Init</a></div><div class="ttdeci">void EPWM1_Init(void)</div><div class="ttdoc">init pwm-1</div><div class="ttdef"><b>定义</b> <a href="pwm_8c_source.html#l00009">pwm.c:9</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___x_i_n_t_html_gaffd07a9b3a14f2b8b71c64e5e87d68e2"><div class="ttname"><a href="group___d_r_v___f28335___x_i_n_t.html#gaffd07a9b3a14f2b8b71c64e5e87d68e2">XINT_Init</a></div><div class="ttdeci">void XINT_Init(void)</div><div class="ttdoc">init XINT, select edge and gpio</div><div class="ttdef"><b>定义</b> <a href="xint_8c_source.html#l00009">xint.c:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_5506101b76382283adbe76592e28ea78.html">Projects</a></li><li class="navelem"><a href="dir_7dd5ed44a494c219ca67de2f65681ad1.html">28335</a></li><li class="navelem"><a href="dir_448e1af1aea29a70eaabce70357e5035.html">24B</a></li><li class="navelem"><a href="dir_dc10dde7a4091da64fa589eecfe13eb8.html">24B</a></li><li class="navelem"><a href="dir_b32400a3348194612b2c62862c2073b1.html">Users</a></li><li class="navelem"><a href="28335_224_b_224_b_2_users_2main_8c.html">main.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

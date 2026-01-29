@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Code/Control_Driver/rfft/fpu32_lib/RFFT_f32_sincostable.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__sincostable_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RFFT_f32_sincostable.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>32-bit floating point Real FFT Sin/Cos Table Generation  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;math.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_code_2_control___driver_2rfft_2fpu32__lib_2fpu__rfft_8h_source.html">fpu_rfft.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+RFFT_f32_sincostable.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__sincostable_8c__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__sincostable_8c" loading="lazy" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div>
+<p><a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__sincostable_8c_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:adce4305bf7eb28f6ce6336edc3b9ea76" id="r_adce4305bf7eb28f6ce6336edc3b9ea76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adce4305bf7eb28f6ce6336edc3b9ea76">RFFT_f32_sincostable</a> (<a class="el" href="_code_2_control___driver_2rfft_2fpu32__lib_2fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> fft)</td></tr>
+<tr class="memdesc:adce4305bf7eb28f6ce6336edc3b9ea76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate twiddle factors for the Real FFT.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>32-bit floating point Real FFT Sin/Cos Table Generation </p>
+
+<p class="definition">在文件 <a class="el" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__sincostable_8c_source.html">RFFT_f32_sincostable.c</a> 中定义.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="adce4305bf7eb28f6ce6336edc3b9ea76" name="adce4305bf7eb28f6ce6336edc3b9ea76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adce4305bf7eb28f6ce6336edc3b9ea76">&#9670;&#160;</a></span>RFFT_f32_sincostable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> RFFT_f32_sincostable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_code_2_control___driver_2rfft_2fpu32__lib_2fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a></td>          <td class="paramname"><span class="paramname"><em>fft</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate twiddle factors for the Real FFT. </p>
+<p>Copyright: Copyright (C) 2023 Texas Instruments Incorporated - All rights reserved not granted herein. Limited License.</p>
+<p>Texas Instruments Incorporated grants a world-wide, royalty-free, non-exclusive license under copyrights and patents it now or hereafter owns or controls to make, have made, use, import, offer to sell and sell ("Utilize") this software subject to the terms herein. With respect to the foregoing patent license, such license is granted solely to the extent that any such patent is necessary to Utilize the software alone. The patent license shall not apply to any combinations which include this software, other than combinations with devices manufactured by or for TI ("TI Devices"). No hardware patent is licensed hereunder.</p>
+<p>Redistributions must preserve existing copyright notices and reproduce this license (including the above copyright notice and the disclaimer and (if applicable) source code license limitations below) in the documentation and/or other materials provided with the distribution.</p>
+<p>Redistribution and use in binary form, without modification, are permitted provided that the following conditions are met:</p>
+<ul>
+<li>No reverse engineering, decompilation, or disassembly of this software is permitted with respect to any software provided in binary form.</li>
+<li>Any redistribution and use are licensed by TI for use only with TI Devices.</li>
+<li>Nothing shall obligate TI to provide you with source code for the software licensed and provided to you in object code.</li>
+</ul>
+<p>If software source code is provided to you, modification and redistribution of the source code are permitted provided that the following conditions are met:</p>
+<ul>
+<li>any redistribution and use of the source code, including any resulting derivative works, are licensed by TI for use only with TI Devices.</li>
+<li>any redistribution and use of any object code compiled from the source code and any resulting derivative works, are licensed by TI for use only with TI Devices.</li>
+</ul>
+<p>Neither the name of Texas Instruments Incorporated nor the names of its suppliers may be used to endorse or promote products derived from this software without specific prior written permission. </p>
+
+<p class="definition">在文件 <a class="el" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__sincostable_8c_source.html">RFFT_f32_sincostable.c</a> 第 <a class="el" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__sincostable_8c_source.html#l00123">123</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_0fd93c14012f780a2e81c2f5b80c75ff.html">rfft</a></li><li class="navelem"><a href="dir_6bd83238c5acd69e2087c7b8f0297dcf.html">fpu32_lib</a></li><li class="navelem"><a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__sincostable_8c.html">RFFT_f32_sincostable.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,57,55,85"/>
+<area shape="rect" id="Node000002" href="$task_8c.html#a121c44248bc9e50eb952a3ac04d5d17f" title="while(1) 内非时间片函数, 逐次触发" alt="" coords="103,5,254,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,60,122,36,123,41,56,65"/>
+<area shape="rect" id="Node000003" href="$task_8c.html#aa6ab5350efe602f7bdfdca42aa57aff2" title="全局变量初始化" alt="" coords="142,57,215,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,68,126,68,126,74,55,74"/>
+<area shape="rect" id="Node000004" href="$task_8c.html#ab54d366aa75fe233214586ca49242ff4" title="while(1) 内时间片函数, 通过state.timebase内标志位周期触发" alt="" coords="106,109,251,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="56,77,123,101,122,106,54,82"/>
+</map>

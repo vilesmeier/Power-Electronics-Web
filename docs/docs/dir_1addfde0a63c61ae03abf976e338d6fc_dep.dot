@@ -1,0 +1,12 @@
+digraph "NUEDC-Core/Projects/28335/3ph_Inverter/3ph_inverter_offgrid_para/Library"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=msyh,fontsize=10,labelfontname=msyh,labelfontsize=10];
+  node [fontname=msyh,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_4ba7a5239cceb5e39ddde179f0f79e6b {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="3ph_inverter_offgrid_para", fontname=msyh,fontsize=10 style="filled,dashed", URL="dir_4ba7a5239cceb5e39ddde179f0f79e6b.html",tooltip=""]
+  dir_1addfde0a63c61ae03abf976e338d6fc [label="Library", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_1addfde0a63c61ae03abf976e338d6fc.html",tooltip=""];
+  }
+}

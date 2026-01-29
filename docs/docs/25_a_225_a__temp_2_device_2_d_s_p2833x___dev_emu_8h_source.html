@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Projects/28335/25A/25A_temp/Device/DSP2833x_DevEmu.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('25_a_225_a__temp_2_device_2_d_s_p2833x___dev_emu_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DSP2833x_DevEmu.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="25_a_225_a__temp_2_device_2_d_s_p2833x___dev_emu_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// TI File $Revision: /main/4 $</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Checkin $Date: April 15, 2009   10:05:17 $</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//###########################################################################</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// FILE:   DSP2833x_DevEmu.h</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// TITLE:  DSP2833x Device Emulation Register Definitions.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//###########################################################################</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// $TI Release: 2833x/2823x Header Files V1.32 $</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// $Release Date: June 28, 2010 $</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// $Copyright:</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// Copyright (C) 2009-2024 Texas Instruments Incorporated - http://www.ti.com/</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// Redistribution and use in source and binary forms, with or without </span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// modification, are permitted provided that the following conditions </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// are met:</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//   Redistributions of source code must retain the above copyright </span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//   notice, this list of conditions and the following disclaimer.</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// </span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//   Redistributions in binary form must reproduce the above copyright</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">//   notice, this list of conditions and the following disclaimer in the </span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">//   documentation and/or other materials provided with the   </span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">//   distribution.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// </span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">//   Neither the name of Texas Instruments Incorporated nor the names of</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">//   its contributors may be used to endorse or promote products derived</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">//   from this software without specific prior written permission.</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// </span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS </span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT </span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT </span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, </span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT </span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT </span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE </span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// $</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//###########################################################################</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#ifndef DSP2833x_DEV_EMU_H</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#define DSP2833x_DEV_EMU_H</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">//</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">// Device Emulation Register Bit Definitions:</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">//</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">//</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">// Device Configuration Register Bit Definitions</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">//</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html">DEVICECNF_BITS</a>  {      <span class="comment">// bits  description</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a> <a class="code hl_variable" href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#ae8cef22ca41902e78fc1c91daf13d038">rsvd1</a>:3;           <span class="comment">// 2:0   reserved</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a> <a class="code hl_variable" href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a14af9e21e021a1b3aef54add60dfe524">VMAPS</a>:1;           <span class="comment">// 3     VMAP Status</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a> <a class="code hl_variable" href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a6b6eee8a0524790d8c7cd261635eb8a3">rsvd2</a>:1;           <span class="comment">// 4     reserved</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a> <a class="code hl_variable" href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a538fb89b1cd0fddbb9a5e3e2b0699a21">XRSn</a>:1;            <span class="comment">// 5     XRSn Signal Status</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a> <a class="code hl_variable" href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a16b53bdecc8c80d4598b82594bda9e16">rsvd3</a>:10;          <span class="comment">// 15:6</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a> <a class="code hl_variable" href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a428d8e39930d521963256ce62b99ebf5">rsvd4</a>:3;           <span class="comment">// 18:16</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a> <a class="code hl_variable" href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a2f50c10f77afeb0cf2db8191b085a7ff">ENPROT</a>:1;          <span class="comment">// 19    Enable/Disable pipeline protection</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a> <a class="code hl_variable" href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a82b1403a3f13b7b436d5c44162675380">rsvd5</a>:7;           <span class="comment">// 26:20 reserved</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a> <a class="code hl_variable" href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#aa18539687ea7713cf0386d1d73f32185">TRSTN</a>:1;           <span class="comment">// 27    Status of TRSTn signal</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a> <a class="code hl_variable" href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a3c1be2b3c09702cd4cd791212eb1de97">rsvd6</a>:4;           <span class="comment">// 31:28 reserved</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">union </span><a class="code hl_union" href="union_d_e_v_i_c_e_c_n_f___r_e_g.html">DEVICECNF_REG</a> {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#aba99025e657f892beb7ff31cecf64653">Uint32</a>                 <a class="code hl_variable" href="union_d_e_v_i_c_e_c_n_f___r_e_g.html#acc04b119f54ccbaedc4e712bbec732b3">all</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">struct </span>DEVICECNF_BITS  <a class="code hl_variable" href="union_d_e_v_i_c_e_c_n_f___r_e_g.html#a903d04047b135357d6349d10de0faf89">bit</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>};</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">//</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">// CLASSID</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">//</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_c_l_a_s_s_i_d___b_i_t_s.html">CLASSID_BITS</a>   {   <span class="comment">// bits  description</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a> <a class="code hl_variable" href="struct_c_l_a_s_s_i_d___b_i_t_s.html#a670b6a7265cf7c6fc73b34b10238f44a">CLASSNO</a>:8;     <span class="comment">// 7:0   Class Number</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a> <a class="code hl_variable" href="struct_c_l_a_s_s_i_d___b_i_t_s.html#a247e66d573cba33b18a80365f31f0d33">PARTTYPE</a>:8;    <span class="comment">// 15:8  Part Type</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">union </span><a class="code hl_union" href="union_c_l_a_s_s_i_d___r_e_g.html">CLASSID_REG</a> {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a>               <a class="code hl_variable" href="union_c_l_a_s_s_i_d___r_e_g.html#aeacdc65d1b605acc308ef342700b6e73">all</a>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">struct </span>CLASSID_BITS  <a class="code hl_variable" href="union_c_l_a_s_s_i_d___r_e_g.html#a7eec29a68b26d93dc778896c6b9ec770">bit</a>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>};</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_d_e_v___e_m_u___r_e_g_s.html">DEV_EMU_REGS</a> {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">union </span>DEVICECNF_REG <a class="code hl_variable" href="struct_d_e_v___e_m_u___r_e_g_s.html#a1272c5ac872de25b46ab509646cf11cc">DEVICECNF</a>;  <span class="comment">// device configuration</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">union </span>CLASSID_REG   <a class="code hl_variable" href="struct_d_e_v___e_m_u___r_e_g_s.html#add72da3c7f106a7e43ca2dfeb6dedaa0">CLASSID</a>;    <span class="comment">// Class ID</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a>              <a class="code hl_variable" href="struct_d_e_v___e_m_u___r_e_g_s.html#ab3b9758bbe253258d9544e41fb43a4a8">REVID</a>;      <span class="comment">// Device ID</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a>              <a class="code hl_variable" href="struct_d_e_v___e_m_u___r_e_g_s.html#abe2ed21f7d95d879165f1e919094499b">PROTSTART</a>;  <span class="comment">// Write-Read protection start</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a>              <a class="code hl_variable" href="struct_d_e_v___e_m_u___r_e_g_s.html#a6ffaacba015a4364a4d3af8fb630d5d8">PROTRANGE</a>;  <span class="comment">// Write-Read protection range</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a>              <a class="code hl_variable" href="struct_d_e_v___e_m_u___r_e_g_s.html#a7de067f9d522f024cf1c1bb235348ca9">rsvd2</a>[202];</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>};</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">//</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">// PARTID</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">//</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_p_a_r_t_i_d___b_i_t_s.html">PARTID_BITS</a>   {  <span class="comment">// bits  description</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a> <a class="code hl_variable" href="struct_p_a_r_t_i_d___b_i_t_s.html#aa85a2e08202f6b7ceb915f11cf1afd6b">PARTNO</a>:8;     <span class="comment">// 7:0   Part Number</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a> <a class="code hl_variable" href="struct_p_a_r_t_i_d___b_i_t_s.html#ab5a5d03b6a744544fde167d56ac539e2">PARTTYPE</a>:8;   <span class="comment">// 15:8  Part Type</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>};</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keyword">union </span><a class="code hl_union" href="union_p_a_r_t_i_d___r_e_g.html">PARTID_REG</a> {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <a class="code hl_typedef" href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a>               <a class="code hl_variable" href="union_p_a_r_t_i_d___r_e_g.html#abb8db0d07a4e605bbf7371465b3d00a8">all</a>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keyword">struct </span>PARTID_BITS   <a class="code hl_variable" href="union_p_a_r_t_i_d___r_e_g.html#ac0732748fb6314820c25e008cf228a31">bit</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_p_a_r_t_i_d___r_e_g_s.html">PARTID_REGS</a> {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">union </span>PARTID_REG <a class="code hl_variable" href="struct_p_a_r_t_i_d___r_e_g_s.html#a853a13509e25954cd904039ec17aea15">PARTID</a>; <span class="comment">// Part ID</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>};</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">//</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">// Device Emulation Register References &amp; Function Declarations</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">//</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="keyword">extern</span> <span class="keyword">volatile</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_d_e_v___e_m_u___r_e_g_s.html">DEV_EMU_REGS</a> <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h.html#a3d0f28164317e83008e5a00ec1f460f4">DevEmuRegs</a>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">extern</span> <span class="keyword">volatile</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_p_a_r_t_i_d___r_e_g_s.html">PARTID_REGS</a> <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h.html#aece2adee52c7bfdcb65c24718768e413">PartIdRegs</a>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#endif </span><span class="comment">/* extern &quot;C&quot; */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#endif  </span><span class="comment">// end of DSP2833x_DEV_EMU_H definition</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">//</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">// End of file</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">//</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_html_a3d0f28164317e83008e5a00ec1f460f4"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h.html#a3d0f28164317e83008e5a00ec1f460f4">DevEmuRegs</a></div><div class="ttdeci">volatile struct DEV_EMU_REGS DevEmuRegs</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___global_variable_defs_8c_source.html#l00107">DSP2833x_GlobalVariableDefs.c:107</a></div></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_html_aece2adee52c7bfdcb65c24718768e413"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h.html#aece2adee52c7bfdcb65c24718768e413">PartIdRegs</a></div><div class="ttdeci">volatile struct PARTID_REGS PartIdRegs</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___global_variable_defs_8c_source.html#l00332">DSP2833x_GlobalVariableDefs.c:332</a></div></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x___device_8h_html_a59a9f6be4562c327cbfb4f7e8e18f08b"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#a59a9f6be4562c327cbfb4f7e8e18f08b">Uint16</a></div><div class="ttdeci">unsigned int Uint16</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h_source.html#l00125">DSP2833x_Device.h:125</a></div></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x___device_8h_html_aba99025e657f892beb7ff31cecf64653"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h.html#aba99025e657f892beb7ff31cecf64653">Uint32</a></div><div class="ttdeci">unsigned long Uint32</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___device_8h_source.html#l00126">DSP2833x_Device.h:126</a></div></div>
+<div class="ttc" id="astruct_c_l_a_s_s_i_d___b_i_t_s_html"><div class="ttname"><a href="struct_c_l_a_s_s_i_d___b_i_t_s.html">CLASSID_BITS</a></div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00080">DSP2833x_DevEmu.h:80</a></div></div>
+<div class="ttc" id="astruct_c_l_a_s_s_i_d___b_i_t_s_html_a247e66d573cba33b18a80365f31f0d33"><div class="ttname"><a href="struct_c_l_a_s_s_i_d___b_i_t_s.html#a247e66d573cba33b18a80365f31f0d33">CLASSID_BITS::PARTTYPE</a></div><div class="ttdeci">Uint16 PARTTYPE</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00082">DSP2833x_DevEmu.h:82</a></div></div>
+<div class="ttc" id="astruct_c_l_a_s_s_i_d___b_i_t_s_html_a670b6a7265cf7c6fc73b34b10238f44a"><div class="ttname"><a href="struct_c_l_a_s_s_i_d___b_i_t_s.html#a670b6a7265cf7c6fc73b34b10238f44a">CLASSID_BITS::CLASSNO</a></div><div class="ttdeci">Uint16 CLASSNO</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00081">DSP2833x_DevEmu.h:81</a></div></div>
+<div class="ttc" id="astruct_d_e_v___e_m_u___r_e_g_s_html"><div class="ttname"><a href="struct_d_e_v___e_m_u___r_e_g_s.html">DEV_EMU_REGS</a></div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00090">DSP2833x_DevEmu.h:90</a></div></div>
+<div class="ttc" id="astruct_d_e_v___e_m_u___r_e_g_s_html_a1272c5ac872de25b46ab509646cf11cc"><div class="ttname"><a href="struct_d_e_v___e_m_u___r_e_g_s.html#a1272c5ac872de25b46ab509646cf11cc">DEV_EMU_REGS::DEVICECNF</a></div><div class="ttdeci">union DEVICECNF_REG DEVICECNF</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00091">DSP2833x_DevEmu.h:91</a></div></div>
+<div class="ttc" id="astruct_d_e_v___e_m_u___r_e_g_s_html_a6ffaacba015a4364a4d3af8fb630d5d8"><div class="ttname"><a href="struct_d_e_v___e_m_u___r_e_g_s.html#a6ffaacba015a4364a4d3af8fb630d5d8">DEV_EMU_REGS::PROTRANGE</a></div><div class="ttdeci">Uint16 PROTRANGE</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00095">DSP2833x_DevEmu.h:95</a></div></div>
+<div class="ttc" id="astruct_d_e_v___e_m_u___r_e_g_s_html_a7de067f9d522f024cf1c1bb235348ca9"><div class="ttname"><a href="struct_d_e_v___e_m_u___r_e_g_s.html#a7de067f9d522f024cf1c1bb235348ca9">DEV_EMU_REGS::rsvd2</a></div><div class="ttdeci">Uint16 rsvd2[202]</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00096">DSP2833x_DevEmu.h:96</a></div></div>
+<div class="ttc" id="astruct_d_e_v___e_m_u___r_e_g_s_html_ab3b9758bbe253258d9544e41fb43a4a8"><div class="ttname"><a href="struct_d_e_v___e_m_u___r_e_g_s.html#ab3b9758bbe253258d9544e41fb43a4a8">DEV_EMU_REGS::REVID</a></div><div class="ttdeci">Uint16 REVID</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00093">DSP2833x_DevEmu.h:93</a></div></div>
+<div class="ttc" id="astruct_d_e_v___e_m_u___r_e_g_s_html_abe2ed21f7d95d879165f1e919094499b"><div class="ttname"><a href="struct_d_e_v___e_m_u___r_e_g_s.html#abe2ed21f7d95d879165f1e919094499b">DEV_EMU_REGS::PROTSTART</a></div><div class="ttdeci">Uint16 PROTSTART</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00094">DSP2833x_DevEmu.h:94</a></div></div>
+<div class="ttc" id="astruct_d_e_v___e_m_u___r_e_g_s_html_add72da3c7f106a7e43ca2dfeb6dedaa0"><div class="ttname"><a href="struct_d_e_v___e_m_u___r_e_g_s.html#add72da3c7f106a7e43ca2dfeb6dedaa0">DEV_EMU_REGS::CLASSID</a></div><div class="ttdeci">union CLASSID_REG CLASSID</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00092">DSP2833x_DevEmu.h:92</a></div></div>
+<div class="ttc" id="astruct_d_e_v_i_c_e_c_n_f___b_i_t_s_html"><div class="ttname"><a href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html">DEVICECNF_BITS</a></div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00059">DSP2833x_DevEmu.h:59</a></div></div>
+<div class="ttc" id="astruct_d_e_v_i_c_e_c_n_f___b_i_t_s_html_a14af9e21e021a1b3aef54add60dfe524"><div class="ttname"><a href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a14af9e21e021a1b3aef54add60dfe524">DEVICECNF_BITS::VMAPS</a></div><div class="ttdeci">Uint16 VMAPS</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00061">DSP2833x_DevEmu.h:61</a></div></div>
+<div class="ttc" id="astruct_d_e_v_i_c_e_c_n_f___b_i_t_s_html_a16b53bdecc8c80d4598b82594bda9e16"><div class="ttname"><a href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a16b53bdecc8c80d4598b82594bda9e16">DEVICECNF_BITS::rsvd3</a></div><div class="ttdeci">Uint16 rsvd3</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00064">DSP2833x_DevEmu.h:64</a></div></div>
+<div class="ttc" id="astruct_d_e_v_i_c_e_c_n_f___b_i_t_s_html_a2f50c10f77afeb0cf2db8191b085a7ff"><div class="ttname"><a href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a2f50c10f77afeb0cf2db8191b085a7ff">DEVICECNF_BITS::ENPROT</a></div><div class="ttdeci">Uint16 ENPROT</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00066">DSP2833x_DevEmu.h:66</a></div></div>
+<div class="ttc" id="astruct_d_e_v_i_c_e_c_n_f___b_i_t_s_html_a3c1be2b3c09702cd4cd791212eb1de97"><div class="ttname"><a href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a3c1be2b3c09702cd4cd791212eb1de97">DEVICECNF_BITS::rsvd6</a></div><div class="ttdeci">Uint16 rsvd6</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00069">DSP2833x_DevEmu.h:69</a></div></div>
+<div class="ttc" id="astruct_d_e_v_i_c_e_c_n_f___b_i_t_s_html_a428d8e39930d521963256ce62b99ebf5"><div class="ttname"><a href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a428d8e39930d521963256ce62b99ebf5">DEVICECNF_BITS::rsvd4</a></div><div class="ttdeci">Uint16 rsvd4</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00065">DSP2833x_DevEmu.h:65</a></div></div>
+<div class="ttc" id="astruct_d_e_v_i_c_e_c_n_f___b_i_t_s_html_a538fb89b1cd0fddbb9a5e3e2b0699a21"><div class="ttname"><a href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a538fb89b1cd0fddbb9a5e3e2b0699a21">DEVICECNF_BITS::XRSn</a></div><div class="ttdeci">Uint16 XRSn</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00063">DSP2833x_DevEmu.h:63</a></div></div>
+<div class="ttc" id="astruct_d_e_v_i_c_e_c_n_f___b_i_t_s_html_a6b6eee8a0524790d8c7cd261635eb8a3"><div class="ttname"><a href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a6b6eee8a0524790d8c7cd261635eb8a3">DEVICECNF_BITS::rsvd2</a></div><div class="ttdeci">Uint16 rsvd2</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00062">DSP2833x_DevEmu.h:62</a></div></div>
+<div class="ttc" id="astruct_d_e_v_i_c_e_c_n_f___b_i_t_s_html_a82b1403a3f13b7b436d5c44162675380"><div class="ttname"><a href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#a82b1403a3f13b7b436d5c44162675380">DEVICECNF_BITS::rsvd5</a></div><div class="ttdeci">Uint16 rsvd5</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00067">DSP2833x_DevEmu.h:67</a></div></div>
+<div class="ttc" id="astruct_d_e_v_i_c_e_c_n_f___b_i_t_s_html_aa18539687ea7713cf0386d1d73f32185"><div class="ttname"><a href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#aa18539687ea7713cf0386d1d73f32185">DEVICECNF_BITS::TRSTN</a></div><div class="ttdeci">Uint16 TRSTN</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00068">DSP2833x_DevEmu.h:68</a></div></div>
+<div class="ttc" id="astruct_d_e_v_i_c_e_c_n_f___b_i_t_s_html_ae8cef22ca41902e78fc1c91daf13d038"><div class="ttname"><a href="struct_d_e_v_i_c_e_c_n_f___b_i_t_s.html#ae8cef22ca41902e78fc1c91daf13d038">DEVICECNF_BITS::rsvd1</a></div><div class="ttdeci">Uint16 rsvd1</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00060">DSP2833x_DevEmu.h:60</a></div></div>
+<div class="ttc" id="astruct_p_a_r_t_i_d___b_i_t_s_html"><div class="ttname"><a href="struct_p_a_r_t_i_d___b_i_t_s.html">PARTID_BITS</a></div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00102">DSP2833x_DevEmu.h:102</a></div></div>
+<div class="ttc" id="astruct_p_a_r_t_i_d___b_i_t_s_html_aa85a2e08202f6b7ceb915f11cf1afd6b"><div class="ttname"><a href="struct_p_a_r_t_i_d___b_i_t_s.html#aa85a2e08202f6b7ceb915f11cf1afd6b">PARTID_BITS::PARTNO</a></div><div class="ttdeci">Uint16 PARTNO</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00103">DSP2833x_DevEmu.h:103</a></div></div>
+<div class="ttc" id="astruct_p_a_r_t_i_d___b_i_t_s_html_ab5a5d03b6a744544fde167d56ac539e2"><div class="ttname"><a href="struct_p_a_r_t_i_d___b_i_t_s.html#ab5a5d03b6a744544fde167d56ac539e2">PARTID_BITS::PARTTYPE</a></div><div class="ttdeci">Uint16 PARTTYPE</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00104">DSP2833x_DevEmu.h:104</a></div></div>
+<div class="ttc" id="astruct_p_a_r_t_i_d___r_e_g_s_html"><div class="ttname"><a href="struct_p_a_r_t_i_d___r_e_g_s.html">PARTID_REGS</a></div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00112">DSP2833x_DevEmu.h:112</a></div></div>
+<div class="ttc" id="astruct_p_a_r_t_i_d___r_e_g_s_html_a853a13509e25954cd904039ec17aea15"><div class="ttname"><a href="struct_p_a_r_t_i_d___r_e_g_s.html#a853a13509e25954cd904039ec17aea15">PARTID_REGS::PARTID</a></div><div class="ttdeci">union PARTID_REG PARTID</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00113">DSP2833x_DevEmu.h:113</a></div></div>
+<div class="ttc" id="aunion_c_l_a_s_s_i_d___r_e_g_html"><div class="ttname"><a href="union_c_l_a_s_s_i_d___r_e_g.html">CLASSID_REG</a></div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00085">DSP2833x_DevEmu.h:85</a></div></div>
+<div class="ttc" id="aunion_c_l_a_s_s_i_d___r_e_g_html_a7eec29a68b26d93dc778896c6b9ec770"><div class="ttname"><a href="union_c_l_a_s_s_i_d___r_e_g.html#a7eec29a68b26d93dc778896c6b9ec770">CLASSID_REG::bit</a></div><div class="ttdeci">struct CLASSID_BITS bit</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00087">DSP2833x_DevEmu.h:87</a></div></div>
+<div class="ttc" id="aunion_c_l_a_s_s_i_d___r_e_g_html_aeacdc65d1b605acc308ef342700b6e73"><div class="ttname"><a href="union_c_l_a_s_s_i_d___r_e_g.html#aeacdc65d1b605acc308ef342700b6e73">CLASSID_REG::all</a></div><div class="ttdeci">Uint16 all</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00086">DSP2833x_DevEmu.h:86</a></div></div>
+<div class="ttc" id="aunion_d_e_v_i_c_e_c_n_f___r_e_g_html"><div class="ttname"><a href="union_d_e_v_i_c_e_c_n_f___r_e_g.html">DEVICECNF_REG</a></div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00072">DSP2833x_DevEmu.h:72</a></div></div>
+<div class="ttc" id="aunion_d_e_v_i_c_e_c_n_f___r_e_g_html_a903d04047b135357d6349d10de0faf89"><div class="ttname"><a href="union_d_e_v_i_c_e_c_n_f___r_e_g.html#a903d04047b135357d6349d10de0faf89">DEVICECNF_REG::bit</a></div><div class="ttdeci">struct DEVICECNF_BITS bit</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00074">DSP2833x_DevEmu.h:74</a></div></div>
+<div class="ttc" id="aunion_d_e_v_i_c_e_c_n_f___r_e_g_html_acc04b119f54ccbaedc4e712bbec732b3"><div class="ttname"><a href="union_d_e_v_i_c_e_c_n_f___r_e_g.html#acc04b119f54ccbaedc4e712bbec732b3">DEVICECNF_REG::all</a></div><div class="ttdeci">Uint32 all</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00073">DSP2833x_DevEmu.h:73</a></div></div>
+<div class="ttc" id="aunion_p_a_r_t_i_d___r_e_g_html"><div class="ttname"><a href="union_p_a_r_t_i_d___r_e_g.html">PARTID_REG</a></div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00107">DSP2833x_DevEmu.h:107</a></div></div>
+<div class="ttc" id="aunion_p_a_r_t_i_d___r_e_g_html_abb8db0d07a4e605bbf7371465b3d00a8"><div class="ttname"><a href="union_p_a_r_t_i_d___r_e_g.html#abb8db0d07a4e605bbf7371465b3d00a8">PARTID_REG::all</a></div><div class="ttdeci">Uint16 all</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00108">DSP2833x_DevEmu.h:108</a></div></div>
+<div class="ttc" id="aunion_p_a_r_t_i_d___r_e_g_html_ac0732748fb6314820c25e008cf228a31"><div class="ttname"><a href="union_p_a_r_t_i_d___r_e_g.html#ac0732748fb6314820c25e008cf228a31">PARTID_REG::bit</a></div><div class="ttdeci">struct PARTID_BITS bit</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___dev_emu_8h_source.html#l00109">DSP2833x_DevEmu.h:109</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_5506101b76382283adbe76592e28ea78.html">Projects</a></li><li class="navelem"><a href="dir_7dd5ed44a494c219ca67de2f65681ad1.html">28335</a></li><li class="navelem"><a href="dir_e496776680680bb04a6f9997a6ad8319.html">25A</a></li><li class="navelem"><a href="dir_55ff4d53dd4aa07074c903f0b7ffef05.html">25A_temp</a></li><li class="navelem"><a href="dir_aed6981d811e1464d4ad78961a3011d4.html">Device</a></li><li class="navelem"><a href="25_a_225_a__temp_2_device_2_d_s_p2833x___dev_emu_8h.html">DSP2833x_DevEmu.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

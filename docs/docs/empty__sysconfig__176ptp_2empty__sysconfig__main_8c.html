@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Projects/28P650/empty_sysconfig_176ptp/empty_sysconfig_main.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('empty__sysconfig__176ptp_2empty__sysconfig__main_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">empty_sysconfig_main.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;driverlib.h&quot;</code><br />
+<code>#include &quot;device.h&quot;</code><br />
+<code>#include &quot;board.h&quot;</code><br />
+<code>#include &quot;c2000ware_libraries.h&quot;</code><br />
+<code>#include &quot;stdint.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+empty_sysconfig_main.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="empty__sysconfig__176ptp_2empty__sysconfig__main_8c__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_projects_228_p650_2empty__sysconfig__176ptp_2empty__sysconfig__main_8c" loading="lazy" alt=""/></div>
+<map name="a_n_u_e_d_c-_core_2_projects_228_p650_2empty__sysconfig__176ptp_2empty__sysconfig__main_8c" id="a_n_u_e_d_c-_core_2_projects_228_p650_2empty__sysconfig__176ptp_2empty__sysconfig__main_8c">
+<area shape="rect" title=" " alt="" coords="129,5,342,67"/>
+<area shape="rect" title=" " alt="" coords="5,115,85,143"/>
+<area shape="poly" title=" " alt="" coords="173,70,88,110,85,106,171,65"/>
+<area shape="rect" title=" " alt="" coords="109,115,178,143"/>
+<area shape="poly" title=" " alt="" coords="207,69,170,106,166,102,203,66"/>
+<area shape="rect" title=" " alt="" coords="203,115,268,143"/>
+<area shape="poly" title=" " alt="" coords="238,67,238,99,233,99,233,67"/>
+<area shape="rect" title=" " alt="" coords="292,115,440,143"/>
+<area shape="poly" title=" " alt="" coords="281,65,337,104,334,108,278,70"/>
+<area shape="rect" title=" " alt="" coords="464,115,527,143"/>
+<area shape="poly" title=" " alt="" coords="323,65,450,109,448,114,322,70"/>
+</map>
+</div>
+</div>
+<p><a href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a6288eba0f8e8ad3ab1544ad731eb7667" id="r_a6288eba0f8e8ad3ab1544ad731eb7667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6288eba0f8e8ad3ab1544ad731eb7667">main</a> (void)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ga5a0f4b49baab36db0c5e1922cdbc6c71" id="r_ga5a0f4b49baab36db0c5e1922cdbc6c71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_s_p___r_f_f_t___f32.html#ga5a0f4b49baab36db0c5e1922cdbc6c71">input</a> [32]</td></tr>
+<tr class="memdesc:ga5a0f4b49baab36db0c5e1922cdbc6c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">输入数组  <br /></td></tr>
+<tr class="memitem:gaf41db2f2a8a877a4d60944cafafac70c" id="r_gaf41db2f2a8a877a4d60944cafafac70c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_s_p___r_f_f_t___f32.html#gaf41db2f2a8a877a4d60944cafafac70c">output</a> [32]</td></tr>
+<tr class="memdesc:gaf41db2f2a8a877a4d60944cafafac70c"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出数组  <br /></td></tr>
+<tr class="memitem:a34d1bb5384516cdb2e67aede4bf0567d" id="r_a34d1bb5384516cdb2e67aede4bf0567d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34d1bb5384516cdb2e67aede4bf0567d">mag</a> [32]</td></tr>
+<tr class="memitem:af1a250da9c33780f1cf796e2716838a3" id="r_af1a250da9c33780f1cf796e2716838a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1a250da9c33780f1cf796e2716838a3">phase</a> [32]</td></tr>
+<tr class="memitem:a58be690ed24c7f7aa46457726b274bb0" id="r_a58be690ed24c7f7aa46457726b274bb0"><td class="memItemLeft" align="right" valign="top">float32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58be690ed24c7f7aa46457726b274bb0">arr1</a> = <a class="el" href="group___d_s_p___r_f_f_t___f32.html#ga5a0f4b49baab36db0c5e1922cdbc6c71">input</a></td></tr>
+<tr class="memitem:a6ebc35cd8a3d420c57e5435cea19b390" id="r_a6ebc35cd8a3d420c57e5435cea19b390"><td class="memItemLeft" align="right" valign="top">float32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ebc35cd8a3d420c57e5435cea19b390">arr2</a> = <a class="el" href="group___d_s_p___r_f_f_t___f32.html#gaf41db2f2a8a877a4d60944cafafac70c">output</a></td></tr>
+<tr class="memitem:ad2ed843026c9a0122ac886b83c07904f" id="r_ad2ed843026c9a0122ac886b83c07904f"><td class="memItemLeft" align="right" valign="top">float32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2ed843026c9a0122ac886b83c07904f">arr3</a> = <a class="el" href="#a34d1bb5384516cdb2e67aede4bf0567d">mag</a></td></tr>
+<tr class="memitem:a80031db6b6c3a4dc65368ff8a3090050" id="r_a80031db6b6c3a4dc65368ff8a3090050"><td class="memItemLeft" align="right" valign="top">float32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80031db6b6c3a4dc65368ff8a3090050">arr4</a> = <a class="el" href="_r_f_f_t__f32__phase___t_m_u0_8asm.html#a0385929a5c757b177a4c3116b41669d4">phase</a></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="a6288eba0f8e8ad3ab1544ad731eb7667" name="a6288eba0f8e8ad3ab1544ad731eb7667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6288eba0f8e8ad3ab1544ad731eb7667">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html">empty_sysconfig_main.c</a> 第 <a class="el" href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html#l00076">76</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">变量说明</h2>
+<a id="a58be690ed24c7f7aa46457726b274bb0" name="a58be690ed24c7f7aa46457726b274bb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58be690ed24c7f7aa46457726b274bb0">&#9670;&#160;</a></span>arr1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t* arr1 = <a class="el" href="group___d_s_p___r_f_f_t___f32.html#ga5a0f4b49baab36db0c5e1922cdbc6c71">input</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html">empty_sysconfig_main.c</a> 第 <a class="el" href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html#l00066">66</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6ebc35cd8a3d420c57e5435cea19b390" name="a6ebc35cd8a3d420c57e5435cea19b390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ebc35cd8a3d420c57e5435cea19b390">&#9670;&#160;</a></span>arr2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t* arr2 = <a class="el" href="group___d_s_p___r_f_f_t___f32.html#gaf41db2f2a8a877a4d60944cafafac70c">output</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html">empty_sysconfig_main.c</a> 第 <a class="el" href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html#l00067">67</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad2ed843026c9a0122ac886b83c07904f" name="ad2ed843026c9a0122ac886b83c07904f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2ed843026c9a0122ac886b83c07904f">&#9670;&#160;</a></span>arr3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t* arr3 = <a class="el" href="#a34d1bb5384516cdb2e67aede4bf0567d">mag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html">empty_sysconfig_main.c</a> 第 <a class="el" href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html#l00068">68</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a80031db6b6c3a4dc65368ff8a3090050" name="a80031db6b6c3a4dc65368ff8a3090050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80031db6b6c3a4dc65368ff8a3090050">&#9670;&#160;</a></span>arr4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t* arr4 = <a class="el" href="_r_f_f_t__f32__phase___t_m_u0_8asm.html#a0385929a5c757b177a4c3116b41669d4">phase</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html">empty_sysconfig_main.c</a> 第 <a class="el" href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html#l00069">69</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a34d1bb5384516cdb2e67aede4bf0567d" name="a34d1bb5384516cdb2e67aede4bf0567d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d1bb5384516cdb2e67aede4bf0567d">&#9670;&#160;</a></span>mag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> mag[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html">empty_sysconfig_main.c</a> 第 <a class="el" href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html#l00063">63</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af1a250da9c33780f1cf796e2716838a3" name="af1a250da9c33780f1cf796e2716838a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a250da9c33780f1cf796e2716838a3">&#9670;&#160;</a></span>phase</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#a41662ac3d774db8b5659fc6abdd23dba">float</a> phase[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html">empty_sysconfig_main.c</a> 第 <a class="el" href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_5506101b76382283adbe76592e28ea78.html">Projects</a></li><li class="navelem"><a href="dir_46c2e229bff9ef82eabc584766b7a48e.html">28P650</a></li><li class="navelem"><a href="dir_dbab58d546bf7bc33e08c866a7792696.html">empty_sysconfig_176ptp</a></li><li class="navelem"><a href="empty__sysconfig__176ptp_2empty__sysconfig__main_8c.html">empty_sysconfig_main.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

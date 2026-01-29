@@ -1,0 +1,7 @@
+<map id="SOGI_Run" name="SOGI_Run">
+<area shape="rect" id="Node000001" title="Run the SPLL_1PH_SOGI module" alt="" coords="5,32,86,60"/>
+<area shape="rect" id="Node000002" href="$22_a_2_p_q_2_library_2c28x__fpu__fastrts_8h.html#a45779bd5170323e138055c4f13a42ecd" title="Single&#45;Precision Floating&#45;Point Cosine (radians)" alt="" coords="134,5,178,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,33,118,26,119,31,87,39"/>
+<area shape="rect" id="Node000003" href="$22_a_2_p_q_2_library_2c28x__fpu__fastrts_8h.html#a84f7c882b1dbdb63e0dca4f331ee5f84" title="Single&#45;Precision Floating&#45;Point Sine (radians)" alt="" coords="135,57,176,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="87,53,121,61,120,66,86,58"/>
+</map>

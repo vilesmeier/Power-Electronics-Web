@@ -1,0 +1,9 @@
+<map id="InitSciGpio" name="InitSciGpio">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,57,88,85"/>
+<area shape="rect" id="Node000002" href="$22_a_2_p_q_2_device_2_d_s_p2833x___sci_8c.html#a5d88451e2992ce791bdd51a1068433ac" title=" " alt="" coords="136,5,225,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,54,127,37,129,42,85,59"/>
+<area shape="rect" id="Node000003" href="$22_a_2_p_q_2_device_2_d_s_p2833x___sci_8c.html#ab93500cf9d5b8a790899f20b65efe851" title=" " alt="" coords="136,57,225,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,68,120,68,120,74,88,74"/>
+<area shape="rect" id="Node000004" href="$22_a_2_p_q_2_device_2_d_s_p2833x___sci_8c.html#a68e4e862265d2fad9b0c982941ec6d07" title=" " alt="" coords="136,109,224,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="85,83,129,101,127,106,83,88"/>
+</map>

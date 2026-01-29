@@ -1,0 +1,11 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,55,60"/>
+<area shape="rect" id="Node000002" href="$group___c_t_r_l___v_o_f_a.html#ga77c9aea85bbaf41bbce8fc26c9cf846e" title="初始化结构体" alt="" coords="104,5,184,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,38,88,29,89,35,56,43"/>
+<area shape="rect" id="Node000003" href="$group___c_t_r_l___v_o_f_a.html#ga29a019e9a9005773e370e6b2013f60be" title="使用 Justfloat 协议, 向 VOFA 上位机发送数据" alt="" coords="103,57,185,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,49,88,56,87,61,54,54"/>
+<area shape="rect" id="Node000004" href="$group___d_r_v___f28335___u_a_r_t.html#gab0704d434e9b7a441faa3aac78d037b3" title="send data to txfifo" alt="" coords="233,57,369,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="185,68,218,68,218,74,185,74"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___f28335___u_a_r_t.html#ga4c86107cd49c2644ef6abd5d0c6f7194" title="Send Char" alt="" coords="417,57,534,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="370,68,402,68,402,74,370,74"/>
+</map>

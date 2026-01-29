@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Projects/28335/3ph_Inverter/SVPWM/Device/DSP2833x_usDelay.asm 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('3ph___inverter_2_s_v_p_w_m_2_device_2_d_s_p2833x__us_delay_8asm_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DSP2833x_usDelay.asm</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="3ph___inverter_2_s_v_p_w_m_2_device_2_d_s_p2833x__us_delay_8asm.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>;<span class="comment">// TI File $Revision: /main/4 $</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>;<span class="comment">// Checkin $Date: July 30, 2007   10:28:57 $</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>;<span class="comment">//###########################################################################</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>;<span class="comment">// FILE:  DSP2833x_usDelay.asm</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>;<span class="comment">// TITLE: Simple delay function</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>;<span class="comment">// DESCRIPTION:</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>;<span class="comment">//  </span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>;<span class="comment">// This is a simple delay function that can be used to insert a specified</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>;<span class="comment">// delay into code.  </span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>;<span class="comment">// </span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>;<span class="comment">// This function is only accurate if executed from internal zero-waitstate</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>;<span class="comment">// SARAM. If it is executed from waitstate memory then the delay will be</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>;<span class="comment">// longer then specified. </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>;<span class="comment">// </span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>;<span class="comment">// To use this function:</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>;<span class="comment">//  1 - update the CPU clock speed in the DSP2833x_Examples.h</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>;<span class="comment">//    file. For example:</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>;<span class="comment">//    #define CPU_RATE 6.667L // for a 150MHz CPU clock speed</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>;<span class="comment">//    or #define CPU_RATE 10.000L // for a 100MHz CPU clock speed </span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>;<span class="comment">//  2 - Call this function by using the DELAY_US(A) macro</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>;<span class="comment">//    that is defined in the DSP2833x_Examples.h file.  This macro</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>;<span class="comment">//    will convert the number of microseconds specified</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>;<span class="comment">//    into a loop count for use with this function.  </span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>;<span class="comment">//    This count will be based on the CPU frequency you specify.</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>;<span class="comment">//  3 - For the most accurate delay </span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>;<span class="comment">//    - Execute this function in 0 waitstate RAM.  </span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>;<span class="comment">//    - Disable interrupts before calling the function</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>;<span class="comment">//      If you do not disable interrupts, then think of</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>;<span class="comment">//      this as an &quot;at least&quot; delay function as the actual</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>;<span class="comment">//      delay may be longer. </span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>;<span class="comment">//  The C assembly call from the DELAY_US(time) macro will</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>;<span class="comment">//  look as follows: </span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>;<span class="comment">//  extern void Delay(long LoopCount);                </span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>;<span class="comment">//        MOV   AL,#LowLoopCount</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>;<span class="comment">//        MOV   AH,#HighLoopCount</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>;<span class="comment">//        LCR   _Delay</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>;<span class="comment">//  Or as follows (if count is less then 16-bits):</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>;<span class="comment">//        MOV   ACC,#LoopCount</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>;<span class="comment">//        LCR   _Delay</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>;<span class="comment">//###########################################################################</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>;<span class="comment">// $TI Release: 2833x/2823x Header Files V1.32 $</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>;<span class="comment">// $Release Date: June 28, 2010 $</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>;<span class="comment">// $Copyright:</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>;<span class="comment">// Copyright (C) 2009-2023 Texas Instruments Incorporated - http://www.ti.com/</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>;<span class="comment">//</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>;<span class="comment">// Redistribution and use in source and binary forms, with or without </span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>;<span class="comment">// modification, are permitted provided that the following conditions </span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>;<span class="comment">// are met:</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>;<span class="comment">// </span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>;<span class="comment">//   Redistributions of source code must retain the above copyright </span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>;<span class="comment">//   notice, this list of conditions and the following disclaimer.</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>;<span class="comment">// </span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>;<span class="comment">//   Redistributions in binary form must reproduce the above copyright</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>;<span class="comment">//   notice, this list of conditions and the following disclaimer in the </span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>;<span class="comment">//   documentation and/or other materials provided with the   </span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>;<span class="comment">//   distribution.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>;<span class="comment">// </span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>;<span class="comment">//   Neither the name of Texas Instruments Incorporated nor the names of</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>;<span class="comment">//   its contributors may be used to endorse or promote products derived</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>;<span class="comment">//   from this software without specific prior written permission.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>;<span class="comment">// </span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>;<span class="comment">// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS </span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>;<span class="comment">// &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT </span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>;<span class="comment">// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>;<span class="comment">// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT </span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>;<span class="comment">// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, </span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>;<span class="comment">// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT </span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>;<span class="comment">// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>;<span class="comment">// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>;<span class="comment">// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT </span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>;<span class="comment">// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE </span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>;<span class="comment">// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>;<span class="comment">// $</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>;<span class="comment">//###########################################################################  </span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>       .def <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#ac650af9a25454b79b49b1a6acddade2e">_DSP28x_usDelay</a></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>       </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="3ph___inverter_2_s_v_p_w_m_2_device_2_d_s_p2833x__us_delay_8asm.html#a1f211cebe7f5ed53bd4d5f255ca6fb41">   91</a></span>       .cdecls <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#a1f211cebe7f5ed53bd4d5f255ca6fb41">LIST</a> ;;Used <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713">to</a> populate __TI_COMPILER_VERSION__ <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#a335b31f5cf19021efefe47e9668719d7">macro</a></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>       %{</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>       %}</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>       .if __TI_COMPILER_VERSION__</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>       .if __TI_COMPILER_VERSION__ &gt;= 15009000</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>       .sect <span class="stringliteral">&quot;.TI.ramfunc&quot;</span>      ;;Used with compiler v15.9.0 <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x___a_d_c__cal_8asm.html#a50dccbe0d3bee2b772111fe5cd93bbd2">and</a> newer</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>       .else</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="3ph___inverter_2_s_v_p_w_m_2_device_2_d_s_p2833x__us_delay_8asm.html#a2572aaf67f70544e40d61cb4c99bdc4a">   99</a></span>       .sect <span class="stringliteral">&quot;ramfuncs&quot;</span>         ;;Used with compilers older than v15.9.0</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>       .endif</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>       .endif</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        .global  __DSP28x_usDelay</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="3ph___inverter_2_s_v_p_w_m_2_device_2_d_s_p2833x__us_delay_8asm.html#ac650af9a25454b79b49b1a6acddade2e">  104</a></span><a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#ac650af9a25454b79b49b1a6acddade2e">_DSP28x_usDelay</a>:</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        SUB    <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a4263afdd1577a10986ccfc924191c6fa">ACC</a>,#1</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="3ph___inverter_2_s_v_p_w_m_2_device_2_d_s_p2833x__us_delay_8asm.html#a7f563bd646361c77a4de49ac55eba41b">  106</a></span>        BF     <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#ac650af9a25454b79b49b1a6acddade2e">_DSP28x_usDelay</a>,<a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#ada3eb49c40b1443adc52ff8838062896">GEQ</a>    ;; Loop <span class="keywordflow">if</span> <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a4263afdd1577a10986ccfc924191c6fa">ACC</a> &gt;= 0</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x___a_d_c__cal_8asm.html#a2041033c0c8f35b0f1d6915f2f606385">LRETR</a> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="3ph___inverter_2_s_v_p_w_m_2_device_2_d_s_p2833x__us_delay_8asm.html#ab6a02918cbfde80af965e9c1323d44f4">  109</a></span>;There <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a65213ad6243ab615923ff6dbf4a40e62">is</a> a 9/10 <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#ac575de2f74001cdf8519cd6321b08ab2">cycle</a> overhead <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x___a_d_c__cal_8asm.html#a50dccbe0d3bee2b772111fe5cd93bbd2">and</a> each <a class="code hl_variable" href="_r_f_f_t__f32__win_8asm.html#a8189228eda9278a713b5b59b5f7d6531">loop</a></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="3ph___inverter_2_s_v_p_w_m_2_device_2_d_s_p2833x__us_delay_8asm.html#aae6174d788e6408825adab10d87a2d29">  110</a></span>;takes five cycles. The <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#a913ea98436591763bcf5b585e58fa66e">LoopCount</a> <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a65213ad6243ab615923ff6dbf4a40e62">is</a> given <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#aae6174d788e6408825adab10d87a2d29">by</a></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="3ph___inverter_2_s_v_p_w_m_2_device_2_d_s_p2833x__us_delay_8asm.html#ae1518d35b1c0513237e46eedee27c28b">  111</a></span>;<a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a21b0e46c20558e7fe3cda6ff07e0455a">the</a> following <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#ae1518d35b1c0513237e46eedee27c28b">formula</a>:</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="3ph___inverter_2_s_v_p_w_m_2_device_2_d_s_p2833x__us_delay_8asm.html#a2c7b00bed9caec0ee32d77d076e013ef">  112</a></span>;  <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#a2c7b00bed9caec0ee32d77d076e013ef">DELAY_CPU_CYCLES</a> = 9 + 5*<a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#a913ea98436591763bcf5b585e58fa66e">LoopCount</a></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="3ph___inverter_2_s_v_p_w_m_2_device_2_d_s_p2833x__us_delay_8asm.html#a913ea98436591763bcf5b585e58fa66e">  113</a></span>; <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#a913ea98436591763bcf5b585e58fa66e">LoopCount</a> = (<a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#a2c7b00bed9caec0ee32d77d076e013ef">DELAY_CPU_CYCLES</a> - 9) / 5</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="3ph___inverter_2_s_v_p_w_m_2_device_2_d_s_p2833x__us_delay_8asm.html#a07233b920c0b04ce6bd15608cfbfa962">  114</a></span>; The <a class="code hl_variable" href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#a335b31f5cf19021efefe47e9668719d7">macro</a> <a class="code hl_define" href="22_a_2_p_q_2_device_2_d_s_p2833x___examples_8h.html#a11c15af76fe9b84a24d47ae125efe3d1">DELAY_US</a>(A) performs <span class="keyword">this</span> calculation <span class="keywordflow">for</span> <a class="code hl_variable" href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a7a6f21b2212104c10e2a9f719a98b965">you</a></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>;<span class="comment">//===========================================================================</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>;<span class="comment">// End of file.</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>;<span class="comment">//===========================================================================</span></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x___a_d_c__cal_8asm_html_a2041033c0c8f35b0f1d6915f2f606385"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x___a_d_c__cal_8asm.html#a2041033c0c8f35b0f1d6915f2f606385">LRETR</a></div><div class="ttdeci">sect adc_cal _ADC_cal MOVW LRETR</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___a_d_c__cal_8asm_source.html#l00073">DSP2833x_ADC_cal.asm:74</a></div></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x___a_d_c__cal_8asm_html_a50dccbe0d3bee2b772111fe5cd93bbd2"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x___a_d_c__cal_8asm.html#a50dccbe0d3bee2b772111fe5cd93bbd2">and</a></div><div class="ttdeci">_ADC_cal Copies device specific calibration data into ADCREFSEL and</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___a_d_c__cal_8asm_source.html#l00011">DSP2833x_ADC_cal.asm:12</a></div></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x___examples_8h_html_a11c15af76fe9b84a24d47ae125efe3d1"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x___examples_8h.html#a11c15af76fe9b84a24d47ae125efe3d1">DELAY_US</a></div><div class="ttdeci">#define DELAY_US(A)</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x___examples_8h_source.html#l00155">DSP2833x_Examples.h:155</a></div></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_html_a1f211cebe7f5ed53bd4d5f255ca6fb41"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#a1f211cebe7f5ed53bd4d5f255ca6fb41">LIST</a></div><div class="ttdeci">def _DSP28x_usDelay cdecls LIST</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_source.html#l00091">DSP2833x_usDelay.asm:91</a></div></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_html_a2c7b00bed9caec0ee32d77d076e013ef"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#a2c7b00bed9caec0ee32d77d076e013ef">DELAY_CPU_CYCLES</a></div><div class="ttdeci">DELAY_CPU_CYCLES</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_source.html#l00112">DSP2833x_usDelay.asm:112</a></div></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_html_a335b31f5cf19021efefe47e9668719d7"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#a335b31f5cf19021efefe47e9668719d7">macro</a></div><div class="ttdeci">Used to populate __TI_COMPILER_VERSION__ macro</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_source.html#l00091">DSP2833x_usDelay.asm:92</a></div></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_html_a913ea98436591763bcf5b585e58fa66e"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#a913ea98436591763bcf5b585e58fa66e">LoopCount</a></div><div class="ttdeci">LoopCount</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_source.html#l00113">DSP2833x_usDelay.asm:113</a></div></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_html_aae6174d788e6408825adab10d87a2d29"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#aae6174d788e6408825adab10d87a2d29">by</a></div><div class="ttdeci">takes five cycles The LoopCount is given by</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_source.html#l00110">DSP2833x_usDelay.asm:111</a></div></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_html_ac650af9a25454b79b49b1a6acddade2e"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#ac650af9a25454b79b49b1a6acddade2e">_DSP28x_usDelay</a></div><div class="ttdeci">Used with compilers older than v15 endif endif global __DSP28x_usDelay _DSP28x_usDelay</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_source.html#l00104">DSP2833x_usDelay.asm:105</a></div></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_html_ada3eb49c40b1443adc52ff8838062896"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#ada3eb49c40b1443adc52ff8838062896">GEQ</a></div><div class="ttdeci">Used with compilers older than v15 endif endif global __DSP28x_usDelay BF GEQ</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_source.html#l00106">DSP2833x_usDelay.asm:106</a></div></div>
+<div class="ttc" id="a22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_html_ae1518d35b1c0513237e46eedee27c28b"><div class="ttname"><a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm.html#ae1518d35b1c0513237e46eedee27c28b">formula</a></div><div class="ttdeci">the following formula</div><div class="ttdef"><b>定义</b> <a href="22_a_2_p_q_2_device_2_d_s_p2833x__us_delay_8asm_source.html#l00111">DSP2833x_usDelay.asm:112</a></div></div>
+<div class="ttc" id="a_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm_html_a21ef755afaba4e6135f04b7a2e129713"><div class="ttname"><a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#a21ef755afaba4e6135f04b7a2e129713">to</a></div><div class="ttdeci">This function computes a real FFT The input buffer must be aligned to</div><div class="ttdef"><b>定义</b> <a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm_source.html#l00009">RFFT_f32.asm:10</a></div></div>
+<div class="ttc" id="a_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm_html_ac575de2f74001cdf8519cd6321b08ab2"><div class="ttname"><a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm.html#ac575de2f74001cdf8519cd6321b08ab2">cycle</a></div><div class="ttdeci">then use the RFFT_f32u function Using this function will reduce cycle</div><div class="ttdef"><b>定义</b> <a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32_8asm_source.html#l00012">RFFT_f32.asm:13</a></div></div>
+<div class="ttc" id="a_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm_html_a21b0e46c20558e7fe3cda6ff07e0455a"><div class="ttname"><a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a21b0e46c20558e7fe3cda6ff07e0455a">the</a></div><div class="ttdeci">Utilize this software subject to the terms herein With respect to the</div><div class="ttdef"><b>定义</b> <a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm_source.html#l00089">RFFT_f32_mag.asm:90</a></div></div>
+<div class="ttc" id="a_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm_html_a4263afdd1577a10986ccfc924191c6fa"><div class="ttname"><a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a4263afdd1577a10986ccfc924191c6fa">ACC</a></div><div class="ttdeci">Calculate pointer to imaginary part results MOV ACC</div><div class="ttdef"><b>定义</b> <a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm_source.html#l00158">RFFT_f32_mag.asm:158</a></div></div>
+<div class="ttc" id="a_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm_html_a65213ad6243ab615923ff6dbf4a40e62"><div class="ttname"><a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a65213ad6243ab615923ff6dbf4a40e62">is</a></div><div class="ttdeci">*No reverse or disassembly of this software is</div><div class="ttdef"><b>定义</b> <a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm_source.html#l00105">RFFT_f32_mag.asm:106</a></div></div>
+<div class="ttc" id="a_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm_html_a7a6f21b2212104c10e2a9f719a98b965"><div class="ttname"><a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm.html#a7a6f21b2212104c10e2a9f719a98b965">you</a></div><div class="ttdeci">!If software source code is provided to you</div><div class="ttdef"><b>定义</b> <a href="_code_2_control___driver_2rfft_2fpu32__lib_2_r_f_f_t__f32__mag_8asm_source.html#l00112">RFFT_f32_mag.asm:112</a></div></div>
+<div class="ttc" id="a_r_f_f_t__f32__win_8asm_html_a8189228eda9278a713b5b59b5f7d6531"><div class="ttname"><a href="_r_f_f_t__f32__win_8asm.html#a8189228eda9278a713b5b59b5f7d6531">loop</a></div><div class="ttdeci">At the end of this loop</div><div class="ttdef"><b>定义</b> <a href="_r_f_f_t__f32__win_8asm_source.html#l00140">RFFT_f32_win.asm:140</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_5506101b76382283adbe76592e28ea78.html">Projects</a></li><li class="navelem"><a href="dir_7dd5ed44a494c219ca67de2f65681ad1.html">28335</a></li><li class="navelem"><a href="dir_da8365b7da70b28dd1719d7d00c35518.html">3ph_Inverter</a></li><li class="navelem"><a href="dir_bd64e263e4b26249a337a0e6fadd92f9.html">SVPWM</a></li><li class="navelem"><a href="dir_f48367f31d12050ceb3cd9194159709f.html">Device</a></li><li class="navelem"><a href="3ph___inverter_2_s_v_p_w_m_2_device_2_d_s_p2833x__us_delay_8asm.html">DSP2833x_usDelay.asm</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

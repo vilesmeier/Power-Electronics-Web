@@ -1,0 +1,12 @@
+digraph "NUEDC-Core/Projects/28335/3ph_Inverter/3ph_Current_source_inverter/Device"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=msyh,fontsize=10,labelfontname=msyh,labelfontsize=10];
+  node [fontname=msyh,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_9d5f1997b73a8e780c44595b53ed60ed {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="3ph_Current_source\l_inverter", fontname=msyh,fontsize=10 style="filled,dashed", URL="dir_9d5f1997b73a8e780c44595b53ed60ed.html",tooltip=""]
+  dir_51bbf31c6d1e7e73fa5fda223683fc42 [label="Device", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_51bbf31c6d1e7e73fa5fda223683fc42.html",tooltip=""];
+  }
+}

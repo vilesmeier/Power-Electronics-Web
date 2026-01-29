@@ -1,6 +1,5 @@
 var _r_f_f_t__f32u_8asm =
 [
-    [ "RFFT_F32_STRUCT", "struct_r_f_f_t___f32___s_t_r_u_c_t.html", "struct_r_f_f_t___f32___s_t_r_u_c_t" ],
     [ "RFFT_F32_STRUCT_Handle", "_r_f_f_t__f32u_8asm.html#a8e0e8c088fc134b9afc9994c3b253faf", null ],
     [ "Buf", "_r_f_f_t__f32u_8asm.html#afdb2bb7b296702d88b16dcda8837fb75", null ],
     [ "FFT", "_r_f_f_t__f32u_8asm.html#aa8b679f21919659966b582c169fb9d8a", null ],

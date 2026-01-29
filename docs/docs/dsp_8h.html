@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: NUEDC-Core/Projects/28335/24B/24B/Library/dsp.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v4.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('dsp_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">dsp.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>DSP Library Definitions and Types  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+dsp.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="dsp_8h__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_projects_228335_224_b_224_b_2_library_2dsp_8h" loading="lazy" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div>
+<p><a href="dsp_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a727c9267987123761a7ec5d7559d099c" id="r_a727c9267987123761a7ec5d7559d099c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a727c9267987123761a7ec5d7559d099c">_RTS_IN_USE_</a></td></tr>
+<tr class="memitem:a8650e6793d46032c617bb7b824f90bfd" id="r_a8650e6793d46032c617bb7b824f90bfd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8650e6793d46032c617bb7b824f90bfd">LIBRARY_VERSION</a>&#160;&#160;&#160;&quot;2.05.00.00&quot;</td></tr>
+<tr class="memdesc:a8650e6793d46032c617bb7b824f90bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSP Library Version  <br /></td></tr>
+<tr class="memitem:aebedd1cce60951fd692a2714c4576cb5" id="r_aebedd1cce60951fd692a2714c4576cb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebedd1cce60951fd692a2714c4576cb5">C2000_IEEE754_TYPES</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a09352de0488d343362dc0b932690c29b" id="r_a09352de0488d343362dc0b932690c29b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09352de0488d343362dc0b932690c29b">v_pfn_v</a>) (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> *)</td></tr>
+<tr class="memdesc:a09352de0488d343362dc0b932690c29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer with a void pointer argument returning nothing  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>DSP Library Definitions and Types </p>
+<dl class="section author"><dt>作者</dt><dd>Vishal Coelho </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>Jan 11, 2016 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dsp_8h_source.html">dsp.h</a> 中定义.</p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="a727c9267987123761a7ec5d7559d099c" name="a727c9267987123761a7ec5d7559d099c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a727c9267987123761a7ec5d7559d099c">&#9670;&#160;</a></span>_RTS_IN_USE_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _RTS_IN_USE_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="dsp_8h_source.html">dsp.h</a> 第 <a class="el" href="dsp_8h_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aebedd1cce60951fd692a2714c4576cb5" name="aebedd1cce60951fd692a2714c4576cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebedd1cce60951fd692a2714c4576cb5">&#9670;&#160;</a></span>C2000_IEEE754_TYPES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C2000_IEEE754_TYPES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="dsp_8h_source.html">dsp.h</a> 第 <a class="el" href="dsp_8h_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8650e6793d46032c617bb7b824f90bfd" name="a8650e6793d46032c617bb7b824f90bfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8650e6793d46032c617bb7b824f90bfd">&#9670;&#160;</a></span>LIBRARY_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIBRARY_VERSION&#160;&#160;&#160;&quot;2.05.00.00&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DSP Library Version </p>
+
+<p class="definition">在文件 <a class="el" href="dsp_8h_source.html">dsp.h</a> 第 <a class="el" href="dsp_8h_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">类型定义说明</h2>
+<a id="a09352de0488d343362dc0b932690c29b" name="a09352de0488d343362dc0b932690c29b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09352de0488d343362dc0b932690c29b">&#9670;&#160;</a></span>v_pfn_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a>(* v_pfn_v) (<a class="el" href="22_a_2_p_q_2_device_2_d_s_p2833x___default_isr_8c.html#ae9380d6f8620b92d01fe003529ce3e93">void</a> *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function pointer with a void pointer argument returning nothing </p>
+
+<p class="definition">在文件 <a class="el" href="dsp_8h_source.html">dsp.h</a> 第 <a class="el" href="dsp_8h_source.html#l00105">105</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_5506101b76382283adbe76592e28ea78.html">Projects</a></li><li class="navelem"><a href="dir_7dd5ed44a494c219ca67de2f65681ad1.html">28335</a></li><li class="navelem"><a href="dir_448e1af1aea29a70eaabce70357e5035.html">24B</a></li><li class="navelem"><a href="dir_dc10dde7a4091da64fa589eecfe13eb8.html">24B</a></li><li class="navelem"><a href="dir_5e37d2c9831d286a9cfc6f63e33eba27.html">Library</a></li><li class="navelem"><a href="dsp_8h.html">dsp.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
