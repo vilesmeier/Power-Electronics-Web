@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - api-docs
   workflow_dispatch:
 
 permissions:
@@ -15,10 +14,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout NUEDC
+    # 1️⃣ Checkout NUEDC + submodules
+    - name: Checkout repository with submodules
       uses: actions/checkout@v4
       with:
-        submodules: true
+        submodules: recursive
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -29,16 +29,15 @@ jobs:
       run: |
         pip install mkdocs mkdocs-material
 
-    # - name: Install Doxygen
-    #   run: |
-    #     sudo apt-get update
-    #     sudo apt-get install -y doxygen graphviz
+    - name: Install Doxygen
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y doxygen graphviz
 
-    # - name: Generate Doxygen
-    #   run: |
-    #     doxygen Doxyfile
+    - name: Generate Doxygen
+      run: |
+        doxygen Doxyfile
+        ls -R docs/docs
 
     - name: Build and Deploy MkDocs
-      run: mkdocs gh-deploy --force
-
-
+      run: mkdocs gh-deploy --force --clean
