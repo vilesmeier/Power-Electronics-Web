@@ -12,15 +12,12 @@ permissions:
 jobs:
   build-docs:
     runs-on: ubuntu-latest
-
     steps:
-    # 1️⃣ Checkout public repo (不要拉 submodule)
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         submodules: false
 
-    # 2️⃣ Install Python + MkDocs
     - name: Setup Python
       uses: actions/setup-python@v5
       with:
@@ -29,55 +26,39 @@ jobs:
     - name: Install MkDocs
       run: pip install mkdocs mkdocs-material
 
-    # 3️⃣ Install Doxygen + jq + openssl
     - name: Install Doxygen and dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y doxygen graphviz jq openssl ruby
+      run: sudo apt-get update && sudo apt-get install -y doxygen graphviz jq openssl python3-pip
 
-    # 4️⃣ Generate GitHub App installation token
     - name: Generate GitHub App token
       env:
         NUEDC_APP_ID: ${{ secrets.NUEDC_APP_ID }}
         NUEDC_APP_PEM: ${{ secrets.NUEDC_APP_PEM }}
         NUEDC_APP_INSTALLATION_ID: ${{ secrets.NUEDC_APP_INSTALLATION_ID }}
       run: |
-        echo "$NUEDC_APP_PEM" > app.pem
+        echo "$NUEDC_APP_PEM" | sed 's/\\n/\n/g' > app.pem
+        python3 - <<EOF
+        import os, jwt, time, json, requests
+        app_id = int(os.environ["NUEDC_APP_ID"])
+        installation_id = os.environ["NUEDC_APP_INSTALLATION_ID"]
+        with open("app.pem","r") as f:
+            private_key = f.read()
+        iat = int(time.time())
+        exp = iat + 600
+        payload = {"iat": iat, "exp": exp, "iss": app_id}
+        token = jwt.encode(payload, private_key, algorithm="RS256")
+        headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"}
+        url = f"https://api.github.com/app/installations/{installation_id}/access_tokens"
+        r = requests.post(url, headers=headers)
+        print("TOKEN="+r.json()["token"])
+        with open(os.environ["GITHUB_ENV"], "a") as f:
+            f.write("TOKEN="+r.json()["token"]+"\n")
+        EOF
 
-        # 生成 JWT (有效期10分钟)
-        JWT=$(ruby -r openssl -r base64 -r json -e '
-          private_key = OpenSSL::PKey::RSA.new(File.read("app.pem"))
-          iat = Time.now.to_i
-          exp = iat + 600
-          payload = {"iat"=>iat,"exp"=>exp,"iss"=>ENV["NUEDC_APP_ID"].to_i}
-          header = {"alg"=>"RS256","typ"=>"JWT"}
-          def b64(u) Base64.urlsafe_encode64(u.to_json).gsub("=",""); end
-          require "jwt"
-          token = JWT.encode(payload, private_key, "RS256")
-          puts token
-        ')
-
-        echo "JWT generated"
-
-        # 使用 JWT 请求 installation token
-        TOKEN=$(curl -s -X POST \
-          -H "Authorization: Bearer $JWT" \
-          -H "Accept: application/vnd.github+json" \
-          https://api.github.com/app/installations/$NUEDC_APP_INSTALLATION_ID/access_tokens \
-          | jq -r '.token')
-
-        echo "TOKEN=$TOKEN" >> $GITHUB_ENV
-        echo "Installation token generated"
-
-    # 5️⃣ Clone private submodule using installation token
     - name: Clone NUEDC-Core submodule
-      run: |
-        git clone https://x-access-token:$TOKEN@github.com/vilesmeier/NUEDC-Core.git NUEDC-Core
+      run: git clone https://x-access-token:$TOKEN@github.com/vilesmeier/NUEDC-Core.git NUEDC-Core
 
-    # 6️⃣ Generate Doxygen
     - name: Generate Doxygen
       run: doxygen Doxyfile
 
-    # 7️⃣ Build & Deploy MkDocs to gh-pages
     - name: Build and Deploy MkDocs
       run: mkdocs gh-deploy --force --clean
