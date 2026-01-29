@@ -14,30 +14,39 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # 1️⃣ Checkout NUEDC + submodules
-    - name: Checkout repository with submodules
+    - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        submodules: recursive
+        submodules: false
 
-    - name: Set up Python
+    - name: Setup Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.x'
 
     - name: Install MkDocs
-      run: |
-        pip install mkdocs mkdocs-material
+      run: pip install mkdocs mkdocs-material
 
     - name: Install Doxygen
+      run: sudo apt-get update && sudo apt-get install -y doxygen graphviz
+
+    - name: Generate GitHub App token
+      env:
+        GITHUB_APP_ID: ${{ secrets.NUEDC_APP_ID }}
+        GITHUB_APP_PEM: ${{ secrets.NUEDC_APP_PEM }}
+        GITHUB_APP_INSTALLATION_ID: ${{ secrets.NUEDC_APP_INSTALLATION_ID }}
       run: |
-        sudo apt-get update
-        sudo apt-get install -y doxygen graphviz
+        echo "$GITHUB_APP_PEM" > app.pem
+        # 使用 GitHub CLI 生成 token
+        TOKEN=$(gh auth login --app $GITHUB_APP_ID --private-key app.pem --installation-id $GITHUB_APP_INSTALLATION_ID --show-token)
+        echo "TOKEN=$TOKEN" >> $GITHUB_ENV
+
+    - name: Clone NUEDC-Core submodule
+      run: |
+        git clone https://x-access-token:$TOKEN@github.com/vilesmeier/NUEDC-Core.git NUEDC-Core
 
     - name: Generate Doxygen
-      run: |
-        doxygen Doxyfile
-        ls -R docs/docs
+      run: doxygen Doxyfile
 
     - name: Build and Deploy MkDocs
       run: mkdocs gh-deploy --force --clean
