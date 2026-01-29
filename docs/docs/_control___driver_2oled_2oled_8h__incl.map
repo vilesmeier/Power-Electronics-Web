@@ -1,13 +1,13 @@
 <map id="NUEDC&#45;Core/Code/Control_Driver/oled/oled.h" name="NUEDC&#45;Core/Code/Control_Driver/oled/oled.h">
-<area shape="rect" id="Node000001" title="OLED函数声明&#45;SSD1306/SSD1315" alt="" coords="108,5,292,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,70,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,51,78,91,75,86,157,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="94,96,203,123"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,50,167,84,162,81,185,47"/>
-<area shape="rect" id="Node000004" href="$i2c_8h.html" title=" " alt="" coords="228,96,277,123"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="216,47,238,81,234,84,211,50"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="302,96,363,123"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="236,46,300,85,297,90,233,51"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="188,171,317,197"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="255,123,255,155,250,155,250,123"/>
+<area shape="rect" id="Node000001" title="OLED函数声明&#45;SSD1306/SSD1315" alt="" coords="109,5,285,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,98,69,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,53,77,93,75,88,153,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="92,98,200,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,52,165,86,160,83,181,49"/>
+<area shape="rect" id="Node000004" href="$i2c_8h.html" title=" " alt="" coords="225,98,273,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="213,49,235,83,230,86,208,52"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="297,98,358,126"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="233,48,295,87,292,92,230,53"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="187,174,311,201"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="252,126,252,158,246,158,246,126"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="SCI_writeCharArray" name="SCI_writeCharArray">
-<area shape="rect" id="Node000001" title="send data to txfifo" alt="" coords="5,5,144,32"/>
-<area shape="rect" id="Node000002" href="$uart_8c.html#a4c86107cd49c2644ef6abd5d0c6f7194" title="Send Char" alt="" coords="192,5,314,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,16,176,16,176,21,144,21"/>
+<area shape="rect" id="Node000001" title="send data to txfifo" alt="" coords="5,5,142,33"/>
+<area shape="rect" id="Node000002" href="$uart_8c.html#a4c86107cd49c2644ef6abd5d0c6f7194" title="Send Char" alt="" coords="190,5,306,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,16,174,16,174,22,142,22"/>
 </map>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['state_0',['STATE',['../state_8h.html#a4bcd19c670ba60fad9424ed1a3015c02',1,'state.h']]],
-  ['svpwm_1',['SVPWM',['../svpwm_8h.html#a5e38b03c49bc0c33cf01ff193ceb02da',1,'svpwm.h']]]
+  ['type_5ftransform_0',['TYPE_TRANSFORM',['../group___c_t_r_l___v_o_f_a.html#ga26b5eae5bf51e0a793ffbb2a0e592523',1,'vofa.h']]]
 ];

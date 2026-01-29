@@ -1,22 +1,22 @@
 <map id="NUEDC&#45;Core/Code/Control_Driver/dcl/dcl.c" name="NUEDC&#45;Core/Code/Control_Driver/dcl/dcl.c">
-<area shape="rect" id="Node000001" title="DCL库浮点型控制器函数定义" alt="" coords="207,5,390,48"/>
-<area shape="rect" id="Node000002" href="$dcl_8h.html" title="数字控制库函数定义 &#160;&#160;包含支持FPU32的结构体定义与函数声明 &#160;&#160;PI/QPR/QPIR/QPMR/RC" alt="" coords="274,96,323,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,49,301,80,296,80,296,49"/>
-<area shape="rect" id="Node000003" href="$_transfer_fun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="277,171,437,197"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="311,122,340,157,335,160,307,125"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="233,320,297,347"/>
-<area shape="poly" id="edge11_Node000002_Node000004" title=" " alt="" coords="324,111,368,120,416,136,435,147,450,161,456,179,452,198,424,238,389,271,350,297,313,316,310,311,347,292,385,267,420,235,447,196,450,179,445,164,432,152,413,141,367,125,323,117"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="210,245,320,272"/>
-<area shape="poly" id="edge12_Node000002_Node000005" title=" " alt="" coords="291,125,278,146,268,171,264,201,264,230,259,230,258,201,263,170,273,143,287,122"/>
-<area shape="rect" id="Node000006" href="$delay_8h.html" title="数组延迟链驱动函数声明" alt="" coords="104,171,202,197"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="274,126,193,166,191,161,272,121"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="358,199,351,234,334,273,317,295,298,312,294,308,313,291,330,271,346,232,353,197"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="343,200,294,238,291,234,339,196"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="160,197,176,231,201,270,238,308,235,312,196,274,172,234,156,199"/>
-<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="174,196,234,234,231,239,171,200"/>
-<area shape="rect" id="Node000007" href="$mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="5,245,136,272"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="141,200,98,237,94,233,137,196"/>
-<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="105,270,220,312,218,317,103,275"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="40,320,101,347"/>
-<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="73,273,73,304,68,304,68,273"/>
+<area shape="rect" id="Node000001" title="DCL库浮点型控制器函数定义" alt="" coords="210,5,385,50"/>
+<area shape="rect" id="Node000002" href="$dcl_8h.html" title="数字控制库函数定义 &#160;&#160;包含支持FPU32的结构体定义与函数声明 &#160;&#160;PI/QPR/QPIR/QPMR/RC" alt="" coords="274,98,322,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,50,300,82,295,82,295,50"/>
+<area shape="rect" id="Node000003" href="$_transfer_fun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="276,174,439,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="310,125,339,160,335,163,306,128"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="234,325,297,353"/>
+<area shape="poly" id="edge11_Node000002_Node000004" title=" " alt="" coords="323,114,368,123,416,139,436,150,451,165,458,182,453,202,426,243,390,276,350,302,313,322,311,317,347,298,386,272,422,240,449,200,452,183,447,168,433,155,414,144,367,128,322,119"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="212,249,320,277"/>
+<area shape="poly" id="edge12_Node000002_Node000005" title=" " alt="" coords="290,128,277,149,267,174,263,205,264,234,259,234,258,205,262,173,272,147,286,125"/>
+<area shape="rect" id="Node000006" href="$delay_8h.html" title="数组延迟链驱动函数声明" alt="" coords="104,174,201,201"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="274,128,193,169,190,164,272,123"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="359,202,352,238,335,278,318,300,299,317,295,313,314,296,330,276,346,236,354,201"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="343,204,295,242,292,238,340,200"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="160,200,176,236,201,275,238,313,235,317,197,279,172,238,155,203"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="174,200,234,239,232,243,171,204"/>
+<area shape="rect" id="Node000007" href="$mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="5,249,137,277"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="140,204,98,241,95,237,136,200"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="107,275,221,318,219,323,105,280"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="40,325,102,353"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="74,278,74,309,68,309,68,278"/>
 </map>

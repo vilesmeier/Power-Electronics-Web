@@ -8,10 +8,10 @@ var _peripheral___driver_228335_2_o_l_e_d_2oled_8h =
       [ "OLED_CMD", "_peripheral___driver_228335_2_o_l_e_d_2oled_8h.html#a7ac0f27d752bd8ce30d895085fff9cf2a0a6ce3feb5863993ecf3c915ba06504d", null ],
       [ "OLED_DATA", "_peripheral___driver_228335_2_o_l_e_d_2oled_8h.html#a7ac0f27d752bd8ce30d895085fff9cf2ae1345d682e00f2fd37398ca2b7e027ef", null ]
     ] ],
-    [ "OLED_Clear", "_peripheral___driver_228335_2_o_l_e_d_2oled_8h.html#a6960de38d41ba87c52e40f8bd4b094d3", null ],
+    [ "OLED_Clear", "group___c_t_r_l___o_l_e_d.html#ga6960de38d41ba87c52e40f8bd4b094d3", null ],
     [ "OLED_DisPlay_Off", "_peripheral___driver_228335_2_o_l_e_d_2oled_8h.html#a2fd45df8a45bfbe6a4f6910ef59e7b42", null ],
     [ "OLED_DisPlay_On", "_peripheral___driver_228335_2_o_l_e_d_2oled_8h.html#acef17e54b27784a81da0b06bdfc6a4d3", null ],
-    [ "OLED_Init", "_peripheral___driver_228335_2_o_l_e_d_2oled_8h.html#a7372e46460a371e4d94a0ee7f5f1a1fd", null ],
+    [ "OLED_Init", "group___c_t_r_l___o_l_e_d.html#ga7372e46460a371e4d94a0ee7f5f1a1fd", null ],
     [ "OLED_Pow", "_peripheral___driver_228335_2_o_l_e_d_2oled_8h.html#a46947f884818d1b9af2eaf38fe2ad174", null ],
     [ "OLED_Set_Pos", "_peripheral___driver_228335_2_o_l_e_d_2oled_8h.html#aa14bb13c0cd2c797c9974b82ce0df267", null ],
     [ "OLED_ShowChar", "_peripheral___driver_228335_2_o_l_e_d_2oled_8h.html#a3a0689d75427e3ed0ca7654b0c529666", null ],

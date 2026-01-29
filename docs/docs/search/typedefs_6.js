@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['lcd_5fcolor_0',['LCD_Color',['../_l_c_d___s_t7735_s_8h.html#add0b6f2457d2e0680f6be86b158f8234',1,'LCD_ST7735S.h']]]
+  ['mod_0',['MOD',['../group___c_t_r_l___m_o_d.html#ga949d1486d9ae2ea4797d744850b93002',1,'modulate.h']]],
+  ['mppt_5fincc_1',['MPPT_INCC',['../group___c_t_r_l___m_p_p_t.html#gabb55d0d1d3c054b086f2c9614e90b25d',1,'mppt.h']]],
+  ['mppt_5fincc_5fi_2',['MPPT_INCC_I',['../group___c_t_r_l___m_p_p_t.html#gab46453c46aa91c7653f1b8a53ffe234c',1,'mppt.h']]],
+  ['mppt_5fpno_3',['MPPT_PNO',['../group___c_t_r_l___m_p_p_t.html#ga7085eb8ce04db563a21ed43b0fe20cf0',1,'mppt.h']]]
 ];

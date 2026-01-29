@@ -17,13 +17,13 @@ var searchData=
   ['return_14',['return',['../_transfer_fun_8asm.html#a55e1b31bc65388c3a79389b7a250b4de',1,'TransferFun.asm']]],
   ['returns_15',['returns',['../_transfer_fun_8asm.html#a6e83c8cb4e9a4538f3f97ca27ddd297f',1,'TransferFun.asm']]],
   ['rfft_16',['RFFT',['../_r_f_f_t__f32__twiddle_factors_8asm.html#aeca2e4f75e7a5906f85e2611365d76af',1,'RFFT_f32_twiddleFactors.asm']]],
-  ['rfft_17',['rfft',['../rfft_8c.html#a10170416a207dd77a5bb568f9b92887d',1,'rfft:&#160;rfft.c'],['../rfft_8h.html#a10170416a207dd77a5bb568f9b92887d',1,'rfft:&#160;rfft.c']]],
+  ['rfft_17',['rfft',['../group___d_s_p___r_f_f_t___f32.html#ga10170416a207dd77a5bb568f9b92887d',1,'rfft:&#160;rfft.c'],['../group___d_s_p___r_f_f_t___f32.html#ga10170416a207dd77a5bb568f9b92887d',1,'rfft:&#160;rfft.c']]],
   ['rfft_5ff32_5fmag_18',['RFFT_f32_mag',['../_r_f_f_t__f32__mag_8asm.html#ae0e430848795df457d5610979de05789',1,'RFFT_f32_mag.asm']]],
   ['rfft_5ff32_5fmag_5ftmu0_19',['RFFT_f32_mag_TMU0',['../_r_f_f_t__f32__mag___t_m_u0_8asm.html#aac5d1723874b2fb2354e6605e2619039',1,'RFFT_f32_mag_TMU0.asm']]],
   ['rfft_5ff32_5fphase_20',['RFFT_f32_phase',['../_r_f_f_t__f32__phase_8asm.html#a646a4016588564a6011e1537510938b5',1,'RFFT_f32_phase.asm']]],
   ['rfft_5ff32_5fphase_5ftmu0_21',['RFFT_f32_phase_TMU0',['../_r_f_f_t__f32__phase___t_m_u0_8asm.html#a499ba117d782d56600a56d380315a50f',1,'RFFT_f32_phase_TMU0.asm']]],
   ['rfft_5ff32_5ftwiddlefactors_22',['RFFT_f32_twiddleFactors',['../fpu__rfft_8h.html#a7ee4950c0f3a0aa89000ac36ffffcd16',1,'RFFT_f32_twiddleFactors:&#160;RFFT_f32_twiddleFactors.asm'],['../_r_f_f_t__f32__twiddle_factors_8asm.html#a561289ca39b4e760f961c6ab80545089',1,'RFFT_f32_twiddleFactors:&#160;RFFT_f32_twiddleFactors.asm']]],
   ['rfft_5ff32_5fwin_23',['RFFT_f32_win',['../_r_f_f_t__f32__win_8asm.html#ae4b6de3da60094a19fe6689d06408e4f',1,'RFFT_f32_win.asm']]],
-  ['rfft_5fstruct_24',['rfft_struct',['../struct_r_f_f_t.html#a93dd182d61f8d46337764f2ac76e664d',1,'RFFT']]],
-  ['rfft_5fstruct_5fpointer_25',['rfft_struct_pointer',['../struct_r_f_f_t.html#a35194b26b562e65aec8e287dece1a6d7',1,'RFFT']]]
+  ['rfft_5fstruct_24',['rfft_struct',['../group___d_s_p___r_f_f_t___f32.html#ga93dd182d61f8d46337764f2ac76e664d',1,'RFFT']]],
+  ['rfft_5fstruct_5fpointer_25',['rfft_struct_pointer',['../group___d_s_p___r_f_f_t___f32.html#ga35194b26b562e65aec8e287dece1a6d7',1,'RFFT']]]
 ];

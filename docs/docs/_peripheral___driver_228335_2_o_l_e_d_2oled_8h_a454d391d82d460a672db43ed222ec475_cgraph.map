@@ -1,11 +1,11 @@
 <map id="OLED_ShowNum" name="OLED_ShowNum">
-<area shape="rect" id="Node000001" title="display a positive int" alt="" coords="5,31,131,57"/>
-<area shape="rect" id="Node000002" href="$_control___driver_2oled_2oled_8c.html#a7803502eeddd959ac51b71974318de1a" title="次方函数" alt="" coords="196,5,286,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,32,180,25,181,30,131,37"/>
-<area shape="rect" id="Node000003" href="$_control___driver_2oled_2oled_8c.html#a702041c412b420edd94a154681664202" title="OLED显示一个字符" alt="" coords="179,56,304,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,51,164,55,163,61,131,56"/>
-<area shape="rect" id="Node000004" href="$_control___driver_2oled_2oled_8c.html#aa331dbadc06f4c13afb97120aae62825" title="OLED显示图像" alt="" coords="352,56,485,83"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="304,67,336,67,336,72,304,72"/>
-<area shape="rect" id="Node000005" href="$_control___driver_2oled_2oled_8c.html#aac92cfe1899db8eb779d133c987c6751" title="将OLED显存数组部分清零" alt="" coords="533,56,656,83"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="486,67,518,67,518,72,486,72"/>
+<area shape="rect" id="Node000001" title="display a positive int" alt="" coords="5,32,124,60"/>
+<area shape="rect" id="Node000002" href="$group___c_t_r_l___o_l_e_d.html#ga7803502eeddd959ac51b71974318de1a" title="次方函数" alt="" coords="189,5,273,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,34,173,26,174,31,124,39"/>
+<area shape="rect" id="Node000003" href="$group___c_t_r_l___o_l_e_d.html#ga702041c412b420edd94a154681664202" title="OLED显示一个字符" alt="" coords="172,57,290,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="124,52,157,57,156,62,124,57"/>
+<area shape="rect" id="Node000004" href="$group___c_t_r_l___o_l_e_d.html#gaa331dbadc06f4c13afb97120aae62825" title="OLED显示图像" alt="" coords="338,57,466,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="290,68,322,68,322,74,290,74"/>
+<area shape="rect" id="Node000005" href="$group___c_t_r_l___o_l_e_d.html#gaac92cfe1899db8eb779d133c987c6751" title="将OLED显存数组部分清零" alt="" coords="514,57,632,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="467,68,498,68,498,74,467,74"/>
 </map>

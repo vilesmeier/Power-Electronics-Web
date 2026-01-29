@@ -1,11 +1,11 @@
 <map id="NUEDC&#45;Core/Code/Control_Driver/vofa/vofa.c" name="NUEDC&#45;Core/Code/Control_Driver/vofa/vofa.c">
-<area shape="rect" id="Node000001" title="VOFA上位机支持, 函数定义" alt="" coords="27,5,210,48"/>
-<area shape="rect" id="Node000002" href="$vofa_8h.html" title="VOFA上位机支持, 函数声明" alt="" coords="90,96,148,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,49,122,80,116,80,116,49"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,171,70,197"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,125,64,162,61,158,103,121"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="94,171,144,197"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="122,123,122,155,116,155,116,123"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="168,171,278,197"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="138,121,194,159,191,164,135,125"/>
+<area shape="rect" id="Node000001" title="VOFA上位机支持, 函数定义" alt="" coords="29,5,205,50"/>
+<area shape="rect" id="Node000002" href="$vofa_8h.html" title="VOFA上位机支持, 函数声明" alt="" coords="88,98,146,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,50,120,82,114,82,114,50"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,174,69,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,128,64,165,61,161,101,124"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="93,174,141,201"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="120,126,120,158,114,158,114,126"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="164,174,272,201"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="137,124,190,162,187,167,134,128"/>
 </map>

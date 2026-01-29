@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vector_20operations_0',['Vector Operations',['../group___d_s_p___v_e_c_t_o_r___f32.html',1,'']]]
+  ['参考相位生成_0',['参考相位生成',['../group___c_t_r_l___r_a_m_p.html',1,'']]]
 ];

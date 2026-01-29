@@ -1,5 +1,5 @@
 <map id="RFFT_f32" name="RFFT_f32">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,86,32"/>
-<area shape="rect" id="Node000002" href="$fpu__rfft_8h.html#a9124e5c81f2cf7c0b2b8be3e761117bf" title="Real FFT (Unaligned)." alt="" coords="134,5,221,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,16,118,16,118,21,86,21"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,82,33"/>
+<area shape="rect" id="Node000002" href="$fpu__rfft_8h.html#a9124e5c81f2cf7c0b2b8be3e761117bf" title="Real FFT (Unaligned)." alt="" coords="130,5,213,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,16,114,16,114,22,82,22"/>
 </map>

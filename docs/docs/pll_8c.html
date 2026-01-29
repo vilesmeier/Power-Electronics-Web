@@ -102,13 +102,13 @@ pll.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="pll_8c__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2pll_2pll_8c" loading="lazy" alt=""/></div>
 <map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2pll_2pll_8c" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2pll_2pll_8c">
-<area shape="rect" title="单相/三相锁相环函数定义" alt="" coords="5,5,189,48"/>
-<area shape="rect" href="pll_8h.html" title="单相/三相锁相环函数声明" alt="" coords="74,96,120,123"/>
-<area shape="poly" title=" " alt="" coords="100,49,100,80,94,80,94,49"/>
-<area shape="rect" title=" " alt="" coords="10,171,74,197"/>
-<area shape="poly" title=" " alt="" coords="90,125,63,160,59,156,85,122"/>
-<area shape="rect" title=" " alt="" coords="98,171,208,197"/>
-<area shape="poly" title=" " alt="" coords="109,122,136,157,132,160,105,125"/>
+<area shape="rect" title="单相/三相锁相环函数定义" alt="" coords="5,5,181,50"/>
+<area shape="rect" href="pll_8h.html" title="单相/三相锁相环函数声明" alt="" coords="70,98,116,126"/>
+<area shape="poly" title=" " alt="" coords="96,50,96,82,90,82,90,50"/>
+<area shape="rect" title=" " alt="" coords="7,174,70,201"/>
+<area shape="poly" title=" " alt="" coords="85,128,59,163,55,159,81,125"/>
+<area shape="rect" title=" " alt="" coords="94,174,202,201"/>
+<area shape="poly" title=" " alt="" coords="105,125,131,159,127,163,101,128"/>
 </map>
 </div>
 </div>
@@ -116,370 +116,31 @@ pll.c 的引用(Include)关系图:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:a6af2cb6d025984e7461176621118d8da" id="r_a6af2cb6d025984e7461176621118d8da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6af2cb6d025984e7461176621118d8da">SOGI_1PH_Init</a> (<a class="el" href="struct_s_o_g_i__1_p_h.html">SOGI_1PH</a> *spll_obj)</td></tr>
-<tr class="memdesc:a6af2cb6d025984e7461176621118d8da"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
-<tr class="memitem:aac5dc41f65a9efa844ad311c51cf3c7f" id="r_aac5dc41f65a9efa844ad311c51cf3c7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac5dc41f65a9efa844ad311c51cf3c7f">SOGI_1PH_Set</a> (<a class="el" href="struct_s_o_g_i__1_p_h.html">SOGI_1PH</a> *spll_obj, float32_t acFreq, float32_t isrFrequency, float32_t lpf_b0, float32_t lpf_b1)</td></tr>
-<tr class="memdesc:aac5dc41f65a9efa844ad311c51cf3c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置SOGI结构体  <br /></td></tr>
-<tr class="memitem:ac68357b197b5778d423968938fe59e29" id="r_ac68357b197b5778d423968938fe59e29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac68357b197b5778d423968938fe59e29">SOGI_1PH_Run</a> (<a class="el" href="struct_s_o_g_i__1_p_h.html">SOGI_1PH</a> *spll_obj, float32_t acValue)</td></tr>
-<tr class="memdesc:ac68357b197b5778d423968938fe59e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行 SOGI 单相锁相环  <br /></td></tr>
-<tr class="memitem:a2826ad35dce8723d331004e797beadd4" id="r_a2826ad35dce8723d331004e797beadd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2826ad35dce8723d331004e797beadd4">SRF_3PH_Init</a> (<a class="el" href="struct_s_r_f__3_p_h.html">SRF_3PH</a> *spll_obj)</td></tr>
-<tr class="memdesc:a2826ad35dce8723d331004e797beadd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> module  <br /></td></tr>
-<tr class="memitem:aa461167a3a2ad945a1b0da4f6694077c" id="r_aa461167a3a2ad945a1b0da4f6694077c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa461167a3a2ad945a1b0da4f6694077c">SRF_3PH_Set</a> (float32_t grid_freq, float32_t delta_t, <a class="el" href="struct_s_r_f__3_p_h.html">SRF_3PH</a> *spll_obj)</td></tr>
-<tr class="memdesc:aa461167a3a2ad945a1b0da4f6694077c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> module  <br /></td></tr>
-<tr class="memitem:ab5a96d323b79646449adf4ea57322fa2" id="r_ab5a96d323b79646449adf4ea57322fa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5a96d323b79646449adf4ea57322fa2">SRF_3PH_Run</a> (float32_t v_q, <a class="el" href="struct_s_r_f__3_p_h.html">SRF_3PH</a> *spll_obj)</td></tr>
-<tr class="memdesc:ab5a96d323b79646449adf4ea57322fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> module  <br /></td></tr>
-<tr class="memitem:ae9004fa2910a2eae2be44598dc8556bb" id="r_ae9004fa2910a2eae2be44598dc8556bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9004fa2910a2eae2be44598dc8556bb">DDSRF_3PH_Init</a> (<a class="el" href="struct_d_d_s_r_f__3_p_h.html">DDSRF_3PH</a> *spll_obj)</td></tr>
-<tr class="memdesc:ae9004fa2910a2eae2be44598dc8556bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset <a class="el" href="struct_d_d_s_r_f__3_p_h.html" title="Defines the DDSRF_3PH structure">DDSRF_3PH</a> module  <br /></td></tr>
-<tr class="memitem:aa64487c6508a531541965b98848e75d8" id="r_aa64487c6508a531541965b98848e75d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa64487c6508a531541965b98848e75d8">DDSRF_3PH_Set</a> (float32_t grid_freq, float32_t delta_t, float32_t k1, float32_t k2, <a class="el" href="struct_d_d_s_r_f__3_p_h.html">DDSRF_3PH</a> *spll_obj)</td></tr>
-<tr class="memdesc:aa64487c6508a531541965b98848e75d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize <a class="el" href="struct_d_d_s_r_f__3_p_h.html" title="Defines the DDSRF_3PH structure">DDSRF_3PH</a> module  <br /></td></tr>
-<tr class="memitem:acabde816e5c373cf1e2d16dcfb6052e4" id="r_acabde816e5c373cf1e2d16dcfb6052e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acabde816e5c373cf1e2d16dcfb6052e4">DDSRF_3PH_Run</a> (<a class="el" href="struct_d_d_s_r_f__3_p_h.html">DDSRF_3PH</a> *spll_obj, float32_t d_p, float32_t d_n, float32_t q_p, float32_t q_n)</td></tr>
-<tr class="memdesc:acabde816e5c373cf1e2d16dcfb6052e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> module  <br /></td></tr>
+<tr class="memitem:ga6af2cb6d025984e7461176621118d8da" id="r_ga6af2cb6d025984e7461176621118d8da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_l_l.html#ga6af2cb6d025984e7461176621118d8da">SOGI_1PH_Init</a> (<a class="el" href="struct_s_o_g_i__1_p_h.html">SOGI_1PH</a> *spll_obj)</td></tr>
+<tr class="memdesc:ga6af2cb6d025984e7461176621118d8da"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
+<tr class="memitem:gaac5dc41f65a9efa844ad311c51cf3c7f" id="r_gaac5dc41f65a9efa844ad311c51cf3c7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_l_l.html#gaac5dc41f65a9efa844ad311c51cf3c7f">SOGI_1PH_Set</a> (<a class="el" href="struct_s_o_g_i__1_p_h.html">SOGI_1PH</a> *spll_obj, float32_t acFreq, float32_t isrFrequency, float32_t lpf_b0, float32_t lpf_b1)</td></tr>
+<tr class="memdesc:gaac5dc41f65a9efa844ad311c51cf3c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置SOGI结构体  <br /></td></tr>
+<tr class="memitem:gac68357b197b5778d423968938fe59e29" id="r_gac68357b197b5778d423968938fe59e29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_l_l.html#gac68357b197b5778d423968938fe59e29">SOGI_1PH_Run</a> (<a class="el" href="struct_s_o_g_i__1_p_h.html">SOGI_1PH</a> *spll_obj, float32_t acValue)</td></tr>
+<tr class="memdesc:gac68357b197b5778d423968938fe59e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行 SOGI 单相锁相环  <br /></td></tr>
+<tr class="memitem:ga2826ad35dce8723d331004e797beadd4" id="r_ga2826ad35dce8723d331004e797beadd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_l_l.html#ga2826ad35dce8723d331004e797beadd4">SRF_3PH_Init</a> (<a class="el" href="struct_s_r_f__3_p_h.html">SRF_3PH</a> *spll_obj)</td></tr>
+<tr class="memdesc:ga2826ad35dce8723d331004e797beadd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> module  <br /></td></tr>
+<tr class="memitem:gaa461167a3a2ad945a1b0da4f6694077c" id="r_gaa461167a3a2ad945a1b0da4f6694077c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_l_l.html#gaa461167a3a2ad945a1b0da4f6694077c">SRF_3PH_Set</a> (float32_t grid_freq, float32_t delta_t, <a class="el" href="struct_s_r_f__3_p_h.html">SRF_3PH</a> *spll_obj)</td></tr>
+<tr class="memdesc:gaa461167a3a2ad945a1b0da4f6694077c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> module  <br /></td></tr>
+<tr class="memitem:gab5a96d323b79646449adf4ea57322fa2" id="r_gab5a96d323b79646449adf4ea57322fa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_l_l.html#gab5a96d323b79646449adf4ea57322fa2">SRF_3PH_Run</a> (float32_t v_q, <a class="el" href="struct_s_r_f__3_p_h.html">SRF_3PH</a> *spll_obj)</td></tr>
+<tr class="memdesc:gab5a96d323b79646449adf4ea57322fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> module  <br /></td></tr>
+<tr class="memitem:gae9004fa2910a2eae2be44598dc8556bb" id="r_gae9004fa2910a2eae2be44598dc8556bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_l_l.html#gae9004fa2910a2eae2be44598dc8556bb">DDSRF_3PH_Init</a> (<a class="el" href="struct_d_d_s_r_f__3_p_h.html">DDSRF_3PH</a> *spll_obj)</td></tr>
+<tr class="memdesc:gae9004fa2910a2eae2be44598dc8556bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset <a class="el" href="struct_d_d_s_r_f__3_p_h.html" title="Defines the DDSRF_3PH structure">DDSRF_3PH</a> module  <br /></td></tr>
+<tr class="memitem:gaa64487c6508a531541965b98848e75d8" id="r_gaa64487c6508a531541965b98848e75d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_l_l.html#gaa64487c6508a531541965b98848e75d8">DDSRF_3PH_Set</a> (float32_t grid_freq, float32_t delta_t, float32_t k1, float32_t k2, <a class="el" href="struct_d_d_s_r_f__3_p_h.html">DDSRF_3PH</a> *spll_obj)</td></tr>
+<tr class="memdesc:gaa64487c6508a531541965b98848e75d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize <a class="el" href="struct_d_d_s_r_f__3_p_h.html" title="Defines the DDSRF_3PH structure">DDSRF_3PH</a> module  <br /></td></tr>
+<tr class="memitem:gacabde816e5c373cf1e2d16dcfb6052e4" id="r_gacabde816e5c373cf1e2d16dcfb6052e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_l_l.html#gacabde816e5c373cf1e2d16dcfb6052e4">DDSRF_3PH_Run</a> (<a class="el" href="struct_d_d_s_r_f__3_p_h.html">DDSRF_3PH</a> *spll_obj, float32_t d_p, float32_t d_n, float32_t q_p, float32_t q_n)</td></tr>
+<tr class="memdesc:gacabde816e5c373cf1e2d16dcfb6052e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> module  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>单相/三相锁相环函数定义 </p>
 <dl class="section author"><dt>作者</dt><dd>Mao Chenbin (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="pll_8c_source.html">pll.c</a> 中定义.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
-<a id="ae9004fa2910a2eae2be44598dc8556bb" name="ae9004fa2910a2eae2be44598dc8556bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9004fa2910a2eae2be44598dc8556bb">&#9670;&#160;</a></span>DDSRF_3PH_Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DDSRF_3PH_Init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_d_d_s_r_f__3_p_h.html">DDSRF_3PH</a> *</td>          <td class="paramname"><span class="paramname"><em>spll_obj</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reset <a class="el" href="struct_d_d_s_r_f__3_p_h.html" title="Defines the DDSRF_3PH structure">DDSRF_3PH</a> module </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">*spll_obj</td><td>The <a class="el" href="struct_d_d_s_r_f__3_p_h.html" title="Defines the DDSRF_3PH structure">DDSRF_3PH</a> structure </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="pll_8c_source.html">pll.c</a> 第 <a class="el" href="pll_8c_source.html#l00212">212</a> 行定义.</p>
-
-</div>
-</div>
-<a id="acabde816e5c373cf1e2d16dcfb6052e4" name="acabde816e5c373cf1e2d16dcfb6052e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acabde816e5c373cf1e2d16dcfb6052e4">&#9670;&#160;</a></span>DDSRF_3PH_Run()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DDSRF_3PH_Run </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_d_d_s_r_f__3_p_h.html">DDSRF_3PH</a> *</td>          <td class="paramname"><span class="paramname"><em>spll_obj</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>d_p</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>d_n</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>q_p</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>q_n</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Run <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> module </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">*spll_obj</td><td>The <a class="el" href="struct_d_d_s_r_f__3_p_h.html" title="Defines the DDSRF_3PH structure">DDSRF_3PH</a> structure </td></tr>
-    <tr><td class="paramname">d_p</td><td>D Positive seq component of the grid voltage </td></tr>
-    <tr><td class="paramname">d_n</td><td>D Negative seq component of the grid voltage </td></tr>
-    <tr><td class="paramname">q_p</td><td>Q Positive seq component of the grid voltage </td></tr>
-    <tr><td class="paramname">q_n</td><td>Q Negative seq component of the grid voltage </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="pll_8c_source.html">pll.c</a> 第 <a class="el" href="pll_8c_source.html#l00296">296</a> 行定义.</p>
-
-</div>
-</div>
-<a id="aa64487c6508a531541965b98848e75d8" name="aa64487c6508a531541965b98848e75d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa64487c6508a531541965b98848e75d8">&#9670;&#160;</a></span>DDSRF_3PH_Set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DDSRF_3PH_Set </td>
-          <td>(</td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>grid_freq</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>delta_t</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>k1</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>k2</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_d_d_s_r_f__3_p_h.html">DDSRF_3PH</a> *</td>          <td class="paramname"><span class="paramname"><em>spll_obj</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize <a class="el" href="struct_d_d_s_r_f__3_p_h.html" title="Defines the DDSRF_3PH structure">DDSRF_3PH</a> module </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">grid_freq</td><td>The grid frequency </td></tr>
-    <tr><td class="paramname">delta_t</td><td>1/Frequency of calling the PLL routine </td></tr>
-    <tr><td class="paramname">k1</td><td>parameter </td></tr>
-    <tr><td class="paramname">k2</td><td>parameter </td></tr>
-    <tr><td class="paramname">*spll_obj</td><td>The <a class="el" href="struct_d_d_s_r_f__3_p_h.html" title="Defines the DDSRF_3PH structure">DDSRF_3PH</a> structure </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="pll_8c_source.html">pll.c</a> 第 <a class="el" href="pll_8c_source.html#l00250">250</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a6af2cb6d025984e7461176621118d8da" name="a6af2cb6d025984e7461176621118d8da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6af2cb6d025984e7461176621118d8da">&#9670;&#160;</a></span>SOGI_1PH_Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SOGI_1PH_Init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_s_o_g_i__1_p_h.html">SOGI_1PH</a> *</td>          <td class="paramname"><span class="paramname"><em>spll_obj</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>结构体初始化 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">spll_obj</td><td>结构体指针 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="pll_8c_source.html">pll.c</a> 第 <a class="el" href="pll_8c_source.html#l00022">22</a> 行定义.</p>
-
-</div>
-</div>
-<a id="ac68357b197b5778d423968938fe59e29" name="ac68357b197b5778d423968938fe59e29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac68357b197b5778d423968938fe59e29">&#9670;&#160;</a></span>SOGI_1PH_Run()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SOGI_1PH_Run </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_s_o_g_i__1_p_h.html">SOGI_1PH</a> *</td>          <td class="paramname"><span class="paramname"><em>spll_obj</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>acValue</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>执行 SOGI 单相锁相环 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">spll_obj</td><td>结构体指针 </td></tr>
-    <tr><td class="paramname">acValue</td><td>电网电压(V) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="pll_8c_source.html">pll.c</a> 第 <a class="el" href="pll_8c_source.html#l00083">83</a> 行定义.</p>
-
-</div>
-</div>
-<a id="aac5dc41f65a9efa844ad311c51cf3c7f" name="aac5dc41f65a9efa844ad311c51cf3c7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac5dc41f65a9efa844ad311c51cf3c7f">&#9670;&#160;</a></span>SOGI_1PH_Set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SOGI_1PH_Set </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_s_o_g_i__1_p_h.html">SOGI_1PH</a> *</td>          <td class="paramname"><span class="paramname"><em>spll_obj</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>acFreq</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>isrFrequency</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>lpf_b0</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>lpf_b1</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>配置SOGI结构体 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">spll_obj</td><td>结构体指针 </td></tr>
-    <tr><td class="paramname">acFreq</td><td>标称电网频率(Hz) </td></tr>
-    <tr><td class="paramname">isrFrequency</td><td>中断频率(Hz) </td></tr>
-    <tr><td class="paramname">lpf_b0</td><td>PI差分方程系数b0 </td></tr>
-    <tr><td class="paramname">lpf_b1</td><td>PI差分方程系数b1 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="pll_8c_source.html">pll.c</a> 第 <a class="el" href="pll_8c_source.html#l00054">54</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a2826ad35dce8723d331004e797beadd4" name="a2826ad35dce8723d331004e797beadd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2826ad35dce8723d331004e797beadd4">&#9670;&#160;</a></span>SRF_3PH_Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SRF_3PH_Init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_s_r_f__3_p_h.html">SRF_3PH</a> *</td>          <td class="paramname"><span class="paramname"><em>spll_obj</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reset <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> module </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">*spll_obj</td><td>The <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> structure </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="pll_8c_source.html">pll.c</a> 第 <a class="el" href="pll_8c_source.html#l00144">144</a> 行定义.</p>
-
-</div>
-</div>
-<a id="ab5a96d323b79646449adf4ea57322fa2" name="ab5a96d323b79646449adf4ea57322fa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5a96d323b79646449adf4ea57322fa2">&#9670;&#160;</a></span>SRF_3PH_Run()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SRF_3PH_Run </td>
-          <td>(</td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>v_q</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_s_r_f__3_p_h.html">SRF_3PH</a> *</td>          <td class="paramname"><span class="paramname"><em>spll_obj</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Run <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> module </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v_q</td><td>Q component of the grid voltage </td></tr>
-    <tr><td class="paramname">*spll_obj</td><td>The <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> structure </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="pll_8c_source.html">pll.c</a> 第 <a class="el" href="pll_8c_source.html#l00177">177</a> 行定义.</p>
-
-</div>
-</div>
-<a id="aa461167a3a2ad945a1b0da4f6694077c" name="aa461167a3a2ad945a1b0da4f6694077c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa461167a3a2ad945a1b0da4f6694077c">&#9670;&#160;</a></span>SRF_3PH_Set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SRF_3PH_Set </td>
-          <td>(</td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>grid_freq</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>delta_t</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_s_r_f__3_p_h.html">SRF_3PH</a> *</td>          <td class="paramname"><span class="paramname"><em>spll_obj</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> module </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">grid_freq</td><td>The grid frequency </td></tr>
-    <tr><td class="paramname">delta_t</td><td>1/Frequency of calling the PLL routine </td></tr>
-    <tr><td class="paramname">*spll_obj</td><td>The <a class="el" href="struct_s_r_f__3_p_h.html" title="Defines the SRF_3PH structure">SRF_3PH</a> structure </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="pll_8c_source.html">pll.c</a> 第 <a class="el" href="pll_8c_source.html#l00159">159</a> 行定义.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>

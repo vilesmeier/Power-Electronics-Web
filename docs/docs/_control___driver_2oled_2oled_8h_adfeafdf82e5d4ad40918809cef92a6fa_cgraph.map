@@ -1,7 +1,7 @@
 <map id="OLED_DrawArc" name="OLED_DrawArc">
-<area shape="rect" id="Node000001" title="OLED画圆弧" alt="" coords="5,31,121,57"/>
-<area shape="rect" id="Node000002" href="$_control___driver_2oled_2oled_8c.html#a844ceaa4803f82d5936ba3dd45e65022" title="指定位置画一个点" alt="" coords="169,5,294,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,33,153,28,153,33,121,38"/>
-<area shape="rect" id="Node000003" href="$_control___driver_2oled_2oled_8c.html#a1b6950930269c5f1d1d25d59a4600381" title="判断指定点是否在指定角度内部" alt="" coords="172,56,291,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,50,157,55,156,61,120,55"/>
+<area shape="rect" id="Node000001" title="OLED画圆弧" alt="" coords="5,32,116,60"/>
+<area shape="rect" id="Node000002" href="$_control___driver_2oled_2oled_8c.html#a844ceaa4803f82d5936ba3dd45e65022" title="指定位置画一个点" alt="" coords="164,5,283,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,34,148,29,149,34,116,39"/>
+<area shape="rect" id="Node000003" href="$_control___driver_2oled_2oled_8c.html#a1b6950930269c5f1d1d25d59a4600381" title="判断指定点是否在指定角度内部" alt="" coords="166,57,281,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="116,52,151,57,150,62,116,57"/>
 </map>

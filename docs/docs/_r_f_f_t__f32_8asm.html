@@ -110,7 +110,7 @@ $(function(){initNavTree('_r_f_f_t__f32_8asm.html','',''); });
 <tr class="memitem:a6aabb4fa6692a9729476def8a361b772" id="r_a6aabb4fa6692a9729476def8a361b772"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6aabb4fa6692a9729476def8a361b772">RFFT_f32</a> (<a class="el" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a>)</td></tr>
 <tr class="memitem:a2ddd403cbeebe77d27c0688c77274808" id="r_a2ddd403cbeebe77d27c0688c77274808"><td class="memItemLeft" align="right" valign="top">*<a class="el" href="#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a> must be a power&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ddd403cbeebe77d27c0688c77274808">of</a> (32, 64, 128, etc)</td></tr>
 <tr class="memitem:a0fe3e72290be2f9d8b15617ddfc46101" id="r_a0fe3e72290be2f9d8b15617ddfc46101"><td class="memItemLeft" align="right" valign="top">*FFTStages must be&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fe3e72290be2f9d8b15617ddfc46101">log2</a> (<a class="el" href="#a2c3578db5e9dc0a776fa2cbf841d09bd">FFTSize</a>)</td></tr>
-<tr class="memitem:afdb2bb7b296702d88b16dcda8837fb75" id="r_afdb2bb7b296702d88b16dcda8837fb75"><td class="memItemLeft" align="right" valign="top">Bit reverse <a class="el" href="rfft_8c.html#a5a0f4b49baab36db0c5e1922cdbc6c71">input</a> <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a> <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#aa1b4564fa603a44cf17cc74308c9ad6c">and</a> calculate &amp;In&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdb2bb7b296702d88b16dcda8837fb75">Buf</a> (read <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a> bit reverse order) Out Buf</td></tr>
+<tr class="memitem:afdb2bb7b296702d88b16dcda8837fb75" id="r_afdb2bb7b296702d88b16dcda8837fb75"><td class="memItemLeft" align="right" valign="top">Bit reverse <a class="el" href="group___d_s_p___r_f_f_t___f32.html#ga5a0f4b49baab36db0c5e1922cdbc6c71">input</a> <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a> <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#aa1b4564fa603a44cf17cc74308c9ad6c">and</a> calculate &amp;In&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdb2bb7b296702d88b16dcda8837fb75">Buf</a> (read <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a> bit reverse order) Out Buf</td></tr>
 <tr class="memitem:afd0227d97e797b0053b6f42b81a6833c" id="r_afd0227d97e797b0053b6f42b81a6833c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd0227d97e797b0053b6f42b81a6833c">I1</a> (((I1+<a class="el" href="#a1e3f8ba831b756d307103d6d7ed30fb1">I2</a>)+(<a class="el" href="#a1030fe1cdffd4d97f8eeddc50b6713d8">I3</a>+<a class="el" href="#aef607171209474e2d7a348628a677651">I4</a>))+((<a class="el" href="#a3f2e87854d24df52286d8c8e356ae33d">I5</a>+<a class="el" href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">I6</a>)+(<a class="el" href="#a79931a9bc87624b5f10dc4f731985b25">I7</a>+<a class="el" href="#ac2d732d6e782e389adc2a3809207da85">I8</a>)))/8 -&gt;|I1'|</td></tr>
 <tr class="memitem:a1e3f8ba831b756d307103d6d7ed30fb1" id="r_a1e3f8ba831b756d307103d6d7ed30fb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e3f8ba831b756d307103d6d7ed30fb1">I2</a> ((<a class="el" href="#afd0227d97e797b0053b6f42b81a6833c">I1</a> - I2)+COS *((<a class="el" href="#a3f2e87854d24df52286d8c8e356ae33d">I5</a> - <a class="el" href="#ae3e3eccf5e177dbfd0bfc3d4737db99b">I6</a>)+(<a class="el" href="#ac2d732d6e782e389adc2a3809207da85">I8</a> - <a class="el" href="#a79931a9bc87624b5f10dc4f731985b25">I7</a>)))/8 -&gt;|I2'|</td></tr>
 <tr class="memitem:a1030fe1cdffd4d97f8eeddc50b6713d8" id="r_a1030fe1cdffd4d97f8eeddc50b6713d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1030fe1cdffd4d97f8eeddc50b6713d8">I3</a> ((<a class="el" href="#afd0227d97e797b0053b6f42b81a6833c">I1</a>+<a class="el" href="#a1e3f8ba831b756d307103d6d7ed30fb1">I2</a>) -(I3+<a class="el" href="#aef607171209474e2d7a348628a677651">I4</a>))/8 -&gt;|I3'|</td></tr>
@@ -127,8 +127,8 @@ $(function(){initNavTree('_r_f_f_t__f32_8asm.html','',''); });
 <tr class="memitem:adda56382c7482dd58777fa297fa747ab" id="r_adda56382c7482dd58777fa297fa747ab"><td class="memItemLeft" align="right" valign="top">brief Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adda56382c7482dd58777fa297fa747ab">FFT</a></td></tr>
 <tr class="memitem:a514862568f2272017ecf4f8954de2ca3" id="r_a514862568f2272017ecf4f8954de2ca3"><td class="memItemLeft" align="right" valign="top">author&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a514862568f2272017ecf4f8954de2ca3">C2000</a></td></tr>
 <tr class="memitem:a92975724c920d645cc3fae7075e9c2a1" id="r_a92975724c920d645cc3fae7075e9c2a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_r_f_f_t__f32__phase_8asm.html#a2b519b1bfbe7ff9c1514f2fd53dd1dbd">DESCRIPTION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92975724c920d645cc3fae7075e9c2a1">__pad0__</a></td></tr>
-<tr class="memitem:a41ae2e4e517a88e8fb1378a8e8ad6f13" id="r_a41ae2e4e517a88e8fb1378a8e8ad6f13"><td class="memItemLeft" align="right" valign="top">This <a class="el" href="#a590668688740da1ecf707208f2630a51">function</a> computes a <a class="el" href="_r_f_f_t__f32__win_8asm.html#a070c3b1212942fef7081ee7d22aaa72e">real</a> <a class="el" href="#adda56382c7482dd58777fa297fa747ab">FFT</a> The <a class="el" href="rfft_8c.html#a5a0f4b49baab36db0c5e1922cdbc6c71">input</a> <a class="el" href="#a784a700f8da2dd2432d27aa45de6c642">buffer</a> must be aligned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41ae2e4e517a88e8fb1378a8e8ad6f13">to</a></td></tr>
-<tr class="memitem:a784a700f8da2dd2432d27aa45de6c642" id="r_a784a700f8da2dd2432d27aa45de6c642"><td class="memItemLeft" align="right" valign="top">a multiple <a class="el" href="#a2ddd403cbeebe77d27c0688c77274808">of</a> <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a6c4309005f03dac1a90e4b9f35331253">the</a> <a class="el" href="#adda56382c7482dd58777fa297fa747ab">FFT</a> <a class="el" href="_r_f_f_t__f32__win_8asm.html#aa2fbe8499f5d5a4eb9e5c72a0a8ae296">size</a> If it <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a65213ad6243ab615923ff6dbf4a40e62">is</a> not aligned then <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a6c4309005f03dac1a90e4b9f35331253">the</a> <a class="el" href="rfft_8c.html#af41db2f2a8a877a4d60944cafafac70c">output</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a784a700f8da2dd2432d27aa45de6c642">buffer</a></td></tr>
+<tr class="memitem:a41ae2e4e517a88e8fb1378a8e8ad6f13" id="r_a41ae2e4e517a88e8fb1378a8e8ad6f13"><td class="memItemLeft" align="right" valign="top">This <a class="el" href="#a590668688740da1ecf707208f2630a51">function</a> computes a <a class="el" href="_r_f_f_t__f32__win_8asm.html#a070c3b1212942fef7081ee7d22aaa72e">real</a> <a class="el" href="#adda56382c7482dd58777fa297fa747ab">FFT</a> The <a class="el" href="group___d_s_p___r_f_f_t___f32.html#ga5a0f4b49baab36db0c5e1922cdbc6c71">input</a> <a class="el" href="#a784a700f8da2dd2432d27aa45de6c642">buffer</a> must be aligned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41ae2e4e517a88e8fb1378a8e8ad6f13">to</a></td></tr>
+<tr class="memitem:a784a700f8da2dd2432d27aa45de6c642" id="r_a784a700f8da2dd2432d27aa45de6c642"><td class="memItemLeft" align="right" valign="top">a multiple <a class="el" href="#a2ddd403cbeebe77d27c0688c77274808">of</a> <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a6c4309005f03dac1a90e4b9f35331253">the</a> <a class="el" href="#adda56382c7482dd58777fa297fa747ab">FFT</a> <a class="el" href="_r_f_f_t__f32__win_8asm.html#aa2fbe8499f5d5a4eb9e5c72a0a8ae296">size</a> If it <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a65213ad6243ab615923ff6dbf4a40e62">is</a> not aligned then <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a6c4309005f03dac1a90e4b9f35331253">the</a> <a class="el" href="group___d_s_p___r_f_f_t___f32.html#gaf41db2f2a8a877a4d60944cafafac70c">output</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a784a700f8da2dd2432d27aa45de6c642">buffer</a></td></tr>
 <tr class="memitem:ac575de2f74001cdf8519cd6321b08ab2" id="r_ac575de2f74001cdf8519cd6321b08ab2"><td class="memItemLeft" align="right" valign="top">then <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a7290fcb635ef94e7a699bc152a3d9696">use</a> <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a6c4309005f03dac1a90e4b9f35331253">the</a> <a class="el" href="fpu__rfft_8h.html#a9124e5c81f2cf7c0b2b8be3e761117bf">RFFT_f32u</a> <a class="el" href="#a590668688740da1ecf707208f2630a51">function</a> Using <a class="el" href="_r_f_f_t__f32__mag_8asm.html#ad143ae94e652b9b9d26d11f8a2347934">this</a> <a class="el" href="#a590668688740da1ecf707208f2630a51">function</a> will reduce&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac575de2f74001cdf8519cd6321b08ab2">cycle</a></td></tr>
 <tr class="memitem:a969420884d46432fc70054788ca19d09" id="r_a969420884d46432fc70054788ca19d09"><td class="memItemLeft" align="right" valign="top">performance <a class="el" href="#a2ddd403cbeebe77d27c0688c77274808">of</a> <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a6c4309005f03dac1a90e4b9f35331253">the</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a969420884d46432fc70054788ca19d09">algorithm</a></td></tr>
 <tr class="memitem:ae96f8def7ca7adf235664aa5da1457ce" id="r_ae96f8def7ca7adf235664aa5da1457ce"><td class="memItemLeft" align="right" valign="top">FUNCTIONS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae96f8def7ca7adf235664aa5da1457ce">__pad1__</a></td></tr>
@@ -140,7 +140,7 @@ $(function(){initNavTree('_r_f_f_t__f32_8asm.html','',''); });
 <tr class="memitem:a590668688740da1ecf707208f2630a51" id="r_a590668688740da1ecf707208f2630a51"><td class="memItemLeft" align="right" valign="top">*MagBuf <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#aa1b4564fa603a44cf17cc74308c9ad6c">and</a> PhaseBuf are not used by <a class="el" href="_r_f_f_t__f32__mag_8asm.html#ad143ae94e652b9b9d26d11f8a2347934">this</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a590668688740da1ecf707208f2630a51">function</a></td></tr>
 <tr class="memitem:a6694692002fc3c511834ee9d7193a935" id="r_a6694692002fc3c511834ee9d7193a935"><td class="memItemLeft" align="right" valign="top">They are <a class="el" href="_r_f_f_t__f32__mag_8asm.html#ac302202dcb96f403692957fba7ca3d54">only</a> used by <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a6c4309005f03dac1a90e4b9f35331253">the</a> magitude <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#aa1b4564fa603a44cf17cc74308c9ad6c">and</a> <a class="el" href="_r_f_f_t__f32__phase___t_m_u0_8asm.html#a0385929a5c757b177a4c3116b41669d4">phase</a> calculation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6694692002fc3c511834ee9d7193a935">functions</a></td></tr>
 <tr class="memitem:a12c23dbfa0d6a5307e8aadc44b7078c2" id="r_a12c23dbfa0d6a5307e8aadc44b7078c2"><td class="memItemLeft" align="right" valign="top">ALGORITHM&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12c23dbfa0d6a5307e8aadc44b7078c2">__pad3__</a></td></tr>
-<tr class="memitem:adcbc27d8418504081cf0b718cb873633" id="r_adcbc27d8418504081cf0b718cb873633"><td class="memItemLeft" align="right" valign="top">Bit reverse <a class="el" href="rfft_8c.html#a5a0f4b49baab36db0c5e1922cdbc6c71">input</a> <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a> <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#aa1b4564fa603a44cf17cc74308c9ad6c">and</a> calculate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcbc27d8418504081cf0b718cb873633">stages</a></td></tr>
+<tr class="memitem:adcbc27d8418504081cf0b718cb873633" id="r_adcbc27d8418504081cf0b718cb873633"><td class="memItemLeft" align="right" valign="top">Bit reverse <a class="el" href="group___d_s_p___r_f_f_t___f32.html#ga5a0f4b49baab36db0c5e1922cdbc6c71">input</a> <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a> <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#aa1b4564fa603a44cf17cc74308c9ad6c">and</a> calculate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcbc27d8418504081cf0b718cb873633">stages</a></td></tr>
 <tr class="memitem:ac05dacc19794c74f9243db03f8f4380b" id="r_ac05dacc19794c74f9243db03f8f4380b"><td class="memItemLeft" align="right" valign="top">Note&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac05dacc19794c74f9243db03f8f4380b">__pad4__</a></td></tr>
 <tr class="memitem:a712fcebcdf8a02f91f3c2c599f5ea5d2" id="r_a712fcebcdf8a02f91f3c2c599f5ea5d2"><td class="memItemLeft" align="right" valign="top">Calculate <a class="el" href="#adcbc27d8418504081cf0b718cb873633">stages</a> <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#aa1b4564fa603a44cf17cc74308c9ad6c">and</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a712fcebcdf8a02f91f3c2c599f5ea5d2">up</a></td></tr>
 </table>
@@ -169,7 +169,7 @@ $(function(){initNavTree('_r_f_f_t__f32_8asm.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Bit reverse <a class="el" href="rfft_8c.html#a5a0f4b49baab36db0c5e1922cdbc6c71">input</a> <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a> <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#aa1b4564fa603a44cf17cc74308c9ad6c">and</a> calculate &amp;In Buf </td>
+          <td class="memname">Bit reverse <a class="el" href="group___d_s_p___r_f_f_t___f32.html#ga5a0f4b49baab36db0c5e1922cdbc6c71">input</a> <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a> <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#aa1b4564fa603a44cf17cc74308c9ad6c">and</a> calculate &amp;In Buf </td>
           <td>(</td>
           <td class="paramtype">read <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a2dca1e84a5e665f0def1baede53a101d">in</a> bit reverse</td>          <td class="paramname"><span class="paramname"><em>order</em></span></td><td>)</td>
           <td></td>
@@ -181,8 +181,8 @@ $(function(){initNavTree('_r_f_f_t__f32_8asm.html','',''); });
 <div class="dyncontent">
 <div class="center"><img src="_r_f_f_t__f32_8asm_afdb2bb7b296702d88b16dcda8837fb75_cgraph.png" border="0" usemap="#a_r_f_f_t__f32_8asm_afdb2bb7b296702d88b16dcda8837fb75_cgraph" loading="lazy" alt=""/></div>
 <map name="a_r_f_f_t__f32_8asm_afdb2bb7b296702d88b16dcda8837fb75_cgraph" id="a_r_f_f_t__f32_8asm_afdb2bb7b296702d88b16dcda8837fb75_cgraph">
-<area shape="rect" title=" " alt="" coords="5,29,47,56"/>
-<area shape="poly" title=" " alt="" coords="17,29,16,12,26,3,33,6,36,13,31,15,29,9,26,8,21,14,22,29"/>
+<area shape="rect" title=" " alt="" coords="5,29,46,57"/>
+<area shape="poly" title=" " alt="" coords="16,29,16,12,25,3,32,6,35,13,30,15,28,9,26,8,21,14,22,29"/>
 </map>
 </div>
 
@@ -211,8 +211,8 @@ $(function(){initNavTree('_r_f_f_t__f32_8asm.html','',''); });
 <div class="dyncontent">
 <div class="center"><img src="_r_f_f_t__f32_8asm_a2c3578db5e9dc0a776fa2cbf841d09bd_cgraph.png" border="0" usemap="#a_r_f_f_t__f32_8asm_a2c3578db5e9dc0a776fa2cbf841d09bd_cgraph" loading="lazy" alt=""/></div>
 <map name="a_r_f_f_t__f32_8asm_a2c3578db5e9dc0a776fa2cbf841d09bd_cgraph" id="a_r_f_f_t__f32_8asm_a2c3578db5e9dc0a776fa2cbf841d09bd_cgraph">
-<area shape="rect" title=" " alt="" coords="5,29,77,56"/>
-<area shape="poly" title=" " alt="" coords="27,29,26,12,32,5,41,3,51,5,56,12,51,15,48,10,41,8,35,10,31,14,32,29"/>
+<area shape="rect" title=" " alt="" coords="5,29,72,57"/>
+<area shape="poly" title=" " alt="" coords="25,29,25,12,30,5,39,3,48,5,52,12,48,15,44,10,38,8,33,10,30,14,30,29"/>
 </map>
 </div>
 
@@ -237,38 +237,38 @@ $(function(){initNavTree('_r_f_f_t__f32_8asm.html','',''); });
 <div class="dyncontent">
 <div class="center"><img src="_r_f_f_t__f32_8asm_afd0227d97e797b0053b6f42b81a6833c_cgraph.png" border="0" usemap="#a_r_f_f_t__f32_8asm_afd0227d97e797b0053b6f42b81a6833c_cgraph" loading="lazy" alt=""/></div>
 <map name="a_r_f_f_t__f32_8asm_afd0227d97e797b0053b6f42b81a6833c_cgraph" id="a_r_f_f_t__f32_8asm_afd0227d97e797b0053b6f42b81a6833c_cgraph">
-<area shape="rect" title=" " alt="" coords="5,225,44,252"/>
-<area shape="poly" title=" " alt="" coords="8,225,7,208,14,201,25,199,36,201,42,208,38,212,33,206,25,204,17,206,12,210,13,225"/>
+<area shape="rect" title=" " alt="" coords="5,225,44,253"/>
+<area shape="poly" title=" " alt="" coords="8,225,7,207,14,201,25,198,36,201,42,207,38,211,33,206,25,204,17,205,12,209,13,224"/>
 <area shape="rect" href="_r_f_f_t__f32_8asm.html#a1e3f8ba831b756d307103d6d7ed30fb1" title=" " alt="" coords="265,48,303,75"/>
-<area shape="poly" title=" " alt="" coords="25,224,43,150,62,104,90,61,118,31,146,11,178,3,217,10,240,21,260,35,256,39,237,25,216,15,179,8,148,16,121,35,94,64,67,106,48,151,30,225"/>
+<area shape="poly" title=" " alt="" coords="25,224,44,149,62,103,90,61,118,31,146,11,178,3,217,10,240,20,259,35,256,39,237,25,216,15,179,8,148,16,121,35,94,64,67,106,49,151,31,225"/>
 <area shape="rect" href="_r_f_f_t__f32_8asm.html#a1030fe1cdffd4d97f8eeddc50b6713d8" title=" " alt="" coords="178,48,217,75"/>
-<area shape="poly" title=" " alt="" coords="29,224,50,172,67,142,90,115,125,92,162,76,164,81,128,97,94,119,72,145,55,175,34,226"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#aef607171209474e2d7a348628a677651" title=" " alt="" coords="265,99,303,125"/>
-<area shape="poly" title=" " alt="" coords="40,223,90,187,175,147,249,120,251,125,177,152,93,192,43,227"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#a3f2e87854d24df52286d8c8e356ae33d" title=" " alt="" coords="92,225,130,252"/>
+<area shape="poly" title=" " alt="" coords="29,224,50,172,67,142,90,115,125,92,162,76,164,81,128,97,94,119,72,145,55,174,34,226"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#aef607171209474e2d7a348628a677651" title=" " alt="" coords="265,100,303,127"/>
+<area shape="poly" title=" " alt="" coords="41,222,90,187,175,148,249,121,251,126,177,153,93,192,44,227"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#a3f2e87854d24df52286d8c8e356ae33d" title=" " alt="" coords="92,225,130,253"/>
 <area shape="poly" title=" " alt="" coords="44,244,76,245,76,250,44,249"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#ae3e3eccf5e177dbfd0bfc3d4737db99b" title=" " alt="" coords="265,351,303,377"/>
-<area shape="poly" title=" " alt="" coords="34,251,53,287,84,334,127,379,152,398,179,412,197,417,216,412,238,401,257,386,261,390,241,406,217,417,197,422,177,417,149,403,123,383,80,337,49,290,30,254"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#ae3e3eccf5e177dbfd0bfc3d4737db99b" title=" " alt="" coords="265,350,303,378"/>
+<area shape="poly" title=" " alt="" coords="35,252,54,288,85,334,127,380,152,398,179,412,197,417,216,412,238,401,257,387,260,391,240,406,217,417,197,422,177,417,149,403,123,384,80,337,49,290,30,254"/>
 <area shape="rect" href="_r_f_f_t__f32_8asm.html#a79931a9bc87624b5f10dc4f731985b25" title=" " alt="" coords="178,376,217,403"/>
-<area shape="poly" title=" " alt="" coords="43,251,171,364,168,368,40,255"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#ac2d732d6e782e389adc2a3809207da85" title=" " alt="" coords="265,401,303,428"/>
-<area shape="poly" title=" " alt="" coords="31,252,49,316,68,354,94,388,122,410,149,421,179,423,216,421,249,418,249,423,217,427,179,429,147,426,119,415,90,391,63,357,44,318,26,253"/>
-<area shape="poly" title=" " alt="" coords="178,59,136,70,114,80,94,95,72,122,54,152,34,211,29,209,50,150,67,119,90,92,111,76,134,65,177,54"/>
+<area shape="poly" title=" " alt="" coords="44,251,171,364,167,368,40,255"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#ac2d732d6e782e389adc2a3809207da85" title=" " alt="" coords="265,402,303,430"/>
+<area shape="poly" title=" " alt="" coords="31,252,50,317,68,354,94,388,122,410,149,421,179,423,216,421,249,418,249,424,217,427,179,428,147,426,119,415,90,391,63,357,45,318,26,254"/>
+<area shape="poly" title=" " alt="" coords="178,59,136,70,114,80,94,95,72,122,55,152,34,210,29,209,50,150,67,119,90,92,111,76,134,65,177,54"/>
 <area shape="poly" title=" " alt="" coords="217,59,249,59,249,64,217,64"/>
-<area shape="poly" title=" " alt="" coords="181,48,180,31,187,24,197,21,208,24,214,31,210,34,206,29,197,27,189,29,185,33,186,48"/>
-<area shape="poly" title=" " alt="" coords="218,70,253,91,250,96,215,75"/>
+<area shape="poly" title=" " alt="" coords="181,47,180,30,187,23,197,21,208,24,214,30,210,34,206,28,197,26,189,28,185,32,186,47"/>
+<area shape="poly" title=" " alt="" coords="218,70,253,92,250,96,215,75"/>
 <area shape="poly" title=" " alt="" coords="91,234,59,233,59,227,92,229"/>
-<area shape="poly" title=" " alt="" coords="124,223,257,84,260,88,128,227"/>
-<area shape="poly" title=" " alt="" coords="116,224,181,88,185,90,121,226"/>
-<area shape="poly" title=" " alt="" coords="129,228,170,208,215,179,260,136,264,139,218,184,173,213,132,233"/>
-<area shape="poly" title=" " alt="" coords="95,225,94,208,100,201,111,199,122,201,128,208,124,212,119,206,111,204,103,206,99,210,100,225"/>
-<area shape="poly" title=" " alt="" coords="132,244,173,265,218,294,263,337,259,341,215,298,170,270,129,249"/>
-<area shape="poly" title=" " alt="" coords="120,251,179,361,175,364,115,254"/>
-<area shape="poly" title=" " alt="" coords="129,251,218,338,263,388,259,392,215,342,125,254"/>
-<area shape="poly" title=" " alt="" coords="189,377,129,267,134,264,193,374"/>
+<area shape="poly" title=" " alt="" coords="124,223,257,85,260,88,128,227"/>
+<area shape="poly" title=" " alt="" coords="116,224,180,88,185,91,121,226"/>
+<area shape="poly" title=" " alt="" coords="129,228,170,208,215,179,259,137,263,141,218,184,173,213,132,233"/>
+<area shape="poly" title=" " alt="" coords="94,225,94,207,100,201,111,198,122,201,128,207,124,211,119,206,111,204,103,205,99,209,100,224"/>
+<area shape="poly" title=" " alt="" coords="132,244,173,265,218,294,263,336,259,340,215,298,170,270,129,249"/>
+<area shape="poly" title=" " alt="" coords="120,252,179,361,174,364,115,254"/>
+<area shape="poly" title=" " alt="" coords="130,251,218,338,263,389,259,392,215,342,126,255"/>
+<area shape="poly" title=" " alt="" coords="188,377,129,267,134,265,193,374"/>
 <area shape="poly" title=" " alt="" coords="216,381,249,371,251,377,218,387"/>
-<area shape="poly" title=" " alt="" coords="181,376,180,359,187,352,197,349,208,352,214,359,210,362,206,357,197,355,189,357,185,361,186,376"/>
-<area shape="poly" title=" " alt="" coords="218,392,251,402,249,408,216,398"/>
+<area shape="poly" title=" " alt="" coords="181,375,180,358,187,351,197,349,208,352,214,358,210,362,206,356,197,354,189,356,185,360,186,375"/>
+<area shape="poly" title=" " alt="" coords="218,393,251,403,249,408,216,398"/>
 </map>
 </div>
 
@@ -310,38 +310,38 @@ $(function(){initNavTree('_r_f_f_t__f32_8asm.html','',''); });
 <div class="dyncontent">
 <div class="center"><img src="_r_f_f_t__f32_8asm_a1030fe1cdffd4d97f8eeddc50b6713d8_cgraph.png" border="0" usemap="#a_r_f_f_t__f32_8asm_a1030fe1cdffd4d97f8eeddc50b6713d8_cgraph" loading="lazy" alt=""/></div>
 <map name="a_r_f_f_t__f32_8asm_a1030fe1cdffd4d97f8eeddc50b6713d8_cgraph" id="a_r_f_f_t__f32_8asm_a1030fe1cdffd4d97f8eeddc50b6713d8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,156,44,183"/>
-<area shape="poly" title=" " alt="" coords="8,156,7,139,14,132,25,129,36,132,42,139,38,142,33,137,25,135,17,136,12,140,13,155"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#afd0227d97e797b0053b6f42b81a6833c" title=" " alt="" coords="92,156,130,183"/>
-<area shape="poly" title=" " alt="" coords="44,174,76,175,76,181,44,180"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#a1e3f8ba831b756d307103d6d7ed30fb1" title=" " alt="" coords="265,5,303,32"/>
-<area shape="poly" title=" " alt="" coords="33,154,54,124,87,86,129,49,177,20,214,12,249,11,249,17,215,17,179,25,132,53,91,90,59,127,37,157"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#aef607171209474e2d7a348628a677651" title=" " alt="" coords="265,333,303,360"/>
-<area shape="poly" title=" " alt="" coords="35,182,56,216,87,259,129,303,153,322,179,338,214,347,249,348,249,353,213,352,177,342,150,327,126,307,83,263,51,219,31,185"/>
-<area shape="poly" title=" " alt="" coords="91,164,59,163,59,158,92,159"/>
-<area shape="poly" title=" " alt="" coords="95,156,94,139,100,132,111,129,122,132,128,139,124,142,119,137,111,135,103,136,99,140,100,155"/>
-<area shape="poly" title=" " alt="" coords="114,154,135,103,153,74,177,49,212,29,248,20,250,25,214,34,180,53,157,77,139,105,119,156"/>
-<area shape="poly" title=" " alt="" coords="117,183,124,210,136,245,154,282,180,313,214,332,250,341,248,346,212,337,176,317,149,284,131,247,119,212,112,184"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#a3f2e87854d24df52286d8c8e356ae33d" title=" " alt="" coords="178,181,217,208"/>
-<area shape="poly" title=" " alt="" coords="131,180,164,191,162,196,130,185"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#ae3e3eccf5e177dbfd0bfc3d4737db99b" title=" " alt="" coords="351,107,389,133"/>
-<area shape="poly" title=" " alt="" coords="126,153,149,137,177,123,219,113,262,109,336,112,335,118,262,115,220,118,179,128,152,141,129,158"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#a79931a9bc87624b5f10dc4f731985b25" title=" " alt="" coords="265,181,303,208"/>
-<area shape="poly" title=" " alt="" coords="130,157,170,142,194,139,217,143,240,154,260,168,256,173,237,158,216,148,194,145,171,147,132,162"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#ac2d732d6e782e389adc2a3809207da85" title=" " alt="" coords="351,232,389,259"/>
-<area shape="poly" title=" " alt="" coords="128,181,151,200,179,218,220,231,262,239,336,244,335,249,261,245,218,236,177,222,148,205,124,185"/>
-<area shape="poly" title=" " alt="" coords="178,199,138,201,91,197,58,187,59,182,92,192,138,196,178,194"/>
-<area shape="poly" title=" " alt="" coords="177,184,144,173,146,168,179,179"/>
-<area shape="poly" title=" " alt="" coords="203,180,267,45,272,47,208,182"/>
-<area shape="poly" title=" " alt="" coords="208,207,270,318,265,321,204,209"/>
+<area shape="rect" title=" " alt="" coords="5,156,44,184"/>
+<area shape="poly" title=" " alt="" coords="8,156,7,138,14,132,25,129,36,132,42,138,38,142,33,137,25,135,17,136,12,140,13,155"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#afd0227d97e797b0053b6f42b81a6833c" title=" " alt="" coords="92,156,130,184"/>
+<area shape="poly" title=" " alt="" coords="44,175,76,176,76,181,44,180"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#a1e3f8ba831b756d307103d6d7ed30fb1" title=" " alt="" coords="265,5,303,33"/>
+<area shape="poly" title=" " alt="" coords="33,154,55,124,87,87,129,49,177,21,214,12,249,12,249,17,215,17,179,26,132,54,91,90,59,127,37,157"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#aef607171209474e2d7a348628a677651" title=" " alt="" coords="265,333,303,361"/>
+<area shape="poly" title=" " alt="" coords="36,183,56,217,88,260,129,304,153,323,179,338,214,348,249,349,249,354,213,353,177,343,150,327,126,308,84,264,52,220,31,186"/>
+<area shape="poly" title=" " alt="" coords="91,165,59,164,59,158,92,160"/>
+<area shape="poly" title=" " alt="" coords="94,156,94,138,100,132,111,129,122,132,128,138,124,142,119,137,111,135,103,136,99,140,100,155"/>
+<area shape="poly" title=" " alt="" coords="114,154,135,103,153,74,177,49,212,30,248,20,250,25,214,35,180,53,157,77,140,106,119,156"/>
+<area shape="poly" title=" " alt="" coords="117,183,136,246,154,282,180,313,214,332,250,341,248,347,212,337,176,317,150,285,131,248,112,185"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#a3f2e87854d24df52286d8c8e356ae33d" title=" " alt="" coords="178,181,217,209"/>
+<area shape="poly" title=" " alt="" coords="131,180,164,192,162,197,130,185"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#ae3e3eccf5e177dbfd0bfc3d4737db99b" title=" " alt="" coords="351,107,389,134"/>
+<area shape="poly" title=" " alt="" coords="127,153,150,137,177,123,219,113,262,110,336,113,335,118,262,115,220,119,179,128,152,142,130,158"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#a79931a9bc87624b5f10dc4f731985b25" title=" " alt="" coords="265,181,303,209"/>
+<area shape="poly" title=" " alt="" coords="130,157,170,143,194,140,217,143,240,154,259,168,256,173,237,159,216,148,194,145,171,148,132,162"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#ac2d732d6e782e389adc2a3809207da85" title=" " alt="" coords="351,232,389,260"/>
+<area shape="poly" title=" " alt="" coords="128,182,151,201,179,218,220,232,262,240,336,244,335,250,261,245,218,237,177,223,148,206,125,186"/>
+<area shape="poly" title=" " alt="" coords="178,200,138,202,91,198,58,188,59,183,92,193,138,196,178,195"/>
+<area shape="poly" title=" " alt="" coords="177,185,144,174,146,168,179,180"/>
+<area shape="poly" title=" " alt="" coords="203,180,267,46,272,48,208,182"/>
+<area shape="poly" title=" " alt="" coords="209,208,269,318,265,321,204,210"/>
 <area shape="poly" title=" " alt="" coords="181,181,180,164,187,157,197,155,208,157,214,164,210,167,206,162,197,160,189,162,185,166,186,181"/>
-<area shape="poly" title=" " alt="" coords="212,179,235,160,263,143,300,130,335,122,336,127,301,135,266,148,238,165,215,183"/>
-<area shape="poly" title=" " alt="" coords="217,200,249,201,249,206,217,205"/>
-<area shape="poly" title=" " alt="" coords="218,200,265,217,336,236,335,241,264,223,216,205"/>
-<area shape="poly" title=" " alt="" coords="264,190,232,188,232,183,264,184"/>
-<area shape="poly" title=" " alt="" coords="299,179,340,142,344,146,302,183"/>
-<area shape="poly" title=" " alt="" coords="267,181,267,164,273,157,284,155,295,157,301,164,297,167,292,162,284,160,276,162,272,166,273,181"/>
-<area shape="poly" title=" " alt="" coords="305,203,339,224,336,229,302,208"/>
+<area shape="poly" title=" " alt="" coords="212,179,235,160,263,143,300,130,335,122,336,128,301,135,266,148,238,165,215,183"/>
+<area shape="poly" title=" " alt="" coords="217,200,249,201,249,207,217,205"/>
+<area shape="poly" title=" " alt="" coords="218,200,265,218,336,236,335,241,264,223,216,205"/>
+<area shape="poly" title=" " alt="" coords="264,190,232,189,232,184,264,185"/>
+<area shape="poly" title=" " alt="" coords="299,179,340,143,343,147,303,183"/>
+<area shape="poly" title=" " alt="" coords="267,181,267,164,273,157,284,155,295,157,301,164,297,167,292,162,284,160,276,162,272,166,272,181"/>
+<area shape="poly" title=" " alt="" coords="305,204,339,225,336,229,302,208"/>
 </map>
 </div>
 
@@ -383,37 +383,37 @@ $(function(){initNavTree('_r_f_f_t__f32_8asm.html','',''); });
 <div class="dyncontent">
 <div class="center"><img src="_r_f_f_t__f32_8asm_a3f2e87854d24df52286d8c8e356ae33d_cgraph.png" border="0" usemap="#a_r_f_f_t__f32_8asm_a3f2e87854d24df52286d8c8e356ae33d_cgraph" loading="lazy" alt=""/></div>
 <map name="a_r_f_f_t__f32_8asm_a3f2e87854d24df52286d8c8e356ae33d_cgraph" id="a_r_f_f_t__f32_8asm_a3f2e87854d24df52286d8c8e356ae33d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,219,44,245"/>
-<area shape="poly" title=" " alt="" coords="8,218,7,201,14,194,25,192,36,195,42,201,38,205,33,199,25,197,17,199,12,203,13,218"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#afd0227d97e797b0053b6f42b81a6833c" title=" " alt="" coords="92,219,130,245"/>
-<area shape="poly" title=" " alt="" coords="44,237,76,238,76,243,44,242"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#a1e3f8ba831b756d307103d6d7ed30fb1" title=" " alt="" coords="265,5,303,32"/>
-<area shape="poly" title=" " alt="" coords="29,217,52,169,69,141,90,114,128,82,170,57,213,38,249,25,251,30,215,43,173,61,131,86,94,118,73,144,56,172,34,219"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#a1030fe1cdffd4d97f8eeddc50b6713d8" title=" " alt="" coords="178,131,217,157"/>
-<area shape="poly" title=" " alt="" coords="40,216,90,180,127,164,162,151,164,156,129,168,93,185,43,220"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#aef607171209474e2d7a348628a677651" title=" " alt="" coords="265,131,303,157"/>
-<area shape="poly" title=" " alt="" coords="33,217,54,188,87,151,128,117,152,103,177,92,197,88,217,92,240,103,260,118,256,122,237,108,216,97,197,93,179,97,155,107,132,121,91,155,58,191,37,220"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#ae3e3eccf5e177dbfd0bfc3d4737db99b" title=" " alt="" coords="265,333,303,360"/>
-<area shape="poly" title=" " alt="" coords="45,238,251,330,249,335,43,243"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#a79931a9bc87624b5f10dc4f731985b25" title=" " alt="" coords="178,408,217,435"/>
-<area shape="poly" title=" " alt="" coords="31,245,51,307,69,343,94,375,128,401,164,418,162,422,125,406,90,379,65,346,46,309,25,247"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#ac2d732d6e782e389adc2a3809207da85" title=" " alt="" coords="265,408,303,435"/>
-<area shape="poly" title=" " alt="" coords="31,245,49,315,68,357,94,396,121,423,148,441,178,447,216,444,249,434,251,439,217,449,178,453,146,445,118,428,90,399,63,360,44,316,26,246"/>
-<area shape="poly" title=" " alt="" coords="91,227,59,226,59,221,92,222"/>
-<area shape="poly" title=" " alt="" coords="95,218,94,201,100,194,111,192,122,195,128,201,124,205,119,199,111,197,103,199,99,203,100,218"/>
-<area shape="poly" title=" " alt="" coords="114,217,136,160,154,125,176,93,212,59,250,34,253,38,215,63,180,96,158,128,141,162,119,219"/>
-<area shape="poly" title=" " alt="" coords="129,219,177,168,180,172,132,222"/>
-<area shape="poly" title=" " alt="" coords="129,220,250,158,252,163,132,225"/>
-<area shape="poly" title=" " alt="" coords="132,235,173,250,218,275,243,297,265,319,261,323,240,300,215,280,170,255,130,240"/>
-<area shape="poly" title=" " alt="" coords="121,245,186,393,181,395,116,247"/>
-<area shape="poly" title=" " alt="" coords="126,244,262,395,258,398,123,247"/>
-<area shape="poly" title=" " alt="" coords="180,157,131,208,128,205,176,153"/>
+<area shape="rect" title=" " alt="" coords="5,225,44,253"/>
+<area shape="poly" title=" " alt="" coords="8,225,7,208,14,201,25,199,36,201,42,208,38,211,33,206,25,204,17,206,12,210,13,225"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#afd0227d97e797b0053b6f42b81a6833c" title=" " alt="" coords="92,225,130,253"/>
+<area shape="poly" title=" " alt="" coords="44,244,76,245,76,251,44,249"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#a1e3f8ba831b756d307103d6d7ed30fb1" title=" " alt="" coords="265,5,303,33"/>
+<area shape="poly" title=" " alt="" coords="29,224,51,174,69,145,90,117,127,84,170,58,212,39,249,26,250,31,214,44,172,63,130,89,94,121,73,148,56,177,34,226"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#a1030fe1cdffd4d97f8eeddc50b6713d8" title=" " alt="" coords="178,131,217,158"/>
+<area shape="poly" title=" " alt="" coords="41,223,90,188,163,154,165,159,93,192,44,227"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#aef607171209474e2d7a348628a677651" title=" " alt="" coords="265,131,303,158"/>
+<area shape="poly" title=" " alt="" coords="32,223,54,193,86,155,128,119,152,104,177,93,197,88,217,93,240,104,259,118,256,122,237,108,216,98,197,94,179,98,154,109,131,123,90,159,58,196,37,226"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#ae3e3eccf5e177dbfd0bfc3d4737db99b" title=" " alt="" coords="265,333,303,361"/>
+<area shape="poly" title=" " alt="" coords="45,244,251,331,249,336,43,249"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#a79931a9bc87624b5f10dc4f731985b25" title=" " alt="" coords="178,408,217,436"/>
+<area shape="poly" title=" " alt="" coords="31,252,52,311,70,346,94,376,128,402,165,418,162,423,125,406,90,380,65,348,47,314,26,254"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#ac2d732d6e782e389adc2a3809207da85" title=" " alt="" coords="265,408,303,436"/>
+<area shape="poly" title=" " alt="" coords="31,253,50,319,69,360,94,396,121,424,148,441,178,448,216,445,249,435,251,440,217,450,178,453,146,446,118,428,90,400,64,362,45,321,26,254"/>
+<area shape="poly" title=" " alt="" coords="91,234,59,233,59,228,92,229"/>
+<area shape="poly" title=" " alt="" coords="94,225,94,208,100,201,111,199,122,201,128,208,124,211,119,206,111,204,103,206,99,210,100,225"/>
+<area shape="poly" title=" " alt="" coords="114,224,135,164,153,128,176,93,212,59,249,34,252,38,215,64,180,97,158,130,140,166,119,226"/>
+<area shape="poly" title=" " alt="" coords="128,224,177,169,181,172,132,228"/>
+<area shape="poly" title=" " alt="" coords="129,227,250,160,252,164,132,231"/>
+<area shape="poly" title=" " alt="" coords="132,241,173,253,218,276,244,297,265,320,261,323,240,301,215,280,171,258,130,246"/>
+<area shape="poly" title=" " alt="" coords="121,252,185,393,181,395,116,255"/>
+<area shape="poly" title=" " alt="" coords="128,252,261,395,257,399,124,255"/>
+<area shape="poly" title=" " alt="" coords="180,159,131,215,127,211,176,155"/>
 <area shape="poly" title=" " alt="" coords="206,129,262,44,267,47,210,132"/>
 <area shape="poly" title=" " alt="" coords="181,130,180,113,187,106,197,104,208,107,214,113,210,117,206,111,197,109,189,111,185,115,186,130"/>
-<area shape="poly" title=" " alt="" coords="217,141,249,141,249,147,217,147"/>
-<area shape="poly" title=" " alt="" coords="177,410,135,388,111,373,90,355,71,333,56,308,35,261,40,259,61,305,76,329,94,351,114,369,137,383,180,405"/>
-<area shape="poly" title=" " alt="" coords="212,406,254,368,258,372,216,410"/>
-<area shape="poly" title=" " alt="" coords="181,408,180,391,187,384,197,381,208,384,214,391,210,394,206,389,197,387,189,388,185,392,186,407"/>
+<area shape="poly" title=" " alt="" coords="217,142,249,142,249,147,217,147"/>
+<area shape="poly" title=" " alt="" coords="176,410,134,388,111,373,90,356,58,312,36,269,41,266,62,309,94,352,114,369,137,383,179,405"/>
+<area shape="poly" title=" " alt="" coords="213,405,253,370,257,374,217,409"/>
+<area shape="poly" title=" " alt="" coords="181,408,180,390,187,384,197,381,208,384,214,390,210,394,206,389,197,387,189,388,185,392,186,407"/>
 <area shape="poly" title=" " alt="" coords="217,419,249,419,249,424,217,424"/>
 </map>
 </div>
@@ -456,37 +456,37 @@ $(function(){initNavTree('_r_f_f_t__f32_8asm.html','',''); });
 <div class="dyncontent">
 <div class="center"><img src="_r_f_f_t__f32_8asm_a79931a9bc87624b5f10dc4f731985b25_cgraph.png" border="0" usemap="#a_r_f_f_t__f32_8asm_a79931a9bc87624b5f10dc4f731985b25_cgraph" loading="lazy" alt=""/></div>
 <map name="a_r_f_f_t__f32_8asm_a79931a9bc87624b5f10dc4f731985b25_cgraph" id="a_r_f_f_t__f32_8asm_a79931a9bc87624b5f10dc4f731985b25_cgraph">
-<area shape="rect" title=" " alt="" coords="5,210,44,236"/>
-<area shape="poly" title=" " alt="" coords="8,209,7,192,14,185,25,183,36,186,42,192,38,196,33,190,25,188,17,190,12,194,13,209"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#a3f2e87854d24df52286d8c8e356ae33d" title=" " alt="" coords="92,210,130,236"/>
+<area shape="rect" title=" " alt="" coords="5,209,44,237"/>
+<area shape="poly" title=" " alt="" coords="8,209,7,191,14,185,25,182,36,185,42,192,38,195,33,190,25,188,17,189,12,193,13,208"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#a3f2e87854d24df52286d8c8e356ae33d" title=" " alt="" coords="92,209,130,237"/>
 <area shape="poly" title=" " alt="" coords="44,228,76,229,76,234,44,233"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#ae3e3eccf5e177dbfd0bfc3d4737db99b" title=" " alt="" coords="265,198,303,224"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#ae3e3eccf5e177dbfd0bfc3d4737db99b" title=" " alt="" coords="265,197,303,225"/>
 <area shape="poly" title=" " alt="" coords="45,230,92,246,135,248,177,243,249,222,251,227,178,248,135,254,91,251,43,235"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#ac2d732d6e782e389adc2a3809207da85" title=" " alt="" coords="265,350,303,376"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#ac2d732d6e782e389adc2a3809207da85" title=" " alt="" coords="265,349,303,377"/>
 <area shape="poly" title=" " alt="" coords="46,233,104,271,179,314,251,347,249,352,177,319,102,275,43,237"/>
 <area shape="poly" title=" " alt="" coords="91,218,59,217,59,211,92,213"/>
-<area shape="poly" title=" " alt="" coords="95,209,94,192,100,185,111,183,122,186,128,192,124,196,119,190,111,188,103,190,99,194,100,209"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#afd0227d97e797b0053b6f42b81a6833c" title=" " alt="" coords="178,147,217,174"/>
-<area shape="poly" title=" " alt="" coords="129,215,173,182,176,186,132,219"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#a1e3f8ba831b756d307103d6d7ed30fb1" title=" " alt="" coords="351,147,389,174"/>
+<area shape="poly" title=" " alt="" coords="94,209,94,191,100,185,111,182,122,185,128,192,124,195,119,190,111,188,103,189,99,193,100,208"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#afd0227d97e797b0053b6f42b81a6833c" title=" " alt="" coords="178,146,217,174"/>
+<area shape="poly" title=" " alt="" coords="129,215,172,183,176,187,132,219"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#a1e3f8ba831b756d307103d6d7ed30fb1" title=" " alt="" coords="351,146,389,174"/>
 <area shape="poly" title=" " alt="" coords="131,227,165,237,208,245,256,245,280,241,302,234,331,213,352,185,356,189,334,216,304,239,281,247,257,251,208,250,164,242,130,232"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#a1030fe1cdffd4d97f8eeddc50b6713d8" title=" " alt="" coords="265,46,303,72"/>
-<area shape="poly" title=" " alt="" coords="115,208,137,161,155,134,176,109,212,84,249,67,251,72,215,89,180,113,159,137,142,163,120,210"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#aef607171209474e2d7a348628a677651" title=" " alt="" coords="351,46,389,72"/>
-<area shape="poly" title=" " alt="" coords="114,208,129,164,159,104,179,74,203,47,231,23,264,7,284,3,304,7,326,18,346,33,343,37,324,23,302,12,284,8,265,12,234,28,207,50,183,77,163,107,134,166,119,210"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#a1030fe1cdffd4d97f8eeddc50b6713d8" title=" " alt="" coords="265,45,303,73"/>
+<area shape="poly" title=" " alt="" coords="115,207,138,160,155,133,176,109,212,84,249,67,251,72,215,89,180,113,159,136,142,163,120,210"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#aef607171209474e2d7a348628a677651" title=" " alt="" coords="351,45,389,73"/>
+<area shape="poly" title=" " alt="" coords="114,208,130,163,159,104,179,74,203,46,231,23,264,7,284,3,304,7,326,18,346,32,342,36,323,22,302,12,284,8,265,12,234,28,207,50,183,77,164,106,135,165,119,209"/>
 <area shape="poly" title=" " alt="" coords="130,219,249,211,249,216,131,224"/>
-<area shape="poly" title=" " alt="" coords="130,235,180,278,254,338,251,342,176,282,126,239"/>
-<area shape="poly" title=" " alt="" coords="178,162,138,165,93,176,72,187,53,201,49,197,69,183,91,171,137,160,177,157"/>
-<area shape="poly" title=" " alt="" coords="180,168,135,201,132,197,176,164"/>
-<area shape="poly" title=" " alt="" coords="181,147,180,129,187,123,197,120,208,123,214,129,210,133,206,127,197,126,189,127,185,131,186,146"/>
+<area shape="poly" title=" " alt="" coords="130,235,180,278,254,337,250,342,176,282,127,239"/>
+<area shape="poly" title=" " alt="" coords="178,162,138,165,93,176,72,187,53,201,50,197,69,183,91,171,137,160,177,157"/>
+<area shape="poly" title=" " alt="" coords="179,169,136,201,132,196,176,164"/>
+<area shape="poly" title=" " alt="" coords="181,146,180,129,187,122,197,120,208,122,214,129,210,132,206,127,197,125,189,127,185,131,186,146"/>
 <area shape="poly" title=" " alt="" coords="217,158,336,158,336,163,217,163"/>
-<area shape="poly" title=" " alt="" coords="214,145,265,83,269,86,218,148"/>
+<area shape="poly" title=" " alt="" coords="215,144,265,83,269,87,219,147"/>
 <area shape="poly" title=" " alt="" coords="216,147,337,75,339,80,218,152"/>
 <area shape="poly" title=" " alt="" coords="218,169,253,190,250,194,215,173"/>
-<area shape="poly" title=" " alt="" coords="207,173,274,335,269,337,202,175"/>
-<area shape="poly" title=" " alt="" coords="267,74,217,136,212,132,263,71"/>
-<area shape="poly" title=" " alt="" coords="298,71,350,133,346,137,294,74"/>
-<area shape="poly" title=" " alt="" coords="267,45,267,28,273,21,284,19,295,22,301,28,297,32,292,26,284,24,276,26,272,30,273,45"/>
+<area shape="poly" title=" " alt="" coords="207,173,273,334,268,336,202,175"/>
+<area shape="poly" title=" " alt="" coords="266,75,217,135,213,132,262,71"/>
+<area shape="poly" title=" " alt="" coords="299,71,350,133,346,136,295,75"/>
+<area shape="poly" title=" " alt="" coords="267,45,267,27,273,21,284,18,295,21,301,28,297,31,292,26,284,24,276,25,272,29,272,44"/>
 <area shape="poly" title=" " alt="" coords="303,56,336,56,336,62,303,62"/>
 </map>
 </div>
@@ -529,10 +529,10 @@ $(function(){initNavTree('_r_f_f_t__f32_8asm.html','',''); });
 <div class="dyncontent">
 <div class="center"><img src="_r_f_f_t__f32_8asm_a0fe3e72290be2f9d8b15617ddfc46101_cgraph.png" border="0" usemap="#a_r_f_f_t__f32_8asm_a0fe3e72290be2f9d8b15617ddfc46101_cgraph" loading="lazy" alt=""/></div>
 <map name="a_r_f_f_t__f32_8asm_a0fe3e72290be2f9d8b15617ddfc46101_cgraph" id="a_r_f_f_t__f32_8asm_a0fe3e72290be2f9d8b15617ddfc46101_cgraph">
-<area shape="rect" title=" " alt="" coords="5,29,51,56"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="99,29,170,56"/>
-<area shape="poly" title=" " alt="" coords="51,40,83,40,83,45,51,45"/>
-<area shape="poly" title=" " alt="" coords="115,30,112,20,114,11,122,5,134,3,148,5,155,12,151,16,145,10,134,8,124,10,119,14,117,20,120,28"/>
+<area shape="rect" title=" " alt="" coords="5,29,51,57"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="99,29,165,57"/>
+<area shape="poly" title=" " alt="" coords="51,40,83,40,83,46,51,46"/>
+<area shape="poly" title=" " alt="" coords="113,30,110,20,112,11,120,5,132,3,145,5,152,12,148,16,142,10,132,8,122,10,117,14,115,20,118,28"/>
 </map>
 </div>
 
@@ -571,11 +571,11 @@ $(function(){initNavTree('_r_f_f_t__f32_8asm.html','',''); });
 <div class="dyncontent">
 <div class="center"><img src="_r_f_f_t__f32_8asm_a2ddd403cbeebe77d27c0688c77274808_cgraph.png" border="0" usemap="#a_r_f_f_t__f32_8asm_a2ddd403cbeebe77d27c0688c77274808_cgraph" loading="lazy" alt=""/></div>
 <map name="a_r_f_f_t__f32_8asm_a2ddd403cbeebe77d27c0688c77274808_cgraph" id="a_r_f_f_t__f32_8asm_a2ddd403cbeebe77d27c0688c77274808_cgraph">
-<area shape="rect" title=" " alt="" coords="6,29,44,56"/>
-<area shape="poly" title=" " alt="" coords="6,30,3,20,5,11,13,5,25,3,38,5,45,12,41,16,35,10,25,8,15,10,10,14,8,20,11,28"/>
-<area shape="rect" href="_r_f_f_t__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="92,29,163,56"/>
-<area shape="poly" title=" " alt="" coords="44,40,76,40,76,45,44,45"/>
-<area shape="poly" title=" " alt="" coords="109,30,106,20,108,11,115,5,128,3,140,5,147,12,144,16,138,10,128,8,118,10,112,14,111,20,114,28"/>
+<area shape="rect" title=" " alt="" coords="5,29,44,57"/>
+<area shape="poly" title=" " alt="" coords="6,30,3,20,5,11,13,5,25,3,37,5,44,12,40,16,35,10,25,8,15,10,10,14,8,20,11,28"/>
+<area shape="rect" href="_r_f_f_t__f32_8asm.html#a2c3578db5e9dc0a776fa2cbf841d09bd" title=" " alt="" coords="92,29,158,57"/>
+<area shape="poly" title=" " alt="" coords="44,40,76,40,76,46,44,46"/>
+<area shape="poly" title=" " alt="" coords="106,30,103,20,106,11,113,5,125,3,137,5,144,12,141,16,135,10,125,8,115,10,110,14,109,20,111,28"/>
 </map>
 </div>
 
@@ -734,7 +734,7 @@ $(function(){initNavTree('_r_f_f_t__f32_8asm.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">will yield invalid results If <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a7a6f21b2212104c10e2a9f719a98b965">you</a> do not wish <a class="el" href="#a41ae2e4e517a88e8fb1378a8e8ad6f13">to</a> align <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a6c4309005f03dac1a90e4b9f35331253">the</a> <a class="el" href="rfft_8c.html#a5a0f4b49baab36db0c5e1922cdbc6c71">input</a> buffer</td>
+          <td class="memname">will yield invalid results If <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a7a6f21b2212104c10e2a9f719a98b965">you</a> do not wish <a class="el" href="#a41ae2e4e517a88e8fb1378a8e8ad6f13">to</a> align <a class="el" href="_r_f_f_t__f32__mag_8asm.html#a6c4309005f03dac1a90e4b9f35331253">the</a> <a class="el" href="group___d_s_p___r_f_f_t___f32.html#ga5a0f4b49baab36db0c5e1922cdbc6c71">input</a> buffer</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -878,7 +878,7 @@ $(function(){initNavTree('_r_f_f_t__f32_8asm.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Bit reverse <a class="el" href="rfft_8c.html#a5a0f4b49baab36db0c5e1922cdbc6c71">input</a> <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a> <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#aa1b4564fa603a44cf17cc74308c9ad6c">and</a> calculate stages</td>
+          <td class="memname">Bit reverse <a class="el" href="group___d_s_p___r_f_f_t___f32.html#ga5a0f4b49baab36db0c5e1922cdbc6c71">input</a> <a class="el" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a> <a class="el" href="_r_f_f_t__f32__twiddle_factors_8asm.html#aa1b4564fa603a44cf17cc74308c9ad6c">and</a> calculate stages</td>
         </tr>
       </table>
 </div><div class="memdoc">

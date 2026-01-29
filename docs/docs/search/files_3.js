@@ -20,8 +20,6 @@ var searchData=
   ['fpu_5ffft_5ftaylor_2eh_17',['fpu_fft_taylor.h',['../fpu__fft__taylor_8h.html',1,'']]],
   ['fpu_5ffft_5ftriang_2eh_18',['fpu_fft_triang.h',['../fpu__fft__triang_8h.html',1,'']]],
   ['fpu_5ffft_5ftukey_2eh_19',['fpu_fft_tukey.h',['../fpu__fft__tukey_8h.html',1,'']]],
-  ['fpu_5ffilter_2eh_20',['fpu_filter.h',['../fpu__filter_8h.html',1,'']]],
-  ['fpu_5frfft_2eh_21',['fpu_rfft.h',['../fpu__rfft_8h.html',1,'']]],
-  ['fpu_5ftypes_2eh_22',['fpu_types.h',['../fpu__types_8h.html',1,'']]],
-  ['fpu_5fvector_2eh_23',['fpu_vector.h',['../fpu__vector_8h.html',1,'']]]
+  ['fpu_5frfft_2eh_20',['fpu_rfft.h',['../fpu__rfft_8h.html',1,'']]],
+  ['fpu_5ftypes_2eh_21',['fpu_types.h',['../fpu__types_8h.html',1,'']]]
 ];

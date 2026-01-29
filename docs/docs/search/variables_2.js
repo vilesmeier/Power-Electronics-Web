@@ -12,7 +12,7 @@ var searchData=
   ['all_9',['all',['../union_f_l_a_g.html#adbfc2deec37590d180c05f05daa58e30',1,'FLAG::all'],['../union_k_e_y.html#a3a9eb62441b3e8e7c0c5f359e2d98704',1,'KEY::all']]],
   ['alpha_10',['alpha',['../struct_d_q.html#a8d48064f20c256ee70c0340201944f05',1,'DQ']]],
   ['alter_11',['Alter',['../_r_f_f_t__f32__mag_8asm.html#a39630993b7e2d8c825b086370fb71324',1,'Alter:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32__mag___t_m_u0_8asm.html#a39630993b7e2d8c825b086370fb71324',1,'Alter:&#160;RFFT_f32_mag_TMU0.asm'],['../_r_f_f_t__f32__phase_8asm.html#a39630993b7e2d8c825b086370fb71324',1,'Alter:&#160;RFFT_f32_phase.asm'],['../_r_f_f_t__f32__phase___t_m_u0_8asm.html#a39630993b7e2d8c825b086370fb71324',1,'Alter:&#160;RFFT_f32_phase_TMU0.asm']]],
-  ['amp_12',['amp',['../struct_r_f_f_t.html#a2bc527b3b8fd1a15c9698d8a12f325e0',1,'RFFT']]],
+  ['amp_12',['amp',['../group___d_s_p___r_f_f_t___f32.html#ga2bc527b3b8fd1a15c9698d8a12f325e0',1,'RFFT']]],
   ['an_13',['an',['../_r_f_f_t__f32__win_8asm.html#a37c4cf54afecaf2fe90d3338bb6ff18c',1,'RFFT_f32_win.asm']]],
   ['apr_14',['Apr',['../_r_f_f_t__f32__twiddle_factors_8asm.html#a15ed705fb14066eee83ba217a43dd6c3',1,'RFFT_f32_twiddleFactors.asm']]],
   ['ar7_15',['AR7',['../_r_f_f_t__f32__win_8asm.html#ab47e91e3a3de876e5764201eec3f6c7d',1,'RFFT_f32_win.asm']]],

@@ -1,12 +1,12 @@
 <map id="NUEDC&#45;Core/Code/Control_Driver/ramp/ramp.h" name="NUEDC&#45;Core/Code/Control_Driver/ramp/ramp.h">
-<area shape="rect" id="Node000001" title="参考相位生成 函数声明" alt="" coords="5,5,189,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="48,171,112,197"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,50,49,71,33,97,30,113,35,129,55,158,51,161,30,131,25,113,28,95,45,68,66,47"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="42,96,152,123"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="100,49,100,80,94,80,94,49"/>
-<area shape="rect" id="Node000004" href="$mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="176,96,306,123"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="135,46,206,86,204,90,133,51"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="214,126,123,166,121,161,212,121"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="210,171,272,197"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="244,123,244,155,238,155,238,123"/>
+<area shape="rect" id="Node000001" title="参考相位生成 函数声明" alt="" coords="5,5,181,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="44,174,107,201"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,52,45,73,29,99,26,115,31,131,51,161,47,164,26,134,21,116,24,97,40,70,62,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="39,98,147,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="96,50,96,82,90,82,90,50"/>
+<area shape="rect" id="Node000004" href="$mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="171,98,303,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,48,202,88,200,92,130,53"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="209,129,119,170,117,165,207,124"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="206,174,268,201"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="240,126,240,158,234,158,234,126"/>
 </map>

@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['tim0_5finit_0',['TIM0_Init',['../tim_8c.html#a6207706a3d9f9c440cf30f7e011bc1c2',1,'TIM0_Init(void):&#160;tim.c'],['../tim_8h.html#a6207706a3d9f9c440cf30f7e011bc1c2',1,'TIM0_Init(void):&#160;tim.c']]],
-  ['tim0_5freload_1',['TIM0_Reload',['../tim_8c.html#a1d4a8e400cbd762e8d6ba80e6275c93e',1,'TIM0_Reload(void):&#160;tim.c'],['../tim_8h.html#a1d4a8e400cbd762e8d6ba80e6275c93e',1,'TIM0_Reload(void):&#160;tim.c']]],
-  ['tim0_5fset_2',['TIM0_Set',['../tim_8c.html#a99bcb8c40956c72496cb7a3a33877721',1,'TIM0_Set(float freq):&#160;tim.c'],['../tim_8h.html#a99bcb8c40956c72496cb7a3a33877721',1,'TIM0_Set(float freq):&#160;tim.c']]],
-  ['tim0_5fstart_3',['TIM0_Start',['../tim_8c.html#a4d1587c0146ce727736736c0e6012759',1,'TIM0_Start(void):&#160;tim.c'],['../tim_8h.html#a4d1587c0146ce727736736c0e6012759',1,'TIM0_Start(void):&#160;tim.c']]],
-  ['tim0_5fstop_4',['TIM0_Stop',['../tim_8c.html#abbad9a0b511e69e1794b83826bfecc30',1,'TIM0_Stop(void):&#160;tim.c'],['../tim_8h.html#abbad9a0b511e69e1794b83826bfecc30',1,'TIM0_Stop(void):&#160;tim.c']]]
+  ['u_0',['u',['../_transfer_fun_8asm.html#aa8fa7c47d0781c24b170262cecda1a19',1,'TransferFun.asm']]],
+  ['uart_5finit_1',['UART_Init',['../uart_8c.html#ad7d9735eb6d12d58232f616020798946',1,'UART_Init():&#160;uart.c'],['../uart_8h.html#ad7d9735eb6d12d58232f616020798946',1,'UART_Init():&#160;uart.c']]],
+  ['uart_5freceivechar_2',['UART_ReceiveChar',['../uart_8c.html#a82e92c56017c6ef93fc5098c3227306c',1,'UART_ReceiveChar(Uint8 *data):&#160;uart.c'],['../uart_8h.html#a82e92c56017c6ef93fc5098c3227306c',1,'UART_ReceiveChar(Uint8 *data):&#160;uart.c']]],
+  ['uart_5freceivestring_3',['UART_ReceiveString',['../uart_8c.html#a4e62244dd07d4d29ad496cc0a9627874',1,'UART_ReceiveString(Uint8 *data, Uint8 length):&#160;uart.c'],['../uart_8h.html#a4e62244dd07d4d29ad496cc0a9627874',1,'UART_ReceiveString(Uint8 *data, Uint8 length):&#160;uart.c']]],
+  ['uart_5fsendchar_4',['UART_SendChar',['../uart_8c.html#a4c86107cd49c2644ef6abd5d0c6f7194',1,'UART_SendChar(Uint8 send):&#160;uart.c'],['../uart_8h.html#a4c86107cd49c2644ef6abd5d0c6f7194',1,'UART_SendChar(Uint8 send):&#160;uart.c']]],
+  ['uart_5fset_5',['UART_Set',['../uart_8c.html#a62cd2632b61f0f11f05a028d7d7cea13',1,'UART_Set(Uint32 baud):&#160;uart.c'],['../uart_8h.html#a62cd2632b61f0f11f05a028d7d7cea13',1,'UART_Set(Uint32 baud):&#160;uart.c']]]
 ];

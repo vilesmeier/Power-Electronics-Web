@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['u_0',['u',['../_transfer_fun_8asm.html#aa8fa7c47d0781c24b170262cecda1a19',1,'TransferFun.asm']]],
-  ['uart_5finit_1',['UART_Init',['../uart_8c.html#ad7d9735eb6d12d58232f616020798946',1,'UART_Init():&#160;uart.c'],['../uart_8h.html#ad7d9735eb6d12d58232f616020798946',1,'UART_Init():&#160;uart.c']]],
-  ['uart_5freceivechar_2',['UART_ReceiveChar',['../uart_8c.html#a82e92c56017c6ef93fc5098c3227306c',1,'UART_ReceiveChar(Uint8 *data):&#160;uart.c'],['../uart_8h.html#a82e92c56017c6ef93fc5098c3227306c',1,'UART_ReceiveChar(Uint8 *data):&#160;uart.c']]],
-  ['uart_5freceivestring_3',['UART_ReceiveString',['../uart_8c.html#a4e62244dd07d4d29ad496cc0a9627874',1,'UART_ReceiveString(Uint8 *data, Uint8 length):&#160;uart.c'],['../uart_8h.html#a4e62244dd07d4d29ad496cc0a9627874',1,'UART_ReceiveString(Uint8 *data, Uint8 length):&#160;uart.c']]],
-  ['uart_5fsendchar_4',['UART_SendChar',['../uart_8c.html#a4c86107cd49c2644ef6abd5d0c6f7194',1,'UART_SendChar(Uint8 send):&#160;uart.c'],['../uart_8h.html#a4c86107cd49c2644ef6abd5d0c6f7194',1,'UART_SendChar(Uint8 send):&#160;uart.c']]],
-  ['uart_5fset_5',['UART_Set',['../uart_8c.html#a62cd2632b61f0f11f05a028d7d7cea13',1,'UART_Set(Uint32 baud):&#160;uart.c'],['../uart_8h.html#a62cd2632b61f0f11f05a028d7d7cea13',1,'UART_Set(Uint32 baud):&#160;uart.c']]]
+  ['vofa_5fcancel_5fsend_0',['VOFA_Cancel_Send',['../group___c_t_r_l___v_o_f_a.html#gafd0317fa68f76c5017d4518c477a0a29',1,'VOFA_Cancel_Send(void):&#160;vofa.c'],['../group___c_t_r_l___v_o_f_a.html#gafd0317fa68f76c5017d4518c477a0a29',1,'VOFA_Cancel_Send(void):&#160;vofa.c']]],
+  ['vofa_5fget_5fsend_5fstate_1',['VOFA_Get_Send_State',['../group___c_t_r_l___v_o_f_a.html#ga534aa6e0fb17e6fc1de2979922f8350e',1,'VOFA_Get_Send_State(void):&#160;vofa.c'],['../group___c_t_r_l___v_o_f_a.html#ga534aa6e0fb17e6fc1de2979922f8350e',1,'VOFA_Get_Send_State(void):&#160;vofa.c']]],
+  ['vofa_5fget_5fstate_2',['VOFA_Get_State',['../group___c_t_r_l___v_o_f_a.html#ga5af5cffe87993c596115f56b3ad28794',1,'VOFA_Get_State(void):&#160;vofa.c'],['../group___c_t_r_l___v_o_f_a.html#ga5af5cffe87993c596115f56b3ad28794',1,'VOFA_Get_State(void):&#160;vofa.c']]],
+  ['vofa_5finit_3',['VOFA_Init',['../group___c_t_r_l___v_o_f_a.html#ga77c9aea85bbaf41bbce8fc26c9cf846e',1,'VOFA_Init(void):&#160;vofa.c'],['../group___c_t_r_l___v_o_f_a.html#ga77c9aea85bbaf41bbce8fc26c9cf846e',1,'VOFA_Init(void):&#160;vofa.c']]],
+  ['vofa_5frequest_5fsend_4',['VOFA_Request_Send',['../group___c_t_r_l___v_o_f_a.html#gae9fe0fa8baf50f14038971031d27738d',1,'VOFA_Request_Send(void):&#160;vofa.c'],['../group___c_t_r_l___v_o_f_a.html#gae9fe0fa8baf50f14038971031d27738d',1,'VOFA_Request_Send(void):&#160;vofa.c']]],
+  ['vofa_5frun_5',['VOFA_Run',['../group___c_t_r_l___v_o_f_a.html#ga29a019e9a9005773e370e6b2013f60be',1,'VOFA_Run(void):&#160;vofa.c'],['../group___c_t_r_l___v_o_f_a.html#ga29a019e9a9005773e370e6b2013f60be',1,'VOFA_Run(void):&#160;vofa.c']]],
+  ['vofa_5fset_5fchannel_5finput_6',['VOFA_Set_Channel_Input',['../group___c_t_r_l___v_o_f_a.html#ga8b37353f7cbbd178e8f995dba7eaae73',1,'VOFA_Set_Channel_Input(uint16_t channel, float32_t *input_ptr):&#160;vofa.c'],['../group___c_t_r_l___v_o_f_a.html#ga8b37353f7cbbd178e8f995dba7eaae73',1,'VOFA_Set_Channel_Input(uint16_t channel, float32_t *input_ptr):&#160;vofa.c']]]
 ];

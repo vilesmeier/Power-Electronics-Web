@@ -102,13 +102,13 @@ mppt.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="mppt_8c__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2mppt_2mppt_8c" loading="lazy" alt=""/></div>
 <map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2mppt_2mppt_8c" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2mppt_2mppt_8c">
-<area shape="rect" title="MPPT(最大功率点跟踪)算法实现文件 移植自TI 的 Solar库, 参考ti官方用户手册" alt="" coords="5,5,189,48"/>
-<area shape="rect" href="mppt_8h.html" title="TI 官方MPPT(最大功率点跟踪)库移植 TI Solar Lib参考官方用户手册" alt="" coords="66,96,128,123"/>
-<area shape="poly" title=" " alt="" coords="100,49,100,80,94,80,94,49"/>
-<area shape="rect" title=" " alt="" coords="10,171,74,197"/>
-<area shape="poly" title=" " alt="" coords="90,125,63,160,59,156,85,122"/>
-<area shape="rect" title=" " alt="" coords="98,171,208,197"/>
-<area shape="poly" title=" " alt="" coords="109,122,136,157,132,160,105,125"/>
+<area shape="rect" title="MPPT(最大功率点跟踪)算法实现文件 移植自TI 的 Solar库, 参考ti官方用户手册" alt="" coords="5,5,181,50"/>
+<area shape="rect" href="mppt_8h.html" title="TI 官方MPPT(最大功率点跟踪)库移植 TI Solar Lib参考官方用户手册" alt="" coords="62,98,124,126"/>
+<area shape="poly" title=" " alt="" coords="96,50,96,82,90,82,90,50"/>
+<area shape="rect" title=" " alt="" coords="7,174,70,201"/>
+<area shape="poly" title=" " alt="" coords="85,128,59,163,55,159,81,125"/>
+<area shape="rect" title=" " alt="" coords="94,174,202,201"/>
+<area shape="poly" title=" " alt="" coords="105,125,131,159,127,163,101,128"/>
 </map>
 </div>
 </div>
@@ -116,245 +116,25 @@ mppt.c 的引用(Include)关系图:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:a28c1eb6d29bbe292e0789c08568f6211" id="r_a28c1eb6d29bbe292e0789c08568f6211"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28c1eb6d29bbe292e0789c08568f6211">MPPT_INCC_Init</a> (<a class="el" href="struct_m_p_p_t___i_n_c_c.html">MPPT_INCC</a> *v)</td></tr>
-<tr class="memdesc:a28c1eb6d29bbe292e0789c08568f6211"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
-<tr class="memitem:a1ac3d5018ba3ef1109054a12adda2f36" id="r_a1ac3d5018ba3ef1109054a12adda2f36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ac3d5018ba3ef1109054a12adda2f36">MPPT_INCC_Set</a> (<a class="el" href="struct_m_p_p_t___i_n_c_c.html">MPPT_INCC</a> *v, float32_t step, float32_t max, float32_t min)</td></tr>
-<tr class="memdesc:a1ac3d5018ba3ef1109054a12adda2f36"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置结构体参数  <br /></td></tr>
-<tr class="memitem:a4c565cd0e2a9406ed8d533808f1bc6a8" id="r_a4c565cd0e2a9406ed8d533808f1bc6a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c565cd0e2a9406ed8d533808f1bc6a8">MPPT_INCC_I_Init</a> (<a class="el" href="struct_m_p_p_t___i_n_c_c___i.html">MPPT_INCC_I</a> *v)</td></tr>
-<tr class="memdesc:a4c565cd0e2a9406ed8d533808f1bc6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
-<tr class="memitem:abe8fb5944da2e478ef84f21ea4033fbc" id="r_abe8fb5944da2e478ef84f21ea4033fbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe8fb5944da2e478ef84f21ea4033fbc">MPPT_INCC_I_Set</a> (<a class="el" href="struct_m_p_p_t___i_n_c_c___i.html">MPPT_INCC_I</a> *v, float32_t step, float32_t max, float32_t min)</td></tr>
-<tr class="memdesc:abe8fb5944da2e478ef84f21ea4033fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置结构体参数  <br /></td></tr>
-<tr class="memitem:aed56530c96b0662ec031e22f302c4971" id="r_aed56530c96b0662ec031e22f302c4971"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed56530c96b0662ec031e22f302c4971">MPPT_PNO_Init</a> (<a class="el" href="struct_m_p_p_t___p_n_o.html">MPPT_PNO</a> *v)</td></tr>
-<tr class="memdesc:aed56530c96b0662ec031e22f302c4971"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
-<tr class="memitem:ac152f21064ab7f8db769d00f18032069" id="r_ac152f21064ab7f8db769d00f18032069"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac152f21064ab7f8db769d00f18032069">MPPT_PNO_Set</a> (<a class="el" href="struct_m_p_p_t___p_n_o.html">MPPT_PNO</a> *v, float32_t step, float32_t max, float32_t min, float32_t delta_p_min)</td></tr>
-<tr class="memdesc:ac152f21064ab7f8db769d00f18032069"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置结构体参数  <br /></td></tr>
+<tr class="memitem:ga28c1eb6d29bbe292e0789c08568f6211" id="r_ga28c1eb6d29bbe292e0789c08568f6211"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___m_p_p_t.html#ga28c1eb6d29bbe292e0789c08568f6211">MPPT_INCC_Init</a> (<a class="el" href="struct_m_p_p_t___i_n_c_c.html">MPPT_INCC</a> *v)</td></tr>
+<tr class="memdesc:ga28c1eb6d29bbe292e0789c08568f6211"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
+<tr class="memitem:ga1ac3d5018ba3ef1109054a12adda2f36" id="r_ga1ac3d5018ba3ef1109054a12adda2f36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___m_p_p_t.html#ga1ac3d5018ba3ef1109054a12adda2f36">MPPT_INCC_Set</a> (<a class="el" href="struct_m_p_p_t___i_n_c_c.html">MPPT_INCC</a> *v, float32_t step, float32_t max, float32_t min)</td></tr>
+<tr class="memdesc:ga1ac3d5018ba3ef1109054a12adda2f36"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置结构体参数  <br /></td></tr>
+<tr class="memitem:ga4c565cd0e2a9406ed8d533808f1bc6a8" id="r_ga4c565cd0e2a9406ed8d533808f1bc6a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___m_p_p_t.html#ga4c565cd0e2a9406ed8d533808f1bc6a8">MPPT_INCC_I_Init</a> (<a class="el" href="struct_m_p_p_t___i_n_c_c___i.html">MPPT_INCC_I</a> *v)</td></tr>
+<tr class="memdesc:ga4c565cd0e2a9406ed8d533808f1bc6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
+<tr class="memitem:gabe8fb5944da2e478ef84f21ea4033fbc" id="r_gabe8fb5944da2e478ef84f21ea4033fbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___m_p_p_t.html#gabe8fb5944da2e478ef84f21ea4033fbc">MPPT_INCC_I_Set</a> (<a class="el" href="struct_m_p_p_t___i_n_c_c___i.html">MPPT_INCC_I</a> *v, float32_t step, float32_t max, float32_t min)</td></tr>
+<tr class="memdesc:gabe8fb5944da2e478ef84f21ea4033fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置结构体参数  <br /></td></tr>
+<tr class="memitem:gaed56530c96b0662ec031e22f302c4971" id="r_gaed56530c96b0662ec031e22f302c4971"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___m_p_p_t.html#gaed56530c96b0662ec031e22f302c4971">MPPT_PNO_Init</a> (<a class="el" href="struct_m_p_p_t___p_n_o.html">MPPT_PNO</a> *v)</td></tr>
+<tr class="memdesc:gaed56530c96b0662ec031e22f302c4971"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
+<tr class="memitem:gac152f21064ab7f8db769d00f18032069" id="r_gac152f21064ab7f8db769d00f18032069"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___m_p_p_t.html#gac152f21064ab7f8db769d00f18032069">MPPT_PNO_Set</a> (<a class="el" href="struct_m_p_p_t___p_n_o.html">MPPT_PNO</a> *v, float32_t step, float32_t max, float32_t min, float32_t delta_p_min)</td></tr>
+<tr class="memdesc:gac152f21064ab7f8db769d00f18032069"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置结构体参数  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>MPPT(最大功率点跟踪)算法实现文件 移植自TI 的 Solar库, 参考ti官方用户手册 </p>
 <dl class="section author"><dt>作者</dt><dd>Mao Chenbin (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="mppt_8c_source.html">mppt.c</a> 中定义.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
-<a id="a4c565cd0e2a9406ed8d533808f1bc6a8" name="a4c565cd0e2a9406ed8d533808f1bc6a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c565cd0e2a9406ed8d533808f1bc6a8">&#9670;&#160;</a></span>MPPT_INCC_I_Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MPPT_INCC_I_Init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_p_p_t___i_n_c_c___i.html">MPPT_INCC_I</a> *</td>          <td class="paramname"><span class="paramname"><em>v</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>结构体初始化 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>结构体指针 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="mppt_8c_source.html">mppt.c</a> 第 <a class="el" href="mppt_8c_source.html#l00055">55</a> 行定义.</p>
-
-</div>
-</div>
-<a id="abe8fb5944da2e478ef84f21ea4033fbc" name="abe8fb5944da2e478ef84f21ea4033fbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe8fb5944da2e478ef84f21ea4033fbc">&#9670;&#160;</a></span>MPPT_INCC_I_Set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MPPT_INCC_I_Set </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_p_p_t___i_n_c_c___i.html">MPPT_INCC_I</a> *</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>step</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>max</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>min</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>配置结构体参数 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>结构体指针 </td></tr>
-    <tr><td class="paramname">step</td><td>步长 </td></tr>
-    <tr><td class="paramname">max</td><td>输出上限幅 </td></tr>
-    <tr><td class="paramname">min</td><td>输出下限幅 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="mppt_8c_source.html">mppt.c</a> 第 <a class="el" href="mppt_8c_source.html#l00074">74</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a28c1eb6d29bbe292e0789c08568f6211" name="a28c1eb6d29bbe292e0789c08568f6211"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28c1eb6d29bbe292e0789c08568f6211">&#9670;&#160;</a></span>MPPT_INCC_Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MPPT_INCC_Init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_p_p_t___i_n_c_c.html">MPPT_INCC</a> *</td>          <td class="paramname"><span class="paramname"><em>v</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>结构体初始化 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>结构体指针 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="mppt_8c_source.html">mppt.c</a> 第 <a class="el" href="mppt_8c_source.html#l00019">19</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a1ac3d5018ba3ef1109054a12adda2f36" name="a1ac3d5018ba3ef1109054a12adda2f36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ac3d5018ba3ef1109054a12adda2f36">&#9670;&#160;</a></span>MPPT_INCC_Set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MPPT_INCC_Set </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_p_p_t___i_n_c_c.html">MPPT_INCC</a> *</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>step</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>max</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>min</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>配置结构体参数 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>结构体指针 </td></tr>
-    <tr><td class="paramname">step</td><td>步长 </td></tr>
-    <tr><td class="paramname">max</td><td>输出上限幅 </td></tr>
-    <tr><td class="paramname">min</td><td>输出下限幅 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="mppt_8c_source.html">mppt.c</a> 第 <a class="el" href="mppt_8c_source.html#l00038">38</a> 行定义.</p>
-
-</div>
-</div>
-<a id="aed56530c96b0662ec031e22f302c4971" name="aed56530c96b0662ec031e22f302c4971"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed56530c96b0662ec031e22f302c4971">&#9670;&#160;</a></span>MPPT_PNO_Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MPPT_PNO_Init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_p_p_t___p_n_o.html">MPPT_PNO</a> *</td>          <td class="paramname"><span class="paramname"><em>v</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>结构体初始化 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>结构体指针 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="mppt_8c_source.html">mppt.c</a> 第 <a class="el" href="mppt_8c_source.html#l00089">89</a> 行定义.</p>
-
-</div>
-</div>
-<a id="ac152f21064ab7f8db769d00f18032069" name="ac152f21064ab7f8db769d00f18032069"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac152f21064ab7f8db769d00f18032069">&#9670;&#160;</a></span>MPPT_PNO_Set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MPPT_PNO_Set </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_p_p_t___p_n_o.html">MPPT_PNO</a> *</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>step</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>max</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>min</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>delta_p_min</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>配置结构体参数 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>结构体指针 </td></tr>
-    <tr><td class="paramname">step</td><td>步长 </td></tr>
-    <tr><td class="paramname">max</td><td>输出上限幅 </td></tr>
-    <tr><td class="paramname">min</td><td>输出下限幅 </td></tr>
-    <tr><td class="paramname">delta_p_min</td><td>最小功率差值 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="mppt_8c_source.html">mppt.c</a> 第 <a class="el" href="mppt_8c_source.html#l00105">105</a> 行定义.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>

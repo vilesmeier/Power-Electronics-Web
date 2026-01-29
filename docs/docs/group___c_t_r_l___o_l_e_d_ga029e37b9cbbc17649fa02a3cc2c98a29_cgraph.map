@@ -1,0 +1,18 @@
+<map id="OLED_UpdateArea" name="OLED_UpdateArea">
+<area shape="rect" id="Node000001" title="将OLED显存数组部分更新到OLED屏幕" alt="" coords="5,59,134,86"/>
+<area shape="rect" id="Node000002" href="$group___c_t_r_l___o_l_e_d.html#gaad16e65bcb5fa05008b3801d5ac5ef07" title="OLED设置显示光标位置" alt="" coords="182,33,298,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,60,166,55,167,61,135,66"/>
+<area shape="rect" id="Node000007" href="$group___c_t_r_l___o_l_e_d.html#ga034549a1e1b554b2cd1e8359c3119d24" title="OLED 写数据" alt="" coords="362,84,480,112"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="134,74,347,90,346,95,134,80"/>
+<area shape="rect" id="Node000003" href="$group___c_t_r_l___o_l_e_d.html#ga568697a02d0fdf503ea2ded50a1bfe5d" title="OLED 写命令" alt="" coords="346,32,495,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="299,44,330,44,331,49,299,49"/>
+<area shape="rect" id="Node000004" href="$i2c_8c.html#a5352523aad8f6cef92cef0174e2d0d6e" title=" " alt="" coords="570,5,664,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="495,33,555,25,555,30,496,38"/>
+<area shape="rect" id="Node000005" href="$i2c_8c.html#a08f9a3e4a9e29d2710030a547813fef8" title="Set number of bytes to be to transfer or receive when repeat mode is off." alt="" coords="554,57,680,85"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="496,53,539,58,539,64,495,58"/>
+<area shape="rect" id="Node000006" href="$i2c_8c.html#a3822a8c9581d825bb52165867cd7deee" title="Sets the address that the I2C Controller places on the bus." alt="" coords="543,109,691,137"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="465,58,496,70,544,94,561,101,559,106,542,99,494,75,463,63"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="464,81,494,69,542,43,558,37,560,42,544,48,496,74,466,86"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="480,87,539,79,540,84,480,92"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="480,103,528,109,528,114,480,108"/>
+</map>

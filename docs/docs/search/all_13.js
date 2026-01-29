@@ -6,6 +6,5 @@ var searchData=
   ['q_5fn_5fdecoupl_5flpf_3',['q_n_decoupl_lpf',['../struct_d_d_s_r_f__3_p_h.html#a68e01e5fb13a9db1098ac0ebdb40ec34',1,'DDSRF_3PH']]],
   ['q_5fp_5fdecoupl_4',['q_p_decoupl',['../struct_d_d_s_r_f__3_p_h.html#ab6260536edf63ad563a0b603f6015641',1,'DDSRF_3PH']]],
   ['q_5fp_5fdecoupl_5flpf_5',['q_p_decoupl_lpf',['../struct_d_d_s_r_f__3_p_h.html#a894ab118c703a13d6ce8d6b7e301a767',1,'DDSRF_3PH']]],
-  ['qsort_5fsp_5frv_6',['qsort_SP_RV',['../fpu__vector_8h.html#a5530dc94d4012981d176fd42022d3b9a',1,'fpu_vector.h']]],
-  ['quadf32_7',['QUADF32',['../_r_f_f_t__f32__phase___t_m_u0_8asm.html#a2d5ab0f1b2e4deb1dc161feb23798f68',1,'RFFT_f32_phase_TMU0.asm']]]
+  ['quadf32_6',['QUADF32',['../_r_f_f_t__f32__phase___t_m_u0_8asm.html#a2d5ab0f1b2e4deb1dc161feb23798f68',1,'RFFT_f32_phase_TMU0.asm']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['key_0',['KEY',['../state_8h.html#a84d37c99488fc36522c8472139b90c58',1,'state.h']]],
-  ['key_5fbit_1',['KEY_BIT',['../state_8h.html#ad3bf94857f7ef38a138783601091f153',1,'state.h']]]
+  ['lcd_5fcolor_0',['LCD_Color',['../_l_c_d___s_t7735_s_8h.html#add0b6f2457d2e0680f6be86b158f8234',1,'LCD_ST7735S.h']]]
 ];

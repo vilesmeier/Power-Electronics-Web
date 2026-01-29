@@ -6,8 +6,8 @@ var searchData=
   ['t4_3',['t4',['../struct_s_v_p_w_m.html#ade6b386a2f11a8d4fdb2031b4037bb5e',1,'SVPWM']]],
   ['t5_4',['t5',['../struct_s_v_p_w_m.html#ab0ec0806a93cf3fe0100c5204ab3ffa1',1,'SVPWM']]],
   ['t6_5',['t6',['../struct_s_v_p_w_m.html#a58ba567bccce8d5877f8375ba9130cbb',1,'SVPWM']]],
-  ['t_5fgrid_6',['T_GRID',['../global_8h.html#a0979f47c3b374bec8f15b572a911f99c',1,'global.h']]],
-  ['t_5fisr_7',['T_ISR',['../global_8h.html#a127fe3c0c00af4f7ff22a2291973153a',1,'global.h']]],
+  ['t_5fgrid_6',['T_GRID',['../group___c_o_r_e___g_l_o_b_a_l.html#ga0979f47c3b374bec8f15b572a911f99c',1,'global.h']]],
+  ['t_5fisr_7',['T_ISR',['../group___c_o_r_e___g_l_o_b_a_l.html#ga127fe3c0c00af4f7ff22a2291973153a',1,'global.h']]],
   ['table_8',['table',['../_r_f_f_t__f32__win_8asm.html#a614d9edc63fca7845030e9228155d3d5',1,'RFFT_f32_win.asm']]],
   ['tail_9',['Tail',['../struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html#a59eab53a8a0afd4066a71f1ea49da4dd',1,'RFFT_ADC_F32_STRUCT']]],
   ['taylor1024_10',['TAYLOR1024',['../fpu__fft__taylor_8h.html#af1c2adb98c718d3af44789cfec5173ff',1,'fpu_fft_taylor.h']]],
@@ -21,7 +21,7 @@ var searchData=
   ['tbprd_18',['TBPRD',['../struct_s_v_p_w_m.html#a1b9e8dbc5980c73c221502fb132fc2cb',1,'SVPWM']]],
   ['tbprd_19',['tbprd',['../struct_m_o_d.html#aef3ce9f37f655d38ee596151d6e780c6',1,'MOD']]],
   ['that_20',['that',['../_r_f_f_t__f32__mag_8asm.html#a61634b97d97b543e6862c790c4863207',1,'that:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32__mag___t_m_u0_8asm.html#a61634b97d97b543e6862c790c4863207',1,'that:&#160;RFFT_f32_mag_TMU0.asm'],['../_r_f_f_t__f32__phase_8asm.html#a61634b97d97b543e6862c790c4863207',1,'that:&#160;RFFT_f32_phase.asm'],['../_r_f_f_t__f32__phase___t_m_u0_8asm.html#a61634b97d97b543e6862c790c4863207',1,'that:&#160;RFFT_f32_phase_TMU0.asm'],['../_r_f_f_t__f32__twiddle_factors_8asm.html#a61634b97d97b543e6862c790c4863207',1,'that:&#160;RFFT_f32_twiddleFactors.asm'],['../_r_f_f_t__f32__win_8asm.html#a61634b97d97b543e6862c790c4863207',1,'that:&#160;RFFT_f32_win.asm']]],
-  ['thd_21',['thd',['../struct_r_f_f_t.html#a435f5c86bc9126eb6627f595e27815d6',1,'RFFT']]],
+  ['thd_21',['thd',['../group___d_s_p___r_f_f_t___f32.html#ga435f5c86bc9126eb6627f595e27815d6',1,'RFFT']]],
   ['the_22',['the',['../_r_f_f_t__f32__mag_8asm.html#a6c4309005f03dac1a90e4b9f35331253',1,'the:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32__mag___t_m_u0_8asm.html#ae593f19e098e00a4219374cae59e6199',1,'the:&#160;RFFT_f32_mag_TMU0.asm'],['../_r_f_f_t__f32__phase_8asm.html#ae593f19e098e00a4219374cae59e6199',1,'the:&#160;RFFT_f32_phase.asm'],['../_r_f_f_t__f32__phase___t_m_u0_8asm.html#ae593f19e098e00a4219374cae59e6199',1,'the:&#160;RFFT_f32_phase_TMU0.asm'],['../_r_f_f_t__f32__twiddle_factors_8asm.html#ae593f19e098e00a4219374cae59e6199',1,'the:&#160;RFFT_f32_twiddleFactors.asm'],['../_r_f_f_t__f32__win_8asm.html#a6c4309005f03dac1a90e4b9f35331253',1,'the:&#160;RFFT_f32_win.asm']]],
   ['theta_23',['theta',['../struct_s_o_g_i__1_p_h.html#aa7afb071b3c17c69fbe3c3a7e85d9d68',1,'SOGI_1PH::theta'],['../struct_s_r_f__3_p_h.html#a25f08b63c4d9ae2a8ff80a527c9a0b8e',1,'SRF_3PH::theta'],['../struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370',1,'DDSRF_3PH::theta']]],
   ['this_24',['this',['../_r_f_f_t__f32__mag_8asm.html#ad143ae94e652b9b9d26d11f8a2347934',1,'this:&#160;RFFT_f32_mag.asm'],['../_r_f_f_t__f32__mag___t_m_u0_8asm.html#ad143ae94e652b9b9d26d11f8a2347934',1,'this:&#160;RFFT_f32_mag_TMU0.asm'],['../_r_f_f_t__f32__phase_8asm.html#ad143ae94e652b9b9d26d11f8a2347934',1,'this:&#160;RFFT_f32_phase.asm'],['../_r_f_f_t__f32__phase___t_m_u0_8asm.html#ad143ae94e652b9b9d26d11f8a2347934',1,'this:&#160;RFFT_f32_phase_TMU0.asm'],['../_r_f_f_t__f32__twiddle_factors_8asm.html#ad143ae94e652b9b9d26d11f8a2347934',1,'this:&#160;RFFT_f32_twiddleFactors.asm'],['../_r_f_f_t__f32__win_8asm.html#ad143ae94e652b9b9d26d11f8a2347934',1,'this:&#160;RFFT_f32_win.asm']]],
@@ -62,7 +62,6 @@ var searchData=
   ['tukey4096_59',['TUKEY4096',['../fpu__fft__tukey_8h.html#a5075354be0793443dcea130ef0abd391',1,'fpu_fft_tukey.h']]],
   ['tukey512_60',['TUKEY512',['../fpu__fft__tukey_8h.html#a041c78c3467931d7e0ffbf363ae90790',1,'fpu_fft_tukey.h']]],
   ['tukey64_61',['TUKEY64',['../fpu__fft__tukey_8h.html#afbe967db3577a244cffffe277b7c8a61',1,'fpu_fft_tukey.h']]],
-  ['twiddle_62',['twiddle',['../rfft_8c.html#a56ce624e4d31bc2956066f5fa5b6b34d',1,'twiddle:&#160;rfft.c'],['../rfft_8h.html#a56ce624e4d31bc2956066f5fa5b6b34d',1,'twiddle:&#160;rfft.c']]],
-  ['type_5ftransform_63',['TYPE_TRANSFORM',['../union_t_y_p_e___t_r_a_n_s_f_o_r_m.html',1,'TYPE_TRANSFORM'],['../vofa_8h.html#a26b5eae5bf51e0a793ffbb2a0e592523',1,'TYPE_TRANSFORM:&#160;vofa.h']]],
-  ['types_64',['Single Precision DSP Library Data Types',['../group___d_s_p___t_y_p_e_s___f32.html',1,'']]]
+  ['twiddle_62',['twiddle',['../group___d_s_p___r_f_f_t___f32.html#ga56ce624e4d31bc2956066f5fa5b6b34d',1,'twiddle:&#160;rfft.c'],['../group___d_s_p___r_f_f_t___f32.html#ga56ce624e4d31bc2956066f5fa5b6b34d',1,'twiddle:&#160;rfft.c']]],
+  ['type_5ftransform_63',['TYPE_TRANSFORM',['../union_t_y_p_e___t_r_a_n_s_f_o_r_m.html',1,'TYPE_TRANSFORM'],['../group___c_t_r_l___v_o_f_a.html#ga26b5eae5bf51e0a793ffbb2a0e592523',1,'TYPE_TRANSFORM:&#160;vofa.h']]]
 ];

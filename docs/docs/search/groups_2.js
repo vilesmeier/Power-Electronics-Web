@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['library_20data_20types_0',['Single Precision DSP Library Data Types',['../group___d_s_p___t_y_p_e_s___f32.html',1,'']]]
+  ['oled驱动_0',['OLED驱动',['../group___c_t_r_l___o_l_e_d.html',1,'']]]
 ];

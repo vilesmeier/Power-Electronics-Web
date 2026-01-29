@@ -1,7 +1,7 @@
 <map id="RFFT_f32" name="RFFT_f32">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,86,57"/>
-<area shape="rect" id="Node000002" href="$fpu__rfft_8h.html#a4ba62438408b6dbbe39975f316fe4429" title="Real Fast Fourier Transform (RFFT)." alt="" coords="137,5,218,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,34,121,27,123,32,87,39"/>
-<area shape="rect" id="Node000003" href="$fpu__rfft_8h.html#a9124e5c81f2cf7c0b2b8be3e761117bf" title="Real FFT (Unaligned)." alt="" coords="134,56,221,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="87,49,119,55,118,61,86,54"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,82,60"/>
+<area shape="rect" id="Node000002" href="$fpu__rfft_8h.html#a4ba62438408b6dbbe39975f316fe4429" title="Real Fast Fourier Transform (RFFT)." alt="" coords="133,5,210,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,35,117,28,118,33,83,41"/>
+<area shape="rect" id="Node000003" href="$fpu__rfft_8h.html#a9124e5c81f2cf7c0b2b8be3e761117bf" title="Real FFT (Unaligned)." alt="" coords="130,57,213,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="83,51,115,57,114,63,82,56"/>
 </map>

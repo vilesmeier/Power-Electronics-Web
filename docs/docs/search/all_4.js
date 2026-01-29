@@ -49,11 +49,11 @@ var searchData=
   ['bohman4096_46',['BOHMAN4096',['../fpu__fft__bohman_8h.html#ae0c2bf5671d98ed404c7a38180d8b184',1,'fpu_fft_bohman.h']]],
   ['bohman512_47',['BOHMAN512',['../fpu__fft__bohman_8h.html#a2466911bc166011c70e34f46702fd82a',1,'fpu_fft_bohman.h']]],
   ['bohman64_48',['BOHMAN64',['../fpu__fft__bohman_8h.html#a23751ee511f4928f74785b26336870e4',1,'fpu_fft_bohman.h']]],
-  ['bpf_5f2_5forder_49',['BPF_2_ORDER',['../filter_8h.html#a7ef0ab496f57e183b484e62e2053c94fa84225c08afc69fdb71afd4738771fb05',1,'filter.h']]],
+  ['bpf_5f2_5forder_49',['BPF_2_ORDER',['../group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fa84225c08afc69fdb71afd4738771fb05',1,'filter.h']]],
   ['bred_50',['BRED',['../_l_c_d___s_t7735_s_8h.html#ab87bacfdad76e61b9412d7124be44c1ca317fc76524a29a0f9b7ee7981b535fa5',1,'LCD_ST7735S.h']]],
   ['brown_51',['BROWN',['../_l_c_d___s_t7735_s_8h.html#ab87bacfdad76e61b9412d7124be44c1ca1fa14482e7e4dc1332ab8c9d995fe570',1,'LCD_ST7735S.h']]],
   ['brred_52',['BRRED',['../_l_c_d___s_t7735_s_8h.html#ab87bacfdad76e61b9412d7124be44c1caf8167b502cd2885f2753945b058b39b6',1,'LCD_ST7735S.h']]],
-  ['bsf_5f2_5forder_53',['BSF_2_ORDER',['../filter_8h.html#a7ef0ab496f57e183b484e62e2053c94fa1f0828a59462f2429fa526c12d9d4189',1,'filter.h']]],
+  ['bsf_5f2_5forder_53',['BSF_2_ORDER',['../group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fa1f0828a59462f2429fa526c12d9d4189',1,'filter.h']]],
   ['buf_54',['Buf',['../_r_f_f_t__f32_8asm.html#afdb2bb7b296702d88b16dcda8837fb75',1,'RFFT_f32.asm']]],
   ['buffer_55',['buffer',['../_r_f_f_t__f32_8asm.html#a784a700f8da2dd2432d27aa45de6c642',1,'buffer:&#160;RFFT_f32.asm'],['../_r_f_f_t__f32__win_8asm.html#afd80e8f4b300342cdfb57337717a7e78',1,'buffer(size of the RFFT):&#160;RFFT_f32_win.asm']]]
 ];

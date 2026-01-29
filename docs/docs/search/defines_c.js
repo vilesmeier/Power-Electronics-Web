@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['oled_5f6x8_0',['OLED_6X8',['../_control___driver_2oled_2oled_8h.html#a764efb1655297fd3db7678610851ea7d',1,'oled.h']]],
-  ['oled_5faddr_1',['OLED_ADDR',['../_control___driver_2oled_2oled_8h.html#a7dfa2c4cfbfcba36416046052e7943e8',1,'OLED_ADDR:&#160;oled.h'],['../_peripheral___driver_228335_2_o_l_e_d_2oled_8h.html#a7dfa2c4cfbfcba36416046052e7943e8',1,'OLED_ADDR:&#160;oled.h']]],
-  ['oled_5fi2c_5fbase_2',['OLED_I2C_BASE',['../_control___driver_2oled_2oled_8h.html#a372bc446b37ea7d91fe11d671f234c58',1,'oled.h']]],
-  ['oled_5fmax_5fcolumn_3',['OLED_MAX_COLUMN',['../_control___driver_2oled_2oled_8h.html#af4264dad14d2960b6d186d244f7ab258',1,'oled.h']]],
-  ['oled_5fmax_5fpage_4',['OLED_MAX_PAGE',['../_control___driver_2oled_2oled_8h.html#af4541768e95e8d3c6e6b17ead91d1a8c',1,'oled.h']]],
-  ['oled_5fmax_5frow_5',['OLED_MAX_ROW',['../_control___driver_2oled_2oled_8h.html#a986f0e172f995979409d2b38de51a2ec',1,'oled.h']]]
+  ['rect1024_0',['RECT1024',['../fpu__fft__rect_8h.html#ab9c8b6261892f63cbdc4bcb2aa8b39a9',1,'fpu_fft_rect.h']]],
+  ['rect128_1',['RECT128',['../fpu__fft__rect_8h.html#acc39a72166eb8281a103844ac4fdc5d6',1,'fpu_fft_rect.h']]],
+  ['rect2048_2',['RECT2048',['../fpu__fft__rect_8h.html#abb493cf5640c4c0a3d2b69c927a512c6',1,'fpu_fft_rect.h']]],
+  ['rect256_3',['RECT256',['../fpu__fft__rect_8h.html#a41f76ae40b2629dc1f3a6aa0b6b8796e',1,'fpu_fft_rect.h']]],
+  ['rect32_4',['RECT32',['../fpu__fft__rect_8h.html#abd0411861de594f6a92cb57cd8ca4d03',1,'fpu_fft_rect.h']]],
+  ['rect4096_5',['RECT4096',['../fpu__fft__rect_8h.html#abb41763d1b45fdf29d61a53944145b46',1,'fpu_fft_rect.h']]],
+  ['rect512_6',['RECT512',['../fpu__fft__rect_8h.html#acb0199a592a0f5374f6bf2538d2ed49a',1,'fpu_fft_rect.h']]],
+  ['rect64_7',['RECT64',['../fpu__fft__rect_8h.html#ae33e672f10119430f2bbbeaf2e207a0c',1,'fpu_fft_rect.h']]]
 ];

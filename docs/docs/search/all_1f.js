@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['开发状态_0',['开发状态',['../index.html#autotoc_md3',1,'']]],
-  ['开发环境_1',['开发环境',['../index.html#autotoc_md4',1,'']]]
+  ['参考相位生成_0',['参考相位生成',['../group___c_t_r_l___r_a_m_p.html',1,'']]]
 ];

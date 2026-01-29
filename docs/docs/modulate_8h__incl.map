@@ -1,9 +1,9 @@
 <map id="NUEDC&#45;Core/Code/Control_Driver/modulate/modulate.h" name="NUEDC&#45;Core/Code/Control_Driver/modulate/modulate.h">
-<area shape="rect" id="Node000001" title="调制函数声明" alt="" coords="54,5,242,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,70,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,51,69,89,65,85,118,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="94,96,203,123"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,49,151,80,146,80,146,49"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="227,96,419,123"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="194,46,283,87,280,92,192,51"/>
+<area shape="rect" id="Node000001" title="调制函数声明" alt="" coords="51,5,242,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,98,69,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,53,68,90,65,86,116,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="92,98,200,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,50,149,82,144,82,144,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="224,98,407,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,48,276,89,274,93,190,53"/>
 </map>

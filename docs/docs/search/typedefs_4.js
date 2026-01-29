@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['iir_5ff32_5fhandle_0',['IIR_f32_Handle',['../fpu__filter_8h.html#ad65545f76f4aa2b8ad3d7037ecdc293f',1,'fpu_filter.h']]]
+  ['key_0',['KEY',['../group___s_y_s___s_t_a_t_e.html#ga84d37c99488fc36522c8472139b90c58',1,'state.h']]],
+  ['key_5fbit_1',['KEY_BIT',['../group___s_y_s___s_t_a_t_e.html#gad3bf94857f7ef38a138783601091f153',1,'state.h']]]
 ];
