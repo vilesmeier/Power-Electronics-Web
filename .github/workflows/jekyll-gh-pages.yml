@@ -23,11 +23,11 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Install MkDocs
-      run: pip install mkdocs mkdocs-material
+    - name: Install Python packages
+      run: pip install mkdocs mkdocs-material PyJWT requests
 
     - name: Install Doxygen and dependencies
-      run: sudo apt-get update && sudo apt-get install -y doxygen graphviz jq openssl python3-pip
+      run: sudo apt-get update && sudo apt-get install -y doxygen graphviz jq openssl
 
     - name: Generate GitHub App token
       env:
@@ -37,7 +37,7 @@ jobs:
       run: |
         echo "$NUEDC_APP_PEM" | sed 's/\\n/\n/g' > app.pem
         python3 - <<EOF
-        import os, jwt, time, json, requests
+        import os, jwt, time, requests
         app_id = int(os.environ["NUEDC_APP_ID"])
         installation_id = os.environ["NUEDC_APP_INSTALLATION_ID"]
         with open("app.pem","r") as f:
@@ -49,7 +49,6 @@ jobs:
         headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"}
         url = f"https://api.github.com/app/installations/{installation_id}/access_tokens"
         r = requests.post(url, headers=headers)
-        print("TOKEN="+r.json()["token"])
         with open(os.environ["GITHUB_ENV"], "a") as f:
             f.write("TOKEN="+r.json()["token"]+"\n")
         EOF
