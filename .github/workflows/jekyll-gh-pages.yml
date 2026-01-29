@@ -38,21 +38,21 @@ jobs:
       run: |
         echo "$NUEDC_APP_PEM" | sed 's/\\n/\n/g' > app.pem
         python3 - <<EOF
-import os, jwt, time, requests
-app_id = int(os.environ["NUEDC_APP_ID"])
-installation_id = os.environ["NUEDC_APP_INSTALLATION_ID"]
-with open("app.pem","r") as f:
-    private_key = f.read()
-iat = int(time.time())
-exp = iat + 600
-payload = {"iat": iat, "exp": exp, "iss": app_id}
-token = jwt.encode(payload, private_key, algorithm="RS256")
-headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"}
-url = f"https://api.github.com/app/installations/{installation_id}/access_tokens"
-r = requests.post(url, headers=headers)
-with open(os.environ["GITHUB_ENV"], "a") as f:
-    f.write("TOKEN="+r.json()["token"]+"\n")
-EOF
+        import os, jwt, time, requests
+        app_id = int(os.environ["NUEDC_APP_ID"])
+        installation_id = os.environ["NUEDC_APP_INSTALLATION_ID"]
+        with open("app.pem","r") as f:
+            private_key = f.read()
+        iat = int(time.time())
+        exp = iat + 600
+        payload = {"iat": iat, "exp": exp, "iss": app_id}
+        token = jwt.encode(payload, private_key, algorithm="RS256")
+        headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"}
+        url = f"https://api.github.com/app/installations/{installation_id}/access_tokens"
+        r = requests.post(url, headers=headers)
+        with open(os.environ["GITHUB_ENV"], "a") as f:
+            f.write("TOKEN="+r.json()["token"]+"\n")
+        EOF
 
     - name: Clone NUEDC-Core submodule
       run: git clone https://x-access-token:$TOKEN@github.com/vilesmeier/NUEDC-Core.git NUEDC-Core
