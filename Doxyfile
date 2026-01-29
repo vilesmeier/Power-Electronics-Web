@@ -2681,7 +2681,7 @@ DOT_NODE_ATTR          = "shape=box,height=0.2,width=0.4"
 # DOT_COMMON_ATTR and others dot attributes.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-DOT_FONTPATH           = "../../Program Files/Graphviz"
+DOT_FONTPATH           = .
 
 # If the CLASS_GRAPH tag is set to YES or GRAPH or BUILTIN then Doxygen will
 # generate a graph for each documented class showing the direct and indirect
