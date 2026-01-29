@@ -1,18 +1,18 @@
 <map id="控制环路库" name="控制环路库">
-<area shape="rect" id="Node000001" title=" " alt="" coords="140,331,226,355"/>
-<area shape="rect" id="Node000003" href="$group___c_t_r_l___d_c_l.html" title=" " alt="" coords="324,5,411,30"/>
-<area shape="rect" id="Node000004" href="$group___c_t_r_l___d_e_l_a_y.html" title=" " alt="" coords="324,55,411,79"/>
-<area shape="rect" id="Node000005" href="$group___c_t_r_l___f_i_l_t_e_r.html" title=" " alt="" coords="316,104,420,132"/>
-<area shape="rect" id="Node000006" href="$group___c_t_r_l___m_a_t_h.html" title=" " alt="" coords="318,156,417,181"/>
-<area shape="rect" id="Node000007" href="$group___c_t_r_l___m_o_d.html" title=" " alt="" coords="338,205,398,230"/>
-<area shape="rect" id="Node000008" href="$group___c_t_r_l___m_p_p_t.html" title=" " alt="" coords="312,255,424,279"/>
-<area shape="rect" id="Node000009" href="$group___c_t_r_l___o_l_e_d.html" title=" " alt="" coords="328,304,407,332"/>
-<area shape="rect" id="Node000010" href="$group___c_t_r_l___p_l_l.html" title=" " alt="" coords="338,356,398,381"/>
-<area shape="rect" id="Node000011" href="$group___c_t_r_l___p_o_w_e_r___i_n_t.html" title=" " alt="" coords="298,405,437,430"/>
-<area shape="rect" id="Node000012" href="$group___c_t_r_l___r_a_m_p.html" title=" " alt="" coords="318,455,417,479"/>
-<area shape="rect" id="Node000015" href="$group___c_t_r_l___t_r_a_n_s_f_o_r_m.html" title=" " alt="" coords="331,504,404,529"/>
-<area shape="rect" id="Node000014" href="$group___c_t_r_l___t_r_a_n_s_f_u_n.html" title=" " alt="" coords="318,553,417,578"/>
-<area shape="rect" id="Node000016" href="$group___c_t_r_l___v_o_f_a.html" title=" " alt="" coords="308,602,427,630"/>
-<area shape="rect" id="Node000013" href="$group___d_s_p___r_f_f_t___f32.html" title=" " alt="" coords="274,654,461,682"/>
-<area shape="rect" id="Node000002" href="$group___l_i_b.html" title=" " alt="" coords="5,331,92,355"/>
+<area shape="rect" id="Node000001" title="常用控制算法的模块化代码, 使用时直接将文件夹复制到 hardware 文件夹内即可" alt="" coords="140,331,226,355"/>
+<area shape="rect" id="Node000003" href="$group___c_t_r_l___d_c_l.html" title="包含常见控制器传递函数, PI PR等" alt="" coords="324,5,411,30"/>
+<area shape="rect" id="Node000004" href="$group___c_t_r_l___d_e_l_a_y.html" title="实现基于数组的数据延迟链" alt="" coords="324,55,411,79"/>
+<area shape="rect" id="Node000005" href="$group___c_t_r_l___f_i_l_t_e_r.html" title="实现常见数字滤波器类型, 包括一阶和二阶低通/高通/带通/带阻滤波器, 基于TI 的 DCL_DF22 结构体实现" alt="" coords="316,104,420,132"/>
+<area shape="rect" id="Node000006" href="$group___c_t_r_l___m_a_t_h.html" title="提供常用数学常数的全局宏定义" alt="" coords="318,156,417,181"/>
+<area shape="rect" id="Node000007" href="$group___c_t_r_l___m_o_d.html" title="提供多种调制方式的实现" alt="" coords="338,205,398,230"/>
+<area shape="rect" id="Node000008" href="$group___c_t_r_l___m_p_p_t.html" title="提供多种MPPT算法的实现" alt="" coords="312,255,424,279"/>
+<area shape="rect" id="Node000009" href="$group___c_t_r_l___o_l_e_d.html" title="提供OLED屏幕驱动函数, 缓冲区方式实现" alt="" coords="328,304,407,332"/>
+<area shape="rect" id="Node000010" href="$group___c_t_r_l___p_l_l.html" title="提供单相与三相锁相环的实现, SOGI/SRF/DDSRF方法" alt="" coords="338,356,398,381"/>
+<area shape="rect" id="Node000011" href="$group___c_t_r_l___p_o_w_e_r___i_n_t.html" title="提供单相与三相功率分析的实现, 采用周期积分法实现" alt="" coords="298,405,437,430"/>
+<area shape="rect" id="Node000012" href="$group___c_t_r_l___r_a_m_p.html" title="提供参考相位生成器的实现, 输出锯齿波, 范围[0,2*pi]" alt="" coords="318,455,417,479"/>
+<area shape="rect" id="Node000015" href="$group___c_t_r_l___t_r_a_n_s_f_o_r_m.html" title="提供常用坐标变换的实现, 包括 Clarke, Park 变换及其逆变换" alt="" coords="331,504,404,529"/>
+<area shape="rect" id="Node000014" href="$group___c_t_r_l___t_r_a_n_s_f_u_n.html" title="提供一阶、二阶、三阶差分方程结构体与运行函数, 来自TI官方DCL库" alt="" coords="318,553,417,578"/>
+<area shape="rect" id="Node000016" href="$group___c_t_r_l___v_o_f_a.html" title="提供通过SCI向VOFA上位机发送数据的支持, 自定义通道数以及数据源" alt="" coords="308,602,427,630"/>
+<area shape="rect" id="Node000013" href="$group___d_s_p___r_f_f_t___f32.html" title="提供基于TI官方FPU库的RFFT频谱分析实现" alt="" coords="274,654,461,682"/>
+<area shape="rect" id="Node000002" href="$group___l_i_b.html" title="模块化功能代码库" alt="" coords="5,331,92,355"/>
 </map>

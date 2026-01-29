@@ -93,19 +93,22 @@ $(function(){initNavTree('group___c_t_r_l___o_l_e_d.html','',''); });
   <div class="headertitle"><div class="title">OLED驱动 <div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>提供OLED屏幕驱动函数, 缓冲区方式实现  
+<a href="#details">更多...</a></p>
 <div class="dynheader">
 OLED驱动 的协作图:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___c_t_r_l___o_l_e_d.png" border="0" usemap="#agroup______c__t__r__l______o__l__e__d" loading="lazy" alt=""/></div>
 <map name="agroup______c__t__r__l______o__l__e__d" id="agroup______c__t__r__l______o__l__e__d">
-<area shape="rect" href="group___c_t_r_l.html" title=" " alt="" coords="5,7,92,32"/>
-<area shape="rect" title=" " alt="" coords="140,5,219,33"/>
+<area shape="rect" href="group___c_t_r_l.html" title="常用控制算法的模块化代码, 使用时直接将文件夹复制到 hardware 文件夹内即可" alt="" coords="5,7,92,32"/>
+<area shape="rect" title="提供OLED屏幕驱动函数, 缓冲区方式实现" alt="" coords="140,5,219,33"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 宏定义</h2></td></tr>
-<tr class="memitem:ga372bc446b37ea7d91fe11d671f234c58" id="r_ga372bc446b37ea7d91fe11d671f234c58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga372bc446b37ea7d91fe11d671f234c58">OLED_I2C_BASE</a>&#160;&#160;&#160;<a class="el" href="i2c_8h.html#a32bd7b0e98a96d55221c76b0aff4cbff">I2CA_BASE</a></td></tr>
+<tr class="memitem:ga372bc446b37ea7d91fe11d671f234c58" id="r_ga372bc446b37ea7d91fe11d671f234c58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga372bc446b37ea7d91fe11d671f234c58">OLED_I2C_BASE</a>&#160;&#160;&#160;<a class="el" href="group___d_r_v___f28335___i_i_c.html#ga32bd7b0e98a96d55221c76b0aff4cbff">I2CA_BASE</a></td></tr>
 <tr class="memdesc:ga372bc446b37ea7d91fe11d671f234c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定使用的I2C外设  <br /></td></tr>
 <tr class="memitem:ga764efb1655297fd3db7678610851ea7d" id="r_ga764efb1655297fd3db7678610851ea7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga764efb1655297fd3db7678610851ea7d">OLED_6X8</a>&#160;&#160;&#160;6</td></tr>
 <tr class="memdesc:ga764efb1655297fd3db7678610851ea7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">X轴偏移  <br /></td></tr>
@@ -203,6 +206,7 @@ OLED驱动 的协作图:</div>
 <tr class="memdesc:ga7fc722b0b02713a9ed54aaa4cabef2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED字库  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<p>提供OLED屏幕驱动函数, 缓冲区方式实现 </p>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
 <a id="ga764efb1655297fd3db7678610851ea7d" name="ga764efb1655297fd3db7678610851ea7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga764efb1655297fd3db7678610851ea7d">&#9670;&#160;</a></span>OLED_6X8</h2>
@@ -218,7 +222,7 @@ OLED驱动 的协作图:</div>
 
 <p>X轴偏移 </p>
 
-<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00021">21</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00022">22</a> 行定义.</p>
 
 </div>
 </div>
@@ -236,7 +240,7 @@ OLED驱动 的协作图:</div>
 
 <p>OLED屏幕地址 </p>
 
-<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00025">25</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00026">26</a> 行定义.</p>
 
 </div>
 </div>
@@ -247,14 +251,14 @@ OLED驱动 的协作图:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define OLED_I2C_BASE&#160;&#160;&#160;<a class="el" href="i2c_8h.html#a32bd7b0e98a96d55221c76b0aff4cbff">I2CA_BASE</a></td>
+          <td class="memname">#define OLED_I2C_BASE&#160;&#160;&#160;<a class="el" href="group___d_r_v___f28335___i_i_c.html#ga32bd7b0e98a96d55221c76b0aff4cbff">I2CA_BASE</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>指定使用的I2C外设 </p>
 
-<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00020">20</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00021">21</a> 行定义.</p>
 
 </div>
 </div>
@@ -272,7 +276,7 @@ OLED驱动 的协作图:</div>
 
 <p>OLED最大列数 </p>
 
-<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00023">23</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00024">24</a> 行定义.</p>
 
 </div>
 </div>
@@ -290,7 +294,7 @@ OLED驱动 的协作图:</div>
 
 <p>OLED最大页数 </p>
 
-<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00024">24</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00025">25</a> 行定义.</p>
 
 </div>
 </div>
@@ -308,7 +312,7 @@ OLED驱动 的协作图:</div>
 
 <p>OLED最大行数 </p>
 
-<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00022">22</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00023">23</a> 行定义.</p>
 
 </div>
 </div>
@@ -366,7 +370,7 @@ OLED驱动 的协作图:</div>
 </td></tr>
 </table>
 
-<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00046">46</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00047">47</a> 行定义.</p>
 
 </div>
 </div>
@@ -394,7 +398,7 @@ OLED驱动 的协作图:</div>
 </td></tr>
 </table>
 
-<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00033">33</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 第 <a class="el" href="_control___driver_2oled_2oled_8h_source.html#l00034">34</a> 行定义.</p>
 
 </div>
 </div>
@@ -1155,11 +1159,11 @@ OLED驱动 的协作图:</div>
 <area shape="rect" title="OLED设置显示光标位置" alt="" coords="5,57,122,85"/>
 <area shape="rect" href="group___c_t_r_l___o_l_e_d.html#ga568697a02d0fdf503ea2ded50a1bfe5d" title="OLED 写命令" alt="" coords="170,57,319,85"/>
 <area shape="poly" title=" " alt="" coords="122,68,154,68,154,74,122,74"/>
-<area shape="rect" href="i2c_8c.html#a5352523aad8f6cef92cef0174e2d0d6e" title=" " alt="" coords="394,5,487,33"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga5352523aad8f6cef92cef0174e2d0d6e" title=" " alt="" coords="394,5,487,33"/>
 <area shape="poly" title=" " alt="" coords="299,54,378,33,379,38,300,59"/>
-<area shape="rect" href="i2c_8c.html#a08f9a3e4a9e29d2710030a547813fef8" title="Set number of bytes to be to transfer or receive when repeat mode is off." alt="" coords="378,57,503,85"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga08f9a3e4a9e29d2710030a547813fef8" title="Set number of bytes to be to transfer or receive when repeat mode is off." alt="" coords="378,57,503,85"/>
 <area shape="poly" title=" " alt="" coords="319,68,363,68,363,74,319,74"/>
-<area shape="rect" href="i2c_8c.html#a3822a8c9581d825bb52165867cd7deee" title="Sets the address that the I2C Controller places on the bus." alt="" coords="367,109,514,137"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga3822a8c9581d825bb52165867cd7deee" title="Sets the address that the I2C Controller places on the bus." alt="" coords="367,109,514,137"/>
 <area shape="poly" title=" " alt="" coords="300,83,372,102,370,107,299,88"/>
 </map>
 </div>
@@ -1569,11 +1573,11 @@ OLED驱动 的协作图:</div>
 <area shape="poly" title=" " alt="" coords="107,74,319,90,319,95,107,79"/>
 <area shape="rect" href="group___c_t_r_l___o_l_e_d.html#ga568697a02d0fdf503ea2ded50a1bfe5d" title="OLED 写命令" alt="" coords="319,32,468,60"/>
 <area shape="poly" title=" " alt="" coords="272,44,303,44,304,49,272,49"/>
-<area shape="rect" href="i2c_8c.html#a5352523aad8f6cef92cef0174e2d0d6e" title=" " alt="" coords="543,5,637,33"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga5352523aad8f6cef92cef0174e2d0d6e" title=" " alt="" coords="543,5,637,33"/>
 <area shape="poly" title=" " alt="" coords="468,33,528,25,528,30,469,38"/>
-<area shape="rect" href="i2c_8c.html#a08f9a3e4a9e29d2710030a547813fef8" title="Set number of bytes to be to transfer or receive when repeat mode is off." alt="" coords="527,57,653,85"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga08f9a3e4a9e29d2710030a547813fef8" title="Set number of bytes to be to transfer or receive when repeat mode is off." alt="" coords="527,57,653,85"/>
 <area shape="poly" title=" " alt="" coords="469,53,512,58,512,64,468,58"/>
-<area shape="rect" href="i2c_8c.html#a3822a8c9581d825bb52165867cd7deee" title="Sets the address that the I2C Controller places on the bus." alt="" coords="516,109,664,137"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga3822a8c9581d825bb52165867cd7deee" title="Sets the address that the I2C Controller places on the bus." alt="" coords="516,109,664,137"/>
 <area shape="poly" title=" " alt="" coords="438,58,469,70,517,94,534,101,532,106,515,99,467,75,436,63"/>
 <area shape="poly" title=" " alt="" coords="437,81,467,69,515,43,531,37,533,42,517,48,469,74,439,86"/>
 <area shape="poly" title=" " alt="" coords="453,87,512,79,513,84,453,92"/>
@@ -1636,11 +1640,11 @@ OLED驱动 的协作图:</div>
 <area shape="poly" title=" " alt="" coords="134,74,347,90,346,95,134,80"/>
 <area shape="rect" href="group___c_t_r_l___o_l_e_d.html#ga568697a02d0fdf503ea2ded50a1bfe5d" title="OLED 写命令" alt="" coords="346,32,495,60"/>
 <area shape="poly" title=" " alt="" coords="299,44,330,44,331,49,299,49"/>
-<area shape="rect" href="i2c_8c.html#a5352523aad8f6cef92cef0174e2d0d6e" title=" " alt="" coords="570,5,664,33"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga5352523aad8f6cef92cef0174e2d0d6e" title=" " alt="" coords="570,5,664,33"/>
 <area shape="poly" title=" " alt="" coords="495,33,555,25,555,30,496,38"/>
-<area shape="rect" href="i2c_8c.html#a08f9a3e4a9e29d2710030a547813fef8" title="Set number of bytes to be to transfer or receive when repeat mode is off." alt="" coords="554,57,680,85"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga08f9a3e4a9e29d2710030a547813fef8" title="Set number of bytes to be to transfer or receive when repeat mode is off." alt="" coords="554,57,680,85"/>
 <area shape="poly" title=" " alt="" coords="496,53,539,58,539,64,495,58"/>
-<area shape="rect" href="i2c_8c.html#a3822a8c9581d825bb52165867cd7deee" title="Sets the address that the I2C Controller places on the bus." alt="" coords="543,109,691,137"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga3822a8c9581d825bb52165867cd7deee" title="Sets the address that the I2C Controller places on the bus." alt="" coords="543,109,691,137"/>
 <area shape="poly" title=" " alt="" coords="465,58,496,70,544,94,561,101,559,106,542,99,494,75,463,63"/>
 <area shape="poly" title=" " alt="" coords="464,81,494,69,542,43,558,37,560,42,544,48,496,74,466,86"/>
 <area shape="poly" title=" " alt="" coords="480,87,539,79,540,84,480,92"/>
@@ -1680,11 +1684,11 @@ OLED驱动 的协作图:</div>
 <div class="center"><img src="group___c_t_r_l___o_l_e_d_ga568697a02d0fdf503ea2ded50a1bfe5d_cgraph.png" border="0" usemap="#agroup___c_t_r_l___o_l_e_d_ga568697a02d0fdf503ea2ded50a1bfe5d_cgraph" loading="lazy" alt=""/></div>
 <map name="agroup___c_t_r_l___o_l_e_d_ga568697a02d0fdf503ea2ded50a1bfe5d_cgraph" id="agroup___c_t_r_l___o_l_e_d_ga568697a02d0fdf503ea2ded50a1bfe5d_cgraph">
 <area shape="rect" title="OLED 写命令" alt="" coords="5,57,155,85"/>
-<area shape="rect" href="i2c_8c.html#a5352523aad8f6cef92cef0174e2d0d6e" title=" " alt="" coords="230,5,323,33"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga5352523aad8f6cef92cef0174e2d0d6e" title=" " alt="" coords="230,5,323,33"/>
 <area shape="poly" title=" " alt="" coords="135,54,214,33,215,38,136,59"/>
-<area shape="rect" href="i2c_8c.html#a08f9a3e4a9e29d2710030a547813fef8" title="Set number of bytes to be to transfer or receive when repeat mode is off." alt="" coords="214,57,339,85"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga08f9a3e4a9e29d2710030a547813fef8" title="Set number of bytes to be to transfer or receive when repeat mode is off." alt="" coords="214,57,339,85"/>
 <area shape="poly" title=" " alt="" coords="155,68,198,68,198,74,155,74"/>
-<area shape="rect" href="i2c_8c.html#a3822a8c9581d825bb52165867cd7deee" title="Sets the address that the I2C Controller places on the bus." alt="" coords="203,109,350,137"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga3822a8c9581d825bb52165867cd7deee" title="Sets the address that the I2C Controller places on the bus." alt="" coords="203,109,350,137"/>
 <area shape="poly" title=" " alt="" coords="136,83,207,102,206,107,135,88"/>
 </map>
 </div>
@@ -1726,11 +1730,11 @@ OLED驱动 的协作图:</div>
 <div class="center"><img src="group___c_t_r_l___o_l_e_d_ga034549a1e1b554b2cd1e8359c3119d24_cgraph.png" border="0" usemap="#agroup___c_t_r_l___o_l_e_d_ga034549a1e1b554b2cd1e8359c3119d24_cgraph" loading="lazy" alt=""/></div>
 <map name="agroup___c_t_r_l___o_l_e_d_ga034549a1e1b554b2cd1e8359c3119d24_cgraph" id="agroup___c_t_r_l___o_l_e_d_ga034549a1e1b554b2cd1e8359c3119d24_cgraph">
 <area shape="rect" title="OLED 写数据" alt="" coords="5,57,124,85"/>
-<area shape="rect" href="i2c_8c.html#a5352523aad8f6cef92cef0174e2d0d6e" title=" " alt="" coords="199,5,292,33"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga5352523aad8f6cef92cef0174e2d0d6e" title=" " alt="" coords="199,5,292,33"/>
 <area shape="poly" title=" " alt="" coords="115,54,183,34,185,39,116,59"/>
-<area shape="rect" href="i2c_8c.html#a08f9a3e4a9e29d2710030a547813fef8" title="Set number of bytes to be to transfer or receive when repeat mode is off." alt="" coords="183,57,308,85"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga08f9a3e4a9e29d2710030a547813fef8" title="Set number of bytes to be to transfer or receive when repeat mode is off." alt="" coords="183,57,308,85"/>
 <area shape="poly" title=" " alt="" coords="124,68,168,68,168,74,124,74"/>
-<area shape="rect" href="i2c_8c.html#a3822a8c9581d825bb52165867cd7deee" title="Sets the address that the I2C Controller places on the bus." alt="" coords="172,109,319,137"/>
+<area shape="rect" href="group___d_r_v___f28335___i_i_c.html#ga3822a8c9581d825bb52165867cd7deee" title="Sets the address that the I2C Controller places on the bus." alt="" coords="172,109,319,137"/>
 <area shape="poly" title=" " alt="" coords="116,83,181,102,180,107,115,88"/>
 </map>
 </div>

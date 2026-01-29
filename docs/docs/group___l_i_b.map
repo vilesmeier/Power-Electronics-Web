@@ -1,8 +1,8 @@
 <map id="模块代码库" name="模块代码库">
-<area shape="rect" id="Node000006" href="$group___c_o_r_e.html" title=" " alt="" coords="300,5,397,33"/>
-<area shape="rect" id="Node000004" href="$group___c_t_r_l.html" title=" " alt="" coords="306,58,392,82"/>
-<area shape="rect" id="Node000003" href="$group___d_r_v.html" title=" " alt="" coords="306,107,392,132"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="166,83,252,108"/>
-<area shape="rect" id="Node000005" href="$group___s_y_s.html" title=" " alt="" coords="306,156,392,181"/>
-<area shape="rect" id="Node000002" href="$group___n_u_e_d_c.html" title=" " alt="" coords="5,83,118,108"/>
+<area shape="rect" id="Node000006" href="$group___c_o_r_e.html" title="头文件包含, 全局变量定义与声明" alt="" coords="300,5,397,33"/>
+<area shape="rect" id="Node000004" href="$group___c_t_r_l.html" title="常用控制算法的模块化代码, 使用时直接将文件夹复制到 hardware 文件夹内即可" alt="" coords="306,58,392,82"/>
+<area shape="rect" id="Node000003" href="$group___d_r_v.html" title="对应主控的外设驱动代码" alt="" coords="306,107,392,132"/>
+<area shape="rect" id="Node000001" title="模块化功能代码库" alt="" coords="166,83,252,108"/>
+<area shape="rect" id="Node000005" href="$group___s_y_s.html" title="基于时间片和 task 的全局状态机和任务调度" alt="" coords="306,156,392,181"/>
+<area shape="rect" id="Node000002" href="$group___n_u_e_d_c.html" title="电力电子方向备赛资料库, 代码, 工程, 测试例程部分" alt="" coords="5,83,118,108"/>
 </map>

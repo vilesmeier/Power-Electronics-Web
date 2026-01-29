@@ -14,11 +14,11 @@ var annotated_dup =
     [ "DDSRF_3PH_LPF_COEFF", "struct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html", "struct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f" ],
     [ "DELAY", "struct_d_e_l_a_y.html", "struct_d_e_l_a_y" ],
     [ "DQ", "struct_d_q.html", "struct_d_q" ],
+    [ "ERR", "union_e_r_r.html", "union_e_r_r" ],
+    [ "ERR_BIT", "struct_e_r_r___b_i_t.html", null ],
     [ "FILTER", "struct_f_i_l_t_e_r.html", "struct_f_i_l_t_e_r" ],
-    [ "FLAG", "union_f_l_a_g.html", "union_f_l_a_g" ],
-    [ "FLAG_BIT", "struct_f_l_a_g___b_i_t.html", null ],
     [ "KEY", "union_k_e_y.html", "union_k_e_y" ],
-    [ "KEY_BIT", "struct_k_e_y___b_i_t.html", null ],
+    [ "KEY_BIT", "struct_k_e_y___b_i_t.html", "struct_k_e_y___b_i_t" ],
     [ "MOD", "struct_m_o_d.html", "struct_m_o_d" ],
     [ "MPPT_INCC", "struct_m_p_p_t___i_n_c_c.html", "struct_m_p_p_t___i_n_c_c" ],
     [ "MPPT_INCC_I", "struct_m_p_p_t___i_n_c_c___i.html", "struct_m_p_p_t___i_n_c_c___i" ],
@@ -36,6 +36,8 @@ var annotated_dup =
     [ "SRF_3PH_LPF_COEFF", "struct_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html", "struct_s_r_f__3_p_h___l_p_f___c_o_e_f_f" ],
     [ "STATE", "struct_s_t_a_t_e.html", "struct_s_t_a_t_e" ],
     [ "SVPWM", "struct_s_v_p_w_m.html", "struct_s_v_p_w_m" ],
+    [ "TIME_SLICE", "union_t_i_m_e___s_l_i_c_e.html", "union_t_i_m_e___s_l_i_c_e" ],
+    [ "TIME_SLICE_BIT", "struct_t_i_m_e___s_l_i_c_e___b_i_t.html", "struct_t_i_m_e___s_l_i_c_e___b_i_t" ],
     [ "TYPE_TRANSFORM", "union_t_y_p_e___t_r_a_n_s_f_o_r_m.html", "union_t_y_p_e___t_r_a_n_s_f_o_r_m" ],
     [ "VOFA_DATA", "struct_v_o_f_a___d_a_t_a.html", "struct_v_o_f_a___d_a_t_a" ]
 ];

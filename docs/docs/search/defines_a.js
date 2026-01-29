@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['oled_5faddr_0',['OLED_ADDR',['../_peripheral___driver_228335_2_o_l_e_d_2oled_8h.html#a7dfa2c4cfbfcba36416046052e7943e8',1,'oled.h']]]
+  ['use_5flegacy_5fnames_0',['USE_LEGACY_NAMES',['../fpu__types_8h.html#a5e488e682033365f0f7a9a2ae7c67622',1,'fpu_types.h']]]
 ];

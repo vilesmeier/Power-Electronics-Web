@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vofa上位机支持_0',['VOFA上位机支持',['../group___c_t_r_l___v_o_f_a.html',1,'']]]
+  ['lcd驱动_0',['LCD驱动',['../group___d_r_v___f28335___l_c_d.html',1,'']]]
 ];

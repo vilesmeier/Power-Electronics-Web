@@ -6,6 +6,6 @@ var searchData=
   ['b2_3',['b2',['../structdcl__df22.html#a999dfadc0e3ccc0a21b963590c3a5db6',1,'dcl_df22::b2'],['../structdcl__df23.html#a07c56dd7b56bfe8c415c0906c834532a',1,'dcl_df23::b2']]],
   ['b3_4',['b3',['../structdcl__df23.html#a71eb0900e1ee30b9ab32eb6d5e365a74',1,'dcl_df23']]],
   ['beta_5',['beta',['../struct_d_q.html#a6bbac8cb900c1e2e5e33d609288e28e1',1,'DQ']]],
-  ['bits_6',['bits',['../union_f_l_a_g.html#a16052fc60ef5076072673c586afed04d',1,'FLAG::bits'],['../union_k_e_y.html#a7ae3686140c8e0e6e133a0f10544190a',1,'KEY::bits']]],
+  ['bit_6',['bit',['../union_e_r_r.html#a957d21931025f6eb19a41dd0fe551769',1,'ERR::bit'],['../union_k_e_y.html#a90027507f4f21e34724331b1ba2d5adc',1,'KEY::bit'],['../union_t_i_m_e___s_l_i_c_e.html#a3d0cbe699dca647578f4ee8e2df9cadc',1,'TIME_SLICE::bit']]],
   ['buffer_7',['buffer',['../_r_f_f_t__f32_8asm.html#a784a700f8da2dd2432d27aa45de6c642',1,'RFFT_f32.asm']]]
 ];

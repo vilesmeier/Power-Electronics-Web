@@ -1,5 +1,5 @@
 <map id="KEY" name="KEY">
-<area shape="rect" id="Node000001" title="按键驱动打包" alt="" coords="19,106,64,134"/>
-<area shape="rect" id="Node000002" href="$struct_k_e_y___b_i_t.html" title="边沿触发型按键驱动" alt="" coords="5,5,78,33"/>
+<area shape="rect" id="Node000001" title="按键状态" alt="" coords="19,106,64,134"/>
+<area shape="rect" id="Node000002" href="$struct_k_e_y___b_i_t.html" title="按键状态位定义" alt="" coords="5,5,78,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,49,44,105,39,105,39,49"/>
 </map>

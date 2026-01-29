@@ -1,5 +1,5 @@
 <map id="TIME_SLICE" name="TIME_SLICE">
-<area shape="rect" id="Node000001" title=" " alt="" coords="19,106,112,134"/>
-<area shape="rect" id="Node000002" href="$struct_t_i_m_e___s_l_i_c_e___b_i_t.html" title=" " alt="" coords="5,5,126,33"/>
+<area shape="rect" id="Node000001" title="时间片结构体" alt="" coords="19,106,112,134"/>
+<area shape="rect" id="Node000002" href="$struct_t_i_m_e___s_l_i_c_e___b_i_t.html" title="时间片位定义" alt="" coords="5,5,126,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,49,68,105,63,105,63,49"/>
 </map>

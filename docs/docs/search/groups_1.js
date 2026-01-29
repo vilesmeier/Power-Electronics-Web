@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['iir数字滤波器_0',['IIR数字滤波器',['../group___c_t_r_l___f_i_l_t_e_r.html',1,'']]]
+  ['adc驱动_0',['ADC驱动',['../group___d_r_v___f28335___a_d_c.html',1,'']]]
 ];

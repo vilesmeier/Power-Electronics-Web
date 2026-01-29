@@ -99,11 +99,11 @@ $(function(){initNavTree('tim_8c_source.html','',''); });
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="tim_8c.html#a6207706a3d9f9c440cf30f7e011bc1c2">   10</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="tim_8c.html#a6207706a3d9f9c440cf30f7e011bc1c2">TIM0_Init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="group___d_r_v___f28335___t_i_m.html#ga6207706a3d9f9c440cf30f7e011bc1c2">   10</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___t_i_m.html#ga6207706a3d9f9c440cf30f7e011bc1c2">TIM0_Init</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">//pherial level interrupt config</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    EALLOW;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    PieVectTable.TINT0 = &amp;<a class="code hl_function" href="tim_8c.html#a0950d135719562f192fb7fd782cd58be">cpu_timer0_isr</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    PieVectTable.TINT0 = &amp;<a class="code hl_function" href="group___d_r_v___f28335___t_i_m.html#ga0950d135719562f192fb7fd782cd58be">cpu_timer0_isr</a>;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    SysCtrlRegs.PCLKCR3.bit.CPUTIMER0ENCLK = 1;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    EDIS;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    IER |= M_INT1;</div>
@@ -127,14 +127,14 @@ $(function(){initNavTree('tim_8c_source.html','',''); });
 </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="tim_8c.html#a99bcb8c40956c72496cb7a3a33877721">   36</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="tim_8c.html#a99bcb8c40956c72496cb7a3a33877721">TIM0_Set</a>(<span class="keywordtype">float</span> freq)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="group___d_r_v___f28335___t_i_m.html#ga99bcb8c40956c72496cb7a3a33877721">   36</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___t_i_m.html#ga99bcb8c40956c72496cb7a3a33877721">TIM0_Set</a>(<span class="keywordtype">float</span> freq)</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    ConfigCpuTimer(&amp;CpuTimer0,150, 1/freq*1000000);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="tim_8c.html#a4d1587c0146ce727736736c0e6012759">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="tim_8c.html#a4d1587c0146ce727736736c0e6012759">TIM0_Start</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="group___d_r_v___f28335___t_i_m.html#ga4d1587c0146ce727736736c0e6012759">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___t_i_m.html#ga4d1587c0146ce727736736c0e6012759">TIM0_Start</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">//start timer0</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    CpuTimer0Regs.TCR.bit.TSS = 0;</div>
@@ -142,7 +142,7 @@ $(function(){initNavTree('tim_8c_source.html','',''); });
 </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="tim_8c.html#abbad9a0b511e69e1794b83826bfecc30">   47</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="tim_8c.html#abbad9a0b511e69e1794b83826bfecc30">TIM0_Stop</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="group___d_r_v___f28335___t_i_m.html#gabbad9a0b511e69e1794b83826bfecc30">   47</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___t_i_m.html#gabbad9a0b511e69e1794b83826bfecc30">TIM0_Stop</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">//start timer0</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    CpuTimer0Regs.TCR.bit.TSS = 1;</div>
@@ -150,7 +150,7 @@ $(function(){initNavTree('tim_8c_source.html','',''); });
 </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="tim_8c.html#a1d4a8e400cbd762e8d6ba80e6275c93e">   53</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="tim_8c.html#a1d4a8e400cbd762e8d6ba80e6275c93e">TIM0_Reload</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="group___d_r_v___f28335___t_i_m.html#ga1d4a8e400cbd762e8d6ba80e6275c93e">   53</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___t_i_m.html#ga1d4a8e400cbd762e8d6ba80e6275c93e">TIM0_Reload</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">//reload timer</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    CpuTimer0Regs.TCR.bit.TRB = 1;</div>
@@ -158,7 +158,7 @@ $(function(){initNavTree('tim_8c_source.html','',''); });
 </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="tim_8c.html#a0950d135719562f192fb7fd782cd58be">   59</a></span>interrupt <span class="keywordtype">void</span> <a class="code hl_function" href="tim_8c.html#a0950d135719562f192fb7fd782cd58be">cpu_timer0_isr</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="group___d_r_v___f28335___t_i_m.html#ga0950d135719562f192fb7fd782cd58be">   59</a></span>interrupt <span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___t_i_m.html#ga0950d135719562f192fb7fd782cd58be">cpu_timer0_isr</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    CpuTimer0.InterruptCount++;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
@@ -166,12 +166,12 @@ $(function(){initNavTree('tim_8c_source.html','',''); });
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
 </div>
 <div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div><div class="ttdoc">全局变量声明, 头文件打包, 全局通用宏定义</div></div>
-<div class="ttc" id="atim_8c_html_a0950d135719562f192fb7fd782cd58be"><div class="ttname"><a href="tim_8c.html#a0950d135719562f192fb7fd782cd58be">cpu_timer0_isr</a></div><div class="ttdeci">interrupt void cpu_timer0_isr(void)</div><div class="ttdoc">Interrupt handler</div><div class="ttdef"><b>定义</b> <a href="#l00059">tim.c:59</a></div></div>
-<div class="ttc" id="atim_8c_html_a1d4a8e400cbd762e8d6ba80e6275c93e"><div class="ttname"><a href="tim_8c.html#a1d4a8e400cbd762e8d6ba80e6275c93e">TIM0_Reload</a></div><div class="ttdeci">void TIM0_Reload(void)</div><div class="ttdoc">Reload CpuTimer0</div><div class="ttdef"><b>定义</b> <a href="#l00053">tim.c:53</a></div></div>
-<div class="ttc" id="atim_8c_html_a4d1587c0146ce727736736c0e6012759"><div class="ttname"><a href="tim_8c.html#a4d1587c0146ce727736736c0e6012759">TIM0_Start</a></div><div class="ttdeci">void TIM0_Start(void)</div><div class="ttdoc">Start CpuTimer0</div><div class="ttdef"><b>定义</b> <a href="#l00041">tim.c:41</a></div></div>
-<div class="ttc" id="atim_8c_html_a6207706a3d9f9c440cf30f7e011bc1c2"><div class="ttname"><a href="tim_8c.html#a6207706a3d9f9c440cf30f7e011bc1c2">TIM0_Init</a></div><div class="ttdeci">void TIM0_Init(void)</div><div class="ttdoc">Init CPU Timer0</div><div class="ttdef"><b>定义</b> <a href="#l00010">tim.c:10</a></div></div>
-<div class="ttc" id="atim_8c_html_a99bcb8c40956c72496cb7a3a33877721"><div class="ttname"><a href="tim_8c.html#a99bcb8c40956c72496cb7a3a33877721">TIM0_Set</a></div><div class="ttdeci">void TIM0_Set(float freq)</div><div class="ttdoc">Set CPUTimer0 frequency</div><div class="ttdef"><b>定义</b> <a href="#l00036">tim.c:36</a></div></div>
-<div class="ttc" id="atim_8c_html_abbad9a0b511e69e1794b83826bfecc30"><div class="ttname"><a href="tim_8c.html#abbad9a0b511e69e1794b83826bfecc30">TIM0_Stop</a></div><div class="ttdeci">void TIM0_Stop(void)</div><div class="ttdoc">Stop CpuTimer0</div><div class="ttdef"><b>定义</b> <a href="#l00047">tim.c:47</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___t_i_m_html_ga0950d135719562f192fb7fd782cd58be"><div class="ttname"><a href="group___d_r_v___f28335___t_i_m.html#ga0950d135719562f192fb7fd782cd58be">cpu_timer0_isr</a></div><div class="ttdeci">interrupt void cpu_timer0_isr(void)</div><div class="ttdoc">Interrupt handler</div><div class="ttdef"><b>定义</b> <a href="#l00059">tim.c:59</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___t_i_m_html_ga1d4a8e400cbd762e8d6ba80e6275c93e"><div class="ttname"><a href="group___d_r_v___f28335___t_i_m.html#ga1d4a8e400cbd762e8d6ba80e6275c93e">TIM0_Reload</a></div><div class="ttdeci">void TIM0_Reload(void)</div><div class="ttdoc">Reload CpuTimer0</div><div class="ttdef"><b>定义</b> <a href="#l00053">tim.c:53</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___t_i_m_html_ga4d1587c0146ce727736736c0e6012759"><div class="ttname"><a href="group___d_r_v___f28335___t_i_m.html#ga4d1587c0146ce727736736c0e6012759">TIM0_Start</a></div><div class="ttdeci">void TIM0_Start(void)</div><div class="ttdoc">Start CpuTimer0</div><div class="ttdef"><b>定义</b> <a href="#l00041">tim.c:41</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___t_i_m_html_ga6207706a3d9f9c440cf30f7e011bc1c2"><div class="ttname"><a href="group___d_r_v___f28335___t_i_m.html#ga6207706a3d9f9c440cf30f7e011bc1c2">TIM0_Init</a></div><div class="ttdeci">void TIM0_Init(void)</div><div class="ttdoc">Init CPU Timer0</div><div class="ttdef"><b>定义</b> <a href="#l00010">tim.c:10</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___t_i_m_html_ga99bcb8c40956c72496cb7a3a33877721"><div class="ttname"><a href="group___d_r_v___f28335___t_i_m.html#ga99bcb8c40956c72496cb7a3a33877721">TIM0_Set</a></div><div class="ttdeci">void TIM0_Set(float freq)</div><div class="ttdoc">Set CPUTimer0 frequency</div><div class="ttdef"><b>定义</b> <a href="#l00036">tim.c:36</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___t_i_m_html_gabbad9a0b511e69e1794b83826bfecc30"><div class="ttname"><a href="group___d_r_v___f28335___t_i_m.html#gabbad9a0b511e69e1794b83826bfecc30">TIM0_Stop</a></div><div class="ttdeci">void TIM0_Stop(void)</div><div class="ttdoc">Stop CpuTimer0</div><div class="ttdef"><b>定义</b> <a href="#l00047">tim.c:47</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

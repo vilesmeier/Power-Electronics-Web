@@ -98,12 +98,12 @@ $(function(){initNavTree('adc_8c_source.html','',''); });
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="global_8h.html">global.h</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
 <div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="adc_8c.html#a5137b551f1b83b0f4d8df7d071a3d3a6">   13</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#a5137b551f1b83b0f4d8df7d071a3d3a6">ADC_Init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="group___d_r_v___f28335___a_d_c.html#ga5137b551f1b83b0f4d8df7d071a3d3a6">   13</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___a_d_c.html#ga5137b551f1b83b0f4d8df7d071a3d3a6">ADC_Init</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="comment">//interrupt config</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    EALLOW;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    DINT;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    PieVectTable.ADCINT = &amp;<a class="code hl_function" href="adc_8c.html#a3812a7e6a8dc85e545d21c6e3a59598d">ADC_int_isr</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    PieVectTable.ADCINT = &amp;<a class="code hl_function" href="group___d_r_v___f28335___a_d_c.html#ga3812a7e6a8dc85e545d21c6e3a59598d">ADC_int_isr</a>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    IER |= M_INT1;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    PieCtrlRegs.PIEIER1.bit.INTx6 = 1;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
@@ -140,14 +140,14 @@ $(function(){initNavTree('adc_8c_source.html','',''); });
 </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
 <div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="adc_8c.html#a4243b19266fd8c96d7a93c8145351358">   57</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#a4243b19266fd8c96d7a93c8145351358">ADC_Get_Value</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="group___d_r_v___f28335___a_d_c.html#ga4243b19266fd8c96d7a93c8145351358">   57</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___a_d_c.html#ga4243b19266fd8c96d7a93c8145351358">ADC_Get_Value</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
 <div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="adc_8c.html#a3812a7e6a8dc85e545d21c6e3a59598d">   67</a></span>interrupt <span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#a3812a7e6a8dc85e545d21c6e3a59598d">ADC_int_isr</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="group___d_r_v___f28335___a_d_c.html#ga3812a7e6a8dc85e545d21c6e3a59598d">   67</a></span>interrupt <span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___a_d_c.html#ga3812a7e6a8dc85e545d21c6e3a59598d">ADC_int_isr</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>{</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">//Interrupt Flag Clear</span></div>
@@ -156,10 +156,10 @@ $(function(){initNavTree('adc_8c_source.html','',''); });
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    PieCtrlRegs.PIEACK.all = PIEACK_GROUP1;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
 </div>
-<div class="ttc" id="aadc_8c_html_a3812a7e6a8dc85e545d21c6e3a59598d"><div class="ttname"><a href="adc_8c.html#a3812a7e6a8dc85e545d21c6e3a59598d">ADC_int_isr</a></div><div class="ttdeci">interrupt void ADC_int_isr(void)</div><div class="ttdoc">Interrupt Service Routine For ADC</div><div class="ttdef"><b>定义</b> <a href="#l00067">adc.c:67</a></div></div>
-<div class="ttc" id="aadc_8c_html_a4243b19266fd8c96d7a93c8145351358"><div class="ttname"><a href="adc_8c.html#a4243b19266fd8c96d7a93c8145351358">ADC_Get_Value</a></div><div class="ttdeci">void ADC_Get_Value(void)</div><div class="ttdoc">Signal Process</div><div class="ttdef"><b>定义</b> <a href="#l00057">adc.c:57</a></div></div>
-<div class="ttc" id="aadc_8c_html_a5137b551f1b83b0f4d8df7d071a3d3a6"><div class="ttname"><a href="adc_8c.html#a5137b551f1b83b0f4d8df7d071a3d3a6">ADC_Init</a></div><div class="ttdeci">void ADC_Init(void)</div><div class="ttdoc">ADC Init</div><div class="ttdef"><b>定义</b> <a href="#l00013">adc.c:13</a></div></div>
 <div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div><div class="ttdoc">全局变量声明, 头文件打包, 全局通用宏定义</div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___a_d_c_html_ga3812a7e6a8dc85e545d21c6e3a59598d"><div class="ttname"><a href="group___d_r_v___f28335___a_d_c.html#ga3812a7e6a8dc85e545d21c6e3a59598d">ADC_int_isr</a></div><div class="ttdeci">interrupt void ADC_int_isr(void)</div><div class="ttdoc">Interrupt Service Routine For ADC</div><div class="ttdef"><b>定义</b> <a href="#l00067">adc.c:67</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___a_d_c_html_ga4243b19266fd8c96d7a93c8145351358"><div class="ttname"><a href="group___d_r_v___f28335___a_d_c.html#ga4243b19266fd8c96d7a93c8145351358">ADC_Get_Value</a></div><div class="ttdeci">void ADC_Get_Value(void)</div><div class="ttdoc">Signal Process</div><div class="ttdef"><b>定义</b> <a href="#l00057">adc.c:57</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___a_d_c_html_ga5137b551f1b83b0f4d8df7d071a3d3a6"><div class="ttname"><a href="group___d_r_v___f28335___a_d_c.html#ga5137b551f1b83b0f4d8df7d071a3d3a6">ADC_Init</a></div><div class="ttdeci">void ADC_Init(void)</div><div class="ttdoc">ADC Init</div><div class="ttdef"><b>定义</b> <a href="#l00013">adc.c:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

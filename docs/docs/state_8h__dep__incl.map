@@ -1,8 +1,8 @@
 <map id="NUEDC&#45;Core/Code/Control_Driver/state/state.h" name="NUEDC&#45;Core/Code/Control_Driver/state/state.h">
-<area shape="rect" id="Node000001" title="全局状态机声明" alt="" coords="815,5,990,50"/>
+<area shape="rect" id="Node000001" title="全局状态机声明, 以及自定义时间片" alt="" coords="815,5,990,50"/>
 <area shape="rect" id="Node000002" href="$global_8h.html" title="全局变量声明, 头文件打包, 全局通用宏定义" alt="" coords="715,98,890,143"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="869,63,828,99,824,96,865,59"/>
-<area shape="rect" id="Node000012" href="$state_8c.html" title="全局状态机 函数定义" alt="" coords="915,98,1090,143"/>
+<area shape="rect" id="Node000012" href="$state_8c.html" title="全局状态机声明, 以及自定义时间片" alt="" coords="915,98,1090,143"/>
 <area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="939,59,980,96,977,99,936,63"/>
 <area shape="rect" id="Node000003" href="$global_8c.html" title="全局变量定义" alt="" coords="5,191,181,235"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="699,133,467,157,193,193,182,195,181,190,193,188,466,151,699,128"/>

@@ -98,7 +98,7 @@ $(function(){initNavTree('spi_8c_source.html','',''); });
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="global_8h.html">global.h</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="spi_8c.html#a292196e767158c66f03cbcc244fc802b">    9</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="spi_8c.html#a292196e767158c66f03cbcc244fc802b">SPI_Init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="group___d_r_v___f28335___s_p_i.html#ga292196e767158c66f03cbcc244fc802b">    9</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___s_p_i.html#ga292196e767158c66f03cbcc244fc802b">SPI_Init</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    InitSpiaGpio();</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
@@ -128,7 +128,7 @@ $(function(){initNavTree('spi_8c_source.html','',''); });
 </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="spi_8c.html#a84bca183bd23e47e3308faea30031a69">   37</a></span>Uint16 <a class="code hl_function" href="spi_8c.html#a84bca183bd23e47e3308faea30031a69">SPI_SwitchByte</a>(Uint16 <a class="code hl_variable" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a>)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="group___d_r_v___f28335___s_p_i.html#ga84bca183bd23e47e3308faea30031a69">   37</a></span>Uint16 <a class="code hl_function" href="group___d_r_v___f28335___s_p_i.html#ga84bca183bd23e47e3308faea30031a69">SPI_SwitchByte</a>(Uint16 <a class="code hl_variable" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a>)</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    EALLOW;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    SpiaRegs.SPITXBUF = <a class="code hl_variable" href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a>;</div>
@@ -141,7 +141,7 @@ $(function(){initNavTree('spi_8c_source.html','',''); });
 </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="spi_8c.html#ae2772fcf7bc437d833f9784c6d184ab2">   48</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="spi_8c.html#ae2772fcf7bc437d833f9784c6d184ab2">SPI_Reset</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="group___d_r_v___f28335___s_p_i.html#gae2772fcf7bc437d833f9784c6d184ab2">   48</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___s_p_i.html#gae2772fcf7bc437d833f9784c6d184ab2">SPI_Reset</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    EALLOW;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    SpiaRegs.SPICCR.bit.SPISWRESET = 0;</div>
@@ -152,9 +152,9 @@ $(function(){initNavTree('spi_8c_source.html','',''); });
 </div>
 <div class="ttc" id="a_transfer_fun_8asm_html_a1f1c96545c7c8e20ffc09b6051f81f37"><div class="ttname"><a href="_transfer_fun_8asm.html#a1f1c96545c7c8e20ffc09b6051f81f37">data</a></div><div class="ttdeci">&amp; data</div><div class="ttdef"><b>定义</b> <a href="_transfer_fun_8asm_source.html#l00180">TransferFun.asm:180</a></div></div>
 <div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div><div class="ttdoc">全局变量声明, 头文件打包, 全局通用宏定义</div></div>
-<div class="ttc" id="aspi_8c_html_a292196e767158c66f03cbcc244fc802b"><div class="ttname"><a href="spi_8c.html#a292196e767158c66f03cbcc244fc802b">SPI_Init</a></div><div class="ttdeci">void SPI_Init(void)</div><div class="ttdoc">Init SPIa for 28335,enable FIFO,disable interrupt</div><div class="ttdef"><b>定义</b> <a href="#l00009">spi.c:9</a></div></div>
-<div class="ttc" id="aspi_8c_html_a84bca183bd23e47e3308faea30031a69"><div class="ttname"><a href="spi_8c.html#a84bca183bd23e47e3308faea30031a69">SPI_SwitchByte</a></div><div class="ttdeci">Uint16 SPI_SwitchByte(Uint16 data)</div><div class="ttdef"><b>定义</b> <a href="#l00037">spi.c:37</a></div></div>
-<div class="ttc" id="aspi_8c_html_ae2772fcf7bc437d833f9784c6d184ab2"><div class="ttname"><a href="spi_8c.html#ae2772fcf7bc437d833f9784c6d184ab2">SPI_Reset</a></div><div class="ttdeci">void SPI_Reset(void)</div><div class="ttdoc">software reset for SPIa</div><div class="ttdef"><b>定义</b> <a href="#l00048">spi.c:48</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___s_p_i_html_ga292196e767158c66f03cbcc244fc802b"><div class="ttname"><a href="group___d_r_v___f28335___s_p_i.html#ga292196e767158c66f03cbcc244fc802b">SPI_Init</a></div><div class="ttdeci">void SPI_Init(void)</div><div class="ttdoc">Init SPIa for 28335,enable FIFO,disable interrupt</div><div class="ttdef"><b>定义</b> <a href="#l00009">spi.c:9</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___s_p_i_html_ga84bca183bd23e47e3308faea30031a69"><div class="ttname"><a href="group___d_r_v___f28335___s_p_i.html#ga84bca183bd23e47e3308faea30031a69">SPI_SwitchByte</a></div><div class="ttdeci">Uint16 SPI_SwitchByte(Uint16 data)</div><div class="ttdef"><b>定义</b> <a href="#l00037">spi.c:37</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___s_p_i_html_gae2772fcf7bc437d833f9784c6d184ab2"><div class="ttname"><a href="group___d_r_v___f28335___s_p_i.html#gae2772fcf7bc437d833f9784c6d184ab2">SPI_Reset</a></div><div class="ttdeci">void SPI_Reset(void)</div><div class="ttdoc">software reset for SPIa</div><div class="ttdef"><b>定义</b> <a href="#l00048">spi.c:48</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

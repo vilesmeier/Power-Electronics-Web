@@ -94,7 +94,7 @@ $(function(){initNavTree('state_8h.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>全局状态机声明  
+<p>全局状态机声明, 以及自定义时间片  
 <a href="#details">更多...</a></p>
 <div class="textblock"><code>#include &quot;stdint.h&quot;</code><br />
 <code>#include &quot;inc/hw_types.h&quot;</code><br />
@@ -103,7 +103,7 @@ state.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="state_8h__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2state_2state_8h" loading="lazy" alt=""/></div>
 <map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2state_2state_8h" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2state_2state_8h">
-<area shape="rect" title="全局状态机声明" alt="" coords="5,5,181,50"/>
+<area shape="rect" title="全局状态机声明, 以及自定义时间片" alt="" coords="5,5,181,50"/>
 <area shape="rect" title=" " alt="" coords="7,98,70,126"/>
 <area shape="poly" title=" " alt="" coords="81,52,58,86,53,83,76,49"/>
 <area shape="rect" title=" " alt="" coords="94,98,202,126"/>
@@ -115,10 +115,10 @@ state.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="state_8h__dep__incl.png" border="0" usemap="#a_n_u_e_d_c-_core_2_code_2_control___driver_2state_2state_8hdep" loading="lazy" alt=""/></div>
 <map name="a_n_u_e_d_c-_core_2_code_2_control___driver_2state_2state_8hdep" id="a_n_u_e_d_c-_core_2_code_2_control___driver_2state_2state_8hdep">
-<area shape="rect" title="全局状态机声明" alt="" coords="815,5,990,50"/>
+<area shape="rect" title="全局状态机声明, 以及自定义时间片" alt="" coords="815,5,990,50"/>
 <area shape="rect" href="global_8h.html" title="全局变量声明, 头文件打包, 全局通用宏定义" alt="" coords="715,98,890,143"/>
 <area shape="poly" title=" " alt="" coords="869,63,828,99,824,96,865,59"/>
-<area shape="rect" href="state_8c.html" title="全局状态机 函数定义" alt="" coords="915,98,1090,143"/>
+<area shape="rect" href="state_8c.html" title="全局状态机声明, 以及自定义时间片" alt="" coords="915,98,1090,143"/>
 <area shape="poly" title=" " alt="" coords="939,59,980,96,977,99,936,63"/>
 <area shape="rect" href="global_8c.html" title="全局变量定义" alt="" coords="5,191,181,235"/>
 <area shape="poly" title=" " alt="" coords="699,133,467,157,193,193,182,195,181,190,193,188,466,151,699,128"/>
@@ -146,29 +146,48 @@ state.h 的引用(Include)关系图:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 结构体</h2></td></tr>
-<tr class="memitem:FLAG_5FBIT" id="r_FLAG_5FBIT"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_f_l_a_g___b_i_t.html">FLAG_BIT</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">全局标志位, 共计16位  <a href="struct_f_l_a_g___b_i_t.html#details">更多...</a><br /></td></tr>
-<tr class="memitem:FLAG" id="r_FLAG"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_f_l_a_g.html">FLAG</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">标志位打包  <a href="union_f_l_a_g.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:ERR_5FBIT" id="r_ERR_5FBIT"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_e_r_r___b_i_t.html">ERR_BIT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">错误状态位定义  <a href="struct_e_r_r___b_i_t.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:ERR" id="r_ERR"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_e_r_r.html">ERR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">错误状态位定义  <a href="union_e_r_r.html#details">更多...</a><br /></td></tr>
 <tr class="memitem:KEY_5FBIT" id="r_KEY_5FBIT"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_k_e_y___b_i_t.html">KEY_BIT</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">边沿触发型按键驱动  <a href="struct_k_e_y___b_i_t.html#details">更多...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">按键状态位定义  <a href="struct_k_e_y___b_i_t.html#details">更多...</a><br /></td></tr>
 <tr class="memitem:KEY" id="r_KEY"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_k_e_y.html">KEY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">按键驱动打包  <a href="union_k_e_y.html#details">更多...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">按键状态  <a href="union_k_e_y.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:TIME_5FSLICE_5FBIT" id="r_TIME_5FSLICE_5FBIT"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_i_m_e___s_l_i_c_e___b_i_t.html">TIME_SLICE_BIT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">时间片位定义  <a href="struct_t_i_m_e___s_l_i_c_e___b_i_t.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:TIME_5FSLICE" id="r_TIME_5FSLICE"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_t_i_m_e___s_l_i_c_e.html">TIME_SLICE</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">时间片结构体  <a href="union_t_i_m_e___s_l_i_c_e.html#details">更多...</a><br /></td></tr>
 <tr class="memitem:STATE" id="r_STATE"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_t_a_t_e.html">STATE</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">全局状态机  <a href="struct_s_t_a_t_e.html#details">更多...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">全局状态机结构体  <a href="struct_s_t_a_t_e.html#details">更多...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 类型定义</h2></td></tr>
-<tr class="memitem:ga468dfcb02649cd33d1593f7e171a2068" id="r_ga468dfcb02649cd33d1593f7e171a2068"><td class="memItemLeft" align="right" valign="top">typedef struct FLAG_BIT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___s_t_a_t_e.html#ga468dfcb02649cd33d1593f7e171a2068">FLAG_BIT</a></td></tr>
-<tr class="memdesc:ga468dfcb02649cd33d1593f7e171a2068"><td class="mdescLeft">&#160;</td><td class="mdescRight">全局标志位, 共计16位  <br /></td></tr>
-<tr class="memitem:ga6243c1542f073182ce0120c4585055e4" id="r_ga6243c1542f073182ce0120c4585055e4"><td class="memItemLeft" align="right" valign="top">typedef union FLAG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___s_t_a_t_e.html#ga6243c1542f073182ce0120c4585055e4">FLAG</a></td></tr>
-<tr class="memdesc:ga6243c1542f073182ce0120c4585055e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">标志位打包  <br /></td></tr>
+<tr class="memitem:ga1c091be83d7dafa063f5a9f506401b92" id="r_ga1c091be83d7dafa063f5a9f506401b92"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group___s_y_s___s_t_a_t_e.html#ga7eabd788dcab19ca586663bf73deddf5">MODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___s_t_a_t_e.html#ga1c091be83d7dafa063f5a9f506401b92">MODE</a></td></tr>
+<tr class="memdesc:ga1c091be83d7dafa063f5a9f506401b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前环路  <br /></td></tr>
+<tr class="memitem:ga133bc1b8b84a010b13a8d734d878aaaa" id="r_ga133bc1b8b84a010b13a8d734d878aaaa"><td class="memItemLeft" align="right" valign="top">typedef struct ERR_BIT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___s_t_a_t_e.html#ga133bc1b8b84a010b13a8d734d878aaaa">ERR_BIT</a></td></tr>
+<tr class="memdesc:ga133bc1b8b84a010b13a8d734d878aaaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">错误状态位定义  <br /></td></tr>
+<tr class="memitem:ga39b29bec0989b8205acdfe08274af70c" id="r_ga39b29bec0989b8205acdfe08274af70c"><td class="memItemLeft" align="right" valign="top">typedef union ERR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___s_t_a_t_e.html#ga39b29bec0989b8205acdfe08274af70c">ERR</a></td></tr>
+<tr class="memdesc:ga39b29bec0989b8205acdfe08274af70c"><td class="mdescLeft">&#160;</td><td class="mdescRight">错误状态位定义  <br /></td></tr>
 <tr class="memitem:gad3bf94857f7ef38a138783601091f153" id="r_gad3bf94857f7ef38a138783601091f153"><td class="memItemLeft" align="right" valign="top">typedef struct KEY_BIT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___s_t_a_t_e.html#gad3bf94857f7ef38a138783601091f153">KEY_BIT</a></td></tr>
-<tr class="memdesc:gad3bf94857f7ef38a138783601091f153"><td class="mdescLeft">&#160;</td><td class="mdescRight">边沿触发型按键驱动  <br /></td></tr>
+<tr class="memdesc:gad3bf94857f7ef38a138783601091f153"><td class="mdescLeft">&#160;</td><td class="mdescRight">按键状态位定义  <br /></td></tr>
 <tr class="memitem:ga84d37c99488fc36522c8472139b90c58" id="r_ga84d37c99488fc36522c8472139b90c58"><td class="memItemLeft" align="right" valign="top">typedef union KEY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___s_t_a_t_e.html#ga84d37c99488fc36522c8472139b90c58">KEY</a></td></tr>
-<tr class="memdesc:ga84d37c99488fc36522c8472139b90c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">按键驱动打包  <br /></td></tr>
+<tr class="memdesc:ga84d37c99488fc36522c8472139b90c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">按键状态  <br /></td></tr>
+<tr class="memitem:gad2c7b361eefbfef64682483e5fa2dff6" id="r_gad2c7b361eefbfef64682483e5fa2dff6"><td class="memItemLeft" align="right" valign="top">typedef struct TIME_SLICE_BIT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___s_t_a_t_e.html#gad2c7b361eefbfef64682483e5fa2dff6">TIME_SLICE_BIT</a></td></tr>
+<tr class="memdesc:gad2c7b361eefbfef64682483e5fa2dff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">时间片位定义  <br /></td></tr>
+<tr class="memitem:gad1f27eaa70997de6ba86ed2ab66c823c" id="r_gad1f27eaa70997de6ba86ed2ab66c823c"><td class="memItemLeft" align="right" valign="top">typedef union TIME_SLICE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___s_t_a_t_e.html#gad1f27eaa70997de6ba86ed2ab66c823c">TIME_SLICE</a></td></tr>
+<tr class="memdesc:gad1f27eaa70997de6ba86ed2ab66c823c"><td class="mdescLeft">&#160;</td><td class="mdescRight">时间片结构体  <br /></td></tr>
 <tr class="memitem:ga4bcd19c670ba60fad9424ed1a3015c02" id="r_ga4bcd19c670ba60fad9424ed1a3015c02"><td class="memItemLeft" align="right" valign="top">typedef struct STATE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___s_t_a_t_e.html#ga4bcd19c670ba60fad9424ed1a3015c02">STATE</a></td></tr>
-<tr class="memdesc:ga4bcd19c670ba60fad9424ed1a3015c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">全局状态机  <br /></td></tr>
+<tr class="memdesc:ga4bcd19c670ba60fad9424ed1a3015c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">全局状态机结构体  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ga7eabd788dcab19ca586663bf73deddf5" id="r_ga7eabd788dcab19ca586663bf73deddf5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___s_t_a_t_e.html#ga7eabd788dcab19ca586663bf73deddf5">MODE</a> { <a class="el" href="group___s_y_s___s_t_a_t_e.html#gga7eabd788dcab19ca586663bf73deddf5ab41fca44eeeae8547a566bda8786c24e">MODE_INIT</a> = 0U
+, <a class="el" href="group___s_y_s___s_t_a_t_e.html#gga7eabd788dcab19ca586663bf73deddf5a1600621335774387002da31d20b50887">MODE_SOFTSTART</a> = 1U
+, <a class="el" href="group___s_y_s___s_t_a_t_e.html#gga7eabd788dcab19ca586663bf73deddf5a99e3afddafefc9ae9c720a31e98251f4">MODE_ERROR</a> = 2U
+, <a class="el" href="group___s_y_s___s_t_a_t_e.html#gga7eabd788dcab19ca586663bf73deddf5abe1b319e8db292fa6233578693a9c71c">MODE_RUN</a> = 3U
+ }</td></tr>
+<tr class="memdesc:ga7eabd788dcab19ca586663bf73deddf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前环路  <a href="group___s_y_s___s_t_a_t_e.html#ga7eabd788dcab19ca586663bf73deddf5">更多...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
@@ -176,7 +195,7 @@ state.h 的引用(Include)关系图:</div>
 <tr class="memdesc:ga4448d628c7c103a33e51e52f2e111de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">全局状态机初始化  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
-<div class="textblock"><p>全局状态机声明 </p>
+<div class="textblock"><p>全局状态机声明, 以及自定义时间片 </p>
 <dl class="section author"><dt>作者</dt><dd>Mao Chenbin (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="state_8h_source.html">state.h</a> 中定义.</p>

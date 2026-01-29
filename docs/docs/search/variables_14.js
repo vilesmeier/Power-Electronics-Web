@@ -17,11 +17,10 @@ var searchData=
   ['sqrt_5finverse_5fnsamples_14',['sqrt_inverse_nSamples',['../struct_p_o_w_e_r__1_p_h.html#a7431c5ab045079613f280b19009565da',1,'POWER_1PH']]],
   ['stages_15',['Stages',['../_r_f_f_t__f32__twiddle_factors_8asm.html#a0ec431ee22c60065ff8087dff9dae7ae',1,'RFFT_f32_twiddleFactors.asm']]],
   ['stages_16',['stages',['../_r_f_f_t__f32_8asm.html#adcbc27d8418504081cf0b718cb873633',1,'stages:&#160;RFFT_f32.asm'],['../_r_f_f_t__f32__twiddle_factors_8asm.html#ac848efe9ce916798d82b376907e27b01',1,'stages:&#160;RFFT_f32_twiddleFactors.asm']]],
-  ['state_17',['state',['../struct_v_o_f_a___d_a_t_a.html#a35bd8e70baf22c6c1afaed0037cb1c57',1,'VOFA_DATA']]],
-  ['state_5fflag_18',['state_Flag',['../struct_s_t_a_t_e.html#a69bb683d675df87f1af5f2dbe5669831',1,'STATE']]],
-  ['step_5flength_19',['step_length',['../struct_r_a_m_p.html#a75f2ac00b90671292394edc670f821a1',1,'RAMP']]],
-  ['stepfirst_20',['StepFirst',['../struct_m_p_p_t___i_n_c_c.html#a0941380d1d97d38c6fd220c74701adea',1,'MPPT_INCC::StepFirst'],['../struct_m_p_p_t___i_n_c_c___i.html#a4da60efd34b28084bb9e9616cf1bb9cc',1,'MPPT_INCC_I::StepFirst']]],
-  ['steps_21',['steps',['../_r_f_f_t__f32__win_8asm.html#a0e5deab30f4ff2f45a43f9c4e8905369',1,'RFFT_f32_win.asm']]],
-  ['stepsize_22',['Stepsize',['../struct_m_p_p_t___i_n_c_c.html#a4a52ddcb71a2885c655d8325eb8f0cca',1,'MPPT_INCC::Stepsize'],['../struct_m_p_p_t___i_n_c_c___i.html#affbc18d5a6a3f3f4328dab562b7031ab',1,'MPPT_INCC_I::Stepsize'],['../struct_m_p_p_t___p_n_o.html#adf5c3f50a431a9384fd1979c96cb6014',1,'MPPT_PNO::Stepsize']]],
-  ['symbols_23',['symbols',['../_r_f_f_t__f32__twiddle_factors_8asm.html#a10db9cac3aac3ecea38aa7d37e01b490',1,'RFFT_f32_twiddleFactors.asm']]]
+  ['state_17',['state',['../struct_v_o_f_a___d_a_t_a.html#a35bd8e70baf22c6c1afaed0037cb1c57',1,'VOFA_DATA::state'],['../state_8c.html#a390ef51e2cfd455504254347218a71ca',1,'state:&#160;state.c']]],
+  ['step_5flength_18',['step_length',['../struct_r_a_m_p.html#a75f2ac00b90671292394edc670f821a1',1,'RAMP']]],
+  ['stepfirst_19',['StepFirst',['../struct_m_p_p_t___i_n_c_c.html#a0941380d1d97d38c6fd220c74701adea',1,'MPPT_INCC::StepFirst'],['../struct_m_p_p_t___i_n_c_c___i.html#a4da60efd34b28084bb9e9616cf1bb9cc',1,'MPPT_INCC_I::StepFirst']]],
+  ['steps_20',['steps',['../_r_f_f_t__f32__win_8asm.html#a0e5deab30f4ff2f45a43f9c4e8905369',1,'RFFT_f32_win.asm']]],
+  ['stepsize_21',['Stepsize',['../struct_m_p_p_t___i_n_c_c.html#a4a52ddcb71a2885c655d8325eb8f0cca',1,'MPPT_INCC::Stepsize'],['../struct_m_p_p_t___i_n_c_c___i.html#affbc18d5a6a3f3f4328dab562b7031ab',1,'MPPT_INCC_I::Stepsize'],['../struct_m_p_p_t___p_n_o.html#adf5c3f50a431a9384fd1979c96cb6014',1,'MPPT_PNO::Stepsize']]],
+  ['symbols_22',['symbols',['../_r_f_f_t__f32__twiddle_factors_8asm.html#a10db9cac3aac3ecea38aa7d37e01b490',1,'RFFT_f32_twiddleFactors.asm']]]
 ];

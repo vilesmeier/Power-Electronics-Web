@@ -1,5 +1,5 @@
 <map id="模块Wrapper" name="模块Wrapper">
-<area shape="rect" id="Node000001" title=" " alt="" coords="140,5,237,33"/>
-<area shape="rect" id="Node000003" href="$group___c_o_r_e___g_l_o_b_a_l.html" title=" " alt="" coords="285,7,358,32"/>
-<area shape="rect" id="Node000002" href="$group___l_i_b.html" title=" " alt="" coords="5,7,92,32"/>
+<area shape="rect" id="Node000001" title="头文件包含, 全局变量定义与声明" alt="" coords="140,5,237,33"/>
+<area shape="rect" id="Node000003" href="$group___c_o_r_e___g_l_o_b_a_l.html" title="打包全局变量与头文件" alt="" coords="285,7,358,32"/>
+<area shape="rect" id="Node000002" href="$group___l_i_b.html" title="模块化功能代码库" alt="" coords="5,7,92,32"/>
 </map>

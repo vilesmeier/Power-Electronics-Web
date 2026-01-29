@@ -1,0 +1,5 @@
+<map id="lcdWriteDataU16" name="lcdWriteDataU16">
+<area shape="rect" id="Node000001" title="write 16&#45;bit data" alt="" coords="5,5,124,33"/>
+<area shape="rect" id="Node000002" href="$group___d_r_v___f28335___l_c_d.html#ga4c41fe8c154e5beccd73c8b5042f497f" title="write 8&#45;bit data" alt="" coords="172,5,283,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,16,156,16,156,22,124,22"/>
+</map>

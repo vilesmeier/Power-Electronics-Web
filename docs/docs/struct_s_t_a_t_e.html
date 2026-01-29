@@ -94,7 +94,7 @@ $(function(){initNavTree('struct_s_t_a_t_e.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>全局状态机  
+<p>全局状态机结构体  
  <a href="#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="state_8h_source.html">state.h</a>&gt;</code></p>
@@ -103,63 +103,127 @@ STATE 的协作图:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_s_t_a_t_e__coll__graph.png" border="0" usemap="#a_s_t_a_t_e_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_s_t_a_t_e_coll__map" id="a_s_t_a_t_e_coll__map">
-<area shape="rect" title="全局状态机" alt="" coords="68,207,124,234"/>
-<area shape="rect" href="union_f_l_a_g.html" title="标志位打包" alt="" coords="21,106,73,134"/>
-<area shape="poly" title=" " alt="" coords="46,149,47,166,52,181,61,194,74,204,70,208,57,198,47,184,41,167,40,149"/>
-<area shape="rect" href="struct_f_l_a_g___b_i_t.html" title="全局标志位, 共计16位" alt="" coords="5,5,86,33"/>
-<area shape="poly" title=" " alt="" coords="49,49,49,105,44,105,43,49"/>
-<area shape="rect" href="union_k_e_y.html" title="按键驱动打包" alt="" coords="123,106,168,134"/>
-<area shape="poly" title=" " alt="" coords="136,149,119,184,106,207,101,205,114,181,131,147"/>
-<area shape="rect" href="struct_k_e_y___b_i_t.html" title="边沿触发型按键驱动" alt="" coords="109,5,182,33"/>
-<area shape="poly" title=" " alt="" coords="148,49,148,105,143,105,143,49"/>
+<area shape="rect" title="全局状态机结构体" alt="" coords="109,229,166,257"/>
+<area shape="rect" href="union_e_r_r.html" title="错误状态位定义" alt="" coords="34,106,78,134"/>
+<area shape="poly" title=" " alt="" coords="73,146,109,203,128,227,124,230,105,207,68,149"/>
+<area shape="rect" href="struct_e_r_r___b_i_t.html" title="错误状态位定义" alt="" coords="5,5,78,33"/>
+<area shape="poly" title=" " alt="" coords="48,48,57,105,52,106,43,48"/>
+<area shape="rect" href="union_k_e_y.html" title="按键状态" alt="" coords="115,106,160,134"/>
+<area shape="poly" title=" " alt="" coords="140,149,140,228,135,228,135,149"/>
+<area shape="rect" href="struct_k_e_y___b_i_t.html" title="按键状态位定义" alt="" coords="101,5,174,33"/>
+<area shape="poly" title=" " alt="" coords="140,49,140,105,135,105,135,49"/>
+<area shape="rect" href="union_t_i_m_e___s_l_i_c_e.html" title="时间片结构体" alt="" coords="205,106,297,134"/>
+<area shape="poly" title=" " alt="" coords="242,149,227,179,205,207,187,221,167,232,164,228,184,217,201,203,222,176,238,147"/>
+<area shape="rect" href="struct_t_i_m_e___s_l_i_c_e___b_i_t.html" title="时间片位定义" alt="" coords="197,5,318,33"/>
+<area shape="poly" title=" " alt="" coords="258,48,254,106,249,105,253,48"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 成员变量</h2></td></tr>
-<tr class="memitem:a69bb683d675df87f1af5f2dbe5669831" id="r_a69bb683d675df87f1af5f2dbe5669831"><td class="memItemLeft" align="right" valign="top"><a class="el" href="union_f_l_a_g.html">FLAG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69bb683d675df87f1af5f2dbe5669831">state_Flag</a></td></tr>
-<tr class="memdesc:a69bb683d675df87f1af5f2dbe5669831"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前状态标志位  <br /></td></tr>
-<tr class="memitem:a8bde5943214f81fb57e8530ab401750a" id="r_a8bde5943214f81fb57e8530ab401750a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="union_k_e_y.html">KEY</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bde5943214f81fb57e8530ab401750a">key</a></td></tr>
-<tr class="memdesc:a8bde5943214f81fb57e8530ab401750a"><td class="mdescLeft">&#160;</td><td class="mdescRight">边沿触发型按键驱动  <br /></td></tr>
+<tr class="memitem:ac184da0633659bb62bf794119ecde656" id="r_ac184da0633659bb62bf794119ecde656"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___s_y_s___s_t_a_t_e.html#ga7eabd788dcab19ca586663bf73deddf5">MODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac184da0633659bb62bf794119ecde656">current_mode</a></td></tr>
+<tr class="memdesc:ac184da0633659bb62bf794119ecde656"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前模式, 全局状态机  <br /></td></tr>
+<tr class="memitem:adf95e6ebeba1d8d2d84d7b5d597f3571" id="r_adf95e6ebeba1d8d2d84d7b5d597f3571"><td class="memItemLeft" align="right" valign="top"><a class="el" href="union_e_r_r.html">ERR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf95e6ebeba1d8d2d84d7b5d597f3571">err</a></td></tr>
+<tr class="memdesc:adf95e6ebeba1d8d2d84d7b5d597f3571"><td class="mdescLeft">&#160;</td><td class="mdescRight">错误代码  <br /></td></tr>
+<tr class="memitem:a74fedb577ff572960e2f08e9b0e7c6fe" id="r_a74fedb577ff572960e2f08e9b0e7c6fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="union_k_e_y.html">KEY</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74fedb577ff572960e2f08e9b0e7c6fe">key_now</a></td></tr>
+<tr class="memdesc:a74fedb577ff572960e2f08e9b0e7c6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前按键状态  <br /></td></tr>
+<tr class="memitem:a9da652771d823974f628f02a18d39fa4" id="r_a9da652771d823974f628f02a18d39fa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="union_k_e_y.html">KEY</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9da652771d823974f628f02a18d39fa4">key_pre</a></td></tr>
+<tr class="memdesc:a9da652771d823974f628f02a18d39fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">上一按键状态  <br /></td></tr>
+<tr class="memitem:ad2382f0a161c245f9a136eea3b984e41" id="r_ad2382f0a161c245f9a136eea3b984e41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="union_t_i_m_e___s_l_i_c_e.html">TIME_SLICE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2382f0a161c245f9a136eea3b984e41">time_base</a></td></tr>
+<tr class="memdesc:ad2382f0a161c245f9a136eea3b984e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">主时间片  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
-<div class="textblock"><p>全局状态机 </p>
+<div class="textblock"><p>全局状态机结构体 </p>
 
-<p class="definition">在文件 <a class="el" href="state_8h_source.html">state.h</a> 第 <a class="el" href="state_8h_source.html#l00059">59</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="state_8h_source.html">state.h</a> 第 <a class="el" href="state_8h_source.html#l00113">113</a> 行定义.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">结构体成员变量说明</h2>
-<a id="a8bde5943214f81fb57e8530ab401750a" name="a8bde5943214f81fb57e8530ab401750a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bde5943214f81fb57e8530ab401750a">&#9670;&#160;</a></span>key</h2>
+<a id="ac184da0633659bb62bf794119ecde656" name="ac184da0633659bb62bf794119ecde656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac184da0633659bb62bf794119ecde656">&#9670;&#160;</a></span>current_mode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="union_k_e_y.html">KEY</a> STATE::key</td>
+          <td class="memname"><a class="el" href="group___s_y_s___s_t_a_t_e.html#ga7eabd788dcab19ca586663bf73deddf5">MODE</a> STATE::current_mode</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>边沿触发型按键驱动 </p>
+<p>当前模式, 全局状态机 </p>
 
-<p class="definition">在文件 <a class="el" href="state_8h_source.html">state.h</a> 第 <a class="el" href="state_8h_source.html#l00063">63</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="state_8h_source.html">state.h</a> 第 <a class="el" href="state_8h_source.html#l00115">115</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a69bb683d675df87f1af5f2dbe5669831" name="a69bb683d675df87f1af5f2dbe5669831"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69bb683d675df87f1af5f2dbe5669831">&#9670;&#160;</a></span>state_Flag</h2>
+<a id="adf95e6ebeba1d8d2d84d7b5d597f3571" name="adf95e6ebeba1d8d2d84d7b5d597f3571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf95e6ebeba1d8d2d84d7b5d597f3571">&#9670;&#160;</a></span>err</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="union_f_l_a_g.html">FLAG</a> STATE::state_Flag</td>
+          <td class="memname"><a class="el" href="union_e_r_r.html">ERR</a> STATE::err</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>当前状态标志位 </p>
+<p>错误代码 </p>
 
-<p class="definition">在文件 <a class="el" href="state_8h_source.html">state.h</a> 第 <a class="el" href="state_8h_source.html#l00061">61</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="state_8h_source.html">state.h</a> 第 <a class="el" href="state_8h_source.html#l00116">116</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a74fedb577ff572960e2f08e9b0e7c6fe" name="a74fedb577ff572960e2f08e9b0e7c6fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74fedb577ff572960e2f08e9b0e7c6fe">&#9670;&#160;</a></span>key_now</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="union_k_e_y.html">KEY</a> STATE::key_now</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当前按键状态 </p>
+
+<p class="definition">在文件 <a class="el" href="state_8h_source.html">state.h</a> 第 <a class="el" href="state_8h_source.html#l00117">117</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9da652771d823974f628f02a18d39fa4" name="a9da652771d823974f628f02a18d39fa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9da652771d823974f628f02a18d39fa4">&#9670;&#160;</a></span>key_pre</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="union_k_e_y.html">KEY</a> STATE::key_pre</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>上一按键状态 </p>
+
+<p class="definition">在文件 <a class="el" href="state_8h_source.html">state.h</a> 第 <a class="el" href="state_8h_source.html#l00118">118</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad2382f0a161c245f9a136eea3b984e41" name="ad2382f0a161c245f9a136eea3b984e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2382f0a161c245f9a136eea3b984e41">&#9670;&#160;</a></span>time_base</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="union_t_i_m_e___s_l_i_c_e.html">TIME_SLICE</a> STATE::time_base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>主时间片 </p>
+
+<p class="definition">在文件 <a class="el" href="state_8h_source.html">state.h</a> 第 <a class="el" href="state_8h_source.html#l00119">119</a> 行定义.</p>
 
 </div>
 </div>

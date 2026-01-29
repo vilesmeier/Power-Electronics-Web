@@ -1,4 +1,4 @@
 <map id="锁相环" name="锁相环">
-<area shape="rect" id="Node000002" href="$group___c_t_r_l.html" title=" " alt="" coords="5,5,92,30"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="140,5,200,30"/>
+<area shape="rect" id="Node000002" href="$group___c_t_r_l.html" title="常用控制算法的模块化代码, 使用时直接将文件夹复制到 hardware 文件夹内即可" alt="" coords="5,5,92,30"/>
+<area shape="rect" id="Node000001" title="提供单相与三相锁相环的实现, SOGI/SRF/DDSRF方法" alt="" coords="140,5,200,30"/>
 </map>

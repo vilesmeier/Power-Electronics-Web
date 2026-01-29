@@ -37,7 +37,7 @@
 <area shape="poly" id="edge37_Node000003_Node000021" title=" " alt="" coords="1000,189,1240,209,1584,246,1583,252,1239,215,1000,194"/>
 <area shape="rect" id="Node000022" href="$ramp_8h.html" title="参考相位生成 函数声明" alt="" coords="1277,325,1375,353"/>
 <area shape="poly" id="edge38_Node000003_Node000022" title=" " alt="" coords="986,200,1046,241,1101,275,1171,297,1263,320,1262,325,1170,302,1098,279,1043,246,983,204"/>
-<area shape="rect" id="Node000023" href="$state_8h.html" title="全局状态机声明" alt="" coords="25,325,118,353"/>
+<area shape="rect" id="Node000023" href="$state_8h.html" title="全局状态机声明, 以及自定义时间片" alt="" coords="25,325,118,353"/>
 <area shape="poly" id="edge42_Node000003_Node000023" title=" " alt="" coords="932,192,783,195,570,204,355,222,267,235,202,252,172,265,144,281,98,316,95,312,141,277,170,260,200,247,266,230,355,217,570,199,783,190,932,187"/>
 <area shape="rect" id="Node000024" href="$transform_8h.html" title="常用坐标变换" alt="" coords="1103,325,1253,353"/>
 <area shape="poly" id="edge46_Node000003_Node000024" title=" " alt="" coords="978,200,1008,236,1050,275,1089,298,1128,316,1126,321,1086,303,1047,279,1004,240,974,203"/>
