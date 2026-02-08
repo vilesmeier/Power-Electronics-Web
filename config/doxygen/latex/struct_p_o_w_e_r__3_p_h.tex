@@ -1,0 +1,427 @@
+\doxysection{POWER\+\_\+3\+PH结构体 参考}
+\hypertarget{struct_p_o_w_e_r__3_p_h}{}\label{struct_p_o_w_e_r__3_p_h}\index{POWER\_3PH@{POWER\_3PH}}
+
+
+三相功率分析结构体定义  
+
+
+
+
+{\ttfamily \#include $<$power\+\_\+int.\+h$>$}
+
+\doxysubsubsection*{成员变量}
+\begin{DoxyCompactItemize}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a936553e9f7063ee7d2ce26be9d03aec0}{Va}}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_ab94aa715a95faa5d2e5dab3e9ab81f63}{Vb}}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a1d36589d7160b3d05ef157726f6220f8}{Vc}}
+\begin{DoxyCompactList}\small\item\em 输入变量\+: 三相电压瞬时值 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a764852164f006a68ee8291f266c18298}{Ia}}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_aaabe756f63988208e91877e112aaa2fa}{Ib}}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_adde6ffa242d4ddacd775e8f4a127ff72}{Ic}}
+\begin{DoxyCompactList}\small\item\em 输入变量\+: 三相电流瞬时值 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_aa6e5bdf203239b5ac174c4581589a566}{Varms}}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a81d61fd65ce0e10b6e0e23050ae854da}{Vbrms}}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a4e707463c70dc88e5d4927502f75eed7}{Vcrms}}
+\begin{DoxyCompactList}\small\item\em 输出变量\+: 三相电压\+RMS \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a2d1f329d535f3073613dcd83c0ecb928}{Iarms}}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_ad6e84bc7046dec3b61c7ef8f8c085104}{Ibrms}}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_aaae2401141e5b744689c3cfc2973dc06}{Icrms}}
+\begin{DoxyCompactList}\small\item\em 输出变量\+: 三相电流\+RMS \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a49dbe1f4e2b7e178634834f4f1a293ae}{P}}
+\begin{DoxyCompactList}\small\item\em 输出变量\+: 三相总有功功率 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a57a6fadaccf788e17708f490b56ac617}{Q}}
+\begin{DoxyCompactList}\small\item\em 输出变量\+: 三相总无功功率 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a000eccc97a80cf21ae0b3593c25accc0}{S}}
+\begin{DoxyCompactList}\small\item\em 输出变量\+: 三相总视在功率 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a300b761243592a23d541ac395dd78495}{PF}}
+\begin{DoxyCompactList}\small\item\em 输出变量\+: 三相总功率因数 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_ad0047a77d96e1611ccd3c7751d3db9a0}{isr\+\_\+freq}}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a4650684ea0ef84858c3dc4acc4e8277e}{grid\+\_\+freq}}
+\begin{DoxyCompactList}\small\item\em 输入变量\+: 电网频率与采样频率 \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_aaa770e26f785bb47a5aa885a398820b1}{nsample}}
+\begin{DoxyCompactList}\small\item\em 内部变量\+: 单电网周期内采样点数 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_afd12161063c2f67da0381e2f4e21b5eb}{nsample\+\_\+inv}}
+\begin{DoxyCompactList}\small\item\em 内部变量\+: 1/采样点数, 用于计算平均值 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a4f0ed7935152bffeae34d41fa40b017e}{va\+\_\+sum}}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a11fe48ee32088fc44d9adcc32ca8c6c8}{vb\+\_\+sum}}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a1a34236e1d70d547fd2100cad84c4a46}{vc\+\_\+sum}}
+\begin{DoxyCompactList}\small\item\em 内部变量\+: 电压瞬时值平方求和 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a2f4ad54b70130f0524213ba5dd1492be}{ia\+\_\+sum}}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a8fda6d9744882f06b7ed6dd7e602476f}{ib\+\_\+sum}}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a2ab44a4d79ee437573a9a87d09f55abd}{ic\+\_\+sum}}
+\begin{DoxyCompactList}\small\item\em 内部变量\+: 电流瞬时值平方求和 \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a785361f788d4e99cef9972be83afdddd}{sample\+\_\+num}}
+\begin{DoxyCompactList}\small\item\em 内部变量\+: 当前采样点数 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_p_o_w_e_r__3_p_h_a04a921301d0405500110a83c3fd7697c}{p\+\_\+sum}}
+\begin{DoxyCompactList}\small\item\em 内部变量\+: 当前功率积分值 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+三相功率分析结构体定义 
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00060}{60}} 行定义.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{struct_p_o_w_e_r__3_p_h_doc-variable-members}
+\doxysubsection{结构体成员变量说明}
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a4650684ea0ef84858c3dc4acc4e8277e}\index{POWER\_3PH@{POWER\_3PH}!grid\_freq@{grid\_freq}}
+\index{grid\_freq@{grid\_freq}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{grid\_freq}{grid\_freq}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a4650684ea0ef84858c3dc4acc4e8277e} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::grid\+\_\+freq}
+
+
+
+输入变量\+: 电网频率与采样频率 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00075}{75}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a764852164f006a68ee8291f266c18298}\index{POWER\_3PH@{POWER\_3PH}!Ia@{Ia}}
+\index{Ia@{Ia}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{Ia}{Ia}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a764852164f006a68ee8291f266c18298} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::\+Ia}
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00064}{64}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a2f4ad54b70130f0524213ba5dd1492be}\index{POWER\_3PH@{POWER\_3PH}!ia\_sum@{ia\_sum}}
+\index{ia\_sum@{ia\_sum}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{ia\_sum}{ia\_sum}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a2f4ad54b70130f0524213ba5dd1492be} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::ia\+\_\+sum}
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00081}{81}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a2d1f329d535f3073613dcd83c0ecb928}\index{POWER\_3PH@{POWER\_3PH}!Iarms@{Iarms}}
+\index{Iarms@{Iarms}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{Iarms}{Iarms}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a2d1f329d535f3073613dcd83c0ecb928} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::\+Iarms}
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00068}{68}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_aaabe756f63988208e91877e112aaa2fa}\index{POWER\_3PH@{POWER\_3PH}!Ib@{Ib}}
+\index{Ib@{Ib}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{Ib}{Ib}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_aaabe756f63988208e91877e112aaa2fa} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::\+Ib}
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00064}{64}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a8fda6d9744882f06b7ed6dd7e602476f}\index{POWER\_3PH@{POWER\_3PH}!ib\_sum@{ib\_sum}}
+\index{ib\_sum@{ib\_sum}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{ib\_sum}{ib\_sum}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a8fda6d9744882f06b7ed6dd7e602476f} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::ib\+\_\+sum}
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00081}{81}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_ad6e84bc7046dec3b61c7ef8f8c085104}\index{POWER\_3PH@{POWER\_3PH}!Ibrms@{Ibrms}}
+\index{Ibrms@{Ibrms}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{Ibrms}{Ibrms}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_ad6e84bc7046dec3b61c7ef8f8c085104} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::\+Ibrms}
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00068}{68}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_adde6ffa242d4ddacd775e8f4a127ff72}\index{POWER\_3PH@{POWER\_3PH}!Ic@{Ic}}
+\index{Ic@{Ic}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{Ic}{Ic}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_adde6ffa242d4ddacd775e8f4a127ff72} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::\+Ic}
+
+
+
+输入变量\+: 三相电流瞬时值 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00064}{64}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a2ab44a4d79ee437573a9a87d09f55abd}\index{POWER\_3PH@{POWER\_3PH}!ic\_sum@{ic\_sum}}
+\index{ic\_sum@{ic\_sum}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{ic\_sum}{ic\_sum}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a2ab44a4d79ee437573a9a87d09f55abd} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::ic\+\_\+sum}
+
+
+
+内部变量\+: 电流瞬时值平方求和 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00081}{81}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_aaae2401141e5b744689c3cfc2973dc06}\index{POWER\_3PH@{POWER\_3PH}!Icrms@{Icrms}}
+\index{Icrms@{Icrms}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{Icrms}{Icrms}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_aaae2401141e5b744689c3cfc2973dc06} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::\+Icrms}
+
+
+
+输出变量\+: 三相电流\+RMS 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00068}{68}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_ad0047a77d96e1611ccd3c7751d3db9a0}\index{POWER\_3PH@{POWER\_3PH}!isr\_freq@{isr\_freq}}
+\index{isr\_freq@{isr\_freq}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{isr\_freq}{isr\_freq}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_ad0047a77d96e1611ccd3c7751d3db9a0} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::isr\+\_\+freq}
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00075}{75}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_aaa770e26f785bb47a5aa885a398820b1}\index{POWER\_3PH@{POWER\_3PH}!nsample@{nsample}}
+\index{nsample@{nsample}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{nsample}{nsample}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_aaa770e26f785bb47a5aa885a398820b1} 
+uint16\+\_\+t POWER\+\_\+3\+PH\+::nsample}
+
+
+
+内部变量\+: 单电网周期内采样点数 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00076}{76}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_afd12161063c2f67da0381e2f4e21b5eb}\index{POWER\_3PH@{POWER\_3PH}!nsample\_inv@{nsample\_inv}}
+\index{nsample\_inv@{nsample\_inv}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{nsample\_inv}{nsample\_inv}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_afd12161063c2f67da0381e2f4e21b5eb} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::nsample\+\_\+inv}
+
+
+
+内部变量\+: 1/采样点数, 用于计算平均值 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00077}{77}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a49dbe1f4e2b7e178634834f4f1a293ae}\index{POWER\_3PH@{POWER\_3PH}!P@{P}}
+\index{P@{P}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{P}{P}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a49dbe1f4e2b7e178634834f4f1a293ae} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::P}
+
+
+
+输出变量\+: 三相总有功功率 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00069}{69}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a04a921301d0405500110a83c3fd7697c}\index{POWER\_3PH@{POWER\_3PH}!p\_sum@{p\_sum}}
+\index{p\_sum@{p\_sum}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{p\_sum}{p\_sum}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a04a921301d0405500110a83c3fd7697c} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::p\+\_\+sum}
+
+
+
+内部变量\+: 当前功率积分值 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00083}{83}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a300b761243592a23d541ac395dd78495}\index{POWER\_3PH@{POWER\_3PH}!PF@{PF}}
+\index{PF@{PF}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{PF}{PF}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a300b761243592a23d541ac395dd78495} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::\+PF}
+
+
+
+输出变量\+: 三相总功率因数 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00072}{72}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a57a6fadaccf788e17708f490b56ac617}\index{POWER\_3PH@{POWER\_3PH}!Q@{Q}}
+\index{Q@{Q}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{Q}{Q}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a57a6fadaccf788e17708f490b56ac617} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::Q}
+
+
+
+输出变量\+: 三相总无功功率 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00070}{70}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a000eccc97a80cf21ae0b3593c25accc0}\index{POWER\_3PH@{POWER\_3PH}!S@{S}}
+\index{S@{S}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{S}{S}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a000eccc97a80cf21ae0b3593c25accc0} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::S}
+
+
+
+输出变量\+: 三相总视在功率 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00071}{71}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a785361f788d4e99cef9972be83afdddd}\index{POWER\_3PH@{POWER\_3PH}!sample\_num@{sample\_num}}
+\index{sample\_num@{sample\_num}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{sample\_num}{sample\_num}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a785361f788d4e99cef9972be83afdddd} 
+uint16\+\_\+t POWER\+\_\+3\+PH\+::sample\+\_\+num}
+
+
+
+内部变量\+: 当前采样点数 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00082}{82}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a936553e9f7063ee7d2ce26be9d03aec0}\index{POWER\_3PH@{POWER\_3PH}!Va@{Va}}
+\index{Va@{Va}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{Va}{Va}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a936553e9f7063ee7d2ce26be9d03aec0} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::\+Va}
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00063}{63}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a4f0ed7935152bffeae34d41fa40b017e}\index{POWER\_3PH@{POWER\_3PH}!va\_sum@{va\_sum}}
+\index{va\_sum@{va\_sum}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{va\_sum}{va\_sum}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a4f0ed7935152bffeae34d41fa40b017e} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::va\+\_\+sum}
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00080}{80}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_aa6e5bdf203239b5ac174c4581589a566}\index{POWER\_3PH@{POWER\_3PH}!Varms@{Varms}}
+\index{Varms@{Varms}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{Varms}{Varms}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_aa6e5bdf203239b5ac174c4581589a566} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::\+Varms}
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00067}{67}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_ab94aa715a95faa5d2e5dab3e9ab81f63}\index{POWER\_3PH@{POWER\_3PH}!Vb@{Vb}}
+\index{Vb@{Vb}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{Vb}{Vb}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_ab94aa715a95faa5d2e5dab3e9ab81f63} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::\+Vb}
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00063}{63}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a11fe48ee32088fc44d9adcc32ca8c6c8}\index{POWER\_3PH@{POWER\_3PH}!vb\_sum@{vb\_sum}}
+\index{vb\_sum@{vb\_sum}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{vb\_sum}{vb\_sum}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a11fe48ee32088fc44d9adcc32ca8c6c8} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::vb\+\_\+sum}
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00080}{80}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a81d61fd65ce0e10b6e0e23050ae854da}\index{POWER\_3PH@{POWER\_3PH}!Vbrms@{Vbrms}}
+\index{Vbrms@{Vbrms}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{Vbrms}{Vbrms}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a81d61fd65ce0e10b6e0e23050ae854da} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::\+Vbrms}
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00067}{67}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a1d36589d7160b3d05ef157726f6220f8}\index{POWER\_3PH@{POWER\_3PH}!Vc@{Vc}}
+\index{Vc@{Vc}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{Vc}{Vc}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a1d36589d7160b3d05ef157726f6220f8} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::\+Vc}
+
+
+
+输入变量\+: 三相电压瞬时值 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00063}{63}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a1a34236e1d70d547fd2100cad84c4a46}\index{POWER\_3PH@{POWER\_3PH}!vc\_sum@{vc\_sum}}
+\index{vc\_sum@{vc\_sum}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{vc\_sum}{vc\_sum}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a1a34236e1d70d547fd2100cad84c4a46} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::vc\+\_\+sum}
+
+
+
+内部变量\+: 电压瞬时值平方求和 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00080}{80}} 行定义.
+
+\Hypertarget{struct_p_o_w_e_r__3_p_h_a4e707463c70dc88e5d4927502f75eed7}\index{POWER\_3PH@{POWER\_3PH}!Vcrms@{Vcrms}}
+\index{Vcrms@{Vcrms}!POWER\_3PH@{POWER\_3PH}}
+\doxysubsubsection{\texorpdfstring{Vcrms}{Vcrms}}
+{\footnotesize\ttfamily \label{struct_p_o_w_e_r__3_p_h_a4e707463c70dc88e5d4927502f75eed7} 
+float32\+\_\+t POWER\+\_\+3\+PH\+::\+Vcrms}
+
+
+
+输出变量\+: 三相电压\+RMS 
+
+
+
+在文件 \mbox{\hyperlink{power__int_8h_source}{power\+\_\+int.\+h}} 第 \mbox{\hyperlink{power__int_8h_source_l00067}{67}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Control\+\_\+\+Driver/power\+\_\+int/\mbox{\hyperlink{power__int_8h}{power\+\_\+int.\+h}}\end{DoxyCompactItemize}

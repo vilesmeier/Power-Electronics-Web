@@ -1,0 +1,297 @@
+\doxysubsubsubsection{锁相环 }
+\hypertarget{group___c_t_r_l___p_l_l}{}\label{group___c_t_r_l___p_l_l}\index{锁相环@{锁相环}}
+
+
+提供单相与三相锁相环的实现, SOGI/\+SRF/\+DDSRF方法  
+
+
+锁相环 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{group___c_t_r_l___p_l_l}
+\end{center}
+\end{figure}
+\doxysubsubsubsubsubsection*{结构体}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f}{SOGI\+\_\+1\+PH\+\_\+\+OSG\+\_\+\+COEFF}}
+\begin{DoxyCompactList}\small\item\em SOGI 单相 正交信号发生器 参数 \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_o_g_i__1_p_h___l_p_f___c_o_e_f_f}{SOGI\+\_\+1\+PH\+\_\+\+LPF\+\_\+\+COEFF}}
+\begin{DoxyCompactList}\small\item\em 定义\+SOGI内置一阶低通滤波器参数 \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_o_g_i__1_p_h}{SOGI\+\_\+1\+PH}}
+\begin{DoxyCompactList}\small\item\em 定义\+SOGI-\/单相锁相环结构体 \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_r_f__3_p_h___l_p_f___c_o_e_f_f}{SRF\+\_\+3\+PH\+\_\+\+LPF\+\_\+\+COEFF}}
+\begin{DoxyCompactList}\small\item\em Defines the coefficients for a loop filter in \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH}}
+\begin{DoxyCompactList}\small\item\em Defines the \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} structure \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f}{DDSRF\+\_\+3\+PH\+\_\+\+LPF\+\_\+\+COEFF}}
+\begin{DoxyCompactList}\small\item\em Defines the coefficients for a loop filter \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH}}
+\begin{DoxyCompactList}\small\item\em Defines the \doxylink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH} structure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_ga6af2cb6d025984e7461176621118d8da}{SOGI\+\_\+1\+PH\+\_\+\+Init}} (\mbox{\hyperlink{struct_s_o_g_i__1_p_h}{SOGI\+\_\+1\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em 结构体初始化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gaf15b995d2b03597fb9b39932285bdf85}{SOGI\+\_\+1\+PH\+\_\+coeff\+\_\+calc}} (\mbox{\hyperlink{struct_s_o_g_i__1_p_h}{SOGI\+\_\+1\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em 计算\+SOGI结构体参数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gaac5dc41f65a9efa844ad311c51cf3c7f}{SOGI\+\_\+1\+PH\+\_\+\+Set}} (\mbox{\hyperlink{struct_s_o_g_i__1_p_h}{SOGI\+\_\+1\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj, float32\+\_\+t ac\+Freq, float32\+\_\+t isr\+Frequency, float32\+\_\+t lpf\+\_\+b0, float32\+\_\+t lpf\+\_\+b1)
+\begin{DoxyCompactList}\small\item\em 配置\+SOGI结构体 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gac68357b197b5778d423968938fe59e29}{SOGI\+\_\+1\+PH\+\_\+\+Run}} (\mbox{\hyperlink{struct_s_o_g_i__1_p_h}{SOGI\+\_\+1\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj, float32\+\_\+t ac\+Value)
+\begin{DoxyCompactList}\small\item\em 执行 SOGI 单相锁相环 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_ga2826ad35dce8723d331004e797beadd4}{SRF\+\_\+3\+PH\+\_\+\+Init}} (\mbox{\hyperlink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em Reset \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} module \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gaa461167a3a2ad945a1b0da4f6694077c}{SRF\+\_\+3\+PH\+\_\+\+Set}} (float32\+\_\+t grid\+\_\+freq, float32\+\_\+t delta\+\_\+t, \mbox{\hyperlink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em Initialize \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} module \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gab5a96d323b79646449adf4ea57322fa2}{SRF\+\_\+3\+PH\+\_\+\+Run}} (float32\+\_\+t v\+\_\+q, \mbox{\hyperlink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em Run \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} module \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gae9004fa2910a2eae2be44598dc8556bb}{DDSRF\+\_\+3\+PH\+\_\+\+Init}} (\mbox{\hyperlink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em Reset \doxylink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH} module \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gaa64487c6508a531541965b98848e75d8}{DDSRF\+\_\+3\+PH\+\_\+\+Set}} (float32\+\_\+t grid\+\_\+freq, float32\+\_\+t delta\+\_\+t, float32\+\_\+t k1, float32\+\_\+t k2, \mbox{\hyperlink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em Initialize \doxylink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH} module \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gacabde816e5c373cf1e2d16dcfb6052e4}{DDSRF\+\_\+3\+PH\+\_\+\+Run}} (\mbox{\hyperlink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj, float32\+\_\+t d\+\_\+p, float32\+\_\+t d\+\_\+n, float32\+\_\+t q\+\_\+p, float32\+\_\+t q\+\_\+n)
+\begin{DoxyCompactList}\small\item\em Run \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} module \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsection{详细描述}
+提供单相与三相锁相环的实现, SOGI/\+SRF/\+DDSRF方法 
+
+
+
+\label{doc-func-members}
+\Hypertarget{group___c_t_r_l___p_l_l_doc-func-members}
+\doxysubsubsubsubsection{函数说明}
+\Hypertarget{group___c_t_r_l___p_l_l_gae9004fa2910a2eae2be44598dc8556bb}\index{锁相环@{锁相环}!DDSRF\_3PH\_Init@{DDSRF\_3PH\_Init}}
+\index{DDSRF\_3PH\_Init@{DDSRF\_3PH\_Init}!锁相环@{锁相环}}
+\doxysubsubsubsubsubsection{\texorpdfstring{DDSRF\_3PH\_Init()}{DDSRF\_3PH\_Init()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___p_l_l_gae9004fa2910a2eae2be44598dc8556bb} 
+void DDSRF\+\_\+3\+PH\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}}]{spll\+\_\+obj}{}\end{DoxyParamCaption})}
+
+
+
+Reset \doxylink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH} module 
+
+
+\begin{DoxyParams}{参数}
+{\em \texorpdfstring{$\ast$}{*}spll\+\_\+obj} & The \doxylink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH} structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+None 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pll_8c_source}{pll.\+c}} 第 \mbox{\hyperlink{pll_8c_source_l00212}{212}} 行定义.
+
+\Hypertarget{group___c_t_r_l___p_l_l_gacabde816e5c373cf1e2d16dcfb6052e4}\index{锁相环@{锁相环}!DDSRF\_3PH\_Run@{DDSRF\_3PH\_Run}}
+\index{DDSRF\_3PH\_Run@{DDSRF\_3PH\_Run}!锁相环@{锁相环}}
+\doxysubsubsubsubsubsection{\texorpdfstring{DDSRF\_3PH\_Run()}{DDSRF\_3PH\_Run()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___p_l_l_gacabde816e5c373cf1e2d16dcfb6052e4} 
+void DDSRF\+\_\+3\+PH\+\_\+\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}}]{spll\+\_\+obj}{, }\item[{float32\+\_\+t}]{d\+\_\+p}{, }\item[{float32\+\_\+t}]{d\+\_\+n}{, }\item[{float32\+\_\+t}]{q\+\_\+p}{, }\item[{float32\+\_\+t}]{q\+\_\+n}{}\end{DoxyParamCaption})}
+
+
+
+Run \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} module 
+
+
+\begin{DoxyParams}{参数}
+{\em \texorpdfstring{$\ast$}{*}spll\+\_\+obj} & The \doxylink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH} structure \\
+\hline
+{\em d\+\_\+p} & D Positive seq component of the grid voltage \\
+\hline
+{\em d\+\_\+n} & D Negative seq component of the grid voltage \\
+\hline
+{\em q\+\_\+p} & Q Positive seq component of the grid voltage \\
+\hline
+{\em q\+\_\+n} & Q Negative seq component of the grid voltage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+None 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pll_8c_source}{pll.\+c}} 第 \mbox{\hyperlink{pll_8c_source_l00296}{296}} 行定义.
+
+\Hypertarget{group___c_t_r_l___p_l_l_gaa64487c6508a531541965b98848e75d8}\index{锁相环@{锁相环}!DDSRF\_3PH\_Set@{DDSRF\_3PH\_Set}}
+\index{DDSRF\_3PH\_Set@{DDSRF\_3PH\_Set}!锁相环@{锁相环}}
+\doxysubsubsubsubsubsection{\texorpdfstring{DDSRF\_3PH\_Set()}{DDSRF\_3PH\_Set()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___p_l_l_gaa64487c6508a531541965b98848e75d8} 
+void DDSRF\+\_\+3\+PH\+\_\+\+Set (\begin{DoxyParamCaption}\item[{float32\+\_\+t}]{grid\+\_\+freq}{, }\item[{float32\+\_\+t}]{delta\+\_\+t}{, }\item[{float32\+\_\+t}]{k1}{, }\item[{float32\+\_\+t}]{k2}{, }\item[{\mbox{\hyperlink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}}]{spll\+\_\+obj}{}\end{DoxyParamCaption})}
+
+
+
+Initialize \doxylink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH} module 
+
+
+\begin{DoxyParams}{参数}
+{\em grid\+\_\+freq} & The grid frequency \\
+\hline
+{\em delta\+\_\+t} & 1/\+Frequency of calling the PLL routine \\
+\hline
+{\em k1} & parameter \\
+\hline
+{\em k2} & parameter \\
+\hline
+{\em \texorpdfstring{$\ast$}{*}spll\+\_\+obj} & The \doxylink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH} structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+None 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pll_8c_source}{pll.\+c}} 第 \mbox{\hyperlink{pll_8c_source_l00250}{250}} 行定义.
+
+\Hypertarget{group___c_t_r_l___p_l_l_gaf15b995d2b03597fb9b39932285bdf85}\index{锁相环@{锁相环}!SOGI\_1PH\_coeff\_calc@{SOGI\_1PH\_coeff\_calc}}
+\index{SOGI\_1PH\_coeff\_calc@{SOGI\_1PH\_coeff\_calc}!锁相环@{锁相环}}
+\doxysubsubsubsubsubsection{\texorpdfstring{SOGI\_1PH\_coeff\_calc()}{SOGI\_1PH\_coeff\_calc()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___p_l_l_gaf15b995d2b03597fb9b39932285bdf85} 
+void SOGI\+\_\+1\+PH\+\_\+coeff\+\_\+calc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_o_g_i__1_p_h}{SOGI\+\_\+1\+PH}} \texorpdfstring{$\ast$}{*}}]{spll\+\_\+obj}{}\end{DoxyParamCaption})}
+
+
+
+计算\+SOGI结构体参数 
+
+
+\begin{DoxyParams}{参数}
+{\em spll\+\_\+obj} & 结构体指针 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group___c_t_r_l___p_l_l_ga6af2cb6d025984e7461176621118d8da}\index{锁相环@{锁相环}!SOGI\_1PH\_Init@{SOGI\_1PH\_Init}}
+\index{SOGI\_1PH\_Init@{SOGI\_1PH\_Init}!锁相环@{锁相环}}
+\doxysubsubsubsubsubsection{\texorpdfstring{SOGI\_1PH\_Init()}{SOGI\_1PH\_Init()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___p_l_l_ga6af2cb6d025984e7461176621118d8da} 
+void SOGI\+\_\+1\+PH\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_o_g_i__1_p_h}{SOGI\+\_\+1\+PH}} \texorpdfstring{$\ast$}{*}}]{spll\+\_\+obj}{}\end{DoxyParamCaption})}
+
+
+
+结构体初始化 
+
+
+\begin{DoxyParams}{参数}
+{\em spll\+\_\+obj} & 结构体指针 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{pll_8c_source}{pll.\+c}} 第 \mbox{\hyperlink{pll_8c_source_l00022}{22}} 行定义.
+
+\Hypertarget{group___c_t_r_l___p_l_l_gac68357b197b5778d423968938fe59e29}\index{锁相环@{锁相环}!SOGI\_1PH\_Run@{SOGI\_1PH\_Run}}
+\index{SOGI\_1PH\_Run@{SOGI\_1PH\_Run}!锁相环@{锁相环}}
+\doxysubsubsubsubsubsection{\texorpdfstring{SOGI\_1PH\_Run()}{SOGI\_1PH\_Run()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___p_l_l_gac68357b197b5778d423968938fe59e29} 
+void SOGI\+\_\+1\+PH\+\_\+\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_o_g_i__1_p_h}{SOGI\+\_\+1\+PH}} \texorpdfstring{$\ast$}{*}}]{spll\+\_\+obj}{, }\item[{float32\+\_\+t}]{ac\+Value}{}\end{DoxyParamCaption})}
+
+
+
+执行 SOGI 单相锁相环 
+
+
+\begin{DoxyParams}{参数}
+{\em spll\+\_\+obj} & 结构体指针 \\
+\hline
+{\em ac\+Value} & 电网电压(\+V) \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{pll_8c_source}{pll.\+c}} 第 \mbox{\hyperlink{pll_8c_source_l00083}{83}} 行定义.
+
+\Hypertarget{group___c_t_r_l___p_l_l_gaac5dc41f65a9efa844ad311c51cf3c7f}\index{锁相环@{锁相环}!SOGI\_1PH\_Set@{SOGI\_1PH\_Set}}
+\index{SOGI\_1PH\_Set@{SOGI\_1PH\_Set}!锁相环@{锁相环}}
+\doxysubsubsubsubsubsection{\texorpdfstring{SOGI\_1PH\_Set()}{SOGI\_1PH\_Set()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___p_l_l_gaac5dc41f65a9efa844ad311c51cf3c7f} 
+void SOGI\+\_\+1\+PH\+\_\+\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_o_g_i__1_p_h}{SOGI\+\_\+1\+PH}} \texorpdfstring{$\ast$}{*}}]{spll\+\_\+obj}{, }\item[{float32\+\_\+t}]{ac\+Freq}{, }\item[{float32\+\_\+t}]{isr\+Frequency}{, }\item[{float32\+\_\+t}]{lpf\+\_\+b0}{, }\item[{float32\+\_\+t}]{lpf\+\_\+b1}{}\end{DoxyParamCaption})}
+
+
+
+配置\+SOGI结构体 
+
+
+\begin{DoxyParams}{参数}
+{\em spll\+\_\+obj} & 结构体指针 \\
+\hline
+{\em ac\+Freq} & 标称电网频率(\+Hz) \\
+\hline
+{\em isr\+Frequency} & 中断频率(\+Hz) \\
+\hline
+{\em lpf\+\_\+b0} & PI差分方程系数b0 \\
+\hline
+{\em lpf\+\_\+b1} & PI差分方程系数b1 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{pll_8c_source}{pll.\+c}} 第 \mbox{\hyperlink{pll_8c_source_l00054}{54}} 行定义.
+
+\Hypertarget{group___c_t_r_l___p_l_l_ga2826ad35dce8723d331004e797beadd4}\index{锁相环@{锁相环}!SRF\_3PH\_Init@{SRF\_3PH\_Init}}
+\index{SRF\_3PH\_Init@{SRF\_3PH\_Init}!锁相环@{锁相环}}
+\doxysubsubsubsubsubsection{\texorpdfstring{SRF\_3PH\_Init()}{SRF\_3PH\_Init()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___p_l_l_ga2826ad35dce8723d331004e797beadd4} 
+void SRF\+\_\+3\+PH\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}}]{spll\+\_\+obj}{}\end{DoxyParamCaption})}
+
+
+
+Reset \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} module 
+
+
+\begin{DoxyParams}{参数}
+{\em \texorpdfstring{$\ast$}{*}spll\+\_\+obj} & The \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+None 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pll_8c_source}{pll.\+c}} 第 \mbox{\hyperlink{pll_8c_source_l00144}{144}} 行定义.
+
+\Hypertarget{group___c_t_r_l___p_l_l_gab5a96d323b79646449adf4ea57322fa2}\index{锁相环@{锁相环}!SRF\_3PH\_Run@{SRF\_3PH\_Run}}
+\index{SRF\_3PH\_Run@{SRF\_3PH\_Run}!锁相环@{锁相环}}
+\doxysubsubsubsubsubsection{\texorpdfstring{SRF\_3PH\_Run()}{SRF\_3PH\_Run()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___p_l_l_gab5a96d323b79646449adf4ea57322fa2} 
+void SRF\+\_\+3\+PH\+\_\+\+Run (\begin{DoxyParamCaption}\item[{float32\+\_\+t}]{v\+\_\+q}{, }\item[{\mbox{\hyperlink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}}]{spll\+\_\+obj}{}\end{DoxyParamCaption})}
+
+
+
+Run \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} module 
+
+
+\begin{DoxyParams}{参数}
+{\em v\+\_\+q} & Q component of the grid voltage \\
+\hline
+{\em \texorpdfstring{$\ast$}{*}spll\+\_\+obj} & The \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} structure \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{pll_8c_source}{pll.\+c}} 第 \mbox{\hyperlink{pll_8c_source_l00177}{177}} 行定义.
+
+\Hypertarget{group___c_t_r_l___p_l_l_gaa461167a3a2ad945a1b0da4f6694077c}\index{锁相环@{锁相环}!SRF\_3PH\_Set@{SRF\_3PH\_Set}}
+\index{SRF\_3PH\_Set@{SRF\_3PH\_Set}!锁相环@{锁相环}}
+\doxysubsubsubsubsubsection{\texorpdfstring{SRF\_3PH\_Set()}{SRF\_3PH\_Set()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___p_l_l_gaa461167a3a2ad945a1b0da4f6694077c} 
+void SRF\+\_\+3\+PH\+\_\+\+Set (\begin{DoxyParamCaption}\item[{float32\+\_\+t}]{grid\+\_\+freq}{, }\item[{float32\+\_\+t}]{delta\+\_\+t}{, }\item[{\mbox{\hyperlink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}}]{spll\+\_\+obj}{}\end{DoxyParamCaption})}
+
+
+
+Initialize \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} module 
+
+
+\begin{DoxyParams}{参数}
+{\em grid\+\_\+freq} & The grid frequency \\
+\hline
+{\em delta\+\_\+t} & 1/\+Frequency of calling the PLL routine \\
+\hline
+{\em \texorpdfstring{$\ast$}{*}spll\+\_\+obj} & The \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+None 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pll_8c_source}{pll.\+c}} 第 \mbox{\hyperlink{pll_8c_source_l00159}{159}} 行定义.
+

@@ -1,0 +1,79 @@
+\doxysection{FILTER结构体 参考}
+\hypertarget{struct_f_i_l_t_e_r}{}\label{struct_f_i_l_t_e_r}\index{FILTER@{FILTER}}
+
+
+定义通用数字滤波器结构体  
+
+
+
+
+{\ttfamily \#include $<$filter.\+h$>$}
+
+
+
+FILTER 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{struct_f_i_l_t_e_r__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{成员变量}
+\begin{DoxyCompactItemize}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_f_i_l_t_e_r_a85c4e172c23b4241932be68ab7df9e26}{output}}
+\begin{DoxyCompactList}\small\item\em 滤波器输出 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___c_t_r_l___t_r_a_n_s_f_u_n_gaf8832c3b4a1ad9070601b091b430b0e8}{DCL\+\_\+\+DF22}} \mbox{\hyperlink{struct_f_i_l_t_e_r_ae718d75ee25e7d6901ecc83ac76b13c3}{filter}}
+\begin{DoxyCompactList}\small\item\em 二阶差分方程, 直接形式2 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+定义通用数字滤波器结构体 
+
+\begin{DoxyNote}{注解}
+在调用 Filter\+\_\+\+Run 之前, 必须先调用 Filter\+\_\+\+Init 和 Filter\+\_\+\+Set 进行初始化和配置 
+
+一阶和二阶滤波器均使用 \doxylink{group___c_t_r_l___t_r_a_n_s_f_u_n_gaf8832c3b4a1ad9070601b091b430b0e8}{DCL\+\_\+\+DF22} 结构 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{filter_8h_source}{filter.\+h}} 第 \mbox{\hyperlink{filter_8h_source_l00041}{41}} 行定义.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{struct_f_i_l_t_e_r_doc-variable-members}
+\doxysubsection{结构体成员变量说明}
+\Hypertarget{struct_f_i_l_t_e_r_ae718d75ee25e7d6901ecc83ac76b13c3}\index{FILTER@{FILTER}!filter@{filter}}
+\index{filter@{filter}!FILTER@{FILTER}}
+\doxysubsubsection{\texorpdfstring{filter}{filter}}
+{\footnotesize\ttfamily \label{struct_f_i_l_t_e_r_ae718d75ee25e7d6901ecc83ac76b13c3} 
+\mbox{\hyperlink{group___c_t_r_l___t_r_a_n_s_f_u_n_gaf8832c3b4a1ad9070601b091b430b0e8}{DCL\+\_\+\+DF22}} FILTER\+::filter}
+
+
+
+二阶差分方程, 直接形式2 
+
+
+
+在文件 \mbox{\hyperlink{filter_8h_source}{filter.\+h}} 第 \mbox{\hyperlink{filter_8h_source_l00044}{44}} 行定义.
+
+\Hypertarget{struct_f_i_l_t_e_r_a85c4e172c23b4241932be68ab7df9e26}\index{FILTER@{FILTER}!output@{output}}
+\index{output@{output}!FILTER@{FILTER}}
+\doxysubsubsection{\texorpdfstring{output}{output}}
+{\footnotesize\ttfamily \label{struct_f_i_l_t_e_r_a85c4e172c23b4241932be68ab7df9e26} 
+float32\+\_\+t FILTER\+::output}
+
+
+
+滤波器输出 
+
+
+
+在文件 \mbox{\hyperlink{filter_8h_source}{filter.\+h}} 第 \mbox{\hyperlink{filter_8h_source_l00043}{43}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Control\+\_\+\+Driver/filter/\mbox{\hyperlink{filter_8h}{filter.\+h}}\end{DoxyCompactItemize}

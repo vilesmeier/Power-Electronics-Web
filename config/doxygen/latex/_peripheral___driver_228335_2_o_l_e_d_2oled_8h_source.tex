@@ -1,0 +1,49 @@
+\doxysection{oled.\+h}
+\hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source}{}\label{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/OLED/oled.h@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/OLED/oled.h}}
+\mbox{\hyperlink{_peripheral___driver_228335_2_o_l_e_d_2oled_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00010}00010\ \textcolor{preprocessor}{\#ifndef\ OLED\_H}}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00011}00011\ \textcolor{preprocessor}{\#define\ OLED\_H}}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00018}\mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_ga7ac0f27d752bd8ce30d895085fff9cf2}{00018}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_ga7ac0f27d752bd8ce30d895085fff9cf2}{OLED\_MESSAGE\_TYPE}}}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00019}00019\ \{}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00020}\mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_gga7ac0f27d752bd8ce30d895085fff9cf2a0a6ce3feb5863993ecf3c915ba06504d}{00020}}\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_gga7ac0f27d752bd8ce30d895085fff9cf2a0a6ce3feb5863993ecf3c915ba06504d}{OLED\_CMD}}\ =\ 0U,\ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00021}\mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_gga7ac0f27d752bd8ce30d895085fff9cf2ae1345d682e00f2fd37398ca2b7e027ef}{00021}}\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_gga7ac0f27d752bd8ce30d895085fff9cf2ae1345d682e00f2fd37398ca2b7e027ef}{OLED\_DATA}}\ =\ 1U\ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00022}\mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_ga7edc5aa712e84f47332dce55a0158c7d}{00022}}\ \}\ \mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_ga7ac0f27d752bd8ce30d895085fff9cf2}{OLED\_MESSAGE\_TYPE}};}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00024}\mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_ga7dfa2c4cfbfcba36416046052e7943e8}{00024}}\ \textcolor{preprocessor}{\#define\ OLED\_ADDR\ \ 0x3C\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00025}\mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_ga5579d322713ed653de1f1281fab83e65}{00025}}\ \textcolor{preprocessor}{\#define\ Max\_Column\ \ 128\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00026}\mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_ga602fd8e5bfed41e97894b16baae07edd}{00026}}\ \textcolor{preprocessor}{\#define\ Max\_Row\ \ \ \ \ 64\ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00033}00033\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___o_l_e_d_ga7372e46460a371e4d94a0ee7f5f1a1fd}{OLED\_Init}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00040}00040\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_gacef17e54b27784a81da0b06bdfc6a4d3}{OLED\_DisPlay\_On}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00047}00047\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_ga2fd45df8a45bfbe6a4f6910ef59e7b42}{OLED\_DisPlay\_Off}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00054}00054\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___o_l_e_d_ga6960de38d41ba87c52e40f8bd4b094d3}{OLED\_Clear}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00064}00064\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___o_l_e_d_ga702041c412b420edd94a154681664202}{OLED\_ShowChar}}(Uint8\ x,Uint8\ y,Uint8\ chr);}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00074}00074\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___o_l_e_d_ga7869abbb812853dbd5673ecd64ccfeab}{OLED\_ShowString}}(Uint8\ x,Uint8\ y,Uint8\ *chr);}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00085}00085\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_ga454d391d82d460a672db43ed222ec475}{OLED\_ShowNum}}(Uint8\ x,Uint8\ y,Uint32\ num,Uint8\ len);}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00096}00096\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___o_l_e_d_ga4a403791ec36b102b18a11d01ec6b8e3}{OLED\_ShowSignedNum}}(Uint8\ x,Uint8\ y,int16\ num,Uint8\ len);}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00108}00108\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_gad5adf82299744d5a93f0ed25ed5c71aa}{OLED\_ShowFloat}}(Uint8\ x,Uint8\ y,float32\ num,Uint8\ len,Uint8\ Flen);}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00120}00120\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_ga73e1b8daf233d936528d6b66b86d49af}{OLED\_ShowSignedFloat}}(Uint8\ x,Uint8\ y,float32\ num,Uint8\ len,Uint8\ Flen);}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00129}00129\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_gaa14bb13c0cd2c797c9974b82ce0df267}{OLED\_Set\_Pos}}(Uint8\ x,\ Uint8\ y);}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00138}00138\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_ga5afff1be901cd9738f1c9652a0676f62}{WriteData}}(Uint8\ Wdata,\ \mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_ga7ac0f27d752bd8ce30d895085fff9cf2}{OLED\_MESSAGE\_TYPE}}\ mode);}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00148}00148\ Uint32\ \mbox{\hyperlink{group___c_t_r_l___o_l_e_d_ga7803502eeddd959ac51b71974318de1a}{OLED\_Pow}}(Uint8\ m,Uint8\ n);}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00149}00149\ }
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00150}00150\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_peripheral___driver_228335_2_o_l_e_d_2oled_8h_source_l00151}00151\ }
+
+\end{DoxyCode}

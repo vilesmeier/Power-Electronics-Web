@@ -1,0 +1,77 @@
+\doxysection{D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Control\+\_\+\+Driver/rfft/rfft.c 文件参考}
+\hypertarget{rfft_8c}{}\label{rfft_8c}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/rfft/rfft.c@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/rfft/rfft.c}}
+
+
+RFFT函数实现  
+
+
+{\ttfamily \#include "{}rfft.\+h"{}}\newline
+rfft.\+c 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rfft_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaaca2fd3267a4458de0b5f4d37b0d85b8}{RFFT\+\_\+\+Init}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}, float32\+\_\+t \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga5a0f4b49baab36db0c5e1922cdbc6c71}{input}}, float32\+\_\+t \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaf41db2f2a8a877a4d60944cafafac70c}{output}}, float32\+\_\+t \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga56ce624e4d31bc2956066f5fa5b6b34d}{twiddle}}, float32\+\_\+t \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga429b259b6633b6a2b677ba475d840c63}{magnitude}})
+\begin{DoxyCompactList}\small\item\em 初始化与配置\+RFFT指针 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga8879dcbb9c5197cd6dfb4f30369a96e4}{RFFT\+\_\+\+Set}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}, float32\+\_\+t fs, float32\+\_\+t fgrid)
+\begin{DoxyCompactList}\small\item\em 配置\+RFFT参数, 确定\+FFT幅度谱分析模式 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga413312679334b30df43bf8c9d9530dba}{RFFT\+\_\+\+Run}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}})
+\begin{DoxyCompactList}\small\item\em 执行\+RFFT信号分析 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga3fc7edfa39757d7ff7e4522bcbbbf07d}{RFFT\+\_\+\+Grid\+\_\+\+Lock}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}})
+\begin{DoxyCompactList}\small\item\em delta\+\_\+f == fgrid, 幅度谱每个元素即为一个谐波峰 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gad1e815d931ea459fc390f308cd553710}{RFFT\+\_\+\+Peak\+\_\+\+Find}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}})
+\begin{DoxyCompactList}\small\item\em delta\+\_\+f != fgrid, 寻找幅度谱峰值 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+const float32\+\_\+t \mbox{\hyperlink{rfft_8c_a91bfaaac247926c53080eeeffae4ca28}{FFT\+\_\+window}} \mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}} $>$ $>$1\mbox{]} = \mbox{\hyperlink{fpu__fft__kaiser_8h_a32344a6781a6653357c1217126df2a22}{KAISER256}}
+\begin{DoxyCompactList}\small\item\em 窗函数数组 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga5a0f4b49baab36db0c5e1922cdbc6c71}{input}} \mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 输入数组 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaf41db2f2a8a877a4d60944cafafac70c}{output}} \mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 输出数组 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga56ce624e4d31bc2956066f5fa5b6b34d}{twiddle}} \mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 预畸变因子表 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga429b259b6633b6a2b677ba475d840c63}{magnitude}} \mbox{[}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}} $>$ $>$1)+1\mbox{]}
+\begin{DoxyCompactList}\small\item\em 输出幅值 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}
+\begin{DoxyCompactList}\small\item\em RFFT结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+RFFT函数实现 
+
+\begin{DoxyAuthor}{作者}
+Mao Chenbin (\href{mailto:508038890@qq.com}{\texttt{508038890@qq.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyNote}{注解}
+文件中使用的 {\bfseries{\+\_\+\+\_\+\+TMS320\+C28\+XX\+\_\+\+TMU\+\_\+\+\_\+}} 宏定义说明, 见\+TI手册 ZHCU876Z TMS320\+C28x优化 C/\+C++ 编译器 节 2.\+5.\+1 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{rfft_8c_source}{rfft.\+c}} 中定义.
+
+
+
+\label{doc-var-members}
+\Hypertarget{rfft_8c_doc-var-members}
+\doxysubsection{变量说明}
+\Hypertarget{rfft_8c_a91bfaaac247926c53080eeeffae4ca28}\index{rfft.c@{rfft.c}!FFT\_window@{FFT\_window}}
+\index{FFT\_window@{FFT\_window}!rfft.c@{rfft.c}}
+\doxysubsubsection{\texorpdfstring{FFT\_window}{FFT\_window}}
+{\footnotesize\ttfamily \label{rfft_8c_a91bfaaac247926c53080eeeffae4ca28} 
+const float32\+\_\+t FFT\+\_\+window\mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}} $>$ $>$1\mbox{]} = \mbox{\hyperlink{fpu__fft__kaiser_8h_a32344a6781a6653357c1217126df2a22}{KAISER256}}}
+
+
+
+窗函数数组 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8c_source}{rfft.\+c}} 第 \mbox{\hyperlink{rfft_8c_source_l00025}{25}} 行定义.
+

@@ -1,0 +1,139 @@
+\doxysection{mathdef.\+h}
+\hypertarget{mathdef_8h_source}{}\label{mathdef_8h_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/mathdef/mathdef.h@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/mathdef/mathdef.h}}
+\mbox{\hyperlink{mathdef_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00011}00011\ \textcolor{preprocessor}{\#ifndef\ MATHDEF\_H}}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00012}00012\ \textcolor{preprocessor}{\#define\ MATHDEF\_H}}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}stdint.h"{}}}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00015}00015\ \textcolor{preprocessor}{\#include\ "{}math.h"{}}}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00017}00017\ \textcolor{comment}{//\ 常用常数定义}}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00019}00019\ \textcolor{comment}{//\ PI相关}}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00020}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gac58cbaeae310f551049f77b7c098599e}{00020}}\ \textcolor{preprocessor}{\#define\ MATH\_PI\ \ \ \ \ \ \ \ \ \ \ \ 3.14159265359f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00021}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga56296334ffdd8edad8bb96c2062e2704}{00021}}\ \textcolor{preprocessor}{\#define\ MATH\_2PI\ \ \ \ \ \ \ \ \ \ \ 6.28318530718f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00022}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga182b2cd95357301e812531ab2a4b9d4c}{00022}}\ \textcolor{preprocessor}{\#define\ MATH\_PI\_2\ \ \ \ \ \ \ \ \ \ 1.57079632679f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00023}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga960f551c82b8d50d8f0d2590c65bfc1a}{00023}}\ \textcolor{preprocessor}{\#define\ MATH\_PI\_3\ \ \ \ \ \ \ \ \ \ 1.0471975512f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00024}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga81dd2b3afe85034123ecaacfc4af855d}{00024}}\ \textcolor{preprocessor}{\#define\ MATH\_PI\_4\ \ \ \ \ \ \ \ \ \ 0.78539816339f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00025}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gac1505c918dc00efb00b4b1df93c9a29a}{00025}}\ \textcolor{preprocessor}{\#define\ MATH\_PI\_5\ \ \ \ \ \ \ \ \ \ 0.62831853072f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00026}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaf9e8f8d92ad65de36389e004f82f06c1}{00026}}\ \textcolor{preprocessor}{\#define\ MATH\_PI\_6\ \ \ \ \ \ \ \ \ \ 0.52359877559f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00027}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gac77c1dfbd430efa89ad856f695a3da86}{00027}}\ \textcolor{preprocessor}{\#define\ MATH\_PI\_180\ \ \ \ \ \ \ \ 0.01745329252f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00028}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gafd36fd261bc59cb500129f1c7f6eda82}{00028}}\ \textcolor{preprocessor}{\#define\ MATH\_180\_PI\ \ \ \ \ \ \ \ 57.2957795131f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00029}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga4b1fa40580ac4f7f610b41b1962f094a}{00029}}\ \textcolor{preprocessor}{\#define\ MATH\_1\_PI\ \ \ \ \ \ \ \ \ \ 0.31830988618f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00030}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga2174e4daa2f5b0853857cbab4142b3fc}{00030}}\ \textcolor{preprocessor}{\#define\ MATH\_2\_PI\ \ \ \ \ \ \ \ \ \ 0.63661977236f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00031}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gae16166687cc5b7bb0e2280a0bfa50983}{00031}}\ \textcolor{preprocessor}{\#define\ MATH\_3\_PI\ \ \ \ \ \ \ \ \ \ 0.95492965855f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00032}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaae150439863f61515c817ef741640672}{00032}}\ \textcolor{preprocessor}{\#define\ MATH\_4\_PI\ \ \ \ \ \ \ \ \ \ 1.27323954474f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00033}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaa2c4fea4605c98b1f4f19e61da4b37c3}{00033}}\ \textcolor{preprocessor}{\#define\ MATH\_5\_PI\ \ \ \ \ \ \ \ \ \ 1.59154943092f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00034}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gafeeff93c130bf4ef2e39ac6bd04f0038}{00034}}\ \textcolor{preprocessor}{\#define\ MATH\_6\_PI\ \ \ \ \ \ \ \ \ \ 1.90985931711f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00035}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gab39f90a7fdc18e7ff80a97641c59542c}{00035}}\ \textcolor{preprocessor}{\#define\ MATH\_1\_2PI\ \ \ \ \ \ \ \ \ 0.15915494309f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00036}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga4a93293ed8742fcf4d9795ffa51db094}{00036}}\ \textcolor{preprocessor}{\#define\ MATH\_1\_3PI\ \ \ \ \ \ \ \ \ 0.10610329539f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00037}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga560d9528aa2f6cab7c51a8681c3586ff}{00037}}\ \textcolor{preprocessor}{\#define\ MATH\_1\_4PI\ \ \ \ \ \ \ \ \ 0.07957747155f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00038}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga94505d52ae52e917f1590ab11d93bb19}{00038}}\ \textcolor{preprocessor}{\#define\ MATH\_1\_5PI\ \ \ \ \ \ \ \ \ 0.06366197724f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00039}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga63959f9bca5b9b6ed8b5876e70d018ce}{00039}}\ \textcolor{preprocessor}{\#define\ MATH\_1\_6PI\ \ \ \ \ \ \ \ \ 0.05305164769f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00041}00041\ \textcolor{comment}{//\ 根值}}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00042}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gac9f0aa7b9e56167db9b3b850f9798741}{00042}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_2\ \ \ \ \ \ 1.41421356237f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00043}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga9aa9cf04d5101c4234f2d4acc544d8ea}{00043}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_3\ \ \ \ \ \ 1.73205080756f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00044}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gafb129553d3a82e988fd6568537252f17}{00044}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_5\ \ \ \ \ \ 2.2360679775f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00045}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gad96839f59a024b3df50f0361978155c0}{00045}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_6\ \ \ \ \ \ 2.44948974278f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00046}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaeb53d0b98233dce6a3a4be5ad099e39b}{00046}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_7\ \ \ \ \ \ 2.64575131106f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00047}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga6658d0aed7a2d0ea0a3b2ebaefdb6fe1}{00047}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_10\ \ \ \ \ 3.16227766017f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00049}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaad8e7a92588d21d39878aeeef8222e90}{00049}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_1\_2\ \ \ \ 0.70710678118f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00051}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga940e72f33008eaecd20fdeed740094a2}{00051}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_1\_3\ \ \ \ 0.57735026919f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00052}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga295453dbba3d1c7a0e028919947d9d28}{00052}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_2\_3\ \ \ \ 0.81649658093f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00054}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gab82a45addab6bf8fd35ca910365b24ce}{00054}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_1\_5\ \ \ \ 0.4472135955f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00055}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaacfe3478e3927f8dd96419fe8280c53c}{00055}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_2\_5\ \ \ \ 0.89442719099f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00056}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga8a4c6c7ea753a421719d5150d25b05bc}{00056}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_3\_5\ \ \ \ 1.3416407865f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00057}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga155746a5beb8dca59716f7f790f8b6bf}{00057}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_4\_5\ \ \ \ 1.78885438199f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00059}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaf6e9889aa95acf0862fd2392be570e64}{00059}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_1\_6\ \ \ \ 0.40824829046f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00060}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga2f1943ee2ef9adc41c650d4f7520321a}{00060}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_5\_6\ \ \ \ 0.91287092917f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00062}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga5a9ca3b4760e03ce1ac83da307767daf}{00062}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_1\_7\ \ \ \ 0.37796447301f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00063}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaedc4a918a239cb6327197ba9c9144c25}{00063}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_2\_7\ \ \ \ 0.53589838566f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00064}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga6966f7843f5a6bb959e9d2e1064c623c}{00064}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_3\_7\ \ \ \ 0.65465367071f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00065}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga2cdad8747629bafd2652ad030d6107ff}{00065}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_4\_7\ \ \ \ 0.75592894602f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00066}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga49f9d15324b4ea181578ff765b2aba45}{00066}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_5\_7\ \ \ \ 0.84515425473f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00067}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga03e78dc8d4aef2d529fae386f459a78b}{00067}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_6\_7\ \ \ \ 0.92582009977f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00069}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga052b9084426856b915a3c5dd445da152}{00069}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_1\_8\ \ \ \ 0.35355339059f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00070}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gade809995d776927928ad5e8b007a8d6d}{00070}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_3\_8\ \ \ \ 0.61237243569f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00071}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga55f6e59b09378073f80703f74a49077d}{00071}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_5\_8\ \ \ \ 0.79056941504f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00072}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga89415e256469eb9663da16795a93a677}{00072}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_7\_8\ \ \ \ 0.93541434669f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00074}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga3aa4f17825268ed51809de3754f61e12}{00074}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_1\_9\ \ \ \ 0.33333333333f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00075}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga4c625de6081fcb3be9f885b109500b11}{00075}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_2\_9\ \ \ \ 0.47140452079f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00076}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaaef6433dbd3b936d22681f818fcef4dd}{00076}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_4\_9\ \ \ \ 0.66666666667f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00077}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga29abbe13b2cfb3b543196389c6532e7e}{00077}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_5\_9\ \ \ \ 0.7453559925f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00078}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga4ea694e97695452c74166a75ec888af7}{00078}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_7\_9\ \ \ \ 0.88191710369f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00079}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga7fe602b8823500921afb1bb83d808976}{00079}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_8\_9\ \ \ \ 0.94280904158f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00081}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gabb17658aad3d7e6dab2327180b3a13f5}{00081}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_1\_10\ \ \ 0.31622776602f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00082}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga616de98a33ea866c66947aa56e60ac88}{00082}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_3\_10\ \ \ 0.54772255751f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00083}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gafa4bb49a7517889c1aff03619067908b}{00083}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_7\_10\ \ \ 0.83666002653f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00084}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaf1cdaaf37affb059ee9c6564ac85aa50}{00084}}\ \textcolor{preprocessor}{\#define\ MATH\_SQUARE\_9\_10\ \ \ 0.94868329805f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00086}00086\ \textcolor{comment}{//\ e相关}}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00087}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga9ee56816d83d03ce2644259a848f0ecb}{00087}}\ \textcolor{preprocessor}{\#define\ MATH\_E\ \ \ \ \ \ \ \ \ \ \ \ \ 2.71828182846f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00089}00089\ \textcolor{comment}{//\ 对数}}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00090}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gab15c60d02eab5731a6f01ca253a89a97}{00090}}\ \textcolor{preprocessor}{\#define\ MATH\_LOG2E\ \ \ \ \ \ \ \ 1.44269504089f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00091}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga19f345f917847c0770162a49255d3934}{00091}}\ \textcolor{preprocessor}{\#define\ MATH\_LOG10E\ \ \ \ \ \ \ 0.4342944819f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00092}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaad1f29cdbec9b71bc5c3daedae18967f}{00092}}\ \textcolor{preprocessor}{\#define\ MATH\_LN2\ \ \ \ \ \ \ \ \ \ 0.69314718056f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00093}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gab8809985f719ce65d0d473d4dc983692}{00093}}\ \textcolor{preprocessor}{\#define\ MATH\_LN10\ \ \ \ \ \ \ \ \ 2.30258509299f\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00095}00095\ \textcolor{comment}{//\ 工程符号}}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00096}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga5487c20a4215056e0da88833f0e21992}{00096}}\ \textcolor{preprocessor}{\#define\ MATH\_K\ \ \ \ \ \ \ \ \ \ \ \ 1e3f\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00097}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga88f87569260291e4355d1eddcbbdd8e2}{00097}}\ \textcolor{preprocessor}{\#define\ MATH\_M\ \ \ \ \ \ \ \ \ \ \ \ 1e6f\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00098}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gabc66a97d4868bcd37b030f75e382c269}{00098}}\ \textcolor{preprocessor}{\#define\ MATH\_G\ \ \ \ \ \ \ \ \ \ \ \ 1e9f\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00099}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaa1b9747437e1622ebd38795a654ef0ff}{00099}}\ \textcolor{preprocessor}{\#define\ MATH\_m\ \ \ \ \ \ \ \ \ \ \ \ 1e-\/3f\ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00100}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gae4837bcf596ce9b8cb8419d12fc47386}{00100}}\ \textcolor{preprocessor}{\#define\ MATH\_u\ \ \ \ \ \ \ \ \ \ \ \ 1e-\/6f\ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00101}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga42eb0f74f33833a78982d4d62fc5ba12}{00101}}\ \textcolor{preprocessor}{\#define\ MATH\_n\ \ \ \ \ \ \ \ \ \ \ \ 1e-\/9f\ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00102}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaac6fc795bebde513a742e1281a82ec3d}{00102}}\ \textcolor{preprocessor}{\#define\ MATH\_p\ \ \ \ \ \ \ \ \ \ \ \ 1e-\/12f\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00104}00104\ \textcolor{comment}{//\ 常用分数}}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00105}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga987141ee2bd0d5ca8f0821fd6d251643}{00105}}\ \textcolor{preprocessor}{\#define\ MATH\_1\_2\ \ \ \ \ \ \ \ \ \ 0.5f\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00107}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaad20324d5f3573efebb7904817b1fe82}{00107}}\ \textcolor{preprocessor}{\#define\ MATH\_1\_3\ \ \ \ \ \ \ \ \ \ 0.3333333333f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00108}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaa456dffabba24203e4410c8cdf54b812}{00108}}\ \textcolor{preprocessor}{\#define\ MATH\_2\_3\ \ \ \ \ \ \ \ \ \ 0.6666666667f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00110}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga440c65ad1f30db3dce1d5e007c04e099}{00110}}\ \textcolor{preprocessor}{\#define\ MATH\_1\_4\ \ \ \ \ \ \ \ \ \ 0.25f\ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00111}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gacbdf0feb9a6d1efd361121ee1335d61a}{00111}}\ \textcolor{preprocessor}{\#define\ MATH\_3\_4\ \ \ \ \ \ \ \ \ \ 0.75f\ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00113}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga7951bec217960c669b448104494eeb83}{00113}}\ \textcolor{preprocessor}{\#define\ MATH\_1\_5\ \ \ \ \ \ \ \ \ \ 0.2f\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00114}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga2efd29ccdec97b2de7a677d0ad96dc4f}{00114}}\ \textcolor{preprocessor}{\#define\ MATH\_2\_5\ \ \ \ \ \ \ \ \ \ 0.4f\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00115}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga975fcf11516a437ea838d2469aa7323a}{00115}}\ \textcolor{preprocessor}{\#define\ MATH\_3\_5\ \ \ \ \ \ \ \ \ \ 0.6f\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00116}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga4a8539e54b561221554ec22cb966ef9b}{00116}}\ \textcolor{preprocessor}{\#define\ MATH\_4\_5\ \ \ \ \ \ \ \ \ \ 0.8f\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00117}00117\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00118}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga9b788459e8304023c8d3aaef682e675a}{00118}}\ \textcolor{preprocessor}{\#define\ MATH\_1\_6\ \ \ \ \ \ \ \ \ \ 0.1666666667f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00119}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga35d19b20d3ab95208a1d8a9ca64a0760}{00119}}\ \textcolor{preprocessor}{\#define\ MATH\_5\_6\ \ \ \ \ \ \ \ \ \ 0.8333333333f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00121}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gab41d0c00977bbc13264e454cd0cdb455}{00121}}\ \textcolor{preprocessor}{\#define\ MATH\_1\_7\ \ \ \ \ \ \ \ \ \ 0.1428571429f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00122}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga130aa00f55f06ba96fb568a22e663bc7}{00122}}\ \textcolor{preprocessor}{\#define\ MATH\_2\_7\ \ \ \ \ \ \ \ \ \ 0.2857142857f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00123}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga703c7e3cb265f1740a04de9ceeb6576e}{00123}}\ \textcolor{preprocessor}{\#define\ MATH\_3\_7\ \ \ \ \ \ \ \ \ \ 0.4285714286f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00124}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga5640cd07fec3a48efbee6cb2c6ad954a}{00124}}\ \textcolor{preprocessor}{\#define\ MATH\_4\_7\ \ \ \ \ \ \ \ \ \ 0.5714285714f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00125}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga6a0460c96867dc7b4f8e7eb0ee5b855e}{00125}}\ \textcolor{preprocessor}{\#define\ MATH\_5\_7\ \ \ \ \ \ \ \ \ \ 0.7142857143f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00126}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga3404a37f26bc0b02e3bcc11edb66a26e}{00126}}\ \textcolor{preprocessor}{\#define\ MATH\_6\_7\ \ \ \ \ \ \ \ \ \ 0.8571428571f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00128}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga8c91428a31d3653fd7cfc5c06c73ee6d}{00128}}\ \textcolor{preprocessor}{\#define\ MATH\_1\_8\ \ \ \ \ \ \ \ \ \ 0.125f\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00129}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga27145bbc4ff28cc2cb4e0612b49ba2c2}{00129}}\ \textcolor{preprocessor}{\#define\ MATH\_3\_8\ \ \ \ \ \ \ \ \ \ 0.375f\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00130}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga083292ffe08a26115d9a506250e250f0}{00130}}\ \textcolor{preprocessor}{\#define\ MATH\_5\_8\ \ \ \ \ \ \ \ \ \ 0.625f\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00131}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga6ffcec3cd1291d0fca9526394c8b8aa2}{00131}}\ \textcolor{preprocessor}{\#define\ MATH\_7\_8\ \ \ \ \ \ \ \ \ \ 0.875f\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00132}00132\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00133}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gaeff82d76e3670dbba9cc0e55c70274a8}{00133}}\ \textcolor{preprocessor}{\#define\ MATH\_1\_9\ \ \ \ \ \ \ \ \ \ 0.1111111111f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00134}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gafc3e2b555a453494fa8c12d9c746b5e2}{00134}}\ \textcolor{preprocessor}{\#define\ MATH\_2\_9\ \ \ \ \ \ \ \ \ \ 0.2222222222f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00135}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga3ee79b70e2c9d82a37fdfb50f4b06393}{00135}}\ \textcolor{preprocessor}{\#define\ MATH\_4\_9\ \ \ \ \ \ \ \ \ \ 0.4444444444f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00136}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga5c559dfcad3a0914f7590881f46b1282}{00136}}\ \textcolor{preprocessor}{\#define\ MATH\_5\_9\ \ \ \ \ \ \ \ \ \ 0.5555555556f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00137}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga3818d5559faa72bf81f45e33ee529ba8}{00137}}\ \textcolor{preprocessor}{\#define\ MATH\_7\_9\ \ \ \ \ \ \ \ \ \ 0.7777777778f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00138}\mbox{\hyperlink{group___c_t_r_l___m_a_t_h_gac21c51a8fdf73457f551cc9586181f51}{00138}}\ \textcolor{preprocessor}{\#define\ MATH\_8\_9\ \ \ \ \ \ \ \ \ \ 0.8888888889f\ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00140}00140\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MATHDEF\_H}}
+\DoxyCodeLine{\Hypertarget{mathdef_8h_source_l00141}00141\ }
+
+\end{DoxyCode}

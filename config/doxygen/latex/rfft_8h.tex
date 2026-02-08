@@ -1,0 +1,160 @@
+\doxysection{D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Control\+\_\+\+Driver/rfft/rfft.h 文件参考}
+\hypertarget{rfft_8h}{}\label{rfft_8h}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/rfft/rfft.h@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/rfft/rfft.h}}
+
+
+FFT函数声明与结构体定义  
+
+
+{\ttfamily \#include "{}stdint.\+h"{}}\newline
+{\ttfamily \#include "{}string.\+h"{}}\newline
+{\ttfamily \#include "{}inc/hw\+\_\+types.\+h"{}}\newline
+{\ttfamily \#include $<$fpu32/\+C28x\+\_\+\+FPU\+\_\+\+Fast\+RTS.\+h$>$}\newline
+{\ttfamily \#include "{}fpu\+\_\+rfft.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+barthann.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+bartlett.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+blackman.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+blackmanharris.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+bohman.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+cheb.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+flattop.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+gauss.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+hamming.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+hann.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+kaiser.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+nuttall.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+parzen.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+rect.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+taylor.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+triang.\+h"{}}\newline
+{\ttfamily \#include "{}fpu32\+\_\+lib/fpu\+\_\+fft\+\_\+tukey.\+h"{}}\newline
+{\ttfamily \#include $<$mathdef/mathdef.\+h$>$}\newline
+rfft.\+h 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rfft_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件被哪些文件直接或间接地引用了\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{rfft_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{结构体}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_r_f_f_t}{RFFT}}
+\begin{DoxyCompactList}\small\item\em 结构体定义 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga0934cb2ea8795edf8b6733651f6aa72b}{FFT\+\_\+\+STAGE}}~8
+\begin{DoxyCompactList}\small\item\em FFT阶数 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}}~(1U$<$$<$\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga0934cb2ea8795edf8b6733651f6aa72b}{FFT\+\_\+\+STAGE}})
+\begin{DoxyCompactList}\small\item\em FFT数组长度 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga773ffe60e709d24ffac8f78acd36470f}{FFT\+\_\+\+PEAK\+\_\+\+MAX}}~20
+\begin{DoxyCompactList}\small\item\em FFT幅度谱峰值个数最大值 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga375c03b6ba7682f23a46a642bc7c35ea}{FFT\+\_\+\+TOLERANCE}}~0.\+05f
+\begin{DoxyCompactList}\small\item\em FFT峰值噪声阈限, 小于 FFT\+\_\+\+TOLERANCE \texorpdfstring{$\ast$}{*} peak\+\_\+max 的峰视为噪声 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga073028e7d311cec2453b9da422e8dc64}{FFT\+\_\+\+WINDOW\+\_\+\+DISABLE}}
+\begin{DoxyCompactList}\small\item\em FFT是否加窗 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gac4dab8d5ec53a02e5308e7485b6d3fc7}{FFT\+\_\+\+PHASE\+\_\+\+DISABLE}}
+\begin{DoxyCompactList}\small\item\em FFT是否计算相位 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga9b3757d7ef0e51af7ef76a1acc6e1fd2}{FFT\+\_\+\+WIN\+\_\+\+BARTHANN}}
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga6e5aa31fe14d96eebf6abbf1e59996b1}{FFT\+\_\+\+WIN\+\_\+\+BARTLETT}}~2.\+000f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga53a6c3aaf1e2e8693e69ed6a7a87dbba}{FFT\+\_\+\+WIN\+\_\+\+BLACKMAN}}~2.\+381f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga5ebcb55274da9413b87d4116abeb61b5}{FFT\+\_\+\+WIN\+\_\+\+BALCKMANHARRIS}}~2.\+787f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga3aef85b522e10497277a6cddfdc68f67}{FFT\+\_\+\+WIN\+\_\+\+BOHMAN}}~2.\+000f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaeca7f7ed1701823646bbf2bea2e549fc}{FFT\+\_\+\+WIN\+\_\+\+CHEB}}~2.\+600f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gab960ecbd76aea276928fa31b129f2ea9}{FFT\+\_\+\+WIN\+\_\+\+FLATTOP}}~1.\+110f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gad0e6a2876e0988bf7c2372601fdf60d2}{FFT\+\_\+\+WIN\+\_\+\+GAUSS}}~2.\+396f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaf9cc97e722abd383b4fc27941672c7a7}{FFT\+\_\+\+WIN\+\_\+\+HAMMING}}~1.\+852f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga272806e4c6f8566c705b4a3ee8df8fb2}{FFT\+\_\+\+WIN\+\_\+\+HANN}}~2.\+000f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga524b982fc5c02b1abf946f141ae4a2ea}{FFT\+\_\+\+WIN\+\_\+\+KAISER}}~2.\+480f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga763a23c30b221c29b025869f8deb676d}{FFT\+\_\+\+WIN\+\_\+\+MUTTALL}}~2.\+816f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga20b73bc4ad4a490def9603d6d7543cd8}{FFT\+\_\+\+WIN\+\_\+\+PARZEN}}~2.\+000f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga8b69925e12b71ddb6ee21ad7776c3c43}{FFT\+\_\+\+WIN\+\_\+\+RECT}}~1.\+000f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga46054988db4cec96d91a91e4fc449581}{FFT\+\_\+\+WIN\+\_\+\+TAYLOR}}~1.\+700f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga0f64bffc15e2434d545dbcbf4c4dd0ca}{FFT\+\_\+\+WIN\+\_\+\+TRIANG}}~2.\+000f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gab320c9b00551ebcb5a115dfcdf88b9aa}{FFT\+\_\+\+WIN\+\_\+\+TUKEY}}~1.\+500f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga626007536417efdacd8d5a3917b7002a}{FFT\+\_\+\+WINDOW\+\_\+\+GAIN}}~1.\+0f
+\begin{DoxyCompactList}\small\item\em FFT窗函数幅值修正系数 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gafa99ec4acc4ecb2dc3c2d05da15d0e3f}{MAX}}(a,  b)
+\begin{DoxyCompactList}\small\item\em 使用三目运算符的最大值 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga3acffbd305ee72dcd4593c0d8af64a4f}{MIN}}(a,  b)
+\begin{DoxyCompactList}\small\item\em 使用三目运算符的最小值 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaba1a1aa3c6bb536435957847da9c1b2f}{FFT\+\_\+\+MODE}} \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga035262da3af2ac3fc5c514365123f961}{FFT\+\_\+\+MODE}}
+\begin{DoxyCompactList}\small\item\em 定义\+RFFT频谱分析模式 \end{DoxyCompactList}\item 
+typedef struct RFFT \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga0b2c567a47e65f4abfa1cd1b7f099734}{RFFT}}
+\begin{DoxyCompactList}\small\item\em 结构体定义 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaba1a1aa3c6bb536435957847da9c1b2f}{FFT\+\_\+\+MODE}} \{ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2faeb8448db629160ec8f03e448a8ab078d}{FFT\+\_\+\+MODE\+\_\+\+NULL}} = 0U
+, \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2fac4acfd934cb0e9a237ace151235488f5}{FFT\+\_\+\+GRID\+\_\+\+LOCK}} = 1U
+, \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2fabdd1a5e2d1c04b1d17b1bfa214d11112}{FFT\+\_\+\+PEAK\+\_\+\+FIND}} = 2U
+ \}
+\begin{DoxyCompactList}\small\item\em 定义\+RFFT频谱分析模式 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaaca2fd3267a4458de0b5f4d37b0d85b8}{RFFT\+\_\+\+Init}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}, float32\+\_\+t \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga5a0f4b49baab36db0c5e1922cdbc6c71}{input}}, float32\+\_\+t \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaf41db2f2a8a877a4d60944cafafac70c}{output}}, float32\+\_\+t \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga56ce624e4d31bc2956066f5fa5b6b34d}{twiddle}}, float32\+\_\+t \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga429b259b6633b6a2b677ba475d840c63}{magnitude}})
+\begin{DoxyCompactList}\small\item\em 初始化与配置\+RFFT指针 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga8879dcbb9c5197cd6dfb4f30369a96e4}{RFFT\+\_\+\+Set}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}, float32\+\_\+t fs, float32\+\_\+t fgrid)
+\begin{DoxyCompactList}\small\item\em 配置\+RFFT参数, 确定\+FFT幅度谱分析模式 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga413312679334b30df43bf8c9d9530dba}{RFFT\+\_\+\+Run}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}})
+\begin{DoxyCompactList}\small\item\em 执行\+RFFT信号分析 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gad1e815d931ea459fc390f308cd553710}{RFFT\+\_\+\+Peak\+\_\+\+Find}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}})
+\begin{DoxyCompactList}\small\item\em delta\+\_\+f != fgrid, 寻找幅度谱峰值 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga3fc7edfa39757d7ff7e4522bcbbbf07d}{RFFT\+\_\+\+Grid\+\_\+\+Lock}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}})
+\begin{DoxyCompactList}\small\item\em delta\+\_\+f == fgrid, 幅度谱每个元素即为一个谐波峰 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga5a0f4b49baab36db0c5e1922cdbc6c71}{input}} \mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 输入数组 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaf41db2f2a8a877a4d60944cafafac70c}{output}} \mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 输出数组 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga56ce624e4d31bc2956066f5fa5b6b34d}{twiddle}} \mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 预畸变因子表 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga429b259b6633b6a2b677ba475d840c63}{magnitude}} \mbox{[}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}} $>$ $>$1)+1\mbox{]}
+\begin{DoxyCompactList}\small\item\em 输出幅值 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}
+\begin{DoxyCompactList}\small\item\em RFFT结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+FFT函数声明与结构体定义 
+
+\begin{DoxyAuthor}{作者}
+Mao Chenbin (\href{mailto:508038890@qq.com}{\texttt{508038890@qq.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyNote}{注解}
+使用\+CCS时,需要.\+syscfg文件内添加\+FFT, 但是不要添加具体的 FFT Configurations 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 中定义.
+

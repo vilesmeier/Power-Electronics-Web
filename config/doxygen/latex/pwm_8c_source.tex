@@ -1,0 +1,294 @@
+\doxysection{pwm.\+c}
+\hypertarget{pwm_8c_source}{}\label{pwm_8c_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/PWM/pwm.c@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/PWM/pwm.c}}
+\mbox{\hyperlink{pwm_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00009}\mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga6f7068187c566632edbcc40fb80774a6}{00009}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga6f7068187c566632edbcc40fb80774a6}{EPWM1\_Init}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00010}00010\ \{}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00011}00011\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00012}00012\ \ \ \ \ EPwm1Regs.TBCTL.bit.SYNCOSEL\ =\ TB\_CTR\_ZERO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00013}00013\ \ \ \ \ EPwm1Regs.TBCTL.bit.PHSEN\ =\ TB\_DISABLE;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00014}00014\ \ \ \ \ EPwm1Regs.TBPHS.half.TBPHS\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00015}00015\ \ \ \ \ EPwm1Regs.TBCTR\ =\ 0x0000;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00016}00016\ \ \ \ \ EPwm1Regs.TBPRD\ =\ 3750;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00017}00017\ \ \ \ \ EPwm1Regs.TBCTL.bit.CTRMODE=TB\_COUNT\_UPDOWN;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00018}00018\ \ \ \ \ EPwm1Regs.TBCTL.bit.HSPCLKDIV=TB\_DIV1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00019}00019\ \ \ \ \ EPwm1Regs.TBCTL.bit.CLKDIV=TB\_DIV1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00021}00021\ \ \ \ \ EPwm1Regs.CMPCTL.bit.SHDWAMODE\ =\ CC\_SHADOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00022}00022\ \ \ \ \ EPwm1Regs.CMPCTL.bit.LOADAMODE\ =\ CC\_CTR\_ZERO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00023}00023\ \ \ \ \ EPwm1Regs.CMPCTL.bit.SHDWBMODE\ =\ CC\_SHADOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00024}00024\ \ \ \ \ EPwm1Regs.CMPCTL.bit.LOADBMODE\ =\ CC\_CTR\_ZERO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00025}00025\ \ \ \ \ EPwm1Regs.CMPA.half.CMPA\ =\ 1875;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00026}00026\ \ \ \ \ EPwm1Regs.CMPB\ =\ 1875;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00028}00028\ \ \ \ \ EPwm1Regs.AQCTLA.bit.CAU\ =\ AQ\_SET;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00029}00029\ \ \ \ \ EPwm1Regs.AQCTLA.bit.CAD\ =\ AQ\_CLEAR;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00030}00030\ \ \ \ \ EPwm1Regs.AQCTLB.bit.CAU\ =\ AQ\_CLEAR;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00031}00031\ \ \ \ \ EPwm1Regs.AQCTLB.bit.CAD\ =\ AQ\_SET;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00033}00033\ \ \ \ \ EPwm1Regs.TZCTL.bit.TZA\ =\ TZ\_FORCE\_LO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00034}00034\ \ \ \ \ EPwm1Regs.TZCTL.bit.TZB\ =\ TZ\_FORCE\_LO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00035}00035\ \ \ \ \ EPwm1Regs.TZSEL.bit.OSHT1\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00036}00036\ \ \ \ \ EPwm1Regs.TZSEL.bit.OSHT2\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00039}00039\ \ \ \ \ EPwm1Regs.ETSEL.bit.SOCASEL\ =\ ET\_CTR\_ZERO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00040}00040\ \ \ \ \ EPwm1Regs.ETSEL.bit.SOCAEN\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00041}00041\ \ \ \ \ EPwm1Regs.ETPS.bit.SOCAPRD\ =\ ET\_1ST;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00042}00042\ \textcolor{comment}{//\ \ \ \ EPwm1Regs.ETSEL.bit.INTSEL\ =\ ET\_CTR\_ZERO;}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00043}00043\ \textcolor{comment}{//\ \ \ \ EPwm1Regs.ETSEL.bit.INTEN\ =\ 1;}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00044}00044\ \textcolor{comment}{//\ \ \ \ EPwm1Regs.ETPS.bit.INTPRD\ =\ ET\_1ST;}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00045}00045\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00046}00046\ \}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00048}\mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga4167cb83a1772e137250bf42d2a0cf04}{00048}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga4167cb83a1772e137250bf42d2a0cf04}{EPWM2\_Init}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00049}00049\ \{}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00050}00050\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00051}00051\ \ \ \ \ EPwm2Regs.TBCTL.bit.SYNCOSEL\ =\ TB\_SYNC\_IN;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00052}00052\ \ \ \ \ EPwm2Regs.TBCTL.bit.PHSEN\ =\ TB\_ENABLE;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00053}00053\ \ \ \ \ EPwm2Regs.TBPHS.half.TBPHS\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00054}00054\ \ \ \ \ EPwm2Regs.TBCTR\ =\ 0x0000;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00055}00055\ \ \ \ \ EPwm2Regs.TBPRD\ =\ 3750;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00056}00056\ \ \ \ \ EPwm2Regs.TBCTL.bit.CTRMODE=TB\_COUNT\_UPDOWN;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00057}00057\ \ \ \ \ EPwm2Regs.TBCTL.bit.HSPCLKDIV=TB\_DIV1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00058}00058\ \ \ \ \ EPwm2Regs.TBCTL.bit.CLKDIV=TB\_DIV1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00060}00060\ \ \ \ \ EPwm2Regs.CMPCTL.bit.SHDWAMODE\ =\ CC\_SHADOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00061}00061\ \ \ \ \ EPwm2Regs.CMPCTL.bit.LOADAMODE\ =\ CC\_CTR\_ZERO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00062}00062\ \ \ \ \ EPwm2Regs.CMPCTL.bit.SHDWBMODE\ =\ CC\_SHADOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00063}00063\ \ \ \ \ EPwm2Regs.CMPCTL.bit.LOADBMODE\ =\ CC\_CTR\_ZERO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00064}00064\ \ \ \ \ EPwm2Regs.CMPA.half.CMPA\ =\ 1875;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00065}00065\ \ \ \ \ EPwm2Regs.CMPB\ =\ 1875;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00067}00067\ \ \ \ \ EPwm2Regs.AQCTLA.bit.CAU\ =\ AQ\_CLEAR;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00068}00068\ \ \ \ \ EPwm2Regs.AQCTLA.bit.CAD\ =\ AQ\_SET;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00069}00069\ \ \ \ \ EPwm2Regs.AQCTLB.bit.CAU\ =\ AQ\_SET;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00070}00070\ \ \ \ \ EPwm2Regs.AQCTLB.bit.CAD\ =\ AQ\_CLEAR;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00072}00072\ \ \ \ \ EPwm2Regs.TZCTL.bit.TZA\ =\ TZ\_FORCE\_LO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00073}00073\ \ \ \ \ EPwm2Regs.TZCTL.bit.TZB\ =\ TZ\_FORCE\_LO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00074}00074\ \ \ \ \ EPwm1Regs.TZSEL.bit.OSHT1\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00075}00075\ \ \ \ \ EPwm1Regs.TZSEL.bit.OSHT2\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00076}00076\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00077}00077\ \}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00079}\mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga19ab3319e303cfcc02f1a5011aa7c012}{00079}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga19ab3319e303cfcc02f1a5011aa7c012}{EPWM3\_Init}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00080}00080\ \{}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00081}00081\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00082}00082\ \ \ \ \ EPwm3Regs.TBCTL.bit.SYNCOSEL\ =\ TB\_SYNC\_IN;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00083}00083\ \ \ \ \ EPwm3Regs.TBCTL.bit.PHSEN\ =\ TB\_ENABLE;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00084}00084\ \ \ \ \ EPwm3Regs.TBPHS.half.TBPHS\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00085}00085\ \ \ \ \ EPwm3Regs.TBCTR\ =\ 0x0000;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00086}00086\ \ \ \ \ EPwm3Regs.TBPRD\ =\ 3750;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00087}00087\ \ \ \ \ EPwm3Regs.TBCTL.bit.CTRMODE=TB\_COUNT\_UPDOWN;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00088}00088\ \ \ \ \ EPwm3Regs.TBCTL.bit.HSPCLKDIV=TB\_DIV1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00089}00089\ \ \ \ \ EPwm3Regs.TBCTL.bit.CLKDIV=TB\_DIV1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00091}00091\ \ \ \ \ EPwm3Regs.CMPCTL.bit.SHDWAMODE\ =\ CC\_SHADOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00092}00092\ \ \ \ \ EPwm3Regs.CMPCTL.bit.LOADAMODE\ =\ CC\_CTR\_ZERO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00093}00093\ \ \ \ \ EPwm3Regs.CMPCTL.bit.SHDWBMODE\ =\ CC\_SHADOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00094}00094\ \ \ \ \ EPwm3Regs.CMPCTL.bit.LOADBMODE\ =\ CC\_CTR\_ZERO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00095}00095\ \ \ \ \ EPwm3Regs.CMPA.half.CMPA\ =\ 1875;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00096}00096\ \ \ \ \ EPwm3Regs.CMPB\ =\ 1875;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00098}00098\ \ \ \ \ EPwm3Regs.AQCTLA.bit.CAU\ =\ AQ\_SET;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00099}00099\ \ \ \ \ EPwm3Regs.AQCTLA.bit.CAD\ =\ AQ\_CLEAR;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00100}00100\ \ \ \ \ EPwm3Regs.AQCTLB.bit.CAU\ =\ AQ\_CLEAR;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00101}00101\ \ \ \ \ EPwm3Regs.AQCTLB.bit.CAD\ =\ AQ\_SET;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00103}00103\ \ \ \ \ EPwm3Regs.TZCTL.bit.TZA\ =\ TZ\_FORCE\_LO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00104}00104\ \ \ \ \ EPwm3Regs.TZCTL.bit.TZB\ =\ TZ\_FORCE\_LO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00105}00105\ \ \ \ \ EPwm1Regs.TZSEL.bit.OSHT1\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00106}00106\ \ \ \ \ EPwm1Regs.TZSEL.bit.OSHT2\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00107}00107\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00108}00108\ \}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00110}\mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga8f55165e10785eaf3e50d7010a6e66b2}{00110}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga8f55165e10785eaf3e50d7010a6e66b2}{EPWM4\_Init}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00111}00111\ \{}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00112}00112\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00113}00113\ \ \ \ \ EPwm4Regs.TBCTL.bit.SYNCOSEL\ =\ TB\_SYNC\_IN;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00114}00114\ \ \ \ \ EPwm4Regs.TBCTL.bit.PHSEN\ =\ TB\_ENABLE;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00115}00115\ \ \ \ \ EPwm4Regs.TBPHS.half.TBPHS\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00116}00116\ \ \ \ \ EPwm4Regs.TBCTR\ =\ 0x0000;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00117}00117\ \ \ \ \ EPwm4Regs.TBPRD\ =\ 3750;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00118}00118\ \ \ \ \ EPwm4Regs.TBCTL.bit.CTRMODE=TB\_COUNT\_UPDOWN;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00119}00119\ \ \ \ \ EPwm4Regs.TBCTL.bit.HSPCLKDIV=TB\_DIV1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00120}00120\ \ \ \ \ EPwm4Regs.TBCTL.bit.CLKDIV=TB\_DIV1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00122}00122\ \ \ \ \ EPwm4Regs.CMPCTL.bit.SHDWAMODE\ =\ CC\_SHADOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00123}00123\ \ \ \ \ EPwm4Regs.CMPCTL.bit.LOADAMODE\ =\ CC\_CTR\_ZERO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00124}00124\ \ \ \ \ EPwm4Regs.CMPCTL.bit.SHDWBMODE\ =\ CC\_SHADOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00125}00125\ \ \ \ \ EPwm4Regs.CMPCTL.bit.LOADBMODE\ =\ CC\_CTR\_ZERO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00126}00126\ \ \ \ \ EPwm4Regs.CMPA.half.CMPA\ =\ 1875;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00127}00127\ \ \ \ \ EPwm4Regs.CMPB\ =\ 1875;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00128}00128\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00129}00129\ \ \ \ \ EPwm4Regs.AQCTLA.bit.CAU\ =\ AQ\_SET;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00130}00130\ \ \ \ \ EPwm4Regs.AQCTLA.bit.CAD\ =\ AQ\_CLEAR;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00131}00131\ \ \ \ \ EPwm4Regs.AQCTLB.bit.CAU\ =\ AQ\_CLEAR;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00132}00132\ \ \ \ \ EPwm4Regs.AQCTLB.bit.CAD\ =\ AQ\_SET;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00134}00134\ \ \ \ \ EPwm4Regs.TZCTL.bit.TZA\ =\ TZ\_FORCE\_LO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00135}00135\ \ \ \ \ EPwm4Regs.TZCTL.bit.TZB\ =\ TZ\_FORCE\_LO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00136}00136\ \ \ \ \ EPwm1Regs.TZSEL.bit.OSHT1\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00137}00137\ \ \ \ \ EPwm1Regs.TZSEL.bit.OSHT2\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00138}00138\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00139}00139\ \}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00140}00140\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00141}\mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga502259ba461c849a9b2c6574fc5a4f0a}{00141}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga502259ba461c849a9b2c6574fc5a4f0a}{EPWM5\_Init}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00142}00142\ \{}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00143}00143\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00144}00144\ \ \ \ \ EPwm5Regs.TBCTL.bit.SYNCOSEL\ =\ TB\_SYNC\_IN;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00145}00145\ \ \ \ \ EPwm5Regs.TBCTL.bit.PHSEN\ =\ TB\_ENABLE;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00146}00146\ \ \ \ \ EPwm5Regs.TBPHS.half.TBPHS\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00147}00147\ \ \ \ \ EPwm5Regs.TBCTR\ =\ 0x0000;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00148}00148\ \ \ \ \ EPwm5Regs.TBPRD\ =\ 3750;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00149}00149\ \ \ \ \ EPwm5Regs.TBCTL.bit.CTRMODE=TB\_COUNT\_UPDOWN;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00150}00150\ \ \ \ \ EPwm5Regs.TBCTL.bit.HSPCLKDIV=TB\_DIV1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00151}00151\ \ \ \ \ EPwm5Regs.TBCTL.bit.CLKDIV=TB\_DIV1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00152}00152\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00153}00153\ \ \ \ \ EPwm5Regs.CMPCTL.bit.SHDWAMODE\ =\ CC\_SHADOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00154}00154\ \ \ \ \ EPwm5Regs.CMPCTL.bit.LOADAMODE\ =\ CC\_CTR\_ZERO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00155}00155\ \ \ \ \ EPwm5Regs.CMPCTL.bit.SHDWBMODE\ =\ CC\_SHADOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00156}00156\ \ \ \ \ EPwm5Regs.CMPCTL.bit.LOADBMODE\ =\ CC\_CTR\_ZERO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00157}00157\ \ \ \ \ EPwm5Regs.CMPA.half.CMPA\ =\ 1875;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00158}00158\ \ \ \ \ EPwm5Regs.CMPB\ =\ 1875;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00159}00159\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00160}00160\ \ \ \ \ EPwm5Regs.AQCTLA.bit.CAU\ =\ AQ\_SET;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00161}00161\ \ \ \ \ EPwm5Regs.AQCTLA.bit.CAD\ =\ AQ\_CLEAR;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00162}00162\ \ \ \ \ EPwm5Regs.AQCTLB.bit.CAU\ =\ AQ\_CLEAR;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00163}00163\ \ \ \ \ EPwm5Regs.AQCTLB.bit.CAD\ =\ AQ\_SET;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00164}00164\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00165}00165\ \ \ \ \ EPwm5Regs.TZCTL.bit.TZA\ =\ TZ\_FORCE\_LO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00166}00166\ \ \ \ \ EPwm5Regs.TZCTL.bit.TZB\ =\ TZ\_FORCE\_LO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00167}00167\ \ \ \ \ EPwm1Regs.TZSEL.bit.OSHT1\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00168}00168\ \ \ \ \ EPwm1Regs.TZSEL.bit.OSHT2\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00169}00169\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00170}00170\ \}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00172}00172\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00173}\mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga70fb89886932215f278eae98bcc64970}{00173}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga70fb89886932215f278eae98bcc64970}{EPWM6\_Init}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00174}00174\ \{}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00175}00175\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00176}00176\ \ \ \ \ EPwm6Regs.TBCTL.bit.SYNCOSEL\ =\ TB\_SYNC\_IN;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00177}00177\ \ \ \ \ EPwm6Regs.TBCTL.bit.PHSEN\ =\ TB\_ENABLE;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00178}00178\ \ \ \ \ EPwm6Regs.TBPHS.half.TBPHS\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00179}00179\ \ \ \ \ EPwm6Regs.TBCTR\ =\ 0x0000;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00180}00180\ \ \ \ \ EPwm6Regs.TBPRD\ =\ 3750;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00181}00181\ \ \ \ \ EPwm6Regs.TBCTL.bit.CTRMODE=TB\_COUNT\_UPDOWN;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00182}00182\ \ \ \ \ EPwm6Regs.TBCTL.bit.HSPCLKDIV=TB\_DIV1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00183}00183\ \ \ \ \ EPwm6Regs.TBCTL.bit.CLKDIV=TB\_DIV1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00184}00184\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00185}00185\ \ \ \ \ EPwm6Regs.CMPCTL.bit.SHDWAMODE\ =\ CC\_SHADOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00186}00186\ \ \ \ \ EPwm6Regs.CMPCTL.bit.LOADAMODE\ =\ CC\_CTR\_ZERO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00187}00187\ \ \ \ \ EPwm6Regs.CMPCTL.bit.SHDWBMODE\ =\ CC\_SHADOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00188}00188\ \ \ \ \ EPwm6Regs.CMPCTL.bit.LOADBMODE\ =\ CC\_CTR\_ZERO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00189}00189\ \ \ \ \ EPwm6Regs.CMPA.half.CMPA\ =\ 1875;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00190}00190\ \ \ \ \ EPwm6Regs.CMPB\ =\ 1875;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00191}00191\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00192}00192\ \ \ \ \ EPwm6Regs.AQCTLA.bit.CAU\ =\ AQ\_SET;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00193}00193\ \ \ \ \ EPwm6Regs.AQCTLA.bit.CAD\ =\ AQ\_CLEAR;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00194}00194\ \ \ \ \ EPwm6Regs.AQCTLB.bit.CAU\ =\ AQ\_CLEAR;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00195}00195\ \ \ \ \ EPwm6Regs.AQCTLB.bit.CAD\ =\ AQ\_SET;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00196}00196\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00197}00197\ \ \ \ \ EPwm6Regs.TZCTL.bit.TZA\ =\ TZ\_FORCE\_LO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00198}00198\ \ \ \ \ EPwm6Regs.TZCTL.bit.TZB\ =\ TZ\_FORCE\_LO;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00199}00199\ \ \ \ \ EPwm1Regs.TZSEL.bit.OSHT1\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00200}00200\ \ \ \ \ EPwm1Regs.TZSEL.bit.OSHT2\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00201}00201\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00202}00202\ \}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00203}00203\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00204}\mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga16a6a31227f60674257e9715ee0c1638}{00204}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga16a6a31227f60674257e9715ee0c1638}{EPWM\_Init}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00205}00205\ \{}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00206}00206\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00207}00207\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00208}00208\ \ \ \ \ SysCtrlRegs.PCLKCR0.bit.TBCLKSYNC\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00209}00209\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00210}00210\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00211}00211\ \ \ \ \ \textcolor{comment}{//init\ GPIO\ for\ ePWM1-\/6}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00212}00212\ \ \ \ \ InitEPwmGpio();}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00213}00213\ \ \ \ \ \textcolor{comment}{//init\ GPIO\ for\ Tz1-\/6}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00214}00214\ \ \ \ \ InitTzGpio();}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00215}00215\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00216}00216\ \ \ \ \ \textcolor{comment}{//init\ system\ interrupt}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00217}00217\ \ \ \ \ DINT;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00218}00218\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00219}00219\ \ \ \ \ PieVectTable.EPWM1\_INT\ =\ \&\mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga9caa452be413513f8a1de581b6c9190d}{epwm1\_isr}};}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00220}00220\ \ \ \ \ IER\ |=\ M\_INT3;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00221}00221\ \ \ \ \ PieCtrlRegs.PIEIER3.bit.INTx1\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00222}00222\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00223}00223\ \ \ \ \ EINT;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00224}00224\ \ \ \ \ ERTM;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00225}00225\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00226}00226\ \ \ \ \ \textcolor{comment}{//init\ ePWM}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00227}00227\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga6f7068187c566632edbcc40fb80774a6}{EPWM1\_Init}}();}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00228}00228\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga4167cb83a1772e137250bf42d2a0cf04}{EPWM2\_Init}}();}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00229}00229\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga19ab3319e303cfcc02f1a5011aa7c012}{EPWM3\_Init}}();}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00230}00230\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga8f55165e10785eaf3e50d7010a6e66b2}{EPWM4\_Init}}();}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00231}00231\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga502259ba461c849a9b2c6574fc5a4f0a}{EPWM5\_Init}}();}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00232}00232\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga70fb89886932215f278eae98bcc64970}{EPWM6\_Init}}();}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00233}00233\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00234}00234\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00235}00235\ \ \ \ \ SysCtrlRegs.PCLKCR0.bit.TBCLKSYNC\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00236}00236\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00237}00237\ \}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00238}00238\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00239}\mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga36d090e7e692328775bd140caf554801}{00239}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga36d090e7e692328775bd140caf554801}{EPWM\_TZ\_Software\_OST\_Set}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00240}00240\ \{}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00241}00241\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00242}00242\ \ \ \ \ EPwm1Regs.TZFRC.bit.OST\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00243}00243\ \ \ \ \ EPwm2Regs.TZFRC.bit.OST\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00244}00244\ \ \ \ \ EPwm3Regs.TZFRC.bit.OST\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00245}00245\ \ \ \ \ EPwm4Regs.TZFRC.bit.OST\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00246}00246\ \ \ \ \ EPwm5Regs.TZFRC.bit.OST\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00247}00247\ \ \ \ \ EPwm6Regs.TZFRC.bit.OST\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00248}00248\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00249}00249\ \}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00250}00250\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00251}\mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga0bc38d9171c905fdf109943209045b8d}{00251}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga0bc38d9171c905fdf109943209045b8d}{EPWM\_TZ\_Software\_CBC\_Set}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00252}00252\ \{}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00253}00253\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00254}00254\ \ \ \ \ EPwm1Regs.TZFRC.bit.CBC\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00255}00255\ \ \ \ \ EPwm2Regs.TZFRC.bit.CBC\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00256}00256\ \ \ \ \ EPwm3Regs.TZFRC.bit.CBC\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00257}00257\ \ \ \ \ EPwm4Regs.TZFRC.bit.CBC\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00258}00258\ \ \ \ \ EPwm5Regs.TZFRC.bit.CBC\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00259}00259\ \ \ \ \ EPwm6Regs.TZFRC.bit.CBC\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00260}00260\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00261}00261\ \}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00262}00262\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00263}\mbox{\hyperlink{group___d_r_v___f28335___p_w_m_gae68ef8773c30887b37eca98480b455b6}{00263}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_gae68ef8773c30887b37eca98480b455b6}{EPWM\_TZ\_Software\_OST\_Clear}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00264}00264\ \{}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00265}00265\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00266}00266\ \ \ \ \ EPwm1Regs.TZCLR.bit.OST\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00267}00267\ \ \ \ \ EPwm2Regs.TZCLR.bit.OST\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00268}00268\ \ \ \ \ EPwm3Regs.TZCLR.bit.OST\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00269}00269\ \ \ \ \ EPwm4Regs.TZCLR.bit.OST\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00270}00270\ \ \ \ \ EPwm5Regs.TZCLR.bit.OST\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00271}00271\ \ \ \ \ EPwm6Regs.TZCLR.bit.OST\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00272}00272\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00273}00273\ \}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00274}00274\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00275}\mbox{\hyperlink{group___d_r_v___f28335___p_w_m_gad15eb4d13278eb7d75a0575738cbabb5}{00275}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_gad15eb4d13278eb7d75a0575738cbabb5}{EPWM\_TZ\_Software\_CBC\_Clear}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00276}00276\ \{}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00277}00277\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00278}00278\ \ \ \ \ EPwm1Regs.TZCLR.bit.CBC\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00279}00279\ \ \ \ \ EPwm2Regs.TZCLR.bit.CBC\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00280}00280\ \ \ \ \ EPwm3Regs.TZCLR.bit.CBC\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00281}00281\ \ \ \ \ EPwm4Regs.TZCLR.bit.CBC\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00282}00282\ \ \ \ \ EPwm5Regs.TZCLR.bit.CBC\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00283}00283\ \ \ \ \ EPwm6Regs.TZCLR.bit.CBC\ =\ 0x1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00284}00284\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00285}00285\ \}}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00286}00286\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00287}\mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga9caa452be413513f8a1de581b6c9190d}{00287}}\ interrupt\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga9caa452be413513f8a1de581b6c9190d}{epwm1\_isr}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00288}00288\ \{}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00289}00289\ }
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00290}00290\ \ \ \ \ EPwm1Regs.ETCLR.bit.INT\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00291}00291\ \ \ \ \ PieCtrlRegs.PIEACK.all\ =\ PIEACK\_GROUP3;}
+\DoxyCodeLine{\Hypertarget{pwm_8c_source_l00292}00292\ \}}
+
+\end{DoxyCode}

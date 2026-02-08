@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - api-docs
   workflow_dispatch:
 
 permissions:
@@ -29,16 +28,5 @@ jobs:
       run: |
         pip install mkdocs mkdocs-material
 
-    # - name: Install Doxygen
-    #   run: |
-    #     sudo apt-get update
-    #     sudo apt-get install -y doxygen graphviz
-
-    # - name: Generate Doxygen
-    #   run: |
-    #     doxygen Doxyfile
-
     - name: Build and Deploy MkDocs
-      run: mkdocs gh-deploy --force
-
-
+      run: mkdocs gh-deploy --config-file config/mkdocs/mkdocs.yml --force

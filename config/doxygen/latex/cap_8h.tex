@@ -1,0 +1,91 @@
+\doxysection{D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Peripheral\+\_\+\+Driver/28335/\+CAP/cap.h 文件参考}
+\hypertarget{cap_8h}{}\label{cap_8h}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/CAP/cap.h@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/CAP/cap.h}}
+
+
+ecap driver header  
+
+
+{\ttfamily \#include "{}DSP28x\+\_\+\+Project.\+h"{}}\newline
+cap.\+h 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{cap_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件被哪些文件直接或间接地引用了\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cap_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{结构体}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_a_p___d_u_t_y}{CAP\+\_\+\+DUTY}}
+\begin{DoxyCompactList}\small\item\em define ecap duty cal parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct CAP\+\_\+\+DUTY \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga90b4ebc849e2d544484d035f8e31870f}{CAP\+\_\+\+DUTY}}
+\begin{DoxyCompactList}\small\item\em define ecap duty cal parameters \end{DoxyCompactList}\item 
+typedef enum \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga76eb5a1497136b9e7bb7ab7a8a359135}{ECAP\+\_\+\+EDGE}} \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gaa7b47ca189da144e24b2ac8e11a20201}{ECAP\+\_\+\+EDGE}}
+\begin{DoxyCompactList}\small\item\em define edge selete \end{DoxyCompactList}\item 
+typedef enum \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga7ddea606ee19f50c31837ae7bcf8ced9}{ECAP\+\_\+\+ACTION}} \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gaca2d52ae7789205b1f473dc01c0cad49}{ECAP\+\_\+\+ACTION}}
+\begin{DoxyCompactList}\small\item\em define ecap action method at edge \end{DoxyCompactList}\item 
+typedef enum \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga113b6a30f163ccfaf0bd11ec2b6cc582}{ECAP\+\_\+\+COUNT}} \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga2a5dec36b0c1ae55b6794db658d74766}{CAP\+\_\+\+COUNT}}
+\begin{DoxyCompactList}\small\item\em define working times \end{DoxyCompactList}\item 
+typedef enum \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga8dfa5f1e8640d8f8b33b11ea9f0ab79d}{ECAP\+\_\+\+MODE}} \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gae56e8c57f7fe973320bdf3397a004a77}{ECAP\+\_\+\+MODE}}
+\begin{DoxyCompactList}\small\item\em define working mode \end{DoxyCompactList}\item 
+typedef enum \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga337b2c66558f66373a35b48ea34ab70e}{ECAP\+\_\+\+EN}} \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga19500b60f4f83f2f8af48bbf19324f1a}{ECAP\+\_\+\+EN}}
+\begin{DoxyCompactList}\small\item\em define module enable \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga76eb5a1497136b9e7bb7ab7a8a359135}{ECAP\+\_\+\+EDGE}} \{ \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gga76eb5a1497136b9e7bb7ab7a8a359135a733fd2b6fedd11ff5ca179bff8338f27}{POSEDGE}} = 0U
+, \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gga76eb5a1497136b9e7bb7ab7a8a359135ab5082d97d82be2b7da954da00900a1ee}{NEGEDGE}} = 1U
+ \}
+\begin{DoxyCompactList}\small\item\em define edge selete \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga7ddea606ee19f50c31837ae7bcf8ced9}{ECAP\+\_\+\+ACTION}} \{ \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gga7ddea606ee19f50c31837ae7bcf8ced9a8bb584db01e5ebc3a3d4d84157cebc3d}{NOACTION}} = 0U
+, \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gga7ddea606ee19f50c31837ae7bcf8ced9a589b7d94a3d91d145720e2fed0eb3a05}{RESET}} = 1U
+ \}
+\begin{DoxyCompactList}\small\item\em define ecap action method at edge \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga113b6a30f163ccfaf0bd11ec2b6cc582}{ECAP\+\_\+\+COUNT}} \{ \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gga113b6a30f163ccfaf0bd11ec2b6cc582acc0e9b0b8e17762597b86f1e02f0c063}{COUNT\+\_\+\+RUN}} = 0U
+, \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gga113b6a30f163ccfaf0bd11ec2b6cc582a811e55ae9fced8f0b5d4be29bbe0775b}{ONE\+\_\+\+SHOT}} = 1U
+ \}
+\begin{DoxyCompactList}\small\item\em define working times \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga8dfa5f1e8640d8f8b33b11ea9f0ab79d}{ECAP\+\_\+\+MODE}} \{ \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gga8dfa5f1e8640d8f8b33b11ea9f0ab79daf35f03ee4402ff2c8721d4851da99de3}{CAP}} = 0U
+, \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gga8dfa5f1e8640d8f8b33b11ea9f0ab79daef99a276e1f3b62b5df98acc27b38028}{PWM}} = 1U
+ \}
+\begin{DoxyCompactList}\small\item\em define working mode \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga337b2c66558f66373a35b48ea34ab70e}{ECAP\+\_\+\+EN}} \{ \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gga337b2c66558f66373a35b48ea34ab70ead3a9df141be0ccf10389b640f492b26d}{DISABLE}} = 0U
+, \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gga337b2c66558f66373a35b48ea34ab70ea7d46875fa3ebd2c34d2756950eda83bf}{ENABLE}} = 1U
+ \}
+\begin{DoxyCompactList}\small\item\em define module enable \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga51aa55ea7a5c4b34d01764c01dfbbaee}{ECAP1\+\_\+\+Pherial\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em init Ecap1 pherial \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gae185653a627aea6b835d827d7068f34c}{ECAP\+\_\+\+Struct\+\_\+\+Init}} (\mbox{\hyperlink{struct_c_a_p___d_u_t_y}{CAP\+\_\+\+DUTY}} \texorpdfstring{$\ast$}{*}cap)
+\begin{DoxyCompactList}\small\item\em init struct \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga4b33111f7676dc9e5f89634fea7d6e7c}{ECAP\+\_\+\+Init}} (\mbox{\hyperlink{struct_c_a_p___d_u_t_y}{CAP\+\_\+\+DUTY}} \texorpdfstring{$\ast$}{*}cap)
+\begin{DoxyCompactList}\small\item\em module init \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga8df0025a0591f0f13b7203a0f8645eb4}{ECAP\+\_\+\+Enable}} (void)
+\begin{DoxyCompactList}\small\item\em Ecap1 enable \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga00d36d0fe04fc8d25712cabcd1cdb887}{ECAP\+\_\+\+Disable}} (void)
+\begin{DoxyCompactList}\small\item\em Ecap disable \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga591c3b6b6bd07abecfc278dedbb7158f}{ECAP\+\_\+\+Get\+\_\+\+Duty}} (\mbox{\hyperlink{struct_c_a_p___d_u_t_y}{CAP\+\_\+\+DUTY}} \texorpdfstring{$\ast$}{*}cap)
+\begin{DoxyCompactList}\small\item\em get duty cycle of input signal \end{DoxyCompactList}\item 
+interrupt void \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gaed09226843cc2d90a2dce3404d804417}{ecap1\+\_\+isr}} (void)
+\begin{DoxyCompactList}\small\item\em interrupt server rountine \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+ecap driver header 
+
+
+
+在文件 \mbox{\hyperlink{cap_8h_source}{cap.\+h}} 中定义.
+

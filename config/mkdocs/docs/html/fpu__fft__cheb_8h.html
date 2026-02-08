@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC/NUEDC-Core/Code/Control_Driver/rfft/fpu32_lib/fpu_fft_cheb.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('fpu__fft__cheb_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fpu_fft_cheb.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="fpu__fft__cheb_8h__dep__incl.png" border="0" usemap="#a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu32__lib_2fpu__fft__cheb_8hdep" loading="lazy" alt=""/></div>
+<map name="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu32__lib_2fpu__fft__cheb_8hdep" id="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu32__lib_2fpu__fft__cheb_8hdep">
+<area shape="rect" title=" " alt="" coords="5,5,193,67"/>
+<area shape="rect" href="rfft_8h.html" title="FFT函数声明与结构体定义" alt="" coords="11,115,187,177"/>
+<area shape="poly" title=" " alt="" coords="102,83,102,114,96,114,96,83"/>
+<area shape="rect" href="rfft_8c.html" title="RFFT函数实现" alt="" coords="11,225,187,286"/>
+<area shape="poly" title=" " alt="" coords="102,192,102,224,96,224,96,192"/>
+</map>
+</div>
+</div>
+<p><a href="fpu__fft__cheb_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a832eb30137c37cbd1b60de46045353ef" id="r_a832eb30137c37cbd1b60de46045353ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a832eb30137c37cbd1b60de46045353ef">CHEB32</a></td></tr>
+<tr class="memitem:a84635dac2f1c754cc1fd99e87b15dc9c" id="r_a84635dac2f1c754cc1fd99e87b15dc9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84635dac2f1c754cc1fd99e87b15dc9c">CHEB64</a></td></tr>
+<tr class="memitem:a05d9aac7289cac7fab94429524b5cd6b" id="r_a05d9aac7289cac7fab94429524b5cd6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05d9aac7289cac7fab94429524b5cd6b">CHEB128</a></td></tr>
+<tr class="memitem:a6e4bc7c92671cf3c11881e071ad25159" id="r_a6e4bc7c92671cf3c11881e071ad25159"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e4bc7c92671cf3c11881e071ad25159">CHEB256</a></td></tr>
+<tr class="memitem:ac2ed01370b7f5ffe4ed290c6ed20d1b7" id="r_ac2ed01370b7f5ffe4ed290c6ed20d1b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2ed01370b7f5ffe4ed290c6ed20d1b7">CHEB512</a></td></tr>
+<tr class="memitem:ad032673d26c1491c6430be078078f863" id="r_ad032673d26c1491c6430be078078f863"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad032673d26c1491c6430be078078f863">CHEB1024</a></td></tr>
+<tr class="memitem:a4c0703ed57f8b2f5dd9d559736999d76" id="r_a4c0703ed57f8b2f5dd9d559736999d76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c0703ed57f8b2f5dd9d559736999d76">CHEB2048</a></td></tr>
+<tr class="memitem:a77b7f40c85b3f7a2898df828a1b8e636" id="r_a77b7f40c85b3f7a2898df828a1b8e636"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77b7f40c85b3f7a2898df828a1b8e636">CHEB4096</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="ad032673d26c1491c6430be078078f863" name="ad032673d26c1491c6430be078078f863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad032673d26c1491c6430be078078f863">&#9670;&#160;</a></span>CHEB1024</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHEB1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__cheb_8h_source.html">fpu_fft_cheb.h</a> 第 <a class="el" href="fpu__fft__cheb_8h_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a05d9aac7289cac7fab94429524b5cd6b" name="a05d9aac7289cac7fab94429524b5cd6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05d9aac7289cac7fab94429524b5cd6b">&#9670;&#160;</a></span>CHEB128</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHEB128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00042329, 0.00049354, 0.00077446, 0.00115489, 0.00165794, \</div>
+<div class="line">0.00230999, 0.00314084, 0.00418382, 0.00547589, 0.00705760, \</div>
+<div class="line">0.00897313, 0.01127012, 0.01399957, 0.01721556, 0.02097496, \</div>
+<div class="line">0.02533701, 0.03036292, 0.03611527, 0.04265740, 0.05005274, \</div>
+<div class="line">0.05836403, 0.06765253, 0.07797710, 0.08939332, 0.10195252, \</div>
+<div class="line">0.11570083, 0.13067816, 0.14691725, 0.16444273, 0.18327017, \</div>
+<div class="line">0.20340525, 0.22484290, 0.24756669, 0.27154811, 0.29674614, \</div>
+<div class="line">0.32310685, 0.35056318, 0.37903483, 0.40842835, 0.43863740, \</div>
+<div class="line">0.46954309, 0.50101462, 0.53290999, 0.56507692, 0.59735391, \</div>
+<div class="line">0.62957146, 0.66155341, 0.69311846, 0.72408173, 0.75425645, \</div>
+<div class="line">0.78345571, 0.81149426, 0.83819035, 0.86336754, 0.88685654, \</div>
+<div class="line">0.90849696, 0.92813898, 0.94564499, 0.96089108, 0.97376835, \</div>
+<div class="line">0.98418416, 0.99206311, 0.99734791, 1.00000000, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__cheb_8h_source.html">fpu_fft_cheb.h</a> 第 <a class="el" href="fpu__fft__cheb_8h_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4c0703ed57f8b2f5dd9d559736999d76" name="a4c0703ed57f8b2f5dd9d559736999d76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c0703ed57f8b2f5dd9d559736999d76">&#9670;&#160;</a></span>CHEB2048</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHEB2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__cheb_8h_source.html">fpu_fft_cheb.h</a> 第 <a class="el" href="fpu__fft__cheb_8h_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6e4bc7c92671cf3c11881e071ad25159" name="a6e4bc7c92671cf3c11881e071ad25159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e4bc7c92671cf3c11881e071ad25159">&#9670;&#160;</a></span>CHEB256</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHEB256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00063276, 0.00036914, 0.00047554, 0.00060131, 0.00074880, \</div>
+<div class="line">0.00092055, 0.00111931, 0.00134799, 0.00160972, 0.00190786, \</div>
+<div class="line">0.00224593, 0.00262771, 0.00305718, 0.00353854, 0.00407621, \</div>
+<div class="line">0.00467485, 0.00533932, 0.00607473, 0.00688639, 0.00777986, \</div>
+<div class="line">0.00876088, 0.00983542, 0.01100967, 0.01229001, 0.01368302, \</div>
+<div class="line">0.01519544, 0.01683421, 0.01860643, 0.02051936, 0.02258036, \</div>
+<div class="line">0.02479697, 0.02717678, 0.02972752, 0.03245696, 0.03537293, \</div>
+<div class="line">0.03848330, 0.04179595, 0.04531874, 0.04905950, 0.05302600, \</div>
+<div class="line">0.05722591, 0.06166682, 0.06635615, 0.07130117, 0.07650894, \</div>
+<div class="line">0.08198630, 0.08773986, 0.09377592, 0.10010046, 0.10671913, \</div>
+<div class="line">0.11363721, 0.12085957, 0.12839064, 0.13623439, 0.14439429, \</div>
+<div class="line">0.15287330, 0.16167381, 0.17079766, 0.18024605, 0.19001957, \</div>
+<div class="line">0.20011816, 0.21054107, 0.22128685, 0.23235334, 0.24373763, \</div>
+<div class="line">0.25543607, 0.26744421, 0.27975684, 0.29236796, 0.30527075, \</div>
+<div class="line">0.31845758, 0.33192000, 0.34564876, 0.35963378, 0.37386416, \</div>
+<div class="line">0.38832821, 0.40301340, 0.41790645, 0.43299326, 0.44825901, \</div>
+<div class="line">0.46368809, 0.47926420, 0.49497032, 0.51078874, 0.52670114, \</div>
+<div class="line">0.54268854, 0.55873142, 0.57480967, 0.59090269, 0.60698942, \</div>
+<div class="line">0.62304834, 0.63905758, 0.65499490, 0.67083780, 0.68656352, \</div>
+<div class="line">0.70214910, 0.71757146, 0.73280743, 0.74783380, 0.76262739, \</div>
+<div class="line">0.77716510, 0.79142397, 0.80538121, 0.81901430, 0.83230102, \</div>
+<div class="line">0.84521951, 0.85774832, 0.86986648, 0.88155355, 0.89278966, \</div>
+<div class="line">0.90355558, 0.91383276, 0.92360338, 0.93285041, 0.94155764, \</div>
+<div class="line">0.94970972, 0.95729224, 0.96429171, 0.97069565, 0.97649259, \</div>
+<div class="line">0.98167212, 0.98622492, 0.99014275, 0.99341853, 0.99604632, \</div>
+<div class="line">0.99802136, 0.99934005, 1.00000000, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__cheb_8h_source.html">fpu_fft_cheb.h</a> 第 <a class="el" href="fpu__fft__cheb_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a832eb30137c37cbd1b60de46045353ef" name="a832eb30137c37cbd1b60de46045353ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a832eb30137c37cbd1b60de46045353ef">&#9670;&#160;</a></span>CHEB32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHEB32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00061649, 0.00268154, 0.00794911, 0.01901726, 0.03932829, \</div>
+<div class="line">0.07283747, 0.12338685, 0.19383474, 0.28508895, 0.39526429, \</div>
+<div class="line">0.51920759, 0.64859082, 0.77266446, 0.87961136, 0.95828507, \</div>
+<div class="line">1.00000000, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__cheb_8h_source.html">fpu_fft_cheb.h</a> 第 <a class="el" href="fpu__fft__cheb_8h_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a77b7f40c85b3f7a2898df828a1b8e636" name="a77b7f40c85b3f7a2898df828a1b8e636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77b7f40c85b3f7a2898df828a1b8e636">&#9670;&#160;</a></span>CHEB4096</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHEB4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__cheb_8h_source.html">fpu_fft_cheb.h</a> 第 <a class="el" href="fpu__fft__cheb_8h_source.html#l00431">431</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac2ed01370b7f5ffe4ed290c6ed20d1b7" name="ac2ed01370b7f5ffe4ed290c6ed20d1b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2ed01370b7f5ffe4ed290c6ed20d1b7">&#9670;&#160;</a></span>CHEB512</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHEB512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__cheb_8h_source.html">fpu_fft_cheb.h</a> 第 <a class="el" href="fpu__fft__cheb_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a84635dac2f1c754cc1fd99e87b15dc9c" name="a84635dac2f1c754cc1fd99e87b15dc9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84635dac2f1c754cc1fd99e87b15dc9c">&#9670;&#160;</a></span>CHEB64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHEB64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00038075, 0.00087837, 0.00184330, 0.00344780, 0.00595625, \</div>
+<div class="line">0.00969134, 0.01503309, 0.02241386, 0.03230856, 0.04521994, \</div>
+<div class="line">0.06165887, 0.08212009, 0.10705419, 0.13683699, 0.17173791, \</div>
+<div class="line">0.21188912, 0.25725749, 0.30762133, 0.36255404, 0.42141624, \</div>
+<div class="line">0.48335776, 0.54733042, 0.61211172, 0.67633903, 0.73855320, \</div>
+<div class="line">0.79724977, 0.85093549, 0.89818729, 0.93771084, 0.96839524, \</div>
+<div class="line">0.98936127, 1.00000000, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__cheb_8h_source.html">fpu_fft_cheb.h</a> 第 <a class="el" href="fpu__fft__cheb_8h_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_0fd93c14012f780a2e81c2f5b80c75ff.html">rfft</a></li><li class="navelem"><a href="dir_6bd83238c5acd69e2087c7b8f0297dcf.html">fpu32_lib</a></li><li class="navelem"><a href="fpu__fft__cheb_8h.html">fpu_fft_cheb.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

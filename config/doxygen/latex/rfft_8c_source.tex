@@ -1,0 +1,207 @@
+\doxysection{rfft.\+c}
+\hypertarget{rfft_8c_source}{}\label{rfft_8c_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/rfft/rfft.c@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/rfft/rfft.c}}
+\mbox{\hyperlink{rfft_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00009}00009\ \textcolor{comment}{//\ Flash启动支持}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00010}00010\ \textcolor{preprocessor}{\#pragma\ CODE\_SECTON(RFFT\_Init,"{}.TI.ramfunc"{})}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00011}00011\ \textcolor{preprocessor}{\#pragma\ CODE\_SECTON(RFFT\_Set,"{}.TI.ramfunc"{})}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00012}00012\ \textcolor{preprocessor}{\#pragma\ CODE\_SECTON(RFFT\_Run,"{}.TI.ramfunc"{})}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00013}00013\ \textcolor{preprocessor}{\#pragma\ CODE\_SECTON(RFFT\_Grid\_Lock,"{}.TI.ramfunc"{})}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00014}00014\ \textcolor{preprocessor}{\#pragma\ CODE\_SECTON(RFFT\_Peak\_Find,"{}.TI.ramfunc"{})}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00016}00016\ \textcolor{comment}{//\ 地址对齐}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00017}00017\ \textcolor{preprocessor}{\#pragma\ DATA\_SECTION(input,"{}fft\_input"{})}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00018}00018\ \textcolor{preprocessor}{\#pragma\ DATA\_SECTION(magnitude,"{}fft\_magnitude"{})}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00019}00019\ \textcolor{preprocessor}{\#pragma\ DATA\_SECTION(output,"{}fft\_output"{})}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00020}00020\ \textcolor{preprocessor}{\#pragma\ DATA\_SECTION(twiddle,"{}fft\_twiddle"{})}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00022}00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{rfft_8h}{rfft.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00024}00024\ \textcolor{comment}{//\ 全局变量声明}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00025}\mbox{\hyperlink{rfft_8c_a91bfaaac247926c53080eeeffae4ca28}{00025}}\ \textcolor{keyword}{const}\ float32\_t\ \mbox{\hyperlink{rfft_8c_a91bfaaac247926c53080eeeffae4ca28}{FFT\_window}}[\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}}>>1]\ =\ \mbox{\hyperlink{fpu__fft__kaiser_8h_a32344a6781a6653357c1217126df2a22}{KAISER256}};\ \ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00026}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga5a0f4b49baab36db0c5e1922cdbc6c71}{00026}}\ float32\_t\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga5a0f4b49baab36db0c5e1922cdbc6c71}{input}}[\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}}];\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00027}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaf41db2f2a8a877a4d60944cafafac70c}{00027}}\ float32\_t\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaf41db2f2a8a877a4d60944cafafac70c}{output}}[\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}}];\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00028}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga56ce624e4d31bc2956066f5fa5b6b34d}{00028}}\ float32\_t\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga56ce624e4d31bc2956066f5fa5b6b34d}{twiddle}}[\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}}];\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00029}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga429b259b6633b6a2b677ba475d840c63}{00029}}\ float32\_t\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga429b259b6633b6a2b677ba475d840c63}{magnitude}}[(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}}>>1)+1];\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00030}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{00030}}\ \mbox{\hyperlink{struct_r_f_f_t}{RFFT}}\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00032}00032\ \textcolor{comment}{//\ 函数声明}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00033}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaaca2fd3267a4458de0b5f4d37b0d85b8}{00033}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaaca2fd3267a4458de0b5f4d37b0d85b8}{RFFT\_Init}}(\mbox{\hyperlink{struct_r_f_f_t}{RFFT}}*\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}},float32\_t\ *\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga5a0f4b49baab36db0c5e1922cdbc6c71}{input}},\ float32\_t\ *\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaf41db2f2a8a877a4d60944cafafac70c}{output}},\ float32\_t\ *\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga56ce624e4d31bc2956066f5fa5b6b34d}{twiddle}},\ float32\_t\ *\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga429b259b6633b6a2b677ba475d840c63}{magnitude}})}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00034}00034\ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00035}00035\ \ \ \ \ \textcolor{comment}{//\ 数组初始化}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00036}00036\ \ \ \ \ memset(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga5a0f4b49baab36db0c5e1922cdbc6c71}{input}},\ 0,\ \textcolor{keyword}{sizeof}(float32\_t)\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}});}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00037}00037\ \ \ \ \ memset(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaf41db2f2a8a877a4d60944cafafac70c}{output}},\ 0,\ \textcolor{keyword}{sizeof}(float32\_t)\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}});}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00038}00038\ \ \ \ \ memset(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga56ce624e4d31bc2956066f5fa5b6b34d}{twiddle}},\ 0,\ \textcolor{keyword}{sizeof}(float32\_t)\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}});}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00039}00039\ \ \ \ \ memset(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga429b259b6633b6a2b677ba475d840c63}{magnitude}},\ 0,\ \textcolor{keyword}{sizeof}(float32\_t)\ *\ ((\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}}>>1)+1));}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00040}00040\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00041}00041\ \ \ \ \ \textcolor{comment}{//\ 配置结构体地址关联}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00042}00042\ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct\_pointer\ =\ \&(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct);}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00043}00043\ \ \ \ \ \mbox{\hyperlink{fpu__rfft_8h_aa8570a2cefb6e9f92fdfc14007e3e2f7}{RFFT\_f32\_setFFTSize}}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct\_pointer,\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}});}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00044}00044\ \ \ \ \ \mbox{\hyperlink{fpu__rfft_8h_a89dba923f55a3ade344aa41159b7fa2f}{RFFT\_f32\_setInputPtr}}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct\_pointer,\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga5a0f4b49baab36db0c5e1922cdbc6c71}{input}});}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00045}00045\ \ \ \ \ \mbox{\hyperlink{fpu__rfft_8h_a30a4b4aaa467f7d81e84b2b0ffa0d162}{RFFT\_f32\_setOutputPtr}}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct\_pointer,\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaf41db2f2a8a877a4d60944cafafac70c}{output}});}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00046}00046\ \ \ \ \ \mbox{\hyperlink{fpu__rfft_8h_a92ccd21f6a5273d25995e8a19364775e}{RFFT\_f32\_setTwiddlesPtr}}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct\_pointer,\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga56ce624e4d31bc2956066f5fa5b6b34d}{twiddle}});}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00047}00047\ \ \ \ \ \mbox{\hyperlink{fpu__rfft_8h_ae8f5e276d0d7a20e53283666cf3545f3}{RFFT\_f32\_setMagnitudePtr}}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct\_pointer,\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga429b259b6633b6a2b677ba475d840c63}{magnitude}});}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00048}00048\ \ \ \ \ \mbox{\hyperlink{fpu__rfft_8h_a0d54e14dfc29f5c9635fe96077c5b959}{RFFT\_f32\_setStages}}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct\_pointer,\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga0934cb2ea8795edf8b6733651f6aa72b}{FFT\_STAGE}});}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00050}00050\ \ \ \ \ \textcolor{comment}{//\ 计算预畸变因子表}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{fpu__rfft_8h_a9ba057440b48ec821d12b3afe3223d2e}{RFFT\_f32\_sincostable}}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct\_pointer);}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00053}00053\ \ \ \ \ \textcolor{comment}{//\ 内部变量}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00054}00054\ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>size\_inv\ =\ 1.0f\ /\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}};}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00056}00056\ \ \ \ \ \textcolor{comment}{//\ 频率分析模式}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00057}00057\ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>mode\ =\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2faeb8448db629160ec8f03e448a8ab078d}{FFT\_MODE\_NULL}};}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00058}00058\ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00060}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga8879dcbb9c5197cd6dfb4f30369a96e4}{00060}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga8879dcbb9c5197cd6dfb4f30369a96e4}{RFFT\_Set}}(\mbox{\hyperlink{struct_r_f_f_t}{RFFT}}\ *\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}},\ float32\_t\ fs,\ float32\_t\ fgrid)}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00061}00061\ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00062}00062\ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>fs\ =\ fs;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00063}00063\ \ \ \ \ float32\_t\ delta\_f;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00064}00064\ \ \ \ \ delta\_f\ =\ fs\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>size\_inv;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00065}00065\ \ \ \ \ \textcolor{keywordflow}{if}\ (fabsf(delta\_f\ -\/\ fgrid)\ <=\ 0.1f)\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00066}00066\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00067}00067\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>mode\ =\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2fac4acfd934cb0e9a237ace151235488f5}{FFT\_GRID\_LOCK}};}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00068}00068\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00069}00069\ \ \ \ \ \textcolor{keywordflow}{else}\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00070}00070\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00071}00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>mode\ =\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2fabdd1a5e2d1c04b1d17b1bfa214d11112}{FFT\_PEAK\_FIND}};}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00072}00072\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00073}00073\ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00075}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga413312679334b30df43bf8c9d9530dba}{00075}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga413312679334b30df43bf8c9d9530dba}{RFFT\_Run}}(\mbox{\hyperlink{struct_r_f_f_t}{RFFT}}\ *\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}})}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00076}00076\ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00077}00077\ \ \ \ \ \textcolor{comment}{//\ RFFT加窗,\ 若不加窗则跳过}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00078}00078\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ FFT\_WINDOW\_ENABLE}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00079}00079\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{fpu__rfft_8h_aee841a4f8b872d083983d709f6d77d91}{RFFT\_f32\_win}}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.InBuf,\ \mbox{\hyperlink{rfft_8c_a91bfaaac247926c53080eeeffae4ca28}{FFT\_window}},\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}});}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00080}00080\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00082}00082\ \ \ \ \ \textcolor{comment}{//\ RFFT算法}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00083}00083\ \ \ \ \ \mbox{\hyperlink{fpu__rfft_8h_a4ba62438408b6dbbe39975f316fe4429}{RFFT\_f32}}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct\_pointer);}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00085}00085\ \ \ \ \ \textcolor{comment}{//\ 计算幅值,\ 若使用TMU则调用TMU版本}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00086}00086\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ \_\_TMS320C28XX\_TMU\_\_}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00087}00087\ \ \ \ \ \ \ \ \ RFFT\_f32\_mag\_TMU0(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct\_pointer);}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00088}00088\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00089}00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{fpu__rfft_8h_aa72d6bf63e23a75e7f3ac08a5d64158c}{RFFT\_f32\_mag}}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct\_pointer);}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00090}00090\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00092}00092\ \ \ \ \ \textcolor{comment}{//\ FFT频域分析}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00093}00093\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>mode)\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00094}00094\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00095}00095\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2fac4acfd934cb0e9a237ace151235488f5}{FFT\_GRID\_LOCK}}:}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga3fc7edfa39757d7ff7e4522bcbbbf07d}{RFFT\_Grid\_Lock}}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}});}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00098}00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2fabdd1a5e2d1c04b1d17b1bfa214d11112}{FFT\_PEAK\_FIND}}:}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gad1e815d931ea459fc390f308cd553710}{RFFT\_Peak\_Find}}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}});}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00101}00101\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2faeb8448db629160ec8f03e448a8ab078d}{FFT\_MODE\_NULL}}:}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00102}00102\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00104}00104\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00106}00106\ \ \ \ \ \textcolor{comment}{//\ DC分量}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00107}00107\ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>dc\_amp\ =\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[0]\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>size\_inv\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga626007536417efdacd8d5a3917b7002a}{FFT\_WINDOW\_GAIN}};}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00109}00109\ \ \ \ \ \textcolor{comment}{//\ THD}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00110}00110\ \ \ \ \ float32\_t\ sum\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00111}00111\ \ \ \ \ \textcolor{comment}{//\ 默认rfft-\/>amp[0]为基波,\ 其余为谐波}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00112}00112\ \ \ \ \ uint16\_t\ i\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00113}00113\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;\ i<\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num;\ i++)\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00114}00114\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00115}00115\ \ \ \ \ \ \ \ \ sum\ =\ sum\ +\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>amp[i]\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>amp[i];}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00116}00116\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00117}00117\ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>thd\ =\ sqrtf(sum)\ /\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>amp[0];}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00118}00118\ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00120}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga3fc7edfa39757d7ff7e4522bcbbbf07d}{00120}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga3fc7edfa39757d7ff7e4522bcbbbf07d}{RFFT\_Grid\_Lock}}(\mbox{\hyperlink{struct_r_f_f_t}{RFFT}}\ *\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}})}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00121}00121\ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00122}00122\ \ \ \ \ uint16\_t\ i\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00123}00123\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00124}00124\ \ \ \ \ \textcolor{comment}{//\ 幅值最大值搜索}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00125}00125\ \ \ \ \ float32\_t\ magnitude\_max\ =\ 0.0f;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00126}00126\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;\ i\ <\ (\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}}\ >>\ 1)\ +\ 1;\ i++)}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00127}00127\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00128}00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[i]\ >\ magnitude\_max)}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00129}00129\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00130}00130\ \ \ \ \ \ \ \ \ \ \ \ \ magnitude\_max\ =\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[i];}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00131}00131\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00132}00132\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00134}00134\ \ \ \ \ \textcolor{comment}{//\ 部分变量初始化清空}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00135}00135\ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00136}00136\ \ \ \ \ uint16\_t\ peak\_index[\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga773ffe60e709d24ffac8f78acd36470f}{FFT\_PEAK\_MAX}}]\ =\ \{0\};}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00138}00138\ \ \ \ \ \textcolor{comment}{//\ 以最大幅值*阈限为最小值,大于该值视为一个谐波峰}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00139}00139\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;\ i\ <\ (\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}}\ >>\ 1)\ +\ 1;\ i++)}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00140}00140\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00141}00141\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[i]\ >\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga375c03b6ba7682f23a46a642bc7c35ea}{FFT\_TOLERANCE}}\ *\ magnitude\_max)\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00142}00142\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00143}00143\ \ \ \ \ \ \ \ \ \ \ \ \ peak\_index[\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num]\ =\ i;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00144}00144\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num\ =\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num\ +\ 1U;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00145}00145\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00146}00146\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num\ >=\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga773ffe60e709d24ffac8f78acd36470f}{FFT\_PEAK\_MAX}})}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00147}00147\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00149}00149\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00150}00150\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00151}00151\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00152}00152\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00153}00153\ \ \ \ \ \textcolor{comment}{//\ 换算至实际频率与幅值}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00154}00154\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;\ i\ <\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num;\ i++)}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00155}00155\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00156}00156\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>freq[i]\ =\ peak\_index[i]\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>fs\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>size\_inv;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00157}00157\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>amp[i]\ \ =\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[peak\_index[i]]\ *\ 2.0f\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>size\_inv\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga626007536417efdacd8d5a3917b7002a}{FFT\_WINDOW\_GAIN}};}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00158}00158\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00159}00159\ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00160}00160\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00161}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gad1e815d931ea459fc390f308cd553710}{00161}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gad1e815d931ea459fc390f308cd553710}{RFFT\_Peak\_Find}}(\mbox{\hyperlink{struct_r_f_f_t}{RFFT}}\ *\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}})}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00162}00162\ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00163}00163\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 幅值归一化}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00164}00164\ \ \ \ \ uint16\_t\ i\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00165}00165\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00166}00166\ \ \ \ \ \textcolor{comment}{//\ 幅值最大值搜索}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00167}00167\ \ \ \ \ float32\_t\ magnitude\_max\ =\ 0.0f;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00168}00168\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;\ i\ <\ (\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}}\ >>\ 1)\ +\ 1;\ i++)}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00169}00169\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00170}00170\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[i]\ >\ magnitude\_max)}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00171}00171\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00172}00172\ \ \ \ \ \ \ \ \ \ \ \ \ magnitude\_max\ =\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[i];}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00173}00173\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00174}00174\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00175}00175\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00176}00176\ \ \ \ \ \textcolor{comment}{//\ 部分变量初始化清空}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00177}00177\ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00178}00178\ \ \ \ \ uint16\_t\ peak\_index[\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga773ffe60e709d24ffac8f78acd36470f}{FFT\_PEAK\_MAX}}]\ =\ \{0\};}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00179}00179\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00180}00180\ \ \ \ \ \textcolor{comment}{//\ 幅值峰值搜索}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00181}00181\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;\ i\ <\ (\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}}\ >>\ 1);\ i++)}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00182}00182\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00183}00183\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[i]\ >=\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[i\ -\/\ 1])\ \&\&\ (\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[i]\ >=\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[i\ +\ 1])\ \&\&\ (\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[i]\ >=\ magnitude\_max\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga375c03b6ba7682f23a46a642bc7c35ea}{FFT\_TOLERANCE}}))}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00184}00184\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00185}00185\ \ \ \ \ \ \ \ \ \ \ \ \ peak\_index[\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num]\ =\ i;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00186}00186\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num\ =\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num\ +\ 1U;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00187}00187\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00188}00188\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num\ >=\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga773ffe60e709d24ffac8f78acd36470f}{FFT\_PEAK\_MAX}})}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00189}00189\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00190}00190\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00191}00191\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00192}00192\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00193}00193\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00194}00194\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00195}00195\ \ \ \ \ i\ =\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\_SIZE}}\ >>\ 1;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00196}00196\ \ \ \ \ \textcolor{keywordflow}{if}\ ((\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[i]\ >=\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[i\ -\/\ 1])\ \&\&\ (\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[i]\ >=\ magnitude\_max\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga375c03b6ba7682f23a46a642bc7c35ea}{FFT\_TOLERANCE}})\ \&\&\ (\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num\ <\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga773ffe60e709d24ffac8f78acd36470f}{FFT\_PEAK\_MAX}}))}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00197}00197\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00198}00198\ \ \ \ \ \ \ \ \ peak\_index[\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num++]\ =\ i;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00199}00199\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00200}00200\ }
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00201}00201\ \ \ \ \ \textcolor{comment}{//\ 换算至实际频率与幅值}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00202}00202\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;\ i\ <\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>peak\_num;\ i++)}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00203}00203\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00204}00204\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>freq[i]\ =\ peak\_index[i]\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>fs\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>size\_inv;}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00205}00205\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>amp[i]\ \ =\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>rfft\_struct.MagBuf[peak\_index[i]]\ *\ 2.0f\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}-\/>size\_inv\ *\ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga626007536417efdacd8d5a3917b7002a}{FFT\_WINDOW\_GAIN}};}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00206}00206\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{rfft_8c_source_l00207}00207\ \}}
+
+\end{DoxyCode}

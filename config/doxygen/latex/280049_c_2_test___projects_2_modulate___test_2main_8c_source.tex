@@ -1,0 +1,112 @@
+\doxysection{main.\+c}
+\hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source}{}\label{280049_c_2_test___projects_2_modulate___test_2main_8c_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Projects/280049C/Test\_Projects/Modulate\_Test/main.c@{D:/Codes/NUEDC/NUEDC-\/Core/Projects/280049C/Test\_Projects/Modulate\_Test/main.c}}
+\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00013}00013\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00014}00014\ \textcolor{comment}{//\ Included\ Files}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00015}00015\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00016}00016\ \textcolor{preprocessor}{\#include\ "{}driverlib.h"{}}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00017}00017\ \textcolor{preprocessor}{\#include\ "{}device.h"{}}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00018}00018\ \textcolor{preprocessor}{\#include\ "{}board.h"{}}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00019}00019\ \textcolor{preprocessor}{\#include\ "{}c2000ware\_libraries.h"{}}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00020}00020\ \textcolor{preprocessor}{\#include\ "{}f28x\_project.h"{}}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00021}00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00023}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{00023}}\ \mbox{\hyperlink{struct_r_a_m_p}{RAMP}}\ \mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}};}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00024}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{00024}}\ float32\_t\ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}},\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}},\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}};}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00025}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{00025}}\ \mbox{\hyperlink{struct_m_o_d}{MOD}}\ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}};}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00026}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_acf13633c4143fb400d315df2a9961b77}{00026}}\ float32\_t\ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_acf13633c4143fb400d315df2a9961b77}{moda}},\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a28854bb3cfea517dded0918d596070e1}{modb}},\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a9ac60503727edbf747fcc054207fad8c}{modc}};}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00028}00028\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00029}00029\ \textcolor{comment}{//\ Main}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00030}00030\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00031}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a6288eba0f8e8ad3ab1544ad731eb7667}{00031}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{280049_c_2_template___projects_2_template___project___f280049_c_2user_2main_8c_a6288eba0f8e8ad3ab1544ad731eb7667}{main}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00032}00032\ \{}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00033}00033\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00034}00034\ \ \ \ \ \textcolor{comment}{//\ Initialize\ device\ clock\ and\ peripherals}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00035}00035\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00036}00036\ \ \ \ \ Device\_init();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00038}00038\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00039}00039\ \ \ \ \ \textcolor{comment}{//\ Disable\ pin\ locks\ and\ enable\ internal\ pull-\/ups.}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00040}00040\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00041}00041\ \ \ \ \ Device\_initGPIO();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00043}00043\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00044}00044\ \ \ \ \ \textcolor{comment}{//\ Initialize\ PIE\ and\ clear\ PIE\ registers.\ Disables\ CPU\ interrupts.}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00045}00045\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00046}00046\ \ \ \ \ Interrupt\_initModule();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00048}00048\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00049}00049\ \ \ \ \ \textcolor{comment}{//\ Initialize\ the\ PIE\ vector\ table\ with\ pointers\ to\ the\ shell\ Interrupt}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00050}00050\ \ \ \ \ \textcolor{comment}{//\ Service\ Routines\ (ISR).}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00051}00051\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00052}00052\ \ \ \ \ Interrupt\_initVectorTable();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00054}00054\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00055}00055\ \ \ \ \ \textcolor{comment}{//\ Configure\ ePWM1,\ ePWM2,\ and\ TZ\ GPIOs/Modules}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00056}00056\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00057}00057\ \ \ \ \ Board\_init();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00059}00059\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00060}00060\ \ \ \ \ \textcolor{comment}{//\ C2000Ware\ Library\ initialization}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00061}00061\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00062}00062\ \ \ \ \ C2000Ware\_libraries\_init();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00064}00064\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00065}00065\ \ \ \ \ \textcolor{comment}{//\ Enable\ Global\ Interrupt\ (INTM)\ and\ real\ time\ interrupt\ (DBGM)}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00066}00066\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00067}00067\ \ \ \ \ EINT;}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00068}00068\ \ \ \ \ ERTM;}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00070}00070\ \ \ \ \ \textcolor{comment}{//\ Enter\ code\ here}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00071}00071\ \ \ \ \ \textcolor{comment}{//\ ramp}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00072}00072\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___r_a_m_p_ga3e743c6f7b3d3cace6e21e22f9722466}{Ramp\_Init}}(\&\mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}});}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00073}00073\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___r_a_m_p_ga2e5990d2aba3b0277df88a6bb0871b2a}{Ramp\_Set}}(\&\mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}},\ 50,\ 20000);}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00075}00075\ \ \ \ \ \textcolor{comment}{//\ mod}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00076}00076\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga996f9b6a559031309fa6639bddf1b852}{Modulate\_Init}}(\&\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}});}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00077}00077\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga7ec773e0dd3b93e350d1f4b3c9932813}{Modulate\_Set}}(\&\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}},\ 3750);}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00079}00079\ \ \ \ \ \textcolor{comment}{//\ vofa}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00080}00080\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___v_o_f_a_ga77c9aea85bbaf41bbce8fc26c9cf846e}{VOFA\_Init}}();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00081}00081\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___v_o_f_a_ga8b37353f7cbbd178e8f995dba7eaae73}{VOFA\_Set\_Channel\_Input}}(0U,\ \&(\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_acf13633c4143fb400d315df2a9961b77}{moda}}));}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00082}00082\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___v_o_f_a_ga8b37353f7cbbd178e8f995dba7eaae73}{VOFA\_Set\_Channel\_Input}}(1U,\ \&(\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a28854bb3cfea517dded0918d596070e1}{modb}}));}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00083}00083\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___v_o_f_a_ga8b37353f7cbbd178e8f995dba7eaae73}{VOFA\_Set\_Channel\_Input}}(2U,\ \&(\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a9ac60503727edbf747fcc054207fad8c}{modc}}));}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00085}00085\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00086}00086\ \ \ \ \ \textcolor{comment}{//\ IDLE\ loop.\ Just\ sit\ and\ loop\ forever\ (optional):}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00087}00087\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00088}00088\ \ \ \ \ \textcolor{keywordflow}{while}(1)}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00089}00089\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00090}00090\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Enter\ code\ here}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00091}00091\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}}\ =\ sinf(\mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}}.ref\_angle);}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00092}00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}}\ =\ sinf(\mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}}.ref\_angle\ -\/\ \mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga960f551c82b8d50d8f0d2590c65bfc1a}{MATH\_PI\_3}}\ *\ 2.0f);}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00093}00093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}}\ =\ sinf(\mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}}.ref\_angle\ +\ \mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga960f551c82b8d50d8f0d2590c65bfc1a}{MATH\_PI\_3}}\ *\ 2.0f);}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00094}00094\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___m_o_d_gac663e42bb9b07f2c2c414d8be8f9b8a0}{Modulate\_GDPWM\_Run}}(\&\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}},\ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}},\ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}},\ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}},\ 0);}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00095}00095\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_acf13633c4143fb400d315df2a9961b77}{moda}}\ =\ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}.comp1;}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00096}00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a28854bb3cfea517dded0918d596070e1}{modb}}\ =\ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}.comp2;}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00097}00097\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a9ac60503727edbf747fcc054207fad8c}{modc}}\ =\ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}.comp3;}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00099}00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___v_o_f_a_gae9fe0fa8baf50f14038971031d27738d}{VOFA\_Request\_Send}}();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00100}00100\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___v_o_f_a_ga29a019e9a9005773e370e6b2013f60be}{VOFA\_Run}}();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00102}00102\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___r_a_m_p_gae2e0c71c0fe9a608875d295f970e9236}{Ramp\_Run}}(\&\mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}});}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00103}00103\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00105}00105\ \}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00107}00107\ \textcolor{comment}{//\ 环路控制代码,\ ADC-\/EOC中断}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00108}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a4ccda0eb51b96b9a45e50d01764249b6}{00108}}\ interrupt\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{280049_c_2_template___projects_2_template___project___f280049_c_2user_2main_8c_ad3a4df357d3f7a6d1f61f7818feb1373}{ADC\_EOC\_ISR}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00109}00109\ \{}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00111}00111\ \}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00113}00113\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00114}00114\ \textcolor{comment}{//\ End\ of\ File}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00115}00115\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_modulate___test_2main_8c_source_l00116}00116\ }
+
+\end{DoxyCode}

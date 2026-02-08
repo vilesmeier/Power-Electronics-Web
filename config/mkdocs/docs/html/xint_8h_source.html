@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC/NUEDC-Core/Code/Peripheral_Driver/28335/XINT/xint.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('xint_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">xint.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="xint_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef XINT_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define XINT_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___x_i_n_t.html#gaffd07a9b3a14f2b8b71c64e5e87d68e2">XINT_Init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>interrupt <span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___x_i_n_t.html#ga92ad91868533b28fb7e1ab474180e5f7">XINT1_isr</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>interrupt <span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___x_i_n_t.html#gaa2506823905214f4e8d53131019b5462">XINT2_isr</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>interrupt <span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___x_i_n_t.html#gae0177403580369c739b3feb39fd7658d">XINT3_isr</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>interrupt <span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___x_i_n_t.html#ga3fa1e3cba136527e3c7615afcb989877">XINT4_isr</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>interrupt <span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___x_i_n_t.html#ga4aeaba604b0e2c3dde57ba8d577c5904">XINT5_isr</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>interrupt <span class="keywordtype">void</span> <a class="code hl_function" href="group___d_r_v___f28335___x_i_n_t.html#ga1654499233ad3bb3b3062a63385e17f5">XINT6_isr</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif </span><span class="comment">/* XINT_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="ttc" id="agroup___d_r_v___f28335___x_i_n_t_html_ga1654499233ad3bb3b3062a63385e17f5"><div class="ttname"><a href="group___d_r_v___f28335___x_i_n_t.html#ga1654499233ad3bb3b3062a63385e17f5">XINT6_isr</a></div><div class="ttdeci">interrupt void XINT6_isr(void)</div><div class="ttdoc">interrput serve rountine for XINT6</div><div class="ttdef"><b>定义</b> <a href="xint_8c_source.html#l00155">xint.c:155</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___x_i_n_t_html_ga3fa1e3cba136527e3c7615afcb989877"><div class="ttname"><a href="group___d_r_v___f28335___x_i_n_t.html#ga3fa1e3cba136527e3c7615afcb989877">XINT4_isr</a></div><div class="ttdeci">interrupt void XINT4_isr(void)</div><div class="ttdoc">interrput serve rountine for XINT4</div><div class="ttdef"><b>定义</b> <a href="xint_8c_source.html#l00141">xint.c:141</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___x_i_n_t_html_ga4aeaba604b0e2c3dde57ba8d577c5904"><div class="ttname"><a href="group___d_r_v___f28335___x_i_n_t.html#ga4aeaba604b0e2c3dde57ba8d577c5904">XINT5_isr</a></div><div class="ttdeci">interrupt void XINT5_isr(void)</div><div class="ttdoc">interrput serve rountine for XINT5</div><div class="ttdef"><b>定义</b> <a href="xint_8c_source.html#l00148">xint.c:148</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___x_i_n_t_html_ga92ad91868533b28fb7e1ab474180e5f7"><div class="ttname"><a href="group___d_r_v___f28335___x_i_n_t.html#ga92ad91868533b28fb7e1ab474180e5f7">XINT1_isr</a></div><div class="ttdeci">interrupt void XINT1_isr(void)</div><div class="ttdoc">interrput serve rountine for XINT1</div><div class="ttdef"><b>定义</b> <a href="xint_8c_source.html#l00120">xint.c:120</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___x_i_n_t_html_gaa2506823905214f4e8d53131019b5462"><div class="ttname"><a href="group___d_r_v___f28335___x_i_n_t.html#gaa2506823905214f4e8d53131019b5462">XINT2_isr</a></div><div class="ttdeci">interrupt void XINT2_isr(void)</div><div class="ttdoc">interrput serve rountine for XINT2</div><div class="ttdef"><b>定义</b> <a href="xint_8c_source.html#l00127">xint.c:127</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___x_i_n_t_html_gae0177403580369c739b3feb39fd7658d"><div class="ttname"><a href="group___d_r_v___f28335___x_i_n_t.html#gae0177403580369c739b3feb39fd7658d">XINT3_isr</a></div><div class="ttdeci">interrupt void XINT3_isr(void)</div><div class="ttdoc">interrput serve rountine for XINT3</div><div class="ttdef"><b>定义</b> <a href="xint_8c_source.html#l00134">xint.c:134</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___x_i_n_t_html_gaffd07a9b3a14f2b8b71c64e5e87d68e2"><div class="ttname"><a href="group___d_r_v___f28335___x_i_n_t.html#gaffd07a9b3a14f2b8b71c64e5e87d68e2">XINT_Init</a></div><div class="ttdeci">void XINT_Init(void)</div><div class="ttdoc">init XINT, select edge and gpio</div><div class="ttdef"><b>定义</b> <a href="xint_8c_source.html#l00009">xint.c:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_26468b5983c560a96d3a222f07de3c8d.html">Peripheral_Driver</a></li><li class="navelem"><a href="dir_f03d8b6ecf10a1b5721c7ab8323bb129.html">28335</a></li><li class="navelem"><a href="dir_9aa5aa6d7ca4fe3b9a507c5f5e8cdace.html">XINT</a></li><li class="navelem"><a href="xint_8h.html">xint.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

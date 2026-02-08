@@ -1,0 +1,124 @@
+\doxysection{cap.\+c}
+\hypertarget{cap_8c_source}{}\label{cap_8c_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/CAP/cap.c@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/CAP/cap.c}}
+\mbox{\hyperlink{cap_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{cap_8h}{cap.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}DSP28x\_Project.h"{}}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00014}\mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga51aa55ea7a5c4b34d01764c01dfbbaee}{00014}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga51aa55ea7a5c4b34d01764c01dfbbaee}{ECAP1\_Pherial\_Init}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00016}00016\ \ \ \ \ \textcolor{comment}{//gpio\ init}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00017}00017\ \ \ \ \ InitECap1Gpio();}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00019}00019\ \ \ \ \ \textcolor{comment}{//pherial\ init}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00020}00020\ \ \ \ \ InitECap();}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00022}00022\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00023}00023\ \ \ \ \ \textcolor{comment}{//\ register\ clear}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00024}00024\ \ \ \ \ ECap1Regs.ECEINT.all\ =\ 0x00;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Disable\ all\ capture\ interrupts}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00025}00025\ \ \ \ \ ECap1Regs.ECCLR.all\ =\ 0xFF;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Clear\ all\ CAP\ interrupt\ flags}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00026}00026\ \ \ \ \ ECap1Regs.ECCTL1.bit.CAPLDEN\ =\ 0;\ \ \ \ \ \ \ \textcolor{comment}{//\ Disable\ CAP1-\/CAP4\ register\ loads}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00027}00027\ \ \ \ \ ECap1Regs.ECCTL2.bit.TSCTRSTOP\ =\ 0;\ \ \ \ \ \textcolor{comment}{//\ Make\ sure\ the\ counter\ is\ stopped}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00029}00029\ \ \ \ \ \textcolor{comment}{//config\ interrupt}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00030}00030\ \ \ \ \ ECap1Regs.ECEINT.bit.CEVT1\ =\ 0x1;\ \ \ \ \ \ \ \textcolor{comment}{//enable\ interrupt\ at\ posedge}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00032}00032\ \ \ \ \ \textcolor{comment}{//time\ base}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00033}00033\ \ \ \ \ ECap1Regs.TSCTR\ \ =\ 0x00000000;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00034}00034\ \ \ \ \ ECap1Regs.CTRPHS\ =\ 0x00000000;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00035}00035\ \ \ \ \ ECap1Regs.CAP1\ \ \ =\ 0x00000000;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00036}00036\ \ \ \ \ ECap1Regs.CAP2\ \ \ =\ 0x00000000;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00037}00037\ \ \ \ \ ECap1Regs.CAP3\ \ \ =\ 0x00000000;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00038}00038\ \ \ \ \ ECap1Regs.CAP4\ \ \ =\ 0x00000000;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00040}00040\ \ \ \ \ \textcolor{comment}{//prescale}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00041}00041\ \ \ \ \ ECap1Regs.ECCTL1.bit.PRESCALE\ =\ CAP\_DISABLE;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00042}00042\ \ \ \ \ \textcolor{comment}{//event\ set}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00043}00043\ \ \ \ \ ECap1Regs.ECCTL1.bit.CAP1POL\ =\ EVENT\_POSEDGE;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00044}00044\ \ \ \ \ ECap1Regs.ECCTL1.bit.CAP2POL\ =\ EVENT\_NEGEDGE;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00045}00045\ \ \ \ \ ECap1Regs.ECCTL1.bit.CAP3POL\ =\ EVENT\_POSEDGE;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00046}00046\ \ \ \ \ ECap1Regs.ECCTL1.bit.CAP4POL\ =\ EVENT\_NEGEDGE;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00047}00047\ \ \ \ \ \textcolor{comment}{//time\ base\ reset}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00048}00048\ \ \ \ \ ECap1Regs.ECCTL1.bit.CTRRST1\ =\ EVENT\_RESET;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00049}00049\ \ \ \ \ ECap1Regs.ECCTL1.bit.CTRRST2\ =\ EVENT\_NOACTION;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00050}00050\ \ \ \ \ ECap1Regs.ECCTL1.bit.CTRRST3\ =\ EVENT\_RESET;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00051}00051\ \ \ \ \ ECap1Regs.ECCTL1.bit.CTRRST4\ =\ EVENT\_NOACTION;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00052}00052\ \ \ \ \ \textcolor{comment}{//enable\ load\ CAP1-\/4}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00053}00053\ \ \ \ \ ECap1Regs.ECCTL1.bit.CAPLDEN\ =\ CAP\_ENABLE;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00055}00055\ \ \ \ \ \textcolor{comment}{//mode\ set}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00056}00056\ \ \ \ \ ECap1Regs.ECCTL2.bit.CONT\_ONESHT\ =\ MODE\_COUNT;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00057}00057\ \ \ \ \ ECap1Regs.ECCTL2.bit.TSCTRSTOP\ =\ \ \ CAP\_DISABLE;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00058}00058\ \ \ \ \ ECap1Regs.ECCTL2.bit.CAP\_APWM\ =\ \ \ \ MODE\_CAP;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00060}00060\ \ \ \ \ \textcolor{comment}{//enable\ Ecap}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00061}00061\ \ \ \ \ ECap1Regs.ECCTL2.bit.TSCTRSTOP\ =\ CAP\_ENABLE;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00062}00062\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00063}00063\ \}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00070}\mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gae185653a627aea6b835d827d7068f34c}{00070}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gae185653a627aea6b835d827d7068f34c}{ECAP\_Struct\_Init}}(\mbox{\hyperlink{struct_c_a_p___d_u_t_y}{CAP\_DUTY}}\ *cap)}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00071}00071\ \{}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00072}00072\ \ \ \ \ cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a119a1c5101a0bf00b4803784bc701f1c}{cap1}}\ \ =\ 0;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00073}00073\ \ \ \ \ cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a378758cb7879c53f36bbf9a7ed501fc6}{cap2}}\ \ =\ 0;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00074}00074\ \ \ \ \ cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a786c4a2eed6c7c9b3115f73f24a84678}{cap3}}\ \ =\ 0;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00075}00075\ \ \ \ \ cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a747bbef8832cff4f4a66cf46149c0992}{cap4}}\ \ =\ 0;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00076}00076\ \ \ \ \ cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a9267e9ffebef4e2c26e6420f93a8d0d7}{duty1}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00077}00077\ \ \ \ \ cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_adfaab0790a0911c2142ca9bad584de68}{duty2}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00078}00078\ \}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00085}\mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga4b33111f7676dc9e5f89634fea7d6e7c}{00085}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga4b33111f7676dc9e5f89634fea7d6e7c}{ECAP\_Init}}(\mbox{\hyperlink{struct_c_a_p___d_u_t_y}{CAP\_DUTY}}\ *cap)}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00086}00086\ \{}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00087}00087\ \ \ \ \ \textcolor{comment}{//global\ interrupt\ config}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00088}00088\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00089}00089\ \ \ \ \ DINT;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00090}00090\ \ \ \ \ PieVectTable.ECAP1\_INT\ =\ \&\mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gaed09226843cc2d90a2dce3404d804417}{ecap1\_isr}};}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00091}00091\ \ \ \ \ IER\ |=\ M\_INT4;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00092}00092\ \ \ \ \ PieCtrlRegs.PIEIER4.bit.INTx1\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00093}00093\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00094}00094\ \ \ \ \ EINT;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00095}00095\ \ \ \ \ ERTM;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00097}00097\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga51aa55ea7a5c4b34d01764c01dfbbaee}{ECAP1\_Pherial\_Init}}();}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00098}00098\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gae185653a627aea6b835d827d7068f34c}{ECAP\_Struct\_Init}}(cap);}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00099}00099\ \}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00105}\mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga8df0025a0591f0f13b7203a0f8645eb4}{00105}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga8df0025a0591f0f13b7203a0f8645eb4}{ECAP\_Enable}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00106}00106\ \{}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00107}00107\ \ \ \ \ ECap1Regs.ECCTL2.bit.TSCTRSTOP\ =\ CAP\_ENABLE;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00108}00108\ \}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00114}\mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga00d36d0fe04fc8d25712cabcd1cdb887}{00114}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga00d36d0fe04fc8d25712cabcd1cdb887}{ECAP\_Disable}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00115}00115\ \{}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00116}00116\ \ \ \ \ ECap1Regs.ECCTL2.bit.TSCTRSTOP\ =\ CAP\_DISABLE;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00117}00117\ \}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00124}\mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga591c3b6b6bd07abecfc278dedbb7158f}{00124}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_ga591c3b6b6bd07abecfc278dedbb7158f}{ECAP\_Get\_Duty}}(\mbox{\hyperlink{struct_c_a_p___d_u_t_y}{CAP\_DUTY}}\ *cap)}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00125}00125\ \{}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00126}00126\ \ \ \ \ cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a119a1c5101a0bf00b4803784bc701f1c}{cap1}}\ =\ ECap1Regs.CAP1;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00127}00127\ \ \ \ \ cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a378758cb7879c53f36bbf9a7ed501fc6}{cap2}}\ =\ ECap1Regs.CAP2;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00128}00128\ \ \ \ \ cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a786c4a2eed6c7c9b3115f73f24a84678}{cap3}}\ =\ ECap1Regs.CAP3;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00129}00129\ \ \ \ \ cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a747bbef8832cff4f4a66cf46149c0992}{cap4}}\ =\ ECap1Regs.CAP4;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00130}00130\ \ \ \ \ \textcolor{keywordflow}{if}((cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a786c4a2eed6c7c9b3115f73f24a84678}{cap3}})\ !=\ 0)}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00131}00131\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00132}00132\ \ \ \ \ \ \ \ \ cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a9267e9ffebef4e2c26e6420f93a8d0d7}{duty1}}\ =\ ((float)(cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a378758cb7879c53f36bbf9a7ed501fc6}{cap2}}))\ /\ (cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a786c4a2eed6c7c9b3115f73f24a84678}{cap3}});}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00133}00133\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00134}00134\ \ \ \ \ \textcolor{keywordflow}{if}((cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a119a1c5101a0bf00b4803784bc701f1c}{cap1}})\ !=\ 0)}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00135}00135\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00136}00136\ \ \ \ \ \ \ \ \ cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_adfaab0790a0911c2142ca9bad584de68}{duty2}}\ =\ ((float)(cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a747bbef8832cff4f4a66cf46149c0992}{cap4}}))\ /\ (cap-\/>\mbox{\hyperlink{struct_c_a_p___d_u_t_y_a119a1c5101a0bf00b4803784bc701f1c}{cap1}});}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00137}00137\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00138}00138\ \}}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00144}\mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gaed09226843cc2d90a2dce3404d804417}{00144}}\ interrupt\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___c_a_p_gaed09226843cc2d90a2dce3404d804417}{ecap1\_isr}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00145}00145\ \{}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00146}00146\ }
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00147}00147\ \ \ \ \ ECap1Regs.ECCLR.bit.CEVT1\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00148}00148\ \ \ \ \ ECap1Regs.ECCLR.bit.CEVT2\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00149}00149\ \ \ \ \ ECap1Regs.ECCLR.bit.CEVT3\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00150}00150\ \ \ \ \ ECap1Regs.ECCLR.bit.CEVT4\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00151}00151\ \ \ \ \ ECap1Regs.ECCLR.bit.INT\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00152}00152\ \ \ \ \ PieCtrlRegs.PIEACK.all\ =\ PIEACK\_GROUP4;}
+\DoxyCodeLine{\Hypertarget{cap_8c_source_l00153}00153\ \}}
+
+\end{DoxyCode}

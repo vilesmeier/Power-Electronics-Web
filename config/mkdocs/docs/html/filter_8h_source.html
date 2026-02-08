@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC/NUEDC-Core/Code/Control_Driver/filter/filter.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('filter_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">filter.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="filter_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef FILTER_H</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define FILTER_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;stdint.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;inc/hw_types.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="_transfer_fun_8h.html">transferfun/transferfun.h</a>&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// 结构体定义</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group___c_t_r_l___f_i_l_t_e_r.html#ga7ef0ab496f57e183b484e62e2053c94f">   25</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="group___c_t_r_l___f_i_l_t_e_r.html#ga7ef0ab496f57e183b484e62e2053c94f">FilterType</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94faa03dcbd13e5149679eccdc38ac2f5aee">   27</a></span>    <a class="code hl_enumvalue" href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94faa03dcbd13e5149679eccdc38ac2f5aee">FIL_NULL</a>     = 0U,      </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fa0cd4611d2ee5837a0c5221cdb19dd23b">   28</a></span>    <a class="code hl_enumvalue" href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fa0cd4611d2ee5837a0c5221cdb19dd23b">LPF_1_ORDER</a>  = 1U,      </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94faa1f8d0530c40e12082c09692fdb9e77c">   29</a></span>    <a class="code hl_enumvalue" href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94faa1f8d0530c40e12082c09692fdb9e77c">HPF_1_ORDER</a>  = 2U,      </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fab748983473e8a9419d1c869c06df0c6d">   30</a></span>    <a class="code hl_enumvalue" href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fab748983473e8a9419d1c869c06df0c6d">LPF_2_ORDER</a>  = 3U,      </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fafb52d3ebd5405cad8bb301af9437dccb">   31</a></span>    <a class="code hl_enumvalue" href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fafb52d3ebd5405cad8bb301af9437dccb">HPF_2_ORDER</a>  = 4U,      </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fa84225c08afc69fdb71afd4738771fb05">   32</a></span>    <a class="code hl_enumvalue" href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fa84225c08afc69fdb71afd4738771fb05">BPF_2_ORDER</a>  = 5U,      </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fa1f0828a59462f2429fa526c12d9d4189">   33</a></span>    <a class="code hl_enumvalue" href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fa1f0828a59462f2429fa526c12d9d4189">BSF_2_ORDER</a>  = 6U,      </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="group___c_t_r_l___f_i_l_t_e_r.html#gac11d127292fe897a054b665cf5985e83">   34</a></span>}<a class="code hl_enumeration" href="group___c_t_r_l___f_i_l_t_e_r.html#ga7ef0ab496f57e183b484e62e2053c94f">FilterType</a>;</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="};">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_f_i_l_t_e_r.html">   41</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_f_i_l_t_e_r.html">FILTER</a></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="struct_f_i_l_t_e_r.html#a85c4e172c23b4241932be68ab7df9e26">   43</a></span>    float32_t <a class="code hl_variable" href="struct_f_i_l_t_e_r.html#a85c4e172c23b4241932be68ab7df9e26">output</a>;       </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="struct_f_i_l_t_e_r.html#ae718d75ee25e7d6901ecc83ac76b13c3">   44</a></span>    <a class="code hl_typedef" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> <a class="code hl_variable" href="struct_f_i_l_t_e_r.html#ae718d75ee25e7d6901ecc83ac76b13c3">filter</a>;   </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="group___c_t_r_l___f_i_l_t_e_r.html#gac86c6b6fa8a4126f68837d61aa7d9633">   45</a></span>} <a class="code hl_struct" href="struct_f_i_l_t_e_r.html">FILTER</a>;</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// 功能函数定义</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___c_t_r_l___f_i_l_t_e_r.html#ga6bf8811531a98a51e7a794c2a27c0b04">Filter_Init</a>(<a class="code hl_struct" href="struct_f_i_l_t_e_r.html">FILTER</a> *fil);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___c_t_r_l___f_i_l_t_e_r.html#gaeb072f0b39f2c1c227d2f9a14de3f56b">Filter_Set</a>(<a class="code hl_struct" href="struct_f_i_l_t_e_r.html">FILTER</a> *fil, <a class="code hl_enumeration" href="group___c_t_r_l___f_i_l_t_e_r.html#ga7ef0ab496f57e183b484e62e2053c94f">FilterType</a> type, float32_t wc, float32_t damp, float32_t isr_freq);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="group___c_t_r_l___f_i_l_t_e_r.html#gacc49dc6e7958ff297d763394dd0432cd">   75</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group___c_t_r_l___f_i_l_t_e_r.html#gacc49dc6e7958ff297d763394dd0432cd">Filter_Run</a>(<a class="code hl_struct" href="struct_f_i_l_t_e_r.html">FILTER</a> *fil, float32_t <a class="code hl_variable" href="group___d_s_p___r_f_f_t___f32.html#ga5a0f4b49baab36db0c5e1922cdbc6c71">input</a>)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">// 共用DCL_DF22结构体, 不再区分执行函数</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    fil-&gt;<a class="code hl_variable" href="struct_f_i_l_t_e_r.html#a85c4e172c23b4241932be68ab7df9e26">output</a> = <a class="code hl_function" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#ga9d959ef0d3a467ed15b6a50179c436a8">DCL_DF22_Run</a>(&amp;(fil-&gt;<a class="code hl_variable" href="struct_f_i_l_t_e_r.html#ae718d75ee25e7d6901ecc83ac76b13c3">filter</a>),<a class="code hl_variable" href="group___d_s_p___r_f_f_t___f32.html#ga5a0f4b49baab36db0c5e1922cdbc6c71">input</a>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif </span><span class="comment">// !FILTER_H</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="ttc" id="a_transfer_fun_8h_html"><div class="ttname"><a href="_transfer_fun_8h.html">TransferFun.h</a></div><div class="ttdoc">适用于 C2000 与 STM32（带 FPU）的差分方程支持文件</div></div>
+<div class="ttc" id="agroup___c_t_r_l___f_i_l_t_e_r_html_ga6bf8811531a98a51e7a794c2a27c0b04"><div class="ttname"><a href="group___c_t_r_l___f_i_l_t_e_r.html#ga6bf8811531a98a51e7a794c2a27c0b04">Filter_Init</a></div><div class="ttdeci">void Filter_Init(FILTER *fil)</div><div class="ttdoc">初始化一阶结构体</div><div class="ttdef"><b>定义</b> <a href="filter_8c_source.html#l00014">filter.c:14</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___f_i_l_t_e_r_html_ga7ef0ab496f57e183b484e62e2053c94f"><div class="ttname"><a href="group___c_t_r_l___f_i_l_t_e_r.html#ga7ef0ab496f57e183b484e62e2053c94f">FilterType</a></div><div class="ttdeci">FilterType</div><div class="ttdoc">定义滤波器类型 FilterType</div><div class="ttdef"><b>定义</b> <a href="#l00025">filter.h:26</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___f_i_l_t_e_r_html_gacc49dc6e7958ff297d763394dd0432cd"><div class="ttname"><a href="group___c_t_r_l___f_i_l_t_e_r.html#gacc49dc6e7958ff297d763394dd0432cd">Filter_Run</a></div><div class="ttdeci">static void Filter_Run(FILTER *fil, float32_t input)</div><div class="ttdoc">执行数字滤波器, 一阶和二阶滤波器共用DF22结构体</div><div class="ttdef"><b>定义</b> <a href="#l00075">filter.h:75</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___f_i_l_t_e_r_html_gaeb072f0b39f2c1c227d2f9a14de3f56b"><div class="ttname"><a href="group___c_t_r_l___f_i_l_t_e_r.html#gaeb072f0b39f2c1c227d2f9a14de3f56b">Filter_Set</a></div><div class="ttdeci">void Filter_Set(FILTER *fil, FilterType type, float32_t wc, float32_t damp, float32_t isr_freq)</div><div class="ttdoc">配置数字滤波器, Tustin离散化实现</div><div class="ttdef"><b>定义</b> <a href="filter_8c_source.html#l00020">filter.c:20</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___f_i_l_t_e_r_html_gga7ef0ab496f57e183b484e62e2053c94fa0cd4611d2ee5837a0c5221cdb19dd23b"><div class="ttname"><a href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fa0cd4611d2ee5837a0c5221cdb19dd23b">LPF_1_ORDER</a></div><div class="ttdeci">@ LPF_1_ORDER</div><div class="ttdoc">一阶低通滤波器</div><div class="ttdef"><b>定义</b> <a href="#l00028">filter.h:28</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___f_i_l_t_e_r_html_gga7ef0ab496f57e183b484e62e2053c94fa1f0828a59462f2429fa526c12d9d4189"><div class="ttname"><a href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fa1f0828a59462f2429fa526c12d9d4189">BSF_2_ORDER</a></div><div class="ttdeci">@ BSF_2_ORDER</div><div class="ttdoc">二阶带阻滤波器</div><div class="ttdef"><b>定义</b> <a href="#l00033">filter.h:33</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___f_i_l_t_e_r_html_gga7ef0ab496f57e183b484e62e2053c94fa84225c08afc69fdb71afd4738771fb05"><div class="ttname"><a href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fa84225c08afc69fdb71afd4738771fb05">BPF_2_ORDER</a></div><div class="ttdeci">@ BPF_2_ORDER</div><div class="ttdoc">二阶带通滤波器</div><div class="ttdef"><b>定义</b> <a href="#l00032">filter.h:32</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___f_i_l_t_e_r_html_gga7ef0ab496f57e183b484e62e2053c94faa03dcbd13e5149679eccdc38ac2f5aee"><div class="ttname"><a href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94faa03dcbd13e5149679eccdc38ac2f5aee">FIL_NULL</a></div><div class="ttdeci">@ FIL_NULL</div><div class="ttdoc">初始化默认值, 未配置时为 NULL 类型</div><div class="ttdef"><b>定义</b> <a href="#l00027">filter.h:27</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___f_i_l_t_e_r_html_gga7ef0ab496f57e183b484e62e2053c94faa1f8d0530c40e12082c09692fdb9e77c"><div class="ttname"><a href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94faa1f8d0530c40e12082c09692fdb9e77c">HPF_1_ORDER</a></div><div class="ttdeci">@ HPF_1_ORDER</div><div class="ttdoc">一阶高通滤波器</div><div class="ttdef"><b>定义</b> <a href="#l00029">filter.h:29</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___f_i_l_t_e_r_html_gga7ef0ab496f57e183b484e62e2053c94fab748983473e8a9419d1c869c06df0c6d"><div class="ttname"><a href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fab748983473e8a9419d1c869c06df0c6d">LPF_2_ORDER</a></div><div class="ttdeci">@ LPF_2_ORDER</div><div class="ttdoc">二阶低通滤波器</div><div class="ttdef"><b>定义</b> <a href="#l00030">filter.h:30</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___f_i_l_t_e_r_html_gga7ef0ab496f57e183b484e62e2053c94fafb52d3ebd5405cad8bb301af9437dccb"><div class="ttname"><a href="group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fafb52d3ebd5405cad8bb301af9437dccb">HPF_2_ORDER</a></div><div class="ttdeci">@ HPF_2_ORDER</div><div class="ttdoc">二阶高通滤波器</div><div class="ttdef"><b>定义</b> <a href="#l00031">filter.h:31</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___t_r_a_n_s_f_u_n_html_ga9d959ef0d3a467ed15b6a50179c436a8"><div class="ttname"><a href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#ga9d959ef0d3a467ed15b6a50179c436a8">DCL_DF22_Run</a></div><div class="ttdeci">float32_t DCL_DF22_Run(DCL_DF22 *p, float32_t ek)</div><div class="ttdoc">执行完整二阶直接形式Ⅱ（DF22）控制器，在 FPU32 上运行, 汇编函数</div><div class="ttdef"><b>定义</b> <a href="_transfer_fun_8c_source.html#l00033">TransferFun.c:33</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___t_r_a_n_s_f_u_n_html_gaf8832c3b4a1ad9070601b091b430b0e8"><div class="ttname"><a href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a></div><div class="ttdeci">struct dcl_df22 DCL_DF22</div><div class="ttdoc">定义二阶直接形式Ⅱ（DF22）控制器结构体</div></div>
+<div class="ttc" id="agroup___d_s_p___r_f_f_t___f32_html_ga5a0f4b49baab36db0c5e1922cdbc6c71"><div class="ttname"><a href="group___d_s_p___r_f_f_t___f32.html#ga5a0f4b49baab36db0c5e1922cdbc6c71">input</a></div><div class="ttdeci">float32_t input[FFT_SIZE]</div><div class="ttdoc">输入数组</div><div class="ttdef"><b>定义</b> <a href="rfft_8c_source.html#l00026">rfft.c:26</a></div></div>
+<div class="ttc" id="astruct_f_i_l_t_e_r_html"><div class="ttname"><a href="struct_f_i_l_t_e_r.html">FILTER</a></div><div class="ttdoc">定义通用数字滤波器结构体</div><div class="ttdef"><b>定义</b> <a href="#l00041">filter.h:42</a></div></div>
+<div class="ttc" id="astruct_f_i_l_t_e_r_html_a85c4e172c23b4241932be68ab7df9e26"><div class="ttname"><a href="struct_f_i_l_t_e_r.html#a85c4e172c23b4241932be68ab7df9e26">FILTER::output</a></div><div class="ttdeci">float32_t output</div><div class="ttdoc">滤波器输出</div><div class="ttdef"><b>定义</b> <a href="#l00043">filter.h:43</a></div></div>
+<div class="ttc" id="astruct_f_i_l_t_e_r_html_ae718d75ee25e7d6901ecc83ac76b13c3"><div class="ttname"><a href="struct_f_i_l_t_e_r.html#ae718d75ee25e7d6901ecc83ac76b13c3">FILTER::filter</a></div><div class="ttdeci">DCL_DF22 filter</div><div class="ttdoc">二阶差分方程, 直接形式2</div><div class="ttdef"><b>定义</b> <a href="#l00044">filter.h:44</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_5244f9a5f7ec141c83a3e0bf5c4097b9.html">filter</a></li><li class="navelem"><a href="filter_8h.html">filter.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+\doxysection{ramp.\+h}
+\hypertarget{ramp_8h_source}{}\label{ramp_8h_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/ramp/ramp.h@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/ramp/ramp.h}}
+\mbox{\hyperlink{ramp_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00011}00011\ \textcolor{preprocessor}{\#ifndef\ RAMP\_H}}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00012}00012\ \textcolor{preprocessor}{\#define\ RAMP\_H}}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}stdint.h"{}}}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00015}00015\ \textcolor{preprocessor}{\#include\ "{}inc/hw\_types.h"{}}}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00016}00016\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{mathdef_8h}{mathdef/mathdef.h}}>}}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00022}\mbox{\hyperlink{struct_r_a_m_p}{00022}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_r_a_m_p}{RAMP}}}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00023}00023\ \{}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00024}\mbox{\hyperlink{struct_r_a_m_p_a2c25dd32e7d0d8c40882b97ba49f29fc}{00024}}\ \ \ \ \ float32\_t\ \ \ \mbox{\hyperlink{struct_r_a_m_p_a2c25dd32e7d0d8c40882b97ba49f29fc}{isr\_freq}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00025}\mbox{\hyperlink{struct_r_a_m_p_a8c9314b80da3ea2a2a2a826a0d63844e}{00025}}\ \ \ \ \ float32\_t\ \ \ \mbox{\hyperlink{struct_r_a_m_p_a8c9314b80da3ea2a2a2a826a0d63844e}{grad\_freq}};\ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00026}\mbox{\hyperlink{struct_r_a_m_p_a75f2ac00b90671292394edc670f821a1}{00026}}\ \ \ \ \ float32\_t\ \ \ \mbox{\hyperlink{struct_r_a_m_p_a75f2ac00b90671292394edc670f821a1}{step\_length}};\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00027}\mbox{\hyperlink{struct_r_a_m_p_a541ce5d020b53c11658bb0e7292893db}{00027}}\ \ \ \ \ float32\_t\ \ \ \mbox{\hyperlink{struct_r_a_m_p_a541ce5d020b53c11658bb0e7292893db}{ref\_angle}};\ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00028}\mbox{\hyperlink{group___c_t_r_l___r_a_m_p_gae5a74d3450cfe8998ab3cabd68341310}{00028}}\ \}\mbox{\hyperlink{struct_r_a_m_p}{RAMP}};}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00035}00035\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___r_a_m_p_ga3e743c6f7b3d3cace6e21e22f9722466}{Ramp\_Init}}(\mbox{\hyperlink{struct_r_a_m_p}{RAMP}}*\ \mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}});}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00044}00044\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___r_a_m_p_ga2e5990d2aba3b0277df88a6bb0871b2a}{Ramp\_Set}}(\mbox{\hyperlink{struct_r_a_m_p}{RAMP}}*\ \mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}},\ float32\_t\ grad\_freq,\ float32\_t\ isr\_freq);}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00051}\mbox{\hyperlink{group___c_t_r_l___r_a_m_p_gae2e0c71c0fe9a608875d295f970e9236}{00051}}\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___r_a_m_p_gae2e0c71c0fe9a608875d295f970e9236}{Ramp\_Run}}(\mbox{\hyperlink{struct_r_a_m_p}{RAMP}}*\ \mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}})}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00052}00052\ \{}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00053}00053\ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}}-\/>ref\_angle\ =\ \mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}}-\/>ref\_angle\ +\ \mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}}-\/>step\_length;}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00054}00054\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}}-\/>ref\_angle\ >\ \mbox{\hyperlink{group___c_t_r_l___m_a_t_h_ga56296334ffdd8edad8bb96c2062e2704}{MATH\_2PI}})}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00055}00055\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00056}00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}}-\/>ref\_angle\ =\ 0.0f;}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00057}00057\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00058}00058\ \}}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00067}\mbox{\hyperlink{group___c_t_r_l___r_a_m_p_ga0bdd6f4685504bc20e96a3dbf860b51d}{00067}}\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___r_a_m_p_ga0bdd6f4685504bc20e96a3dbf860b51d}{Ramp\_Presync}}(\mbox{\hyperlink{struct_r_a_m_p}{RAMP}}*\ \mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}},\ float32\_t\ phase)}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00068}00068\ \{}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00069}00069\ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}}-\/>ref\_angle\ =\ phase;}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00070}00070\ \}}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00072}00072\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !RAMP\_H}}
+\DoxyCodeLine{\Hypertarget{ramp_8h_source_l00073}00073\ }
+
+\end{DoxyCode}

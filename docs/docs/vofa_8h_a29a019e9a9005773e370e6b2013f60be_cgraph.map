@@ -1,7 +1,0 @@
-<map id="VOFA_Run" name="VOFA_Run">
-<area shape="rect" id="Node000001" title="使用 Justfloat 协议, 向 VOFA 上位机发送数据" alt="" coords="5,5,88,33"/>
-<area shape="rect" id="Node000002" href="$uart_8c.html#ab0704d434e9b7a441faa3aac78d037b3" title="send data to txfifo" alt="" coords="136,5,272,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,16,120,16,120,22,88,22"/>
-<area shape="rect" id="Node000003" href="$uart_8c.html#a4c86107cd49c2644ef6abd5d0c6f7194" title="Send Char" alt="" coords="320,5,436,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="273,16,304,16,304,22,273,22"/>
-</map>

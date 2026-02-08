@@ -1,5 +1,0 @@
-<map id="VSG_Run" name="VSG_Run">
-<area shape="rect" id="Node000001" title="执行虚拟同步机控制环路" alt="" coords="5,5,86,32"/>
-<area shape="rect" id="Node000002" href="$_transfer_fun_8c.html#a7ca9b52b5a2f202f4d3890031f21c7ec" title="执行一阶直接形式Ⅰ控制器（DF11），在 FPU32 上运行 &#160;&#160;原函数名: float32_t DCL_runDF11_C1(DCL_DF11 *p, float32_t ek);" alt="" coords="134,5,251,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,16,118,16,118,21,86,21"/>
-</map>

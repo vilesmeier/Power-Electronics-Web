@@ -1,5 +1,0 @@
-<map id="OLED_Clear" name="OLED_Clear">
-<area shape="rect" id="Node000001" title="clear screen" alt="" coords="5,5,96,33"/>
-<area shape="rect" id="Node000002" href="$_peripheral___driver_228335_2_o_l_e_d_2oled_8c.html#a5afff1be901cd9738f1c9652a0676f62" title="send data ot screen" alt="" coords="144,5,223,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,16,128,16,128,22,96,22"/>
-</map>

@@ -1,0 +1,77 @@
+\doxysection{D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Control\+\_\+\+Driver/filter/filter.h 文件参考}
+\hypertarget{filter_8h}{}\label{filter_8h}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/filter/filter.h@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/filter/filter.h}}
+
+
+数字滤波器函数声明  
+
+
+{\ttfamily \#include "{}stdint.\+h"{}}\newline
+{\ttfamily \#include "{}inc/hw\+\_\+types.\+h"{}}\newline
+{\ttfamily \#include $<$transferfun/transferfun.\+h$>$}\newline
+filter.\+h 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{filter_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件被哪些文件直接或间接地引用了\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{filter_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{结构体}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_f_i_l_t_e_r}{FILTER}}
+\begin{DoxyCompactList}\small\item\em 定义通用数字滤波器结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_ga7ef0ab496f57e183b484e62e2053c94f}{Filter\+Type}} \mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_gac11d127292fe897a054b665cf5985e83}{Filter\+Type}}
+\begin{DoxyCompactList}\small\item\em 定义滤波器类型 \doxylink{group___c_t_r_l___f_i_l_t_e_r_ga7ef0ab496f57e183b484e62e2053c94f}{Filter\+Type} \end{DoxyCompactList}\item 
+typedef struct FILTER \mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_gac86c6b6fa8a4126f68837d61aa7d9633}{FILTER}}
+\begin{DoxyCompactList}\small\item\em 定义通用数字滤波器结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_ga7ef0ab496f57e183b484e62e2053c94f}{Filter\+Type}} \{ \newline
+\mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_gga7ef0ab496f57e183b484e62e2053c94faa03dcbd13e5149679eccdc38ac2f5aee}{FIL\+\_\+\+NULL}} = 0U
+, \mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_gga7ef0ab496f57e183b484e62e2053c94fa0cd4611d2ee5837a0c5221cdb19dd23b}{LPF\+\_\+1\+\_\+\+ORDER}} = 1U
+, \mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_gga7ef0ab496f57e183b484e62e2053c94faa1f8d0530c40e12082c09692fdb9e77c}{HPF\+\_\+1\+\_\+\+ORDER}} = 2U
+, \mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_gga7ef0ab496f57e183b484e62e2053c94fab748983473e8a9419d1c869c06df0c6d}{LPF\+\_\+2\+\_\+\+ORDER}} = 3U
+, \newline
+\mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_gga7ef0ab496f57e183b484e62e2053c94fafb52d3ebd5405cad8bb301af9437dccb}{HPF\+\_\+2\+\_\+\+ORDER}} = 4U
+, \mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_gga7ef0ab496f57e183b484e62e2053c94fa84225c08afc69fdb71afd4738771fb05}{BPF\+\_\+2\+\_\+\+ORDER}} = 5U
+, \mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_gga7ef0ab496f57e183b484e62e2053c94fa1f0828a59462f2429fa526c12d9d4189}{BSF\+\_\+2\+\_\+\+ORDER}} = 6U
+ \}
+\begin{DoxyCompactList}\small\item\em 定义滤波器类型 \doxylink{group___c_t_r_l___f_i_l_t_e_r_ga7ef0ab496f57e183b484e62e2053c94f}{Filter\+Type} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_ga6bf8811531a98a51e7a794c2a27c0b04}{Filter\+\_\+\+Init}} (\mbox{\hyperlink{struct_f_i_l_t_e_r}{FILTER}} \texorpdfstring{$\ast$}{*}fil)
+\begin{DoxyCompactList}\small\item\em 初始化一阶结构体 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_gaeb072f0b39f2c1c227d2f9a14de3f56b}{Filter\+\_\+\+Set}} (\mbox{\hyperlink{struct_f_i_l_t_e_r}{FILTER}} \texorpdfstring{$\ast$}{*}fil, \mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_ga7ef0ab496f57e183b484e62e2053c94f}{Filter\+Type}} type, float32\+\_\+t wc, float32\+\_\+t damp, float32\+\_\+t isr\+\_\+freq)
+\begin{DoxyCompactList}\small\item\em 配置数字滤波器, Tustin离散化实现 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___f_i_l_t_e_r_gacc49dc6e7958ff297d763394dd0432cd}{Filter\+\_\+\+Run}} (\mbox{\hyperlink{struct_f_i_l_t_e_r}{FILTER}} \texorpdfstring{$\ast$}{*}fil, float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga5a0f4b49baab36db0c5e1922cdbc6c71}{input}})
+\begin{DoxyCompactList}\small\item\em 执行数字滤波器, 一阶和二阶滤波器共用\+DF22结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+数字滤波器函数声明 
+
+\begin{DoxyWarning}{警告}
+此文件应该先include \doxylink{_transfer_fun_8h}{transferfun.\+h} 
+\end{DoxyWarning}
+\begin{DoxyNote}{注解}
+在使用本文件时,不应该由 \doxylink{global_8h}{global.\+h} 直接 include \doxylink{_transfer_fun_8h}{transferfun.\+h} 
+\end{DoxyNote}
+\begin{DoxyAuthor}{作者}
+Mao Chenbin (\href{mailto:508038890@qq.com}{\texttt{508038890@qq.\+com}}) 
+\end{DoxyAuthor}
+
+
+在文件 \mbox{\hyperlink{filter_8h_source}{filter.\+h}} 中定义.
+

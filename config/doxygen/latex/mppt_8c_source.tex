@@ -1,0 +1,119 @@
+\doxysection{mppt.\+c}
+\hypertarget{mppt_8c_source}{}\label{mppt_8c_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/mppt/mppt.c@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/mppt/mppt.c}}
+\mbox{\hyperlink{mppt_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00009}00009\ \textcolor{comment}{//\ Flash\ 启动支持,\ 将函数搬运至RAM}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00010}00010\ \textcolor{preprocessor}{\#pragma\ CODE\_SECTION(MPPT\_INCC\_Init,\ "{}.TI.ramfunc"{});}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00011}00011\ \textcolor{preprocessor}{\#pragma\ CODE\_SECTION(MPPT\_INCC\_Set,\ "{}.TI.ramfunc"{});}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00012}00012\ \textcolor{preprocessor}{\#pragma\ CODE\_SECTION(MPPT\_INCC\_I\_Init,\ "{}.TI.ramfunc"{});}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00013}00013\ \textcolor{preprocessor}{\#pragma\ CODE\_SECTION(MPPT\_INCC\_I\_Set,\ "{}.TI.ramfunc"{});}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00014}00014\ \textcolor{preprocessor}{\#pragma\ CODE\_SECTION(MPPT\_PNO\_Init,\ "{}.TI.ramfunc"{});}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00015}00015\ \textcolor{preprocessor}{\#pragma\ CODE\_SECTION(MPPT\_PNO\_Set,\ "{}.TI.ramfunc"{});}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00017}00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mppt_8h}{mppt.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00019}\mbox{\hyperlink{group___c_t_r_l___m_p_p_t_ga28c1eb6d29bbe292e0789c08568f6211}{00019}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___m_p_p_t_ga28c1eb6d29bbe292e0789c08568f6211}{MPPT\_INCC\_Init}}(\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c}{MPPT\_INCC}}\ *v)}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00020}00020\ \{}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00021}00021\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_afcb6da9ad470aceab7edc379fc1e4c81}{Ipv}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00022}00022\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_ac97be06e2cabbbf723a5a11c31bcaeeb}{Vpv}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00023}00023\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_a54ed00e5216b7bf1232bbf60eff91d43}{MaxVolt}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00024}00024\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_a0eb6c159f91b6199d66084d044726327}{MinVolt}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00025}00025\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_a4a52ddcb71a2885c655d8325eb8f0cca}{Stepsize}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00026}00026\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_a23bc09416e1802cc2aef2437f6d31554}{VmppOut}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00027}00027\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_afce71122a37f47de0dca6c1f0b93828e}{Cond}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00028}00028\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_a34033b29cd80df20fc4ed486b6536ce3}{IncCond}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00029}00029\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_aec7b428b3bbc594ce90ef6d0999fed90}{DeltaV}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00030}00030\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_a75624ee1905add71d3f7b05bdcd166fc}{DeltaI}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00031}00031\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_a0da0a81d1956e6a9ec6652accc51b62a}{VpvOld}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00032}00032\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_adbe41cc9acb5b838910497a19ca35ca2}{IpvOld}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00033}00033\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_a0941380d1d97d38c6fd220c74701adea}{StepFirst}}=(0.02);}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00034}00034\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_ab5e77f3b96c878f331ad63bc73caf912}{mppt\_enable}}=1;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00035}00035\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_a1dc519bdcfdc78a88b597a8ecbbee0a4}{mppt\_first}}=1;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00036}00036\ \}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00038}\mbox{\hyperlink{group___c_t_r_l___m_p_p_t_ga1ac3d5018ba3ef1109054a12adda2f36}{00038}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___m_p_p_t_ga1ac3d5018ba3ef1109054a12adda2f36}{MPPT\_INCC\_Set}}(\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c}{MPPT\_INCC}}\ *v,\ float32\_t\ step,\ float32\_t\ max,\ float32\_t\ min)}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00039}00039\ \{}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00040}00040\ \ \ \ \ \textcolor{keywordflow}{if}(max\ >\ min)}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00041}00041\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00042}00042\ \ \ \ \ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_a54ed00e5216b7bf1232bbf60eff91d43}{MaxVolt}}=max;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00043}00043\ \ \ \ \ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_a0eb6c159f91b6199d66084d044726327}{MinVolt}}=min;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00044}00044\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00045}00045\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00046}00046\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00047}00047\ \ \ \ \ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_a54ed00e5216b7bf1232bbf60eff91d43}{MaxVolt}}=min;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00048}00048\ \ \ \ \ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_a0eb6c159f91b6199d66084d044726327}{MinVolt}}=max;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00049}00049\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00050}00050\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c_a4a52ddcb71a2885c655d8325eb8f0cca}{Stepsize}}=step;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00051}00051\ \}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00055}\mbox{\hyperlink{group___c_t_r_l___m_p_p_t_ga4c565cd0e2a9406ed8d533808f1bc6a8}{00055}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___m_p_p_t_ga4c565cd0e2a9406ed8d533808f1bc6a8}{MPPT\_INCC\_I\_Init}}(\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i}{MPPT\_INCC\_I}}\ *v)}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00056}00056\ \{}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00057}00057\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a9383c5d32dd6d00136352dfd1c77646e}{Ipv}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00058}00058\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a7fe0d2b44a6d490f7360609f58131390}{Vpv}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00059}00059\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_ad351b2aaa2ab688e24a55bf8099381e2}{MaxI}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00060}00060\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a63e9e585f339aeaab05e6df5b6667433}{MinI}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00061}00061\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_affbc18d5a6a3f3f4328dab562b7031ab}{Stepsize}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00062}00062\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_ac6d396281ded02ed50e4b166d316804f}{ImppOut}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00063}00063\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a16047155c63f4432c2ed7759f3b37588}{Cond}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00064}00064\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_aefb56aecebaf90b4e8b09fbabc37adcb}{IncCond}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00065}00065\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_aa7ff07413939cdaaa6dcda7b9d7f63f2}{DeltaV}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00066}00066\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a265b7b3b4d880970b450428b4e96e687}{DeltaI}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00067}00067\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a84c831c04e73c97fc128b8d34a663ce0}{VpvOld}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00068}00068\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_af805b0ab4e4b51a8905c4d506fa1ba2f}{IpvOld}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00069}00069\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a4da60efd34b28084bb9e9616cf1bb9cc}{StepFirst}}=(0.02);}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00070}00070\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_aeeb61f773f6a8652d233de93d9509040}{mppt\_enable}}=1;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00071}00071\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_ad5a0f94af6490efe1cab7baf80580048}{mppt\_first}}=1;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00072}00072\ \}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00074}\mbox{\hyperlink{group___c_t_r_l___m_p_p_t_gabe8fb5944da2e478ef84f21ea4033fbc}{00074}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___m_p_p_t_gabe8fb5944da2e478ef84f21ea4033fbc}{MPPT\_INCC\_I\_Set}}(\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i}{MPPT\_INCC\_I}}\ *v,\ float32\_t\ step,\ float32\_t\ max,\ float32\_t\ min)}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00075}00075\ \{}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00076}00076\ \ \ \ \ \textcolor{keywordflow}{if}(max\ >\ min)}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00077}00077\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00078}00078\ \ \ \ \ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_ad351b2aaa2ab688e24a55bf8099381e2}{MaxI}}\ =max;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00079}00079\ \ \ \ \ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a63e9e585f339aeaab05e6df5b6667433}{MinI}}=min;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00080}00080\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00081}00081\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00082}00082\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00083}00083\ \ \ \ \ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_ad351b2aaa2ab688e24a55bf8099381e2}{MaxI}}=min;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00084}00084\ \ \ \ \ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a63e9e585f339aeaab05e6df5b6667433}{MinI}}=max;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00085}00085\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00086}00086\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_affbc18d5a6a3f3f4328dab562b7031ab}{Stepsize}}=step;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00087}00087\ \}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00089}\mbox{\hyperlink{group___c_t_r_l___m_p_p_t_gaed56530c96b0662ec031e22f302c4971}{00089}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___m_p_p_t_gaed56530c96b0662ec031e22f302c4971}{MPPT\_PNO\_Init}}(\mbox{\hyperlink{struct_m_p_p_t___p_n_o}{MPPT\_PNO}}\ *v)}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00090}00090\ \{}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00091}00091\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_ae3ea62e29378a5178f192a1543160fc3}{Ipv}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00092}00092\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_afd91d91203a06d883a807337d929e9d2}{Vpv}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00093}00093\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_a8fc80609e9c916ad30adfdca92e9b008}{DeltaPmin}}=(0.00001);}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00094}00094\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_a585a78af18934c8611e2a45668d92dd2}{MaxVolt}}=(0.9);}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00095}00095\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_a83706622d4e0f089ca27081d49992f43}{MinVolt}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00096}00096\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_adf5c3f50a431a9384fd1979c96cb6014}{Stepsize}}=(0.002);}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00097}00097\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_a952bfa90eb2893ab59c143d86a7c60be}{VmppOut}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00098}00098\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_a8677705ff20fff2e43d37f8354046b68}{DeltaP}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00099}00099\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_a871ecc74568e205f1130530dbe114cd2}{PanelPower}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00100}00100\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_a00fbd1110ff9737d71e8a592c0fa7fe0}{PanelPower\_Prev}}=0;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00101}00101\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_acacc47588e57dd850cfc54e745d13abc}{mppt\_enable}}=1;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00102}00102\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_abdab69df1b953040be22cb871e6cf579}{mppt\_first}}=1;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00103}00103\ \}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00105}\mbox{\hyperlink{group___c_t_r_l___m_p_p_t_gac152f21064ab7f8db769d00f18032069}{00105}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___m_p_p_t_gac152f21064ab7f8db769d00f18032069}{MPPT\_PNO\_Set}}(\mbox{\hyperlink{struct_m_p_p_t___p_n_o}{MPPT\_PNO}}\ *v,\ float32\_t\ step,\ float32\_t\ max,\ float32\_t\ min,\ float32\_t\ delta\_p\_min)}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00106}00106\ \{}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00107}00107\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_a8fc80609e9c916ad30adfdca92e9b008}{DeltaPmin}}\ =\ delta\_p\_min;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00108}00108\ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_adf5c3f50a431a9384fd1979c96cb6014}{Stepsize}}\ =\ step;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00109}00109\ \ \ \ \ \textcolor{keywordflow}{if}(max\ >\ min)}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00110}00110\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00111}00111\ \ \ \ \ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_a585a78af18934c8611e2a45668d92dd2}{MaxVolt}}\ =max;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00112}00112\ \ \ \ \ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_a83706622d4e0f089ca27081d49992f43}{MinVolt}}=min;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00113}00113\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00114}00114\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00115}00115\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00116}00116\ \ \ \ \ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_a585a78af18934c8611e2a45668d92dd2}{MaxVolt}}=min;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00117}00117\ \ \ \ \ \ \ \ \ v-\/>\mbox{\hyperlink{struct_m_p_p_t___p_n_o_a83706622d4e0f089ca27081d49992f43}{MinVolt}}=max;}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00118}00118\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mppt_8c_source_l00119}00119\ \}}
+
+\end{DoxyCode}

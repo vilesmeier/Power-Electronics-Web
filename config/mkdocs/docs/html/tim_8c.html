@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC/NUEDC-Core/Code/Peripheral_Driver/28335/Timer/tim.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('tim_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">tim.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>CPU timer driver source code  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tim.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="tim_8c__incl.png" border="0" usemap="#a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_peripheral___driver_228335_2_timer_2tim_8c" loading="lazy" alt=""/></div>
+<map name="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_peripheral___driver_228335_2_timer_2tim_8c" id="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_peripheral___driver_228335_2_timer_2tim_8c">
+<area shape="rect" title="CPU timer driver source code" alt="" coords="878,5,1054,67"/>
+<area shape="rect" href="global_8h.html" title="全局变量声明, 头文件打包, 全局通用宏定义" alt="" coords="933,115,999,143"/>
+<area shape="poly" title=" " alt="" coords="969,67,969,99,963,99,963,67"/>
+<area shape="rect" href="dcl_8h.html" title="数字控制库函数定义 &#160;&#160;包含支持FPU32的结构体定义与函数声明 &#160;&#160;PI/QPR/QPIR/QPMR/RC" alt="" coords="606,191,675,218"/>
+<area shape="poly" title=" " alt="" coords="933,140,695,193,691,194,690,189,694,188,932,135"/>
+<area shape="rect" href="_transfer_fun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="243,266,406,294"/>
+<area shape="poly" title=" " alt="" coords="933,135,768,153,660,169,552,193,451,227,367,262,365,257,449,222,551,188,659,164,767,147,933,130"/>
+<area shape="rect" title=" " alt="" coords="770,418,834,445"/>
+<area shape="poly" title=" " alt="" coords="933,133,773,137,544,146,311,164,214,177,143,193,101,205,67,217,40,235,15,268,8,288,12,306,22,322,38,336,75,356,102,367,158,384,234,397,421,415,612,424,755,427,755,433,611,429,421,421,233,403,157,389,100,372,73,361,35,340,18,325,7,308,3,288,10,265,36,231,65,212,99,200,141,188,214,172,310,159,543,141,773,132,933,128"/>
+<area shape="rect" title=" " alt="" coords="656,342,764,370"/>
+<area shape="poly" title=" " alt="" coords="933,144,890,162,838,189,786,224,742,268,725,297,717,328,712,326,721,295,737,265,783,220,835,184,888,157,931,139"/>
+<area shape="rect" href="delay_8h.html" title="数组延迟链驱动函数声明" alt="" coords="751,266,848,294"/>
+<area shape="poly" title=" " alt="" coords="954,145,827,258,824,254,950,141"/>
+<area shape="rect" href="mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="1123,342,1254,370"/>
+<area shape="poly" title=" " alt="" coords="999,141,1098,188,1118,203,1138,216,1175,227,1210,229,1274,223,1304,222,1333,226,1362,239,1390,265,1396,280,1390,296,1371,310,1342,323,1270,343,1269,337,1340,318,1368,306,1385,292,1390,280,1385,268,1359,243,1332,231,1304,227,1274,229,1210,235,1174,232,1136,221,1115,208,1095,193,997,146"/>
+<area shape="rect" href="filter_8h.html" title="数字滤波器函数声明" alt="" coords="213,191,300,218"/>
+<area shape="poly" title=" " alt="" coords="933,136,370,193,316,199,315,194,370,188,932,131"/>
+<area shape="rect" href="modulate_8h.html" title="调制函数声明" alt="" coords="430,266,574,294"/>
+<area shape="poly" title=" " alt="" coords="933,132,868,133,781,141,686,159,640,174,595,193,554,223,522,256,518,253,550,219,593,188,638,169,685,154,781,136,867,128,933,126"/>
+<area shape="rect" href="mppt_8h.html" title="TI 官方MPPT(最大功率点跟踪)库移植 TI Solar Lib参考官方用户手册" alt="" coords="984,266,1079,294"/>
+<area shape="poly" title=" " alt="" coords="973,142,1001,217,1018,252,1014,254,996,219,968,144"/>
+<area shape="rect" href="_control___driver_2oled_2oled_8h.html" title="OLED函数声明&#45;SSD1306/SSD1315" alt="" coords="1450,266,1535,294"/>
+<area shape="poly" title=" " alt="" coords="1001,138,1138,188,1166,203,1195,216,1260,235,1312,245,1432,264,1436,265,1435,270,1431,269,1311,250,1259,240,1193,221,1164,208,1136,193,999,143"/>
+<area shape="rect" title=" " alt="" coords="1206,191,1297,218"/>
+<area shape="poly" title=" " alt="" coords="1000,136,1191,185,1190,190,999,141"/>
+<area shape="rect" title=" " alt="" coords="1322,191,1413,218"/>
+<area shape="poly" title=" " alt="" coords="1000,133,1307,188,1306,193,999,138"/>
+<area shape="rect" title=" " alt="" coords="1437,191,1575,218"/>
+<area shape="poly" title=" " alt="" coords="1000,132,1422,188,1421,193,999,137"/>
+<area shape="rect" title=" " alt="" coords="1599,191,1736,218"/>
+<area shape="poly" title=" " alt="" coords="1000,130,1240,151,1584,188,1583,193,1239,156,1000,135"/>
+<area shape="rect" href="ramp_8h.html" title="参考相位生成 函数声明" alt="" coords="1277,266,1375,294"/>
+<area shape="poly" title=" " alt="" coords="986,141,1046,183,1101,216,1171,239,1263,262,1262,267,1170,244,1098,221,1043,187,983,145"/>
+<area shape="rect" href="state_8h.html" title="全局状态机声明, 以及自定义时间片" alt="" coords="25,266,118,294"/>
+<area shape="poly" title=" " alt="" coords="932,133,783,137,570,146,355,164,267,177,202,193,172,206,144,223,98,258,95,254,141,218,170,201,200,188,266,172,355,158,570,140,783,131,932,128"/>
+<area shape="rect" href="transform_8h.html" title="常用坐标变换" alt="" coords="1103,266,1253,294"/>
+<area shape="poly" title=" " alt="" coords="978,141,1008,177,1050,216,1089,240,1128,258,1126,263,1086,244,1047,220,1004,181,974,145"/>
+<area shape="rect" href="vofa_8h.html" title="VOFA上位机支持, 函数声明" alt="" coords="872,266,959,294"/>
+<area shape="poly" title=" " alt="" coords="964,144,927,252,922,250,959,142"/>
+<area shape="rect" title=" " alt="" coords="1761,191,1825,218"/>
+<area shape="poly" title=" " alt="" coords="1000,128,1120,130,1302,139,1520,157,1633,171,1746,188,1745,193,1633,176,1519,162,1302,144,1120,136,1000,133"/>
+<area shape="poly" title=" " alt="" coords="606,217,397,265,395,260,605,211"/>
+<area shape="poly" title=" " alt="" coords="639,219,632,249,627,288,630,330,636,350,646,368,668,391,696,407,726,417,756,424,755,429,725,422,694,412,665,395,641,371,631,352,625,331,622,288,627,248,634,218"/>
+<area shape="poly" title=" " alt="" coords="649,217,700,327,695,329,644,220"/>
+<area shape="poly" title=" " alt="" coords="670,216,759,257,756,262,668,221"/>
+<area shape="poly" title=" " alt="" coords="325,294,323,332,327,351,337,368,367,387,411,401,466,412,527,420,652,427,755,428,755,434,652,433,526,425,465,418,410,407,365,391,334,372,322,353,317,332,319,294"/>
+<area shape="poly" title=" " alt="" coords="395,292,641,339,640,344,394,297"/>
+<area shape="poly" title=" " alt="" coords="802,294,804,402,799,402,797,294"/>
+<area shape="poly" title=" " alt="" coords="785,297,739,334,736,330,782,292"/>
+<area shape="poly" title=" " alt="" coords="849,289,860,291,1108,337,1107,343,859,297,848,294"/>
+<area shape="poly" title=" " alt="" coords="1123,372,850,424,849,419,1122,367"/>
+<area shape="rect" title=" " alt="" coords="1257,418,1318,445"/>
+<area shape="poly" title=" " alt="" coords="1208,368,1260,406,1256,411,1205,372"/>
+<area shape="poly" title=" " alt="" coords="271,217,304,253,300,257,267,221"/>
+<area shape="poly" title=" " alt="" coords="246,220,223,254,217,274,221,293,239,322,259,340,284,354,318,367,355,379,404,389,526,406,755,425,755,430,525,411,403,394,353,384,316,372,282,358,256,345,235,325,216,295,212,273,218,252,242,217"/>
+<area shape="poly" title=" " alt="" coords="249,220,229,256,226,275,233,292,248,298,283,305,393,320,641,345,640,351,392,325,282,310,247,303,230,296,221,276,224,255,244,218"/>
+<area shape="poly" title=" " alt="" coords="514,292,550,330,574,350,599,367,639,386,680,401,756,420,754,425,678,406,637,391,597,372,570,354,546,333,511,296"/>
+<area shape="poly" title=" " alt="" coords="540,292,660,334,658,339,538,297"/>
+<area shape="rect" title=" " alt="" coords="347,342,529,370"/>
+<area shape="poly" title=" " alt="" coords="493,296,461,332,457,328,489,293"/>
+<area shape="poly" title=" " alt="" coords="1019,297,978,332,925,372,848,413,846,408,922,367,975,328,1016,293"/>
+<area shape="poly" title=" " alt="" coords="984,295,780,341,779,336,983,290"/>
+<area shape="poly" title=" " alt="" coords="1471,297,1397,335,1349,355,1299,372,1173,400,1047,418,934,428,849,432,849,427,934,422,1046,413,1172,395,1297,367,1347,350,1394,330,1469,292"/>
+<area shape="poly" title=" " alt="" coords="1450,290,1388,297,1108,321,828,345,780,350,779,344,827,339,1107,316,1387,291,1449,284"/>
+<area shape="poly" title=" " alt="" coords="1479,297,1381,372,1322,411,1319,407,1378,368,1475,292"/>
+<area shape="rect" href="i2c_8h.html" title=" " alt="" coords="1469,342,1517,370"/>
+<area shape="poly" title=" " alt="" coords="1495,295,1495,326,1490,326,1490,295"/>
+<area shape="rect" title=" " alt="" coords="1431,418,1554,445"/>
+<area shape="poly" title=" " alt="" coords="1495,370,1495,402,1490,402,1490,370"/>
+<area shape="poly" title=" " alt="" coords="1324,295,1304,334,1288,355,1268,372,1233,387,1187,399,1071,417,948,427,849,432,849,426,948,421,1070,411,1186,394,1232,382,1265,367,1284,351,1299,331,1319,293"/>
+<area shape="poly" title=" " alt="" coords="1277,295,1265,297,780,350,779,344,1264,291,1277,289"/>
+<area shape="poly" title=" " alt="" coords="1303,297,1228,337,1225,332,1300,292"/>
+<area shape="poly" title=" " alt="" coords="79,293,101,332,118,352,138,367,189,387,260,402,344,413,436,420,617,427,755,428,755,433,617,433,435,426,344,418,259,407,188,392,135,372,114,355,97,335,74,296"/>
+<area shape="poly" title=" " alt="" coords="119,284,641,344,640,349,118,290"/>
+<area shape="poly" title=" " alt="" coords="1148,297,962,372,849,415,848,410,960,367,1146,292"/>
+<area shape="poly" title=" " alt="" coords="1103,296,780,346,779,341,1102,291"/>
+<area shape="poly" title=" " alt="" coords="1183,294,1187,326,1182,327,1177,295"/>
+<area shape="poly" title=" " alt="" coords="919,294,917,330,911,352,902,371,878,396,849,414,846,410,874,392,897,368,906,350,911,330,914,294"/>
+<area shape="poly" title=" " alt="" coords="880,297,762,339,760,334,878,292"/>
+<area shape="rect" title=" " alt="" coords="840,342,887,370"/>
+<area shape="poly" title=" " alt="" coords="908,296,884,331,879,328,904,293"/>
+</map>
+</div>
+</div>
+<p><a href="tim_8c_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga6207706a3d9f9c440cf30f7e011bc1c2" id="r_ga6207706a3d9f9c440cf30f7e011bc1c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___f28335___t_i_m.html#ga6207706a3d9f9c440cf30f7e011bc1c2">TIM0_Init</a> (void)</td></tr>
+<tr class="memdesc:ga6207706a3d9f9c440cf30f7e011bc1c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init CPU Timer0  <br /></td></tr>
+<tr class="memitem:ga99bcb8c40956c72496cb7a3a33877721" id="r_ga99bcb8c40956c72496cb7a3a33877721"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___f28335___t_i_m.html#ga99bcb8c40956c72496cb7a3a33877721">TIM0_Set</a> (float freq)</td></tr>
+<tr class="memdesc:ga99bcb8c40956c72496cb7a3a33877721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set CPUTimer0 frequency  <br /></td></tr>
+<tr class="memitem:ga4d1587c0146ce727736736c0e6012759" id="r_ga4d1587c0146ce727736736c0e6012759"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___f28335___t_i_m.html#ga4d1587c0146ce727736736c0e6012759">TIM0_Start</a> (void)</td></tr>
+<tr class="memdesc:ga4d1587c0146ce727736736c0e6012759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start CpuTimer0  <br /></td></tr>
+<tr class="memitem:gabbad9a0b511e69e1794b83826bfecc30" id="r_gabbad9a0b511e69e1794b83826bfecc30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___f28335___t_i_m.html#gabbad9a0b511e69e1794b83826bfecc30">TIM0_Stop</a> (void)</td></tr>
+<tr class="memdesc:gabbad9a0b511e69e1794b83826bfecc30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop CpuTimer0  <br /></td></tr>
+<tr class="memitem:ga1d4a8e400cbd762e8d6ba80e6275c93e" id="r_ga1d4a8e400cbd762e8d6ba80e6275c93e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___f28335___t_i_m.html#ga1d4a8e400cbd762e8d6ba80e6275c93e">TIM0_Reload</a> (void)</td></tr>
+<tr class="memdesc:ga1d4a8e400cbd762e8d6ba80e6275c93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload CpuTimer0  <br /></td></tr>
+<tr class="memitem:ga0950d135719562f192fb7fd782cd58be" id="r_ga0950d135719562f192fb7fd782cd58be"><td class="memItemLeft" align="right" valign="top">interrupt void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___f28335___t_i_m.html#ga0950d135719562f192fb7fd782cd58be">cpu_timer0_isr</a> (void)</td></tr>
+<tr class="memdesc:ga0950d135719562f192fb7fd782cd58be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt handler  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>CPU timer driver source code </p>
+
+<p class="definition">在文件 <a class="el" href="tim_8c_source.html">tim.c</a> 中定义.</p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_26468b5983c560a96d3a222f07de3c8d.html">Peripheral_Driver</a></li><li class="navelem"><a href="dir_f03d8b6ecf10a1b5721c7ab8323bb129.html">28335</a></li><li class="navelem"><a href="dir_6dcbfa4ff2aa9b3083e544ef9dda50bd.html">Timer</a></li><li class="navelem"><a href="tim_8c.html">tim.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

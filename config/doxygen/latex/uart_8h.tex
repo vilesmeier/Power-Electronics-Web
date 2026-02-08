@@ -1,0 +1,58 @@
+\doxysection{D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Peripheral\+\_\+\+Driver/28335/\+UART/uart.h 文件参考}
+\hypertarget{uart_8h}{}\label{uart_8h}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/UART/uart.h@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/UART/uart.h}}
+
+
+uart driver header file  
+
+
+{\ttfamily \#include "{}DSP2833x\+\_\+\+Device.\+h"{}}\newline
+uart.\+h 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{uart_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件被哪些文件直接或间接地引用了\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{uart_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___u_a_r_t_ga9b6401b26df29cb46afa5fff9400354c}{SCIA\+\_\+\+BASE}}~0U
+\begin{DoxyCompactList}\small\item\em select SCI-\/A port \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___u_a_r_t_ga00b0b0e3dd54a2fdc583145f107799c6}{SCIB\+\_\+\+BASE}}~1U
+\begin{DoxyCompactList}\small\item\em select SCI-\/B port \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___u_a_r_t_gac9bba548a099e6b5b64045cea4d4282f}{SCIC\+\_\+\+BASE}}~2U
+\begin{DoxyCompactList}\small\item\em select SCI-\/C port \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___u_a_r_t_gad7d9735eb6d12d58232f616020798946}{UART\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Init SCI-\/c \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___u_a_r_t_ga62cd2632b61f0f11f05a028d7d7cea13}{UART\+\_\+\+Set}} (Uint32 baud)
+\begin{DoxyCompactList}\small\item\em config baud rate \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___u_a_r_t_ga4c86107cd49c2644ef6abd5d0c6f7194}{UART\+\_\+\+Send\+Char}} (Uint8 send)
+\begin{DoxyCompactList}\small\item\em Send Char \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___u_a_r_t_ga82e92c56017c6ef93fc5098c3227306c}{UART\+\_\+\+Receive\+Char}} (Uint8 \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em receive data from UART \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___u_a_r_t_gab0704d434e9b7a441faa3aac78d037b3}{SCI\+\_\+write\+Char\+Array}} (Uint32 base, Uint8 \texorpdfstring{$\ast$}{*}data, Uint8 length)
+\begin{DoxyCompactList}\small\item\em send data to txfifo \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___u_a_r_t_ga4e62244dd07d4d29ad496cc0a9627874}{UART\+\_\+\+Receive\+String}} (Uint8 \texorpdfstring{$\ast$}{*}data, Uint8 length)
+\begin{DoxyCompactList}\small\item\em get data from rxfifo \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+uart driver header file 
+
+\begin{DoxyNote}{注解}
+uart-\/c is used 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{uart_8h_source}{uart.\+h}} 中定义.
+

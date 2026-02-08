@@ -1,0 +1,596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: DDSRF_3PH结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('struct_d_d_s_r_f__3_p_h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DDSRF_3PH结构体 参考<div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a> &raquo; <a class="el" href="group___c_t_r_l___p_l_l.html">锁相环</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Defines the <a class="el" href="struct_d_d_s_r_f__3_p_h.html" title="Defines the DDSRF_3PH structure">DDSRF_3PH</a> structure  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="pll_8h_source.html">pll.h</a>&gt;</code></p>
+<div class="dynheader">
+DDSRF_3PH 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_d_d_s_r_f__3_p_h__coll__graph.png" border="0" usemap="#a_d_d_s_r_f__3_p_h_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_d_d_s_r_f__3_p_h_coll__map" id="a_d_d_s_r_f__3_p_h_coll__map">
+<area shape="rect" title="Defines the DDSRF_3PH structure" alt="" coords="42,106,133,134"/>
+<area shape="rect" href="struct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html" title="Defines the coefficients for a loop filter" alt="" coords="5,5,170,33"/>
+<area shape="poly" title=" " alt="" coords="90,49,90,105,85,105,85,49"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:a355e9a00d1ffe8da49c3b951ca44b478" id="r_a355e9a00d1ffe8da49c3b951ca44b478"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a355e9a00d1ffe8da49c3b951ca44b478">d_p_decoupl</a></td></tr>
+<tr class="memdesc:a355e9a00d1ffe8da49c3b951ca44b478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Positive Rotating reference Frame D-axis value  <br /></td></tr>
+<tr class="memitem:a71899666e66c83e57610385f88a9df8a" id="r_a71899666e66c83e57610385f88a9df8a"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71899666e66c83e57610385f88a9df8a">d_n_decoupl</a></td></tr>
+<tr class="memdesc:a71899666e66c83e57610385f88a9df8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Negative Rotating reference Frame D-axis value  <br /></td></tr>
+<tr class="memitem:ab6260536edf63ad563a0b603f6015641" id="r_ab6260536edf63ad563a0b603f6015641"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6260536edf63ad563a0b603f6015641">q_p_decoupl</a></td></tr>
+<tr class="memdesc:ab6260536edf63ad563a0b603f6015641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Positive Rotating reference Frame Q-axis value  <br /></td></tr>
+<tr class="memitem:a73e0789f22aa05b6d14a6fc77d86526c" id="r_a73e0789f22aa05b6d14a6fc77d86526c"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73e0789f22aa05b6d14a6fc77d86526c">q_n_decoupl</a></td></tr>
+<tr class="memdesc:a73e0789f22aa05b6d14a6fc77d86526c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Negative Rotating reference Frame Q-axis value  <br /></td></tr>
+<tr class="memitem:a9a99be98f04fbc34aaf475f8f2e4e112" id="r_a9a99be98f04fbc34aaf475f8f2e4e112"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a99be98f04fbc34aaf475f8f2e4e112">cos_2theta</a></td></tr>
+<tr class="memdesc:a9a99be98f04fbc34aaf475f8f2e4e112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cos of twice the grid frequency angle  <br /></td></tr>
+<tr class="memitem:aceb3ccf456af95825dfaf84889683d54" id="r_aceb3ccf456af95825dfaf84889683d54"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aceb3ccf456af95825dfaf84889683d54">sin_2theta</a></td></tr>
+<tr class="memdesc:aceb3ccf456af95825dfaf84889683d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sin of twice the grid frequency angle  <br /></td></tr>
+<tr class="memitem:a0f76192d505571411ed6c84738e3177c" id="r_a0f76192d505571411ed6c84738e3177c"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f76192d505571411ed6c84738e3177c">y</a> [2]</td></tr>
+<tr class="memdesc:a0f76192d505571411ed6c84738e3177c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to store history for filtering the decoupled D and Q axis components  <br /></td></tr>
+<tr class="memitem:ac163d4115eb5706cc7f9027aff302c6f" id="r_ac163d4115eb5706cc7f9027aff302c6f"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac163d4115eb5706cc7f9027aff302c6f">x</a> [2]</td></tr>
+<tr class="memdesc:ac163d4115eb5706cc7f9027aff302c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to store history for filtering the decoupled D and Q axis components  <br /></td></tr>
+<tr class="memitem:af52ae9522fdd957d59ec478c78a61455" id="r_af52ae9522fdd957d59ec478c78a61455"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af52ae9522fdd957d59ec478c78a61455">w</a> [2]</td></tr>
+<tr class="memdesc:af52ae9522fdd957d59ec478c78a61455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to store history for filtering the decoupled D and Q axis components  <br /></td></tr>
+<tr class="memitem:a6c893fe599d0b111fa0c1d90a84c1c0d" id="r_a6c893fe599d0b111fa0c1d90a84c1c0d"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c893fe599d0b111fa0c1d90a84c1c0d">z</a> [2]</td></tr>
+<tr class="memdesc:a6c893fe599d0b111fa0c1d90a84c1c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to store history for filtering the decoupled D and Q axis components  <br /></td></tr>
+<tr class="memitem:ad6552663c28cfd88901ed2ce0e2c96ea" id="r_ad6552663c28cfd88901ed2ce0e2c96ea"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6552663c28cfd88901ed2ce0e2c96ea">k1</a></td></tr>
+<tr class="memdesc:ad6552663c28cfd88901ed2ce0e2c96ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lpf coefficient  <br /></td></tr>
+<tr class="memitem:a345c6e7980e49c0ef6269df0847eb2c0" id="r_a345c6e7980e49c0ef6269df0847eb2c0"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a345c6e7980e49c0ef6269df0847eb2c0">k2</a></td></tr>
+<tr class="memdesc:a345c6e7980e49c0ef6269df0847eb2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lpf coefficient  <br /></td></tr>
+<tr class="memitem:ad116563e6fe08c831948cbdf4790a735" id="r_ad116563e6fe08c831948cbdf4790a735"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad116563e6fe08c831948cbdf4790a735">d_p_decoupl_lpf</a></td></tr>
+<tr class="memdesc:ad116563e6fe08c831948cbdf4790a735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decoupled positive sequence D-axis component filtered  <br /></td></tr>
+<tr class="memitem:a25f5eef90c759bbc9437a4e79b47f550" id="r_a25f5eef90c759bbc9437a4e79b47f550"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25f5eef90c759bbc9437a4e79b47f550">d_n_decoupl_lpf</a></td></tr>
+<tr class="memdesc:a25f5eef90c759bbc9437a4e79b47f550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decoupled negative sequence D-axis component filtered  <br /></td></tr>
+<tr class="memitem:a894ab118c703a13d6ce8d6b7e301a767" id="r_a894ab118c703a13d6ce8d6b7e301a767"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a894ab118c703a13d6ce8d6b7e301a767">q_p_decoupl_lpf</a></td></tr>
+<tr class="memdesc:a894ab118c703a13d6ce8d6b7e301a767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decoupled positive sequence Q-axis component filtered  <br /></td></tr>
+<tr class="memitem:a68e01e5fb13a9db1098ac0ebdb40ec34" id="r_a68e01e5fb13a9db1098ac0ebdb40ec34"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68e01e5fb13a9db1098ac0ebdb40ec34">q_n_decoupl_lpf</a></td></tr>
+<tr class="memdesc:a68e01e5fb13a9db1098ac0ebdb40ec34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decoupled negative sequence Q-axis component filtered  <br /></td></tr>
+<tr class="memitem:a82bd050bf0492354fca2807ea3e094de" id="r_a82bd050bf0492354fca2807ea3e094de"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82bd050bf0492354fca2807ea3e094de">v_q</a> [2]</td></tr>
+<tr class="memitem:a50c2c822c503cd44efebbc749ff8b370" id="r_a50c2c822c503cd44efebbc749ff8b370"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50c2c822c503cd44efebbc749ff8b370">theta</a> [2]</td></tr>
+<tr class="memdesc:a50c2c822c503cd44efebbc749ff8b370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grid phase angle  <br /></td></tr>
+<tr class="memitem:a386dc9b0bade4f633408d21424574887" id="r_a386dc9b0bade4f633408d21424574887"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a386dc9b0bade4f633408d21424574887">ylf</a> [2]</td></tr>
+<tr class="memdesc:a386dc9b0bade4f633408d21424574887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal Data Buffer for Loop Filter output  <br /></td></tr>
+<tr class="memitem:a28c83db18be01978b084f38aee55f734" id="r_a28c83db18be01978b084f38aee55f734"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28c83db18be01978b084f38aee55f734">fo</a></td></tr>
+<tr class="memdesc:a28c83db18be01978b084f38aee55f734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantaneous Grid Frequency in Hz  <br /></td></tr>
+<tr class="memitem:ab7d242bf805d0e9f8ea163786e770423" id="r_ab7d242bf805d0e9f8ea163786e770423"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7d242bf805d0e9f8ea163786e770423">fn</a></td></tr>
+<tr class="memdesc:ab7d242bf805d0e9f8ea163786e770423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nominal Grid Frequency in Hz  <br /></td></tr>
+<tr class="memitem:a693a8c6f6767aa439d1684220eaa87b8" id="r_a693a8c6f6767aa439d1684220eaa87b8"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a693a8c6f6767aa439d1684220eaa87b8">delta_t</a></td></tr>
+<tr class="memdesc:a693a8c6f6767aa439d1684220eaa87b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">1/Frequency of calling the PLL routine  <br /></td></tr>
+<tr class="memitem:ab7bef22e187a72120fe965953865171e" id="r_ab7bef22e187a72120fe965953865171e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html">DDSRF_3PH_LPF_COEFF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7bef22e187a72120fe965953865171e">lpf_coeff</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>Defines the <a class="el" href="struct_d_d_s_r_f__3_p_h.html" title="Defines the DDSRF_3PH structure">DDSRF_3PH</a> structure </p>
+<p>This software module implements a software phase lock loop based on decoupled double synchronous reference frame for grid connection to three phase grid </p><dl class="section return"><dt>返回</dt><dd>None </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00108">108</a> 行定义.</p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">结构体成员变量说明</h2>
+<a id="a9a99be98f04fbc34aaf475f8f2e4e112" name="a9a99be98f04fbc34aaf475f8f2e4e112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a99be98f04fbc34aaf475f8f2e4e112">&#9670;&#160;</a></span>cos_2theta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::cos_2theta</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cos of twice the grid frequency angle </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00114">114</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a71899666e66c83e57610385f88a9df8a" name="a71899666e66c83e57610385f88a9df8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71899666e66c83e57610385f88a9df8a">&#9670;&#160;</a></span>d_n_decoupl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::d_n_decoupl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Negative Rotating reference Frame D-axis value </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00110">110</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a25f5eef90c759bbc9437a4e79b47f550" name="a25f5eef90c759bbc9437a4e79b47f550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f5eef90c759bbc9437a4e79b47f550">&#9670;&#160;</a></span>d_n_decoupl_lpf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::d_n_decoupl_lpf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decoupled negative sequence D-axis component filtered </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00124">124</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a355e9a00d1ffe8da49c3b951ca44b478" name="a355e9a00d1ffe8da49c3b951ca44b478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a355e9a00d1ffe8da49c3b951ca44b478">&#9670;&#160;</a></span>d_p_decoupl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::d_p_decoupl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Positive Rotating reference Frame D-axis value </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00109">109</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad116563e6fe08c831948cbdf4790a735" name="ad116563e6fe08c831948cbdf4790a735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad116563e6fe08c831948cbdf4790a735">&#9670;&#160;</a></span>d_p_decoupl_lpf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::d_p_decoupl_lpf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decoupled positive sequence D-axis component filtered </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00123">123</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a693a8c6f6767aa439d1684220eaa87b8" name="a693a8c6f6767aa439d1684220eaa87b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a693a8c6f6767aa439d1684220eaa87b8">&#9670;&#160;</a></span>delta_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::delta_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>1/Frequency of calling the PLL routine </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00133">133</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab7d242bf805d0e9f8ea163786e770423" name="ab7d242bf805d0e9f8ea163786e770423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7d242bf805d0e9f8ea163786e770423">&#9670;&#160;</a></span>fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::fn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nominal Grid Frequency in Hz </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00132">132</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a28c83db18be01978b084f38aee55f734" name="a28c83db18be01978b084f38aee55f734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28c83db18be01978b084f38aee55f734">&#9670;&#160;</a></span>fo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::fo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Instantaneous Grid Frequency in Hz </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00131">131</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad6552663c28cfd88901ed2ce0e2c96ea" name="ad6552663c28cfd88901ed2ce0e2c96ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6552663c28cfd88901ed2ce0e2c96ea">&#9670;&#160;</a></span>k1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::k1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lpf coefficient </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00121">121</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a345c6e7980e49c0ef6269df0847eb2c0" name="a345c6e7980e49c0ef6269df0847eb2c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a345c6e7980e49c0ef6269df0847eb2c0">&#9670;&#160;</a></span>k2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::k2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lpf coefficient </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00122">122</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab7bef22e187a72120fe965953865171e" name="ab7bef22e187a72120fe965953865171e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7bef22e187a72120fe965953865171e">&#9670;&#160;</a></span>lpf_coeff</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f.html">DDSRF_3PH_LPF_COEFF</a> DDSRF_3PH::lpf_coeff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00134">134</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a73e0789f22aa05b6d14a6fc77d86526c" name="a73e0789f22aa05b6d14a6fc77d86526c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e0789f22aa05b6d14a6fc77d86526c">&#9670;&#160;</a></span>q_n_decoupl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::q_n_decoupl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Negative Rotating reference Frame Q-axis value </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00112">112</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a68e01e5fb13a9db1098ac0ebdb40ec34" name="a68e01e5fb13a9db1098ac0ebdb40ec34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68e01e5fb13a9db1098ac0ebdb40ec34">&#9670;&#160;</a></span>q_n_decoupl_lpf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::q_n_decoupl_lpf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decoupled negative sequence Q-axis component filtered </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00126">126</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab6260536edf63ad563a0b603f6015641" name="ab6260536edf63ad563a0b603f6015641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6260536edf63ad563a0b603f6015641">&#9670;&#160;</a></span>q_p_decoupl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::q_p_decoupl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Positive Rotating reference Frame Q-axis value </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00111">111</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a894ab118c703a13d6ce8d6b7e301a767" name="a894ab118c703a13d6ce8d6b7e301a767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a894ab118c703a13d6ce8d6b7e301a767">&#9670;&#160;</a></span>q_p_decoupl_lpf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::q_p_decoupl_lpf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decoupled positive sequence Q-axis component filtered </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00125">125</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aceb3ccf456af95825dfaf84889683d54" name="aceb3ccf456af95825dfaf84889683d54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceb3ccf456af95825dfaf84889683d54">&#9670;&#160;</a></span>sin_2theta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::sin_2theta</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sin of twice the grid frequency angle </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00115">115</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a50c2c822c503cd44efebbc749ff8b370" name="a50c2c822c503cd44efebbc749ff8b370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50c2c822c503cd44efebbc749ff8b370">&#9670;&#160;</a></span>theta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::theta[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grid phase angle </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00129">129</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a82bd050bf0492354fca2807ea3e094de" name="a82bd050bf0492354fca2807ea3e094de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82bd050bf0492354fca2807ea3e094de">&#9670;&#160;</a></span>v_q</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::v_q[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00128">128</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af52ae9522fdd957d59ec478c78a61455" name="af52ae9522fdd957d59ec478c78a61455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af52ae9522fdd957d59ec478c78a61455">&#9670;&#160;</a></span>w</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::w[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Used to store history for filtering the decoupled D and Q axis components </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac163d4115eb5706cc7f9027aff302c6f" name="ac163d4115eb5706cc7f9027aff302c6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac163d4115eb5706cc7f9027aff302c6f">&#9670;&#160;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::x[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Used to store history for filtering the decoupled D and Q axis components </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00118">118</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0f76192d505571411ed6c84738e3177c" name="a0f76192d505571411ed6c84738e3177c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f76192d505571411ed6c84738e3177c">&#9670;&#160;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::y[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Used to store history for filtering the decoupled D and Q axis components </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00117">117</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a386dc9b0bade4f633408d21424574887" name="a386dc9b0bade4f633408d21424574887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a386dc9b0bade4f633408d21424574887">&#9670;&#160;</a></span>ylf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::ylf[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Internal Data Buffer for Loop Filter output </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00130">130</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6c893fe599d0b111fa0c1d90a84c1c0d" name="a6c893fe599d0b111fa0c1d90a84c1c0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c893fe599d0b111fa0c1d90a84c1c0d">&#9670;&#160;</a></span>z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DDSRF_3PH::z[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Used to store history for filtering the decoupled D and Q axis components </p>
+
+<p class="definition">在文件 <a class="el" href="pll_8h_source.html">pll.h</a> 第 <a class="el" href="pll_8h_source.html#l00120">120</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>D:/Codes/NUEDC/NUEDC-Core/Code/Control_Driver/pll/<a class="el" href="pll_8h_source.html">pll.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="struct_d_d_s_r_f__3_p_h.html">DDSRF_3PH</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,1059 @@
+\doxysubsubsubsubsection{LCD驱动 }
+\hypertarget{group___d_r_v___f28335___l_c_d}{}\label{group___d_r_v___f28335___l_c_d}\index{LCD驱动@{LCD驱动}}
+LCD驱动 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{group___d_r_v___f28335___l_c_d}
+\end{center}
+\end{figure}
+\doxysubsubsubsubsubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gada6151550214e839aedf3ba16ccdc4a9}{LCD\+\_\+\+LENGTH}}~20
+\begin{DoxyCompactList}\small\item\em string length \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga5cf53d999197b6204305c72f41284c0a}{SET\+\_\+\+LCD\+\_\+\+CS}}~Gpio\+Data\+Regs.\+GPASET.\+bit.\+GPIO1=1;
+\begin{DoxyCompactList}\small\item\em set cs \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga990346be79b0a91baf2a35eccb454073}{SET\+\_\+\+LCD\+\_\+\+RES}}~Gpio\+Data\+Regs.\+GPASET.\+bit.\+GPIO3=1;
+\begin{DoxyCompactList}\small\item\em set res \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga3914fa4009ad4db834087641111253fb}{SET\+\_\+\+LCD\+\_\+\+A0}}~Gpio\+Data\+Regs.\+GPASET.\+bit.\+GPIO5=1;
+\begin{DoxyCompactList}\small\item\em set cd \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga493c3006f6cb150d32149d605287a831}{SET\+\_\+\+LCD\+\_\+\+SDA}}~Gpio\+Data\+Regs.\+GPASET.\+bit.\+GPIO7=1;
+\begin{DoxyCompactList}\small\item\em set sda \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga6c78a5a55eca1c812ee8e6000259a501}{SET\+\_\+\+LCD\+\_\+\+SCL}}~Gpio\+Data\+Regs.\+GPASET.\+bit.\+GPIO9=1;
+\begin{DoxyCompactList}\small\item\em set scl \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaeff42944e2b5563955a12cc7c9a87c3c}{CLR\+\_\+\+LCD\+\_\+\+CS}}~Gpio\+Data\+Regs.\+GPACLEAR.\+bit.\+GPIO1=1;
+\begin{DoxyCompactList}\small\item\em clear cs \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gae08fc16336c26d6abb173be3defac876}{CLR\+\_\+\+LCD\+\_\+\+RES}}~Gpio\+Data\+Regs.\+GPACLEAR.\+bit.\+GPIO3=1;
+\begin{DoxyCompactList}\small\item\em clear res \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga9dc5e014ab978056b195d818d4f47dd4}{CLR\+\_\+\+LCD\+\_\+\+A0}}~Gpio\+Data\+Regs.\+GPACLEAR.\+bit.\+GPIO5=1;
+\begin{DoxyCompactList}\small\item\em clear cd \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga01b691a778232b51b91bf43579e0ee92}{CLR\+\_\+\+LCD\+\_\+\+SDA}}~Gpio\+Data\+Regs.\+GPACLEAR.\+bit.\+GPIO7=1;
+\begin{DoxyCompactList}\small\item\em clear sda \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga7a49e1d71447077b50c0cde995d25e07}{CLR\+\_\+\+LCD\+\_\+\+SCL}}~Gpio\+Data\+Regs.\+GPACLEAR.\+bit.\+GPIO9=1;
+\begin{DoxyCompactList}\small\item\em clear scl \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gab87bacfdad76e61b9412d7124be44c1c}{Color}} \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}}
+\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gab87bacfdad76e61b9412d7124be44c1c}{Color}} \{ \newline
+\mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50}{WHITE}} = 0x\+FFFF
+, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3}{BLACK}} = 0x0000
+, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca35d6719cb4d7577c031b3d79057a1b79}{BLUE}} = 0x001F
+, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca317fc76524a29a0f9b7ee7981b535fa5}{BRED}} = 0x\+F81F
+, \newline
+\mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca66af9f9737563b6fbbf14a8bd3bfba1d}{GRED}} = 0x\+FFE0
+, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1cabd2999182571f8430b7f38af7476db9a}{GBLUE}} = 0x07\+FF
+, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88}{RED}} = 0x\+F800
+, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca56926c820ad72d0977e7ee44d9916e62}{MAGENTA}} = 0x\+F81F
+, \newline
+\mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caa60bd322f93178d68184e30e162571ca}{GREEN}} = 0x07\+E0
+, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caafe71cad474c15ce63b300c470eef8cc}{CYAN}} = 0x7\+FFF
+, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1cae735a848bf82163a19236ead1c3ef2d2}{YELLOW}} = 0x\+FFE0
+, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca1fa14482e7e4dc1332ab8c9d995fe570}{BROWN}} = 0x\+BC40
+, \newline
+\mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caf8167b502cd2885f2753945b058b39b6}{BRRED}} = 0x\+FC07
+, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca3fb6c4ad00f4ad98553e01229d1803ac}{GRAY}} = 0x8430
+, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1cabfc89dc8dc5c91a35a6e3d347b7c9baa}{DARKBLUE}} = 0x01\+CF
+, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca272b71e84bc2640b193e9fe3c72cb3de}{LIGHTBLUE}} = 0x7\+D7C
+, \newline
+\mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caf0813fa73d558d8c19e93dc9c7575fe5}{GRAYBLUE}} = 0x5458
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaa53c9d40f3aa552a9974cd55ac510cb3}{LCD\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em init screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga2aea7c96b0c9b3e12a6029576557c0b5}{LCD\+\_\+\+Clear}} (\mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}} color)
+\begin{DoxyCompactList}\small\item\em clear screen, filling all points with same color \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaed5bd5f3f7340dbdb2e7f50f94163789}{LCD\+\_\+\+Display\+On}} (void)
+\begin{DoxyCompactList}\small\item\em turn on display \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gae06ea1bb5f28922b6017676d1aaa61e4}{LCD\+\_\+\+Display\+Off}} (void)
+\begin{DoxyCompactList}\small\item\em turn off display \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga16ab7118659faa7d9ffd28e4e0def529}{LCD\+\_\+\+Draw\+Point}} (unsigned int x, unsigned int y, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}} color)
+\begin{DoxyCompactList}\small\item\em draw point \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gad7904c27ed6c2b68490fc78ecc448d8b}{LCD\+\_\+\+Draw\+\_\+\+Circle}} (unsigned short x0, unsigned short y0, unsigned char r, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}} color)
+\begin{DoxyCompactList}\small\item\em draw circle, no filling \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaad27930045bd6e1322ed92101de44772}{LCD\+\_\+\+Draw\+Full\+Circle}} (unsigned short Xpos, unsigned short Ypos, unsigned short Radius, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}} color)
+\begin{DoxyCompactList}\small\item\em draw circle, all filling \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga3e60ecc7f0d58d0a18a2a8de7e7b1d1a}{LCD\+\_\+\+Fill}} (unsigned short sx, unsigned short sy, unsigned short ex, unsigned short ey, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}} color)
+\begin{DoxyCompactList}\small\item\em fill area \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga01256c780705fc596ec08eedf8fb6444}{LCD\+\_\+\+Draw\+Line}} (unsigned short x1, unsigned short y1, unsigned short x2, unsigned short y2, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}} color)
+\begin{DoxyCompactList}\small\item\em draw a line \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaf82c0652de72e6978bf321569519beda}{LCD\+\_\+\+Draw\+Rectangle}} (unsigned short x1, unsigned short y1, unsigned short x2, unsigned short y2, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}} color)
+\begin{DoxyCompactList}\small\item\em draw a rectangle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga984dce05b86caed4b2a0a0d8dba5462b}{LCD\+\_\+\+Show\+Char}} (unsigned short x, unsigned short y, unsigned char num, unsigned short pen\+\_\+color, unsigned short back\+\_\+color)
+\begin{DoxyCompactList}\small\item\em show a char \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga819e4cb0d04d17e3cba390032dec14be}{LCD\+\_\+\+Show\+String}} (unsigned short x, unsigned short y, unsigned short width, unsigned short height, unsigned char \texorpdfstring{$\ast$}{*}p, unsigned short pen\+\_\+color, unsigned short back\+\_\+color)
+\begin{DoxyCompactList}\small\item\em show a string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga7d3136f6497002468c3d2388b0a20c3a}{LCD\+\_\+\+Show\+Double}} (unsigned short x, unsigned short y, unsigned short width, unsigned short height, double num, unsigned short pen\+\_\+color, unsigned short back\+\_\+color)
+\begin{DoxyCompactList}\small\item\em display a float \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaceb21b8fd817d512b022e3f48a1376d0}{LCD\+\_\+\+Show\+Int}} (unsigned short x, unsigned short y, unsigned short width, unsigned short height, int num, unsigned short pen\+\_\+color, unsigned short back\+\_\+color)
+\begin{DoxyCompactList}\small\item\em display a int \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga4b5eb1531cb56f4ffe673ad5cd6b26be}{LCD\+\_\+\+Show\+Hex}} (unsigned short x, unsigned short y, unsigned short width, unsigned short height, int num, unsigned short pen\+\_\+color, unsigned short back\+\_\+color)
+\begin{DoxyCompactList}\small\item\em display a int in HEX format \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga59207dc90adfdfaf32fbbde2fa88ae54}{LCD\+\_\+\+Show\+Oct}} (unsigned short x, unsigned short y, unsigned short width, unsigned short height, int num, unsigned short pen\+\_\+color, unsigned short back\+\_\+color)
+\begin{DoxyCompactList}\small\item\em display a int in OCT format \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gac4df806c0dd9403b402130a26bed2c88}{LCD\+\_\+\+Show\+Bin}} (unsigned short x, unsigned short y, unsigned short width, unsigned short height, int num, int Length, unsigned short pen\+\_\+color, unsigned short back\+\_\+color)
+\begin{DoxyCompactList}\small\item\em display a int in BIN format \end{DoxyCompactList}\item 
+unsigned long \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaaf409116545541ac11582da5f92dae57}{LCD\+\_\+\+Pow}} (unsigned long X, unsigned long Y)
+\begin{DoxyCompactList}\small\item\em math support \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gace1079bba7113da93a044cf179aa34d2}{lcd\+Gpio\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em init GPIO \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga71f317c08f5a4fd34f4e66b7413e0381}{lcd\+Select\+Register}} (unsigned char data)
+\begin{DoxyCompactList}\small\item\em select register \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga4c41fe8c154e5beccd73c8b5042f497f}{lcd\+Write\+Data\+U8}} (unsigned char data)
+\begin{DoxyCompactList}\small\item\em write 8-\/bit data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaba0abdc1cc1f6363bd0cf646e61094e3}{lcd\+Write\+Data\+U16}} (unsigned short data)
+\begin{DoxyCompactList}\small\item\em write 16-\/bit data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga5ff5d250afc92419cfc04e6e7a80936b}{lcd\+Set\+Address}} (unsigned short x1, unsigned short y1, unsigned short x2, unsigned short y2)
+\begin{DoxyCompactList}\small\item\em set courser position \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsubsection{详细描述}
+
+
+\label{doc-define-members}
+\Hypertarget{group___d_r_v___f28335___l_c_d_doc-define-members}
+\doxysubsubsubsubsubsection{宏定义说明}
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga9dc5e014ab978056b195d818d4f47dd4}\index{LCD驱动@{LCD驱动}!CLR\_LCD\_A0@{CLR\_LCD\_A0}}
+\index{CLR\_LCD\_A0@{CLR\_LCD\_A0}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{CLR\_LCD\_A0}{CLR\_LCD\_A0}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga9dc5e014ab978056b195d818d4f47dd4} 
+\#define CLR\+\_\+\+LCD\+\_\+\+A0~Gpio\+Data\+Regs.\+GPACLEAR.\+bit.\+GPIO5=1;}
+
+
+
+clear cd 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source}{LCD\+\_\+\+ST7735\+S.\+h}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source_l00022}{22}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___l_c_d_gaeff42944e2b5563955a12cc7c9a87c3c}\index{LCD驱动@{LCD驱动}!CLR\_LCD\_CS@{CLR\_LCD\_CS}}
+\index{CLR\_LCD\_CS@{CLR\_LCD\_CS}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{CLR\_LCD\_CS}{CLR\_LCD\_CS}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gaeff42944e2b5563955a12cc7c9a87c3c} 
+\#define CLR\+\_\+\+LCD\+\_\+\+CS~Gpio\+Data\+Regs.\+GPACLEAR.\+bit.\+GPIO1=1;}
+
+
+
+clear cs 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source}{LCD\+\_\+\+ST7735\+S.\+h}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source_l00020}{20}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___l_c_d_gae08fc16336c26d6abb173be3defac876}\index{LCD驱动@{LCD驱动}!CLR\_LCD\_RES@{CLR\_LCD\_RES}}
+\index{CLR\_LCD\_RES@{CLR\_LCD\_RES}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{CLR\_LCD\_RES}{CLR\_LCD\_RES}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gae08fc16336c26d6abb173be3defac876} 
+\#define CLR\+\_\+\+LCD\+\_\+\+RES~Gpio\+Data\+Regs.\+GPACLEAR.\+bit.\+GPIO3=1;}
+
+
+
+clear res 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source}{LCD\+\_\+\+ST7735\+S.\+h}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source_l00021}{21}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga7a49e1d71447077b50c0cde995d25e07}\index{LCD驱动@{LCD驱动}!CLR\_LCD\_SCL@{CLR\_LCD\_SCL}}
+\index{CLR\_LCD\_SCL@{CLR\_LCD\_SCL}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{CLR\_LCD\_SCL}{CLR\_LCD\_SCL}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga7a49e1d71447077b50c0cde995d25e07} 
+\#define CLR\+\_\+\+LCD\+\_\+\+SCL~Gpio\+Data\+Regs.\+GPACLEAR.\+bit.\+GPIO9=1;}
+
+
+
+clear scl 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source}{LCD\+\_\+\+ST7735\+S.\+h}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source_l00024}{24}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga01b691a778232b51b91bf43579e0ee92}\index{LCD驱动@{LCD驱动}!CLR\_LCD\_SDA@{CLR\_LCD\_SDA}}
+\index{CLR\_LCD\_SDA@{CLR\_LCD\_SDA}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{CLR\_LCD\_SDA}{CLR\_LCD\_SDA}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga01b691a778232b51b91bf43579e0ee92} 
+\#define CLR\+\_\+\+LCD\+\_\+\+SDA~Gpio\+Data\+Regs.\+GPACLEAR.\+bit.\+GPIO7=1;}
+
+
+
+clear sda 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source}{LCD\+\_\+\+ST7735\+S.\+h}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source_l00023}{23}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___l_c_d_gada6151550214e839aedf3ba16ccdc4a9}\index{LCD驱动@{LCD驱动}!LCD\_LENGTH@{LCD\_LENGTH}}
+\index{LCD\_LENGTH@{LCD\_LENGTH}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_LENGTH}{LCD\_LENGTH}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gada6151550214e839aedf3ba16ccdc4a9} 
+\#define LCD\+\_\+\+LENGTH~20}
+
+
+
+string length 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source}{LCD\+\_\+\+ST7735\+S.\+h}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source_l00012}{12}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga3914fa4009ad4db834087641111253fb}\index{LCD驱动@{LCD驱动}!SET\_LCD\_A0@{SET\_LCD\_A0}}
+\index{SET\_LCD\_A0@{SET\_LCD\_A0}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{SET\_LCD\_A0}{SET\_LCD\_A0}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga3914fa4009ad4db834087641111253fb} 
+\#define SET\+\_\+\+LCD\+\_\+\+A0~Gpio\+Data\+Regs.\+GPASET.\+bit.\+GPIO5=1;}
+
+
+
+set cd 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source}{LCD\+\_\+\+ST7735\+S.\+h}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source_l00016}{16}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga5cf53d999197b6204305c72f41284c0a}\index{LCD驱动@{LCD驱动}!SET\_LCD\_CS@{SET\_LCD\_CS}}
+\index{SET\_LCD\_CS@{SET\_LCD\_CS}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{SET\_LCD\_CS}{SET\_LCD\_CS}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga5cf53d999197b6204305c72f41284c0a} 
+\#define SET\+\_\+\+LCD\+\_\+\+CS~Gpio\+Data\+Regs.\+GPASET.\+bit.\+GPIO1=1;}
+
+
+
+set cs 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source}{LCD\+\_\+\+ST7735\+S.\+h}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source_l00014}{14}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga990346be79b0a91baf2a35eccb454073}\index{LCD驱动@{LCD驱动}!SET\_LCD\_RES@{SET\_LCD\_RES}}
+\index{SET\_LCD\_RES@{SET\_LCD\_RES}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{SET\_LCD\_RES}{SET\_LCD\_RES}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga990346be79b0a91baf2a35eccb454073} 
+\#define SET\+\_\+\+LCD\+\_\+\+RES~Gpio\+Data\+Regs.\+GPASET.\+bit.\+GPIO3=1;}
+
+
+
+set res 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source}{LCD\+\_\+\+ST7735\+S.\+h}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source_l00015}{15}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga6c78a5a55eca1c812ee8e6000259a501}\index{LCD驱动@{LCD驱动}!SET\_LCD\_SCL@{SET\_LCD\_SCL}}
+\index{SET\_LCD\_SCL@{SET\_LCD\_SCL}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{SET\_LCD\_SCL}{SET\_LCD\_SCL}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga6c78a5a55eca1c812ee8e6000259a501} 
+\#define SET\+\_\+\+LCD\+\_\+\+SCL~Gpio\+Data\+Regs.\+GPASET.\+bit.\+GPIO9=1;}
+
+
+
+set scl 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source}{LCD\+\_\+\+ST7735\+S.\+h}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source_l00018}{18}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga493c3006f6cb150d32149d605287a831}\index{LCD驱动@{LCD驱动}!SET\_LCD\_SDA@{SET\_LCD\_SDA}}
+\index{SET\_LCD\_SDA@{SET\_LCD\_SDA}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{SET\_LCD\_SDA}{SET\_LCD\_SDA}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga493c3006f6cb150d32149d605287a831} 
+\#define SET\+\_\+\+LCD\+\_\+\+SDA~Gpio\+Data\+Regs.\+GPASET.\+bit.\+GPIO7=1;}
+
+
+
+set sda 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source}{LCD\+\_\+\+ST7735\+S.\+h}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source_l00017}{17}} 行定义.
+
+
+
+\label{doc-typedef-members}
+\Hypertarget{group___d_r_v___f28335___l_c_d_doc-typedef-members}
+\doxysubsubsubsubsubsection{类型定义说明}
+\Hypertarget{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}\index{LCD驱动@{LCD驱动}!LCD\_Color@{LCD\_Color}}
+\index{LCD\_Color@{LCD\_Color}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_Color}{LCD\_Color}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234} 
+typedef enum \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gab87bacfdad76e61b9412d7124be44c1c}{Color}} \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}}}
+
+
+
+\label{doc-enum-members}
+\Hypertarget{group___d_r_v___f28335___l_c_d_doc-enum-members}
+\doxysubsubsubsubsubsection{枚举类型说明}
+\Hypertarget{group___d_r_v___f28335___l_c_d_gab87bacfdad76e61b9412d7124be44c1c}\index{LCD驱动@{LCD驱动}!Color@{Color}}
+\index{Color@{Color}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gab87bacfdad76e61b9412d7124be44c1c} 
+enum \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gab87bacfdad76e61b9412d7124be44c1c}{Color}}}
+
+\begin{DoxyEnumFields}[2]{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WHITE@{WHITE}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!WHITE@{WHITE}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50} 
+WHITE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLACK@{BLACK}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!BLACK@{BLACK}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caf77fb67151d0c18d397069ad8c271ba3} 
+BLACK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLUE@{BLUE}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!BLUE@{BLUE}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca35d6719cb4d7577c031b3d79057a1b79}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca35d6719cb4d7577c031b3d79057a1b79} 
+BLUE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BRED@{BRED}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!BRED@{BRED}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca317fc76524a29a0f9b7ee7981b535fa5}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca317fc76524a29a0f9b7ee7981b535fa5} 
+BRED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRED@{GRED}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!GRED@{GRED}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca66af9f9737563b6fbbf14a8bd3bfba1d}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca66af9f9737563b6fbbf14a8bd3bfba1d} 
+GRED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GBLUE@{GBLUE}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!GBLUE@{GBLUE}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1cabd2999182571f8430b7f38af7476db9a}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1cabd2999182571f8430b7f38af7476db9a} 
+GBLUE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RED@{RED}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!RED@{RED}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caf80f9a890089d211842d59625e561f88} 
+RED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAGENTA@{MAGENTA}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!MAGENTA@{MAGENTA}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca56926c820ad72d0977e7ee44d9916e62}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca56926c820ad72d0977e7ee44d9916e62} 
+MAGENTA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GREEN@{GREEN}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!GREEN@{GREEN}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caa60bd322f93178d68184e30e162571ca}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caa60bd322f93178d68184e30e162571ca} 
+GREEN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CYAN@{CYAN}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!CYAN@{CYAN}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caafe71cad474c15ce63b300c470eef8cc}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caafe71cad474c15ce63b300c470eef8cc} 
+CYAN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{YELLOW@{YELLOW}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!YELLOW@{YELLOW}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1cae735a848bf82163a19236ead1c3ef2d2}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1cae735a848bf82163a19236ead1c3ef2d2} 
+YELLOW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BROWN@{BROWN}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!BROWN@{BROWN}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca1fa14482e7e4dc1332ab8c9d995fe570}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca1fa14482e7e4dc1332ab8c9d995fe570} 
+BROWN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BRRED@{BRRED}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!BRRED@{BRRED}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caf8167b502cd2885f2753945b058b39b6}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caf8167b502cd2885f2753945b058b39b6} 
+BRRED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRAY@{GRAY}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!GRAY@{GRAY}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca3fb6c4ad00f4ad98553e01229d1803ac}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca3fb6c4ad00f4ad98553e01229d1803ac} 
+GRAY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DARKBLUE@{DARKBLUE}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!DARKBLUE@{DARKBLUE}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1cabfc89dc8dc5c91a35a6e3d347b7c9baa}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1cabfc89dc8dc5c91a35a6e3d347b7c9baa} 
+DARKBLUE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LIGHTBLUE@{LIGHTBLUE}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!LIGHTBLUE@{LIGHTBLUE}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca272b71e84bc2640b193e9fe3c72cb3de}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1ca272b71e84bc2640b193e9fe3c72cb3de} 
+LIGHTBLUE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRAYBLUE@{GRAYBLUE}!LCD驱动@{LCD驱动}}\index{LCD驱动@{LCD驱动}!GRAYBLUE@{GRAYBLUE}}}\Hypertarget{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caf0813fa73d558d8c19e93dc9c7575fe5}\label{group___d_r_v___f28335___l_c_d_ggab87bacfdad76e61b9412d7124be44c1caf0813fa73d558d8c19e93dc9c7575fe5} 
+GRAYBLUE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source}{LCD\+\_\+\+ST7735\+S.\+h}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8h_source_l00026}{26}} 行定义.
+
+
+
+\label{doc-func-members}
+\Hypertarget{group___d_r_v___f28335___l_c_d_doc-func-members}
+\doxysubsubsubsubsubsection{函数说明}
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga2aea7c96b0c9b3e12a6029576557c0b5}\index{LCD驱动@{LCD驱动}!LCD\_Clear@{LCD\_Clear}}
+\index{LCD\_Clear@{LCD\_Clear}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_Clear()}{LCD\_Clear()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga2aea7c96b0c9b3e12a6029576557c0b5} 
+void LCD\+\_\+\+Clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+clear screen, filling all points with same color 
+
+
+\begin{DoxyParams}{参数}
+{\em color} & selecing colot \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00234}{234}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_r_v___f28335___l_c_d_ga2aea7c96b0c9b3e12a6029576557c0b5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_gae06ea1bb5f28922b6017676d1aaa61e4}\index{LCD驱动@{LCD驱动}!LCD\_DisplayOff@{LCD\_DisplayOff}}
+\index{LCD\_DisplayOff@{LCD\_DisplayOff}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_DisplayOff()}{LCD\_DisplayOff()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gae06ea1bb5f28922b6017676d1aaa61e4} 
+void LCD\+\_\+\+Display\+Off (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+turn off display 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00260}{260}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{group___d_r_v___f28335___l_c_d_gae06ea1bb5f28922b6017676d1aaa61e4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_gaed5bd5f3f7340dbdb2e7f50f94163789}\index{LCD驱动@{LCD驱动}!LCD\_DisplayOn@{LCD\_DisplayOn}}
+\index{LCD\_DisplayOn@{LCD\_DisplayOn}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_DisplayOn()}{LCD\_DisplayOn()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gaed5bd5f3f7340dbdb2e7f50f94163789} 
+void LCD\+\_\+\+Display\+On (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+turn on display 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00255}{255}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{group___d_r_v___f28335___l_c_d_gaed5bd5f3f7340dbdb2e7f50f94163789_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_gad7904c27ed6c2b68490fc78ecc448d8b}\index{LCD驱动@{LCD驱动}!LCD\_Draw\_Circle@{LCD\_Draw\_Circle}}
+\index{LCD\_Draw\_Circle@{LCD\_Draw\_Circle}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_Draw\_Circle()}{LCD\_Draw\_Circle()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gad7904c27ed6c2b68490fc78ecc448d8b} 
+void LCD\+\_\+\+Draw\+\_\+\+Circle (\begin{DoxyParamCaption}\item[{unsigned short}]{x0}{, }\item[{unsigned short}]{y0}{, }\item[{unsigned char}]{r}{, }\item[{\mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+draw circle, no filling 
+
+
+\begin{DoxyParams}{参数}
+{\em x0} & center x position \\
+\hline
+{\em y0} & center y position \\
+\hline
+{\em r} & radius \\
+\hline
+{\em color} & point color \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00369}{369}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_r_v___f28335___l_c_d_gad7904c27ed6c2b68490fc78ecc448d8b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_gaad27930045bd6e1322ed92101de44772}\index{LCD驱动@{LCD驱动}!LCD\_DrawFullCircle@{LCD\_DrawFullCircle}}
+\index{LCD\_DrawFullCircle@{LCD\_DrawFullCircle}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_DrawFullCircle()}{LCD\_DrawFullCircle()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gaad27930045bd6e1322ed92101de44772} 
+void LCD\+\_\+\+Draw\+Full\+Circle (\begin{DoxyParamCaption}\item[{unsigned short}]{Xpos}{, }\item[{unsigned short}]{Ypos}{, }\item[{unsigned short}]{Radius}{, }\item[{\mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+draw circle, all filling 
+
+
+\begin{DoxyParams}{参数}
+{\em Xpos} & center x position \\
+\hline
+{\em Ypos} & center y position \\
+\hline
+{\em Radius} & radius \\
+\hline
+{\em color} & point color \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00403}{403}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_r_v___f28335___l_c_d_gaad27930045bd6e1322ed92101de44772_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga01256c780705fc596ec08eedf8fb6444}\index{LCD驱动@{LCD驱动}!LCD\_DrawLine@{LCD\_DrawLine}}
+\index{LCD\_DrawLine@{LCD\_DrawLine}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_DrawLine()}{LCD\_DrawLine()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga01256c780705fc596ec08eedf8fb6444} 
+void LCD\+\_\+\+Draw\+Line (\begin{DoxyParamCaption}\item[{unsigned short}]{x1}{, }\item[{unsigned short}]{y1}{, }\item[{unsigned short}]{x2}{, }\item[{unsigned short}]{y2}{, }\item[{\mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+draw a line 
+
+
+\begin{DoxyParams}{参数}
+{\em x1} & start x position \\
+\hline
+{\em y1} & start y position \\
+\hline
+{\em x2} & end x position \\
+\hline
+{\em y2} & end y position \\
+\hline
+{\em color} & color \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00290}{290}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_r_v___f28335___l_c_d_ga01256c780705fc596ec08eedf8fb6444_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga16ab7118659faa7d9ffd28e4e0def529}\index{LCD驱动@{LCD驱动}!LCD\_DrawPoint@{LCD\_DrawPoint}}
+\index{LCD\_DrawPoint@{LCD\_DrawPoint}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_DrawPoint()}{LCD\_DrawPoint()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga16ab7118659faa7d9ffd28e4e0def529} 
+void LCD\+\_\+\+Draw\+Point (\begin{DoxyParamCaption}\item[{unsigned int}]{x}{, }\item[{unsigned int}]{y}{, }\item[{\mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+draw point 
+
+
+\begin{DoxyParams}{参数}
+{\em x} & x axis position \\
+\hline
+{\em y} & y axis position \\
+\hline
+{\em color} & point color \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00248}{248}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_r_v___f28335___l_c_d_ga16ab7118659faa7d9ffd28e4e0def529_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_gaf82c0652de72e6978bf321569519beda}\index{LCD驱动@{LCD驱动}!LCD\_DrawRectangle@{LCD\_DrawRectangle}}
+\index{LCD\_DrawRectangle@{LCD\_DrawRectangle}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_DrawRectangle()}{LCD\_DrawRectangle()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gaf82c0652de72e6978bf321569519beda} 
+void LCD\+\_\+\+Draw\+Rectangle (\begin{DoxyParamCaption}\item[{unsigned short}]{x1}{, }\item[{unsigned short}]{y1}{, }\item[{unsigned short}]{x2}{, }\item[{unsigned short}]{y2}{, }\item[{\mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+draw a rectangle 
+
+
+\begin{DoxyParams}{参数}
+{\em x1} & start x position \\
+\hline
+{\em y1} & start y position \\
+\hline
+{\em x2} & end x position \\
+\hline
+{\em y2} & end y position \\
+\hline
+{\em color} & color \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00358}{358}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_r_v___f28335___l_c_d_gaf82c0652de72e6978bf321569519beda_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga3e60ecc7f0d58d0a18a2a8de7e7b1d1a}\index{LCD驱动@{LCD驱动}!LCD\_Fill@{LCD\_Fill}}
+\index{LCD\_Fill@{LCD\_Fill}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_Fill()}{LCD\_Fill()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga3e60ecc7f0d58d0a18a2a8de7e7b1d1a} 
+void LCD\+\_\+\+Fill (\begin{DoxyParamCaption}\item[{unsigned short}]{sx}{, }\item[{unsigned short}]{sy}{, }\item[{unsigned short}]{ex}{, }\item[{unsigned short}]{ey}{, }\item[{\mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+fill area 
+
+
+\begin{DoxyParams}{参数}
+{\em sx} & start x position \\
+\hline
+{\em sy} & start y position \\
+\hline
+{\em ex} & end x position \\
+\hline
+{\em ey} & end y position \\
+\hline
+{\em color} & color \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00268}{268}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_r_v___f28335___l_c_d_ga3e60ecc7f0d58d0a18a2a8de7e7b1d1a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_gaa53c9d40f3aa552a9974cd55ac510cb3}\index{LCD驱动@{LCD驱动}!LCD\_Init@{LCD\_Init}}
+\index{LCD\_Init@{LCD\_Init}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_Init()}{LCD\_Init()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gaa53c9d40f3aa552a9974cd55ac510cb3} 
+void LCD\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+init screen 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00064}{64}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{group___d_r_v___f28335___l_c_d_gaa53c9d40f3aa552a9974cd55ac510cb3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_gaaf409116545541ac11582da5f92dae57}\index{LCD驱动@{LCD驱动}!LCD\_Pow@{LCD\_Pow}}
+\index{LCD\_Pow@{LCD\_Pow}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_Pow()}{LCD\_Pow()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gaaf409116545541ac11582da5f92dae57} 
+unsigned long LCD\+\_\+\+Pow (\begin{DoxyParamCaption}\item[{unsigned long}]{X}{, }\item[{unsigned long}]{Y}{}\end{DoxyParamCaption})}
+
+
+
+math support 
+
+
+\begin{DoxyParams}{参数}
+{\em X} & unsigned long \\
+\hline
+{\em Y} & unsigned long\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+unsigned long X\texorpdfstring{$^\wedge$}{\string^}Y 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00054}{54}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___l_c_d_gac4df806c0dd9403b402130a26bed2c88}\index{LCD驱动@{LCD驱动}!LCD\_ShowBin@{LCD\_ShowBin}}
+\index{LCD\_ShowBin@{LCD\_ShowBin}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_ShowBin()}{LCD\_ShowBin()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gac4df806c0dd9403b402130a26bed2c88} 
+void LCD\+\_\+\+Show\+Bin (\begin{DoxyParamCaption}\item[{unsigned short}]{x}{, }\item[{unsigned short}]{y}{, }\item[{unsigned short}]{width}{, }\item[{unsigned short}]{height}{, }\item[{int}]{num}{, }\item[{int}]{Length}{, }\item[{unsigned short}]{pen\+\_\+color}{, }\item[{unsigned short}]{back\+\_\+color}{}\end{DoxyParamCaption})}
+
+
+
+display a int in BIN format 
+
+
+\begin{DoxyParams}{参数}
+{\em x} & start x position \\
+\hline
+{\em y} & staet y position \\
+\hline
+{\em width} & display area width \\
+\hline
+{\em height} & display areaheight \\
+\hline
+{\em num} & number to display \\
+\hline
+{\em pen\+\_\+color} & pen color \\
+\hline
+{\em back\+\_\+color} & back color \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00522}{522}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_r_v___f28335___l_c_d_gac4df806c0dd9403b402130a26bed2c88_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga984dce05b86caed4b2a0a0d8dba5462b}\index{LCD驱动@{LCD驱动}!LCD\_ShowChar@{LCD\_ShowChar}}
+\index{LCD\_ShowChar@{LCD\_ShowChar}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_ShowChar()}{LCD\_ShowChar()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga984dce05b86caed4b2a0a0d8dba5462b} 
+void LCD\+\_\+\+Show\+Char (\begin{DoxyParamCaption}\item[{unsigned short}]{x}{, }\item[{unsigned short}]{y}{, }\item[{unsigned char}]{num}{, }\item[{unsigned short}]{pen\+\_\+color}{, }\item[{unsigned short}]{back\+\_\+color}{}\end{DoxyParamCaption})}
+
+
+
+show a char 
+
+
+\begin{DoxyParams}{参数}
+{\em x} & start x position \\
+\hline
+{\em y} & staet y position \\
+\hline
+{\em num} & displayed char \\
+\hline
+{\em pen\+\_\+color} & pen color \\
+\hline
+{\em back\+\_\+color} & back color \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00423}{423}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_r_v___f28335___l_c_d_ga984dce05b86caed4b2a0a0d8dba5462b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga7d3136f6497002468c3d2388b0a20c3a}\index{LCD驱动@{LCD驱动}!LCD\_ShowDouble@{LCD\_ShowDouble}}
+\index{LCD\_ShowDouble@{LCD\_ShowDouble}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_ShowDouble()}{LCD\_ShowDouble()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga7d3136f6497002468c3d2388b0a20c3a} 
+void LCD\+\_\+\+Show\+Double (\begin{DoxyParamCaption}\item[{unsigned short}]{x}{, }\item[{unsigned short}]{y}{, }\item[{unsigned short}]{width}{, }\item[{unsigned short}]{height}{, }\item[{double}]{num}{, }\item[{unsigned short}]{pen\+\_\+color}{, }\item[{unsigned short}]{back\+\_\+color}{}\end{DoxyParamCaption})}
+
+
+
+display a float 
+
+
+\begin{DoxyParams}{参数}
+{\em x} & start x position \\
+\hline
+{\em y} & staet y position \\
+\hline
+{\em width} & display area width \\
+\hline
+{\em height} & display areaheight \\
+\hline
+{\em num} & number to display \\
+\hline
+{\em pen\+\_\+color} & pen color \\
+\hline
+{\em back\+\_\+color} & back color \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00490}{490}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_r_v___f28335___l_c_d_ga7d3136f6497002468c3d2388b0a20c3a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga4b5eb1531cb56f4ffe673ad5cd6b26be}\index{LCD驱动@{LCD驱动}!LCD\_ShowHex@{LCD\_ShowHex}}
+\index{LCD\_ShowHex@{LCD\_ShowHex}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_ShowHex()}{LCD\_ShowHex()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga4b5eb1531cb56f4ffe673ad5cd6b26be} 
+void LCD\+\_\+\+Show\+Hex (\begin{DoxyParamCaption}\item[{unsigned short}]{x}{, }\item[{unsigned short}]{y}{, }\item[{unsigned short}]{width}{, }\item[{unsigned short}]{height}{, }\item[{int}]{num}{, }\item[{unsigned short}]{pen\+\_\+color}{, }\item[{unsigned short}]{back\+\_\+color}{}\end{DoxyParamCaption})}
+
+
+
+display a int in HEX format 
+
+
+\begin{DoxyParams}{参数}
+{\em x} & start x position \\
+\hline
+{\em y} & staet y position \\
+\hline
+{\em width} & display area width \\
+\hline
+{\em height} & display areaheight \\
+\hline
+{\em num} & number to display \\
+\hline
+{\em pen\+\_\+color} & pen color \\
+\hline
+{\em back\+\_\+color} & back color \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00506}{506}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_r_v___f28335___l_c_d_ga4b5eb1531cb56f4ffe673ad5cd6b26be_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_gaceb21b8fd817d512b022e3f48a1376d0}\index{LCD驱动@{LCD驱动}!LCD\_ShowInt@{LCD\_ShowInt}}
+\index{LCD\_ShowInt@{LCD\_ShowInt}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_ShowInt()}{LCD\_ShowInt()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gaceb21b8fd817d512b022e3f48a1376d0} 
+void LCD\+\_\+\+Show\+Int (\begin{DoxyParamCaption}\item[{unsigned short}]{x}{, }\item[{unsigned short}]{y}{, }\item[{unsigned short}]{width}{, }\item[{unsigned short}]{height}{, }\item[{int}]{num}{, }\item[{unsigned short}]{pen\+\_\+color}{, }\item[{unsigned short}]{back\+\_\+color}{}\end{DoxyParamCaption})}
+
+
+
+display a int 
+
+
+\begin{DoxyParams}{参数}
+{\em x} & start x position \\
+\hline
+{\em y} & staet y position \\
+\hline
+{\em width} & display area width \\
+\hline
+{\em height} & display areaheight \\
+\hline
+{\em num} & number to display \\
+\hline
+{\em pen\+\_\+color} & pen color \\
+\hline
+{\em back\+\_\+color} & back color \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00498}{498}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_r_v___f28335___l_c_d_gaceb21b8fd817d512b022e3f48a1376d0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga59207dc90adfdfaf32fbbde2fa88ae54}\index{LCD驱动@{LCD驱动}!LCD\_ShowOct@{LCD\_ShowOct}}
+\index{LCD\_ShowOct@{LCD\_ShowOct}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_ShowOct()}{LCD\_ShowOct()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga59207dc90adfdfaf32fbbde2fa88ae54} 
+void LCD\+\_\+\+Show\+Oct (\begin{DoxyParamCaption}\item[{unsigned short}]{x}{, }\item[{unsigned short}]{y}{, }\item[{unsigned short}]{width}{, }\item[{unsigned short}]{height}{, }\item[{int}]{num}{, }\item[{unsigned short}]{pen\+\_\+color}{, }\item[{unsigned short}]{back\+\_\+color}{}\end{DoxyParamCaption})}
+
+
+
+display a int in OCT format 
+
+
+\begin{DoxyParams}{参数}
+{\em x} & start x position \\
+\hline
+{\em y} & staet y position \\
+\hline
+{\em width} & display area width \\
+\hline
+{\em height} & display areaheight \\
+\hline
+{\em num} & number to display \\
+\hline
+{\em pen\+\_\+color} & pen color \\
+\hline
+{\em back\+\_\+color} & back color \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00514}{514}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_r_v___f28335___l_c_d_ga59207dc90adfdfaf32fbbde2fa88ae54_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga819e4cb0d04d17e3cba390032dec14be}\index{LCD驱动@{LCD驱动}!LCD\_ShowString@{LCD\_ShowString}}
+\index{LCD\_ShowString@{LCD\_ShowString}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{LCD\_ShowString()}{LCD\_ShowString()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga819e4cb0d04d17e3cba390032dec14be} 
+void LCD\+\_\+\+Show\+String (\begin{DoxyParamCaption}\item[{unsigned short}]{x}{, }\item[{unsigned short}]{y}{, }\item[{unsigned short}]{width}{, }\item[{unsigned short}]{height}{, }\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{p}{, }\item[{unsigned short}]{pen\+\_\+color}{, }\item[{unsigned short}]{back\+\_\+color}{}\end{DoxyParamCaption})}
+
+
+
+show a string 
+
+
+\begin{DoxyParams}{参数}
+{\em x} & start x position \\
+\hline
+{\em y} & staet y position \\
+\hline
+{\em width} & display area width \\
+\hline
+{\em height} & display areaheight \\
+\hline
+{\em p} & srting pointer \\
+\hline
+{\em pen\+\_\+color} & pen color \\
+\hline
+{\em back\+\_\+color} & back color \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00466}{466}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___d_r_v___f28335___l_c_d_ga819e4cb0d04d17e3cba390032dec14be_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_gace1079bba7113da93a044cf179aa34d2}\index{LCD驱动@{LCD驱动}!lcdGpioInit@{lcdGpioInit}}
+\index{lcdGpioInit@{lcdGpioInit}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{lcdGpioInit()}{lcdGpioInit()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gace1079bba7113da93a044cf179aa34d2} 
+void lcd\+Gpio\+Init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+init GPIO 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00013}{13}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga71f317c08f5a4fd34f4e66b7413e0381}\index{LCD驱动@{LCD驱动}!lcdSelectRegister@{lcdSelectRegister}}
+\index{lcdSelectRegister@{lcdSelectRegister}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{lcdSelectRegister()}{lcdSelectRegister()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga71f317c08f5a4fd34f4e66b7413e0381} 
+void lcd\+Select\+Register (\begin{DoxyParamCaption}\item[{unsigned char}]{data}{}\end{DoxyParamCaption})}
+
+
+
+select register 
+
+
+\begin{DoxyParams}{参数}
+{\em data} & register address \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00167}{167}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga5ff5d250afc92419cfc04e6e7a80936b}\index{LCD驱动@{LCD驱动}!lcdSetAddress@{lcdSetAddress}}
+\index{lcdSetAddress@{lcdSetAddress}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{lcdSetAddress()}{lcdSetAddress()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga5ff5d250afc92419cfc04e6e7a80936b} 
+void lcd\+Set\+Address (\begin{DoxyParamCaption}\item[{unsigned short}]{x1}{, }\item[{unsigned short}]{y1}{, }\item[{unsigned short}]{x2}{, }\item[{unsigned short}]{y2}{}\end{DoxyParamCaption})}
+
+
+
+set courser position 
+
+
+\begin{DoxyParams}{参数}
+{\em x1} & x axis of starting \\
+\hline
+{\em y1} & y axis of starting \\
+\hline
+{\em x2} & x axis of ending \\
+\hline
+{\em y2} & y axis of ending \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00217}{217}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{group___d_r_v___f28335___l_c_d_ga5ff5d250afc92419cfc04e6e7a80936b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_gaba0abdc1cc1f6363bd0cf646e61094e3}\index{LCD驱动@{LCD驱动}!lcdWriteDataU16@{lcdWriteDataU16}}
+\index{lcdWriteDataU16@{lcdWriteDataU16}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{lcdWriteDataU16()}{lcdWriteDataU16()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_gaba0abdc1cc1f6363bd0cf646e61094e3} 
+void lcd\+Write\+Data\+U16 (\begin{DoxyParamCaption}\item[{unsigned short}]{data}{}\end{DoxyParamCaption})}
+
+
+
+write 16-\/bit data 
+
+
+\begin{DoxyParams}{参数}
+{\em data} & 8-\/bit data to LCD \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00211}{211}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{group___d_r_v___f28335___l_c_d_gaba0abdc1cc1f6363bd0cf646e61094e3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_r_v___f28335___l_c_d_ga4c41fe8c154e5beccd73c8b5042f497f}\index{LCD驱动@{LCD驱动}!lcdWriteDataU8@{lcdWriteDataU8}}
+\index{lcdWriteDataU8@{lcdWriteDataU8}!LCD驱动@{LCD驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{lcdWriteDataU8()}{lcdWriteDataU8()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___l_c_d_ga4c41fe8c154e5beccd73c8b5042f497f} 
+void lcd\+Write\+Data\+U8 (\begin{DoxyParamCaption}\item[{unsigned char}]{data}{}\end{DoxyParamCaption})}
+
+
+
+write 8-\/bit data 
+
+
+\begin{DoxyParams}{参数}
+{\em data} & 8-\/bit data to LCD \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 第 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source_l00189}{189}} 行定义.
+

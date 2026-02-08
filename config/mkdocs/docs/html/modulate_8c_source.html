@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC/NUEDC-Core/Code/Control_Driver/modulate/modulate.c 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('modulate_8c_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">modulate.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="modulate_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// Flash 启动支持, 将函数搬运至RAM</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma CODE_SECTION(Modulate_Init, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#pragma CODE_SECTION(Modulate_Set, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="modulate_8h.html">modulate.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="group___c_t_r_l___m_o_d.html#ga996f9b6a559031309fa6639bddf1b852">   14</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___c_t_r_l___m_o_d.html#ga996f9b6a559031309fa6639bddf1b852">Modulate_Init</a>(<a class="code hl_struct" href="struct_m_o_d.html">MOD</a>* <a class="code hl_variable" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_variable" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>-&gt;comp1 = 0;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_variable" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>-&gt;comp2 = 0;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_variable" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>-&gt;comp3 = 0;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_variable" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>-&gt;tbprd = 0;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_variable" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>-&gt;half_tbprd = 0;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="group___c_t_r_l___m_o_d.html#ga7ec773e0dd3b93e350d1f4b3c9932813">   23</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___c_t_r_l___m_o_d.html#ga7ec773e0dd3b93e350d1f4b3c9932813">Modulate_Set</a>(<a class="code hl_struct" href="struct_m_o_d.html">MOD</a>* <a class="code hl_variable" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, uint16_t tbprd)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_variable" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>-&gt;tbprd = tbprd;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_variable" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>-&gt;half_tbprd = tbprd * 0.5f;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+</div>
+<div class="ttc" id="a280049_c_2_test___projects_2_modulate___test_2main_8c_html_a8d91926ab2cd08d0afc22ea5b27dc62c"><div class="ttname"><a href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a></div><div class="ttdeci">MOD mod</div><div class="ttdef"><b>定义</b> <a href="280049_c_2_test___projects_2_modulate___test_2main_8c_source.html#l00025">main.c:25</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___m_o_d_html_ga7ec773e0dd3b93e350d1f4b3c9932813"><div class="ttname"><a href="group___c_t_r_l___m_o_d.html#ga7ec773e0dd3b93e350d1f4b3c9932813">Modulate_Set</a></div><div class="ttdeci">void Modulate_Set(MOD *mod, uint16_t tbprd)</div><div class="ttdoc">配置调制器的TBPRD寄存器值, 用于计算COMP寄存器值</div><div class="ttdef"><b>定义</b> <a href="#l00023">modulate.c:23</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___m_o_d_html_ga996f9b6a559031309fa6639bddf1b852"><div class="ttname"><a href="group___c_t_r_l___m_o_d.html#ga996f9b6a559031309fa6639bddf1b852">Modulate_Init</a></div><div class="ttdeci">void Modulate_Init(MOD *mod)</div><div class="ttdoc">结构体初始化</div><div class="ttdef"><b>定义</b> <a href="#l00014">modulate.c:14</a></div></div>
+<div class="ttc" id="amodulate_8h_html"><div class="ttname"><a href="modulate_8h.html">modulate.h</a></div><div class="ttdoc">调制函数声明</div></div>
+<div class="ttc" id="astruct_m_o_d_html"><div class="ttname"><a href="struct_m_o_d.html">MOD</a></div><div class="ttdoc">调制器结构体定义</div><div class="ttdef"><b>定义</b> <a href="modulate_8h_source.html#l00028">modulate.h:29</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_baf417f89402d8134217988295515a04.html">modulate</a></li><li class="navelem"><a href="modulate_8c.html">modulate.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+\doxysection{dcl\+\_\+pmr结构体 参考}
+\hypertarget{structdcl__pmr}{}\label{structdcl__pmr}\index{dcl\_pmr@{dcl\_pmr}}
+
+
+PMR控制器结构体定义, 使用多个\+PR控制器  
+
+
+
+
+{\ttfamily \#include $<$dcl.\+h$>$}
+
+
+
+dcl\+\_\+pmr 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{structdcl__pmr__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{成员变量}
+\begin{DoxyCompactItemize}
+\item 
+float32\+\_\+t \mbox{\hyperlink{structdcl__pmr_aa25b39bb7d79f09ae848cf32ece6c152}{Kp}}
+\begin{DoxyCompactList}\small\item\em Kp \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{structdcl__pmr_a273ac91a356bb630912fc60579902530}{Kr}} \mbox{[}\mbox{\hyperlink{group___c_t_r_l___d_c_l_ga407ba64c959aad0a50f7462ceb719e09}{DCL\+\_\+\+HARMONIC\+\_\+\+NUM}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 谐波 Kr 系数数组 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{structdcl__pmr_aa564b86a86e22385acfb679c2228d414}{Output}}
+\begin{DoxyCompactList}\small\item\em 控制器输出 \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{structdcl__pmr_a27c19bcfbcc13d8c1a5452311b4329b0}{harmonic\+\_\+set}} \mbox{[}\mbox{\hyperlink{group___c_t_r_l___d_c_l_ga407ba64c959aad0a50f7462ceb719e09}{DCL\+\_\+\+HARMONIC\+\_\+\+NUM}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 跟踪谐波次数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___c_t_r_l___t_r_a_n_s_f_u_n_gaf8832c3b4a1ad9070601b091b430b0e8}{DCL\+\_\+\+DF22}} \mbox{\hyperlink{structdcl__pmr_a79d4f064e92e541c1e4224e0ba25bf2f}{pr}} \mbox{[}\mbox{\hyperlink{group___c_t_r_l___d_c_l_ga407ba64c959aad0a50f7462ceb719e09}{DCL\+\_\+\+HARMONIC\+\_\+\+NUM}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 各谐波下的 \doxylink{group___c_t_r_l___t_r_a_n_s_f_u_n_gaf8832c3b4a1ad9070601b091b430b0e8}{DCL\+\_\+\+DF22} 结构体支持 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+PMR控制器结构体定义, 使用多个\+PR控制器 
+
+在文件 \mbox{\hyperlink{dcl_8h_source}{dcl.\+h}} 第 \mbox{\hyperlink{dcl_8h_source_l00073}{73}} 行定义.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{structdcl__pmr_doc-variable-members}
+\doxysubsection{结构体成员变量说明}
+\Hypertarget{structdcl__pmr_a27c19bcfbcc13d8c1a5452311b4329b0}\index{dcl\_pmr@{dcl\_pmr}!harmonic\_set@{harmonic\_set}}
+\index{harmonic\_set@{harmonic\_set}!dcl\_pmr@{dcl\_pmr}}
+\doxysubsubsection{\texorpdfstring{harmonic\_set}{harmonic\_set}}
+{\footnotesize\ttfamily \label{structdcl__pmr_a27c19bcfbcc13d8c1a5452311b4329b0} 
+uint16\+\_\+t dcl\+\_\+pmr\+::harmonic\+\_\+set\mbox{[}\mbox{\hyperlink{group___c_t_r_l___d_c_l_ga407ba64c959aad0a50f7462ceb719e09}{DCL\+\_\+\+HARMONIC\+\_\+\+NUM}}\mbox{]}}
+
+
+
+跟踪谐波次数 
+
+
+
+在文件 \mbox{\hyperlink{dcl_8h_source}{dcl.\+h}} 第 \mbox{\hyperlink{dcl_8h_source_l00078}{78}} 行定义.
+
+\Hypertarget{structdcl__pmr_aa25b39bb7d79f09ae848cf32ece6c152}\index{dcl\_pmr@{dcl\_pmr}!Kp@{Kp}}
+\index{Kp@{Kp}!dcl\_pmr@{dcl\_pmr}}
+\doxysubsubsection{\texorpdfstring{Kp}{Kp}}
+{\footnotesize\ttfamily \label{structdcl__pmr_aa25b39bb7d79f09ae848cf32ece6c152} 
+float32\+\_\+t dcl\+\_\+pmr\+::\+Kp}
+
+
+
+Kp 
+
+
+
+在文件 \mbox{\hyperlink{dcl_8h_source}{dcl.\+h}} 第 \mbox{\hyperlink{dcl_8h_source_l00075}{75}} 行定义.
+
+\Hypertarget{structdcl__pmr_a273ac91a356bb630912fc60579902530}\index{dcl\_pmr@{dcl\_pmr}!Kr@{Kr}}
+\index{Kr@{Kr}!dcl\_pmr@{dcl\_pmr}}
+\doxysubsubsection{\texorpdfstring{Kr}{Kr}}
+{\footnotesize\ttfamily \label{structdcl__pmr_a273ac91a356bb630912fc60579902530} 
+float32\+\_\+t dcl\+\_\+pmr\+::\+Kr\mbox{[}\mbox{\hyperlink{group___c_t_r_l___d_c_l_ga407ba64c959aad0a50f7462ceb719e09}{DCL\+\_\+\+HARMONIC\+\_\+\+NUM}}\mbox{]}}
+
+
+
+谐波 Kr 系数数组 
+
+
+
+在文件 \mbox{\hyperlink{dcl_8h_source}{dcl.\+h}} 第 \mbox{\hyperlink{dcl_8h_source_l00076}{76}} 行定义.
+
+\Hypertarget{structdcl__pmr_aa564b86a86e22385acfb679c2228d414}\index{dcl\_pmr@{dcl\_pmr}!Output@{Output}}
+\index{Output@{Output}!dcl\_pmr@{dcl\_pmr}}
+\doxysubsubsection{\texorpdfstring{Output}{Output}}
+{\footnotesize\ttfamily \label{structdcl__pmr_aa564b86a86e22385acfb679c2228d414} 
+float32\+\_\+t dcl\+\_\+pmr\+::\+Output}
+
+
+
+控制器输出 
+
+
+
+在文件 \mbox{\hyperlink{dcl_8h_source}{dcl.\+h}} 第 \mbox{\hyperlink{dcl_8h_source_l00077}{77}} 行定义.
+
+\Hypertarget{structdcl__pmr_a79d4f064e92e541c1e4224e0ba25bf2f}\index{dcl\_pmr@{dcl\_pmr}!pr@{pr}}
+\index{pr@{pr}!dcl\_pmr@{dcl\_pmr}}
+\doxysubsubsection{\texorpdfstring{pr}{pr}}
+{\footnotesize\ttfamily \label{structdcl__pmr_a79d4f064e92e541c1e4224e0ba25bf2f} 
+\mbox{\hyperlink{group___c_t_r_l___t_r_a_n_s_f_u_n_gaf8832c3b4a1ad9070601b091b430b0e8}{DCL\+\_\+\+DF22}} dcl\+\_\+pmr\+::pr\mbox{[}\mbox{\hyperlink{group___c_t_r_l___d_c_l_ga407ba64c959aad0a50f7462ceb719e09}{DCL\+\_\+\+HARMONIC\+\_\+\+NUM}}\mbox{]}}
+
+
+
+各谐波下的 \doxylink{group___c_t_r_l___t_r_a_n_s_f_u_n_gaf8832c3b4a1ad9070601b091b430b0e8}{DCL\+\_\+\+DF22} 结构体支持 
+
+
+
+在文件 \mbox{\hyperlink{dcl_8h_source}{dcl.\+h}} 第 \mbox{\hyperlink{dcl_8h_source_l00079}{79}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Control\+\_\+\+Driver/dcl/\mbox{\hyperlink{dcl_8h}{dcl.\+h}}\end{DoxyCompactItemize}

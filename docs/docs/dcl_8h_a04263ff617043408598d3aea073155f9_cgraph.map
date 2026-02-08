@@ -1,7 +1,0 @@
-<map id="DCL_PIR_Run" name="DCL_PIR_Run">
-<area shape="rect" id="Node000001" title="Run DCL_PIR controler" alt="" coords="5,32,107,60"/>
-<area shape="rect" id="Node000002" href="$dcl_8h.html#a55925a82f04c8cf0a3fda5528362cf10" title="执行串联式PI控制器, 需要FPU32 支持" alt="" coords="156,5,250,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,34,140,28,141,33,107,39"/>
-<area shape="rect" id="Node000003" href="$dcl_8h.html#a9147e492c58cb83f5da9d12d5b53dd2f" title="执行QPR控制器" alt="" coords="155,57,251,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,52,140,58,139,63,106,57"/>
-</map>

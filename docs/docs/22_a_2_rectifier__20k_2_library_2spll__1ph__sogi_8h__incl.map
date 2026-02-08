@@ -1,7 +1,0 @@
-<map id="NUEDC&#45;Core/Projects/28335/22A/Rectifier_20k/Library/spll_1ph_sogi.h" name="NUEDC&#45;Core/Projects/28335/22A/Rectifier_20k/Library/spll_1ph_sogi.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="6,5,153,84"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,132,69,160"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,85,51,118,46,116,61,83"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="93,132,154,160"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="99,83,114,116,109,119,94,85"/>
-</map>

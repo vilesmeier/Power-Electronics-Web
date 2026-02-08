@@ -1,0 +1,80 @@
+\doxysection{main.\+c}
+\hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source}{}\label{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Projects/280049C/Test\_Projects/OLED\_SSD1315\_Test/main.c@{D:/Codes/NUEDC/NUEDC-\/Core/Projects/280049C/Test\_Projects/OLED\_SSD1315\_Test/main.c}}
+\mbox{\hyperlink{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00011}00011\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00012}00012\ \textcolor{comment}{//\ Included\ Files}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00013}00013\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}driverlib.h"{}}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00015}00015\ \textcolor{preprocessor}{\#include\ "{}device.h"{}}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00016}00016\ \textcolor{preprocessor}{\#include\ "{}board.h"{}}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00017}00017\ \textcolor{preprocessor}{\#include\ "{}c2000ware\_libraries.h"{}}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00018}00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00020}00020\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00021}00021\ \textcolor{comment}{//\ Main}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00022}00022\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00023}\mbox{\hyperlink{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_a6288eba0f8e8ad3ab1544ad731eb7667}{00023}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{280049_c_2_template___projects_2_template___project___f280049_c_2user_2main_8c_a6288eba0f8e8ad3ab1544ad731eb7667}{main}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00024}00024\ \{}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00025}00025\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00026}00026\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00027}00027\ \ \ \ \ \textcolor{comment}{//\ Initialize\ device\ clock\ and\ peripherals}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00028}00028\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00029}00029\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00030}00030\ \ \ \ \ Device\_init();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00032}00032\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00033}00033\ \ \ \ \ \textcolor{comment}{//\ Disable\ pin\ locks\ and\ enable\ internal\ pull-\/ups.}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00034}00034\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00035}00035\ \ \ \ \ Device\_initGPIO();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00037}00037\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00038}00038\ \ \ \ \ \textcolor{comment}{//\ Initialize\ PIE\ and\ clear\ PIE\ registers.\ Disables\ CPU\ interrupts.}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00039}00039\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00040}00040\ \ \ \ \ Interrupt\_initModule();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00042}00042\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00043}00043\ \ \ \ \ \textcolor{comment}{//\ Initialize\ the\ PIE\ vector\ table\ with\ pointers\ to\ the\ shell\ Interrupt}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00044}00044\ \ \ \ \ \textcolor{comment}{//\ Service\ Routines\ (ISR).}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00045}00045\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00046}00046\ \ \ \ \ Interrupt\_initVectorTable();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00048}00048\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00049}00049\ \ \ \ \ \textcolor{comment}{//\ Configure\ ePWM1,\ ePWM2,\ and\ TZ\ GPIOs/Modules}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00050}00050\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00051}00051\ \ \ \ \ Board\_init();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00053}00053\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00054}00054\ \ \ \ \ \textcolor{comment}{//\ C2000Ware\ Library\ initialization}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00055}00055\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00056}00056\ \ \ \ \ C2000Ware\_libraries\_init();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00058}00058\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00059}00059\ \ \ \ \ \textcolor{comment}{//\ Enable\ Global\ Interrupt\ (INTM)\ and\ real\ time\ interrupt\ (DBGM)}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00060}00060\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00061}00061\ \ \ \ \ EINT;}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00062}00062\ \ \ \ \ ERTM;}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00064}00064\ \ \ \ \ \textcolor{comment}{//\ Enter\ code\ here}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00066}00066\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___o_l_e_d_ga7372e46460a371e4d94a0ee7f5f1a1fd}{OLED\_Init}}();}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00068}00068\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_ga5afff1be901cd9738f1c9652a0676f62}{WriteData}}(0xA5,\mbox{\hyperlink{group___d_r_v___f28335___o_l_e_d_gga7ac0f27d752bd8ce30d895085fff9cf2a0a6ce3feb5863993ecf3c915ba06504d}{OLED\_CMD}});}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00070}00070\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00071}00071\ \ \ \ \ \textcolor{comment}{//\ IDLE\ loop.\ Just\ sit\ and\ loop\ forever\ (optional):}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00072}00072\ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00073}00073\ \ \ \ \ \textcolor{keywordflow}{for}(;;)}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00074}00074\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00076}00076\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00077}00077\ \}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00079}00079\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00080}00080\ \textcolor{comment}{//\ End\ of\ File}}
+\DoxyCodeLine{\Hypertarget{280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c_source_l00081}00081\ \textcolor{comment}{//}}
+
+\end{DoxyCode}

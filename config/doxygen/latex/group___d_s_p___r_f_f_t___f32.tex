@@ -1,0 +1,903 @@
+\doxysubsubsubsection{Real Fast Fourier Transforms }
+\hypertarget{group___d_s_p___r_f_f_t___f32}{}\label{group___d_s_p___r_f_f_t___f32}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+
+
+提供基于\+TI官方\+FPU库的\+RFFT频谱分析实现  
+
+
+Real Fast Fourier Transforms 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{group___d_s_p___r_f_f_t___f32}
+\end{center}
+\end{figure}
+\doxysubsubsubsubsubsection*{结构体}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_r_f_f_t___f32___s_t_r_u_c_t}{RFFT\+\_\+\+F32\+\_\+\+STRUCT}}
+\begin{DoxyCompactList}\small\item\em Structure for the Real FFT \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_r_f_f_t}{RFFT}}
+\begin{DoxyCompactList}\small\item\em 结构体定义 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga0934cb2ea8795edf8b6733651f6aa72b}{FFT\+\_\+\+STAGE}}~8
+\begin{DoxyCompactList}\small\item\em FFT阶数 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}}~(1U$<$$<$\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga0934cb2ea8795edf8b6733651f6aa72b}{FFT\+\_\+\+STAGE}})
+\begin{DoxyCompactList}\small\item\em FFT数组长度 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga773ffe60e709d24ffac8f78acd36470f}{FFT\+\_\+\+PEAK\+\_\+\+MAX}}~20
+\begin{DoxyCompactList}\small\item\em FFT幅度谱峰值个数最大值 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga375c03b6ba7682f23a46a642bc7c35ea}{FFT\+\_\+\+TOLERANCE}}~0.\+05f
+\begin{DoxyCompactList}\small\item\em FFT峰值噪声阈限, 小于 FFT\+\_\+\+TOLERANCE \texorpdfstring{$\ast$}{*} peak\+\_\+max 的峰视为噪声 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga073028e7d311cec2453b9da422e8dc64}{FFT\+\_\+\+WINDOW\+\_\+\+DISABLE}}
+\begin{DoxyCompactList}\small\item\em FFT是否加窗 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gac4dab8d5ec53a02e5308e7485b6d3fc7}{FFT\+\_\+\+PHASE\+\_\+\+DISABLE}}
+\begin{DoxyCompactList}\small\item\em FFT是否计算相位 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga9b3757d7ef0e51af7ef76a1acc6e1fd2}{FFT\+\_\+\+WIN\+\_\+\+BARTHANN}}
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga6e5aa31fe14d96eebf6abbf1e59996b1}{FFT\+\_\+\+WIN\+\_\+\+BARTLETT}}~2.\+000f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga53a6c3aaf1e2e8693e69ed6a7a87dbba}{FFT\+\_\+\+WIN\+\_\+\+BLACKMAN}}~2.\+381f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga5ebcb55274da9413b87d4116abeb61b5}{FFT\+\_\+\+WIN\+\_\+\+BALCKMANHARRIS}}~2.\+787f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga3aef85b522e10497277a6cddfdc68f67}{FFT\+\_\+\+WIN\+\_\+\+BOHMAN}}~2.\+000f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaeca7f7ed1701823646bbf2bea2e549fc}{FFT\+\_\+\+WIN\+\_\+\+CHEB}}~2.\+600f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gab960ecbd76aea276928fa31b129f2ea9}{FFT\+\_\+\+WIN\+\_\+\+FLATTOP}}~1.\+110f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gad0e6a2876e0988bf7c2372601fdf60d2}{FFT\+\_\+\+WIN\+\_\+\+GAUSS}}~2.\+396f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaf9cc97e722abd383b4fc27941672c7a7}{FFT\+\_\+\+WIN\+\_\+\+HAMMING}}~1.\+852f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga272806e4c6f8566c705b4a3ee8df8fb2}{FFT\+\_\+\+WIN\+\_\+\+HANN}}~2.\+000f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga524b982fc5c02b1abf946f141ae4a2ea}{FFT\+\_\+\+WIN\+\_\+\+KAISER}}~2.\+480f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga763a23c30b221c29b025869f8deb676d}{FFT\+\_\+\+WIN\+\_\+\+MUTTALL}}~2.\+816f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga20b73bc4ad4a490def9603d6d7543cd8}{FFT\+\_\+\+WIN\+\_\+\+PARZEN}}~2.\+000f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga8b69925e12b71ddb6ee21ad7776c3c43}{FFT\+\_\+\+WIN\+\_\+\+RECT}}~1.\+000f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga46054988db4cec96d91a91e4fc449581}{FFT\+\_\+\+WIN\+\_\+\+TAYLOR}}~1.\+700f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga0f64bffc15e2434d545dbcbf4c4dd0ca}{FFT\+\_\+\+WIN\+\_\+\+TRIANG}}~2.\+000f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gab320c9b00551ebcb5a115dfcdf88b9aa}{FFT\+\_\+\+WIN\+\_\+\+TUKEY}}~1.\+500f
+\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga626007536417efdacd8d5a3917b7002a}{FFT\+\_\+\+WINDOW\+\_\+\+GAIN}}~1.\+0f
+\begin{DoxyCompactList}\small\item\em FFT窗函数幅值修正系数 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gafa99ec4acc4ecb2dc3c2d05da15d0e3f}{MAX}}(a,  b)
+\begin{DoxyCompactList}\small\item\em 使用三目运算符的最大值 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga3acffbd305ee72dcd4593c0d8af64a4f}{MIN}}(a,  b)
+\begin{DoxyCompactList}\small\item\em 使用三目运算符的最小值 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaba1a1aa3c6bb536435957847da9c1b2f}{FFT\+\_\+\+MODE}} \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga035262da3af2ac3fc5c514365123f961}{FFT\+\_\+\+MODE}}
+\begin{DoxyCompactList}\small\item\em 定义\+RFFT频谱分析模式 \end{DoxyCompactList}\item 
+typedef struct RFFT \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga0b2c567a47e65f4abfa1cd1b7f099734}{RFFT}}
+\begin{DoxyCompactList}\small\item\em 结构体定义 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaba1a1aa3c6bb536435957847da9c1b2f}{FFT\+\_\+\+MODE}} \{ \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2faeb8448db629160ec8f03e448a8ab078d}{FFT\+\_\+\+MODE\+\_\+\+NULL}} = 0U
+, \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2fac4acfd934cb0e9a237ace151235488f5}{FFT\+\_\+\+GRID\+\_\+\+LOCK}} = 1U
+, \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2fabdd1a5e2d1c04b1d17b1bfa214d11112}{FFT\+\_\+\+PEAK\+\_\+\+FIND}} = 2U
+ \}
+\begin{DoxyCompactList}\small\item\em 定义\+RFFT频谱分析模式 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaaca2fd3267a4458de0b5f4d37b0d85b8}{RFFT\+\_\+\+Init}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}, float32\+\_\+t \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga5a0f4b49baab36db0c5e1922cdbc6c71}{input}}, float32\+\_\+t \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaf41db2f2a8a877a4d60944cafafac70c}{output}}, float32\+\_\+t \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga56ce624e4d31bc2956066f5fa5b6b34d}{twiddle}}, float32\+\_\+t \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga429b259b6633b6a2b677ba475d840c63}{magnitude}})
+\begin{DoxyCompactList}\small\item\em 初始化与配置\+RFFT指针 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga8879dcbb9c5197cd6dfb4f30369a96e4}{RFFT\+\_\+\+Set}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}, float32\+\_\+t fs, float32\+\_\+t fgrid)
+\begin{DoxyCompactList}\small\item\em 配置\+RFFT参数, 确定\+FFT幅度谱分析模式 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga413312679334b30df43bf8c9d9530dba}{RFFT\+\_\+\+Run}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}})
+\begin{DoxyCompactList}\small\item\em 执行\+RFFT信号分析 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gad1e815d931ea459fc390f308cd553710}{RFFT\+\_\+\+Peak\+\_\+\+Find}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}})
+\begin{DoxyCompactList}\small\item\em delta\+\_\+f != fgrid, 寻找幅度谱峰值 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga3fc7edfa39757d7ff7e4522bcbbbf07d}{RFFT\+\_\+\+Grid\+\_\+\+Lock}} (\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}})
+\begin{DoxyCompactList}\small\item\em delta\+\_\+f == fgrid, 幅度谱每个元素即为一个谐波峰 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_r_f_f_t___f32___s_t_r_u_c_t}{RFFT\+\_\+\+F32\+\_\+\+STRUCT}} \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga93dd182d61f8d46337764f2ac76e664d}{RFFT\+::rfft\+\_\+struct}}
+\begin{DoxyCompactList}\small\item\em ti库结构体 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{fpu__rfft_8h_a8e0e8c088fc134b9afc9994c3b253faf}{RFFT\+\_\+\+F32\+\_\+\+STRUCT\+\_\+\+Handle}} \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga35194b26b562e65aec8e287dece1a6d7}{RFFT\+::rfft\+\_\+struct\+\_\+pointer}}
+\begin{DoxyCompactList}\small\item\em ti库结构体指针 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga435f5c86bc9126eb6627f595e27815d6}{RFFT\+::thd}}
+\begin{DoxyCompactList}\small\item\em 总谐波失真 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga580934385f75d850595cfa40ab17d33f}{RFFT\+::dc\+\_\+amp}}
+\begin{DoxyCompactList}\small\item\em DC分量 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga2069d6fd5d7735109c66475d97662738}{RFFT\+::fs}}
+\begin{DoxyCompactList}\small\item\em 采样频率 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga30277556531fca121dc4afc6a478c47c}{RFFT\+::freq}} \mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga773ffe60e709d24ffac8f78acd36470f}{FFT\+\_\+\+PEAK\+\_\+\+MAX}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 峰值点频率 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga2bc527b3b8fd1a15c9698d8a12f325e0}{RFFT\+::amp}} \mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga773ffe60e709d24ffac8f78acd36470f}{FFT\+\_\+\+PEAK\+\_\+\+MAX}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 峰值点幅值 \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga1ca55b02a57fe5c1e71d04960ecb54a6}{RFFT\+::peak\+\_\+num}}
+\begin{DoxyCompactList}\small\item\em FFT magnitude 中峰值数量 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaba1a1aa3c6bb536435957847da9c1b2f}{FFT\+\_\+\+MODE}} \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gade3cff0237970ebb1f3d2d0765c7fc7e}{RFFT\+::mode}}
+\begin{DoxyCompactList}\small\item\em 幅度谱分析模式 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gac2c3282e359e1d80c40b0c945cffee32}{RFFT\+::size\+\_\+inv}}
+\begin{DoxyCompactList}\small\item\em FFT\+\_\+\+SIZE 倒数, 用于减少 FFT 分析中浮点除法 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga5a0f4b49baab36db0c5e1922cdbc6c71}{input}} \mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 输入数组 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaf41db2f2a8a877a4d60944cafafac70c}{output}} \mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 输出数组 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga56ce624e4d31bc2956066f5fa5b6b34d}{twiddle}} \mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 预畸变因子表 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga429b259b6633b6a2b677ba475d840c63}{magnitude}} \mbox{[}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}} $>$ $>$1)+1\mbox{]}
+\begin{DoxyCompactList}\small\item\em 输出幅值 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}{rfft}}
+\begin{DoxyCompactList}\small\item\em RFFT结构体 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsection{详细描述}
+提供基于\+TI官方\+FPU库的\+RFFT频谱分析实现 
+
+Copyright\+: Copyright (C) 2023 Texas Instruments Incorporated -\/ All rights reserved not granted herein. Limited License.
+
+Texas Instruments Incorporated grants a world-\/wide, royalty-\/free, non-\/exclusive license under copyrights and patents it now or hereafter owns or controls to make, have made, use, import, offer to sell and sell ("{}\+Utilize"{}) this software subject to the terms herein. With respect to the foregoing patent license, such license is granted solely to the extent that any such patent is necessary to Utilize the software alone. The patent license shall not apply to any combinations which include this software, other than combinations with devices manufactured by or for TI ("{}\+TI Devices"{}). No hardware patent is licensed hereunder.
+
+Redistributions must preserve existing copyright notices and reproduce this license (including the above copyright notice and the disclaimer and (if applicable) source code license limitations below) in the documentation and/or other materials provided with the distribution.
+
+Redistribution and use in binary form, without modification, are permitted provided that the following conditions are met\+:
+
+
+\begin{DoxyItemize}
+\item No reverse engineering, decompilation, or disassembly of this software is permitted with respect to any software provided in binary form.
+\item Any redistribution and use are licensed by TI for use only with TI Devices.
+\item Nothing shall obligate TI to provide you with source code for the software licensed and provided to you in object code.
+\end{DoxyItemize}
+
+If software source code is provided to you, modification and redistribution of the source code are permitted provided that the following conditions are met\+:
+
+
+\begin{DoxyItemize}
+\item any redistribution and use of the source code, including any resulting derivative works, are licensed by TI for use only with TI Devices.
+\item any redistribution and use of any object code compiled from the source code and any resulting derivative works, are licensed by TI for use only with TI Devices.
+\end{DoxyItemize}
+
+Neither the name of Texas Instruments Incorporated nor the names of its suppliers may be used to endorse or promote products derived from this software without specific prior written permission.
+
+Copyright\+: Copyright (C) 2023 Texas Instruments Incorporated -\/ All rights reserved not granted herein. Limited License.
+
+Texas Instruments Incorporated grants a world-\/wide, royalty-\/free, non-\/exclusive license under copyrights and patents it now or hereafter owns or controls to make, have made, use, import, offer to sell and sell ("{}\+Utilize"{}) this software subject to the terms herein. With respect to the foregoing patent license, such license is granted solely to the extent that any such patent is necessary to Utilize the software alone. The patent license shall not apply to any combinations which include this software, other than combinations with devices manufactured by or for TI ("{}\+TI Devices"{}). No hardware patent is licensed hereunder.
+
+Redistributions must preserve existing copyright notices and reproduce this license (including the above copyright notice and the disclaimer and (if applicable) source code license limitations below) in the documentation and/or other materials provided with the distribution.
+
+Redistribution and use in binary form, without modification, are permitted provided that the following conditions are met\+:
+
+
+\begin{DoxyItemize}
+\item No reverse engineering, decompilation, or disassembly of this software is permitted with respect to any software provided in binary form.
+\item Any redistribution and use are licensed by TI for use only with TI Devices.
+\item Nothing shall obligate TI to provide you with source code for the software licensed and provided to you in object code.
+\end{DoxyItemize}
+
+If software source code is provided to you, modification and redistribution of the source code are permitted provided that the following conditions are met\+:
+
+
+\begin{DoxyItemize}
+\item any redistribution and use of the source code, including any resulting derivative works, are licensed by TI for use only with TI Devices.
+\item any redistribution and use of any object code compiled from the source code and any resulting derivative works, are licensed by TI for use only with TI Devices.
+\end{DoxyItemize}
+
+Neither the name of Texas Instruments Incorporated nor the names of its suppliers may be used to endorse or promote products derived from this software without specific prior written permission.
+
+\label{doc-define-members}
+\Hypertarget{group___d_s_p___r_f_f_t___f32_doc-define-members}
+\doxysubsubsubsubsection{宏定义说明}
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga773ffe60e709d24ffac8f78acd36470f}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_PEAK\_MAX@{FFT\_PEAK\_MAX}}
+\index{FFT\_PEAK\_MAX@{FFT\_PEAK\_MAX}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_PEAK\_MAX}{FFT\_PEAK\_MAX}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga773ffe60e709d24ffac8f78acd36470f} 
+\#define FFT\+\_\+\+PEAK\+\_\+\+MAX~20}
+
+
+
+FFT幅度谱峰值个数最大值 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00045}{45}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_gac4dab8d5ec53a02e5308e7485b6d3fc7}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_PHASE\_DISABLE@{FFT\_PHASE\_DISABLE}}
+\index{FFT\_PHASE\_DISABLE@{FFT\_PHASE\_DISABLE}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_PHASE\_DISABLE}{FFT\_PHASE\_DISABLE}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_gac4dab8d5ec53a02e5308e7485b6d3fc7} 
+\#define FFT\+\_\+\+PHASE\+\_\+\+DISABLE}
+
+
+
+FFT是否计算相位 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00048}{48}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_SIZE@{FFT\_SIZE}}
+\index{FFT\_SIZE@{FFT\_SIZE}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_SIZE}{FFT\_SIZE}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105} 
+\#define FFT\+\_\+\+SIZE~(1U$<$$<$\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga0934cb2ea8795edf8b6733651f6aa72b}{FFT\+\_\+\+STAGE}})}
+
+
+
+FFT数组长度 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00044}{44}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga0934cb2ea8795edf8b6733651f6aa72b}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_STAGE@{FFT\_STAGE}}
+\index{FFT\_STAGE@{FFT\_STAGE}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_STAGE}{FFT\_STAGE}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga0934cb2ea8795edf8b6733651f6aa72b} 
+\#define FFT\+\_\+\+STAGE~8}
+
+
+
+FFT阶数 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00043}{43}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga375c03b6ba7682f23a46a642bc7c35ea}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_TOLERANCE@{FFT\_TOLERANCE}}
+\index{FFT\_TOLERANCE@{FFT\_TOLERANCE}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_TOLERANCE}{FFT\_TOLERANCE}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga375c03b6ba7682f23a46a642bc7c35ea} 
+\#define FFT\+\_\+\+TOLERANCE~0.\+05f}
+
+
+
+FFT峰值噪声阈限, 小于 FFT\+\_\+\+TOLERANCE \texorpdfstring{$\ast$}{*} peak\+\_\+max 的峰视为噪声 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00046}{46}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga5ebcb55274da9413b87d4116abeb61b5}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_BALCKMANHARRIS@{FFT\_WIN\_BALCKMANHARRIS}}
+\index{FFT\_WIN\_BALCKMANHARRIS@{FFT\_WIN\_BALCKMANHARRIS}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_BALCKMANHARRIS}{FFT\_WIN\_BALCKMANHARRIS}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga5ebcb55274da9413b87d4116abeb61b5} 
+\#define FFT\+\_\+\+WIN\+\_\+\+BALCKMANHARRIS~2.\+787f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00054}{54}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga9b3757d7ef0e51af7ef76a1acc6e1fd2}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_BARTHANN@{FFT\_WIN\_BARTHANN}}
+\index{FFT\_WIN\_BARTHANN@{FFT\_WIN\_BARTHANN}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_BARTHANN}{FFT\_WIN\_BARTHANN}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga9b3757d7ef0e51af7ef76a1acc6e1fd2} 
+\#define FFT\+\_\+\+WIN\+\_\+\+BARTHANN}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00051}{51}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga6e5aa31fe14d96eebf6abbf1e59996b1}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_BARTLETT@{FFT\_WIN\_BARTLETT}}
+\index{FFT\_WIN\_BARTLETT@{FFT\_WIN\_BARTLETT}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_BARTLETT}{FFT\_WIN\_BARTLETT}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga6e5aa31fe14d96eebf6abbf1e59996b1} 
+\#define FFT\+\_\+\+WIN\+\_\+\+BARTLETT~2.\+000f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00052}{52}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga53a6c3aaf1e2e8693e69ed6a7a87dbba}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_BLACKMAN@{FFT\_WIN\_BLACKMAN}}
+\index{FFT\_WIN\_BLACKMAN@{FFT\_WIN\_BLACKMAN}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_BLACKMAN}{FFT\_WIN\_BLACKMAN}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga53a6c3aaf1e2e8693e69ed6a7a87dbba} 
+\#define FFT\+\_\+\+WIN\+\_\+\+BLACKMAN~2.\+381f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00053}{53}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga3aef85b522e10497277a6cddfdc68f67}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_BOHMAN@{FFT\_WIN\_BOHMAN}}
+\index{FFT\_WIN\_BOHMAN@{FFT\_WIN\_BOHMAN}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_BOHMAN}{FFT\_WIN\_BOHMAN}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga3aef85b522e10497277a6cddfdc68f67} 
+\#define FFT\+\_\+\+WIN\+\_\+\+BOHMAN~2.\+000f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00055}{55}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_gaeca7f7ed1701823646bbf2bea2e549fc}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_CHEB@{FFT\_WIN\_CHEB}}
+\index{FFT\_WIN\_CHEB@{FFT\_WIN\_CHEB}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_CHEB}{FFT\_WIN\_CHEB}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_gaeca7f7ed1701823646bbf2bea2e549fc} 
+\#define FFT\+\_\+\+WIN\+\_\+\+CHEB~2.\+600f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00056}{56}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_gab960ecbd76aea276928fa31b129f2ea9}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_FLATTOP@{FFT\_WIN\_FLATTOP}}
+\index{FFT\_WIN\_FLATTOP@{FFT\_WIN\_FLATTOP}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_FLATTOP}{FFT\_WIN\_FLATTOP}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_gab960ecbd76aea276928fa31b129f2ea9} 
+\#define FFT\+\_\+\+WIN\+\_\+\+FLATTOP~1.\+110f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00057}{57}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_gad0e6a2876e0988bf7c2372601fdf60d2}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_GAUSS@{FFT\_WIN\_GAUSS}}
+\index{FFT\_WIN\_GAUSS@{FFT\_WIN\_GAUSS}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_GAUSS}{FFT\_WIN\_GAUSS}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_gad0e6a2876e0988bf7c2372601fdf60d2} 
+\#define FFT\+\_\+\+WIN\+\_\+\+GAUSS~2.\+396f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00058}{58}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_gaf9cc97e722abd383b4fc27941672c7a7}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_HAMMING@{FFT\_WIN\_HAMMING}}
+\index{FFT\_WIN\_HAMMING@{FFT\_WIN\_HAMMING}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_HAMMING}{FFT\_WIN\_HAMMING}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_gaf9cc97e722abd383b4fc27941672c7a7} 
+\#define FFT\+\_\+\+WIN\+\_\+\+HAMMING~1.\+852f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00059}{59}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga272806e4c6f8566c705b4a3ee8df8fb2}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_HANN@{FFT\_WIN\_HANN}}
+\index{FFT\_WIN\_HANN@{FFT\_WIN\_HANN}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_HANN}{FFT\_WIN\_HANN}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga272806e4c6f8566c705b4a3ee8df8fb2} 
+\#define FFT\+\_\+\+WIN\+\_\+\+HANN~2.\+000f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00060}{60}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga524b982fc5c02b1abf946f141ae4a2ea}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_KAISER@{FFT\_WIN\_KAISER}}
+\index{FFT\_WIN\_KAISER@{FFT\_WIN\_KAISER}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_KAISER}{FFT\_WIN\_KAISER}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga524b982fc5c02b1abf946f141ae4a2ea} 
+\#define FFT\+\_\+\+WIN\+\_\+\+KAISER~2.\+480f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00061}{61}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga763a23c30b221c29b025869f8deb676d}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_MUTTALL@{FFT\_WIN\_MUTTALL}}
+\index{FFT\_WIN\_MUTTALL@{FFT\_WIN\_MUTTALL}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_MUTTALL}{FFT\_WIN\_MUTTALL}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga763a23c30b221c29b025869f8deb676d} 
+\#define FFT\+\_\+\+WIN\+\_\+\+MUTTALL~2.\+816f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00062}{62}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga20b73bc4ad4a490def9603d6d7543cd8}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_PARZEN@{FFT\_WIN\_PARZEN}}
+\index{FFT\_WIN\_PARZEN@{FFT\_WIN\_PARZEN}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_PARZEN}{FFT\_WIN\_PARZEN}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga20b73bc4ad4a490def9603d6d7543cd8} 
+\#define FFT\+\_\+\+WIN\+\_\+\+PARZEN~2.\+000f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00063}{63}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga8b69925e12b71ddb6ee21ad7776c3c43}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_RECT@{FFT\_WIN\_RECT}}
+\index{FFT\_WIN\_RECT@{FFT\_WIN\_RECT}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_RECT}{FFT\_WIN\_RECT}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga8b69925e12b71ddb6ee21ad7776c3c43} 
+\#define FFT\+\_\+\+WIN\+\_\+\+RECT~1.\+000f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00064}{64}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga46054988db4cec96d91a91e4fc449581}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_TAYLOR@{FFT\_WIN\_TAYLOR}}
+\index{FFT\_WIN\_TAYLOR@{FFT\_WIN\_TAYLOR}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_TAYLOR}{FFT\_WIN\_TAYLOR}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga46054988db4cec96d91a91e4fc449581} 
+\#define FFT\+\_\+\+WIN\+\_\+\+TAYLOR~1.\+700f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00065}{65}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga0f64bffc15e2434d545dbcbf4c4dd0ca}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_TRIANG@{FFT\_WIN\_TRIANG}}
+\index{FFT\_WIN\_TRIANG@{FFT\_WIN\_TRIANG}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_TRIANG}{FFT\_WIN\_TRIANG}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga0f64bffc15e2434d545dbcbf4c4dd0ca} 
+\#define FFT\+\_\+\+WIN\+\_\+\+TRIANG~2.\+000f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00066}{66}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_gab320c9b00551ebcb5a115dfcdf88b9aa}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WIN\_TUKEY@{FFT\_WIN\_TUKEY}}
+\index{FFT\_WIN\_TUKEY@{FFT\_WIN\_TUKEY}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WIN\_TUKEY}{FFT\_WIN\_TUKEY}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_gab320c9b00551ebcb5a115dfcdf88b9aa} 
+\#define FFT\+\_\+\+WIN\+\_\+\+TUKEY~1.\+500f}
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00067}{67}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga073028e7d311cec2453b9da422e8dc64}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WINDOW\_DISABLE@{FFT\_WINDOW\_DISABLE}}
+\index{FFT\_WINDOW\_DISABLE@{FFT\_WINDOW\_DISABLE}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WINDOW\_DISABLE}{FFT\_WINDOW\_DISABLE}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga073028e7d311cec2453b9da422e8dc64} 
+\#define FFT\+\_\+\+WINDOW\+\_\+\+DISABLE}
+
+
+
+FFT是否加窗 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00047}{47}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga626007536417efdacd8d5a3917b7002a}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_WINDOW\_GAIN@{FFT\_WINDOW\_GAIN}}
+\index{FFT\_WINDOW\_GAIN@{FFT\_WINDOW\_GAIN}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_WINDOW\_GAIN}{FFT\_WINDOW\_GAIN}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga626007536417efdacd8d5a3917b7002a} 
+\#define FFT\+\_\+\+WINDOW\+\_\+\+GAIN~1.\+0f}
+
+
+
+FFT窗函数幅值修正系数 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00072}{72}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_gafa99ec4acc4ecb2dc3c2d05da15d0e3f}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!MAX@{MAX}}
+\index{MAX@{MAX}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_gafa99ec4acc4ecb2dc3c2d05da15d0e3f} 
+\#define MAX(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{}\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((a)\ >\ (b))\ ?\ (a)\ :\ (b))}
+
+\end{DoxyCode}
+
+
+使用三目运算符的最大值 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00076}{76}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga3acffbd305ee72dcd4593c0d8af64a4f}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!MIN@{MIN}}
+\index{MIN@{MIN}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{MIN}{MIN}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga3acffbd305ee72dcd4593c0d8af64a4f} 
+\#define MIN(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{}\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((a)\ <\ (b))\ ?\ (a)\ :\ (b))}
+
+\end{DoxyCode}
+
+
+使用三目运算符的最小值 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00077}{77}} 行定义.
+
+
+
+\label{doc-typedef-members}
+\Hypertarget{group___d_s_p___r_f_f_t___f32_doc-typedef-members}
+\doxysubsubsubsubsection{类型定义说明}
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga035262da3af2ac3fc5c514365123f961}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_MODE@{FFT\_MODE}}
+\index{FFT\_MODE@{FFT\_MODE}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_MODE}{FFT\_MODE}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga035262da3af2ac3fc5c514365123f961} 
+typedef enum \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaba1a1aa3c6bb536435957847da9c1b2f}{FFT\+\_\+\+MODE}} \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaba1a1aa3c6bb536435957847da9c1b2f}{FFT\+\_\+\+MODE}}}
+
+
+
+定义\+RFFT频谱分析模式 
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga0b2c567a47e65f4abfa1cd1b7f099734}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!RFFT@{RFFT}}
+\index{RFFT@{RFFT}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{RFFT}{RFFT}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga0b2c567a47e65f4abfa1cd1b7f099734} 
+typedef struct RFFT RFFT}
+
+
+
+结构体定义 
+
+\begin{DoxyNote}{注解}
+由于不常用 FFT 分析相位, 故不添加\+FFT输出相位数组 
+\end{DoxyNote}
+
+
+\label{doc-enum-members}
+\Hypertarget{group___d_s_p___r_f_f_t___f32_doc-enum-members}
+\doxysubsubsubsubsection{枚举类型说明}
+\Hypertarget{group___d_s_p___r_f_f_t___f32_gaba1a1aa3c6bb536435957847da9c1b2f}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_MODE@{FFT\_MODE}}
+\index{FFT\_MODE@{FFT\_MODE}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{FFT\_MODE}{FFT\_MODE}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_gaba1a1aa3c6bb536435957847da9c1b2f} 
+enum \mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaba1a1aa3c6bb536435957847da9c1b2f}{FFT\+\_\+\+MODE}}}
+
+
+
+定义\+RFFT频谱分析模式 
+
+\begin{DoxyEnumFields}[2]{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FFT\_MODE\_NULL@{FFT\_MODE\_NULL}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_MODE\_NULL@{FFT\_MODE\_NULL}}}\Hypertarget{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2faeb8448db629160ec8f03e448a8ab078d}\label{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2faeb8448db629160ec8f03e448a8ab078d} 
+FFT\+\_\+\+MODE\+\_\+\+NULL&初始化后未配置, 尚未指定\+FFT分析模式 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FFT\_GRID\_LOCK@{FFT\_GRID\_LOCK}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_GRID\_LOCK@{FFT\_GRID\_LOCK}}}\Hypertarget{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2fac4acfd934cb0e9a237ace151235488f5}\label{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2fac4acfd934cb0e9a237ace151235488f5} 
+FFT\+\_\+\+GRID\+\_\+\+LOCK&delta\+\_\+f == fgrid, 直接处理幅度谱内每一个元素 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FFT\_PEAK\_FIND@{FFT\_PEAK\_FIND}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!FFT\_PEAK\_FIND@{FFT\_PEAK\_FIND}}}\Hypertarget{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2fabdd1a5e2d1c04b1d17b1bfa214d11112}\label{group___d_s_p___r_f_f_t___f32_ggaba1a1aa3c6bb536435957847da9c1b2fabdd1a5e2d1c04b1d17b1bfa214d11112} 
+FFT\+\_\+\+PEAK\+\_\+\+FIND&delta\+\_\+f != fgrid, 只处理幅度谱内的峰值点 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00098}{98}} 行定义.
+
+
+
+\label{doc-func-members}
+\Hypertarget{group___d_s_p___r_f_f_t___f32_doc-func-members}
+\doxysubsubsubsubsection{函数说明}
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga3fc7edfa39757d7ff7e4522bcbbbf07d}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!RFFT\_Grid\_Lock@{RFFT\_Grid\_Lock}}
+\index{RFFT\_Grid\_Lock@{RFFT\_Grid\_Lock}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{RFFT\_Grid\_Lock()}{RFFT\_Grid\_Lock()}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga3fc7edfa39757d7ff7e4522bcbbbf07d} 
+void RFFT\+\_\+\+Grid\+\_\+\+Lock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}}]{rfft}{}\end{DoxyParamCaption})}
+
+
+
+delta\+\_\+f == fgrid, 幅度谱每个元素即为一个谐波峰 
+
+
+\begin{DoxyParams}{参数}
+{\em rfft} & 结构体指针 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{rfft_8c_source}{rfft.\+c}} 第 \mbox{\hyperlink{rfft_8c_source_l00120}{120}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_gaaca2fd3267a4458de0b5f4d37b0d85b8}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!RFFT\_Init@{RFFT\_Init}}
+\index{RFFT\_Init@{RFFT\_Init}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{RFFT\_Init()}{RFFT\_Init()}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_gaaca2fd3267a4458de0b5f4d37b0d85b8} 
+void RFFT\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}}]{rfft}{, }\item[{float32\+\_\+t \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{float32\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{float32\+\_\+t \texorpdfstring{$\ast$}{*}}]{twiddle}{, }\item[{float32\+\_\+t \texorpdfstring{$\ast$}{*}}]{magnitude}{}\end{DoxyParamCaption})}
+
+
+
+初始化与配置\+RFFT指针 
+
+
+\begin{DoxyParams}{参数}
+{\em rfft} & 结构体指针 \\
+\hline
+{\em input} & 输入数组指针 \\
+\hline
+{\em output} & 输出数组指针 \\
+\hline
+{\em twiddle} & 预畸变因子表指针 \\
+\hline
+{\em magnitude} & 幅度谱数组指针 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{rfft_8c_source}{rfft.\+c}} 第 \mbox{\hyperlink{rfft_8c_source_l00033}{33}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{group___d_s_p___r_f_f_t___f32_gaaca2fd3267a4458de0b5f4d37b0d85b8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_s_p___r_f_f_t___f32_gad1e815d931ea459fc390f308cd553710}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!RFFT\_Peak\_Find@{RFFT\_Peak\_Find}}
+\index{RFFT\_Peak\_Find@{RFFT\_Peak\_Find}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{RFFT\_Peak\_Find()}{RFFT\_Peak\_Find()}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_gad1e815d931ea459fc390f308cd553710} 
+void RFFT\+\_\+\+Peak\+\_\+\+Find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}}]{rfft}{}\end{DoxyParamCaption})}
+
+
+
+delta\+\_\+f != fgrid, 寻找幅度谱峰值 
+
+
+\begin{DoxyParams}{参数}
+{\em rfft} & \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{rfft_8c_source}{rfft.\+c}} 第 \mbox{\hyperlink{rfft_8c_source_l00161}{161}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga413312679334b30df43bf8c9d9530dba}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!RFFT\_Run@{RFFT\_Run}}
+\index{RFFT\_Run@{RFFT\_Run}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{RFFT\_Run()}{RFFT\_Run()}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga413312679334b30df43bf8c9d9530dba} 
+void RFFT\+\_\+\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}}]{rfft}{}\end{DoxyParamCaption})}
+
+
+
+执行\+RFFT信号分析 
+
+
+\begin{DoxyParams}{参数}
+{\em rfft} & 结构体指针 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{rfft_8c_source}{rfft.\+c}} 第 \mbox{\hyperlink{rfft_8c_source_l00075}{75}} 行定义.
+
+函数调用图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{group___d_s_p___r_f_f_t___f32_ga413312679334b30df43bf8c9d9530dba_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga8879dcbb9c5197cd6dfb4f30369a96e4}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!RFFT\_Set@{RFFT\_Set}}
+\index{RFFT\_Set@{RFFT\_Set}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{RFFT\_Set()}{RFFT\_Set()}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga8879dcbb9c5197cd6dfb4f30369a96e4} 
+void RFFT\+\_\+\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} \texorpdfstring{$\ast$}{*}}]{rfft}{, }\item[{float32\+\_\+t}]{fs}{, }\item[{float32\+\_\+t}]{fgrid}{}\end{DoxyParamCaption})}
+
+
+
+配置\+RFFT参数, 确定\+FFT幅度谱分析模式 
+
+
+\begin{DoxyParams}{参数}
+{\em rfft} & 结构体指针 \\
+\hline
+{\em fs} & 采样频率 \\
+\hline
+{\em fgrid} & 基波频率 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{rfft_8c_source}{rfft.\+c}} 第 \mbox{\hyperlink{rfft_8c_source_l00060}{60}} 行定义.
+
+
+
+\label{doc-var-members}
+\Hypertarget{group___d_s_p___r_f_f_t___f32_doc-var-members}
+\doxysubsubsubsubsection{变量说明}
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga2bc527b3b8fd1a15c9698d8a12f325e0}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!amp@{amp}}
+\index{amp@{amp}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{amp}{amp}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga2bc527b3b8fd1a15c9698d8a12f325e0} 
+float32\+\_\+t RFFT\+::amp\mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga773ffe60e709d24ffac8f78acd36470f}{FFT\+\_\+\+PEAK\+\_\+\+MAX}}\mbox{]}}
+
+
+
+峰值点幅值 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00120}{120}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga580934385f75d850595cfa40ab17d33f}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!dc\_amp@{dc\_amp}}
+\index{dc\_amp@{dc\_amp}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{dc\_amp}{dc\_amp}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga580934385f75d850595cfa40ab17d33f} 
+float32\+\_\+t RFFT\+::dc\+\_\+amp}
+
+
+
+DC分量 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00116}{116}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga30277556531fca121dc4afc6a478c47c}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!freq@{freq}}
+\index{freq@{freq}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{freq}{freq}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga30277556531fca121dc4afc6a478c47c} 
+float32\+\_\+t RFFT\+::freq\mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga773ffe60e709d24ffac8f78acd36470f}{FFT\+\_\+\+PEAK\+\_\+\+MAX}}\mbox{]}}
+
+
+
+峰值点频率 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00119}{119}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga2069d6fd5d7735109c66475d97662738}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!fs@{fs}}
+\index{fs@{fs}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{fs}{fs}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga2069d6fd5d7735109c66475d97662738} 
+float32\+\_\+t RFFT\+::fs}
+
+
+
+采样频率 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00118}{118}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga5a0f4b49baab36db0c5e1922cdbc6c71}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!input@{input}}
+\index{input@{input}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{input}{input}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga5a0f4b49baab36db0c5e1922cdbc6c71} 
+float32\+\_\+t input\mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}}\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+输入数组 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8c_source}{rfft.\+c}} 第 \mbox{\hyperlink{rfft_8c_source_l00026}{26}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga429b259b6633b6a2b677ba475d840c63}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{magnitude}{magnitude}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga429b259b6633b6a2b677ba475d840c63} 
+float32\+\_\+t magnitude\mbox{[}(\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}} $>$ $>$1)+1\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+输出幅值 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8c_source}{rfft.\+c}} 第 \mbox{\hyperlink{rfft_8c_source_l00029}{29}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_gade3cff0237970ebb1f3d2d0765c7fc7e}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!mode@{mode}}
+\index{mode@{mode}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_gade3cff0237970ebb1f3d2d0765c7fc7e} 
+\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_gaba1a1aa3c6bb536435957847da9c1b2f}{FFT\+\_\+\+MODE}} RFFT\+::mode}
+
+
+
+幅度谱分析模式 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00122}{122}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_gaf41db2f2a8a877a4d60944cafafac70c}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!output@{output}}
+\index{output@{output}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{output}{output}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_gaf41db2f2a8a877a4d60944cafafac70c} 
+float32\+\_\+t output\mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}}\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+输出数组 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8c_source}{rfft.\+c}} 第 \mbox{\hyperlink{rfft_8c_source_l00027}{27}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga1ca55b02a57fe5c1e71d04960ecb54a6}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!peak\_num@{peak\_num}}
+\index{peak\_num@{peak\_num}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{peak\_num}{peak\_num}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga1ca55b02a57fe5c1e71d04960ecb54a6} 
+uint16\+\_\+t RFFT\+::peak\+\_\+num}
+
+
+
+FFT magnitude 中峰值数量 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00121}{121}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!rfft@{rfft}}
+\index{rfft@{rfft}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{rfft}{rfft}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga10170416a207dd77a5bb568f9b92887d} 
+\mbox{\hyperlink{struct_r_f_f_t}{RFFT}} rfft\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+RFFT结构体 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8c_source}{rfft.\+c}} 第 \mbox{\hyperlink{rfft_8c_source_l00030}{30}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga93dd182d61f8d46337764f2ac76e664d}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!rfft\_struct@{rfft\_struct}}
+\index{rfft\_struct@{rfft\_struct}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{rfft\_struct}{rfft\_struct}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga93dd182d61f8d46337764f2ac76e664d} 
+\mbox{\hyperlink{struct_r_f_f_t___f32___s_t_r_u_c_t}{RFFT\+\_\+\+F32\+\_\+\+STRUCT}} RFFT\+::rfft\+\_\+struct}
+
+
+
+ti库结构体 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00112}{112}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga35194b26b562e65aec8e287dece1a6d7}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!rfft\_struct\_pointer@{rfft\_struct\_pointer}}
+\index{rfft\_struct\_pointer@{rfft\_struct\_pointer}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{rfft\_struct\_pointer}{rfft\_struct\_pointer}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga35194b26b562e65aec8e287dece1a6d7} 
+\mbox{\hyperlink{fpu__rfft_8h_a8e0e8c088fc134b9afc9994c3b253faf}{RFFT\+\_\+\+F32\+\_\+\+STRUCT\+\_\+\+Handle}} RFFT\+::rfft\+\_\+struct\+\_\+pointer}
+
+
+
+ti库结构体指针 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00113}{113}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_gac2c3282e359e1d80c40b0c945cffee32}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!size\_inv@{size\_inv}}
+\index{size\_inv@{size\_inv}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{size\_inv}{size\_inv}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_gac2c3282e359e1d80c40b0c945cffee32} 
+float32\+\_\+t RFFT\+::size\+\_\+inv}
+
+
+
+FFT\+\_\+\+SIZE 倒数, 用于减少 FFT 分析中浮点除法 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00124}{124}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga435f5c86bc9126eb6627f595e27815d6}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!thd@{thd}}
+\index{thd@{thd}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{thd}{thd}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga435f5c86bc9126eb6627f595e27815d6} 
+float32\+\_\+t RFFT\+::thd}
+
+
+
+总谐波失真 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8h_source}{rfft.\+h}} 第 \mbox{\hyperlink{rfft_8h_source_l00115}{115}} 行定义.
+
+\Hypertarget{group___d_s_p___r_f_f_t___f32_ga56ce624e4d31bc2956066f5fa5b6b34d}\index{Real Fast Fourier Transforms@{Real Fast Fourier Transforms}!twiddle@{twiddle}}
+\index{twiddle@{twiddle}!Real Fast Fourier Transforms@{Real Fast Fourier Transforms}}
+\doxysubsubsubsubsubsection{\texorpdfstring{twiddle}{twiddle}}
+{\footnotesize\ttfamily \label{group___d_s_p___r_f_f_t___f32_ga56ce624e4d31bc2956066f5fa5b6b34d} 
+float32\+\_\+t twiddle\mbox{[}\mbox{\hyperlink{group___d_s_p___r_f_f_t___f32_ga636ddc19af00bc87969a07c88331f105}{FFT\+\_\+\+SIZE}}\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+预畸变因子表 
+
+
+
+在文件 \mbox{\hyperlink{rfft_8c_source}{rfft.\+c}} 第 \mbox{\hyperlink{rfft_8c_source_l00028}{28}} 行定义.
+

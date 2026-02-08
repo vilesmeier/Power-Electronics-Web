@@ -1,0 +1,95 @@
+\doxysection{main.\+c}
+\hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source}{}\label{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Projects/28335/3ph\_Inverter/3ph\_Current\_source\_inverter/User/main.c@{D:/Codes/NUEDC/NUEDC-\/Core/Projects/28335/3ph\_Inverter/3ph\_Current\_source\_inverter/User/main.c}}
+\mbox{\hyperlink{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00013}\mbox{\hyperlink{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_a6288eba0f8e8ad3ab1544ad731eb7667}{00013}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{280049_c_2_template___projects_2_template___project___f280049_c_2user_2main_8c_a6288eba0f8e8ad3ab1544ad731eb7667}{main}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00014}00014\ \{}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00015}00015\ \ \ \ \ \textcolor{comment}{//Power\ On\ Reset}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00016}00016\ \ \ \ \ InitSysCtrl();}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00017}00017\ \ \ \ \ InitGpio();}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00018}00018\ \ \ \ \ DINT;}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00019}00019\ \ \ \ \ InitPieCtrl();}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00020}00020\ \ \ \ \ IER\ =\ 0x0000;}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00021}00021\ \ \ \ \ IFR\ =\ 0x0000;}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00022}00022\ \ \ \ \ InitPieVectTable();}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00023}00023\ \ \ \ \ EINT;}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00024}00024\ \ \ \ \ ERTM;}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00026}00026\ \textcolor{comment}{//\ \ \ \ //flash\ init}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00027}00027\ \textcolor{comment}{//\ \ \ \ //select\ BootLoader!}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00028}00028\ \textcolor{comment}{//\ \ \ \ InitFlash();}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00029}00029\ \textcolor{comment}{//\ \ \ \ memcpy(\&RamfuncsRunStart,\ \&RamfuncsLoadStart,\ (Uint32)\&RamfuncsLoadSize);}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00031}00031\ \textcolor{comment}{//\ \ \ \ DELAY\_US(2000000);\ \ //waiting\ for\ master\ setup}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00035}00035\ \ \ \ \ \textcolor{comment}{//Control\ Loop\ Init}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00036}00036\ \ \ \ \ \textcolor{comment}{//Current\ State}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00037}00037\ \ \ \ \ \mbox{\hyperlink{group___s_y_s___s_t_a_t_e_ga4448d628c7c103a33e51e52f2e111de4}{State\_Init}}();}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00038}00038\ \ \ \ \ RMS\_Init(\&Grid\_state);}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00040}00040\ \ \ \ \ \textcolor{comment}{//RAMP}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00041}00041\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___r_a_m_p_ga3e743c6f7b3d3cace6e21e22f9722466}{Ramp\_Init}}(\&\mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}});}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00042}00042\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___r_a_m_p_ga2e5990d2aba3b0277df88a6bb0871b2a}{Ramp\_Set}}(\&\mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}},\ 50,\ 20000);}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00044}00044\ \ \ \ \ \textcolor{comment}{//DQ}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00045}00045\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___t_r_a_n_s_f_o_r_m_ga70999c60ebcaf97a22e60fe42bd5e169}{DQ\_Init}}(\&dq\_vol);}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00046}00046\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___t_r_a_n_s_f_o_r_m_ga70999c60ebcaf97a22e60fe42bd5e169}{DQ\_Init}}(\&dq\_cur);}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00048}00048\ \ \ \ \ \textcolor{comment}{//PID}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00049}00049\ \textcolor{comment}{//\ \ \ \ PID\_Init(\&pid\_vol);}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00050}00050\ \textcolor{comment}{//\ \ \ \ PID\_Set(\&pid\_vol,\ 0.1f,\ 0.1f,\ 0,\ 0,\ 20,\ -\/20,\ 750,\ 20000);}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00051}00051\ \textcolor{comment}{//\ \ \ \ PID\_Init(\&pid\_cur);}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00052}00052\ \textcolor{comment}{//\ \ \ \ PID\_Set(\&pid\_cur,\ 0.001f,\ 0.001f,\ 0,\ 0,\ 20,\ -\/20,\ 750,\ 20000);}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00054}00054\ \ \ \ \ \textcolor{comment}{//PR}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00055}00055\ \ \ \ \ \textcolor{comment}{//VOLTAGE}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00056}00056\ \textcolor{comment}{//\ \ \ \ PR\_Init(\&pr\_vol\_A);}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00057}00057\ \textcolor{comment}{//\ \ \ \ PR\_Set(\&pr\_vol\_A,0.001f,90.0f,2*PI,100*PI,45,20000);}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00058}00058\ \textcolor{comment}{//\ \ \ \ PR\_Init(\&pr\_vol\_B);}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00059}00059\ \textcolor{comment}{//\ \ \ \ PR\_Set(\&pr\_vol\_B,0.001f,90.0f,2*PI,100*PI,45,20000);}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00060}00060\ \textcolor{comment}{//\ \ \ \ PR\_Init(\&pr\_vol\_C);}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00061}00061\ \textcolor{comment}{//\ \ \ \ PR\_Set(\&pr\_vol\_C,0.001f,90.0f,2*PI,100*PI,45,20000);}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00062}00062\ \ \ \ \ \textcolor{comment}{//CURRENT}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00063}00063\ \ \ \ \ PR\_Init(\&pr\_cur\_A);}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00064}00064\ \ \ \ \ PR\_Set(\&pr\_cur\_A,10.0f,900.0f,2*PI,100*PI,40,20000);}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00065}00065\ \ \ \ \ PR\_Init(\&pr\_cur\_B);}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00066}00066\ \ \ \ \ PR\_Set(\&pr\_cur\_B,10.0f,900.0f,2*PI,100*PI,40,20000);}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00067}00067\ \ \ \ \ PR\_Init(\&pr\_cur\_C);}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00068}00068\ \ \ \ \ PR\_Set(\&pr\_cur\_C,10.0f,900.0f,2*PI,100*PI,40,20000);}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00071}00071\ \ \ \ \ \textcolor{comment}{//GUI}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00072}00072\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___o_l_e_d_ga7372e46460a371e4d94a0ee7f5f1a1fd}{OLED\_Init}}();}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00073}00073\ \ \ \ \ \mbox{\hyperlink{group___c_t_r_l___o_l_e_d_ga6960de38d41ba87c52e40f8bd4b094d3}{OLED\_Clear}}();}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00075}00075\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___u_a_r_t_gad7d9735eb6d12d58232f616020798946}{UART\_Init}}();}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00076}00076\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___u_a_r_t_ga62cd2632b61f0f11f05a028d7d7cea13}{UART\_Set}}(3000000);}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00079}00079\ \ \ \ \ \textcolor{comment}{//Pherial\ Init}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00080}00080\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___x_i_n_t_gaffd07a9b3a14f2b8b71c64e5e87d68e2}{XINT\_Init}}();}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00081}00081\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___a_d_c_ga5137b551f1b83b0f4d8df7d071a3d3a6}{ADC\_Init}}();}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00082}00082\ \ \ \ \ \mbox{\hyperlink{group___d_r_v___f28335___p_w_m_ga16a6a31227f60674257e9715ee0c1638}{EPWM\_Init}}();}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00083}00083\ \ \ \ \ EPWM\_AQ\_SoftForce\_OFF();}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00085}00085\ \ \ \ \ \mbox{\hyperlink{svpwm_8c_ac04fc8d47553face238e4f188b22dea6}{SVPWM\_Init}}(\&svpwm);}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00086}00086\ \ \ \ \ \mbox{\hyperlink{svpwm_8c_ab05c424d0c59fb47c002f002904e32d1}{SVPWM\_Set}}(\&svpwm,\ 3750);}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00088}00088\ \ \ \ \ \textcolor{comment}{//Enable\ Interrupt\ And\ JTAG\ Debug}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00089}00089\ \ \ \ \ EINT;}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00090}00090\ \ \ \ \ ERTM;}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00092}00092\ \ \ \ \ \textcolor{keywordflow}{while}(1)}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00093}00093\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00096}00096\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c_source_l00097}00097\ \}}
+
+\end{DoxyCode}

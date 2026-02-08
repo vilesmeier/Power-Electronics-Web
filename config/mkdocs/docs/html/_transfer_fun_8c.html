@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC/NUEDC-Core/Code/Control_Driver/transferfun/TransferFun.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_transfer_fun_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TransferFun.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>STM32 C语言实现差分方程支持  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_transfer_fun_8h_source.html">transferfun.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+TransferFun.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_transfer_fun_8c__incl.png" border="0" usemap="#a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2transferfun_2_transfer_fun_8c" loading="lazy" alt=""/></div>
+<map name="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2transferfun_2_transfer_fun_8c" id="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2transferfun_2_transfer_fun_8c">
+<area shape="rect" title="STM32 C语言实现差分方程支持" alt="" coords="5,5,182,67"/>
+<area shape="rect" href="_transfer_fun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="46,115,141,143"/>
+<area shape="poly" title=" " alt="" coords="96,67,96,99,91,99,91,67"/>
+<area shape="rect" title=" " alt="" coords="7,191,70,218"/>
+<area shape="poly" title=" " alt="" coords="86,145,60,180,56,176,82,142"/>
+<area shape="rect" title=" " alt="" coords="94,191,202,218"/>
+<area shape="poly" title=" " alt="" coords="105,142,131,176,127,180,101,145"/>
+</map>
+</div>
+</div>
+<p><a href="_transfer_fun_8c_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gada098e9f6b937c06c3de5e0c3693c006" id="r_gada098e9f6b937c06c3de5e0c3693c006"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gada098e9f6b937c06c3de5e0c3693c006">DCL_Clamp_Run</a> (float32_t *data, float32_t Umax, float32_t Umin)</td></tr>
+<tr class="memdesc:gada098e9f6b937c06c3de5e0c3693c006"><td class="mdescLeft">&#160;</td><td class="mdescRight">限幅函数，判断输入是否被限幅 <br  />
+ 此函数在汇编模块中实现  <br /></td></tr>
+<tr class="memitem:ga7ca9b52b5a2f202f4d3890031f21c7ec" id="r_ga7ca9b52b5a2f202f4d3890031f21c7ec"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#ga7ca9b52b5a2f202f4d3890031f21c7ec">DCL_DF11_Run</a> (<a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#ga7375b44215b7758cf4f284e8b6106407">DCL_DF11</a> *p, float32_t ek)</td></tr>
+<tr class="memdesc:ga7ca9b52b5a2f202f4d3890031f21c7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行一阶直接形式Ⅰ控制器（DF11），在 FPU32 上运行 <br  />
+ 原函数名: float32_t DCL_runDF11_C1(DCL_DF11 *p, float32_t ek);  <br /></td></tr>
+<tr class="memitem:ga9d959ef0d3a467ed15b6a50179c436a8" id="r_ga9d959ef0d3a467ed15b6a50179c436a8"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#ga9d959ef0d3a467ed15b6a50179c436a8">DCL_DF22_Run</a> (<a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *p, float32_t ek)</td></tr>
+<tr class="memdesc:ga9d959ef0d3a467ed15b6a50179c436a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行完整二阶直接形式Ⅱ（DF22）控制器，在 FPU32 上运行, 汇编函数  <br /></td></tr>
+<tr class="memitem:gaa02c334985fd995b3cab85d02976a528" id="r_gaa02c334985fd995b3cab85d02976a528"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gaa02c334985fd995b3cab85d02976a528">DCL_DF23_Run</a> (<a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#ga74b8909e62e7713da3898ff5ab087938">DCL_DF23</a> *p, float32_t ek)</td></tr>
+<tr class="memdesc:gaa02c334985fd995b3cab85d02976a528"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行完整三阶直接形式Ⅱ（DF23）控制器，在 FPU32 上运行, 汇编函数 原函数名: extern float32_t DCL_runDF23_C1(DCL_DF23 *p, float32_t ek);  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>STM32 C语言实现差分方程支持 </p>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>STM32系列使用本文件, 需要FPU32支持</li>
+<li>C2000-DSP使用汇编文件, 以获取更高性能 </li>
+</ul>
+</dd></dl>
+<dl class="section author"><dt>作者</dt><dd>Mao Chenbin (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_transfer_fun_8c_source.html">TransferFun.c</a> 中定义.</p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_ec80777730a45e0d08ba365534f6468c.html">transferfun</a></li><li class="navelem"><a href="_transfer_fun_8c.html">TransferFun.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

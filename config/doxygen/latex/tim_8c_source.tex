@@ -1,0 +1,66 @@
+\doxysection{tim.\+c}
+\hypertarget{tim_8c_source}{}\label{tim_8c_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/Timer/tim.c@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/Timer/tim.c}}
+\mbox{\hyperlink{tim_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{global_8h}{global.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00010}\mbox{\hyperlink{group___d_r_v___f28335___t_i_m_ga6207706a3d9f9c440cf30f7e011bc1c2}{00010}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___t_i_m_ga6207706a3d9f9c440cf30f7e011bc1c2}{TIM0\_Init}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00012}00012\ \ \ \ \ \textcolor{comment}{//pherial\ level\ interrupt\ config}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00013}00013\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00014}00014\ \ \ \ \ PieVectTable.TINT0\ =\ \&\mbox{\hyperlink{group___d_r_v___f28335___t_i_m_ga0950d135719562f192fb7fd782cd58be}{cpu\_timer0\_isr}};}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00015}00015\ \ \ \ \ SysCtrlRegs.PCLKCR3.bit.CPUTIMER0ENCLK\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00016}00016\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00017}00017\ \ \ \ \ IER\ |=\ M\_INT1;}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00018}00018\ \ \ \ \ PieCtrlRegs.PIEIER1.bit.INTx7\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00019}00019\ \ \ \ \ EINT;}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00020}00020\ \ \ \ \ ERTM;}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00022}00022\ \ \ \ \ \textcolor{comment}{//pherial\ init}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00023}00023\ \ \ \ \ InitCpuTimers();}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00024}00024\ \ \ \ \ ConfigCpuTimer(\&CpuTimer0,150,\ 1/20000.0f*100000.0f);}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00026}00026\ \ \ \ \ \textcolor{comment}{//config\ interrupt}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00027}00027\ \ \ \ \ CpuTimer0Regs.TCR.bit.TIE\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00029}00029\ \ \ \ \ \textcolor{comment}{//stop\ timer}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00030}00030\ \ \ \ \ CpuTimer0Regs.TCR.bit.TSS\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00032}00032\ \ \ \ \ \textcolor{comment}{//reload\ timer}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00033}00033\ \ \ \ \ CpuTimer0Regs.TCR.bit.TRB\ =\ 1;\ \ \ \ \textcolor{comment}{//\ 1\ =\ reload\ timer}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00036}\mbox{\hyperlink{group___d_r_v___f28335___t_i_m_ga99bcb8c40956c72496cb7a3a33877721}{00036}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___t_i_m_ga99bcb8c40956c72496cb7a3a33877721}{TIM0\_Set}}(\textcolor{keywordtype}{float}\ freq)}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00037}00037\ \{}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00038}00038\ \ \ \ \ ConfigCpuTimer(\&CpuTimer0,150,\ 1/freq*1000000);}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00039}00039\ \}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00041}\mbox{\hyperlink{group___d_r_v___f28335___t_i_m_ga4d1587c0146ce727736736c0e6012759}{00041}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___t_i_m_ga4d1587c0146ce727736736c0e6012759}{TIM0\_Start}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00042}00042\ \{}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00043}00043\ \ \ \ \ \textcolor{comment}{//start\ timer0}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00044}00044\ \ \ \ \ CpuTimer0Regs.TCR.bit.TSS\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00045}00045\ \}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00047}\mbox{\hyperlink{group___d_r_v___f28335___t_i_m_gabbad9a0b511e69e1794b83826bfecc30}{00047}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___t_i_m_gabbad9a0b511e69e1794b83826bfecc30}{TIM0\_Stop}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00048}00048\ \{}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00049}00049\ \ \ \ \ \textcolor{comment}{//start\ timer0}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00050}00050\ \ \ \ \ CpuTimer0Regs.TCR.bit.TSS\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00051}00051\ \}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00053}\mbox{\hyperlink{group___d_r_v___f28335___t_i_m_ga1d4a8e400cbd762e8d6ba80e6275c93e}{00053}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___t_i_m_ga1d4a8e400cbd762e8d6ba80e6275c93e}{TIM0\_Reload}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00054}00054\ \{}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00055}00055\ \ \ \ \ \textcolor{comment}{//reload\ timer}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00056}00056\ \ \ \ \ CpuTimer0Regs.TCR.bit.TRB\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00057}00057\ \}}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00059}\mbox{\hyperlink{group___d_r_v___f28335___t_i_m_ga0950d135719562f192fb7fd782cd58be}{00059}}\ interrupt\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___t_i_m_ga0950d135719562f192fb7fd782cd58be}{cpu\_timer0\_isr}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00060}00060\ \{}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00061}00061\ \ \ \ \ CpuTimer0.InterruptCount++;}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00063}00063\ \ \ \ \ PieCtrlRegs.PIEACK.all\ =\ PIEACK\_GROUP1;}
+\DoxyCodeLine{\Hypertarget{tim_8c_source_l00064}00064\ \}}
+
+\end{DoxyCode}

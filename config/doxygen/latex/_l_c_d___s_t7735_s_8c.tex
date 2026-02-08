@@ -1,0 +1,76 @@
+\doxysection{D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Peripheral\+\_\+\+Driver/28335/\+LCD/\+LCD\+\_\+\+ST7735S.c 文件参考}
+\hypertarget{_l_c_d___s_t7735_s_8c}{}\label{_l_c_d___s_t7735_s_8c}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/LCD/LCD\_ST7735S.c@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/LCD/LCD\_ST7735S.c}}
+
+
+LCD driver for ST7735  
+
+
+{\ttfamily \#include "{}Font.\+h"{}}\newline
+{\ttfamily \#include "{}LCD\+\_\+\+ST7735\+S.\+h"{}}\newline
+{\ttfamily \#include "{}DSP28x\+\_\+\+Project.\+h"{}}\newline
+{\ttfamily \#include "{}stdio.\+h"{}}\newline
+LCD\+\_\+\+ST7735\+S.\+c 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_l_c_d___s_t7735_s_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gace1079bba7113da93a044cf179aa34d2}{lcd\+Gpio\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em init GPIO \end{DoxyCompactList}\item 
+unsigned long \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaaf409116545541ac11582da5f92dae57}{LCD\+\_\+\+Pow}} (unsigned long X, unsigned long Y)
+\begin{DoxyCompactList}\small\item\em math support \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaa53c9d40f3aa552a9974cd55ac510cb3}{LCD\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em init screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga71f317c08f5a4fd34f4e66b7413e0381}{lcd\+Select\+Register}} (unsigned char data)
+\begin{DoxyCompactList}\small\item\em select register \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga4c41fe8c154e5beccd73c8b5042f497f}{lcd\+Write\+Data\+U8}} (unsigned char data)
+\begin{DoxyCompactList}\small\item\em write 8-\/bit data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaba0abdc1cc1f6363bd0cf646e61094e3}{lcd\+Write\+Data\+U16}} (unsigned short data)
+\begin{DoxyCompactList}\small\item\em write 16-\/bit data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga5ff5d250afc92419cfc04e6e7a80936b}{lcd\+Set\+Address}} (unsigned short x1, unsigned short y1, unsigned short x2, unsigned short y2)
+\begin{DoxyCompactList}\small\item\em set courser position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga2aea7c96b0c9b3e12a6029576557c0b5}{LCD\+\_\+\+Clear}} (\mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}} color)
+\begin{DoxyCompactList}\small\item\em clear screen, filling all points with same color \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga16ab7118659faa7d9ffd28e4e0def529}{LCD\+\_\+\+Draw\+Point}} (unsigned int x, unsigned int y, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}} color)
+\begin{DoxyCompactList}\small\item\em draw point \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaed5bd5f3f7340dbdb2e7f50f94163789}{LCD\+\_\+\+Display\+On}} (void)
+\begin{DoxyCompactList}\small\item\em turn on display \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gae06ea1bb5f28922b6017676d1aaa61e4}{LCD\+\_\+\+Display\+Off}} (void)
+\begin{DoxyCompactList}\small\item\em turn off display \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga3e60ecc7f0d58d0a18a2a8de7e7b1d1a}{LCD\+\_\+\+Fill}} (unsigned short sx, unsigned short sy, unsigned short ex, unsigned short ey, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}} color)
+\begin{DoxyCompactList}\small\item\em fill area \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga01256c780705fc596ec08eedf8fb6444}{LCD\+\_\+\+Draw\+Line}} (unsigned short x1, unsigned short y1, unsigned short x2, unsigned short y2, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}} color)
+\begin{DoxyCompactList}\small\item\em draw a line \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaf82c0652de72e6978bf321569519beda}{LCD\+\_\+\+Draw\+Rectangle}} (unsigned short x1, unsigned short y1, unsigned short x2, unsigned short y2, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}} color)
+\begin{DoxyCompactList}\small\item\em draw a rectangle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gad7904c27ed6c2b68490fc78ecc448d8b}{LCD\+\_\+\+Draw\+\_\+\+Circle}} (unsigned short x0, unsigned short y0, unsigned char r, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}} color)
+\begin{DoxyCompactList}\small\item\em draw circle, no filling \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaad27930045bd6e1322ed92101de44772}{LCD\+\_\+\+Draw\+Full\+Circle}} (unsigned short Xpos, unsigned short Ypos, unsigned short Radius, \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gadd0b6f2457d2e0680f6be86b158f8234}{LCD\+\_\+\+Color}} color)
+\begin{DoxyCompactList}\small\item\em draw circle, all filling \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga984dce05b86caed4b2a0a0d8dba5462b}{LCD\+\_\+\+Show\+Char}} (unsigned short x, unsigned short y, unsigned char num, unsigned short pen\+\_\+color, unsigned short back\+\_\+color)
+\begin{DoxyCompactList}\small\item\em show a char \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga819e4cb0d04d17e3cba390032dec14be}{LCD\+\_\+\+Show\+String}} (unsigned short x, unsigned short y, unsigned short width, unsigned short height, unsigned char \texorpdfstring{$\ast$}{*}p, unsigned short pen\+\_\+color, unsigned short back\+\_\+color)
+\begin{DoxyCompactList}\small\item\em show a string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga7d3136f6497002468c3d2388b0a20c3a}{LCD\+\_\+\+Show\+Double}} (unsigned short x, unsigned short y, unsigned short width, unsigned short height, double num, unsigned short pen\+\_\+color, unsigned short back\+\_\+color)
+\begin{DoxyCompactList}\small\item\em display a float \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gaceb21b8fd817d512b022e3f48a1376d0}{LCD\+\_\+\+Show\+Int}} (unsigned short x, unsigned short y, unsigned short width, unsigned short height, int num, unsigned short pen\+\_\+color, unsigned short back\+\_\+color)
+\begin{DoxyCompactList}\small\item\em display a int \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga4b5eb1531cb56f4ffe673ad5cd6b26be}{LCD\+\_\+\+Show\+Hex}} (unsigned short x, unsigned short y, unsigned short width, unsigned short height, int num, unsigned short pen\+\_\+color, unsigned short back\+\_\+color)
+\begin{DoxyCompactList}\small\item\em display a int in HEX format \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_ga59207dc90adfdfaf32fbbde2fa88ae54}{LCD\+\_\+\+Show\+Oct}} (unsigned short x, unsigned short y, unsigned short width, unsigned short height, int num, unsigned short pen\+\_\+color, unsigned short back\+\_\+color)
+\begin{DoxyCompactList}\small\item\em display a int in OCT format \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___l_c_d_gac4df806c0dd9403b402130a26bed2c88}{LCD\+\_\+\+Show\+Bin}} (unsigned short x, unsigned short y, unsigned short width, unsigned short height, int num, int Length, unsigned short pen\+\_\+color, unsigned short back\+\_\+color)
+\begin{DoxyCompactList}\small\item\em display a int in BIN format \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+LCD driver for ST7735 
+
+
+
+在文件 \mbox{\hyperlink{_l_c_d___s_t7735_s_8c_source}{LCD\+\_\+\+ST7735\+S.\+c}} 中定义.
+

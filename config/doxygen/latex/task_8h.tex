@@ -1,0 +1,130 @@
+\doxysection{D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Projects/280049\+C/\+Template\+\_\+\+Projects/\+Template\+\_\+\+Project\+\_\+\+F280049\+C/user/task.h 文件参考}
+\hypertarget{task_8h}{}\label{task_8h}\index{D:/Codes/NUEDC/NUEDC-\/Core/Projects/280049C/Template\_Projects/Template\_Project\_F280049C/user/task.h@{D:/Codes/NUEDC/NUEDC-\/Core/Projects/280049C/Template\_Projects/Template\_Project\_F280049C/user/task.h}}
+
+
+F280049C 模板工程任务管理  
+
+
+此图展示该文件被哪些文件直接或间接地引用了\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{task_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{task_8h_aa6ab5350efe602f7bdfdca42aa57aff2}{Task\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em 全局变量初始化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task_8h_ab54d366aa75fe233214586ca49242ff4}{Task\+\_\+\+Time\+\_\+\+Silce\+\_\+\+Run}} (void)
+\begin{DoxyCompactList}\small\item\em {\bfseries{while(1)}} 内时间片函数, 通过state.\+timebase内标志位周期触发 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task_8h_a121c44248bc9e50eb952a3ac04d5d17f}{Task\+\_\+\+Background\+\_\+\+Run}} (void)
+\begin{DoxyCompactList}\small\item\em {\bfseries{while(1)}} 内非时间片函数, 逐次触发 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task_8h_a10743f173e47a5dcd9f59857c6fccd57}{Task\+\_\+\+ADC\+\_\+\+Transform\+\_\+\+Run}} (void)
+\begin{DoxyCompactList}\small\item\em {\bfseries{中断函数内}} ADC采样值转换与状态变量写入 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task_8h_a44cab851969c31a28f413705e4a32f6a}{Task\+\_\+\+Control\+\_\+\+Loop\+\_\+\+Run}} (void)
+\begin{DoxyCompactList}\small\item\em {\bfseries{中断函数内}} 控制环路部分 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{task_8h_adc04b631d094c29594e123783706a358}{Task\+\_\+\+State\+\_\+\+Jump}} (void)
+\begin{DoxyCompactList}\small\item\em {\bfseries{中断函数内}} 状态机状态改变 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+F280049C 模板工程任务管理 
+
+\begin{DoxyAuthor}{作者}
+vilesmeier (\href{mailto:508038890@qq.com}{\texttt{508038890@qq.\+com}}) 
+\end{DoxyAuthor}
+
+
+在文件 \mbox{\hyperlink{task_8h_source}{task.\+h}} 中定义.
+
+
+
+\label{doc-func-members}
+\Hypertarget{task_8h_doc-func-members}
+\doxysubsection{函数说明}
+\Hypertarget{task_8h_a10743f173e47a5dcd9f59857c6fccd57}\index{task.h@{task.h}!Task\_ADC\_Transform\_Run@{Task\_ADC\_Transform\_Run}}
+\index{Task\_ADC\_Transform\_Run@{Task\_ADC\_Transform\_Run}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{Task\_ADC\_Transform\_Run()}{Task\_ADC\_Transform\_Run()}}
+{\footnotesize\ttfamily \label{task_8h_a10743f173e47a5dcd9f59857c6fccd57} 
+void Task\+\_\+\+ADC\+\_\+\+Transform\+\_\+\+Run (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+{\bfseries{中断函数内}} ADC采样值转换与状态变量写入 
+
+
+
+在文件 \mbox{\hyperlink{task_8c_source}{task.\+c}} 第 \mbox{\hyperlink{task_8c_source_l00098}{98}} 行定义.
+
+\Hypertarget{task_8h_a121c44248bc9e50eb952a3ac04d5d17f}\index{task.h@{task.h}!Task\_Background\_Run@{Task\_Background\_Run}}
+\index{Task\_Background\_Run@{Task\_Background\_Run}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{Task\_Background\_Run()}{Task\_Background\_Run()}}
+{\footnotesize\ttfamily \label{task_8h_a121c44248bc9e50eb952a3ac04d5d17f} 
+void Task\+\_\+\+Background\+\_\+\+Run (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+{\bfseries{while(1)}} 内非时间片函数, 逐次触发 
+
+
+
+在文件 \mbox{\hyperlink{task_8c_source}{task.\+c}} 第 \mbox{\hyperlink{task_8c_source_l00093}{93}} 行定义.
+
+\Hypertarget{task_8h_a44cab851969c31a28f413705e4a32f6a}\index{task.h@{task.h}!Task\_Control\_Loop\_Run@{Task\_Control\_Loop\_Run}}
+\index{Task\_Control\_Loop\_Run@{Task\_Control\_Loop\_Run}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{Task\_Control\_Loop\_Run()}{Task\_Control\_Loop\_Run()}}
+{\footnotesize\ttfamily \label{task_8h_a44cab851969c31a28f413705e4a32f6a} 
+void Task\+\_\+\+Control\+\_\+\+Loop\+\_\+\+Run (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+{\bfseries{中断函数内}} 控制环路部分 
+
+
+
+在文件 \mbox{\hyperlink{task_8c_source}{task.\+c}} 第 \mbox{\hyperlink{task_8c_source_l00103}{103}} 行定义.
+
+\Hypertarget{task_8h_aa6ab5350efe602f7bdfdca42aa57aff2}\index{task.h@{task.h}!Task\_Init@{Task\_Init}}
+\index{Task\_Init@{Task\_Init}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{Task\_Init()}{Task\_Init()}}
+{\footnotesize\ttfamily \label{task_8h_aa6ab5350efe602f7bdfdca42aa57aff2} 
+void Task\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+全局变量初始化 
+
+
+
+在文件 \mbox{\hyperlink{task_8c_source}{task.\+c}} 第 \mbox{\hyperlink{task_8c_source_l00018}{18}} 行定义.
+
+\Hypertarget{task_8h_adc04b631d094c29594e123783706a358}\index{task.h@{task.h}!Task\_State\_Jump@{Task\_State\_Jump}}
+\index{Task\_State\_Jump@{Task\_State\_Jump}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{Task\_State\_Jump()}{Task\_State\_Jump()}}
+{\footnotesize\ttfamily \label{task_8h_adc04b631d094c29594e123783706a358} 
+void Task\+\_\+\+State\+\_\+\+Jump (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+{\bfseries{中断函数内}} 状态机状态改变 
+
+
+
+在文件 \mbox{\hyperlink{task_8c_source}{task.\+c}} 第 \mbox{\hyperlink{task_8c_source_l00108}{108}} 行定义.
+
+\Hypertarget{task_8h_ab54d366aa75fe233214586ca49242ff4}\index{task.h@{task.h}!Task\_Time\_Silce\_Run@{Task\_Time\_Silce\_Run}}
+\index{Task\_Time\_Silce\_Run@{Task\_Time\_Silce\_Run}!task.h@{task.h}}
+\doxysubsubsection{\texorpdfstring{Task\_Time\_Silce\_Run()}{Task\_Time\_Silce\_Run()}}
+{\footnotesize\ttfamily \label{task_8h_ab54d366aa75fe233214586ca49242ff4} 
+void Task\+\_\+\+Time\+\_\+\+Silce\+\_\+\+Run (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+{\bfseries{while(1)}} 内时间片函数, 通过state.\+timebase内标志位周期触发 
+
+
+
+在文件 \mbox{\hyperlink{task_8c_source}{task.\+c}} 第 \mbox{\hyperlink{task_8c_source_l00023}{23}} 行定义.
+

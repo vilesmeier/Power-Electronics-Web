@@ -1,0 +1,142 @@
+\doxysubsubsubsection{参考相位生成 }
+\hypertarget{group___c_t_r_l___r_a_m_p}{}\label{group___c_t_r_l___r_a_m_p}\index{参考相位生成@{参考相位生成}}
+
+
+提供参考相位生成器的实现, 输出锯齿波, 范围\mbox{[}0,2\texorpdfstring{$\ast$}{*}pi\mbox{]}  
+
+
+参考相位生成 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{group___c_t_r_l___r_a_m_p}
+\end{center}
+\end{figure}
+\doxysubsubsubsubsubsection*{结构体}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_r_a_m_p}{RAMP}}
+\begin{DoxyCompactList}\small\item\em 参考相位生成器 结构体定义 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct RAMP \mbox{\hyperlink{group___c_t_r_l___r_a_m_p_gae5a74d3450cfe8998ab3cabd68341310}{RAMP}}
+\begin{DoxyCompactList}\small\item\em 参考相位生成器 结构体定义 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___c_t_r_l___r_a_m_p_ga3e743c6f7b3d3cace6e21e22f9722466}{Ramp\+\_\+\+Init}} (\mbox{\hyperlink{struct_r_a_m_p}{RAMP}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}})
+\begin{DoxyCompactList}\small\item\em 结构体初始化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___r_a_m_p_ga2e5990d2aba3b0277df88a6bb0871b2a}{Ramp\+\_\+\+Set}} (\mbox{\hyperlink{struct_r_a_m_p}{RAMP}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}}, float32\+\_\+t grad\+\_\+freq, float32\+\_\+t isr\+\_\+freq)
+\begin{DoxyCompactList}\small\item\em set parameters,frequent in Hz \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___r_a_m_p_gae2e0c71c0fe9a608875d295f970e9236}{Ramp\+\_\+\+Run}} (\mbox{\hyperlink{struct_r_a_m_p}{RAMP}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}})
+\begin{DoxyCompactList}\small\item\em 产生参考相位 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___r_a_m_p_ga0bdd6f4685504bc20e96a3dbf860b51d}{Ramp\+\_\+\+Presync}} (\mbox{\hyperlink{struct_r_a_m_p}{RAMP}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_digital___filter___test_2main_8c_ae64cb3b8ccb553621432a97009f6d3d4}{ramp}}, float32\+\_\+t phase)
+\begin{DoxyCompactList}\small\item\em 设置当前相位, 用于并网预同步 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsection{详细描述}
+提供参考相位生成器的实现, 输出锯齿波, 范围\mbox{[}0,2\texorpdfstring{$\ast$}{*}pi\mbox{]} 
+
+
+
+\label{doc-typedef-members}
+\Hypertarget{group___c_t_r_l___r_a_m_p_doc-typedef-members}
+\doxysubsubsubsubsection{类型定义说明}
+\Hypertarget{group___c_t_r_l___r_a_m_p_gae5a74d3450cfe8998ab3cabd68341310}\index{参考相位生成@{参考相位生成}!RAMP@{RAMP}}
+\index{RAMP@{RAMP}!参考相位生成@{参考相位生成}}
+\doxysubsubsubsubsubsection{\texorpdfstring{RAMP}{RAMP}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___r_a_m_p_gae5a74d3450cfe8998ab3cabd68341310} 
+typedef struct RAMP RAMP}
+
+
+
+参考相位生成器 结构体定义 
+
+
+
+\label{doc-func-members}
+\Hypertarget{group___c_t_r_l___r_a_m_p_doc-func-members}
+\doxysubsubsubsubsection{函数说明}
+\Hypertarget{group___c_t_r_l___r_a_m_p_ga3e743c6f7b3d3cace6e21e22f9722466}\index{参考相位生成@{参考相位生成}!Ramp\_Init@{Ramp\_Init}}
+\index{Ramp\_Init@{Ramp\_Init}!参考相位生成@{参考相位生成}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Ramp\_Init()}{Ramp\_Init()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___r_a_m_p_ga3e743c6f7b3d3cace6e21e22f9722466} 
+void Ramp\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_r_a_m_p}{RAMP}} \texorpdfstring{$\ast$}{*}}]{ramp}{}\end{DoxyParamCaption})}
+
+
+
+结构体初始化 
+
+
+\begin{DoxyParams}{参数}
+{\em ramp} & 结构体指针 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{ramp_8c_source}{ramp.\+c}} 第 \mbox{\hyperlink{ramp_8c_source_l00014}{14}} 行定义.
+
+\Hypertarget{group___c_t_r_l___r_a_m_p_ga0bdd6f4685504bc20e96a3dbf860b51d}\index{参考相位生成@{参考相位生成}!Ramp\_Presync@{Ramp\_Presync}}
+\index{Ramp\_Presync@{Ramp\_Presync}!参考相位生成@{参考相位生成}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Ramp\_Presync()}{Ramp\_Presync()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___r_a_m_p_ga0bdd6f4685504bc20e96a3dbf860b51d} 
+void Ramp\+\_\+\+Presync (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_r_a_m_p}{RAMP}} \texorpdfstring{$\ast$}{*}}]{ramp}{, }\item[{float32\+\_\+t}]{phase}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+设置当前相位, 用于并网预同步 
+
+
+\begin{DoxyParams}{参数}
+{\em ramp} & 结构体指针 \\
+\hline
+{\em phase} & 同步相位 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{ramp_8h_source}{ramp.\+h}} 第 \mbox{\hyperlink{ramp_8h_source_l00067}{67}} 行定义.
+
+\Hypertarget{group___c_t_r_l___r_a_m_p_gae2e0c71c0fe9a608875d295f970e9236}\index{参考相位生成@{参考相位生成}!Ramp\_Run@{Ramp\_Run}}
+\index{Ramp\_Run@{Ramp\_Run}!参考相位生成@{参考相位生成}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Ramp\_Run()}{Ramp\_Run()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___r_a_m_p_gae2e0c71c0fe9a608875d295f970e9236} 
+void Ramp\+\_\+\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_r_a_m_p}{RAMP}} \texorpdfstring{$\ast$}{*}}]{ramp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+产生参考相位 
+
+
+\begin{DoxyParams}{参数}
+{\em ramp} & 结构体指针 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{ramp_8h_source}{ramp.\+h}} 第 \mbox{\hyperlink{ramp_8h_source_l00051}{51}} 行定义.
+
+\Hypertarget{group___c_t_r_l___r_a_m_p_ga2e5990d2aba3b0277df88a6bb0871b2a}\index{参考相位生成@{参考相位生成}!Ramp\_Set@{Ramp\_Set}}
+\index{Ramp\_Set@{Ramp\_Set}!参考相位生成@{参考相位生成}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Ramp\_Set()}{Ramp\_Set()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___r_a_m_p_ga2e5990d2aba3b0277df88a6bb0871b2a} 
+void Ramp\+\_\+\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_r_a_m_p}{RAMP}} \texorpdfstring{$\ast$}{*}}]{ramp}{, }\item[{float32\+\_\+t}]{grad\+\_\+freq}{, }\item[{float32\+\_\+t}]{isr\+\_\+freq}{}\end{DoxyParamCaption})}
+
+
+
+set parameters,frequent in Hz 
+
+
+\begin{DoxyParams}{参数}
+{\em ramp} & 结构体指针 \\
+\hline
+{\em grad\+\_\+freq} & 参考信号频率 \\
+\hline
+{\em isr\+\_\+freq} & 中断频率 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{ramp_8c_source}{ramp.\+c}} 第 \mbox{\hyperlink{ramp_8c_source_l00022}{22}} 行定义.
+

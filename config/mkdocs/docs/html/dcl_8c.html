@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC/NUEDC-Core/Code/Control_Driver/dcl/dcl.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('dcl_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">dcl.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>DCL库浮点型控制器函数定义  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="dcl_8h_source.html">dcl.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+dcl.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="dcl_8c__incl.png" border="0" usemap="#a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2dcl_2dcl_8c" loading="lazy" alt=""/></div>
+<map name="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2dcl_2dcl_8c" id="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2dcl_2dcl_8c">
+<area shape="rect" title="DCL库浮点型控制器函数定义" alt="" coords="210,5,386,67"/>
+<area shape="rect" href="dcl_8h.html" title="数字控制库函数定义 &#160;&#160;包含支持FPU32的结构体定义与函数声明 &#160;&#160;PI/QPR/QPIR/QPMR/RC" alt="" coords="274,115,322,143"/>
+<area shape="poly" title=" " alt="" coords="300,67,300,99,295,99,295,67"/>
+<area shape="rect" href="_transfer_fun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件" alt="" coords="276,191,439,218"/>
+<area shape="poly" title=" " alt="" coords="310,142,339,177,335,180,306,145"/>
+<area shape="rect" title=" " alt="" coords="234,342,297,370"/>
+<area shape="poly" title=" " alt="" coords="323,131,368,140,416,156,436,167,451,182,458,199,453,219,426,260,390,293,350,319,313,339,311,334,347,315,386,289,422,257,449,217,452,200,447,185,433,172,414,161,367,145,322,136"/>
+<area shape="rect" title=" " alt="" coords="212,266,320,294"/>
+<area shape="poly" title=" " alt="" coords="290,145,277,166,267,191,263,222,264,251,259,251,258,222,262,190,272,164,286,142"/>
+<area shape="rect" href="delay_8h.html" title="数组延迟链驱动函数声明" alt="" coords="104,191,201,218"/>
+<area shape="poly" title=" " alt="" coords="274,145,193,186,190,181,272,140"/>
+<area shape="poly" title=" " alt="" coords="359,219,352,255,335,295,318,317,299,334,295,330,314,313,330,293,346,253,354,218"/>
+<area shape="poly" title=" " alt="" coords="343,221,295,259,292,255,340,217"/>
+<area shape="poly" title=" " alt="" coords="160,217,176,253,201,292,238,330,235,334,197,296,172,255,155,220"/>
+<area shape="poly" title=" " alt="" coords="174,217,234,256,232,260,171,221"/>
+<area shape="rect" href="mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="5,266,137,294"/>
+<area shape="poly" title=" " alt="" coords="140,221,98,258,95,254,136,217"/>
+<area shape="poly" title=" " alt="" coords="107,292,221,335,219,340,105,297"/>
+<area shape="rect" title=" " alt="" coords="40,342,102,370"/>
+<area shape="poly" title=" " alt="" coords="74,295,74,326,68,326,68,295"/>
+</map>
+</div>
+</div>
+<p><a href="dcl_8c_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga9a398ae86e1ca190c08bc29f43d56919" id="r_ga9a398ae86e1ca190c08bc29f43d56919"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___d_c_l.html#ga9a398ae86e1ca190c08bc29f43d56919">DCL_PI_Init</a> (<a class="el" href="group___c_t_r_l___d_c_l.html#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *p)</td></tr>
+<tr class="memdesc:ga9a398ae86e1ca190c08bc29f43d56919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flash 启动支持, 将函数搬运至RAM内执行  <br /></td></tr>
+<tr class="memitem:ga86714c924f890be6942cb921c5d4c79e" id="r_ga86714c924f890be6942cb921c5d4c79e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___d_c_l.html#ga86714c924f890be6942cb921c5d4c79e">DCL_PI_Set</a> (<a class="el" href="group___c_t_r_l___d_c_l.html#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *p, float32_t Kp, float32_t Ki, float32_t Umax, float32_t Umin, float32_t Imax, float32_t isr_freq)</td></tr>
+<tr class="memdesc:ga86714c924f890be6942cb921c5d4c79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置 <a class="el" href="group___c_t_r_l___d_c_l.html#gad3535921d2d0c60eddf8442429c7e81f" title="定义 PI 控制器结构体">DCL_PI</a> 控制器  <br /></td></tr>
+<tr class="memitem:ga9b6dd3c5bd8c50e9e8f0818785685f38" id="r_ga9b6dd3c5bd8c50e9e8f0818785685f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___d_c_l.html#ga9b6dd3c5bd8c50e9e8f0818785685f38">DCL_PR_Init</a> (<a class="el" href="group___c_t_r_l___d_c_l.html#gaebf58688fc35694aefe4fdfdb1b5f007">DCL_PR</a> *p)</td></tr>
+<tr class="memdesc:ga9b6dd3c5bd8c50e9e8f0818785685f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">QPR控制器初始化, Tustin离散化  <br /></td></tr>
+<tr class="memitem:ga1cb2b700f568e956025f0b9ef4484d1e" id="r_ga1cb2b700f568e956025f0b9ef4484d1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___d_c_l.html#ga1cb2b700f568e956025f0b9ef4484d1e">DCL_PR_Set</a> (<a class="el" href="group___c_t_r_l___d_c_l.html#gaebf58688fc35694aefe4fdfdb1b5f007">DCL_PR</a> *p, float32_t Kp, float32_t Kr, float32_t wc, float32_t w0, float32_t isr_freq)</td></tr>
+<tr class="memdesc:ga1cb2b700f568e956025f0b9ef4484d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置QPR控制器  <br /></td></tr>
+<tr class="memitem:gad7ac26c52e21de3bbbc37e75c702b431" id="r_gad7ac26c52e21de3bbbc37e75c702b431"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___d_c_l.html#gad7ac26c52e21de3bbbc37e75c702b431">DCL_PIR_Init</a> (<a class="el" href="group___c_t_r_l___d_c_l.html#gaeb5fc5e61a59fbdf844da49b6c570b44">DCL_PIR</a> *p)</td></tr>
+<tr class="memdesc:gad7ac26c52e21de3bbbc37e75c702b431"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化PIR控制器  <br /></td></tr>
+<tr class="memitem:gabc7b18fb5267c19ce189644d9c43c18b" id="r_gabc7b18fb5267c19ce189644d9c43c18b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___d_c_l.html#gabc7b18fb5267c19ce189644d9c43c18b">DCL_PIR_Set</a> (<a class="el" href="group___c_t_r_l___d_c_l.html#gaeb5fc5e61a59fbdf844da49b6c570b44">DCL_PIR</a> *p, float32_t kp, float32_t ki, float32_t kr, float32_t Umax, float32_t Umin, float32_t Imax, float32_t wc, float32_t w0, float32_t isr_freq)</td></tr>
+<tr class="memdesc:gabc7b18fb5267c19ce189644d9c43c18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置PIR控制器, Tustin离散化  <br /></td></tr>
+<tr class="memitem:ga2eeab76047a5c09041165c6c17848c65" id="r_ga2eeab76047a5c09041165c6c17848c65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___d_c_l.html#ga2eeab76047a5c09041165c6c17848c65">DCL_PMR_Init</a> (<a class="el" href="group___c_t_r_l___d_c_l.html#gaeba8ab7d44fef1cb8c260f2c035aef96">DCL_PMR</a> *p)</td></tr>
+<tr class="memdesc:ga2eeab76047a5c09041165c6c17848c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化PMR控制器  <br /></td></tr>
+<tr class="memitem:ga5d0874848e5570c769e67b40e065e3f7" id="r_ga5d0874848e5570c769e67b40e065e3f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___d_c_l.html#ga5d0874848e5570c769e67b40e065e3f7">DCL_PMR_Harmonic_Set</a> (<a class="el" href="group___c_t_r_l___d_c_l.html#gaeba8ab7d44fef1cb8c260f2c035aef96">DCL_PMR</a> *p, uint16_t *harmonic_set, float32_t *Kr)</td></tr>
+<tr class="memdesc:ga5d0874848e5570c769e67b40e065e3f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">为PMR控制器设置跟踪谐波次数和Kr系数  <br /></td></tr>
+<tr class="memitem:ga78d3ccf8ba69629925b8a19e74faae2f" id="r_ga78d3ccf8ba69629925b8a19e74faae2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___d_c_l.html#ga78d3ccf8ba69629925b8a19e74faae2f">DCL_PMR_Set</a> (<a class="el" href="group___c_t_r_l___d_c_l.html#gaeba8ab7d44fef1cb8c260f2c035aef96">DCL_PMR</a> *p, float32_t Kp, float32_t wc, float32_t w0, float32_t isr_freq)</td></tr>
+<tr class="memdesc:ga78d3ccf8ba69629925b8a19e74faae2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置PMR控制器  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>DCL库浮点型控制器函数定义 </p>
+<dl class="section warning"><dt>警告</dt><dd>在 include DCLF32.h 之前需要先 include <a class="el" href="_transfer_fun_8h.html" title="适用于 C2000 与 STM32（带 FPU）的差分方程支持文件">TransferFun.h</a> </dd></dl>
+<dl class="section author"><dt>作者</dt><dd>Mao Chenbin (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dcl_8c_source.html">dcl.c</a> 中定义.</p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_f1b8e1914c2bf0242033d233eb0ffd20.html">dcl</a></li><li class="navelem"><a href="dcl_8c.html">dcl.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

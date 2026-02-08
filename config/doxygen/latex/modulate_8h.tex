@@ -1,0 +1,79 @@
+\doxysection{D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Control\+\_\+\+Driver/modulate/modulate.h 文件参考}
+\hypertarget{modulate_8h}{}\label{modulate_8h}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/modulate/modulate.h@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/modulate/modulate.h}}
+
+
+调制函数声明  
+
+
+{\ttfamily \#include "{}stdint.\+h"{}}\newline
+{\ttfamily \#include "{}inc/hw\+\_\+types.\+h"{}}\newline
+{\ttfamily \#include $<$fpu32/\+C28x\+\_\+\+FPU\+\_\+\+Fast\+RTS.\+h$>$}\newline
+modulate.\+h 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{modulate_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件被哪些文件直接或间接地引用了\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{modulate_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{结构体}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_m_o_d}{MOD}}
+\begin{DoxyCompactList}\small\item\em 调制器结构体定义 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct MOD \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga949d1486d9ae2ea4797d744850b93002}{MOD}}
+\begin{DoxyCompactList}\small\item\em 调制器结构体定义 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga996f9b6a559031309fa6639bddf1b852}{Modulate\+\_\+\+Init}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}})
+\begin{DoxyCompactList}\small\item\em 结构体初始化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga7ec773e0dd3b93e350d1f4b3c9932813}{Modulate\+\_\+\+Set}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, uint16\+\_\+t tbprd)
+\begin{DoxyCompactList}\small\item\em 配置调制器的\+TBPRD寄存器值, 用于计算\+COMP寄存器值 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_gab63b4a5468af7691b623930d5dae1009}{Modulate\+\_\+\+Bipolar\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}})
+\begin{DoxyCompactList}\small\item\em 双极性调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga16efd57f27f25829b5ceadbf180b1dde}{Modulate\+\_\+\+Unipolar\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}})
+\begin{DoxyCompactList}\small\item\em 快慢管交替的单极性调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga43426a9d8c7c9d8b024415a0b2f912e7}{Modulate\+\_\+\+Unipolar\+\_\+\+Double\+Freq\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}})
+\begin{DoxyCompactList}\small\item\em 单极性倍频调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga0c51eea0d414fcbcdb8632a9a18b29e5}{Modulate\+\_\+\+SPWM\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}})
+\begin{DoxyCompactList}\small\item\em 三相\+SPWM调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_gabffdc55b3324200eaf48fa31f17eb65a}{Modulate\+\_\+\+SVPWM\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}})
+\begin{DoxyCompactList}\small\item\em SVPWM调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga10dcc11acc0ba8bca1cd5f1a91d20549}{Modulate\+\_\+\+DPWM1\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}})
+\begin{DoxyCompactList}\small\item\em DPWM-\/1调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_gac275ed2324b92a837086f1cb2fa564bf}{Modulate\+\_\+\+DPWMMax\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}})
+\begin{DoxyCompactList}\small\item\em DPWM-\/\+Max调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_gaf9ef4575568028ab2d5bbb89407f5f82}{Modulate\+\_\+\+DPWMMin\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}})
+\begin{DoxyCompactList}\small\item\em DPWM-\/\+Min调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_gac663e42bb9b07f2c2c414d8be8f9b8a0}{Modulate\+\_\+\+GDPWM\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}}, float32\+\_\+t pf\+\_\+angle)
+\begin{DoxyCompactList}\small\item\em GDPWM调制 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+调制函数声明 
+
+\begin{DoxyAuthor}{作者}
+Mao Chenbin (\href{mailto:508038890@qq.com}{\texttt{508038890@qq.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyNote}{注解}
+
+\begin{DoxyItemize}
+\item 在\+Mod\+\_\+type为\+MOD\+\_\+\+NULL时, COMP寄存器更新为 TBPRF/2
+\item 三相调制均使用三次谐波注入法
+\item 调制数据范围\mbox{[}-\/1.\+0f, 1.\+0f\mbox{]}, 需要预先经过归一化 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{modulate_8h_source}{modulate.\+h}} 中定义.
+

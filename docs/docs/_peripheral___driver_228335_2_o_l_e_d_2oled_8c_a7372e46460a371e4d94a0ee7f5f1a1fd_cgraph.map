@@ -1,5 +1,0 @@
-<map id="OLED_Init" name="OLED_Init">
-<area shape="rect" id="Node000001" title="OLED初始化" alt="" coords="5,5,85,33"/>
-<area shape="rect" id="Node000002" href="$_peripheral___driver_228335_2_o_l_e_d_2oled_8c.html#a5afff1be901cd9738f1c9652a0676f62" title="send data ot screen" alt="" coords="133,5,212,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,16,117,16,117,22,85,22"/>
-</map>

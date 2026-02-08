@@ -1,6 +1,0 @@
-var _test___projects_2_u_a_r_t___test_2_device_2_d_s_p2833x___spi_8c =
-[
-    [ "InitSpi", "_test___projects_2_u_a_r_t___test_2_device_2_d_s_p2833x___spi_8c.html#abc5b3bd4febb79c0c63a256ba64fda3c", null ],
-    [ "InitSpiaGpio", "_test___projects_2_u_a_r_t___test_2_device_2_d_s_p2833x___spi_8c.html#aa3f4729bee5047fe222878f5e6495c4b", null ],
-    [ "InitSpiGpio", "_test___projects_2_u_a_r_t___test_2_device_2_d_s_p2833x___spi_8c.html#a451ac38b9c01f6f268bea0afa70048fe", null ]
-];

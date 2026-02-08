@@ -1,0 +1,332 @@
+\doxysubsubsubsection{调制器 }
+\hypertarget{group___c_t_r_l___m_o_d}{}\label{group___c_t_r_l___m_o_d}\index{调制器@{调制器}}
+
+
+提供多种调制方式的实现  
+
+
+调制器 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{group___c_t_r_l___m_o_d}
+\end{center}
+\end{figure}
+\doxysubsubsubsubsubsection*{结构体}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_m_o_d}{MOD}}
+\begin{DoxyCompactList}\small\item\em 调制器结构体定义 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct MOD \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga949d1486d9ae2ea4797d744850b93002}{MOD}}
+\begin{DoxyCompactList}\small\item\em 调制器结构体定义 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga996f9b6a559031309fa6639bddf1b852}{Modulate\+\_\+\+Init}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}})
+\begin{DoxyCompactList}\small\item\em 结构体初始化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga7ec773e0dd3b93e350d1f4b3c9932813}{Modulate\+\_\+\+Set}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, uint16\+\_\+t tbprd)
+\begin{DoxyCompactList}\small\item\em 配置调制器的\+TBPRD寄存器值, 用于计算\+COMP寄存器值 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_gab63b4a5468af7691b623930d5dae1009}{Modulate\+\_\+\+Bipolar\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}})
+\begin{DoxyCompactList}\small\item\em 双极性调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga16efd57f27f25829b5ceadbf180b1dde}{Modulate\+\_\+\+Unipolar\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}})
+\begin{DoxyCompactList}\small\item\em 快慢管交替的单极性调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga43426a9d8c7c9d8b024415a0b2f912e7}{Modulate\+\_\+\+Unipolar\+\_\+\+Double\+Freq\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}})
+\begin{DoxyCompactList}\small\item\em 单极性倍频调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga0c51eea0d414fcbcdb8632a9a18b29e5}{Modulate\+\_\+\+SPWM\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}})
+\begin{DoxyCompactList}\small\item\em 三相\+SPWM调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_gabffdc55b3324200eaf48fa31f17eb65a}{Modulate\+\_\+\+SVPWM\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}})
+\begin{DoxyCompactList}\small\item\em SVPWM调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga10dcc11acc0ba8bca1cd5f1a91d20549}{Modulate\+\_\+\+DPWM1\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}})
+\begin{DoxyCompactList}\small\item\em DPWM-\/1调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_gac275ed2324b92a837086f1cb2fa564bf}{Modulate\+\_\+\+DPWMMax\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}})
+\begin{DoxyCompactList}\small\item\em DPWM-\/\+Max调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_gaf9ef4575568028ab2d5bbb89407f5f82}{Modulate\+\_\+\+DPWMMin\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}})
+\begin{DoxyCompactList}\small\item\em DPWM-\/\+Min调制 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___m_o_d_gac663e42bb9b07f2c2c414d8be8f9b8a0}{Modulate\+\_\+\+GDPWM\+\_\+\+Run}} (\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ae9f020f8f900850ab1aaf6325313a153}{ua}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a04940fd14ddbfdf46e286a74e8ddb951}{ub}}, float32\+\_\+t \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_ac0d2d6db4bd6e92c1d01104d25380edd}{uc}}, float32\+\_\+t pf\+\_\+angle)
+\begin{DoxyCompactList}\small\item\em GDPWM调制 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsection{详细描述}
+提供多种调制方式的实现 
+
+
+
+\label{doc-typedef-members}
+\Hypertarget{group___c_t_r_l___m_o_d_doc-typedef-members}
+\doxysubsubsubsubsection{类型定义说明}
+\Hypertarget{group___c_t_r_l___m_o_d_ga949d1486d9ae2ea4797d744850b93002}\index{调制器@{调制器}!MOD@{MOD}}
+\index{MOD@{MOD}!调制器@{调制器}}
+\doxysubsubsubsubsubsection{\texorpdfstring{MOD}{MOD}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___m_o_d_ga949d1486d9ae2ea4797d744850b93002} 
+typedef struct MOD MOD}
+
+
+
+调制器结构体定义 
+
+
+
+\label{doc-func-members}
+\Hypertarget{group___c_t_r_l___m_o_d_doc-func-members}
+\doxysubsubsubsubsection{函数说明}
+\Hypertarget{group___c_t_r_l___m_o_d_gab63b4a5468af7691b623930d5dae1009}\index{调制器@{调制器}!Modulate\_Bipolar\_Run@{Modulate\_Bipolar\_Run}}
+\index{Modulate\_Bipolar\_Run@{Modulate\_Bipolar\_Run}!调制器@{调制器}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Modulate\_Bipolar\_Run()}{Modulate\_Bipolar\_Run()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___m_o_d_gab63b4a5468af7691b623930d5dae1009} 
+void Modulate\+\_\+\+Bipolar\+\_\+\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}}]{mod}{, }\item[{float32\+\_\+t}]{ua}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+双极性调制 
+
+
+\begin{DoxyParams}{参数}
+{\em mod} & 结构体指针 \\
+\hline
+{\em ua} & 调制波 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{modulate_8h_source}{modulate.\+h}} 第 \mbox{\hyperlink{modulate_8h_source_l00059}{59}} 行定义.
+
+\Hypertarget{group___c_t_r_l___m_o_d_ga10dcc11acc0ba8bca1cd5f1a91d20549}\index{调制器@{调制器}!Modulate\_DPWM1\_Run@{Modulate\_DPWM1\_Run}}
+\index{Modulate\_DPWM1\_Run@{Modulate\_DPWM1\_Run}!调制器@{调制器}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Modulate\_DPWM1\_Run()}{Modulate\_DPWM1\_Run()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___m_o_d_ga10dcc11acc0ba8bca1cd5f1a91d20549} 
+void Modulate\+\_\+\+DPWM1\+\_\+\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}}]{mod}{, }\item[{float32\+\_\+t}]{ua}{, }\item[{float32\+\_\+t}]{ub}{, }\item[{float32\+\_\+t}]{uc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+DPWM-\/1调制 
+
+
+\begin{DoxyParams}{参数}
+{\em mod} & 结构体指针 \\
+\hline
+{\em ua} & a相调制波 \\
+\hline
+{\em ub} & b相调制波 \\
+\hline
+{\em uc} & c相调制波 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{modulate_8h_source}{modulate.\+h}} 第 \mbox{\hyperlink{modulate_8h_source_l00144}{144}} 行定义.
+
+\Hypertarget{group___c_t_r_l___m_o_d_gac275ed2324b92a837086f1cb2fa564bf}\index{调制器@{调制器}!Modulate\_DPWMMax\_Run@{Modulate\_DPWMMax\_Run}}
+\index{Modulate\_DPWMMax\_Run@{Modulate\_DPWMMax\_Run}!调制器@{调制器}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Modulate\_DPWMMax\_Run()}{Modulate\_DPWMMax\_Run()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___m_o_d_gac275ed2324b92a837086f1cb2fa564bf} 
+void Modulate\+\_\+\+DPWMMax\+\_\+\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}}]{mod}{, }\item[{float32\+\_\+t}]{ua}{, }\item[{float32\+\_\+t}]{ub}{, }\item[{float32\+\_\+t}]{uc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+DPWM-\/\+Max调制 
+
+
+\begin{DoxyParams}{参数}
+{\em mod} & 结构体指针 \\
+\hline
+{\em ua} & a相调制波 \\
+\hline
+{\em ub} & b相调制波 \\
+\hline
+{\em uc} & c相调制波 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{modulate_8h_source}{modulate.\+h}} 第 \mbox{\hyperlink{modulate_8h_source_l00183}{183}} 行定义.
+
+\Hypertarget{group___c_t_r_l___m_o_d_gaf9ef4575568028ab2d5bbb89407f5f82}\index{调制器@{调制器}!Modulate\_DPWMMin\_Run@{Modulate\_DPWMMin\_Run}}
+\index{Modulate\_DPWMMin\_Run@{Modulate\_DPWMMin\_Run}!调制器@{调制器}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Modulate\_DPWMMin\_Run()}{Modulate\_DPWMMin\_Run()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___m_o_d_gaf9ef4575568028ab2d5bbb89407f5f82} 
+void Modulate\+\_\+\+DPWMMin\+\_\+\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}}]{mod}{, }\item[{float32\+\_\+t}]{ua}{, }\item[{float32\+\_\+t}]{ub}{, }\item[{float32\+\_\+t}]{uc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+DPWM-\/\+Min调制 
+
+
+\begin{DoxyParams}{参数}
+{\em mod} & 结构体指针 \\
+\hline
+{\em ua} & a相调制波 \\
+\hline
+{\em ub} & b相调制波 \\
+\hline
+{\em uc} & c相调制波 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{modulate_8h_source}{modulate.\+h}} 第 \mbox{\hyperlink{modulate_8h_source_l00214}{214}} 行定义.
+
+\Hypertarget{group___c_t_r_l___m_o_d_gac663e42bb9b07f2c2c414d8be8f9b8a0}\index{调制器@{调制器}!Modulate\_GDPWM\_Run@{Modulate\_GDPWM\_Run}}
+\index{Modulate\_GDPWM\_Run@{Modulate\_GDPWM\_Run}!调制器@{调制器}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Modulate\_GDPWM\_Run()}{Modulate\_GDPWM\_Run()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___m_o_d_gac663e42bb9b07f2c2c414d8be8f9b8a0} 
+void Modulate\+\_\+\+GDPWM\+\_\+\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}}]{mod}{, }\item[{float32\+\_\+t}]{ua}{, }\item[{float32\+\_\+t}]{ub}{, }\item[{float32\+\_\+t}]{uc}{, }\item[{float32\+\_\+t}]{pf\+\_\+angle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+GDPWM调制 
+
+
+\begin{DoxyParams}{参数}
+{\em mod} & 结构体指针 \\
+\hline
+{\em ua} & a相调制波 \\
+\hline
+{\em ub} & b相调制波 \\
+\hline
+{\em uc} & c相调制波 \\
+\hline
+{\em pf\+\_\+angle} & 功率因数角, 单位\+: 弧度\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{警告}
+功率因数角范围\+:\mbox{[}-\/pi/6 -\/ pi/6\mbox{]} 
+\end{DoxyWarning}
+
+
+在文件 \mbox{\hyperlink{modulate_8h_source}{modulate.\+h}} 第 \mbox{\hyperlink{modulate_8h_source_l00247}{247}} 行定义.
+
+\Hypertarget{group___c_t_r_l___m_o_d_ga996f9b6a559031309fa6639bddf1b852}\index{调制器@{调制器}!Modulate\_Init@{Modulate\_Init}}
+\index{Modulate\_Init@{Modulate\_Init}!调制器@{调制器}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Modulate\_Init()}{Modulate\_Init()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___m_o_d_ga996f9b6a559031309fa6639bddf1b852} 
+void Modulate\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}}]{mod}{}\end{DoxyParamCaption})}
+
+
+
+结构体初始化 
+
+
+\begin{DoxyParams}{参数}
+{\em mod} & 结构体指针 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{modulate_8c_source}{modulate.\+c}} 第 \mbox{\hyperlink{modulate_8c_source_l00014}{14}} 行定义.
+
+\Hypertarget{group___c_t_r_l___m_o_d_ga7ec773e0dd3b93e350d1f4b3c9932813}\index{调制器@{调制器}!Modulate\_Set@{Modulate\_Set}}
+\index{Modulate\_Set@{Modulate\_Set}!调制器@{调制器}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Modulate\_Set()}{Modulate\_Set()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___m_o_d_ga7ec773e0dd3b93e350d1f4b3c9932813} 
+void Modulate\+\_\+\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}}]{mod}{, }\item[{uint16\+\_\+t}]{tbprd}{}\end{DoxyParamCaption})}
+
+
+
+配置调制器的\+TBPRD寄存器值, 用于计算\+COMP寄存器值 
+
+
+\begin{DoxyParams}{参数}
+{\em mod} & 结构体指针 \\
+\hline
+{\em tbprd} & TBPRD寄存器值 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{modulate_8c_source}{modulate.\+c}} 第 \mbox{\hyperlink{modulate_8c_source_l00023}{23}} 行定义.
+
+\Hypertarget{group___c_t_r_l___m_o_d_ga0c51eea0d414fcbcdb8632a9a18b29e5}\index{调制器@{调制器}!Modulate\_SPWM\_Run@{Modulate\_SPWM\_Run}}
+\index{Modulate\_SPWM\_Run@{Modulate\_SPWM\_Run}!调制器@{调制器}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Modulate\_SPWM\_Run()}{Modulate\_SPWM\_Run()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___m_o_d_ga0c51eea0d414fcbcdb8632a9a18b29e5} 
+void Modulate\+\_\+\+SPWM\+\_\+\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}}]{mod}{, }\item[{float32\+\_\+t}]{ua}{, }\item[{float32\+\_\+t}]{ub}{, }\item[{float32\+\_\+t}]{uc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+三相\+SPWM调制 
+
+
+\begin{DoxyParams}{参数}
+{\em mod} & 结构体指针 \\
+\hline
+{\em ua} & a相调制波 \\
+\hline
+{\em ub} & b相调制波 \\
+\hline
+{\em uc} & c相调制波 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{modulate_8h_source}{modulate.\+h}} 第 \mbox{\hyperlink{modulate_8h_source_l00100}{100}} 行定义.
+
+\Hypertarget{group___c_t_r_l___m_o_d_gabffdc55b3324200eaf48fa31f17eb65a}\index{调制器@{调制器}!Modulate\_SVPWM\_Run@{Modulate\_SVPWM\_Run}}
+\index{Modulate\_SVPWM\_Run@{Modulate\_SVPWM\_Run}!调制器@{调制器}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Modulate\_SVPWM\_Run()}{Modulate\_SVPWM\_Run()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___m_o_d_gabffdc55b3324200eaf48fa31f17eb65a} 
+void Modulate\+\_\+\+SVPWM\+\_\+\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}}]{mod}{, }\item[{float32\+\_\+t}]{ua}{, }\item[{float32\+\_\+t}]{ub}{, }\item[{float32\+\_\+t}]{uc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+SVPWM调制 
+
+
+\begin{DoxyParams}{参数}
+{\em mod} & 结构体指针 \\
+\hline
+{\em ua} & a相调制波 \\
+\hline
+{\em ub} & b相调制波 \\
+\hline
+{\em uc} & c相调制波 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{modulate_8h_source}{modulate.\+h}} 第 \mbox{\hyperlink{modulate_8h_source_l00116}{116}} 行定义.
+
+\Hypertarget{group___c_t_r_l___m_o_d_ga43426a9d8c7c9d8b024415a0b2f912e7}\index{调制器@{调制器}!Modulate\_Unipolar\_DoubleFreq\_Run@{Modulate\_Unipolar\_DoubleFreq\_Run}}
+\index{Modulate\_Unipolar\_DoubleFreq\_Run@{Modulate\_Unipolar\_DoubleFreq\_Run}!调制器@{调制器}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Modulate\_Unipolar\_DoubleFreq\_Run()}{Modulate\_Unipolar\_DoubleFreq\_Run()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___m_o_d_ga43426a9d8c7c9d8b024415a0b2f912e7} 
+void Modulate\+\_\+\+Unipolar\+\_\+\+Double\+Freq\+\_\+\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}}]{mod}{, }\item[{float32\+\_\+t}]{ua}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+单极性倍频调制 
+
+
+\begin{DoxyParams}{参数}
+{\em mod} & 结构体指针 \\
+\hline
+{\em ua} & 调制波 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{modulate_8h_source}{modulate.\+h}} 第 \mbox{\hyperlink{modulate_8h_source_l00085}{85}} 行定义.
+
+\Hypertarget{group___c_t_r_l___m_o_d_ga16efd57f27f25829b5ceadbf180b1dde}\index{调制器@{调制器}!Modulate\_Unipolar\_Run@{Modulate\_Unipolar\_Run}}
+\index{Modulate\_Unipolar\_Run@{Modulate\_Unipolar\_Run}!调制器@{调制器}}
+\doxysubsubsubsubsubsection{\texorpdfstring{Modulate\_Unipolar\_Run()}{Modulate\_Unipolar\_Run()}}
+{\footnotesize\ttfamily \label{group___c_t_r_l___m_o_d_ga16efd57f27f25829b5ceadbf180b1dde} 
+void Modulate\+\_\+\+Unipolar\+\_\+\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_o_d}{MOD}} \texorpdfstring{$\ast$}{*}}]{mod}{, }\item[{float32\+\_\+t}]{ua}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+快慢管交替的单极性调制 
+
+
+\begin{DoxyParams}{参数}
+{\em mod} & 结构体指针 \\
+\hline
+{\em ua} & 调制波 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{modulate_8h_source}{modulate.\+h}} 第 \mbox{\hyperlink{modulate_8h_source_l00072}{72}} 行定义.
+

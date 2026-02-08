@@ -1,0 +1,12 @@
+<map id="D:/Codes/NUEDC/NUEDC&#45;Core/Code/Control_Driver/ramp/ramp.h" name="D:/Codes/NUEDC/NUEDC&#45;Core/Code/Control_Driver/ramp/ramp.h">
+<area shape="rect" id="Node000001" title="参考相位生成 函数声明" alt="" coords="5,5,182,67"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="44,191,108,218"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,69,43,91,29,116,27,132,32,148,52,178,47,181,27,150,22,133,24,114,38,88,57,66"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="39,115,148,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="96,67,96,99,91,99,91,67"/>
+<area shape="rect" id="Node000004" href="$mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="172,115,303,143"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,65,206,104,203,109,140,70"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="210,146,119,187,117,182,208,141"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="207,191,268,218"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="240,143,240,175,235,175,235,143"/>
+</map>

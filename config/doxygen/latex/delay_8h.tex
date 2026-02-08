@@ -1,0 +1,60 @@
+\doxysection{D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Control\+\_\+\+Driver/delay/delay.h 文件参考}
+\hypertarget{delay_8h}{}\label{delay_8h}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/delay/delay.h@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/delay/delay.h}}
+
+
+数组延迟链驱动函数声明  
+
+
+{\ttfamily \#include "{}stdint.\+h"{}}\newline
+{\ttfamily \#include "{}inc/hw\+\_\+types.\+h"{}}\newline
+{\ttfamily \#include $<$mathdef/mathdef.\+h$>$}\newline
+delay.\+h 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{delay_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件被哪些文件直接或间接地引用了\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{delay_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{结构体}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_d_e_l_a_y}{DELAY}}
+\begin{DoxyCompactList}\small\item\em 数组延迟链结构体定义 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct DELAY \mbox{\hyperlink{group___c_t_r_l___d_e_l_a_y_gac993929848db081769e724a03456dcc4}{DELAY}}
+\begin{DoxyCompactList}\small\item\em 数组延迟链结构体定义 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___c_t_r_l___d_e_l_a_y_ga1d1f6ac6440c9beb1b7c6051c8fa15e0}{DELAY\+\_\+\+Init}} (\mbox{\hyperlink{struct_d_e_l_a_y}{DELAY}} \texorpdfstring{$\ast$}{*}delay\+\_\+addr)
+\begin{DoxyCompactList}\small\item\em 初始化延迟链 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___d_e_l_a_y_ga7f6f301d186e73e3449b5136447dbb11}{DELAY\+\_\+\+Set}} (\mbox{\hyperlink{struct_d_e_l_a_y}{DELAY}} \texorpdfstring{$\ast$}{*}delay\+\_\+addr, float32\+\_\+t isr\+\_\+freq, float32\+\_\+t grid\+\_\+freq)
+\begin{DoxyCompactList}\small\item\em 配置延时链 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{group___c_t_r_l___d_e_l_a_y_gab12603b239fc84d00450dded1a9629ee}{DELAY\+\_\+\+Push}} (\mbox{\hyperlink{struct_d_e_l_a_y}{DELAY}} \texorpdfstring{$\ast$}{*}delay\+\_\+addr, float32\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em 送入数据到延迟链 \end{DoxyCompactList}\item 
+static float32\+\_\+t \mbox{\hyperlink{group___c_t_r_l___d_e_l_a_y_ga09696418bb8d13d744d744fca5f28973}{DELAY\+\_\+\+Pop}} (\mbox{\hyperlink{struct_d_e_l_a_y}{DELAY}} \texorpdfstring{$\ast$}{*}delay\+\_\+addr, float32\+\_\+t phase)
+\begin{DoxyCompactList}\small\item\em 输出特定延迟相位的数据 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+数组延迟链驱动函数声明 
+
+\begin{DoxyAuthor}{作者}
+Mao Chenbin (\href{mailto:508038890@qq.com}{\texttt{508038890@qq.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyWarning}{警告}
+这个函数不应该被直接 \doxylink{global_8h}{global.\+h} 包含 
+\end{DoxyWarning}
+
+
+在文件 \mbox{\hyperlink{delay_8h_source}{delay.\+h}} 中定义.
+

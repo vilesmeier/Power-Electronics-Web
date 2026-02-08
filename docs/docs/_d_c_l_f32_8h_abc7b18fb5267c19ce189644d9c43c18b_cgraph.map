@@ -1,7 +1,0 @@
-<map id="DCL_PIR_Set" name="DCL_PIR_Set">
-<area shape="rect" id="Node000001" title="配置PIR控制器, Tustin离散化" alt="" coords="5,31,111,57"/>
-<area shape="rect" id="Node000002" href="$_d_c_l_f32_8c.html#a86714c924f890be6942cb921c5d4c79e" title="配置 DCL_PI 控制器" alt="" coords="162,5,257,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,33,146,27,147,32,112,38"/>
-<area shape="rect" id="Node000003" href="$_d_c_l_f32_8c.html#a1cb2b700f568e956025f0b9ef4484d1e" title="配置QPR控制器" alt="" coords="159,56,260,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,50,144,56,143,61,111,55"/>
-</map>

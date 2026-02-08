@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC/NUEDC-Core/Code/Control_Driver/oled/oled.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_control___driver_2oled_2oled_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">oled.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>OLED函数声明-SSD1306/SSD1315  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;stdint.h&quot;</code><br />
+<code>#include &quot;inc/hw_types.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="i2c_8h_source.html">i2c.h</a>&quot;</code><br />
+<code>#include &quot;math.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+oled.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_control___driver_2oled_2oled_8h__incl.png" border="0" usemap="#a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2oled_2oled_8h" loading="lazy" alt=""/></div>
+<map name="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2oled_2oled_8h" id="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2oled_2oled_8h">
+<area shape="rect" title="OLED函数声明&#45;SSD1306/SSD1315" alt="" coords="109,5,285,67"/>
+<area shape="rect" title=" " alt="" coords="5,115,69,143"/>
+<area shape="poly" title=" " alt="" coords="145,70,75,109,72,105,142,65"/>
+<area shape="rect" title=" " alt="" coords="92,115,200,143"/>
+<area shape="poly" title=" " alt="" coords="182,69,163,103,159,100,178,66"/>
+<area shape="rect" href="i2c_8h.html" title=" " alt="" coords="225,115,273,143"/>
+<area shape="poly" title=" " alt="" coords="217,66,236,100,232,103,212,69"/>
+<area shape="rect" title=" " alt="" coords="297,115,358,143"/>
+<area shape="poly" title=" " alt="" coords="242,65,298,104,295,108,239,70"/>
+<area shape="rect" title=" " alt="" coords="187,191,311,218"/>
+<area shape="poly" title=" " alt="" coords="252,143,252,175,246,175,246,143"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="_control___driver_2oled_2oled_8h__dep__incl.png" border="0" usemap="#a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2oled_2oled_8hdep" loading="lazy" alt=""/></div>
+<map name="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2oled_2oled_8hdep" id="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2oled_2oled_8hdep">
+<area shape="rect" title="OLED函数声明&#45;SSD1306/SSD1315" alt="" coords="4684,5,4860,67"/>
+<area shape="rect" href="global_8h.html" title="全局变量声明, 头文件打包, 全局通用宏定义" alt="" coords="4484,115,4660,177"/>
+<area shape="poly" title=" " alt="" coords="4704,77,4630,117,4627,112,4701,72"/>
+<area shape="rect" href="_control___driver_2oled_2oled_8c.html" title="OLED驱动函数定义&#45;SSD1306/SSD1315" alt="" coords="4684,115,4860,177"/>
+<area shape="poly" title=" " alt="" coords="4775,83,4775,114,4770,114,4770,83"/>
+<area shape="rect" href="oled__var_8c.html" title="定义OLED GDDRAM镜像数组, OLED字库数组&#45;SSD1306/SSD1315" alt="" coords="4884,115,5060,177"/>
+<area shape="poly" title=" " alt="" coords="4843,72,4917,112,4915,117,4841,77"/>
+<area shape="rect" href="global_8c.html" title="全局变量定义" alt="" coords="5,233,182,295"/>
+<area shape="poly" title=" " alt="" coords="4468,150,3599,149,2260,157,1572,166,956,180,476,200,306,213,194,227,164,235,163,230,193,222,305,207,475,195,956,175,1572,160,2259,151,3599,144,4468,144"/>
+<area shape="rect" href="adc_8c.html" title="ADC Driver for ADC Module of F28335" alt="" coords="206,233,376,295"/>
+<area shape="poly" title=" " alt="" coords="4468,150,3635,151,2359,160,1705,169,1120,183,663,202,502,214,395,227,365,235,363,230,394,222,501,209,663,197,1120,177,1705,164,2359,154,3635,146,4468,144"/>
+<area shape="rect" href="_peripheral___driver_228335_2_o_l_e_d_2oled_8c.html" title="driver for OLED" alt="" coords="385,351,565,413"/>
+<area shape="poly" title=" " alt="" coords="4468,150,3582,151,2243,161,1579,170,1010,184,607,203,489,214,456,220,440,227,431,240,427,254,429,287,440,320,457,350,452,353,436,323,423,288,422,253,427,237,437,223,454,215,489,209,607,197,1010,179,1579,165,2243,155,3582,146,4468,144"/>
+<area shape="rect" href="oled__font_8h.html" title="Font libiary for OLED screen" alt="" coords="451,225,621,303"/>
+<area shape="poly" title=" " alt="" coords="4469,150,3678,151,2477,160,1863,169,1313,183,885,202,734,214,634,227,622,230,621,225,633,222,733,209,885,197,1313,178,1863,164,2477,154,3678,146,4469,144"/>
+<area shape="rect" href="pwm_8c.html" title="pwm driver source code" alt="" coords="646,233,827,295"/>
+<area shape="poly" title=" " alt="" coords="4468,150,3714,153,2579,163,1999,173,1481,186,1078,204,935,215,841,227,810,235,809,230,840,222,935,210,1077,199,1481,181,1999,168,2579,158,3714,147,4468,145"/>
+<area shape="rect" href="spi_8c.html" title="spi driver source code" alt="" coords="852,233,1021,295"/>
+<area shape="poly" title=" " alt="" coords="4469,150,3749,153,2675,163,2127,173,1638,186,1258,204,1123,215,1034,227,1005,235,1004,230,1033,222,1122,210,1257,199,1638,181,2127,168,2675,158,3749,147,4469,145"/>
+<area shape="rect" href="tim_8c.html" title="CPU timer driver source code" alt="" coords="1045,233,1222,295"/>
+<area shape="poly" title=" " alt="" coords="4468,150,3785,154,2774,166,2260,176,1801,189,1444,206,1318,216,1234,227,1204,235,1203,230,1233,222,1317,211,1444,201,1801,184,2260,170,2774,160,3785,149,4468,145"/>
+<area shape="rect" href="uart_8c.html" title=" " alt="" coords="1246,233,1426,295"/>
+<area shape="poly" title=" " alt="" coords="4468,150,3823,155,2875,168,2395,178,1967,191,1634,207,1516,217,1438,227,1408,235,1407,230,1437,222,1516,212,1634,202,1967,186,2395,173,2875,163,3822,150,4468,145"/>
+<area shape="rect" href="xint_8c.html" title="external interrupt driver source code" alt="" coords="1450,233,1625,295"/>
+<area shape="poly" title=" " alt="" coords="4469,151,3860,156,2976,169,2528,180,2130,192,1820,208,1711,217,1638,227,1608,235,1607,230,1637,222,1710,212,1820,203,2130,187,2528,174,2976,164,3860,151,4469,145"/>
+<area shape="rect" href="280049_c_2_template___projects_2_template___project___f280049_c_2user_2main_8c.html" title="F280049C 模板工程主程序" alt="" coords="1650,225,1855,303"/>
+<area shape="poly" title=" " alt="" coords="4468,151,3902,159,3091,174,2318,197,2035,211,1869,227,1855,230,1854,225,1868,222,2035,206,2318,192,3091,169,3902,154,4468,146"/>
+<area shape="rect" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html" title="F280049C数字滤波器测试工程main函数" alt="" coords="1880,225,2049,303"/>
+<area shape="poly" title=" " alt="" coords="4468,151,3938,158,3187,173,2475,195,2214,210,2122,218,2061,227,2050,230,2048,225,2060,222,2121,213,2214,205,2474,190,3187,167,3938,153,4468,146"/>
+<area shape="rect" href="280049_c_2_test___projects_2_f_f_t___test_2main_8c.html" title="F280049C RFFT分析测试工程main函数" alt="" coords="2072,233,2275,295"/>
+<area shape="poly" title=" " alt="" coords="4469,149,4024,150,3393,159,3063,168,2754,182,2488,202,2378,214,2287,227,2254,235,2253,230,2286,222,2377,208,2487,196,2753,177,3063,163,3393,154,4024,145,4469,144"/>
+<area shape="rect" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html" title="F280049C调制测试工程main函数" alt="" coords="2298,225,2468,303"/>
+<area shape="poly" title=" " alt="" coords="4468,149,4057,149,3481,157,3182,167,2902,181,2662,201,2562,213,2481,227,2468,230,2467,225,2480,222,2562,208,2661,196,2902,176,3182,162,3481,152,4057,144,4468,144"/>
+<area shape="rect" href="280049_c_2_test___projects_2_o_l_e_d___s_s_d1306___test_2main_8c.html" title="F280049C OLED测试工程main函数" alt="" coords="2492,225,2690,303"/>
+<area shape="poly" title=" " alt="" coords="4469,150,4097,154,3586,165,3322,175,3075,188,2862,206,2702,227,2691,230,2689,224,2701,222,2862,200,3074,183,3321,170,3586,160,4097,149,4469,145"/>
+<area shape="rect" href="280049_c_2_test___projects_2_o_l_e_d___s_s_d1315___test_2main_8c.html" title="F280049C OLED测试工程main函数" alt="" coords="2714,225,2911,303"/>
+<area shape="poly" title=" " alt="" coords="4468,151,4137,156,3690,169,3246,192,3062,208,2923,227,2912,230,2911,225,2922,222,3062,203,3246,187,3690,164,4136,151,4468,146"/>
+<area shape="rect" href="280049_c_2_test___projects_2_p_r___test_2main_8c.html" title="F280049C QPR控制器测试工程main函数" alt="" coords="2934,233,3130,295"/>
+<area shape="poly" title=" " alt="" coords="4469,152,4177,159,3794,173,3416,195,3260,210,3142,227,3111,235,3110,230,3141,222,3260,205,3416,190,3794,168,4177,154,4469,146"/>
+<area shape="rect" href="280049_c_2_test___projects_2_v_o_f_a___test_2main_8c.html" title="F280049C VOFA测试工程main函数" alt="" coords="3154,233,3366,295"/>
+<area shape="poly" title=" " alt="" coords="4468,153,3908,179,3602,200,3475,213,3379,227,3346,235,3345,230,3378,222,3475,208,3601,195,3907,174,4468,148"/>
+<area shape="rect" href="28335_222_a_2_p_q_2_user_2main_8c.html" title="单相两电平PWM整流器, PQ控制实现任意功率因数" alt="" coords="3390,233,3560,295"/>
+<area shape="poly" title=" " alt="" coords="4469,154,4001,180,3753,201,3650,213,3573,227,3546,235,3544,230,3572,222,3650,208,3752,196,4001,174,4469,149"/>
+<area shape="rect" href="28335_222_a_2_rectifier__20k_2_user_2main_8c.html" title="单相两电平PWM整流器" alt="" coords="3584,225,3753,303"/>
+<area shape="poly" title=" " alt="" coords="4469,151,4328,156,4152,168,3958,191,3861,207,3766,227,3754,231,3753,225,3765,222,3860,202,3958,186,4152,163,4328,150,4469,145"/>
+<area shape="rect" href="28335_222_a_2_s_v_g_2_user_2main_8c.html" title="单相两电平PWM整流器, PQ控制实现无功补偿" alt="" coords="3777,233,3946,295"/>
+<area shape="poly" title=" " alt="" coords="4468,155,4362,164,4234,178,4096,198,3959,227,3933,235,3932,230,3958,222,4095,193,4233,172,4361,158,4468,150"/>
+<area shape="rect" href="28335_223_a_2_master__new_2_user_2main_8c.html" title="单相两电平电压源逆变器主程序, 主从并机, 模式切换须下电" alt="" coords="3970,233,4169,295"/>
+<area shape="poly" title=" " alt="" coords="4469,167,4332,192,4182,227,4155,235,4153,230,4181,222,4331,187,4468,161"/>
+<area shape="rect" href="28335_224_invitation_2_solar___sim_2_user_2main_8c.html" title="模拟太阳能电池 24年邀请赛" alt="" coords="4193,225,4362,303"/>
+<area shape="poly" title=" " alt="" coords="4482,185,4374,227,4364,231,4362,226,4373,222,4480,180"/>
+<area shape="rect" href="28335_225_a_225_a___v1_2_user_2main_8c.html" title=" " alt="" coords="4386,233,4558,295"/>
+<area shape="poly" title=" " alt="" coords="4539,190,4500,234,4496,231,4535,186"/>
+<area shape="rect" href="28335_225_a_225_a___v10_2_user_2main_8c.html" title=" " alt="" coords="4582,233,4762,295"/>
+<area shape="poly" title=" " alt="" coords="4610,186,4648,231,4644,234,4606,190"/>
+<area shape="rect" href="28335_225_a_225_a___v11_2_user_2main_8c.html" title=" " alt="" coords="4786,233,4966,295"/>
+<area shape="poly" title=" " alt="" coords="4666,180,4798,230,4796,235,4664,185"/>
+<area shape="rect" href="28335_225_a_225_a___v12_2_user_2main_8c.html" title=" " alt="" coords="4990,233,5170,295"/>
+<area shape="poly" title=" " alt="" coords="4676,175,4761,189,4829,196,4895,205,4978,222,5005,230,5003,235,4977,227,4895,210,4828,202,4761,195,4675,180"/>
+<area shape="rect" href="28335_225_a_225_a___v13_2_user_2main_8c.html" title="变流器负载测试装置, 2025年A题" alt="" coords="5194,233,5374,295"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4753,186,4818,192,4931,195,5042,199,5107,207,5182,222,5210,230,5209,235,5181,227,5106,213,5042,205,4931,200,4818,197,4752,191,4675,180"/>
+<area shape="rect" href="28335_225_a_225_a___v2_2_user_2main_8c.html" title=" " alt="" coords="5398,233,5570,295"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4784,189,4875,195,5033,193,5109,191,5190,194,5280,203,5386,222,5415,230,5413,235,5385,227,5280,208,5189,199,5109,197,5033,198,4875,200,4783,194,4675,180"/>
+<area shape="rect" href="28335_225_a_225_a___v3_2_user_2main_8c.html" title=" " alt="" coords="5594,233,5766,295"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4813,192,4931,198,5035,196,5132,191,5229,187,5332,188,5448,198,5583,222,5612,230,5610,235,5582,227,5448,204,5332,193,5229,192,5132,196,5035,201,4931,203,4813,197,4675,180"/>
+<area shape="rect" href="28335_225_a_225_a___v4_2_user_2main_8c.html" title=" " alt="" coords="5790,233,5962,295"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4843,195,4986,200,5112,197,5230,190,5348,183,5474,183,5615,194,5779,222,5808,230,5807,235,5778,227,5614,200,5473,188,5348,189,5230,195,5112,202,4986,206,4842,200,4675,180"/>
+<area shape="rect" href="28335_225_a_225_a___v5_2_user_2main_8c.html" title=" " alt="" coords="5986,233,6158,295"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4778,188,4873,197,5040,203,5189,198,5328,188,5467,179,5615,178,5781,190,5874,203,5975,222,6004,230,6003,235,5974,227,5873,209,5781,195,5615,183,5467,185,5329,194,5190,204,5040,209,4872,203,4778,194,4675,180"/>
+<area shape="rect" href="28335_225_a_225_a___v6_2_user_2main_8c.html" title=" " alt="" coords="6182,233,6354,295"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4827,188,5011,194,5434,192,5648,191,5851,194,6029,203,6105,211,6171,222,6200,230,6199,235,6170,227,6104,216,6028,208,5850,199,5648,197,5434,198,5011,199,4827,193,4675,179"/>
+<area shape="rect" href="28335_225_a_225_a___v7_2_user_2main_8c.html" title=" " alt="" coords="6378,233,6550,295"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4756,183,4846,190,5054,195,5532,192,5775,189,6004,191,6206,201,6292,210,6367,222,6397,230,6395,235,6366,227,6292,215,6205,206,6004,197,5775,195,5532,197,5054,201,4846,195,4755,189,4675,180"/>
+<area shape="rect" href="28335_225_a_225_a___v8_2_user_2main_8c.html" title=" " alt="" coords="6574,233,6746,295"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4764,184,4865,191,5097,197,5357,195,5630,191,5901,187,6157,189,6383,199,6480,209,6563,222,6593,230,6591,235,6562,227,6479,214,6382,204,6157,194,5902,193,5630,196,5357,201,5097,202,4865,196,4764,189,4675,179"/>
+<area shape="rect" href="28335_225_a_225_a___v9_2_user_2main_8c.html" title=" " alt="" coords="6770,233,6942,295"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4773,185,4885,192,5140,198,5427,196,5728,190,6028,185,6311,186,6560,197,6667,207,6759,222,6789,230,6787,235,6758,227,6666,213,6560,202,6311,192,6028,191,5728,196,5427,201,5140,203,4884,198,4773,190,4675,180"/>
+<area shape="rect" href="28335_225_a_225_a__temp_2_user_2main_8c.html" title=" " alt="" coords="6967,233,7153,295"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4782,186,4903,194,5183,201,5496,198,5826,192,6154,186,6464,186,6737,197,6854,207,6955,222,6987,230,6986,235,6954,227,6853,212,6736,202,6464,192,6154,192,5826,197,5496,204,5183,206,4903,199,4782,191,4675,180"/>
+<area shape="rect" href="28335_23ph___inverter_23ph___current__source__inverter_2_user_2main_8c.html" title="三相两电平电流源逆变器主程序" alt="" coords="7177,225,7370,303"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4792,187,4924,196,5229,202,5571,200,5931,192,6290,186,6628,185,6784,188,6927,195,7055,206,7166,222,7177,224,7176,230,7165,227,7054,212,6926,201,6784,194,6628,190,6290,191,5931,198,5571,205,5229,208,4924,201,4791,192,4675,180"/>
+<area shape="rect" href="28335_23ph___inverter_23ph___voltage__source__inverter_2_user_2main_8c.html" title="三相两电平电压源逆变器主程序" alt="" coords="7394,225,7588,303"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4801,188,4945,197,5276,204,5648,200,6040,192,6430,184,6798,182,6968,186,7123,193,7263,205,7383,222,7395,224,7394,230,7382,227,7262,210,7123,199,6967,191,6798,188,6430,189,6040,197,5648,206,5276,210,4945,203,4801,194,4675,180"/>
+<area shape="rect" href="28335_23ph___inverter_23ph__inverter__offgrid__para_2_user_2main_8c.html" title="三相两电平电压源逆变器主程序, 双机主从并机" alt="" coords="7612,225,7791,303"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4811,189,4966,199,5138,204,5324,205,5726,200,6149,189,6571,179,6969,177,7152,181,7320,189,7470,203,7601,222,7612,225,7611,230,7600,227,7470,208,7319,195,7152,186,6969,182,6571,184,6149,194,5726,205,5324,210,5138,209,4966,204,4811,194,4676,180"/>
+<area shape="rect" href="28335_2_d_c_d_c_2_boost_2_user_2main_8c.html" title="同步Boost变换器, 单电平, 单电压环, CCM" alt="" coords="7815,233,7988,295"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4774,182,4913,188,5288,194,6265,192,6772,191,7229,194,7588,203,7717,211,7803,222,7833,230,7832,235,7802,227,7716,217,7588,209,7229,199,6772,197,6265,198,5288,199,4912,193,4774,188,4676,179"/>
+<area shape="rect" href="28335_2_d_c_d_c_2_buck_2_user_2main_8c.html" title="同步Buck变换器, 单电压环 CCM" alt="" coords="8012,233,8181,295"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4779,183,4926,189,5324,194,6363,191,6903,190,7389,192,7772,202,7909,210,8001,222,8030,230,8028,235,8000,227,7908,216,7772,207,7389,197,6903,195,6363,197,5324,199,4926,194,4779,188,4675,179"/>
+<area shape="rect" href="28335_2_d_c_d_c_2_four___switch___buck___boost_2_user_2main_8c.html" title="四开关升降压DCDC, 单电压环, CCM, 三模式" alt="" coords="8204,225,8375,303"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4785,183,4940,189,5361,195,6460,191,7032,189,7547,191,7952,201,8097,210,8194,222,8205,225,8204,230,8193,227,8096,215,7952,206,7547,196,7032,194,6460,196,5361,200,4940,195,4785,188,4676,179"/>
+<area shape="rect" href="28335_2_d_c_d_c_2_m_p_p_t_2_user_2main_8c.html" title="最大功率点跟踪, 支持INCC\PNO, 不支持INCC&#45;I" alt="" coords="8399,233,8572,295"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4791,184,4954,190,5397,196,6557,191,7160,189,7704,190,8132,200,8285,209,8387,222,8417,230,8416,235,8386,227,8284,215,8131,206,7704,196,7160,194,6557,197,5397,201,4954,195,4790,189,4676,179"/>
+<area shape="rect" href="28335_2_test___projects_2_notch___test_2_user_2main_8c.html" title="陷波器测试" alt="" coords="8596,225,8767,303"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4796,184,4968,191,5435,196,6017,195,6656,191,7292,187,7865,189,8315,199,8476,209,8585,222,8597,225,8595,230,8584,227,8476,214,8315,204,7864,194,7292,193,6656,196,6017,200,5435,202,4968,196,4796,189,4676,179"/>
+<area shape="rect" href="28335_2_test___projects_2_power__1ph___test_2_user_2main_8c.html" title="F28335单相功率分析模块测试" alt="" coords="8790,225,8962,303"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4802,185,4981,191,5471,197,6083,195,6753,190,7421,186,8023,187,8496,198,8666,208,8779,222,8791,225,8790,230,8778,227,8665,213,8496,203,8023,193,7421,192,6753,196,6083,201,5471,202,4981,197,4801,190,4676,179"/>
+<area shape="rect" href="28335_2_test___projects_2_power__3ph__test_2_user_2main_8c.html" title="F28335三相功率分析模块测试" alt="" coords="8986,225,9158,303"/>
+<area shape="poly" title=" " alt="" coords="4676,174,4807,185,4995,192,5507,198,6148,196,6851,190,7550,186,8181,187,8450,190,8677,197,8855,208,8974,222,8987,225,8985,230,8973,227,8854,213,8677,203,8450,196,8181,192,7550,191,6851,196,6148,201,5507,203,4995,198,4807,190,4676,179"/>
+<area shape="poly" title=" " alt="" coords="511,318,493,352,488,350,506,316"/>
+</map>
+</div>
+</div>
+<p><a href="_control___driver_2oled_2oled_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ga372bc446b37ea7d91fe11d671f234c58" id="r_ga372bc446b37ea7d91fe11d671f234c58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga372bc446b37ea7d91fe11d671f234c58">OLED_I2C_BASE</a>&#160;&#160;&#160;<a class="el" href="group___d_r_v___f28335___i_i_c.html#ga32bd7b0e98a96d55221c76b0aff4cbff">I2CA_BASE</a></td></tr>
+<tr class="memdesc:ga372bc446b37ea7d91fe11d671f234c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定使用的I2C外设  <br /></td></tr>
+<tr class="memitem:ga764efb1655297fd3db7678610851ea7d" id="r_ga764efb1655297fd3db7678610851ea7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga764efb1655297fd3db7678610851ea7d">OLED_6X8</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:ga764efb1655297fd3db7678610851ea7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">X轴偏移  <br /></td></tr>
+<tr class="memitem:ga986f0e172f995979409d2b38de51a2ec" id="r_ga986f0e172f995979409d2b38de51a2ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga986f0e172f995979409d2b38de51a2ec">OLED_MAX_ROW</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:ga986f0e172f995979409d2b38de51a2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED最大行数  <br /></td></tr>
+<tr class="memitem:gaf4264dad14d2960b6d186d244f7ab258" id="r_gaf4264dad14d2960b6d186d244f7ab258"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gaf4264dad14d2960b6d186d244f7ab258">OLED_MAX_COLUMN</a>&#160;&#160;&#160;128</td></tr>
+<tr class="memdesc:gaf4264dad14d2960b6d186d244f7ab258"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED最大列数  <br /></td></tr>
+<tr class="memitem:gaf4541768e95e8d3c6e6b17ead91d1a8c" id="r_gaf4541768e95e8d3c6e6b17ead91d1a8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gaf4541768e95e8d3c6e6b17ead91d1a8c">OLED_MAX_PAGE</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:gaf4541768e95e8d3c6e6b17ead91d1a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED最大页数  <br /></td></tr>
+<tr class="memitem:ga7dfa2c4cfbfcba36416046052e7943e8" id="r_ga7dfa2c4cfbfcba36416046052e7943e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga7dfa2c4cfbfcba36416046052e7943e8">OLED_ADDR</a>&#160;&#160;&#160;0x3C</td></tr>
+<tr class="memdesc:ga7dfa2c4cfbfcba36416046052e7943e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED屏幕地址  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ga7ce25ca717affa983000aad4a3165a13" id="r_ga7ce25ca717affa983000aad4a3165a13"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga85e5b201fc32f48e7fd9fe2177735c33">OLED_FROMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga7ce25ca717affa983000aad4a3165a13">OLED_FORMAT</a></td></tr>
+<tr class="memdesc:ga7ce25ca717affa983000aad4a3165a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">枚举, 指定OLED显示整型方式  <br /></td></tr>
+<tr class="memitem:ga7ff3f3b7ef4fa3b3a3267d6d97a317ab" id="r_ga7ff3f3b7ef4fa3b3a3267d6d97a317ab"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga7ff3f3b7ef4fa3b3a3267d6d97a317ab">OLED_FILL</a></td></tr>
+<tr class="memdesc:ga7ff3f3b7ef4fa3b3a3267d6d97a317ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">枚举, 显示多边形显示方式  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ga85e5b201fc32f48e7fd9fe2177735c33" id="r_ga85e5b201fc32f48e7fd9fe2177735c33"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga85e5b201fc32f48e7fd9fe2177735c33">OLED_FROMAT</a> { <a class="el" href="group___c_t_r_l___o_l_e_d.html#gga85e5b201fc32f48e7fd9fe2177735c33adba5bb88007809e69fb73934de9dee87">OLED_BIN</a> = 0U
+, <a class="el" href="group___c_t_r_l___o_l_e_d.html#gga85e5b201fc32f48e7fd9fe2177735c33a3ea7faa0807dae628745a7e42c79711d">OLED_OCT</a> = 1U
+, <a class="el" href="group___c_t_r_l___o_l_e_d.html#gga85e5b201fc32f48e7fd9fe2177735c33a07ac7b1fe980a51aa95772d41525600d">OLED_DEC</a> = 2U
+, <a class="el" href="group___c_t_r_l___o_l_e_d.html#gga85e5b201fc32f48e7fd9fe2177735c33acd741b13bba1545f157d8b416b89c760">OLED_HEX</a> = 3U
+ }</td></tr>
+<tr class="memdesc:ga85e5b201fc32f48e7fd9fe2177735c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">枚举, 指定OLED显示整型方式  <a href="group___c_t_r_l___o_l_e_d.html#ga85e5b201fc32f48e7fd9fe2177735c33">更多...</a><br /></td></tr>
+<tr class="memitem:ga976bfab42b37c5ae0b31992fb3705deb" id="r_ga976bfab42b37c5ae0b31992fb3705deb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> { <a class="el" href="group___c_t_r_l___o_l_e_d.html#gga976bfab42b37c5ae0b31992fb3705deba1f996243e5dd71dbfbad07212118b019">OLED_UNFILLED</a> = 0U
+, <a class="el" href="group___c_t_r_l___o_l_e_d.html#gga976bfab42b37c5ae0b31992fb3705deba09dbc4ed7d071d8fd9ca5ff31d39f83c">OLED_FILLED</a> = 1U
+ }</td></tr>
+<tr class="memdesc:ga976bfab42b37c5ae0b31992fb3705deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">枚举, 显示多边形显示方式  <a href="group___c_t_r_l___o_l_e_d.html#ga976bfab42b37c5ae0b31992fb3705deb">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga7372e46460a371e4d94a0ee7f5f1a1fd" id="r_ga7372e46460a371e4d94a0ee7f5f1a1fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga7372e46460a371e4d94a0ee7f5f1a1fd">OLED_Init</a> (void)</td></tr>
+<tr class="memdesc:ga7372e46460a371e4d94a0ee7f5f1a1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED初始化  <br /></td></tr>
+<tr class="memitem:ga82c9cd4f8d003e9dffca9817fa43349c" id="r_ga82c9cd4f8d003e9dffca9817fa43349c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga82c9cd4f8d003e9dffca9817fa43349c">OLED_Update</a> (void)</td></tr>
+<tr class="memdesc:ga82c9cd4f8d003e9dffca9817fa43349c"><td class="mdescLeft">&#160;</td><td class="mdescRight">将OLED显存数组更新到OLED屏幕  <br /></td></tr>
+<tr class="memitem:ga029e37b9cbbc17649fa02a3cc2c98a29" id="r_ga029e37b9cbbc17649fa02a3cc2c98a29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga029e37b9cbbc17649fa02a3cc2c98a29">OLED_UpdateArea</a> (int16_t X, int16_t Y, uint8_t Width, uint8_t Height)</td></tr>
+<tr class="memdesc:ga029e37b9cbbc17649fa02a3cc2c98a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">将OLED显存数组部分更新到OLED屏幕  <br /></td></tr>
+<tr class="memitem:ga6960de38d41ba87c52e40f8bd4b094d3" id="r_ga6960de38d41ba87c52e40f8bd4b094d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga6960de38d41ba87c52e40f8bd4b094d3">OLED_Clear</a> (void)</td></tr>
+<tr class="memdesc:ga6960de38d41ba87c52e40f8bd4b094d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">将OLED显存数组全部清零  <br /></td></tr>
+<tr class="memitem:gaac92cfe1899db8eb779d133c987c6751" id="r_gaac92cfe1899db8eb779d133c987c6751"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gaac92cfe1899db8eb779d133c987c6751">OLED_ClearArea</a> (int16_t X, int16_t Y, uint8_t Width, uint8_t Height)</td></tr>
+<tr class="memdesc:gaac92cfe1899db8eb779d133c987c6751"><td class="mdescLeft">&#160;</td><td class="mdescRight">将OLED显存数组部分清零  <br /></td></tr>
+<tr class="memitem:ga23c6cc85fd664c7c8c40e0799b0ae261" id="r_ga23c6cc85fd664c7c8c40e0799b0ae261"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga23c6cc85fd664c7c8c40e0799b0ae261">OLED_Reverse</a> (void)</td></tr>
+<tr class="memdesc:ga23c6cc85fd664c7c8c40e0799b0ae261"><td class="mdescLeft">&#160;</td><td class="mdescRight">将OLED显存数组全部取反  <br /></td></tr>
+<tr class="memitem:ga4c1e02aa74ddc41d8c4e168ebc643a3c" id="r_ga4c1e02aa74ddc41d8c4e168ebc643a3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga4c1e02aa74ddc41d8c4e168ebc643a3c">OLED_ReverseArea</a> (int16_t X, int16_t Y, uint8_t Width, uint8_t Height)</td></tr>
+<tr class="memdesc:ga4c1e02aa74ddc41d8c4e168ebc643a3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">将OLED显存数组部分取反  <br /></td></tr>
+<tr class="memitem:gaa331dbadc06f4c13afb97120aae62825" id="r_gaa331dbadc06f4c13afb97120aae62825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gaa331dbadc06f4c13afb97120aae62825">OLED_ShowImage</a> (int16_t X, int16_t Y, uint8_t Width, uint8_t Height, const uint8_t *Image)</td></tr>
+<tr class="memdesc:gaa331dbadc06f4c13afb97120aae62825"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED显示图像  <br /></td></tr>
+<tr class="memitem:ga702041c412b420edd94a154681664202" id="r_ga702041c412b420edd94a154681664202"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga702041c412b420edd94a154681664202">OLED_ShowChar</a> (int16_t X, int16_t Y, char Char)</td></tr>
+<tr class="memdesc:ga702041c412b420edd94a154681664202"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED显示一个字符  <br /></td></tr>
+<tr class="memitem:ga7869abbb812853dbd5673ecd64ccfeab" id="r_ga7869abbb812853dbd5673ecd64ccfeab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga7869abbb812853dbd5673ecd64ccfeab">OLED_ShowString</a> (int16_t X, int16_t Y, char *String)</td></tr>
+<tr class="memdesc:ga7869abbb812853dbd5673ecd64ccfeab"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED显示字符串  <br /></td></tr>
+<tr class="memitem:ga9a8496051d3f0c10130d9d471f0c124e" id="r_ga9a8496051d3f0c10130d9d471f0c124e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga9a8496051d3f0c10130d9d471f0c124e">OLED_ShowUnsignedNum</a> (int16_t X, int16_t Y, uint32_t Number, uint8_t Length, <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga7ce25ca717affa983000aad4a3165a13">OLED_FORMAT</a> format)</td></tr>
+<tr class="memdesc:ga9a8496051d3f0c10130d9d471f0c124e"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED显示数字  <br /></td></tr>
+<tr class="memitem:ga4a403791ec36b102b18a11d01ec6b8e3" id="r_ga4a403791ec36b102b18a11d01ec6b8e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga4a403791ec36b102b18a11d01ec6b8e3">OLED_ShowSignedNum</a> (int16_t X, int16_t Y, int32_t Number, uint8_t Length, <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga7ce25ca717affa983000aad4a3165a13">OLED_FORMAT</a> format)</td></tr>
+<tr class="memdesc:ga4a403791ec36b102b18a11d01ec6b8e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED显示有符号数字  <br /></td></tr>
+<tr class="memitem:gad44b9ca6c1f8ca222561fe145e4eb450" id="r_gad44b9ca6c1f8ca222561fe145e4eb450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gad44b9ca6c1f8ca222561fe145e4eb450">OLED_ShowFloatNum</a> (int16_t X, int16_t Y, float32_t Number, uint8_t IntLength, uint8_t FraLength)</td></tr>
+<tr class="memdesc:gad44b9ca6c1f8ca222561fe145e4eb450"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED显示浮点数字  <br /></td></tr>
+<tr class="memitem:ga844ceaa4803f82d5936ba3dd45e65022" id="r_ga844ceaa4803f82d5936ba3dd45e65022"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga844ceaa4803f82d5936ba3dd45e65022">OLED_DrawPoint</a> (int16_t X, int16_t Y)</td></tr>
+<tr class="memdesc:ga844ceaa4803f82d5936ba3dd45e65022"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定位置画一个点  <br /></td></tr>
+<tr class="memitem:gaccbfe61ff6d99f9b65bb0ab7d2bc508b" id="r_gaccbfe61ff6d99f9b65bb0ab7d2bc508b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gaccbfe61ff6d99f9b65bb0ab7d2bc508b">OLED_GetPoint</a> (int16_t X, int16_t Y)</td></tr>
+<tr class="memdesc:gaccbfe61ff6d99f9b65bb0ab7d2bc508b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定位置点的值  <br /></td></tr>
+<tr class="memitem:gacabff6f3f4a5ea26544cec21aa0b93d8" id="r_gacabff6f3f4a5ea26544cec21aa0b93d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gacabff6f3f4a5ea26544cec21aa0b93d8">OLED_DrawLine</a> (int16_t X0, int16_t Y0, int16_t X1, int16_t Y1)</td></tr>
+<tr class="memdesc:gacabff6f3f4a5ea26544cec21aa0b93d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED画线  <br /></td></tr>
+<tr class="memitem:gad9deca36e5b2cc2dcbf23444ceb3c59c" id="r_gad9deca36e5b2cc2dcbf23444ceb3c59c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gad9deca36e5b2cc2dcbf23444ceb3c59c">OLED_DrawRectangle</a> (int16_t X, int16_t Y, uint8_t Width, uint8_t Height, <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled)</td></tr>
+<tr class="memdesc:gad9deca36e5b2cc2dcbf23444ceb3c59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED矩形  <br /></td></tr>
+<tr class="memitem:ga0705d9e553afe7f32062ea10898e7771" id="r_ga0705d9e553afe7f32062ea10898e7771"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga0705d9e553afe7f32062ea10898e7771">OLED_DrawTriangle</a> (int16_t X0, int16_t Y0, int16_t X1, int16_t Y1, int16_t X2, int16_t Y2, <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled)</td></tr>
+<tr class="memdesc:ga0705d9e553afe7f32062ea10898e7771"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED三角形  <br /></td></tr>
+<tr class="memitem:ga0c7425c5ba85794625dcfa028c91e134" id="r_ga0c7425c5ba85794625dcfa028c91e134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga0c7425c5ba85794625dcfa028c91e134">OLED_DrawCircle</a> (int16_t X, int16_t Y, uint8_t Radius, <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled)</td></tr>
+<tr class="memdesc:ga0c7425c5ba85794625dcfa028c91e134"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED画圆  <br /></td></tr>
+<tr class="memitem:gab080f4a3b1740662e187efc2384b9801" id="r_gab080f4a3b1740662e187efc2384b9801"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gab080f4a3b1740662e187efc2384b9801">OLED_DrawEllipse</a> (int16_t X, int16_t Y, uint8_t A, uint8_t B, <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled)</td></tr>
+<tr class="memdesc:gab080f4a3b1740662e187efc2384b9801"><td class="mdescLeft">&#160;</td><td class="mdescRight">画椭圆  <br /></td></tr>
+<tr class="memitem:gadfeafdf82e5d4ad40918809cef92a6fa" id="r_gadfeafdf82e5d4ad40918809cef92a6fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gadfeafdf82e5d4ad40918809cef92a6fa">OLED_DrawArc</a> (int16_t X, int16_t Y, uint8_t Radius, int16_t StartAngle, int16_t EndAngle, <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled)</td></tr>
+<tr class="memdesc:gadfeafdf82e5d4ad40918809cef92a6fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED画圆弧  <br /></td></tr>
+<tr class="memitem:ga568697a02d0fdf503ea2ded50a1bfe5d" id="r_ga568697a02d0fdf503ea2ded50a1bfe5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga568697a02d0fdf503ea2ded50a1bfe5d">OLED_WriteCommand</a> (uint8_t Command)</td></tr>
+<tr class="memdesc:ga568697a02d0fdf503ea2ded50a1bfe5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED 写命令  <br /></td></tr>
+<tr class="memitem:ga034549a1e1b554b2cd1e8359c3119d24" id="r_ga034549a1e1b554b2cd1e8359c3119d24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga034549a1e1b554b2cd1e8359c3119d24">OLED_WriteData</a> (uint8_t *Data, uint8_t Count)</td></tr>
+<tr class="memdesc:ga034549a1e1b554b2cd1e8359c3119d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED 写数据  <br /></td></tr>
+<tr class="memitem:gaad16e65bcb5fa05008b3801d5ac5ef07" id="r_gaad16e65bcb5fa05008b3801d5ac5ef07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gaad16e65bcb5fa05008b3801d5ac5ef07">OLED_SetCursor</a> (uint8_t Page, uint8_t X)</td></tr>
+<tr class="memdesc:gaad16e65bcb5fa05008b3801d5ac5ef07"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED设置显示光标位置  <br /></td></tr>
+<tr class="memitem:ga7803502eeddd959ac51b71974318de1a" id="r_ga7803502eeddd959ac51b71974318de1a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga7803502eeddd959ac51b71974318de1a">OLED_Pow</a> (uint32_t X, uint32_t Y)</td></tr>
+<tr class="memdesc:ga7803502eeddd959ac51b71974318de1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">次方函数  <br /></td></tr>
+<tr class="memitem:gaddeab9dc9aea233b5d5e741fb7c1cc3d" id="r_gaddeab9dc9aea233b5d5e741fb7c1cc3d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gaddeab9dc9aea233b5d5e741fb7c1cc3d">OLED_pnpoly</a> (uint8_t nvert, int16_t *vertx, int16_t *verty, int16_t testx, int16_t testy)</td></tr>
+<tr class="memdesc:gaddeab9dc9aea233b5d5e741fb7c1cc3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断指定点是否在指定多边形内部  <br /></td></tr>
+<tr class="memitem:ga1b6950930269c5f1d1d25d59a4600381" id="r_ga1b6950930269c5f1d1d25d59a4600381"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga1b6950930269c5f1d1d25d59a4600381">OLED_IsInAngle</a> (int16_t X, int16_t Y, int16_t StartAngle, int16_t EndAngle)</td></tr>
+<tr class="memdesc:ga1b6950930269c5f1d1d25d59a4600381"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断指定点是否在指定角度内部  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ga93569f4971c2477678a8be40110fea3e" id="r_ga93569f4971c2477678a8be40110fea3e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga93569f4971c2477678a8be40110fea3e">OLED_DisplayBuf</a> [8][128]</td></tr>
+<tr class="memdesc:ga93569f4971c2477678a8be40110fea3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">GDDRAM 显存数组镜像数组  <br /></td></tr>
+<tr class="memitem:ga7fc722b0b02713a9ed54aaa4cabef2e1" id="r_ga7fc722b0b02713a9ed54aaa4cabef2e1"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga7fc722b0b02713a9ed54aaa4cabef2e1">OLED_F6x8</a> [95][6]</td></tr>
+<tr class="memdesc:ga7fc722b0b02713a9ed54aaa4cabef2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED字库  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>OLED函数声明-SSD1306/SSD1315 </p>
+<dl class="section author"><dt>作者</dt><dd>Mao Chenbin (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a> 中定义.</p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_c38e7e6077b5427c3d80136a5cbe2b61.html">oled</a></li><li class="navelem"><a href="_control___driver_2oled_2oled_8h.html">oled.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

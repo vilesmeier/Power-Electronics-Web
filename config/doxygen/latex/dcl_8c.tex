@@ -1,0 +1,51 @@
+\doxysection{D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Control\+\_\+\+Driver/dcl/dcl.c 文件参考}
+\hypertarget{dcl_8c}{}\label{dcl_8c}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/dcl/dcl.c@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/dcl/dcl.c}}
+
+
+DCL库浮点型控制器函数定义  
+
+
+{\ttfamily \#include "{}dcl.\+h"{}}\newline
+dcl.\+c 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dcl_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___c_t_r_l___d_c_l_ga9a398ae86e1ca190c08bc29f43d56919}{DCL\+\_\+\+PI\+\_\+\+Init}} (\mbox{\hyperlink{group___c_t_r_l___d_c_l_gad3535921d2d0c60eddf8442429c7e81f}{DCL\+\_\+\+PI}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Flash 启动支持, 将函数搬运至\+RAM内执行 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___d_c_l_ga86714c924f890be6942cb921c5d4c79e}{DCL\+\_\+\+PI\+\_\+\+Set}} (\mbox{\hyperlink{group___c_t_r_l___d_c_l_gad3535921d2d0c60eddf8442429c7e81f}{DCL\+\_\+\+PI}} \texorpdfstring{$\ast$}{*}p, float32\+\_\+t Kp, float32\+\_\+t Ki, float32\+\_\+t Umax, float32\+\_\+t Umin, float32\+\_\+t Imax, float32\+\_\+t isr\+\_\+freq)
+\begin{DoxyCompactList}\small\item\em 配置 \doxylink{group___c_t_r_l___d_c_l_gad3535921d2d0c60eddf8442429c7e81f}{DCL\+\_\+\+PI} 控制器 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___d_c_l_ga9b6dd3c5bd8c50e9e8f0818785685f38}{DCL\+\_\+\+PR\+\_\+\+Init}} (\mbox{\hyperlink{group___c_t_r_l___d_c_l_gaebf58688fc35694aefe4fdfdb1b5f007}{DCL\+\_\+\+PR}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em QPR控制器初始化, Tustin离散化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___d_c_l_ga1cb2b700f568e956025f0b9ef4484d1e}{DCL\+\_\+\+PR\+\_\+\+Set}} (\mbox{\hyperlink{group___c_t_r_l___d_c_l_gaebf58688fc35694aefe4fdfdb1b5f007}{DCL\+\_\+\+PR}} \texorpdfstring{$\ast$}{*}p, float32\+\_\+t Kp, float32\+\_\+t Kr, float32\+\_\+t wc, float32\+\_\+t w0, float32\+\_\+t isr\+\_\+freq)
+\begin{DoxyCompactList}\small\item\em 配置\+QPR控制器 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___d_c_l_gad7ac26c52e21de3bbbc37e75c702b431}{DCL\+\_\+\+PIR\+\_\+\+Init}} (\mbox{\hyperlink{group___c_t_r_l___d_c_l_gaeb5fc5e61a59fbdf844da49b6c570b44}{DCL\+\_\+\+PIR}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em 初始化\+PIR控制器 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___d_c_l_gabc7b18fb5267c19ce189644d9c43c18b}{DCL\+\_\+\+PIR\+\_\+\+Set}} (\mbox{\hyperlink{group___c_t_r_l___d_c_l_gaeb5fc5e61a59fbdf844da49b6c570b44}{DCL\+\_\+\+PIR}} \texorpdfstring{$\ast$}{*}p, float32\+\_\+t kp, float32\+\_\+t ki, float32\+\_\+t kr, float32\+\_\+t Umax, float32\+\_\+t Umin, float32\+\_\+t Imax, float32\+\_\+t wc, float32\+\_\+t w0, float32\+\_\+t isr\+\_\+freq)
+\begin{DoxyCompactList}\small\item\em 配置\+PIR控制器, Tustin离散化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___d_c_l_ga2eeab76047a5c09041165c6c17848c65}{DCL\+\_\+\+PMR\+\_\+\+Init}} (\mbox{\hyperlink{group___c_t_r_l___d_c_l_gaeba8ab7d44fef1cb8c260f2c035aef96}{DCL\+\_\+\+PMR}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em 初始化\+PMR控制器 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___d_c_l_ga5d0874848e5570c769e67b40e065e3f7}{DCL\+\_\+\+PMR\+\_\+\+Harmonic\+\_\+\+Set}} (\mbox{\hyperlink{group___c_t_r_l___d_c_l_gaeba8ab7d44fef1cb8c260f2c035aef96}{DCL\+\_\+\+PMR}} \texorpdfstring{$\ast$}{*}p, uint16\+\_\+t \texorpdfstring{$\ast$}{*}harmonic\+\_\+set, float32\+\_\+t \texorpdfstring{$\ast$}{*}Kr)
+\begin{DoxyCompactList}\small\item\em 为\+PMR控制器设置跟踪谐波次数和\+Kr系数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___d_c_l_ga78d3ccf8ba69629925b8a19e74faae2f}{DCL\+\_\+\+PMR\+\_\+\+Set}} (\mbox{\hyperlink{group___c_t_r_l___d_c_l_gaeba8ab7d44fef1cb8c260f2c035aef96}{DCL\+\_\+\+PMR}} \texorpdfstring{$\ast$}{*}p, float32\+\_\+t Kp, float32\+\_\+t wc, float32\+\_\+t w0, float32\+\_\+t isr\+\_\+freq)
+\begin{DoxyCompactList}\small\item\em 配置\+PMR控制器 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+DCL库浮点型控制器函数定义 
+
+\begin{DoxyWarning}{警告}
+在 include DCLF32.\+h 之前需要先 include \doxylink{_transfer_fun_8h}{Transfer\+Fun.\+h} 
+\end{DoxyWarning}
+\begin{DoxyAuthor}{作者}
+Mao Chenbin (\href{mailto:508038890@qq.com}{\texttt{508038890@qq.\+com}}) 
+\end{DoxyAuthor}
+
+
+在文件 \mbox{\hyperlink{dcl_8c_source}{dcl.\+c}} 中定义.
+

@@ -1,8 +1,0 @@
-<map id="NUEDC&#45;Core/Code/Peripheral_Driver/28335/CAP/cap.c" name="NUEDC&#45;Core/Code/Peripheral_Driver/28335/CAP/cap.c">
-<area shape="rect" id="Node000001" title="driver code of eCAP of F28335" alt="" coords="5,5,198,50"/>
-<area shape="rect" id="Node000002" href="$cap_8h.html" title="ecap driver header" alt="" coords="43,98,96,126"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,51,83,84,78,82,91,49"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="40,174,163,201"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="107,50,110,86,111,126,108,158,103,158,106,126,105,86,102,51"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,125,92,158,87,161,73,127"/>
-</map>

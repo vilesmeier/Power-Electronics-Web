@@ -1,0 +1,107 @@
+\doxysection{RFFT\+\_\+f32\+\_\+sincostable.\+c}
+\hypertarget{_r_f_f_t__f32__sincostable_8c_source}{}\label{_r_f_f_t__f32__sincostable_8c_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/rfft/fpu32\_lib/RFFT\_f32\_sincostable.c@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/rfft/fpu32\_lib/RFFT\_f32\_sincostable.c}}
+\mbox{\hyperlink{_r_f_f_t__f32__sincostable_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00001}00001\ \textcolor{comment}{//\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00005}00005\ \textcolor{comment}{//\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00050}00050\ \textcolor{comment}{//\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00053}00053\ \textcolor{preprocessor}{\#include\ "{}math.h"{}}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00054}00054\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{fpu__rfft_8h}{fpu\_rfft.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00056}00056\ \textcolor{comment}{//===========================================================================}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00057}00057\ \textcolor{comment}{//\ Function:\ void\ RFFT\_f32\_sincostable(RFFT\_F32\_STRUCT\ *fft)}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00058}00058\ \textcolor{comment}{//===========================================================================}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00059}00059\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00060}00060\ \textcolor{comment}{//\ Sin/Cos\ table\ contains\ the\ following\ entries:}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00061}00061\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00062}00062\ \textcolor{comment}{//\ \ \ \ \ +-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00063}00063\ \textcolor{comment}{//\ \ \ 0\ |\ COS(\ 1*2*PI/8)\ \ \ \ |\ Stages\ 1,2,3}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00064}00064\ \textcolor{comment}{//\ \ \ 1\ |\ SIN(\ 1*2*PI/8)\ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00065}00065\ \textcolor{comment}{//\ \ \ 2\ |\ \ \ \ \ \ \ \ 0.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00066}00066\ \textcolor{comment}{//\ \ \ 3\ |\ \ \ \ \ \ \ \ 1.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00067}00067\ \textcolor{comment}{//\ \ \ \ \ +-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00068}00068\ \textcolor{comment}{//\ \ \ 4\ |\ COS(\ 1*2*PI/16)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00069}00069\ \textcolor{comment}{//\ \ \ 5\ |\ SIN(\ 1*2*PI/16)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00070}00070\ \textcolor{comment}{//\ \ \ 6\ |\ COS(\ 2*2*PI/16)\ \ \ |\ Stage\ 4}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00071}00071\ \textcolor{comment}{//\ \ \ 7\ |\ SIN(\ 2*2*PI/16)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00072}00072\ \textcolor{comment}{//\ \ \ 8\ |\ COS(\ 3*2*PI/16)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00073}00073\ \textcolor{comment}{//\ \ \ 9\ |\ SIN(\ 3*2*PI/16)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00074}00074\ \textcolor{comment}{//\ \ 10\ |\ \ \ \ \ \ \ \ 0.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00075}00075\ \textcolor{comment}{//\ \ 11\ |\ \ \ \ \ \ \ \ 1.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00076}00076\ \textcolor{comment}{//\ \ \ \ \ +-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00077}00077\ \textcolor{comment}{//\ \ 12\ |\ COS(\ 1*2*PI/32)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00078}00078\ \textcolor{comment}{//\ \ 13\ |\ SIN(\ 1*2*PI/32)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00079}00079\ \textcolor{comment}{//\ \ 14\ |\ COS(\ 2*2*PI/32)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00080}00080\ \textcolor{comment}{//\ \ 15\ |\ SIN(\ 2*2*PI/32)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00081}00081\ \textcolor{comment}{//\ \ 16\ |\ COS(\ 3*2*PI/32)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00082}00082\ \textcolor{comment}{//\ \ 17\ |\ SIN(\ 3*2*PI/32)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00083}00083\ \textcolor{comment}{//\ \ 18\ |\ COS(\ 4*2*PI/32)\ \ \ |\ Stage\ 5}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00084}00084\ \textcolor{comment}{//\ \ 19\ |\ SIN(\ 4*2*PI/32)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00085}00085\ \textcolor{comment}{//\ \ 20\ |\ COS(\ 5*2*PI/32)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00086}00086\ \textcolor{comment}{//\ \ 21\ |\ SIN(\ 5*2*PI/32)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00087}00087\ \textcolor{comment}{//\ \ 22\ |\ COS(\ 6*2*PI/32)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00088}00088\ \textcolor{comment}{//\ \ 23\ |\ SIN(\ 6*2*PI/32)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00089}00089\ \textcolor{comment}{//\ \ 24\ |\ COS(\ 7*2*PI/32)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00090}00090\ \textcolor{comment}{//\ \ 25\ |\ SIN(\ 7*2*PI/32)\ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00091}00091\ \textcolor{comment}{//\ \ 26\ |\ \ \ \ \ \ \ \ 0.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00092}00092\ \textcolor{comment}{//\ \ 27\ |\ \ \ \ \ \ \ \ 1.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00093}00093\ \textcolor{comment}{//\ \ \ \ \ +-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00094}00094\ \textcolor{comment}{//\ \ 28\ .\ COS(\ N*2*PI/64)\ \ \ .\ Stage\ 6\ \ (N\ =\ 1\ to\ 15)}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00095}00095\ \textcolor{comment}{//\ \ \ \ \ .\ SIN(\ N*2*PI/64)\ \ \ .}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00096}00096\ \textcolor{comment}{//\ \ \ \ \ |\ \ \ \ \ \ \ \ 0.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00097}00097\ \textcolor{comment}{//\ \ \ \ \ |\ \ \ \ \ \ \ \ 1.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00098}00098\ \textcolor{comment}{//\ \ \ \ \ +-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00099}00099\ \textcolor{comment}{//\ \ \ \ \ .\ COS(\ N*2*PI/128)\ \ .\ Stage\ 7\ \ (N\ =\ 1\ to\ 31)}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00100}00100\ \textcolor{comment}{//\ \ \ \ \ .\ SIN(\ N*2*PI/128)\ \ .}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00101}00101\ \textcolor{comment}{//\ \ \ \ \ |\ \ \ \ \ \ \ \ 0.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00102}00102\ \textcolor{comment}{//\ \ \ \ \ |\ \ \ \ \ \ \ \ 1.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00103}00103\ \textcolor{comment}{//\ \ \ \ \ +-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00104}00104\ \textcolor{comment}{//\ \ \ \ \ .\ COS(\ N*2*PI/256)\ \ .\ Stage\ 8\ \ (N\ =\ 1\ to\ 63)}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00105}00105\ \textcolor{comment}{//\ \ \ \ \ .\ SIN(\ N*2*PI/256)\ \ .}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00106}00106\ \textcolor{comment}{//\ \ \ \ \ |\ \ \ \ \ \ \ \ 0.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00107}00107\ \textcolor{comment}{//\ \ \ \ \ |\ \ \ \ \ \ \ \ 1.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00108}00108\ \textcolor{comment}{//\ \ \ \ \ +-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00109}00109\ \textcolor{comment}{//\ \ \ \ \ .\ COS(\ N*2*PI/512)\ \ .\ Stage\ 9\ \ (N\ =\ 1\ to\ 127)}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00110}00110\ \textcolor{comment}{//\ \ \ \ \ .\ SIN(\ N*2*PI/512)\ \ .}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00111}00111\ \textcolor{comment}{//\ \ \ \ \ |\ \ \ \ \ \ \ \ 0.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00112}00112\ \textcolor{comment}{//\ \ \ \ \ |\ \ \ \ \ \ \ \ 1.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00113}00113\ \textcolor{comment}{//\ \ \ \ \ +-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00114}00114\ \textcolor{comment}{//\ \ \ \ \ .\ COS(\ N*2*PI/1024)\ .\ Stage\ 10\ (N\ =\ 1\ to\ 255)}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00115}00115\ \textcolor{comment}{//\ \ \ \ \ .\ SIN(\ N*2*PI/1024)\ .}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00116}00116\ \textcolor{comment}{//\ \ \ \ \ |\ \ \ \ \ \ \ \ 0.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00117}00117\ \textcolor{comment}{//\ \ \ \ \ |\ \ \ \ \ \ \ \ 1.0\ \ \ \ \ \ \ \ |}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00118}00118\ \textcolor{comment}{//\ \ \ \ \ +-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00119}00119\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00120}00120\ \textcolor{comment}{//\ Note:\ Table\ size\ for\ 1K\ FFT\ Real\ =\ 990\ entries}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00121}00121\ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00123}\mbox{\hyperlink{fpu__rfft_8h_a9ba057440b48ec821d12b3afe3223d2e}{00123}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_r_f_f_t__f32__sincostable_8c_adce4305bf7eb28f6ce6336edc3b9ea76}{RFFT\_f32\_sincostable}}(\mbox{\hyperlink{fpu__rfft_8h_a8e0e8c088fc134b9afc9994c3b253faf}{RFFT\_F32\_STRUCT\_Handle}}\ fft)}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00124}00124\ \{}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00125}00125\ \ \ \ \ \textcolor{keywordtype}{float}\ \ tempPI,\ temp;}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00126}00126\ \ \ \ \ uint16\_t\ i,\ j,\ k,\ l,\ N;}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00128}00128\ \ \ \ \ tempPI\ =\ 0.7853981633975;\ \ \ \textcolor{comment}{//\ pi/4}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00129}00129\ \ \ \ \ k\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00130}00130\ \ \ \ \ l\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00131}00131\ \ \ \ \ \textcolor{keywordflow}{for}(i\ =\ 3;\ i\ <=\ fft-\/>\mbox{\hyperlink{struct_r_f_f_t___f32___s_t_r_u_c_t_a17121f2659e2dce87f2e88009b873922}{FFTStages}};\ i++)}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00132}00132\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00133}00133\ \ \ \ \ \ \ \ \ N\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00134}00134\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(j=1;\ j\ <=\ k;\ j\ ++)}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00135}00135\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00136}00136\ \ \ \ \ \ \ \ \ \ \ \ \ temp\ =\ (float)N\ *\ tempPI;}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00137}00137\ \ \ \ \ \ \ \ \ \ \ \ \ fft-\/>\mbox{\hyperlink{struct_r_f_f_t___f32___s_t_r_u_c_t_a78d2fc23b95448331ba5259e25043f60}{CosSinBuf}}[l++]\ =\ cosf(temp);}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00138}00138\ \ \ \ \ \ \ \ \ \ \ \ \ fft-\/>\mbox{\hyperlink{struct_r_f_f_t___f32___s_t_r_u_c_t_a78d2fc23b95448331ba5259e25043f60}{CosSinBuf}}[l++]\ =\ sinf(temp);}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00139}00139\ \ \ \ \ \ \ \ \ \ \ \ \ N++;}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00140}00140\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00141}00141\ \ \ \ \ \ \ \ \ fft-\/>\mbox{\hyperlink{struct_r_f_f_t___f32___s_t_r_u_c_t_a78d2fc23b95448331ba5259e25043f60}{CosSinBuf}}[l++]\ =\ 0.0;}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00142}00142\ \ \ \ \ \ \ \ \ fft-\/>\mbox{\hyperlink{struct_r_f_f_t___f32___s_t_r_u_c_t_a78d2fc23b95448331ba5259e25043f60}{CosSinBuf}}[l++]\ =\ 1.0;}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00143}00143\ \ \ \ \ \ \ \ \ k\ =\ (k\ *\ 2)\ +\ 1;}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00144}00144\ \ \ \ \ \ \ \ \ tempPI\ =\ tempPI\ *\ 0.5;}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00145}00145\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00146}00146\ \}}
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00147}00147\ }
+\DoxyCodeLine{\Hypertarget{_r_f_f_t__f32__sincostable_8c_source_l00148}00148\ \textcolor{comment}{//\ End\ of\ file}}
+
+\end{DoxyCode}

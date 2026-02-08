@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC/NUEDC-Core/Code/Control_Driver/rfft/fpu32_lib/fpu_fft_taylor.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('fpu__fft__taylor_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fpu_fft_taylor.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="fpu__fft__taylor_8h__dep__incl.png" border="0" usemap="#a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu32__lib_2fpu__fft__taylor_8hdep" loading="lazy" alt=""/></div>
+<map name="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu32__lib_2fpu__fft__taylor_8hdep" id="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu32__lib_2fpu__fft__taylor_8hdep">
+<area shape="rect" title=" " alt="" coords="5,5,182,84"/>
+<area shape="rect" href="rfft_8h.html" title="FFT函数声明与结构体定义" alt="" coords="5,132,182,194"/>
+<area shape="poly" title=" " alt="" coords="96,100,96,132,91,132,91,100"/>
+<area shape="rect" href="rfft_8c.html" title="RFFT函数实现" alt="" coords="5,242,182,303"/>
+<area shape="poly" title=" " alt="" coords="96,209,96,241,91,241,91,209"/>
+</map>
+</div>
+</div>
+<p><a href="fpu__fft__taylor_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a8779542067f3f2586477405c41c08b42" id="r_a8779542067f3f2586477405c41c08b42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8779542067f3f2586477405c41c08b42">TAYLOR32</a></td></tr>
+<tr class="memitem:a554b3483448077d61231330bcf755aff" id="r_a554b3483448077d61231330bcf755aff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a554b3483448077d61231330bcf755aff">TAYLOR64</a></td></tr>
+<tr class="memitem:afcf954157973b593d33d2a1a9f662a57" id="r_afcf954157973b593d33d2a1a9f662a57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcf954157973b593d33d2a1a9f662a57">TAYLOR128</a></td></tr>
+<tr class="memitem:acbbf31cc365c7adf7d9ed0142f16ebfd" id="r_acbbf31cc365c7adf7d9ed0142f16ebfd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbbf31cc365c7adf7d9ed0142f16ebfd">TAYLOR256</a></td></tr>
+<tr class="memitem:afdf08afbae3ec537225f41c795413e1e" id="r_afdf08afbae3ec537225f41c795413e1e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdf08afbae3ec537225f41c795413e1e">TAYLOR512</a></td></tr>
+<tr class="memitem:af1c2adb98c718d3af44789cfec5173ff" id="r_af1c2adb98c718d3af44789cfec5173ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1c2adb98c718d3af44789cfec5173ff">TAYLOR1024</a></td></tr>
+<tr class="memitem:af86fc3b21a58d46716e05884f49d18ed" id="r_af86fc3b21a58d46716e05884f49d18ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af86fc3b21a58d46716e05884f49d18ed">TAYLOR2048</a></td></tr>
+<tr class="memitem:ad6bf1b55de1c5ce8b34a1221396bc24d" id="r_ad6bf1b55de1c5ce8b34a1221396bc24d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6bf1b55de1c5ce8b34a1221396bc24d">TAYLOR4096</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="af1c2adb98c718d3af44789cfec5173ff" name="af1c2adb98c718d3af44789cfec5173ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c2adb98c718d3af44789cfec5173ff">&#9670;&#160;</a></span>TAYLOR1024</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAYLOR1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__taylor_8h_source.html">fpu_fft_taylor.h</a> 第 <a class="el" href="fpu__fft__taylor_8h_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afcf954157973b593d33d2a1a9f662a57" name="afcf954157973b593d33d2a1a9f662a57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcf954157973b593d33d2a1a9f662a57">&#9670;&#160;</a></span>TAYLOR128</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAYLOR128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.37898453, 0.38079199, 0.38439855, 0.38978757, 0.39693430, \</div>
+<div class="line">0.40580610, 0.41636277, 0.42855688, 0.44233430, 0.45763459, \</div>
+<div class="line">0.47439163, 0.49253417, 0.51198643, 0.53266878, 0.55449835, \</div>
+<div class="line">0.57738972, 0.60125558, 0.62600731, 0.65155569, 0.67781138, \</div>
+<div class="line">0.70468558, 0.73209047, 0.75993968, 0.78814874, 0.81663540, \</div>
+<div class="line">0.84531993, 0.87412539, 0.90297778, 0.93180621, 0.96054291, \</div>
+<div class="line">0.98912334, 1.01748610, 1.04557286, 1.07332832, 1.10070001, \</div>
+<div class="line">1.12763818, 1.15409558, 1.18002731, 1.20539058, 1.23014455, \</div>
+<div class="line">1.25425013, 1.27766980, 1.30036741, 1.32230811, 1.34345816, \</div>
+<div class="line">1.36378487, 1.38325651, 1.40184231, 1.41951239, 1.43623782, \</div>
+<div class="line">1.45199067, 1.46674403, 1.48047214, 1.49315049, 1.50475593, \</div>
+<div class="line">1.51526683, 1.52466317, 1.53292673, 1.54004120, 1.54599233, \</div>
+<div class="line">1.55076804, 1.55435853, 1.55675635, 1.55795652, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__taylor_8h_source.html">fpu_fft_taylor.h</a> 第 <a class="el" href="fpu__fft__taylor_8h_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af86fc3b21a58d46716e05884f49d18ed" name="af86fc3b21a58d46716e05884f49d18ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af86fc3b21a58d46716e05884f49d18ed">&#9670;&#160;</a></span>TAYLOR2048</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAYLOR2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__taylor_8h_source.html">fpu_fft_taylor.h</a> 第 <a class="el" href="fpu__fft__taylor_8h_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acbbf31cc365c7adf7d9ed0142f16ebfd" name="acbbf31cc365c7adf7d9ed0142f16ebfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbbf31cc365c7adf7d9ed0142f16ebfd">&#9670;&#160;</a></span>TAYLOR256</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAYLOR256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.37881493, 0.37926713, 0.38017099, 0.38152547, 0.38332901, \</div>
+<div class="line">0.38557953, 0.38827442, 0.39141061, 0.39498449, 0.39899197, \</div>
+<div class="line">0.40342850, 0.40828904, 0.41356812, 0.41925979, 0.42535769, \</div>
+<div class="line">0.43185506, 0.43874471, 0.44601909, 0.45367027, 0.46168998, \</div>
+<div class="line">0.47006962, 0.47880027, 0.48787272, 0.49727750, 0.50700487, \</div>
+<div class="line">0.51704488, 0.52738735, 0.53802191, 0.54893803, 0.56012503, \</div>
+<div class="line">0.57157208, 0.58326827, 0.59520259, 0.60736394, 0.61974120, \</div>
+<div class="line">0.63232321, 0.64509880, 0.65805678, 0.67118602, 0.68447540, \</div>
+<div class="line">0.69791387, 0.71149045, 0.72519424, 0.73901445, 0.75294038, \</div>
+<div class="line">0.76696146, 0.78106728, 0.79524754, 0.80949212, 0.82379104, \</div>
+<div class="line">0.83813450, 0.85251290, 0.86691679, 0.88133691, 0.89576421, \</div>
+<div class="line">0.91018984, 0.92460511, 0.93900156, 0.95337092, 0.96770512, \</div>
+<div class="line">0.98199630, 0.99623677, 1.01041906, 1.02453587, 1.03858012, \</div>
+<div class="line">1.05254488, 1.06642343, 1.08020921, 1.09389583, 1.10747708, \</div>
+<div class="line">1.12094691, 1.13429940, 1.14752880, 1.16062950, 1.17359603, \</div>
+<div class="line">1.18642305, 1.19910532, 1.21163775, 1.22401535, 1.23623323, \</div>
+<div class="line">1.24828660, 1.26017079, 1.27188118, 1.28341327, 1.29476263, \</div>
+<div class="line">1.30592488, 1.31689576, 1.32767104, 1.33824658, 1.34861828, \</div>
+<div class="line">1.35878213, 1.36873416, 1.37847046, 1.38798719, 1.39728056, \</div>
+<div class="line">1.40634682, 1.41518232, 1.42378342, 1.43214657, 1.44026829, \</div>
+<div class="line">1.44814513, 1.45577374, 1.46315082, 1.47027315, 1.47713759, \</div>
+<div class="line">1.48374107, 1.49008061, 1.49615331, 1.50195637, 1.50748708, \</div>
+<div class="line">1.51274284, 1.51772114, 1.52241960, 1.52683592, 1.53096796, \</div>
+<div class="line">1.53481366, 1.53837112, 1.54163856, 1.54461431, 1.54729688, \</div>
+<div class="line">1.54968489, 1.55177711, 1.55357247, 1.55507003, 1.55626902, \</div>
+<div class="line">1.55716882, 1.55776894, 1.55806908, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__taylor_8h_source.html">fpu_fft_taylor.h</a> 第 <a class="el" href="fpu__fft__taylor_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8779542067f3f2586477405c41c08b42" name="a8779542067f3f2586477405c41c08b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8779542067f3f2586477405c41c08b42">&#9670;&#160;</a></span>TAYLOR32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAYLOR32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.38237123, 0.41087663, 0.46583536, 0.54344544, 0.63868751, \</div>
+<div class="line">0.74596486, 0.85971224, 0.97485657, 1.08706531, 1.19278260, \</div>
+<div class="line">1.28911107, 1.37362952, 1.44423753, 1.49908871, 1.53662854, \</div>
+<div class="line">1.55570689, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__taylor_8h_source.html">fpu_fft_taylor.h</a> 第 <a class="el" href="fpu__fft__taylor_8h_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad6bf1b55de1c5ce8b34a1221396bc24d" name="ad6bf1b55de1c5ce8b34a1221396bc24d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6bf1b55de1c5ce8b34a1221396bc24d">&#9670;&#160;</a></span>TAYLOR4096</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAYLOR4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__taylor_8h_source.html">fpu_fft_taylor.h</a> 第 <a class="el" href="fpu__fft__taylor_8h_source.html#l00431">431</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afdf08afbae3ec537225f41c795413e1e" name="afdf08afbae3ec537225f41c795413e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf08afbae3ec537225f41c795413e1e">&#9670;&#160;</a></span>TAYLOR512</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAYLOR512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__taylor_8h_source.html">fpu_fft_taylor.h</a> 第 <a class="el" href="fpu__fft__taylor_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a554b3483448077d61231330bcf755aff" name="a554b3483448077d61231330bcf755aff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554b3483448077d61231330bcf755aff">&#9670;&#160;</a></span>TAYLOR64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAYLOR64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.37966265, 0.38687161, 0.40115691, 0.42225837, 0.44979809, \</div>
+<div class="line">0.48329435, 0.52217895, 0.56581673, 0.61352628, 0.66460069, \</div>
+<div class="line">0.71832712, 0.77400443, 0.83095781, 0.88855022, 0.94619013, \</div>
+<div class="line">1.00333565, 1.05949534, 1.11422630, 1.16712988, 1.21784621, \</div>
+<div class="line">1.26604799, 1.31143451, 1.35372644, 1.39266203, 1.42799496, \</div>
+<div class="line">1.45949392, 1.48694401, 1.51014949, 1.52893761, 1.54316299, \</div>
+<div class="line">1.55271196, 1.55750636, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__taylor_8h_source.html">fpu_fft_taylor.h</a> 第 <a class="el" href="fpu__fft__taylor_8h_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_0fd93c14012f780a2e81c2f5b80c75ff.html">rfft</a></li><li class="navelem"><a href="dir_6bd83238c5acd69e2087c7b8f0297dcf.html">fpu32_lib</a></li><li class="navelem"><a href="fpu__fft__taylor_8h.html">fpu_fft_taylor.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

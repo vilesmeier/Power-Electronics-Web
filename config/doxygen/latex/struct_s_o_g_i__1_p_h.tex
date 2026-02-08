@@ -1,0 +1,276 @@
+\doxysection{SOGI\+\_\+1\+PH结构体 参考}
+\hypertarget{struct_s_o_g_i__1_p_h}{}\label{struct_s_o_g_i__1_p_h}\index{SOGI\_1PH@{SOGI\_1PH}}
+
+
+定义\+SOGI-\/单相锁相环结构体  
+
+
+
+
+{\ttfamily \#include $<$pll.\+h$>$}
+
+
+
+SOGI\+\_\+1\+PH 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{struct_s_o_g_i__1_p_h__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{成员变量}
+\begin{DoxyCompactItemize}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_s_o_g_i__1_p_h_ad1baa96a112edf898e79fb20d3ac5a0d}{u}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em 电网电压输入 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_s_o_g_i__1_p_h_a6e8243762a0ce9be882dd7ca2467fbbf}{osg\+\_\+u}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em 正交信号发生器数据输入延时链 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_s_o_g_i__1_p_h_a3b5e05397878bdd57e87708e0accc1c7}{osg\+\_\+qu}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em 正交信号发生器\+Q轴(正交分量)输出延时链 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_s_o_g_i__1_p_h_a34b5ae447df9cffd41e919f6410fc782}{u\+\_\+Q}} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Q轴分量 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_s_o_g_i__1_p_h_a38d3a1bec50eea4dd9a949f8bbd83836}{u\+\_\+D}} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em D轴分量 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_s_o_g_i__1_p_h_ae5d557aac7dae3e333b23e602077a351}{ylf}} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em 环路滤波器输出(PI输出) \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_s_o_g_i__1_p_h_a3b4926cd0a63cdf513eedbf5f778944e}{fo}}
+\begin{DoxyCompactList}\small\item\em PLL输出频率(\+Hz) \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_s_o_g_i__1_p_h_a78db63737144d77b0228f65de09fcd64}{fn}}
+\begin{DoxyCompactList}\small\item\em 标称频率 (Hz) \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_s_o_g_i__1_p_h_aa7afb071b3c17c69fbe3c3a7e85d9d68}{theta}}
+\begin{DoxyCompactList}\small\item\em 相位角输出 (0-\/2\texorpdfstring{$\ast$}{*}pi) \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_s_o_g_i__1_p_h_a636c3cd5bb5f9b6b6cc723d28ff5c0e4}{cosine}}
+\begin{DoxyCompactList}\small\item\em 相位角余弦值 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_s_o_g_i__1_p_h_a9da44f49feda19037072dd9270d4b8b6}{sine}}
+\begin{DoxyCompactList}\small\item\em 相位角正弦值 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_s_o_g_i__1_p_h_a02ee1a02a8fabc010e43199372a77ddd}{delta\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em 中断间隔, 1/f, (s) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f}{SOGI\+\_\+1\+PH\+\_\+\+OSG\+\_\+\+COEFF}} \mbox{\hyperlink{struct_s_o_g_i__1_p_h_a04537ffb34e278b1aa5e66676eff4b83}{osg\+\_\+coeff}}
+\begin{DoxyCompactList}\small\item\em 正弦信号发生器参数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_s_o_g_i__1_p_h___l_p_f___c_o_e_f_f}{SOGI\+\_\+1\+PH\+\_\+\+LPF\+\_\+\+COEFF}} \mbox{\hyperlink{struct_s_o_g_i__1_p_h_a719160907262598c35018215a8226153}{lpf\+\_\+coeff}}
+\begin{DoxyCompactList}\small\item\em 环路滤波器参数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+定义\+SOGI-\/单相锁相环结构体 
+
+SOGI\+\_\+1\+PH可用于产生于电网信号正交的正弦分量, 并且使用这两个信号获取电网相位
+
+\begin{DoxyNote}{注解}
+
+\begin{DoxyItemize}
+\item 环路滤波器就是积分器,将输入的交流信号积分成直流信号,最后输出\+VCO的控制电压信号,VCO最后控制频差
+\item PI控制\+Q轴分量, 目标值为0, Q轴分量为0代表完成锁相
+\item 环路滤波器参数实际为\+PI参数经\+Tustin离散化后的差分方程系数 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00049}{49}} 行定义.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{struct_s_o_g_i__1_p_h_doc-variable-members}
+\doxysubsection{结构体成员变量说明}
+\Hypertarget{struct_s_o_g_i__1_p_h_a636c3cd5bb5f9b6b6cc723d28ff5c0e4}\index{SOGI\_1PH@{SOGI\_1PH}!cosine@{cosine}}
+\index{cosine@{cosine}!SOGI\_1PH@{SOGI\_1PH}}
+\doxysubsubsection{\texorpdfstring{cosine}{cosine}}
+{\footnotesize\ttfamily \label{struct_s_o_g_i__1_p_h_a636c3cd5bb5f9b6b6cc723d28ff5c0e4} 
+float32\+\_\+t SOGI\+\_\+1\+PH\+::cosine}
+
+
+
+相位角余弦值 
+
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00059}{59}} 行定义.
+
+\Hypertarget{struct_s_o_g_i__1_p_h_a02ee1a02a8fabc010e43199372a77ddd}\index{SOGI\_1PH@{SOGI\_1PH}!delta\_t@{delta\_t}}
+\index{delta\_t@{delta\_t}!SOGI\_1PH@{SOGI\_1PH}}
+\doxysubsubsection{\texorpdfstring{delta\_t}{delta\_t}}
+{\footnotesize\ttfamily \label{struct_s_o_g_i__1_p_h_a02ee1a02a8fabc010e43199372a77ddd} 
+float32\+\_\+t SOGI\+\_\+1\+PH\+::delta\+\_\+t}
+
+
+
+中断间隔, 1/f, (s) 
+
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00061}{61}} 行定义.
+
+\Hypertarget{struct_s_o_g_i__1_p_h_a78db63737144d77b0228f65de09fcd64}\index{SOGI\_1PH@{SOGI\_1PH}!fn@{fn}}
+\index{fn@{fn}!SOGI\_1PH@{SOGI\_1PH}}
+\doxysubsubsection{\texorpdfstring{fn}{fn}}
+{\footnotesize\ttfamily \label{struct_s_o_g_i__1_p_h_a78db63737144d77b0228f65de09fcd64} 
+float32\+\_\+t SOGI\+\_\+1\+PH\+::fn}
+
+
+
+标称频率 (Hz) 
+
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00057}{57}} 行定义.
+
+\Hypertarget{struct_s_o_g_i__1_p_h_a3b4926cd0a63cdf513eedbf5f778944e}\index{SOGI\_1PH@{SOGI\_1PH}!fo@{fo}}
+\index{fo@{fo}!SOGI\_1PH@{SOGI\_1PH}}
+\doxysubsubsection{\texorpdfstring{fo}{fo}}
+{\footnotesize\ttfamily \label{struct_s_o_g_i__1_p_h_a3b4926cd0a63cdf513eedbf5f778944e} 
+float32\+\_\+t SOGI\+\_\+1\+PH\+::fo}
+
+
+
+PLL输出频率(\+Hz) 
+
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00056}{56}} 行定义.
+
+\Hypertarget{struct_s_o_g_i__1_p_h_a719160907262598c35018215a8226153}\index{SOGI\_1PH@{SOGI\_1PH}!lpf\_coeff@{lpf\_coeff}}
+\index{lpf\_coeff@{lpf\_coeff}!SOGI\_1PH@{SOGI\_1PH}}
+\doxysubsubsection{\texorpdfstring{lpf\_coeff}{lpf\_coeff}}
+{\footnotesize\ttfamily \label{struct_s_o_g_i__1_p_h_a719160907262598c35018215a8226153} 
+\mbox{\hyperlink{struct_s_o_g_i__1_p_h___l_p_f___c_o_e_f_f}{SOGI\+\_\+1\+PH\+\_\+\+LPF\+\_\+\+COEFF}} SOGI\+\_\+1\+PH\+::lpf\+\_\+coeff}
+
+
+
+环路滤波器参数 
+
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00063}{63}} 行定义.
+
+\Hypertarget{struct_s_o_g_i__1_p_h_a04537ffb34e278b1aa5e66676eff4b83}\index{SOGI\_1PH@{SOGI\_1PH}!osg\_coeff@{osg\_coeff}}
+\index{osg\_coeff@{osg\_coeff}!SOGI\_1PH@{SOGI\_1PH}}
+\doxysubsubsection{\texorpdfstring{osg\_coeff}{osg\_coeff}}
+{\footnotesize\ttfamily \label{struct_s_o_g_i__1_p_h_a04537ffb34e278b1aa5e66676eff4b83} 
+\mbox{\hyperlink{struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f}{SOGI\+\_\+1\+PH\+\_\+\+OSG\+\_\+\+COEFF}} SOGI\+\_\+1\+PH\+::osg\+\_\+coeff}
+
+
+
+正弦信号发生器参数 
+
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00062}{62}} 行定义.
+
+\Hypertarget{struct_s_o_g_i__1_p_h_a3b5e05397878bdd57e87708e0accc1c7}\index{SOGI\_1PH@{SOGI\_1PH}!osg\_qu@{osg\_qu}}
+\index{osg\_qu@{osg\_qu}!SOGI\_1PH@{SOGI\_1PH}}
+\doxysubsubsection{\texorpdfstring{osg\_qu}{osg\_qu}}
+{\footnotesize\ttfamily \label{struct_s_o_g_i__1_p_h_a3b5e05397878bdd57e87708e0accc1c7} 
+float32\+\_\+t SOGI\+\_\+1\+PH\+::osg\+\_\+qu\mbox{[}3\mbox{]}}
+
+
+
+正交信号发生器\+Q轴(正交分量)输出延时链 
+
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00052}{52}} 行定义.
+
+\Hypertarget{struct_s_o_g_i__1_p_h_a6e8243762a0ce9be882dd7ca2467fbbf}\index{SOGI\_1PH@{SOGI\_1PH}!osg\_u@{osg\_u}}
+\index{osg\_u@{osg\_u}!SOGI\_1PH@{SOGI\_1PH}}
+\doxysubsubsection{\texorpdfstring{osg\_u}{osg\_u}}
+{\footnotesize\ttfamily \label{struct_s_o_g_i__1_p_h_a6e8243762a0ce9be882dd7ca2467fbbf} 
+float32\+\_\+t SOGI\+\_\+1\+PH\+::osg\+\_\+u\mbox{[}3\mbox{]}}
+
+
+
+正交信号发生器数据输入延时链 
+
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00051}{51}} 行定义.
+
+\Hypertarget{struct_s_o_g_i__1_p_h_a9da44f49feda19037072dd9270d4b8b6}\index{SOGI\_1PH@{SOGI\_1PH}!sine@{sine}}
+\index{sine@{sine}!SOGI\_1PH@{SOGI\_1PH}}
+\doxysubsubsection{\texorpdfstring{sine}{sine}}
+{\footnotesize\ttfamily \label{struct_s_o_g_i__1_p_h_a9da44f49feda19037072dd9270d4b8b6} 
+float32\+\_\+t SOGI\+\_\+1\+PH\+::sine}
+
+
+
+相位角正弦值 
+
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00060}{60}} 行定义.
+
+\Hypertarget{struct_s_o_g_i__1_p_h_aa7afb071b3c17c69fbe3c3a7e85d9d68}\index{SOGI\_1PH@{SOGI\_1PH}!theta@{theta}}
+\index{theta@{theta}!SOGI\_1PH@{SOGI\_1PH}}
+\doxysubsubsection{\texorpdfstring{theta}{theta}}
+{\footnotesize\ttfamily \label{struct_s_o_g_i__1_p_h_aa7afb071b3c17c69fbe3c3a7e85d9d68} 
+float32\+\_\+t SOGI\+\_\+1\+PH\+::theta}
+
+
+
+相位角输出 (0-\/2\texorpdfstring{$\ast$}{*}pi) 
+
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00058}{58}} 行定义.
+
+\Hypertarget{struct_s_o_g_i__1_p_h_ad1baa96a112edf898e79fb20d3ac5a0d}\index{SOGI\_1PH@{SOGI\_1PH}!u@{u}}
+\index{u@{u}!SOGI\_1PH@{SOGI\_1PH}}
+\doxysubsubsection{\texorpdfstring{u}{u}}
+{\footnotesize\ttfamily \label{struct_s_o_g_i__1_p_h_ad1baa96a112edf898e79fb20d3ac5a0d} 
+float32\+\_\+t SOGI\+\_\+1\+PH\+::u\mbox{[}3\mbox{]}}
+
+
+
+电网电压输入 
+
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00050}{50}} 行定义.
+
+\Hypertarget{struct_s_o_g_i__1_p_h_a38d3a1bec50eea4dd9a949f8bbd83836}\index{SOGI\_1PH@{SOGI\_1PH}!u\_D@{u\_D}}
+\index{u\_D@{u\_D}!SOGI\_1PH@{SOGI\_1PH}}
+\doxysubsubsection{\texorpdfstring{u\_D}{u\_D}}
+{\footnotesize\ttfamily \label{struct_s_o_g_i__1_p_h_a38d3a1bec50eea4dd9a949f8bbd83836} 
+float32\+\_\+t SOGI\+\_\+1\+PH\+::u\+\_\+D\mbox{[}2\mbox{]}}
+
+
+
+D轴分量 
+
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00054}{54}} 行定义.
+
+\Hypertarget{struct_s_o_g_i__1_p_h_a34b5ae447df9cffd41e919f6410fc782}\index{SOGI\_1PH@{SOGI\_1PH}!u\_Q@{u\_Q}}
+\index{u\_Q@{u\_Q}!SOGI\_1PH@{SOGI\_1PH}}
+\doxysubsubsection{\texorpdfstring{u\_Q}{u\_Q}}
+{\footnotesize\ttfamily \label{struct_s_o_g_i__1_p_h_a34b5ae447df9cffd41e919f6410fc782} 
+float32\+\_\+t SOGI\+\_\+1\+PH\+::u\+\_\+Q\mbox{[}2\mbox{]}}
+
+
+
+Q轴分量 
+
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00053}{53}} 行定义.
+
+\Hypertarget{struct_s_o_g_i__1_p_h_ae5d557aac7dae3e333b23e602077a351}\index{SOGI\_1PH@{SOGI\_1PH}!ylf@{ylf}}
+\index{ylf@{ylf}!SOGI\_1PH@{SOGI\_1PH}}
+\doxysubsubsection{\texorpdfstring{ylf}{ylf}}
+{\footnotesize\ttfamily \label{struct_s_o_g_i__1_p_h_ae5d557aac7dae3e333b23e602077a351} 
+float32\+\_\+t SOGI\+\_\+1\+PH\+::ylf\mbox{[}2\mbox{]}}
+
+
+
+环路滤波器输出(PI输出) 
+
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 第 \mbox{\hyperlink{pll_8h_source_l00055}{55}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Control\+\_\+\+Driver/pll/\mbox{\hyperlink{pll_8h}{pll.\+h}}\end{DoxyCompactItemize}

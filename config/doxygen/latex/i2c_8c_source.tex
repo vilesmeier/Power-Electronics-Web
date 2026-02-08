@@ -1,0 +1,66 @@
+\doxysection{i2c.\+c}
+\hypertarget{i2c_8c_source}{}\label{i2c_8c_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/IIC/i2c.c@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/IIC/i2c.c}}
+\mbox{\hyperlink{i2c_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{i2c_8h}{i2c.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00010}\mbox{\hyperlink{group___d_r_v___f28335___i_i_c_ga84df9a5887b8b8230cfe85d18e53900e}{00010}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___i_i_c_ga84df9a5887b8b8230cfe85d18e53900e}{I2C\_Init}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00012}00012\ \ \ \ \ EALLOW;}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00013}00013\ \ \ \ \ GpioCtrlRegs.GPBPUD.bit.GPIO32\ =\ 0;\ \ \ \ \textcolor{comment}{//使能(SDAA)上拉}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00014}00014\ \ \ \ \ GpioCtrlRegs.GPBPUD.bit.GPIO33\ =\ 0;\ \ \ \ \textcolor{comment}{//使能\ (SCLA)上拉}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00015}00015\ \ \ \ \ GpioCtrlRegs.GPBQSEL1.bit.GPIO32\ =\ 3;\ \ \textcolor{comment}{//同步\ (SDAA)}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00016}00016\ \ \ \ \ GpioCtrlRegs.GPBQSEL1.bit.GPIO33\ =\ 3;\ \ \textcolor{comment}{//同步\ (SCLA)}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00017}00017\ \ \ \ \ GpioCtrlRegs.GPBMUX1.bit.GPIO32\ =\ 1;\ \ \ \textcolor{comment}{//配置\ GPIO32为\ SDAA}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00018}00018\ \ \ \ \ GpioCtrlRegs.GPBMUX1.bit.GPIO33\ =\ 1;\ \ \ \textcolor{comment}{//配置GPIO33\ 为SCLA}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00019}00019\ \ \ \ \ I2caRegs.I2CMDR.all\ =\ 0x0000;\ \ \ \textcolor{comment}{//复位IIC}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00021}00021\ \ \ \ \ \textcolor{comment}{//\ 预分频——时钟模块的频率}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00022}00022\ \ \ \ \ I2caRegs.I2CPSC.all\ =\ 14;\ \ \ \ \ \ \ \textcolor{comment}{//预分频\ \ \ IIC模块时钟需设置为7-\/12MHz}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00023}00023\ \ \ \ \ I2caRegs.I2CCLKL\ =\ 50;\ \ \ \textcolor{comment}{//时钟低电平时间值}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00024}00024\ \ \ \ \ I2caRegs.I2CCLKH\ =\ 50;\ \ \ \textcolor{comment}{//时钟高电平时间值}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00025}00025\ \ \ \ \ I2caRegs.I2CIER.all\ =\ 0x00;}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00026}00026\ \ \ \ \ I2caRegs.I2CFFTX.all\ =\ 0x6000;\ \ \ \textcolor{comment}{//启用，设置深度为16(0x6\ <<\ 12)}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00027}00027\ \ \ \ \ I2caRegs.I2CFFRX.all\ =\ 0x6000;\ \ \ \textcolor{comment}{//启用，设置深度为16(0x6\ <<\ 12)}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00028}00028\ \ \ \ \ I2caRegs.I2CMDR.bit.IRS\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00029}00029\ \ \ \ \ I2caRegs.I2CMDR.bit.MST\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00030}00030\ \ \ \ \ I2caRegs.I2CMDR.bit.TRX\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00031}00031\ \ \ \ \ EDIS;}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00032}00032\ \}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00034}\mbox{\hyperlink{group___d_r_v___f28335___i_i_c_ga5352523aad8f6cef92cef0174e2d0d6e}{00034}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___i_i_c_ga5352523aad8f6cef92cef0174e2d0d6e}{I2C\_putData}}(Uint32\ base,Uint16\ data)}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00035}00035\ \{}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00036}00036\ \ \ \ \ \textcolor{keywordflow}{if}\ (base\ ==\ \mbox{\hyperlink{group___d_r_v___f28335___i_i_c_ga32bd7b0e98a96d55221c76b0aff4cbff}{I2CA\_BASE}})}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00037}00037\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00038}00038\ \ \ \ \ \ \ \ \ I2caRegs.I2CDXR\ =\ data;}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00039}00039\ \ \ \ \ \ \ \ \ I2caRegs.I2CMDR.all\ =\ 0x6E20;}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00040}00040\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00041}00041\ \}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00043}\mbox{\hyperlink{group___d_r_v___f28335___i_i_c_ga08f9a3e4a9e29d2710030a547813fef8}{00043}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___i_i_c_ga08f9a3e4a9e29d2710030a547813fef8}{I2C\_setDataCount}}(Uint32\ base,\ Uint16\ count)}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00044}00044\ \{}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00045}00045\ \ \ \ \ \textcolor{keywordflow}{if}\ (base\ ==\ \mbox{\hyperlink{group___d_r_v___f28335___i_i_c_ga32bd7b0e98a96d55221c76b0aff4cbff}{I2CA\_BASE}})}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00046}00046\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00047}00047\ \ \ \ \ \ \ \ \ I2caRegs.I2CCNT\ =\ count;}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00048}00048\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00049}00049\ \}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00051}\mbox{\hyperlink{group___d_r_v___f28335___i_i_c_ga3822a8c9581d825bb52165867cd7deee}{00051}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___d_r_v___f28335___i_i_c_ga3822a8c9581d825bb52165867cd7deee}{I2C\_setTargetAddress}}(Uint32\ base,\ Uint16\ targetAddr)}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00052}00052\ \{}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00053}00053\ \ \ \ \ \textcolor{keywordflow}{if}\ (base\ ==\ \mbox{\hyperlink{group___d_r_v___f28335___i_i_c_ga32bd7b0e98a96d55221c76b0aff4cbff}{I2CA\_BASE}})}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00054}00054\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00055}00055\ \ \ \ \ \ \ \ \ I2caRegs.I2CSAR\ =\ targetAddr;}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00056}00056\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00057}00057\ \}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00059}\mbox{\hyperlink{group___d_r_v___f28335___i_i_c_gac6bdeec8754bab865931d047b1a1e8fd}{00059}}\ Uint16\ \mbox{\hyperlink{group___d_r_v___f28335___i_i_c_gac6bdeec8754bab865931d047b1a1e8fd}{I2C\_isBusBusy}}(Uint32\ base)}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00060}00060\ \{}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00061}00061\ \ \ \ \ \textcolor{keywordflow}{if}\ (base\ ==\ \mbox{\hyperlink{group___d_r_v___f28335___i_i_c_ga32bd7b0e98a96d55221c76b0aff4cbff}{I2CA\_BASE}})}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00062}00062\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00063}00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ I2caRegs.I2CSTR.bit.BB;}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00064}00064\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{i2c_8c_source_l00065}00065\ \}}
+
+\end{DoxyCode}

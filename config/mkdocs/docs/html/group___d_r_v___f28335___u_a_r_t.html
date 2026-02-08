@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: UART驱动</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group___d_r_v___f28335___u_a_r_t.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">UART驱动 <div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___d_r_v.html">外设驱动库</a> &raquo; <a class="el" href="group___d_r_v___f28335.html">F28335驱动库</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+UART驱动 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___d_r_v___f28335___u_a_r_t.png" border="0" usemap="#agroup______d__r__v______f28335______u__a__r__t" loading="lazy" alt=""/></div>
+<map name="agroup______d__r__v______f28335______u__a__r__t" id="agroup______d__r__v______f28335______u__a__r__t">
+<area shape="rect" href="group___d_r_v___f28335.html" title="F28335 外设驱动代码" alt="" coords="5,5,108,33"/>
+<area shape="rect" title=" " alt="" coords="156,5,236,33"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ga9b6401b26df29cb46afa5fff9400354c" id="r_ga9b6401b26df29cb46afa5fff9400354c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9b6401b26df29cb46afa5fff9400354c">SCIA_BASE</a>&#160;&#160;&#160;0U</td></tr>
+<tr class="memdesc:ga9b6401b26df29cb46afa5fff9400354c"><td class="mdescLeft">&#160;</td><td class="mdescRight">select SCI-A port  <br /></td></tr>
+<tr class="memitem:ga00b0b0e3dd54a2fdc583145f107799c6" id="r_ga00b0b0e3dd54a2fdc583145f107799c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga00b0b0e3dd54a2fdc583145f107799c6">SCIB_BASE</a>&#160;&#160;&#160;1U</td></tr>
+<tr class="memdesc:ga00b0b0e3dd54a2fdc583145f107799c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">select SCI-B port  <br /></td></tr>
+<tr class="memitem:gac9bba548a099e6b5b64045cea4d4282f" id="r_gac9bba548a099e6b5b64045cea4d4282f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac9bba548a099e6b5b64045cea4d4282f">SCIC_BASE</a>&#160;&#160;&#160;2U</td></tr>
+<tr class="memdesc:gac9bba548a099e6b5b64045cea4d4282f"><td class="mdescLeft">&#160;</td><td class="mdescRight">select SCI-C port  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gad7d9735eb6d12d58232f616020798946" id="r_gad7d9735eb6d12d58232f616020798946"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad7d9735eb6d12d58232f616020798946">UART_Init</a> ()</td></tr>
+<tr class="memdesc:gad7d9735eb6d12d58232f616020798946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init SCI-c  <br /></td></tr>
+<tr class="memitem:ga62cd2632b61f0f11f05a028d7d7cea13" id="r_ga62cd2632b61f0f11f05a028d7d7cea13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga62cd2632b61f0f11f05a028d7d7cea13">UART_Set</a> (Uint32 baud)</td></tr>
+<tr class="memdesc:ga62cd2632b61f0f11f05a028d7d7cea13"><td class="mdescLeft">&#160;</td><td class="mdescRight">config baud rate  <br /></td></tr>
+<tr class="memitem:ga4c86107cd49c2644ef6abd5d0c6f7194" id="r_ga4c86107cd49c2644ef6abd5d0c6f7194"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4c86107cd49c2644ef6abd5d0c6f7194">UART_SendChar</a> (Uint8 send)</td></tr>
+<tr class="memdesc:ga4c86107cd49c2644ef6abd5d0c6f7194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Char  <br /></td></tr>
+<tr class="memitem:ga82e92c56017c6ef93fc5098c3227306c" id="r_ga82e92c56017c6ef93fc5098c3227306c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga82e92c56017c6ef93fc5098c3227306c">UART_ReceiveChar</a> (Uint8 *data)</td></tr>
+<tr class="memdesc:ga82e92c56017c6ef93fc5098c3227306c"><td class="mdescLeft">&#160;</td><td class="mdescRight">receive data from UART  <br /></td></tr>
+<tr class="memitem:gab0704d434e9b7a441faa3aac78d037b3" id="r_gab0704d434e9b7a441faa3aac78d037b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab0704d434e9b7a441faa3aac78d037b3">SCI_writeCharArray</a> (Uint32 base, Uint8 *data, Uint8 length)</td></tr>
+<tr class="memdesc:gab0704d434e9b7a441faa3aac78d037b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">send data to txfifo  <br /></td></tr>
+<tr class="memitem:ga4e62244dd07d4d29ad496cc0a9627874" id="r_ga4e62244dd07d4d29ad496cc0a9627874"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4e62244dd07d4d29ad496cc0a9627874">UART_ReceiveString</a> (Uint8 *data, Uint8 length)</td></tr>
+<tr class="memdesc:ga4e62244dd07d4d29ad496cc0a9627874"><td class="mdescLeft">&#160;</td><td class="mdescRight">get data from rxfifo  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="ga9b6401b26df29cb46afa5fff9400354c" name="ga9b6401b26df29cb46afa5fff9400354c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b6401b26df29cb46afa5fff9400354c">&#9670;&#160;</a></span>SCIA_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCIA_BASE&#160;&#160;&#160;0U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>select SCI-A port </p>
+
+<p class="definition">在文件 <a class="el" href="uart_8h_source.html">uart.h</a> 第 <a class="el" href="uart_8h_source.html#l00017">17</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga00b0b0e3dd54a2fdc583145f107799c6" name="ga00b0b0e3dd54a2fdc583145f107799c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00b0b0e3dd54a2fdc583145f107799c6">&#9670;&#160;</a></span>SCIB_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCIB_BASE&#160;&#160;&#160;1U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>select SCI-B port </p>
+
+<p class="definition">在文件 <a class="el" href="uart_8h_source.html">uart.h</a> 第 <a class="el" href="uart_8h_source.html#l00018">18</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gac9bba548a099e6b5b64045cea4d4282f" name="gac9bba548a099e6b5b64045cea4d4282f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9bba548a099e6b5b64045cea4d4282f">&#9670;&#160;</a></span>SCIC_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCIC_BASE&#160;&#160;&#160;2U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>select SCI-C port </p>
+
+<p class="definition">在文件 <a class="el" href="uart_8h_source.html">uart.h</a> 第 <a class="el" href="uart_8h_source.html#l00019">19</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="gab0704d434e9b7a441faa3aac78d037b3" name="gab0704d434e9b7a441faa3aac78d037b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab0704d434e9b7a441faa3aac78d037b3">&#9670;&#160;</a></span>SCI_writeCharArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SCI_writeCharArray </td>
+          <td>(</td>
+          <td class="paramtype">Uint32</td>          <td class="paramname"><span class="paramname"><em>base</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Uint8 *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Uint8</td>          <td class="paramname"><span class="paramname"><em>length</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>send data to txfifo </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>data pointer </td></tr>
+    <tr><td class="paramname">length</td><td>length of transmit data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="uart_8c_source.html">uart.c</a> 第 <a class="el" href="uart_8c_source.html#l00078">78</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___d_r_v___f28335___u_a_r_t_gab0704d434e9b7a441faa3aac78d037b3_cgraph.png" border="0" usemap="#agroup___d_r_v___f28335___u_a_r_t_gab0704d434e9b7a441faa3aac78d037b3_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup___d_r_v___f28335___u_a_r_t_gab0704d434e9b7a441faa3aac78d037b3_cgraph" id="agroup___d_r_v___f28335___u_a_r_t_gab0704d434e9b7a441faa3aac78d037b3_cgraph">
+<area shape="rect" title="send data to txfifo" alt="" coords="5,5,142,33"/>
+<area shape="rect" href="group___d_r_v___f28335___u_a_r_t.html#ga4c86107cd49c2644ef6abd5d0c6f7194" title="Send Char" alt="" coords="190,5,306,33"/>
+<area shape="poly" title=" " alt="" coords="142,16,174,16,174,22,142,22"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="gad7d9735eb6d12d58232f616020798946" name="gad7d9735eb6d12d58232f616020798946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7d9735eb6d12d58232f616020798946">&#9670;&#160;</a></span>UART_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UART_Init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Init SCI-c </p>
+
+<p class="definition">在文件 <a class="el" href="uart_8c_source.html">uart.c</a> 第 <a class="el" href="uart_8c_source.html#l00004">4</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga82e92c56017c6ef93fc5098c3227306c" name="ga82e92c56017c6ef93fc5098c3227306c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga82e92c56017c6ef93fc5098c3227306c">&#9670;&#160;</a></span>UART_ReceiveChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UART_ReceiveChar </td>
+          <td>(</td>
+          <td class="paramtype">Uint8 *</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>receive data from UART </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>pointer to data placed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="uart_8c_source.html">uart.c</a> 第 <a class="el" href="uart_8c_source.html#l00071">71</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga4e62244dd07d4d29ad496cc0a9627874" name="ga4e62244dd07d4d29ad496cc0a9627874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e62244dd07d4d29ad496cc0a9627874">&#9670;&#160;</a></span>UART_ReceiveString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UART_ReceiveString </td>
+          <td>(</td>
+          <td class="paramtype">Uint8 *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Uint8</td>          <td class="paramname"><span class="paramname"><em>length</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get data from rxfifo </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>data pointer to where data are placed </td></tr>
+    <tr><td class="paramname">length</td><td>receive data length </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="uart_8c_source.html">uart.c</a> 第 <a class="el" href="uart_8c_source.html#l00088">88</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___d_r_v___f28335___u_a_r_t_ga4e62244dd07d4d29ad496cc0a9627874_cgraph.png" border="0" usemap="#agroup___d_r_v___f28335___u_a_r_t_ga4e62244dd07d4d29ad496cc0a9627874_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup___d_r_v___f28335___u_a_r_t_ga4e62244dd07d4d29ad496cc0a9627874_cgraph" id="agroup___d_r_v___f28335___u_a_r_t_ga4e62244dd07d4d29ad496cc0a9627874_cgraph">
+<area shape="rect" title="get data from rxfifo" alt="" coords="5,5,145,33"/>
+<area shape="rect" href="group___d_r_v___f28335___u_a_r_t.html#ga82e92c56017c6ef93fc5098c3227306c" title="receive data from UART" alt="" coords="193,5,326,33"/>
+<area shape="poly" title=" " alt="" coords="145,16,177,16,177,22,145,22"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga4c86107cd49c2644ef6abd5d0c6f7194" name="ga4c86107cd49c2644ef6abd5d0c6f7194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c86107cd49c2644ef6abd5d0c6f7194">&#9670;&#160;</a></span>UART_SendChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UART_SendChar </td>
+          <td>(</td>
+          <td class="paramtype">Uint8</td>          <td class="paramname"><span class="paramname"><em>send</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send Char </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">send</td><td>data to be sent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="uart_8c_source.html">uart.c</a> 第 <a class="el" href="uart_8c_source.html#l00066">66</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga62cd2632b61f0f11f05a028d7d7cea13" name="ga62cd2632b61f0f11f05a028d7d7cea13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62cd2632b61f0f11f05a028d7d7cea13">&#9670;&#160;</a></span>UART_Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UART_Set </td>
+          <td>(</td>
+          <td class="paramtype">Uint32</td>          <td class="paramname"><span class="paramname"><em>baud</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>config baud rate </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">baud</td><td>baud rate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="uart_8c_source.html">uart.c</a> 第 <a class="el" href="uart_8c_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

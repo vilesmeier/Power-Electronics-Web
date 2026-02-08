@@ -1,0 +1,78 @@
+\doxysection{D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Control\+\_\+\+Driver/pll/pll.h 文件参考}
+\hypertarget{pll_8h}{}\label{pll_8h}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/pll/pll.h@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/pll/pll.h}}
+
+
+单相/三相锁相环函数声明  
+
+
+{\ttfamily \#include "{}stdint.\+h"{}}\newline
+{\ttfamily \#include "{}inc/hw\+\_\+types.\+h"{}}\newline
+pll.\+h 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{pll_8h__incl}
+\end{center}
+\end{figure}
+此图展示该文件被哪些文件直接或间接地引用了\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{pll_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{结构体}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_s_o_g_i__1_p_h___o_s_g___c_o_e_f_f}{SOGI\+\_\+1\+PH\+\_\+\+OSG\+\_\+\+COEFF}}
+\begin{DoxyCompactList}\small\item\em SOGI 单相 正交信号发生器 参数 \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_o_g_i__1_p_h___l_p_f___c_o_e_f_f}{SOGI\+\_\+1\+PH\+\_\+\+LPF\+\_\+\+COEFF}}
+\begin{DoxyCompactList}\small\item\em 定义\+SOGI内置一阶低通滤波器参数 \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_o_g_i__1_p_h}{SOGI\+\_\+1\+PH}}
+\begin{DoxyCompactList}\small\item\em 定义\+SOGI-\/单相锁相环结构体 \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_r_f__3_p_h___l_p_f___c_o_e_f_f}{SRF\+\_\+3\+PH\+\_\+\+LPF\+\_\+\+COEFF}}
+\begin{DoxyCompactList}\small\item\em Defines the coefficients for a loop filter in \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH}}
+\begin{DoxyCompactList}\small\item\em Defines the \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} structure \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_d_d_s_r_f__3_p_h___l_p_f___c_o_e_f_f}{DDSRF\+\_\+3\+PH\+\_\+\+LPF\+\_\+\+COEFF}}
+\begin{DoxyCompactList}\small\item\em Defines the coefficients for a loop filter \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH}}
+\begin{DoxyCompactList}\small\item\em Defines the \doxylink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH} structure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_ga6af2cb6d025984e7461176621118d8da}{SOGI\+\_\+1\+PH\+\_\+\+Init}} (\mbox{\hyperlink{struct_s_o_g_i__1_p_h}{SOGI\+\_\+1\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em 结构体初始化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gaf15b995d2b03597fb9b39932285bdf85}{SOGI\+\_\+1\+PH\+\_\+coeff\+\_\+calc}} (\mbox{\hyperlink{struct_s_o_g_i__1_p_h}{SOGI\+\_\+1\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em 计算\+SOGI结构体参数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gaac5dc41f65a9efa844ad311c51cf3c7f}{SOGI\+\_\+1\+PH\+\_\+\+Set}} (\mbox{\hyperlink{struct_s_o_g_i__1_p_h}{SOGI\+\_\+1\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj, float32\+\_\+t ac\+Freq, float32\+\_\+t isr\+Frequency, float32\+\_\+t lpf\+\_\+b0, float32\+\_\+t lpf\+\_\+b1)
+\begin{DoxyCompactList}\small\item\em 配置\+SOGI结构体 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gac68357b197b5778d423968938fe59e29}{SOGI\+\_\+1\+PH\+\_\+\+Run}} (\mbox{\hyperlink{struct_s_o_g_i__1_p_h}{SOGI\+\_\+1\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj, float32\+\_\+t ac\+Value)
+\begin{DoxyCompactList}\small\item\em 执行 SOGI 单相锁相环 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_ga2826ad35dce8723d331004e797beadd4}{SRF\+\_\+3\+PH\+\_\+\+Init}} (\mbox{\hyperlink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em Reset \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} module \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gaa461167a3a2ad945a1b0da4f6694077c}{SRF\+\_\+3\+PH\+\_\+\+Set}} (float32\+\_\+t grid\+\_\+freq, float32\+\_\+t delta\+\_\+t, \mbox{\hyperlink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em Initialize \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} module \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gab5a96d323b79646449adf4ea57322fa2}{SRF\+\_\+3\+PH\+\_\+\+Run}} (float32\+\_\+t v\+\_\+q, \mbox{\hyperlink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em Run \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} module \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gae9004fa2910a2eae2be44598dc8556bb}{DDSRF\+\_\+3\+PH\+\_\+\+Init}} (\mbox{\hyperlink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em Reset \doxylink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH} module \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gaa64487c6508a531541965b98848e75d8}{DDSRF\+\_\+3\+PH\+\_\+\+Set}} (float32\+\_\+t grid\+\_\+freq, float32\+\_\+t delta\+\_\+t, float32\+\_\+t k1, float32\+\_\+t k2, \mbox{\hyperlink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj)
+\begin{DoxyCompactList}\small\item\em Initialize \doxylink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH} module \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___c_t_r_l___p_l_l_gacabde816e5c373cf1e2d16dcfb6052e4}{DDSRF\+\_\+3\+PH\+\_\+\+Run}} (\mbox{\hyperlink{struct_d_d_s_r_f__3_p_h}{DDSRF\+\_\+3\+PH}} \texorpdfstring{$\ast$}{*}spll\+\_\+obj, float32\+\_\+t d\+\_\+p, float32\+\_\+t d\+\_\+n, float32\+\_\+t q\+\_\+p, float32\+\_\+t q\+\_\+n)
+\begin{DoxyCompactList}\small\item\em Run \doxylink{struct_s_r_f__3_p_h}{SRF\+\_\+3\+PH} module \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+单相/三相锁相环函数声明 
+
+\begin{DoxyAuthor}{作者}
+Mao Chenbin (\href{mailto:508038890@qq.com}{\texttt{508038890@qq.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyNote}{注解}
+单相： SOGI-\/\+PLL; 三相：\+SRF-\/\+PLL, DDSRF-\/\+PLL 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{pll_8h_source}{pll.\+h}} 中定义.
+

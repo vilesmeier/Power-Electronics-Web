@@ -1,9 +1,0 @@
-<map id="VSG" name="VSG">
-<area shape="rect" id="Node000001" title="虚拟同步机控制 结构体定义" alt="" coords="109,125,158,152"/>
-<area shape="rect" id="Node000002" href="$structdcl__df23.html" title="定义三阶直接形式Ⅱ（DF23）控制器结构体" alt="" coords="5,5,76,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,44,95,100,119,123,116,127,90,103,52,47"/>
-<area shape="rect" id="Node000003" href="$structdcl__df11.html" title="定义一阶直接形式Ⅰ（DF11）控制器结构体" alt="" coords="99,5,168,32"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,48,136,125,131,125,131,48"/>
-<area shape="rect" id="Node000004" href="$struct_d_e_l_a_y.html" title="数组延迟链结构体定义" alt="" coords="246,5,310,32"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="277,48,268,77,250,103,229,119,205,129,160,138,158,133,203,124,227,114,247,99,263,75,272,47"/>
-</map>

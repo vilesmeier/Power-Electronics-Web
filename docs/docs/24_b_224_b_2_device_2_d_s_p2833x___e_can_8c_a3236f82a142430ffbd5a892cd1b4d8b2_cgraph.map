@@ -1,7 +1,0 @@
-<map id="InitECanGpio" name="InitECanGpio">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,101,60"/>
-<area shape="rect" id="Node000002" href="$22_a_2_p_q_2_device_2_d_s_p2833x___e_can_8c.html#ada0bb1162d837ea1b8da3ec590f4ef11" title=" " alt="" coords="149,5,251,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,35,133,29,134,34,102,40"/>
-<area shape="rect" id="Node000003" href="$22_a_2_p_q_2_device_2_d_s_p2833x___e_can_8c.html#acfd0743b814a73a27b327164fa30d09a" title=" " alt="" coords="149,57,251,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="102,51,134,57,133,62,101,57"/>
-</map>

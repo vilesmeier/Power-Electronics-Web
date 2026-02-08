@@ -1,0 +1,28 @@
+\doxysection{modulate.\+c}
+\hypertarget{modulate_8c_source}{}\label{modulate_8c_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/modulate/modulate.c@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/modulate/modulate.c}}
+\mbox{\hyperlink{modulate_8c}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00008}00008\ \textcolor{comment}{//\ Flash\ 启动支持,\ 将函数搬运至RAM}}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00009}00009\ \textcolor{preprocessor}{\#pragma\ CODE\_SECTION(Modulate\_Init,\ "{}.TI.ramfunc"{});}}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00010}00010\ \textcolor{preprocessor}{\#pragma\ CODE\_SECTION(Modulate\_Set,\ "{}.TI.ramfunc"{});}}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{modulate_8h}{modulate.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00014}\mbox{\hyperlink{group___c_t_r_l___m_o_d_ga996f9b6a559031309fa6639bddf1b852}{00014}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga996f9b6a559031309fa6639bddf1b852}{Modulate\_Init}}(\mbox{\hyperlink{struct_m_o_d}{MOD}}*\ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}})}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}-\/>comp1\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}-\/>comp2\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00018}00018\ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}-\/>comp3\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00019}00019\ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}-\/>tbprd\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00020}00020\ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}-\/>half\_tbprd\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00021}00021\ \}}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00023}\mbox{\hyperlink{group___c_t_r_l___m_o_d_ga7ec773e0dd3b93e350d1f4b3c9932813}{00023}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___c_t_r_l___m_o_d_ga7ec773e0dd3b93e350d1f4b3c9932813}{Modulate\_Set}}(\mbox{\hyperlink{struct_m_o_d}{MOD}}*\ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}},\ uint16\_t\ tbprd)}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00024}00024\ \{}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00025}00025\ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}-\/>tbprd\ =\ tbprd;}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00026}00026\ \ \ \ \ \mbox{\hyperlink{280049_c_2_test___projects_2_modulate___test_2main_8c_a8d91926ab2cd08d0afc22ea5b27dc62c}{mod}}-\/>half\_tbprd\ =\ tbprd\ *\ 0.5f;}
+\DoxyCodeLine{\Hypertarget{modulate_8c_source_l00027}00027\ \}}
+
+\end{DoxyCode}

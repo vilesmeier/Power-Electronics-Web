@@ -1,7 +1,0 @@
-<map id="lcdSetAddress" name="lcdSetAddress">
-<area shape="rect" id="Node000001" title="set courser position" alt="" coords="5,32,107,60"/>
-<area shape="rect" id="Node000002" href="$_l_c_d___s_t7735_s_8c.html#a71f317c08f5a4fd34f4e66b7413e0381" title="select register" alt="" coords="155,5,273,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,35,139,29,140,34,108,40"/>
-<area shape="rect" id="Node000003" href="$_l_c_d___s_t7735_s_8c.html#a4c41fe8c154e5beccd73c8b5042f497f" title="write 8&#45;bit data" alt="" coords="158,57,270,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,51,143,57,142,62,107,57"/>
-</map>

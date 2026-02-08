@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: D:/Codes/NUEDC/NUEDC-Core/Code/Control_Driver/rfft/fpu32_lib/fpu_fft_triang.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('fpu__fft__triang_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fpu_fft_triang.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="fpu__fft__triang_8h__dep__incl.png" border="0" usemap="#a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu32__lib_2fpu__fft__triang_8hdep" loading="lazy" alt=""/></div>
+<map name="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu32__lib_2fpu__fft__triang_8hdep" id="a_d_1_2_codes_2_n_u_e_d_c_2_n_u_e_d_c-_core_2_code_2_control___driver_2rfft_2fpu32__lib_2fpu__fft__triang_8hdep">
+<area shape="rect" title=" " alt="" coords="5,5,182,84"/>
+<area shape="rect" href="rfft_8h.html" title="FFT函数声明与结构体定义" alt="" coords="5,132,182,194"/>
+<area shape="poly" title=" " alt="" coords="96,100,96,132,91,132,91,100"/>
+<area shape="rect" href="rfft_8c.html" title="RFFT函数实现" alt="" coords="5,242,182,303"/>
+<area shape="poly" title=" " alt="" coords="96,209,96,241,91,241,91,209"/>
+</map>
+</div>
+</div>
+<p><a href="fpu__fft__triang_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a9329249d02436893fbc0521c1f18ecfa" id="r_a9329249d02436893fbc0521c1f18ecfa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9329249d02436893fbc0521c1f18ecfa">TRIANG32</a></td></tr>
+<tr class="memitem:a8b365885f9778ed34b5fe8dafba2b7b0" id="r_a8b365885f9778ed34b5fe8dafba2b7b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b365885f9778ed34b5fe8dafba2b7b0">TRIANG64</a></td></tr>
+<tr class="memitem:a8762b630b99ab4d826179f2f84744e03" id="r_a8762b630b99ab4d826179f2f84744e03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8762b630b99ab4d826179f2f84744e03">TRIANG128</a></td></tr>
+<tr class="memitem:addd267277e9084f022b4caab794a5063" id="r_addd267277e9084f022b4caab794a5063"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addd267277e9084f022b4caab794a5063">TRIANG256</a></td></tr>
+<tr class="memitem:a6f10d189d2192fadd63c53e39e032e5b" id="r_a6f10d189d2192fadd63c53e39e032e5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f10d189d2192fadd63c53e39e032e5b">TRIANG512</a></td></tr>
+<tr class="memitem:a14f11165ea57375a2acfbff4419ca983" id="r_a14f11165ea57375a2acfbff4419ca983"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14f11165ea57375a2acfbff4419ca983">TRIANG1024</a></td></tr>
+<tr class="memitem:a80b5dbaf82cf6df113772ea4877df30a" id="r_a80b5dbaf82cf6df113772ea4877df30a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80b5dbaf82cf6df113772ea4877df30a">TRIANG2048</a></td></tr>
+<tr class="memitem:accbfc5ec204bc5ab4b5d705822b7bc85" id="r_accbfc5ec204bc5ab4b5d705822b7bc85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accbfc5ec204bc5ab4b5d705822b7bc85">TRIANG4096</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="a14f11165ea57375a2acfbff4419ca983" name="a14f11165ea57375a2acfbff4419ca983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14f11165ea57375a2acfbff4419ca983">&#9670;&#160;</a></span>TRIANG1024</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRIANG1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__triang_8h_source.html">fpu_fft_triang.h</a> 第 <a class="el" href="fpu__fft__triang_8h_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8762b630b99ab4d826179f2f84744e03" name="a8762b630b99ab4d826179f2f84744e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8762b630b99ab4d826179f2f84744e03">&#9670;&#160;</a></span>TRIANG128</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRIANG128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00781250, 0.02343750, 0.03906250, 0.05468750, 0.07031250, \</div>
+<div class="line">0.08593750, 0.10156250, 0.11718750, 0.13281250, 0.14843750, \</div>
+<div class="line">0.16406250, 0.17968750, 0.19531250, 0.21093750, 0.22656250, \</div>
+<div class="line">0.24218750, 0.25781250, 0.27343750, 0.28906250, 0.30468750, \</div>
+<div class="line">0.32031250, 0.33593750, 0.35156250, 0.36718750, 0.38281250, \</div>
+<div class="line">0.39843750, 0.41406250, 0.42968750, 0.44531250, 0.46093750, \</div>
+<div class="line">0.47656250, 0.49218750, 0.50781250, 0.52343750, 0.53906250, \</div>
+<div class="line">0.55468750, 0.57031250, 0.58593750, 0.60156250, 0.61718750, \</div>
+<div class="line">0.63281250, 0.64843750, 0.66406250, 0.67968750, 0.69531250, \</div>
+<div class="line">0.71093750, 0.72656250, 0.74218750, 0.75781250, 0.77343750, \</div>
+<div class="line">0.78906250, 0.80468750, 0.82031250, 0.83593750, 0.85156250, \</div>
+<div class="line">0.86718750, 0.88281250, 0.89843750, 0.91406250, 0.92968750, \</div>
+<div class="line">0.94531250, 0.96093750, 0.97656250, 0.99218750, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__triang_8h_source.html">fpu_fft_triang.h</a> 第 <a class="el" href="fpu__fft__triang_8h_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a80b5dbaf82cf6df113772ea4877df30a" name="a80b5dbaf82cf6df113772ea4877df30a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b5dbaf82cf6df113772ea4877df30a">&#9670;&#160;</a></span>TRIANG2048</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRIANG2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__triang_8h_source.html">fpu_fft_triang.h</a> 第 <a class="el" href="fpu__fft__triang_8h_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a id="addd267277e9084f022b4caab794a5063" name="addd267277e9084f022b4caab794a5063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addd267277e9084f022b4caab794a5063">&#9670;&#160;</a></span>TRIANG256</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRIANG256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00390625, 0.01171875, 0.01953125, 0.02734375, 0.03515625, \</div>
+<div class="line">0.04296875, 0.05078125, 0.05859375, 0.06640625, 0.07421875, \</div>
+<div class="line">0.08203125, 0.08984375, 0.09765625, 0.10546875, 0.11328125, \</div>
+<div class="line">0.12109375, 0.12890625, 0.13671875, 0.14453125, 0.15234375, \</div>
+<div class="line">0.16015625, 0.16796875, 0.17578125, 0.18359375, 0.19140625, \</div>
+<div class="line">0.19921875, 0.20703125, 0.21484375, 0.22265625, 0.23046875, \</div>
+<div class="line">0.23828125, 0.24609375, 0.25390625, 0.26171875, 0.26953125, \</div>
+<div class="line">0.27734375, 0.28515625, 0.29296875, 0.30078125, 0.30859375, \</div>
+<div class="line">0.31640625, 0.32421875, 0.33203125, 0.33984375, 0.34765625, \</div>
+<div class="line">0.35546875, 0.36328125, 0.37109375, 0.37890625, 0.38671875, \</div>
+<div class="line">0.39453125, 0.40234375, 0.41015625, 0.41796875, 0.42578125, \</div>
+<div class="line">0.43359375, 0.44140625, 0.44921875, 0.45703125, 0.46484375, \</div>
+<div class="line">0.47265625, 0.48046875, 0.48828125, 0.49609375, 0.50390625, \</div>
+<div class="line">0.51171875, 0.51953125, 0.52734375, 0.53515625, 0.54296875, \</div>
+<div class="line">0.55078125, 0.55859375, 0.56640625, 0.57421875, 0.58203125, \</div>
+<div class="line">0.58984375, 0.59765625, 0.60546875, 0.61328125, 0.62109375, \</div>
+<div class="line">0.62890625, 0.63671875, 0.64453125, 0.65234375, 0.66015625, \</div>
+<div class="line">0.66796875, 0.67578125, 0.68359375, 0.69140625, 0.69921875, \</div>
+<div class="line">0.70703125, 0.71484375, 0.72265625, 0.73046875, 0.73828125, \</div>
+<div class="line">0.74609375, 0.75390625, 0.76171875, 0.76953125, 0.77734375, \</div>
+<div class="line">0.78515625, 0.79296875, 0.80078125, 0.80859375, 0.81640625, \</div>
+<div class="line">0.82421875, 0.83203125, 0.83984375, 0.84765625, 0.85546875, \</div>
+<div class="line">0.86328125, 0.87109375, 0.87890625, 0.88671875, 0.89453125, \</div>
+<div class="line">0.90234375, 0.91015625, 0.91796875, 0.92578125, 0.93359375, \</div>
+<div class="line">0.94140625, 0.94921875, 0.95703125, 0.96484375, 0.97265625, \</div>
+<div class="line">0.98046875, 0.98828125, 0.99609375, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__triang_8h_source.html">fpu_fft_triang.h</a> 第 <a class="el" href="fpu__fft__triang_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9329249d02436893fbc0521c1f18ecfa" name="a9329249d02436893fbc0521c1f18ecfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9329249d02436893fbc0521c1f18ecfa">&#9670;&#160;</a></span>TRIANG32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRIANG32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.03125000, 0.09375000, 0.15625000, 0.21875000, 0.28125000, \</div>
+<div class="line">0.34375000, 0.40625000, 0.46875000, 0.53125000, 0.59375000, \</div>
+<div class="line">0.65625000, 0.71875000, 0.78125000, 0.84375000, 0.90625000, \</div>
+<div class="line">0.96875000, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__triang_8h_source.html">fpu_fft_triang.h</a> 第 <a class="el" href="fpu__fft__triang_8h_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="accbfc5ec204bc5ab4b5d705822b7bc85" name="accbfc5ec204bc5ab4b5d705822b7bc85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accbfc5ec204bc5ab4b5d705822b7bc85">&#9670;&#160;</a></span>TRIANG4096</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRIANG4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__triang_8h_source.html">fpu_fft_triang.h</a> 第 <a class="el" href="fpu__fft__triang_8h_source.html#l00431">431</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6f10d189d2192fadd63c53e39e032e5b" name="a6f10d189d2192fadd63c53e39e032e5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f10d189d2192fadd63c53e39e032e5b">&#9670;&#160;</a></span>TRIANG512</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRIANG512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__triang_8h_source.html">fpu_fft_triang.h</a> 第 <a class="el" href="fpu__fft__triang_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8b365885f9778ed34b5fe8dafba2b7b0" name="a8b365885f9778ed34b5fe8dafba2b7b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b365885f9778ed34b5fe8dafba2b7b0">&#9670;&#160;</a></span>TRIANG64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRIANG64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.01562500, 0.04687500, 0.07812500, 0.10937500, 0.14062500, \</div>
+<div class="line">0.17187500, 0.20312500, 0.23437500, 0.26562500, 0.29687500, \</div>
+<div class="line">0.32812500, 0.35937500, 0.39062500, 0.42187500, 0.45312500, \</div>
+<div class="line">0.48437500, 0.51562500, 0.54687500, 0.57812500, 0.60937500, \</div>
+<div class="line">0.64062500, 0.67187500, 0.70312500, 0.73437500, 0.76562500, \</div>
+<div class="line">0.79687500, 0.82812500, 0.85937500, 0.89062500, 0.92187500, \</div>
+<div class="line">0.95312500, 0.98437500, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__triang_8h_source.html">fpu_fft_triang.h</a> 第 <a class="el" href="fpu__fft__triang_8h_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_0fd93c14012f780a2e81c2f5b80c75ff.html">rfft</a></li><li class="navelem"><a href="dir_6bd83238c5acd69e2087c7b8f0297dcf.html">fpu32_lib</a></li><li class="navelem"><a href="fpu__fft__triang_8h.html">fpu_fft_triang.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

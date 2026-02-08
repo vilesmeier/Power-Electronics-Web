@@ -1,0 +1,51 @@
+\doxysection{global.\+h}
+\hypertarget{global_8h_source}{}\label{global_8h_source}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/global/global.h@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Control\_Driver/global/global.h}}
+\mbox{\hyperlink{global_8h}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00012}00012\ \textcolor{preprocessor}{\#ifndef\ GLOBAL\_H}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00013}00013\ \textcolor{preprocessor}{\#define\ GLOBAL\_H}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00015}00015\ \textcolor{comment}{//\ 头文件包含}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00016}00016\ \textcolor{comment}{//\ 控制环路层}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00017}00017\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{dcl_8h}{dcl/dcl.h}}>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00018}00018\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{delay_8h}{delay/delay.h}}>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00019}00019\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{filter_8h}{filter/filter.h}}>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00020}00020\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{mathdef_8h}{mathdef/mathdef.h}}>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00021}00021\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{modulate_8h}{modulate/modulate.h}}>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00022}00022\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{mppt_8h}{mppt/mppt.h}}>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00023}00023\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_control___driver_2oled_2oled_8h}{oled/oled.h}}>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00024}00024\ \textcolor{preprocessor}{\#include\ <pll/pll\_1ph.h>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00025}00025\ \textcolor{preprocessor}{\#include\ <pll/pll\_3ph.h>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00026}00026\ \textcolor{preprocessor}{\#include\ <power/power\_1ph.h>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00027}00027\ \textcolor{preprocessor}{\#include\ <power/power\_3ph.h>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00028}00028\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{ramp_8h}{ramp/ramp.h}}>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00029}00029\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{state_8h}{state/state.h}}>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00030}00030\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{_transfer_fun_8h}{transferfun/transferfun.h}}>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00031}00031\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{transform_8h}{transform/transform.h}}>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00032}00032\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{vofa_8h}{vofa/vofa.h}}>}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00034}00034\ \textcolor{comment}{//\ 硬件驱动层}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00035}00035\ \textcolor{preprocessor}{\#include\ "{}inc/hw\_types.h"{}}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00037}00037\ \textcolor{comment}{//\ IDE\ 编译器文件}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00038}00038\ \textcolor{preprocessor}{\#include\ "{}stdint.h"{}}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00039}00039\ \textcolor{preprocessor}{\#include\ "{}string.h"{}}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00041}00041\ \textcolor{comment}{//\ 全局宏定义}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00042}\mbox{\hyperlink{group___c_o_r_e___g_l_o_b_a_l_ga127fe3c0c00af4f7ff22a2291973153a}{00042}}\ \textcolor{preprocessor}{\#define\ T\_ISR\ \ \ \ \ \ \ \ \ 0.00005f\ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00043}\mbox{\hyperlink{group___c_o_r_e___g_l_o_b_a_l_ga0979f47c3b374bec8f15b572a911f99c}{00043}}\ \textcolor{preprocessor}{\#define\ T\_GRID\ \ \ \ \ \ \ \ 0.02f\ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00044}\mbox{\hyperlink{group___c_o_r_e___g_l_o_b_a_l_gadcd382ac73269e1100e36dd182b07ad6}{00044}}\ \textcolor{preprocessor}{\#define\ FREQ\_ISR\ \ \ \ \ \ 20000U\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00045}\mbox{\hyperlink{group___c_o_r_e___g_l_o_b_a_l_ga0a14df39eea4daf9ae69e2be90a7a7b7}{00045}}\ \textcolor{preprocessor}{\#define\ FREQ\_GRID\ \ \ \ \ 50U\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00047}00047\ \textcolor{comment}{//\ 全局变量声明}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00053}00053\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !GLOBAL\_H}}
+\DoxyCodeLine{\Hypertarget{global_8h_source_l00054}00054\ }
+
+\end{DoxyCode}

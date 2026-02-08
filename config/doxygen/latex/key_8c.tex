@@ -1,0 +1,67 @@
+\doxysection{D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Peripheral\+\_\+\+Driver/28335/\+KEYBOARD\+\_\+4x4/key.c 文件参考}
+\hypertarget{key_8c}{}\label{key_8c}\index{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/KEYBOARD\_4x4/key.c@{D:/Codes/NUEDC/NUEDC-\/Core/Code/Peripheral\_Driver/28335/KEYBOARD\_4x4/key.c}}
+
+
+key pad driver  
+
+
+{\ttfamily \#include "{}DSP28x\+\_\+\+Project.\+h"{}}\newline
+{\ttfamily \#include "{}key.\+h"{}}\newline
+key.\+c 的引用(Include)关系图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{key_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_ga6251d77640c20427e931246b9b1547f0}{keypad\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em init gpio \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_ga8b64638b56e38f1c8315f50809b11081}{keypad\+\_\+getkey}} (void)
+\begin{DoxyCompactList}\small\item\em get pressing key \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{key_8c_a6cd72e3b474ca29b76d4a7758b0bfff5}{keys}} \mbox{[}\mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_gabd9688ad154d21624cdfe267048a8afe}{KEYPAD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_gaa2475470b1b54f61b0f112b9340a4d6f}{KEYPAD\+\_\+\+COLS}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em key mapping \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+key pad driver 
+
+
+
+在文件 \mbox{\hyperlink{key_8c_source}{key.\+c}} 中定义.
+
+
+
+\label{doc-var-members}
+\Hypertarget{key_8c_doc-var-members}
+\doxysubsection{变量说明}
+\Hypertarget{key_8c_a6cd72e3b474ca29b76d4a7758b0bfff5}\index{key.c@{key.c}!keys@{keys}}
+\index{keys@{keys}!key.c@{key.c}}
+\doxysubsubsection{\texorpdfstring{keys}{keys}}
+{\footnotesize\ttfamily \label{key_8c_a6cd72e3b474ca29b76d4a7758b0bfff5} 
+char keys\mbox{[}\mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_gabd9688ad154d21624cdfe267048a8afe}{KEYPAD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_gaa2475470b1b54f61b0f112b9340a4d6f}{KEYPAD\+\_\+\+COLS}}\mbox{]}}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ }
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{charliteral}{'1'},\ \textcolor{charliteral}{'2'},\ \textcolor{charliteral}{'3'},\ \textcolor{charliteral}{'A'}\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{charliteral}{'4'},\ \textcolor{charliteral}{'5'},\ \textcolor{charliteral}{'6'},\ \textcolor{charliteral}{'B'}\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{charliteral}{'7'},\ \textcolor{charliteral}{'8'},\ \textcolor{charliteral}{'9'},\ \textcolor{charliteral}{'C'}\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{charliteral}{'*'},\ \textcolor{charliteral}{'0'},\ \textcolor{charliteral}{'\#'},\ \textcolor{charliteral}{'D'}\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+key mapping 
+
+
+
+在文件 \mbox{\hyperlink{key_8c_source}{key.\+c}} 第 \mbox{\hyperlink{key_8c_source_l00013}{13}} 行定义.
+

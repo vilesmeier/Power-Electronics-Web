@@ -1,0 +1,271 @@
+\doxysubsubsubsubsection{4x4矩阵键盘驱动 }
+\hypertarget{group___d_r_v___f28335___k_e_y_p_a_d}{}\label{group___d_r_v___f28335___k_e_y_p_a_d}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+4x4矩阵键盘驱动 的协作图\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{group___d_r_v___f28335___k_e_y_p_a_d}
+\end{center}
+\end{figure}
+\doxysubsubsubsubsubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_gabd9688ad154d21624cdfe267048a8afe}{KEYPAD\+\_\+\+ROWS}}~4
+\begin{DoxyCompactList}\small\item\em row num \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_gaa2475470b1b54f61b0f112b9340a4d6f}{KEYPAD\+\_\+\+COLS}}~4
+\begin{DoxyCompactList}\small\item\em column num \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_ga0c5e619efd65d330200fabee8c2885be}{KEYPAD\+\_\+\+COL\+\_\+1\+\_\+\+ON}}~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO11=1
+\begin{DoxyCompactList}\small\item\em set column 1 high \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_gab6aa95ca9d3a6f33fb536846e425a02f}{KEYPAD\+\_\+\+COL\+\_\+1\+\_\+\+OFF}}~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO11=0
+\begin{DoxyCompactList}\small\item\em set column 1 low \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_gae61205d7dde289872522cb4b549a5aeb}{KEYPAD\+\_\+\+COL\+\_\+2\+\_\+\+ON}}~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO13=1
+\begin{DoxyCompactList}\small\item\em set column 2 high \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_ga5c49a54ef91627301ffc1fcddda46d3e}{KEYPAD\+\_\+\+COL\+\_\+2\+\_\+\+OFF}}~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO13=0
+\begin{DoxyCompactList}\small\item\em set column 2 low \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_gad6777057918c12061d3a088c86806153}{KEYPAD\+\_\+\+COL\+\_\+3\+\_\+\+ON}}~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO15=1
+\begin{DoxyCompactList}\small\item\em set column 3 high \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_gad86f92a407c1e75a150ee6d61a2e9149}{KEYPAD\+\_\+\+COL\+\_\+3\+\_\+\+OFF}}~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO15=0
+\begin{DoxyCompactList}\small\item\em set column 3 low \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_ga61304e87c63d14ec9034a6588d4ceff6}{KEYPAD\+\_\+\+COL\+\_\+4\+\_\+\+ON}}~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO17=1
+\begin{DoxyCompactList}\small\item\em set column 4 high \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_ga65bb0fe9319b6049598953d8248184a4}{KEYPAD\+\_\+\+COL\+\_\+4\+\_\+\+OFF}}~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO17=0
+\begin{DoxyCompactList}\small\item\em set column 4 low \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_ga2542f3ebbae560210dffbce021a5e6f1}{KEYPAD\+\_\+\+ROW\+\_\+1}}~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO19
+\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_ga3ed06c14142cd62225fb5ad9a559b728}{KEYPAD\+\_\+\+ROW\+\_\+2}}~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO21
+\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_gac5d6ecd5fd3c90b1516d8c78eabe12e7}{KEYPAD\+\_\+\+ROW\+\_\+3}}~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO23
+\item 
+\#define \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_ga8f54c9f15456e24e12f1505414280106}{KEYPAD\+\_\+\+ROW\+\_\+4}}~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO25
+\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_ga6251d77640c20427e931246b9b1547f0}{keypad\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em init gpio \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{group___d_r_v___f28335___k_e_y_p_a_d_ga8b64638b56e38f1c8315f50809b11081}{keypad\+\_\+getkey}} (void)
+\begin{DoxyCompactList}\small\item\em get pressing key \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsubsection{详细描述}
+
+
+\label{doc-define-members}
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_doc-define-members}
+\doxysubsubsubsubsubsection{宏定义说明}
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_gab6aa95ca9d3a6f33fb536846e425a02f}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!KEYPAD\_COL\_1\_OFF@{KEYPAD\_COL\_1\_OFF}}
+\index{KEYPAD\_COL\_1\_OFF@{KEYPAD\_COL\_1\_OFF}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{KEYPAD\_COL\_1\_OFF}{KEYPAD\_COL\_1\_OFF}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_gab6aa95ca9d3a6f33fb536846e425a02f} 
+\#define KEYPAD\+\_\+\+COL\+\_\+1\+\_\+\+OFF~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO11=0}
+
+
+
+set column 1 low 
+
+
+
+在文件 \mbox{\hyperlink{key_8h_source}{key.\+h}} 第 \mbox{\hyperlink{key_8h_source_l00031}{31}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_ga0c5e619efd65d330200fabee8c2885be}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!KEYPAD\_COL\_1\_ON@{KEYPAD\_COL\_1\_ON}}
+\index{KEYPAD\_COL\_1\_ON@{KEYPAD\_COL\_1\_ON}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{KEYPAD\_COL\_1\_ON}{KEYPAD\_COL\_1\_ON}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_ga0c5e619efd65d330200fabee8c2885be} 
+\#define KEYPAD\+\_\+\+COL\+\_\+1\+\_\+\+ON~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO11=1}
+
+
+
+set column 1 high 
+
+
+
+在文件 \mbox{\hyperlink{key_8h_source}{key.\+h}} 第 \mbox{\hyperlink{key_8h_source_l00030}{30}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_ga5c49a54ef91627301ffc1fcddda46d3e}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!KEYPAD\_COL\_2\_OFF@{KEYPAD\_COL\_2\_OFF}}
+\index{KEYPAD\_COL\_2\_OFF@{KEYPAD\_COL\_2\_OFF}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{KEYPAD\_COL\_2\_OFF}{KEYPAD\_COL\_2\_OFF}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_ga5c49a54ef91627301ffc1fcddda46d3e} 
+\#define KEYPAD\+\_\+\+COL\+\_\+2\+\_\+\+OFF~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO13=0}
+
+
+
+set column 2 low 
+
+
+
+在文件 \mbox{\hyperlink{key_8h_source}{key.\+h}} 第 \mbox{\hyperlink{key_8h_source_l00034}{34}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_gae61205d7dde289872522cb4b549a5aeb}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!KEYPAD\_COL\_2\_ON@{KEYPAD\_COL\_2\_ON}}
+\index{KEYPAD\_COL\_2\_ON@{KEYPAD\_COL\_2\_ON}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{KEYPAD\_COL\_2\_ON}{KEYPAD\_COL\_2\_ON}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_gae61205d7dde289872522cb4b549a5aeb} 
+\#define KEYPAD\+\_\+\+COL\+\_\+2\+\_\+\+ON~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO13=1}
+
+
+
+set column 2 high 
+
+
+
+在文件 \mbox{\hyperlink{key_8h_source}{key.\+h}} 第 \mbox{\hyperlink{key_8h_source_l00033}{33}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_gad86f92a407c1e75a150ee6d61a2e9149}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!KEYPAD\_COL\_3\_OFF@{KEYPAD\_COL\_3\_OFF}}
+\index{KEYPAD\_COL\_3\_OFF@{KEYPAD\_COL\_3\_OFF}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{KEYPAD\_COL\_3\_OFF}{KEYPAD\_COL\_3\_OFF}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_gad86f92a407c1e75a150ee6d61a2e9149} 
+\#define KEYPAD\+\_\+\+COL\+\_\+3\+\_\+\+OFF~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO15=0}
+
+
+
+set column 3 low 
+
+
+
+在文件 \mbox{\hyperlink{key_8h_source}{key.\+h}} 第 \mbox{\hyperlink{key_8h_source_l00037}{37}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_gad6777057918c12061d3a088c86806153}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!KEYPAD\_COL\_3\_ON@{KEYPAD\_COL\_3\_ON}}
+\index{KEYPAD\_COL\_3\_ON@{KEYPAD\_COL\_3\_ON}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{KEYPAD\_COL\_3\_ON}{KEYPAD\_COL\_3\_ON}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_gad6777057918c12061d3a088c86806153} 
+\#define KEYPAD\+\_\+\+COL\+\_\+3\+\_\+\+ON~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO15=1}
+
+
+
+set column 3 high 
+
+
+
+在文件 \mbox{\hyperlink{key_8h_source}{key.\+h}} 第 \mbox{\hyperlink{key_8h_source_l00036}{36}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_ga65bb0fe9319b6049598953d8248184a4}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!KEYPAD\_COL\_4\_OFF@{KEYPAD\_COL\_4\_OFF}}
+\index{KEYPAD\_COL\_4\_OFF@{KEYPAD\_COL\_4\_OFF}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{KEYPAD\_COL\_4\_OFF}{KEYPAD\_COL\_4\_OFF}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_ga65bb0fe9319b6049598953d8248184a4} 
+\#define KEYPAD\+\_\+\+COL\+\_\+4\+\_\+\+OFF~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO17=0}
+
+
+
+set column 4 low 
+
+
+
+在文件 \mbox{\hyperlink{key_8h_source}{key.\+h}} 第 \mbox{\hyperlink{key_8h_source_l00040}{40}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_ga61304e87c63d14ec9034a6588d4ceff6}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!KEYPAD\_COL\_4\_ON@{KEYPAD\_COL\_4\_ON}}
+\index{KEYPAD\_COL\_4\_ON@{KEYPAD\_COL\_4\_ON}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{KEYPAD\_COL\_4\_ON}{KEYPAD\_COL\_4\_ON}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_ga61304e87c63d14ec9034a6588d4ceff6} 
+\#define KEYPAD\+\_\+\+COL\+\_\+4\+\_\+\+ON~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO17=1}
+
+
+
+set column 4 high 
+
+
+
+在文件 \mbox{\hyperlink{key_8h_source}{key.\+h}} 第 \mbox{\hyperlink{key_8h_source_l00039}{39}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_gaa2475470b1b54f61b0f112b9340a4d6f}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!KEYPAD\_COLS@{KEYPAD\_COLS}}
+\index{KEYPAD\_COLS@{KEYPAD\_COLS}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{KEYPAD\_COLS}{KEYPAD\_COLS}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_gaa2475470b1b54f61b0f112b9340a4d6f} 
+\#define KEYPAD\+\_\+\+COLS~4}
+
+
+
+column num 
+
+
+
+在文件 \mbox{\hyperlink{key_8h_source}{key.\+h}} 第 \mbox{\hyperlink{key_8h_source_l00028}{28}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_ga2542f3ebbae560210dffbce021a5e6f1}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!KEYPAD\_ROW\_1@{KEYPAD\_ROW\_1}}
+\index{KEYPAD\_ROW\_1@{KEYPAD\_ROW\_1}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{KEYPAD\_ROW\_1}{KEYPAD\_ROW\_1}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_ga2542f3ebbae560210dffbce021a5e6f1} 
+\#define KEYPAD\+\_\+\+ROW\+\_\+1~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO19}
+
+
+
+在文件 \mbox{\hyperlink{key_8h_source}{key.\+h}} 第 \mbox{\hyperlink{key_8h_source_l00042}{42}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_ga3ed06c14142cd62225fb5ad9a559b728}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!KEYPAD\_ROW\_2@{KEYPAD\_ROW\_2}}
+\index{KEYPAD\_ROW\_2@{KEYPAD\_ROW\_2}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{KEYPAD\_ROW\_2}{KEYPAD\_ROW\_2}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_ga3ed06c14142cd62225fb5ad9a559b728} 
+\#define KEYPAD\+\_\+\+ROW\+\_\+2~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO21}
+
+
+
+在文件 \mbox{\hyperlink{key_8h_source}{key.\+h}} 第 \mbox{\hyperlink{key_8h_source_l00043}{43}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_gac5d6ecd5fd3c90b1516d8c78eabe12e7}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!KEYPAD\_ROW\_3@{KEYPAD\_ROW\_3}}
+\index{KEYPAD\_ROW\_3@{KEYPAD\_ROW\_3}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{KEYPAD\_ROW\_3}{KEYPAD\_ROW\_3}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_gac5d6ecd5fd3c90b1516d8c78eabe12e7} 
+\#define KEYPAD\+\_\+\+ROW\+\_\+3~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO23}
+
+
+
+在文件 \mbox{\hyperlink{key_8h_source}{key.\+h}} 第 \mbox{\hyperlink{key_8h_source_l00044}{44}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_ga8f54c9f15456e24e12f1505414280106}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!KEYPAD\_ROW\_4@{KEYPAD\_ROW\_4}}
+\index{KEYPAD\_ROW\_4@{KEYPAD\_ROW\_4}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{KEYPAD\_ROW\_4}{KEYPAD\_ROW\_4}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_ga8f54c9f15456e24e12f1505414280106} 
+\#define KEYPAD\+\_\+\+ROW\+\_\+4~Gpio\+Data\+Regs.\+GPADAT.\+bit.\+GPIO25}
+
+
+
+在文件 \mbox{\hyperlink{key_8h_source}{key.\+h}} 第 \mbox{\hyperlink{key_8h_source_l00045}{45}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_gabd9688ad154d21624cdfe267048a8afe}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!KEYPAD\_ROWS@{KEYPAD\_ROWS}}
+\index{KEYPAD\_ROWS@{KEYPAD\_ROWS}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{KEYPAD\_ROWS}{KEYPAD\_ROWS}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_gabd9688ad154d21624cdfe267048a8afe} 
+\#define KEYPAD\+\_\+\+ROWS~4}
+
+
+
+row num 
+
+
+
+在文件 \mbox{\hyperlink{key_8h_source}{key.\+h}} 第 \mbox{\hyperlink{key_8h_source_l00027}{27}} 行定义.
+
+
+
+\label{doc-func-members}
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_doc-func-members}
+\doxysubsubsubsubsubsection{函数说明}
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_ga8b64638b56e38f1c8315f50809b11081}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!keypad\_getkey@{keypad\_getkey}}
+\index{keypad\_getkey@{keypad\_getkey}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{keypad\_getkey()}{keypad\_getkey()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_ga8b64638b56e38f1c8315f50809b11081} 
+char keypad\+\_\+getkey (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+get pressing key 
+
+\begin{DoxyReturn}{返回}
+char pressing key 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{key_8c_source}{key.\+c}} 第 \mbox{\hyperlink{key_8c_source_l00076}{76}} 行定义.
+
+\Hypertarget{group___d_r_v___f28335___k_e_y_p_a_d_ga6251d77640c20427e931246b9b1547f0}\index{4x4矩阵键盘驱动@{4x4矩阵键盘驱动}!keypad\_init@{keypad\_init}}
+\index{keypad\_init@{keypad\_init}!4x4矩阵键盘驱动@{4x4矩阵键盘驱动}}
+\doxysubsubsubsubsubsubsection{\texorpdfstring{keypad\_init()}{keypad\_init()}}
+{\footnotesize\ttfamily \label{group___d_r_v___f28335___k_e_y_p_a_d_ga6251d77640c20427e931246b9b1547f0} 
+void keypad\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+init gpio 
+
+
+
+在文件 \mbox{\hyperlink{key_8c_source}{key.\+c}} 第 \mbox{\hyperlink{key_8c_source_l00021}{21}} 行定义.
+

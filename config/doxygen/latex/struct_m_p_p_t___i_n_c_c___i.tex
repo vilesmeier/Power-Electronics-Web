@@ -1,0 +1,276 @@
+\doxysection{MPPT\+\_\+\+INCC\+\_\+\+I结构体 参考}
+\hypertarget{struct_m_p_p_t___i_n_c_c___i}{}\label{struct_m_p_p_t___i_n_c_c___i}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+
+
+结构体定义  
+
+
+
+
+{\ttfamily \#include $<$mppt.\+h$>$}
+
+\doxysubsubsection*{成员变量}
+\begin{DoxyCompactItemize}
+\item 
+float32\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a9383c5d32dd6d00136352dfd1c77646e}{Ipv}}
+\begin{DoxyCompactList}\small\item\em 输入变量\+: 光伏输出电流 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a7fe0d2b44a6d490f7360609f58131390}{Vpv}}
+\begin{DoxyCompactList}\small\item\em 输入变量\+: 光伏输出电压 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_affbc18d5a6a3f3f4328dab562b7031ab}{Stepsize}}
+\begin{DoxyCompactList}\small\item\em 输入变量\+: 电压变化补偿 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_ad351b2aaa2ab688e24a55bf8099381e2}{MaxI}}
+\begin{DoxyCompactList}\small\item\em 输入变量\+: 光伏最大输出电流 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a63e9e585f339aeaab05e6df5b6667433}{MinI}}
+\begin{DoxyCompactList}\small\item\em 输入变量\+: 光伏最小输出电流 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_ac6d396281ded02ed50e4b166d316804f}{Impp\+Out}}
+\begin{DoxyCompactList}\small\item\em 输出变量\+: 最大功率点处的光伏输出电压 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a16047155c63f4432c2ed7759f3b37588}{Cond}}
+\begin{DoxyCompactList}\small\item\em 内部变量 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_aefb56aecebaf90b4e8b09fbabc37adcb}{Inc\+Cond}}
+\begin{DoxyCompactList}\small\item\em 内部变量 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_aa7ff07413939cdaaa6dcda7b9d7f63f2}{DeltaV}}
+\begin{DoxyCompactList}\small\item\em 内部变量 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a265b7b3b4d880970b450428b4e96e687}{DeltaI}}
+\begin{DoxyCompactList}\small\item\em 内部变量 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a84c831c04e73c97fc128b8d34a663ce0}{Vpv\+Old}}
+\begin{DoxyCompactList}\small\item\em 内部变量 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_af805b0ab4e4b51a8905c4d506fa1ba2f}{Ipv\+Old}}
+\begin{DoxyCompactList}\small\item\em 内部变量 \end{DoxyCompactList}\item 
+float32\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_a4da60efd34b28084bb9e9616cf1bb9cc}{Step\+First}}
+\begin{DoxyCompactList}\small\item\em 内部变量 \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_aeeb61f773f6a8652d233de93d9509040}{mppt\+\_\+enable}}
+\begin{DoxyCompactList}\small\item\em 输入变量\+: 等于1时使能\+MPPT计算 \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_m_p_p_t___i_n_c_c___i_ad5a0f94af6490efe1cab7baf80580048}{mppt\+\_\+first}}
+\begin{DoxyCompactList}\small\item\em 内部变量 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+结构体定义 
+
+\begin{DoxyNote}{注解}
+电流型电导增量法 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00053}{53}} 行定义.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_doc-variable-members}
+\doxysubsection{结构体成员变量说明}
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_a16047155c63f4432c2ed7759f3b37588}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!Cond@{Cond}}
+\index{Cond@{Cond}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{Cond}{Cond}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_a16047155c63f4432c2ed7759f3b37588} 
+float32\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::\+Cond}
+
+
+
+内部变量 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00065}{65}} 行定义.
+
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_a265b7b3b4d880970b450428b4e96e687}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!DeltaI@{DeltaI}}
+\index{DeltaI@{DeltaI}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{DeltaI}{DeltaI}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_a265b7b3b4d880970b450428b4e96e687} 
+float32\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::\+DeltaI}
+
+
+
+内部变量 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00068}{68}} 行定义.
+
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_aa7ff07413939cdaaa6dcda7b9d7f63f2}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!DeltaV@{DeltaV}}
+\index{DeltaV@{DeltaV}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{DeltaV}{DeltaV}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_aa7ff07413939cdaaa6dcda7b9d7f63f2} 
+float32\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::\+DeltaV}
+
+
+
+内部变量 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00067}{67}} 行定义.
+
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_ac6d396281ded02ed50e4b166d316804f}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!ImppOut@{ImppOut}}
+\index{ImppOut@{ImppOut}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{ImppOut}{ImppOut}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_ac6d396281ded02ed50e4b166d316804f} 
+float32\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::\+Impp\+Out}
+
+
+
+输出变量\+: 最大功率点处的光伏输出电压 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00063}{63}} 行定义.
+
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_aefb56aecebaf90b4e8b09fbabc37adcb}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!IncCond@{IncCond}}
+\index{IncCond@{IncCond}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{IncCond}{IncCond}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_aefb56aecebaf90b4e8b09fbabc37adcb} 
+float32\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::\+Inc\+Cond}
+
+
+
+内部变量 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00066}{66}} 行定义.
+
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_a9383c5d32dd6d00136352dfd1c77646e}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!Ipv@{Ipv}}
+\index{Ipv@{Ipv}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{Ipv}{Ipv}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_a9383c5d32dd6d00136352dfd1c77646e} 
+float32\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::\+Ipv}
+
+
+
+输入变量\+: 光伏输出电流 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00055}{55}} 行定义.
+
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_af805b0ab4e4b51a8905c4d506fa1ba2f}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!IpvOld@{IpvOld}}
+\index{IpvOld@{IpvOld}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{IpvOld}{IpvOld}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_af805b0ab4e4b51a8905c4d506fa1ba2f} 
+float32\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::\+Ipv\+Old}
+
+
+
+内部变量 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00070}{70}} 行定义.
+
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_ad351b2aaa2ab688e24a55bf8099381e2}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!MaxI@{MaxI}}
+\index{MaxI@{MaxI}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{MaxI}{MaxI}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_ad351b2aaa2ab688e24a55bf8099381e2} 
+float32\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::\+MaxI}
+
+
+
+输入变量\+: 光伏最大输出电流 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00060}{60}} 行定义.
+
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_a63e9e585f339aeaab05e6df5b6667433}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!MinI@{MinI}}
+\index{MinI@{MinI}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{MinI}{MinI}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_a63e9e585f339aeaab05e6df5b6667433} 
+float32\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::\+MinI}
+
+
+
+输入变量\+: 光伏最小输出电流 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00061}{61}} 行定义.
+
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_aeeb61f773f6a8652d233de93d9509040}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!mppt\_enable@{mppt\_enable}}
+\index{mppt\_enable@{mppt\_enable}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{mppt\_enable}{mppt\_enable}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_aeeb61f773f6a8652d233de93d9509040} 
+uint16\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::mppt\+\_\+enable}
+
+
+
+输入变量\+: 等于1时使能\+MPPT计算 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00074}{74}} 行定义.
+
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_ad5a0f94af6490efe1cab7baf80580048}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!mppt\_first@{mppt\_first}}
+\index{mppt\_first@{mppt\_first}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{mppt\_first}{mppt\_first}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_ad5a0f94af6490efe1cab7baf80580048} 
+uint16\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::mppt\+\_\+first}
+
+
+
+内部变量 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00075}{75}} 行定义.
+
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_a4da60efd34b28084bb9e9616cf1bb9cc}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!StepFirst@{StepFirst}}
+\index{StepFirst@{StepFirst}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{StepFirst}{StepFirst}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_a4da60efd34b28084bb9e9616cf1bb9cc} 
+float32\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::\+Step\+First}
+
+
+
+内部变量 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00071}{71}} 行定义.
+
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_affbc18d5a6a3f3f4328dab562b7031ab}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!Stepsize@{Stepsize}}
+\index{Stepsize@{Stepsize}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{Stepsize}{Stepsize}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_affbc18d5a6a3f3f4328dab562b7031ab} 
+float32\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::\+Stepsize}
+
+
+
+输入变量\+: 电压变化补偿 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00058}{58}} 行定义.
+
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_a7fe0d2b44a6d490f7360609f58131390}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!Vpv@{Vpv}}
+\index{Vpv@{Vpv}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{Vpv}{Vpv}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_a7fe0d2b44a6d490f7360609f58131390} 
+float32\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::\+Vpv}
+
+
+
+输入变量\+: 光伏输出电压 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00056}{56}} 行定义.
+
+\Hypertarget{struct_m_p_p_t___i_n_c_c___i_a84c831c04e73c97fc128b8d34a663ce0}\index{MPPT\_INCC\_I@{MPPT\_INCC\_I}!VpvOld@{VpvOld}}
+\index{VpvOld@{VpvOld}!MPPT\_INCC\_I@{MPPT\_INCC\_I}}
+\doxysubsubsection{\texorpdfstring{VpvOld}{VpvOld}}
+{\footnotesize\ttfamily \label{struct_m_p_p_t___i_n_c_c___i_a84c831c04e73c97fc128b8d34a663ce0} 
+float32\+\_\+t MPPT\+\_\+\+INCC\+\_\+\+I\+::\+Vpv\+Old}
+
+
+
+内部变量 
+
+
+
+在文件 \mbox{\hyperlink{mppt_8h_source}{mppt.\+h}} 第 \mbox{\hyperlink{mppt_8h_source_l00069}{69}} 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Codes/\+NUEDC/\+NUEDC-\/\+Core/\+Code/\+Control\+\_\+\+Driver/mppt/\mbox{\hyperlink{mppt_8h}{mppt.\+h}}\end{DoxyCompactItemize}
