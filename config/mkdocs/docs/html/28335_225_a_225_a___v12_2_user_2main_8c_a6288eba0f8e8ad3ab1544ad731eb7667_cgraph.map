@@ -11,17 +11,17 @@
 <area shape="rect" id="Node000021" href="$group___d_r_v___f28335___o_l_e_d.html#gad5adf82299744d5a93f0ed25ed5c71aa" title="display a positive float" alt="" coords="105,567,224,594"/>
 <area shape="poly" id="edge25_Node000001_Node000021" title=" " alt="" coords="54,621,112,598,114,603,56,626"/>
 <area shape="rect" id="Node000027" href="$group___c_t_r_l___o_l_e_d.html#ga7869abbb812853dbd5673ecd64ccfeab" title="OLED显示字符串" alt="" coords="103,619,227,646"/>
-<area shape="poly" id="edge33_Node000001_Node000027" title=" " alt="" coords="55,630,87,630,87,635,55,635"/>
-<area shape="rect" id="Node000028" href="$group___c_t_r_l___r_a_m_p.html#ga3e743c6f7b3d3cace6e21e22f9722466" title="结构体初始化" alt="" coords="125,671,205,698"/>
-<area shape="poly" id="edge35_Node000001_Node000028" title=" " alt="" coords="56,639,114,662,112,667,54,644"/>
-<area shape="rect" id="Node000029" href="$group___c_t_r_l___r_a_m_p.html#ga2e5990d2aba3b0277df88a6bb0871b2a" title="set parameters,frequent in Hz" alt="" coords="125,723,204,750"/>
-<area shape="poly" id="edge36_Node000001_Node000029" title=" " alt="" coords="44,645,69,676,104,708,113,713,110,718,101,712,65,680,39,648"/>
-<area shape="rect" id="Node000030" href="$group___s_y_s___s_t_a_t_e.html#ga4448d628c7c103a33e51e52f2e111de4" title="全局状态机初始化" alt="" coords="127,775,203,802"/>
-<area shape="poly" id="edge37_Node000001_Node000030" title=" " alt="" coords="38,646,61,701,80,732,104,760,115,768,112,772,101,764,76,735,57,703,33,648"/>
-<area shape="rect" id="Node000031" href="$group___d_r_v___f28335___u_a_r_t.html#gad7d9735eb6d12d58232f616020798946" title="Init SCI&#45;c" alt="" coords="125,827,205,854"/>
-<area shape="poly" id="edge38_Node000001_Node000031" title=" " alt="" coords="36,646,42,679,55,723,75,770,105,812,113,819,110,823,101,816,70,773,50,725,37,681,31,647"/>
-<area shape="rect" id="Node000032" href="$group___d_r_v___f28335___u_a_r_t.html#ga62cd2632b61f0f11f05a028d7d7cea13" title="config baud rate" alt="" coords="125,879,204,906"/>
-<area shape="poly" id="edge39_Node000001_Node000032" title=" " alt="" coords="34,646,38,688,48,746,69,808,85,838,105,864,114,872,110,876,101,868,81,840,65,810,43,747,33,689,29,647"/>
+<area shape="poly" id="edge34_Node000001_Node000027" title=" " alt="" coords="55,630,87,630,87,635,55,635"/>
+<area shape="rect" id="Node000031" href="$group___c_t_r_l___r_a_m_p.html#ga3e743c6f7b3d3cace6e21e22f9722466" title="结构体初始化" alt="" coords="125,671,205,698"/>
+<area shape="poly" id="edge38_Node000001_Node000031" title=" " alt="" coords="56,639,114,662,112,667,54,644"/>
+<area shape="rect" id="Node000032" href="$group___c_t_r_l___r_a_m_p.html#ga2e5990d2aba3b0277df88a6bb0871b2a" title="set parameters,frequent in Hz" alt="" coords="125,723,204,750"/>
+<area shape="poly" id="edge39_Node000001_Node000032" title=" " alt="" coords="44,645,69,676,104,708,113,713,110,718,101,712,65,680,39,648"/>
+<area shape="rect" id="Node000033" href="$group___s_y_s___s_t_a_t_e.html#ga4448d628c7c103a33e51e52f2e111de4" title="全局状态机初始化" alt="" coords="127,775,203,802"/>
+<area shape="poly" id="edge40_Node000001_Node000033" title=" " alt="" coords="38,646,61,701,80,732,104,760,115,768,112,772,101,764,76,735,57,703,33,648"/>
+<area shape="rect" id="Node000034" href="$group___d_r_v___f28335___u_a_r_t.html#gad7d9735eb6d12d58232f616020798946" title="Init SCI&#45;c" alt="" coords="125,827,205,854"/>
+<area shape="poly" id="edge41_Node000001_Node000034" title=" " alt="" coords="36,646,42,679,55,723,75,770,105,812,113,819,110,823,101,816,70,773,50,725,37,681,31,647"/>
+<area shape="rect" id="Node000035" href="$group___d_r_v___f28335___u_a_r_t.html#ga62cd2632b61f0f11f05a028d7d7cea13" title="config baud rate" alt="" coords="125,879,204,906"/>
+<area shape="poly" id="edge42_Node000001_Node000035" title=" " alt="" coords="34,646,38,688,48,746,69,808,85,838,105,864,114,872,110,876,101,868,81,840,65,810,43,747,33,689,29,647"/>
 <area shape="rect" id="Node000003" href="$group___d_r_v___f28335___a_d_c.html#ga3812a7e6a8dc85e545d21c6e3a59598d" title="Interrupt Service Routine For ADC" alt="" coords="290,5,378,33"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="195,81,274,43,287,37,289,42,276,48,197,86"/>
 <area shape="rect" id="Node000005" href="$group___d_r_v___f28335___p_w_m.html#ga6f7068187c566632edbcc40fb80774a6" title="init pwm&#45;1" alt="" coords="289,213,379,241"/>
@@ -41,33 +41,39 @@
 <area shape="poly" id="edge13_Node000013_Node000012" title=" " alt="" coords="200,488,284,453,286,458,202,493"/>
 <area shape="rect" id="Node000014" href="$group___c_t_r_l___o_l_e_d.html#ga82c9cd4f8d003e9dffca9817fa43349c" title="将OLED显存数组更新到OLED屏幕" alt="" coords="284,523,385,550"/>
 <area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="205,509,269,522,268,527,204,515"/>
-<area shape="rect" id="Node000016" href="$group___c_t_r_l___o_l_e_d.html#ga568697a02d0fdf503ea2ded50a1bfe5d" title="OLED 写命令" alt="" coords="608,521,757,549"/>
-<area shape="poly" id="edge24_Node000013_Node000016" title=" " alt="" coords="205,500,360,498,460,501,560,509,604,515,604,520,559,514,459,506,360,504,205,506"/>
-<area shape="rect" id="Node000015" href="$group___c_t_r_l___o_l_e_d.html#gaad16e65bcb5fa05008b3801d5ac5ef07" title="OLED设置显示光标位置" alt="" coords="442,523,559,550"/>
-<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="385,534,427,534,427,539,385,539"/>
-<area shape="rect" id="Node000020" href="$group___c_t_r_l___o_l_e_d.html#ga034549a1e1b554b2cd1e8359c3119d24" title="OLED 写数据" alt="" coords="623,573,742,601"/>
-<area shape="poly" id="edge20_Node000014_Node000020" title=" " alt="" coords="386,547,442,559,528,571,608,579,607,585,527,577,441,564,385,552"/>
-<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="559,533,592,533,592,538,559,539"/>
-<area shape="rect" id="Node000017" href="$group___d_r_v___f28335___i_i_c.html#ga5352523aad8f6cef92cef0174e2d0d6e" title=" " alt="" coords="832,495,925,522"/>
-<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="757,522,816,514,817,520,758,528"/>
-<area shape="rect" id="Node000018" href="$group___d_r_v___f28335___i_i_c.html#ga08f9a3e4a9e29d2710030a547813fef8" title="Set number of bytes to be to transfer or receive when repeat mode is off." alt="" coords="816,547,941,574"/>
-<area shape="poly" id="edge18_Node000016_Node000018" title=" " alt="" coords="758,542,801,548,800,553,757,547"/>
-<area shape="rect" id="Node000019" href="$group___d_r_v___f28335___i_i_c.html#ga3822a8c9581d825bb52165867cd7deee" title="Sets the address that the I2C Controller places on the bus." alt="" coords="805,599,952,626"/>
-<area shape="poly" id="edge19_Node000016_Node000019" title=" " alt="" coords="727,547,758,559,806,583,823,590,821,595,804,588,756,564,725,552"/>
-<area shape="poly" id="edge21_Node000020_Node000017" title=" " alt="" coords="725,570,756,558,804,533,820,526,822,531,806,538,758,563,727,575"/>
-<area shape="poly" id="edge22_Node000020_Node000018" title=" " alt="" coords="741,577,800,568,801,574,742,582"/>
-<area shape="poly" id="edge23_Node000020_Node000019" title=" " alt="" coords="742,592,790,598,789,604,741,597"/>
-<area shape="rect" id="Node000022" href="$group___c_t_r_l___o_l_e_d.html#ga7803502eeddd959ac51b71974318de1a" title="次方函数" alt="" coords="458,624,543,652"/>
-<area shape="poly" id="edge26_Node000021_Node000022" title=" " alt="" coords="225,585,394,610,444,621,443,626,393,615,224,590"/>
-<area shape="rect" id="Node000023" href="$group___c_t_r_l___o_l_e_d.html#ga702041c412b420edd94a154681664202" title="OLED显示一个字符" alt="" coords="441,676,560,704"/>
-<area shape="poly" id="edge27_Node000021_Node000023" title=" " alt="" coords="208,593,229,605,244,620,252,635,261,649,276,661,312,676,351,685,426,692,426,697,350,690,311,681,274,665,257,652,248,638,239,624,225,609,205,597"/>
+<area shape="rect" id="Node000016" href="$group___c_t_r_l___o_l_e_d.html#ga568697a02d0fdf503ea2ded50a1bfe5d" title="OLED 写命令" alt="" coords="618,521,767,549"/>
+<area shape="poly" id="edge24_Node000013_Node000016" title=" " alt="" coords="205,500,364,498,467,501,570,509,614,515,614,520,569,514,466,506,364,503,205,506"/>
+<area shape="rect" id="Node000015" href="$group___c_t_r_l___o_l_e_d.html#gaad16e65bcb5fa05008b3801d5ac5ef07" title="OLED设置显示光标位置" alt="" coords="447,523,564,550"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="385,534,432,534,432,539,385,539"/>
+<area shape="rect" id="Node000020" href="$group___c_t_r_l___o_l_e_d.html#ga034549a1e1b554b2cd1e8359c3119d24" title="OLED 写数据" alt="" coords="633,573,752,601"/>
+<area shape="poly" id="edge20_Node000014_Node000020" title=" " alt="" coords="386,547,442,559,533,572,618,580,618,585,533,577,441,564,385,552"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="564,533,602,533,602,538,564,539"/>
+<area shape="rect" id="Node000017" href="$group___d_r_v___f28335___i_i_c.html#ga5352523aad8f6cef92cef0174e2d0d6e" title=" " alt="" coords="842,483,935,510"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="765,518,826,506,827,511,766,523"/>
+<area shape="rect" id="Node000018" href="$group___d_r_v___f28335___i_i_c.html#ga08f9a3e4a9e29d2710030a547813fef8" title="Set number of bytes to be to transfer or receive when repeat mode is off." alt="" coords="826,535,951,562"/>
+<area shape="poly" id="edge18_Node000016_Node000018" title=" " alt="" coords="768,538,811,541,810,546,767,543"/>
+<area shape="rect" id="Node000019" href="$group___d_r_v___f28335___i_i_c.html#ga3822a8c9581d825bb52165867cd7deee" title="Sets the address that the I2C Controller places on the bus." alt="" coords="815,587,962,614"/>
+<area shape="poly" id="edge19_Node000016_Node000019" title=" " alt="" coords="737,547,831,579,829,584,736,552"/>
+<area shape="poly" id="edge21_Node000020_Node000017" title=" " alt="" coords="739,570,766,558,789,540,814,521,826,514,829,519,816,525,793,544,768,563,741,575"/>
+<area shape="poly" id="edge22_Node000020_Node000018" title=" " alt="" coords="751,573,810,561,811,566,752,578"/>
+<area shape="poly" id="edge23_Node000020_Node000019" title=" " alt="" coords="752,589,799,592,799,597,752,594"/>
+<area shape="rect" id="Node000022" href="$group___d_r_v___f28335___o_l_e_d.html#ga46947f884818d1b9af2eaf38fe2ad174" title="math support" alt="" coords="463,624,548,652"/>
+<area shape="poly" id="edge26_Node000021_Node000022" title=" " alt="" coords="225,585,394,610,449,621,447,627,393,615,224,590"/>
+<area shape="rect" id="Node000023" href="$group___d_r_v___f28335___o_l_e_d.html#ga3a0689d75427e3ed0ca7654b0c529666" title="display a char" alt="" coords="446,676,565,704"/>
+<area shape="poly" id="edge27_Node000021_Node000023" title=" " alt="" coords="208,593,229,605,244,620,252,635,261,649,276,661,314,676,354,686,432,692,431,697,353,691,312,681,274,665,257,652,248,638,239,624,225,609,205,597"/>
 <area shape="rect" id="Node000026" href="$group___d_r_v___f28335___o_l_e_d.html#ga454d391d82d460a672db43ed222ec475" title="display a positive int" alt="" coords="275,624,393,652"/>
-<area shape="poly" id="edge30_Node000021_Node000026" title=" " alt="" coords="209,592,277,616,276,621,207,597"/>
-<area shape="rect" id="Node000024" href="$group___c_t_r_l___o_l_e_d.html#gaa331dbadc06f4c13afb97120aae62825" title="OLED显示图像" alt="" coords="618,676,746,704"/>
-<area shape="poly" id="edge28_Node000023_Node000024" title=" " alt="" coords="560,687,602,687,602,692,560,692"/>
-<area shape="rect" id="Node000025" href="$group___c_t_r_l___o_l_e_d.html#gaac92cfe1899db8eb779d133c987c6751" title="将OLED显存数组部分清零" alt="" coords="820,676,937,704"/>
-<area shape="poly" id="edge29_Node000024_Node000025" title=" " alt="" coords="747,687,805,687,805,692,747,692"/>
-<area shape="poly" id="edge31_Node000026_Node000022" title=" " alt="" coords="394,635,443,635,443,640,394,640"/>
-<area shape="poly" id="edge32_Node000026_Node000023" title=" " alt="" coords="382,650,440,668,439,673,380,655"/>
-<area shape="poly" id="edge34_Node000027_Node000023" title=" " alt="" coords="206,644,229,657,243,670,252,684,261,695,276,705,318,716,361,718,403,713,442,706,443,711,404,719,361,723,317,721,274,710,257,699,248,687,239,674,225,661,203,649"/>
+<area shape="poly" id="edge31_Node000021_Node000026" title=" " alt="" coords="209,592,277,616,276,621,207,597"/>
+<area shape="rect" id="Node000024" href="$group___d_r_v___f28335___o_l_e_d.html#gaa14bb13c0cd2c797c9974b82ce0df267" title="set courser position" alt="" coords="640,676,745,704"/>
+<area shape="poly" id="edge28_Node000023_Node000024" title=" " alt="" coords="565,687,624,687,624,692,565,692"/>
+<area shape="rect" id="Node000025" href="$group___d_r_v___f28335___o_l_e_d.html#ga5afff1be901cd9738f1c9652a0676f62" title="send data ot screen" alt="" coords="849,651,928,678"/>
+<area shape="poly" id="edge30_Node000023_Node000025" title=" " alt="" coords="558,673,617,662,733,656,834,658,834,664,733,661,618,667,559,678"/>
+<area shape="poly" id="edge29_Node000024_Node000025" title=" " alt="" coords="745,680,833,669,834,674,746,686"/>
+<area shape="poly" id="edge32_Node000026_Node000022" title=" " alt="" coords="394,635,448,635,448,640,394,640"/>
+<area shape="poly" id="edge33_Node000026_Node000023" title=" " alt="" coords="383,650,444,669,442,674,382,655"/>
+<area shape="rect" id="Node000028" href="$group___c_t_r_l___o_l_e_d.html#ga702041c412b420edd94a154681664202" title="OLED显示一个字符" alt="" coords="275,727,393,754"/>
+<area shape="poly" id="edge35_Node000027_Node000028" title=" " alt="" coords="207,645,229,657,244,670,253,682,277,706,292,717,289,721,273,711,249,685,240,673,225,661,204,649"/>
+<area shape="rect" id="Node000029" href="$group___c_t_r_l___o_l_e_d.html#gaa331dbadc06f4c13afb97120aae62825" title="OLED显示图像" alt="" coords="441,728,570,756"/>
+<area shape="poly" id="edge36_Node000028_Node000029" title=" " alt="" coords="394,738,426,739,426,744,394,744"/>
+<area shape="rect" id="Node000030" href="$group___c_t_r_l___o_l_e_d.html#gaac92cfe1899db8eb779d133c987c6751" title="将OLED显存数组部分清零" alt="" coords="634,728,751,756"/>
+<area shape="poly" id="edge37_Node000029_Node000030" title=" " alt="" coords="570,739,618,739,618,744,570,744"/>
 </map>

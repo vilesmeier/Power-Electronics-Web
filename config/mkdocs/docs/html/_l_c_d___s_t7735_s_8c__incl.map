@@ -1,11 +1,11 @@
-<map id="D:/Codes/NUEDC/NUEDC&#45;Core/Code/Peripheral_Driver/28335/LCD/LCD_ST7735S.c" name="D:/Codes/NUEDC/NUEDC&#45;Core/Code/Peripheral_Driver/28335/LCD/LCD_ST7735S.c">
-<area shape="rect" id="Node000001" title="LCD driver for ST7735" alt="" coords="129,5,299,84"/>
-<area shape="rect" id="Node000002" href="$_font_8h.html" title=" " alt="" coords="5,132,63,160"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,87,72,126,70,122,142,82"/>
-<area shape="rect" id="Node000003" href="$_l_c_d___s_t7735_s_8h.html" title="LCD driver file header" alt="" coords="87,132,200,160"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,86,164,121,159,118,184,83"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="224,132,348,160"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="244,83,270,118,265,121,240,86"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="372,132,432,160"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="289,82,365,122,363,127,287,87"/>
+<map id="LCD_ST7735S.c" name="LCD_ST7735S.c">
+<area shape="rect" id="Node000001" title="LCD driver for ST7735" alt="" coords="158,5,270,33"/>
+<area shape="rect" id="Node000002" href="$_font_8h.html" title=" " alt="" coords="5,81,63,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,36,78,79,76,74,181,31"/>
+<area shape="rect" id="Node000003" href="$_l_c_d___s_t7735_s_8h.html" title="LCD driver file header" alt="" coords="87,81,200,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,35,168,72,164,68,199,32"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="224,81,348,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="229,32,265,68,261,72,225,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="372,81,432,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="249,31,359,74,357,79,247,36"/>
 </map>

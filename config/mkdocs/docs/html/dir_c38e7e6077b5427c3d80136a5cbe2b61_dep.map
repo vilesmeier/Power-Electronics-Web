@@ -1,4 +1,4 @@
-<map id="D:/Codes/NUEDC/NUEDC&#45;Core/Code/Control_Driver/oled" name="D:/Codes/NUEDC/NUEDC&#45;Core/Code/Control_Driver/oled">
+<map id="oled" name="oled">
 <area shape="rect" id="node1" href="dir_c38e7e6077b5427c3d80136a5cbe2b61.html" title="oled" alt="" coords="45,54,91,82"/>
 <area shape="rect" id="node2" href="dir_26468b5983c560a96d3a222f07de3c8d.html" title="Peripheral_Driver" alt="" coords="7,130,129,158"/>
 <area shape="poly" id="edge1" href="dir_000055_000058.html" alt="" coords="71,83,71,114,65,114,65,83"/>

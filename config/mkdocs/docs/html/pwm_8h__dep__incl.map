@@ -1,5 +1,5 @@
-<map id="D:/Codes/NUEDC/NUEDC&#45;Core/Code/Peripheral_Driver/28335/PWM/pwm.h" name="D:/Codes/NUEDC/NUEDC&#45;Core/Code/Peripheral_Driver/28335/PWM/pwm.h">
-<area shape="rect" id="Node000001" title="pwm driver for F28335" alt="" coords="5,5,188,67"/>
-<area shape="rect" id="Node000002" href="$28335_2_test___projects_2e_c_a_p___test_2_user_2main_8c.html" title="F28335输入捕获测试工程" alt="" coords="12,115,181,194"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,82,99,115,94,115,94,82"/>
+<map id="pwm.h" name="pwm.h">
+<area shape="rect" id="Node000001" title="pwm driver for F28335" alt="" coords="5,5,66,33"/>
+<area shape="rect" id="Node000002" href="$28335_2_test___projects_2e_c_a_p___test_2_user_2main_8c.html" title="F28335输入捕获测试工程" alt="" coords="6,81,65,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="38,49,38,81,33,81,33,49"/>
 </map>

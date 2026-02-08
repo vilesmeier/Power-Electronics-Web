@@ -1,4 +1,4 @@
-<map id="D:/Codes/NUEDC/NUEDC&#45;Core/Code/Control_Driver/ramp" name="D:/Codes/NUEDC/NUEDC&#45;Core/Code/Control_Driver/ramp">
+<map id="ramp" name="ramp">
 <area shape="rect" id="node1" href="dir_50ed8e306261bd9f5ca546206d5534da.html" title="mathdef" alt="" coords="34,130,102,158"/>
 <area shape="rect" id="node2" href="dir_c3b185a5774b8e0397ec9b90c395f3c6.html" title="ramp" alt="" coords="42,54,94,82"/>
 <area shape="poly" id="edge1" href="dir_000067_000047.html" alt="" coords="71,83,71,114,65,114,65,83"/>

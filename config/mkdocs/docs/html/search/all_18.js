@@ -1,17 +1,6 @@
 var searchData=
 [
-  ['x_0',['x',['../struct_d_d_s_r_f__3_p_h.html#ac163d4115eb5706cc7f9027aff302c6f',1,'DDSRF_3PH']]],
-  ['x1_1',['x1',['../structdcl__df22.html#ac86cbb759faec77ff1825ff3d54a0a1b',1,'dcl_df22::x1'],['../structdcl__df23.html#a0dacf5c2684beb19503993139a041ece',1,'dcl_df23::x1']]],
-  ['x2_2',['x2',['../structdcl__df22.html#a77c24c61d028a04ed87924fa69a10e8e',1,'dcl_df22::x2'],['../structdcl__df23.html#acb5cd9a25b924a5ea2ed04bb8cfef85d',1,'dcl_df23::x2']]],
-  ['x3_3',['x3',['../structdcl__df23.html#a0a7283a089d042d4ab6478c1972fcec2',1,'dcl_df23']]],
-  ['xint_2ec_4',['xint.c',['../xint_8c.html',1,'']]],
-  ['xint_2eh_5',['xint.h',['../xint_8h.html',1,'']]],
-  ['xint1_5fisr_6',['XINT1_isr',['../group___d_r_v___f28335___x_i_n_t.html#ga92ad91868533b28fb7e1ab474180e5f7',1,'XINT1_isr(void):&#160;xint.c'],['../group___d_r_v___f28335___x_i_n_t.html#ga92ad91868533b28fb7e1ab474180e5f7',1,'XINT1_isr(void):&#160;xint.c']]],
-  ['xint2_5fisr_7',['XINT2_isr',['../group___d_r_v___f28335___x_i_n_t.html#gaa2506823905214f4e8d53131019b5462',1,'XINT2_isr(void):&#160;xint.c'],['../group___d_r_v___f28335___x_i_n_t.html#gaa2506823905214f4e8d53131019b5462',1,'XINT2_isr(void):&#160;xint.c']]],
-  ['xint3_5fisr_8',['XINT3_isr',['../group___d_r_v___f28335___x_i_n_t.html#gae0177403580369c739b3feb39fd7658d',1,'XINT3_isr(void):&#160;xint.c'],['../group___d_r_v___f28335___x_i_n_t.html#gae0177403580369c739b3feb39fd7658d',1,'XINT3_isr(void):&#160;xint.c']]],
-  ['xint4_5fisr_9',['XINT4_isr',['../group___d_r_v___f28335___x_i_n_t.html#ga3fa1e3cba136527e3c7615afcb989877',1,'XINT4_isr(void):&#160;xint.c'],['../group___d_r_v___f28335___x_i_n_t.html#ga3fa1e3cba136527e3c7615afcb989877',1,'XINT4_isr(void):&#160;xint.c']]],
-  ['xint5_5fisr_10',['XINT5_isr',['../group___d_r_v___f28335___x_i_n_t.html#ga4aeaba604b0e2c3dde57ba8d577c5904',1,'XINT5_isr(void):&#160;xint.c'],['../group___d_r_v___f28335___x_i_n_t.html#ga4aeaba604b0e2c3dde57ba8d577c5904',1,'XINT5_isr(void):&#160;xint.c']]],
-  ['xint6_5fisr_11',['XINT6_isr',['../group___d_r_v___f28335___x_i_n_t.html#ga1654499233ad3bb3b3062a63385e17f5',1,'XINT6_isr(void):&#160;xint.c'],['../group___d_r_v___f28335___x_i_n_t.html#ga1654499233ad3bb3b3062a63385e17f5',1,'XINT6_isr(void):&#160;xint.c']]],
-  ['xint7_5fisr_12',['XINT7_isr',['../xint_8c.html#a18aacfa7976670cf109b932a2dbb73da',1,'xint.c']]],
-  ['xint_5finit_13',['XINT_Init',['../group___d_r_v___f28335___x_i_n_t.html#gaffd07a9b3a14f2b8b71c64e5e87d68e2',1,'XINT_Init(void):&#160;xint.c'],['../group___d_r_v___f28335___x_i_n_t.html#gaffd07a9b3a14f2b8b71c64e5e87d68e2',1,'XINT_Init(void):&#160;xint.c']]]
+  ['w_0',['w',['../struct_d_d_s_r_f__3_p_h.html#af52ae9522fdd957d59ec478c78a61455',1,'DDSRF_3PH']]],
+  ['white_1',['WHITE',['../group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca283fc479650da98250635b9c3c0e7e50',1,'LCD_ST7735S.h']]],
+  ['writedata_2',['WriteData',['../group___d_r_v___f28335___o_l_e_d.html#ga5afff1be901cd9738f1c9652a0676f62',1,'WriteData(Uint8 Wdata, OLED_MESSAGE_TYPE mode):&#160;oled.c'],['../group___d_r_v___f28335___o_l_e_d.html#ga5afff1be901cd9738f1c9652a0676f62',1,'WriteData(Uint8 Wdata, OLED_MESSAGE_TYPE mode):&#160;oled.c']]]
 ];

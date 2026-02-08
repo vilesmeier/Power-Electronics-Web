@@ -1,5 +1,5 @@
-<map id="D:/Codes/NUEDC/NUEDC&#45;Core/Projects/28335/24B/24B/Users/main.c" name="D:/Codes/NUEDC/NUEDC&#45;Core/Projects/28335/24B/24B/Users/main.c">
-<area shape="rect" id="Node000001" title="单相功率分析仪, 2024年B题" alt="" coords="5,5,175,67"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="25,115,155,143"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,67,93,99,87,99,87,67"/>
+<map id="main.c" name="main.c">
+<area shape="rect" id="Node000001" title="单相功率分析仪, 2024年B题" alt="" coords="41,5,100,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,136,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,34,73,65,68,65,68,34"/>
 </map>

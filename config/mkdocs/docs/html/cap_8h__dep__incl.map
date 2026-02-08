@@ -1,7 +1,7 @@
-<map id="D:/Codes/NUEDC/NUEDC&#45;Core/Code/Peripheral_Driver/28335/CAP/cap.h" name="D:/Codes/NUEDC/NUEDC&#45;Core/Code/Peripheral_Driver/28335/CAP/cap.h">
-<area shape="rect" id="Node000001" title="ecap driver header" alt="" coords="101,5,271,67"/>
-<area shape="rect" id="Node000002" href="$cap_8c.html" title="driver code of eCAP of F28335" alt="" coords="5,124,175,185"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,81,117,125,113,121,149,77"/>
-<area shape="rect" id="Node000003" href="$28335_2_test___projects_2e_c_a_p___test_2_user_2main_8c.html" title="F28335输入捕获测试工程" alt="" coords="199,115,368,194"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,77,253,113,249,116,219,81"/>
+<map id="cap.h" name="cap.h">
+<area shape="rect" id="Node000001" title="ecap driver header" alt="" coords="45,5,97,33"/>
+<area shape="rect" id="Node000002" href="$cap_8c.html" title="driver code of eCAP of F28335" alt="" coords="5,81,57,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,48,40,82,36,79,54,46"/>
+<area shape="rect" id="Node000003" href="$28335_2_test___projects_2e_c_a_p___test_2_user_2main_8c.html" title="F28335输入捕获测试工程" alt="" coords="81,81,141,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,46,106,79,102,82,83,48"/>
 </map>
