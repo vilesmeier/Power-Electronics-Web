@@ -1,4 +1,27 @@
 var searchData=
 [
-  ['use_5flegacy_5fnames_0',['USE_LEGACY_NAMES',['../fpu__types_8h.html#a5e488e682033365f0f7a9a2ae7c67622',1,'fpu_types.h']]]
+  ['taylor1024_0',['TAYLOR1024',['../fpu__fft__taylor_8h.html#af1c2adb98c718d3af44789cfec5173ff',1,'fpu_fft_taylor.h']]],
+  ['taylor128_1',['TAYLOR128',['../fpu__fft__taylor_8h.html#afcf954157973b593d33d2a1a9f662a57',1,'fpu_fft_taylor.h']]],
+  ['taylor2048_2',['TAYLOR2048',['../fpu__fft__taylor_8h.html#af86fc3b21a58d46716e05884f49d18ed',1,'fpu_fft_taylor.h']]],
+  ['taylor256_3',['TAYLOR256',['../fpu__fft__taylor_8h.html#acbbf31cc365c7adf7d9ed0142f16ebfd',1,'fpu_fft_taylor.h']]],
+  ['taylor32_4',['TAYLOR32',['../fpu__fft__taylor_8h.html#a8779542067f3f2586477405c41c08b42',1,'fpu_fft_taylor.h']]],
+  ['taylor4096_5',['TAYLOR4096',['../fpu__fft__taylor_8h.html#ad6bf1b55de1c5ce8b34a1221396bc24d',1,'fpu_fft_taylor.h']]],
+  ['taylor512_6',['TAYLOR512',['../fpu__fft__taylor_8h.html#afdf08afbae3ec537225f41c795413e1e',1,'fpu_fft_taylor.h']]],
+  ['taylor64_7',['TAYLOR64',['../fpu__fft__taylor_8h.html#a554b3483448077d61231330bcf755aff',1,'fpu_fft_taylor.h']]],
+  ['triang1024_8',['TRIANG1024',['../fpu__fft__triang_8h.html#a14f11165ea57375a2acfbff4419ca983',1,'fpu_fft_triang.h']]],
+  ['triang128_9',['TRIANG128',['../fpu__fft__triang_8h.html#a8762b630b99ab4d826179f2f84744e03',1,'fpu_fft_triang.h']]],
+  ['triang2048_10',['TRIANG2048',['../fpu__fft__triang_8h.html#a80b5dbaf82cf6df113772ea4877df30a',1,'fpu_fft_triang.h']]],
+  ['triang256_11',['TRIANG256',['../fpu__fft__triang_8h.html#addd267277e9084f022b4caab794a5063',1,'fpu_fft_triang.h']]],
+  ['triang32_12',['TRIANG32',['../fpu__fft__triang_8h.html#a9329249d02436893fbc0521c1f18ecfa',1,'fpu_fft_triang.h']]],
+  ['triang4096_13',['TRIANG4096',['../fpu__fft__triang_8h.html#accbfc5ec204bc5ab4b5d705822b7bc85',1,'fpu_fft_triang.h']]],
+  ['triang512_14',['TRIANG512',['../fpu__fft__triang_8h.html#a6f10d189d2192fadd63c53e39e032e5b',1,'fpu_fft_triang.h']]],
+  ['triang64_15',['TRIANG64',['../fpu__fft__triang_8h.html#a8b365885f9778ed34b5fe8dafba2b7b0',1,'fpu_fft_triang.h']]],
+  ['tukey1024_16',['TUKEY1024',['../fpu__fft__tukey_8h.html#a561fdc2939765639e7905fc9d68c50c8',1,'fpu_fft_tukey.h']]],
+  ['tukey128_17',['TUKEY128',['../fpu__fft__tukey_8h.html#a92e88a373eed9e95050fe8ef2cd60369',1,'fpu_fft_tukey.h']]],
+  ['tukey2048_18',['TUKEY2048',['../fpu__fft__tukey_8h.html#ab2a647c8c305e9f85a0169a648912db6',1,'fpu_fft_tukey.h']]],
+  ['tukey256_19',['TUKEY256',['../fpu__fft__tukey_8h.html#a861647a59aa879db12753481a91f518c',1,'fpu_fft_tukey.h']]],
+  ['tukey32_20',['TUKEY32',['../fpu__fft__tukey_8h.html#a40b3681b79b155b9c947ca431941d0d4',1,'fpu_fft_tukey.h']]],
+  ['tukey4096_21',['TUKEY4096',['../fpu__fft__tukey_8h.html#a5075354be0793443dcea130ef0abd391',1,'fpu_fft_tukey.h']]],
+  ['tukey512_22',['TUKEY512',['../fpu__fft__tukey_8h.html#a041c78c3467931d7e0ffbf363ae90790',1,'fpu_fft_tukey.h']]],
+  ['tukey64_23',['TUKEY64',['../fpu__fft__tukey_8h.html#afbe967db3577a244cffffe277b7c8a61',1,'fpu_fft_tukey.h']]]
 ];

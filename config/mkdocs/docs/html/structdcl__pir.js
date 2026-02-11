@@ -1,6 +1,6 @@
 var structdcl__pir =
 [
-    [ "Output", "structdcl__pir.html#a12b18ce5b76e4a13e75d8178a0fd0f97", null ],
-    [ "pi", "structdcl__pir.html#a0fdbf6c9d2c666924d36f3422de5792c", null ],
-    [ "pr", "structdcl__pir.html#aa05551716411266f019e1fc4441c91ca", null ]
+    [ "output", "structdcl__pir.html#a5dd5e810e4e6c00eb4f2d8a7f84611ec", null ],
+    [ "pi", "structdcl__pir.html#a67ece74c15262f4bdf691d13b7f1d4ef", null ],
+    [ "pr", "structdcl__pir.html#aa7c4f22960f27597bb8da0b7eb9562c1", null ]
 ];

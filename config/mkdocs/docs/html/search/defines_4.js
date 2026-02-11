@@ -1,19 +1,11 @@
 var searchData=
 [
-  ['hamming1024_0',['HAMMING1024',['../fpu__fft__hamming_8h.html#a77187321c0d2d5a4c52cd6f2098b5b5a',1,'fpu_fft_hamming.h']]],
-  ['hamming128_1',['HAMMING128',['../fpu__fft__hamming_8h.html#a776be79a7fc7c3862fa1d826164f2563',1,'fpu_fft_hamming.h']]],
-  ['hamming2048_2',['HAMMING2048',['../fpu__fft__hamming_8h.html#ad37c32e88c9b503a8e8463dbc37c6749',1,'fpu_fft_hamming.h']]],
-  ['hamming256_3',['HAMMING256',['../fpu__fft__hamming_8h.html#a7b96ec31dab9dd5c0e340156c8df6930',1,'fpu_fft_hamming.h']]],
-  ['hamming32_4',['HAMMING32',['../fpu__fft__hamming_8h.html#ab03c1f115ea39ee05b132e4bb5f2fcc2',1,'fpu_fft_hamming.h']]],
-  ['hamming4096_5',['HAMMING4096',['../fpu__fft__hamming_8h.html#a7283aaed68098186ad7e744afa46d324',1,'fpu_fft_hamming.h']]],
-  ['hamming512_6',['HAMMING512',['../fpu__fft__hamming_8h.html#a37259085e919b58df9818fce5bfa1bba',1,'fpu_fft_hamming.h']]],
-  ['hamming64_7',['HAMMING64',['../fpu__fft__hamming_8h.html#a16aaa7b3671dc32b77f0a5a9713bf0f7',1,'fpu_fft_hamming.h']]],
-  ['hann1024_8',['HANN1024',['../fpu__fft__hann_8h.html#a7e7569678bf38363062746448fa45cea',1,'fpu_fft_hann.h']]],
-  ['hann128_9',['HANN128',['../fpu__fft__hann_8h.html#a9e33d3ea7e960c844b6149251416ddb9',1,'fpu_fft_hann.h']]],
-  ['hann2048_10',['HANN2048',['../fpu__fft__hann_8h.html#a0f24e15756c9255771c23172c76b03b3',1,'fpu_fft_hann.h']]],
-  ['hann256_11',['HANN256',['../fpu__fft__hann_8h.html#a1c8b4f62a06d495ab72f038b56ee4216',1,'fpu_fft_hann.h']]],
-  ['hann32_12',['HANN32',['../fpu__fft__hann_8h.html#abda226d161f14a7bf8e5d25d8232b83e',1,'fpu_fft_hann.h']]],
-  ['hann4096_13',['HANN4096',['../fpu__fft__hann_8h.html#a46e401c3bf16b3c47859bd6c4dca20a9',1,'fpu_fft_hann.h']]],
-  ['hann512_14',['HANN512',['../fpu__fft__hann_8h.html#a20142d2846cb81f38c200c918d15af06',1,'fpu_fft_hann.h']]],
-  ['hann64_15',['HANN64',['../fpu__fft__hann_8h.html#a02b83ae32516a93c3da1d19cd329370a',1,'fpu_fft_hann.h']]]
+  ['gauss1024_0',['GAUSS1024',['../fpu__fft__gauss_8h.html#a91f26b753ff97f267859de6fb7ee1b3e',1,'fpu_fft_gauss.h']]],
+  ['gauss128_1',['GAUSS128',['../fpu__fft__gauss_8h.html#a6b149f2c1ceb351b5219e64a104ee519',1,'fpu_fft_gauss.h']]],
+  ['gauss2048_2',['GAUSS2048',['../fpu__fft__gauss_8h.html#ac1cbe72ea64f9f6d62a699e6061b30b2',1,'fpu_fft_gauss.h']]],
+  ['gauss256_3',['GAUSS256',['../fpu__fft__gauss_8h.html#a2e357edad8b57b8c51a73f133e86e84a',1,'fpu_fft_gauss.h']]],
+  ['gauss32_4',['GAUSS32',['../fpu__fft__gauss_8h.html#a3504758f50cb4ea01c2a34e6e366bbf8',1,'fpu_fft_gauss.h']]],
+  ['gauss4096_5',['GAUSS4096',['../fpu__fft__gauss_8h.html#abb68e2ba2bb70d8aed71c6393f498c5c',1,'fpu_fft_gauss.h']]],
+  ['gauss512_6',['GAUSS512',['../fpu__fft__gauss_8h.html#a029bde43f849a3773bd94515f9f9e6f8',1,'fpu_fft_gauss.h']]],
+  ['gauss64_7',['GAUSS64',['../fpu__fft__gauss_8h.html#a6d1c37e2e5e4f1a32deff15671152eef',1,'fpu_fft_gauss.h']]]
 ];

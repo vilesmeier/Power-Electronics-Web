@@ -5,6 +5,8 @@ var structdcl__df22 =
     [ "b0", "structdcl__df22.html#a03528277f341d047fadc1e6ce7b204cd", null ],
     [ "b1", "structdcl__df22.html#a749a8e78827048558ef94262cb1b2da8", null ],
     [ "b2", "structdcl__df22.html#a999dfadc0e3ccc0a21b963590c3a5db6", null ],
+    [ "css", "structdcl__df22.html#a027b7c273f8eba0f9f60e6d99761f9cf", null ],
+    [ "sps", "structdcl__df22.html#aa1867b069536b99536e6d0f6b68292ed", null ],
     [ "x1", "structdcl__df22.html#ac86cbb759faec77ff1825ff3d54a0a1b", null ],
     [ "x2", "structdcl__df22.html#a77c24c61d028a04ed87924fa69a10e8e", null ]
 ];

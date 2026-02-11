@@ -1,9 +1,17 @@
 <map id="dcl_pir" name="dcl_pir">
-<area shape="rect" id="Node000001" title="使用PI和PR结构体定义PIR控制器" alt="" coords="27,207,86,234"/>
-<area shape="rect" id="Node000002" href="$structdcl__pi.html" title="定义 PI 控制器结构体" alt="" coords="5,106,60,134"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,148,56,205,51,207,37,149"/>
-<area shape="rect" id="Node000003" href="$structdcl__pr.html" title="使用DF22结构体定义PR控制器" alt="" coords="84,106,141,134"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="100,148,66,207,62,205,95,146"/>
-<area shape="rect" id="Node000004" href="$structdcl__df22.html" title="定义二阶直接形式Ⅱ（DF22）控制器结构体" alt="" coords="78,5,147,33"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="115,49,115,105,110,105,110,49"/>
+<area shape="rect" id="Node000001" title="定义PIR控制器" alt="" coords="81,307,140,335"/>
+<area shape="rect" id="Node000002" href="$structdcl__pi__t.html" title="Defines the DCL_PI_T controller structure" alt="" coords="30,207,96,234"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,247,107,306,102,308,73,249"/>
+<area shape="rect" id="Node000003" href="$structdcl__pi.html" title="Defines the DCL_PI controller structure" alt="" coords="50,106,105,134"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="76,149,67,206,62,206,71,148"/>
+<area shape="rect" id="Node000004" href="$structdcl__pi__sps.html" title="Defines the DCL_PI shadow parameter set" alt="" coords="5,5,86,33"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="32,47,15,88,12,111,14,133,33,173,54,205,50,208,28,176,9,134,7,110,10,87,27,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="57,47,76,105,71,106,52,48"/>
+<area shape="rect" id="Node000005" href="$structdcl__df22__t.html" title="Defines the DCL_DF22 controller structure" alt="" coords="120,207,200,234"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="149,249,120,308,115,306,144,247"/>
+<area shape="rect" id="Node000006" href="$structdcl__df22.html" title="Defines the DCL_DF22 controller structure" alt="" coords="208,106,278,134"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="224,147,173,208,169,204,220,144"/>
+<area shape="rect" id="Node000007" href="$structdcl__df22__sps.html" title="Defines the DCL_DF22 shadow parameter set" alt="" coords="130,5,225,33"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="177,48,172,106,164,207,158,206,167,106,172,48"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="197,44,236,104,232,107,192,47"/>
 </map>

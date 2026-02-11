@@ -1,0 +1,5 @@
+<map id="DCL_PI_Run" name="DCL_PI_Run">
+<area shape="rect" id="Node000001" title="执行 PI_T 控制器" alt="" coords="5,5,99,33"/>
+<area shape="rect" id="Node000002" href="$group___c_t_r_l___d_c_l.html#ga8e97e28b063ef52e0a59429cccc9c389" title="Executes a series form PI controller on the FPU32 Implemented as an external assembly module" alt="" coords="147,5,252,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,16,131,16,131,22,99,22"/>
+</map>

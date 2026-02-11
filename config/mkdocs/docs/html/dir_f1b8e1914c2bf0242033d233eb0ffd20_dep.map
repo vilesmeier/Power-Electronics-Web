@@ -1,10 +1,4 @@
 <map id="dcl" name="dcl">
-<area shape="rect" id="node1" href="dir_18303dec2931d175ba475094c384322b.html" title="delay" alt="" coords="27,130,80,158"/>
-<area shape="rect" id="node2" href="dir_ec80777730a45e0d08ba365534f6468c.html" title="transferfun" alt="" coords="103,130,188,158"/>
-<area shape="rect" id="node3" href="dir_f1b8e1914c2bf0242033d233eb0ffd20.html" title="dcl" alt="" coords="79,54,118,82"/>
-<area shape="poly" id="edge1" href="dir_000034_000035.html" alt="" coords="93,84,72,118,67,115,88,81"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000034_000035.html" title="1" alt="" coords="75,110,82,127"/>
-<area shape="poly" id="edge2" href="dir_000034_000081.html" alt="" coords="109,81,131,116,127,118,105,84"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000034_000081.html" title="1" alt="" coords="131,101,138,118"/>
-<area shape="rect" id="clust1" href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html" title="Control_Driver" alt="" coords="16,16,199,168"/>
+<area shape="rect" id="node1" href="dir_f1b8e1914c2bf0242033d233eb0ffd20.html" title="dcl" alt="" coords="49,54,87,82"/>
+<area shape="rect" id="clust1" href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html" title="Control_Driver" alt="" coords="16,16,121,93"/>
 </map>

@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
    </div>
    <div id="projectbrief">NUEDC软件代码库</div>
   </td>
@@ -132,6 +132,11 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 <tr class="memitem:RFFT_5FADC_5FF32_5FSTRUCT" id="r_RFFT_5FADC_5FF32_5FSTRUCT"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html">RFFT_ADC_F32_STRUCT</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for the Real FFT with ADC input  <a href="struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html#details">更多...</a><br /></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ac40552433a3763f37032bfa93e4ec66c" id="r_ac40552433a3763f37032bfa93e4ec66c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac40552433a3763f37032bfa93e4ec66c">RFFT_F32_STRUCT_DEFAULTS</a>&#160;&#160;&#160;{ NULL, NULL, NULL, NULL, NULL, 0u, 0u}</td></tr>
+<tr class="memitem:a5d32856318d028320ae9e2f1d2bf52a4" id="r_a5d32856318d028320ae9e2f1d2bf52a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d32856318d028320ae9e2f1d2bf52a4">RFFT_F32_STRUCT_HANDLE_DEFAULTS</a>&#160;&#160;&#160;NULL</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 类型定义</h2></td></tr>
 <tr class="memitem:a8e0e8c088fc134b9afc9994c3b253faf" id="r_a8e0e8c088fc134b9afc9994c3b253faf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">RFFT_F32_STRUCT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a></td></tr>
@@ -178,7 +183,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 <tr class="memitem:a58fc9532ac9190d6cf34d32140122da8" id="r_a58fc9532ac9190d6cf34d32140122da8"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58fc9532ac9190d6cf34d32140122da8">RFFT_ADC_f32_getTailPtr</a> (<a class="el" href="#a8a977d8b9a2c1763124388928d94204a">RFFT_ADC_F32_STRUCT_Handle</a> fh)</td></tr>
 <tr class="memdesc:a58fc9532ac9190d6cf34d32140122da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the tail pointer  <br /></td></tr>
 <tr class="memitem:a4ba62438408b6dbbe39975f316fe4429" id="r_a4ba62438408b6dbbe39975f316fe4429"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ba62438408b6dbbe39975f316fe4429">RFFT_f32</a> (<a class="el" href="#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> hndRFFT_F32)</td></tr>
-<tr class="memdesc:a4ba62438408b6dbbe39975f316fe4429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Real Fast Fourier Transform (<a class="el" href="struct_r_f_f_t.html" title="结构体定义">RFFT</a>).  <br /></td></tr>
+<tr class="memdesc:a4ba62438408b6dbbe39975f316fe4429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Real Fast Fourier Transform (RFFT).  <br /></td></tr>
 <tr class="memitem:a9124e5c81f2cf7c0b2b8be3e761117bf" id="r_a9124e5c81f2cf7c0b2b8be3e761117bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9124e5c81f2cf7c0b2b8be3e761117bf">RFFT_f32u</a> (<a class="el" href="#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> hndRFFT_F32)</td></tr>
 <tr class="memdesc:a9124e5c81f2cf7c0b2b8be3e761117bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Real FFT (Unaligned).  <br /></td></tr>
 <tr class="memitem:aa982a487f6da0f5d2137d4ee9cea234e" id="r_aa982a487f6da0f5d2137d4ee9cea234e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa982a487f6da0f5d2137d4ee9cea234e">RFFT_adc_f32</a> (<a class="el" href="#a8a977d8b9a2c1763124388928d94204a">RFFT_ADC_F32_STRUCT_Handle</a> hndRFFT_ADC_F32)</td></tr>
@@ -204,6 +209,39 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 <tr class="memdesc:a7ee4950c0f3a0aa89000ac36ffffcd16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Twiddle Factor Table for a 2048-pt (max) Real FFT  <br /></td></tr>
 <tr class="memitem:a9903744e1b4aa7f22343b3af65be67af" id="r_a9903744e1b4aa7f22343b3af65be67af"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9903744e1b4aa7f22343b3af65be67af">FPU32RFFTtwiddleFactors</a> [1020]</td></tr>
 </table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="ac40552433a3763f37032bfa93e4ec66c" name="ac40552433a3763f37032bfa93e4ec66c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac40552433a3763f37032bfa93e4ec66c">&#9670;&#160;</a></span>RFFT_F32_STRUCT_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RFFT_F32_STRUCT_DEFAULTS&#160;&#160;&#160;{ NULL, NULL, NULL, NULL, NULL, 0u, 0u}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00086">86</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5d32856318d028320ae9e2f1d2bf52a4" name="a5d32856318d028320ae9e2f1d2bf52a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d32856318d028320ae9e2f1d2bf52a4">&#9670;&#160;</a></span>RFFT_F32_STRUCT_HANDLE_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RFFT_F32_STRUCT_HANDLE_DEFAULTS&#160;&#160;&#160;NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00092">92</a> 行定义.</p>
+
+</div>
+</div>
 <a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">类型定义说明</h2>
 <a id="a8a977d8b9a2c1763124388928d94204a" name="a8a977d8b9a2c1763124388928d94204a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a977d8b9a2c1763124388928d94204a">&#9670;&#160;</a></span>RFFT_ADC_F32_STRUCT_Handle</h2>
@@ -219,7 +257,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 
 <p>Handle to the Real FFT (with ADC input) structure </p>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00099">99</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00103">103</a> 行定义.</p>
 
 </div>
 </div>
@@ -237,7 +275,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 
 <p>Handle to the Real FFT object </p>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00088">88</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00090">90</a> 行定义.</p>
 
 </div>
 </div>
@@ -275,7 +313,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 <dl class="section attention"><dt>注意</dt><dd><ol type="1">
-<li>The routine requires the use of two buffers, the input of size 2N and type uint16_t, the output of size N and type float, for computation; the input buffer must be aligned to a memory address of N words (16-bit). Refer to the <a class="el" href="struct_r_f_f_t.html" title="结构体定义">RFFT</a> linker command file to see an example of this.</li>
+<li>The routine requires the use of two buffers, the input of size 2N and type uint16_t, the output of size N and type float, for computation; the input buffer must be aligned to a memory address of N words (16-bit). Refer to the RFFT linker command file to see an example of this.</li>
 <li>If alignment is not possible the user can use the alternative, albeit slower, function RFFT_adc_f32u</li>
 </ol>
 </dd></dl>
@@ -330,7 +368,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pi pointer to the input buffer </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00271">271</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00275">275</a> 行定义.</p>
 
 </div>
 </div>
@@ -366,7 +404,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pt pointer to the tail </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00290">290</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00294">294</a> 行定义.</p>
 
 </div>
 </div>
@@ -406,7 +444,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00261">261</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00265">265</a> 行定义.</p>
 
 </div>
 </div>
@@ -446,7 +484,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00280">280</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00284">284</a> 行定义.</p>
 
 </div>
 </div>
@@ -593,7 +631,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Real Fast Fourier Transform (<a class="el" href="struct_r_f_f_t.html" title="结构体定义">RFFT</a>). </p>
+<p>Real Fast Fourier Transform (RFFT). </p>
 <p>This routine computes the 32-bit floating-point FFT for an N-pt ( <img class="formulaInl" alt="$ N = 2^{n}, n = 5 : 10$" src="form_0.png"/>) This routine computes the 32-bit single precision FFT for an N-pt ( <img class="formulaInl" alt="$ N = 2^{n}, n = 5 : 10$" src="form_0.png"/>) real input. This function reorders the input in bit-reversed format as part of the stage 1,2 and 3 computations. The routine uses two buffers in ping-pong fashion i.e. after each FFT stage the output and input buffers become the input and output buffers respectively for the next stage. This algorithm only allocates memory, and performs computation, for the non-zero elements of the input (the real part). The complex conjugate nature of the spectrum (for real only data) affords savings in space and computaion, therefore the algorithm only calculates the spectrum from the 0th bin to the nyquist bin (included).</p>
 <p>Another approach to calculate the real FFT would be to treat the real N-point data as N/2 complex, run the forward complex N/2 point FFT followed by an "unpack" function</p>
 <dl class="params"><dt>参数</dt><dd>
@@ -603,7 +641,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 <dl class="section attention"><dt>注意</dt><dd><ol type="1">
-<li>The routine requires the use of two buffers, each of size N (32-bit float), for computation; the input buffer must be aligned to a memory address of 2N words (16-bit). Refer to the <a class="el" href="struct_r_f_f_t.html" title="结构体定义">RFFT</a> linker command file to see an example of this.</li>
+<li>The routine requires the use of two buffers, each of size N (32-bit float), for computation; the input buffer must be aligned to a memory address of 2N words (16-bit). Refer to the RFFT linker command file to see an example of this.</li>
 <li>If alignment is not possible the user can use the alternative, albeit slower, function RFFT_f32u </li>
 </ol>
 </dd></dl>
@@ -659,7 +697,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>sz size of the FFT </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00252">252</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00256">256</a> 行定义.</p>
 
 </div>
 </div>
@@ -695,7 +733,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pi pointer to the input buffer </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00136">136</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00140">140</a> 行定义.</p>
 
 </div>
 </div>
@@ -731,7 +769,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pm pointer to the magnitude buffer </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00194">194</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00198">198</a> 行定义.</p>
 
 </div>
 </div>
@@ -767,7 +805,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>po pointer to the output buffer </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00155">155</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00159">159</a> 行定义.</p>
 
 </div>
 </div>
@@ -803,7 +841,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pp pointer to the phase buffer </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00214">214</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00218">218</a> 行定义.</p>
 
 </div>
 </div>
@@ -839,7 +877,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>st number of FFT stages </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00233">233</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00237">237</a> 行定义.</p>
 
 </div>
 </div>
@@ -875,7 +913,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>pt pointer to the twiddles </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00174">174</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00178">178</a> 行定义.</p>
 
 </div>
 </div>
@@ -1023,7 +1061,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00242">242</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00246">246</a> 行定义.</p>
 
 </div>
 </div>
@@ -1063,7 +1101,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00126">126</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00130">130</a> 行定义.</p>
 
 </div>
 </div>
@@ -1103,7 +1141,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00183">183</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00187">187</a> 行定义.</p>
 
 </div>
 </div>
@@ -1143,7 +1181,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00145">145</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00149">149</a> 行定义.</p>
 
 </div>
 </div>
@@ -1183,7 +1221,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00203">203</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00207">207</a> 行定义.</p>
 
 </div>
 </div>
@@ -1223,7 +1261,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00223">223</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00227">227</a> 行定义.</p>
 
 </div>
 </div>
@@ -1263,7 +1301,7 @@ fpu_rfft.h 的引用(Include)关系图:</div>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00164">164</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="fpu__rfft_8h_source.html">fpu_rfft.h</a> 第 <a class="el" href="fpu__rfft_8h_source.html#l00168">168</a> 行定义.</p>
 
 </div>
 </div>

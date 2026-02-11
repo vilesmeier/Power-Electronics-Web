@@ -1,13 +1,11 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,215,55,242"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,188,55,216"/>
 <area shape="rect" id="Node000002" href="$group___d_r_v___f28335___a_d_c.html#ga5137b551f1b83b0f4d8df7d071a3d3a6" title="ADC Init" alt="" coords="108,59,180,86"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="39,213,122,98,126,101,44,216"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,186,119,97,123,100,46,189"/>
 <area shape="rect" id="Node000004" href="$group___d_r_v___f28335___p_w_m.html#ga16a6a31227f60674257e9715ee0c1638" title="init interrupt, pwm1&#45;6, tb sync and adc trigger" alt="" coords="103,188,186,216"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="54,220,87,213,88,218,56,225"/>
-<area shape="rect" id="Node000012" href="$group___c_t_r_l___r_a_m_p.html#ga3e743c6f7b3d3cace6e21e22f9722466" title="结构体初始化" alt="" coords="104,240,184,268"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="56,231,89,239,88,244,54,236"/>
-<area shape="rect" id="Node000013" href="$group___c_t_r_l___r_a_m_p.html#ga2e5990d2aba3b0277df88a6bb0871b2a" title="set parameters,frequent in Hz" alt="" coords="105,292,184,320"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="53,241,104,277,110,281,107,285,101,281,50,245"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="55,199,87,199,87,204,55,204"/>
+<area shape="rect" id="Node000012" href="$group___c_t_r_l___r_a_m_p.html#gab4cf5a44777a203a846f091f53122efb" title="set parameters,frequent in Hz" alt="" coords="105,240,184,268"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="56,210,100,231,97,235,54,215"/>
 <area shape="rect" id="Node000003" href="$group___d_r_v___f28335___a_d_c.html#ga3812a7e6a8dc85e545d21c6e3a59598d" title="Interrupt Service Routine For ADC" alt="" coords="235,5,323,33"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,56,227,37,229,42,182,61"/>
 <area shape="rect" id="Node000005" href="$group___d_r_v___f28335___p_w_m.html#ga6f7068187c566632edbcc40fb80774a6" title="init pwm&#45;1" alt="" coords="234,57,324,85"/>

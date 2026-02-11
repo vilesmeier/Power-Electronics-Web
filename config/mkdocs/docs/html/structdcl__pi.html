@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
    </div>
    <div id="projectbrief">NUEDC软件代码库</div>
   </td>
@@ -90,43 +90,73 @@ $(function(){initNavTree('structdcl__pi.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">dcl_pi结构体 参考<div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a> &raquo; <a class="el" href="group___c_t_r_l___d_c_l.html">数字控制器</a></div></div></div>
+  <div class="headertitle"><div class="title">dcl_pi结构体 参考<div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a> &raquo; <a class="el" href="group___c_t_r_l___d_c_l.html">TI数字控制库</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>定义 PI 控制器结构体  
+<p>Defines the <a class="el" href="group___c_t_r_l___d_c_l.html#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> controller structure  
  <a href="#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="dcl_8h_source.html">dcl.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_d_c_l_8h_source.html">DCL.h</a>&gt;</code></p>
+<div class="dynheader">
+dcl_pi 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structdcl__pi__coll__graph.png" border="0" usemap="#adcl__pi_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="adcl__pi_coll__map" id="adcl__pi_coll__map">
+<area shape="rect" title="Defines the DCL_PI controller structure" alt="" coords="18,106,73,134"/>
+<area shape="rect" href="structdcl__pi__sps.html" title="Defines the DCL_PI shadow parameter set" alt="" coords="5,5,86,33"/>
+<area shape="poly" title=" " alt="" coords="48,49,48,105,43,105,43,49"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 成员变量</h2></td></tr>
-<tr class="memitem:a70792082c84c8cae9b9066243eedf145" id="r_a70792082c84c8cae9b9066243eedf145"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70792082c84c8cae9b9066243eedf145">Kp</a></td></tr>
-<tr class="memdesc:a70792082c84c8cae9b9066243eedf145"><td class="mdescLeft">&#160;</td><td class="mdescRight">比例系数  <br /></td></tr>
-<tr class="memitem:a492d39ca90bad5aa0d85276d2eba36bc" id="r_a492d39ca90bad5aa0d85276d2eba36bc"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a492d39ca90bad5aa0d85276d2eba36bc">Ki</a></td></tr>
-<tr class="memdesc:a492d39ca90bad5aa0d85276d2eba36bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">积分系数  <br /></td></tr>
-<tr class="memitem:ade411ff7721c3a5ca87cd3face8d5100" id="r_ade411ff7721c3a5ca87cd3face8d5100"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade411ff7721c3a5ca87cd3face8d5100">i10</a></td></tr>
-<tr class="memdesc:ade411ff7721c3a5ca87cd3face8d5100"><td class="mdescLeft">&#160;</td><td class="mdescRight">积分暂存量  <br /></td></tr>
-<tr class="memitem:a0a101ad35b271d1a013a490ab3e5122f" id="r_a0a101ad35b271d1a013a490ab3e5122f"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a101ad35b271d1a013a490ab3e5122f">Umax</a></td></tr>
-<tr class="memdesc:a0a101ad35b271d1a013a490ab3e5122f"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出上限  <br /></td></tr>
-<tr class="memitem:a40ecba56643e5392c7ea2e0c18b1454b" id="r_a40ecba56643e5392c7ea2e0c18b1454b"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40ecba56643e5392c7ea2e0c18b1454b">Umin</a></td></tr>
-<tr class="memdesc:a40ecba56643e5392c7ea2e0c18b1454b"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出下限  <br /></td></tr>
-<tr class="memitem:a4e94539254759ca200861fef934891f0" id="r_a4e94539254759ca200861fef934891f0"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e94539254759ca200861fef934891f0">i6</a></td></tr>
-<tr class="memdesc:a4e94539254759ca200861fef934891f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">饱和状态暂存  <br /></td></tr>
-<tr class="memitem:a47195611c4f7c50688daf65845f23b02" id="r_a47195611c4f7c50688daf65845f23b02"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47195611c4f7c50688daf65845f23b02">i11</a></td></tr>
-<tr class="memdesc:a47195611c4f7c50688daf65845f23b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">积分状态暂存  <br /></td></tr>
-<tr class="memitem:a32f1d71d651dd1fc3c107f94a0d868bb" id="r_a32f1d71d651dd1fc3c107f94a0d868bb"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32f1d71d651dd1fc3c107f94a0d868bb">Imax</a></td></tr>
-<tr class="memdesc:a32f1d71d651dd1fc3c107f94a0d868bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">积分上限  <br /></td></tr>
-<tr class="memitem:ae821c1bb9d87a6eb37fb02230b939a27" id="r_ae821c1bb9d87a6eb37fb02230b939a27"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae821c1bb9d87a6eb37fb02230b939a27">Imin</a></td></tr>
-<tr class="memdesc:ae821c1bb9d87a6eb37fb02230b939a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">积分下限  <br /></td></tr>
-<tr class="memitem:a675420ffb9edea8ba70e68451c691062" id="r_a675420ffb9edea8ba70e68451c691062"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a675420ffb9edea8ba70e68451c691062">Output</a></td></tr>
-<tr class="memdesc:a675420ffb9edea8ba70e68451c691062"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制输出  <br /></td></tr>
+<tr class="memitem:a70792082c84c8cae9b9066243eedf145" id="r_a70792082c84c8cae9b9066243eedf145"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70792082c84c8cae9b9066243eedf145">Kp</a></td></tr>
+<tr class="memdesc:a70792082c84c8cae9b9066243eedf145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proportional gain  <br /></td></tr>
+<tr class="memitem:a492d39ca90bad5aa0d85276d2eba36bc" id="r_a492d39ca90bad5aa0d85276d2eba36bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a492d39ca90bad5aa0d85276d2eba36bc">Ki</a></td></tr>
+<tr class="memdesc:a492d39ca90bad5aa0d85276d2eba36bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integral gain  <br /></td></tr>
+<tr class="memitem:ade411ff7721c3a5ca87cd3face8d5100" id="r_ade411ff7721c3a5ca87cd3face8d5100"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade411ff7721c3a5ca87cd3face8d5100">i10</a></td></tr>
+<tr class="memdesc:ade411ff7721c3a5ca87cd3face8d5100"><td class="mdescLeft">&#160;</td><td class="mdescRight">I storage  <br /></td></tr>
+<tr class="memitem:a0a101ad35b271d1a013a490ab3e5122f" id="r_a0a101ad35b271d1a013a490ab3e5122f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a101ad35b271d1a013a490ab3e5122f">Umax</a></td></tr>
+<tr class="memdesc:a0a101ad35b271d1a013a490ab3e5122f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upper control saturation limit  <br /></td></tr>
+<tr class="memitem:a40ecba56643e5392c7ea2e0c18b1454b" id="r_a40ecba56643e5392c7ea2e0c18b1454b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40ecba56643e5392c7ea2e0c18b1454b">Umin</a></td></tr>
+<tr class="memdesc:a40ecba56643e5392c7ea2e0c18b1454b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lower control saturation limit  <br /></td></tr>
+<tr class="memitem:a4e94539254759ca200861fef934891f0" id="r_a4e94539254759ca200861fef934891f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e94539254759ca200861fef934891f0">i6</a></td></tr>
+<tr class="memdesc:a4e94539254759ca200861fef934891f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saturation storage  <br /></td></tr>
+<tr class="memitem:a47195611c4f7c50688daf65845f23b02" id="r_a47195611c4f7c50688daf65845f23b02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47195611c4f7c50688daf65845f23b02">i11</a></td></tr>
+<tr class="memdesc:a47195611c4f7c50688daf65845f23b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">I storage  <br /></td></tr>
+<tr class="memitem:a32f1d71d651dd1fc3c107f94a0d868bb" id="r_a32f1d71d651dd1fc3c107f94a0d868bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32f1d71d651dd1fc3c107f94a0d868bb">Imax</a></td></tr>
+<tr class="memdesc:a32f1d71d651dd1fc3c107f94a0d868bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upper integrator saturation limit  <br /></td></tr>
+<tr class="memitem:ae821c1bb9d87a6eb37fb02230b939a27" id="r_ae821c1bb9d87a6eb37fb02230b939a27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae821c1bb9d87a6eb37fb02230b939a27">Imin</a></td></tr>
+<tr class="memdesc:ae821c1bb9d87a6eb37fb02230b939a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lower integrator saturation limit  <br /></td></tr>
+<tr class="memitem:ad7c55f87dc88c00e59e6ce216da6db07" id="r_ad7c55f87dc88c00e59e6ce216da6db07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#gae74693ba4166199d0672acf44fd75f0c">DCL_PI_SPS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7c55f87dc88c00e59e6ce216da6db07">sps</a></td></tr>
+<tr class="memdesc:ad7c55f87dc88c00e59e6ce216da6db07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the shadow parameter set  <br /></td></tr>
+<tr class="memitem:a8d119f6fcc08ef30775123ac932c3b74" id="r_a8d119f6fcc08ef30775123ac932c3b74"><td class="memItemLeft" align="right" valign="top">DCL_CSS *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d119f6fcc08ef30775123ac932c3b74">css</a></td></tr>
+<tr class="memdesc:a8d119f6fcc08ef30775123ac932c3b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the common support structure  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
-<div class="textblock"><p>定义 PI 控制器结构体 </p>
+<div class="textblock"><p>Defines the <a class="el" href="group___c_t_r_l___d_c_l.html#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> controller structure </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00031">31</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00042">42</a> 行定义.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">结构体成员变量说明</h2>
+<a id="a8d119f6fcc08ef30775123ac932c3b74" name="a8d119f6fcc08ef30775123ac932c3b74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d119f6fcc08ef30775123ac932c3b74">&#9670;&#160;</a></span>css</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DCL_CSS* dcl_pi::css</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the common support structure </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
 <a id="ade411ff7721c3a5ca87cd3face8d5100" name="ade411ff7721c3a5ca87cd3face8d5100"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade411ff7721c3a5ca87cd3face8d5100">&#9670;&#160;</a></span>i10</h2>
 
@@ -134,14 +164,14 @@ $(function(){initNavTree('structdcl__pi.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_pi::i10</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_pi::i10</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>积分暂存量 </p>
+<p>I storage </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00034">34</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00045">45</a> 行定义.</p>
 
 </div>
 </div>
@@ -152,14 +182,14 @@ $(function(){initNavTree('structdcl__pi.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_pi::i11</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_pi::i11</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>积分状态暂存 </p>
+<p>I storage </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00038">38</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00049">49</a> 行定义.</p>
 
 </div>
 </div>
@@ -170,14 +200,14 @@ $(function(){initNavTree('structdcl__pi.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_pi::i6</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_pi::i6</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>饱和状态暂存 </p>
+<p>Saturation storage </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00037">37</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00048">48</a> 行定义.</p>
 
 </div>
 </div>
@@ -188,14 +218,14 @@ $(function(){initNavTree('structdcl__pi.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_pi::Imax</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_pi::Imax</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>积分上限 </p>
+<p>Upper integrator saturation limit </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00039">39</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00050">50</a> 行定义.</p>
 
 </div>
 </div>
@@ -206,14 +236,14 @@ $(function(){initNavTree('structdcl__pi.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_pi::Imin</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_pi::Imin</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>积分下限 </p>
+<p>Lower integrator saturation limit </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00040">40</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00051">51</a> 行定义.</p>
 
 </div>
 </div>
@@ -224,14 +254,14 @@ $(function(){initNavTree('structdcl__pi.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_pi::Ki</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_pi::Ki</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>积分系数 </p>
+<p>Integral gain </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00033">33</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00044">44</a> 行定义.</p>
 
 </div>
 </div>
@@ -242,32 +272,32 @@ $(function(){initNavTree('structdcl__pi.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_pi::Kp</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_pi::Kp</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>比例系数 </p>
+<p>Proportional gain </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00032">32</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00043">43</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a675420ffb9edea8ba70e68451c691062" name="a675420ffb9edea8ba70e68451c691062"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a675420ffb9edea8ba70e68451c691062">&#9670;&#160;</a></span>Output</h2>
+<a id="ad7c55f87dc88c00e59e6ce216da6db07" name="ad7c55f87dc88c00e59e6ce216da6db07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c55f87dc88c00e59e6ce216da6db07">&#9670;&#160;</a></span>sps</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_pi::Output</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#gae74693ba4166199d0672acf44fd75f0c">DCL_PI_SPS</a>* dcl_pi::sps</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>控制输出 </p>
+<p>Pointer to the shadow parameter set </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00041">41</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00052">52</a> 行定义.</p>
 
 </div>
 </div>
@@ -278,14 +308,14 @@ $(function(){initNavTree('structdcl__pi.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_pi::Umax</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_pi::Umax</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>输出上限 </p>
+<p>Upper control saturation limit </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00035">35</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00046">46</a> 行定义.</p>
 
 </div>
 </div>
@@ -296,19 +326,19 @@ $(function(){initNavTree('structdcl__pi.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_pi::Umin</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_pi::Umin</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>输出下限 </p>
+<p>Lower control saturation limit </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00036">36</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00047">47</a> 行定义.</p>
 
 </div>
 </div>
 <hr/>该结构体的文档由以下文件生成:<ul>
-<li><a class="el" href="dcl_8h_source.html">dcl.h</a></li>
+<li><a class="el" href="_d_c_l_8h_source.html">DCL.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

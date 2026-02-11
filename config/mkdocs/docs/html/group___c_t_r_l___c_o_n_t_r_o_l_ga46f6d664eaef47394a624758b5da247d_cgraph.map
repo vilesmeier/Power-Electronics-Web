@@ -1,0 +1,5 @@
+<map id="DCL_PI_Set" name="DCL_PI_Set">
+<area shape="rect" id="Node000001" title="配置 DCL_PI_T 控制器" alt="" coords="5,5,95,33"/>
+<area shape="rect" id="Node000002" href="$group___c_t_r_l___d_c_l.html#ga746e38af4ed1274d5014de7bf32acec0" title="Loads PI tuning parameters Implemented as assembly module" alt="" coords="143,5,250,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,16,127,16,127,22,95,22"/>
+</map>

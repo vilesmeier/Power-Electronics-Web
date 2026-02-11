@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "24abcdefghijklmnopqrstuvwxyz三例全单参变同四坐基外头差常开拓控数文最模测特状电相积简调资锁陷",
+  0: "24abcdefghijklmnopqrstuvwxyz三例全单参变同四坐基外头常开拓控数文最模测特状电相瞬离积简调资锁陷",
   1: "cdefkmprstv",
   2: "2acdfgiklmoprstuvx",
   3: "acdefiklmoprstuvwx",
@@ -8,8 +8,8 @@ var indexSectionsWithContent =
   5: "cdefklmoprstv",
   6: "cefmov",
   7: "bcdefghlmnoprvwy",
-  8: "bcfghknprtu",
-  9: "4acdfiloprstuvz三例全单参变同四坐外头差常拓控数最模测状积调资锁陷",
+  8: "bcdfghknprtuz",
+  9: "4acdfiloprstuvz三例全单参变同四坐外头常拓控数最模测状瞬离积调资锁陷",
   10: "t全基开文特电相简"
 };
 

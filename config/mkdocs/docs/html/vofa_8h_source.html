@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
    </div>
    <div id="projectbrief">NUEDC软件代码库</div>
   </td>
@@ -135,7 +135,7 @@ $(function(){initNavTree('vofa_8h_source.html','',''); });
 <div class="foldopen" id="foldopen00066" data-start="{" data-end="};">
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="struct_v_o_f_a___d_a_t_a.html">   66</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_v_o_f_a___d_a_t_a.html">VOFA_DATA</a></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="struct_v_o_f_a___d_a_t_a.html#a573551cb73433755020bad73ec8f11b9">   68</a></span>    float32_t        *<a class="code hl_variable" href="struct_v_o_f_a___d_a_t_a.html#a573551cb73433755020bad73ec8f11b9">input_pointer</a>[<a class="code hl_define" href="group___c_t_r_l___v_o_f_a.html#gacda8ba9aa8f8e05c951333eb1eb48ac8">VOFA_CHANNEL_NUM_MAX</a>];      </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="struct_v_o_f_a___d_a_t_a.html#a573551cb73433755020bad73ec8f11b9">   68</a></span>    <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>        *<a class="code hl_variable" href="struct_v_o_f_a___d_a_t_a.html#a573551cb73433755020bad73ec8f11b9">input_pointer</a>[<a class="code hl_define" href="group___c_t_r_l___v_o_f_a.html#gacda8ba9aa8f8e05c951333eb1eb48ac8">VOFA_CHANNEL_NUM_MAX</a>];      </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="struct_v_o_f_a___d_a_t_a.html#a102a82e9b22de751606be1c855d70535">   69</a></span>    <a class="code hl_union" href="union_t_y_p_e___t_r_a_n_s_f_o_r_m.html">TYPE_TRANSFORM</a>   <a class="code hl_variable" href="struct_v_o_f_a___d_a_t_a.html#a102a82e9b22de751606be1c855d70535">data_transfer</a>;                             </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="struct_v_o_f_a___d_a_t_a.html#a281b8a60799e7800f4cbb08736d95dcc">   70</a></span>    uint16_t         <a class="code hl_variable" href="struct_v_o_f_a___d_a_t_a.html#a281b8a60799e7800f4cbb08736d95dcc">package_data</a>[<a class="code hl_define" href="group___c_t_r_l___v_o_f_a.html#gab5a6ba0272530bc5b252671e490a5203">VOFA_PACK_LENGTH</a>];            </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="struct_v_o_f_a___d_a_t_a.html#a0ca316c517a014da6c3f3a2e6be9ee87">   71</a></span>    uint16_t         <a class="code hl_variable" href="struct_v_o_f_a___d_a_t_a.html#a0ca316c517a014da6c3f3a2e6be9ee87">package_tail</a>[<a class="code hl_define" href="group___c_t_r_l___v_o_f_a.html#gab5a6ba0272530bc5b252671e490a5203">VOFA_PACK_LENGTH</a>];            </div>
@@ -152,7 +152,7 @@ $(function(){initNavTree('vofa_8h_source.html','',''); });
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___c_t_r_l___v_o_f_a.html#ga77c9aea85bbaf41bbce8fc26c9cf846e">VOFA_Init</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___c_t_r_l___v_o_f_a.html#ga8b37353f7cbbd178e8f995dba7eaae73">VOFA_Set_Channel_Input</a>(uint16_t channel, float32_t *input_ptr);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___c_t_r_l___v_o_f_a.html#ga8b37353f7cbbd178e8f995dba7eaae73">VOFA_Set_Channel_Input</a>(uint16_t channel, <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> *input_ptr);</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keywordtype">void</span> <a class="code hl_function" href="group___c_t_r_l___v_o_f_a.html#ga29a019e9a9005773e370e6b2013f60be">VOFA_Run</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span></div>
@@ -166,6 +166,7 @@ $(function(){initNavTree('vofa_8h_source.html','',''); });
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span></div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="agroup___c_t_r_l___d_c_l_html_ga4611b605e45ab401f02cab15c5e38715"><div class="ttname"><a href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></div><div class="ttdeci">float float32_t</div><div class="ttdef"><b>定义</b> <a href="dcl__support_8h_source.html#l00025">dcl_support.h:25</a></div></div>
 <div class="ttc" id="agroup___c_t_r_l___v_o_f_a_html_ga29a019e9a9005773e370e6b2013f60be"><div class="ttname"><a href="group___c_t_r_l___v_o_f_a.html#ga29a019e9a9005773e370e6b2013f60be">VOFA_Run</a></div><div class="ttdeci">void VOFA_Run(void)</div><div class="ttdoc">使用 Justfloat 协议, 向 VOFA 上位机发送数据</div><div class="ttdef"><b>定义</b> <a href="vofa_8c_source.html#l00077">vofa.c:77</a></div></div>
 <div class="ttc" id="agroup___c_t_r_l___v_o_f_a_html_ga534aa6e0fb17e6fc1de2979922f8350e"><div class="ttname"><a href="group___c_t_r_l___v_o_f_a.html#ga534aa6e0fb17e6fc1de2979922f8350e">VOFA_Get_Send_State</a></div><div class="ttdeci">VOFA_FLAG_SEND VOFA_Get_Send_State(void)</div><div class="ttdoc">获取当前发送使能状态</div><div class="ttdef"><b>定义</b> <a href="vofa_8c_source.html#l00136">vofa.c:136</a></div></div>
 <div class="ttc" id="agroup___c_t_r_l___v_o_f_a_html_ga54ca96c28eff06e3693019a16ad097ee"><div class="ttname"><a href="group___c_t_r_l___v_o_f_a.html#ga54ca96c28eff06e3693019a16ad097ee">message_array</a></div><div class="ttdeci">VOFA_DATA message_array</div><div class="ttdoc">VOFA指令缓存与数据格式转换</div><div class="ttdef"><b>定义</b> <a href="vofa_8c_source.html#l00021">vofa.c:21</a></div></div>

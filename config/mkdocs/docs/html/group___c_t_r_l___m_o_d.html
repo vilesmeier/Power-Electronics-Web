@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
    </div>
    <div id="projectbrief">NUEDC软件代码库</div>
   </td>
@@ -108,50 +108,72 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 结构体</h2></td></tr>
-<tr class="memitem:MOD" id="r_MOD"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_o_d.html">MOD</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">调制器结构体定义  <a href="struct_m_o_d.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:MOD_5FT" id="r_MOD_5FT"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_o_d___t.html">MOD_T</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">调制器结构体定义  <a href="struct_m_o_d___t.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ga468f303f0a813fe1eaeb87397977f533" id="r_ga468f303f0a813fe1eaeb87397977f533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga468f303f0a813fe1eaeb87397977f533">MOD_T_DEFAULTS</a>&#160;&#160;&#160;{ 0u, 0u, 0u, 0u, 0u,}</td></tr>
+<tr class="memdesc:ga468f303f0a813fe1eaeb87397977f533"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义结构体初始值  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 类型定义</h2></td></tr>
-<tr class="memitem:ga949d1486d9ae2ea4797d744850b93002" id="r_ga949d1486d9ae2ea4797d744850b93002"><td class="memItemLeft" align="right" valign="top">typedef struct MOD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga949d1486d9ae2ea4797d744850b93002">MOD</a></td></tr>
-<tr class="memdesc:ga949d1486d9ae2ea4797d744850b93002"><td class="mdescLeft">&#160;</td><td class="mdescRight">调制器结构体定义  <br /></td></tr>
+<tr class="memitem:ga0231c37df7dba6da08ca3eb52b36395f" id="r_ga0231c37df7dba6da08ca3eb52b36395f"><td class="memItemLeft" align="right" valign="top">typedef struct MOD_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0231c37df7dba6da08ca3eb52b36395f">MOD_T</a></td></tr>
+<tr class="memdesc:ga0231c37df7dba6da08ca3eb52b36395f"><td class="mdescLeft">&#160;</td><td class="mdescRight">调制器结构体定义  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:ga996f9b6a559031309fa6639bddf1b852" id="r_ga996f9b6a559031309fa6639bddf1b852"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga996f9b6a559031309fa6639bddf1b852">Modulate_Init</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>)</td></tr>
-<tr class="memdesc:ga996f9b6a559031309fa6639bddf1b852"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
-<tr class="memitem:ga7ec773e0dd3b93e350d1f4b3c9932813" id="r_ga7ec773e0dd3b93e350d1f4b3c9932813"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7ec773e0dd3b93e350d1f4b3c9932813">Modulate_Set</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, uint16_t tbprd)</td></tr>
-<tr class="memdesc:ga7ec773e0dd3b93e350d1f4b3c9932813"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置调制器的TBPRD寄存器值, 用于计算COMP寄存器值  <br /></td></tr>
-<tr class="memitem:gab63b4a5468af7691b623930d5dae1009" id="r_gab63b4a5468af7691b623930d5dae1009"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab63b4a5468af7691b623930d5dae1009">Modulate_Bipolar_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>)</td></tr>
-<tr class="memdesc:gab63b4a5468af7691b623930d5dae1009"><td class="mdescLeft">&#160;</td><td class="mdescRight">双极性调制  <br /></td></tr>
-<tr class="memitem:ga16efd57f27f25829b5ceadbf180b1dde" id="r_ga16efd57f27f25829b5ceadbf180b1dde"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga16efd57f27f25829b5ceadbf180b1dde">Modulate_Unipolar_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>)</td></tr>
-<tr class="memdesc:ga16efd57f27f25829b5ceadbf180b1dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">快慢管交替的单极性调制  <br /></td></tr>
-<tr class="memitem:ga43426a9d8c7c9d8b024415a0b2f912e7" id="r_ga43426a9d8c7c9d8b024415a0b2f912e7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga43426a9d8c7c9d8b024415a0b2f912e7">Modulate_Unipolar_DoubleFreq_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>)</td></tr>
-<tr class="memdesc:ga43426a9d8c7c9d8b024415a0b2f912e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">单极性倍频调制  <br /></td></tr>
-<tr class="memitem:ga0c51eea0d414fcbcdb8632a9a18b29e5" id="r_ga0c51eea0d414fcbcdb8632a9a18b29e5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0c51eea0d414fcbcdb8632a9a18b29e5">Modulate_SPWM_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a04940fd14ddbfdf46e286a74e8ddb951">ub</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ac0d2d6db4bd6e92c1d01104d25380edd">uc</a>)</td></tr>
-<tr class="memdesc:ga0c51eea0d414fcbcdb8632a9a18b29e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">三相SPWM调制  <br /></td></tr>
-<tr class="memitem:gabffdc55b3324200eaf48fa31f17eb65a" id="r_gabffdc55b3324200eaf48fa31f17eb65a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabffdc55b3324200eaf48fa31f17eb65a">Modulate_SVPWM_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a04940fd14ddbfdf46e286a74e8ddb951">ub</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ac0d2d6db4bd6e92c1d01104d25380edd">uc</a>)</td></tr>
-<tr class="memdesc:gabffdc55b3324200eaf48fa31f17eb65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SVPWM调制  <br /></td></tr>
-<tr class="memitem:ga10dcc11acc0ba8bca1cd5f1a91d20549" id="r_ga10dcc11acc0ba8bca1cd5f1a91d20549"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga10dcc11acc0ba8bca1cd5f1a91d20549">Modulate_DPWM1_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a04940fd14ddbfdf46e286a74e8ddb951">ub</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ac0d2d6db4bd6e92c1d01104d25380edd">uc</a>)</td></tr>
-<tr class="memdesc:ga10dcc11acc0ba8bca1cd5f1a91d20549"><td class="mdescLeft">&#160;</td><td class="mdescRight">DPWM-1调制  <br /></td></tr>
-<tr class="memitem:gac275ed2324b92a837086f1cb2fa564bf" id="r_gac275ed2324b92a837086f1cb2fa564bf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac275ed2324b92a837086f1cb2fa564bf">Modulate_DPWMMax_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a04940fd14ddbfdf46e286a74e8ddb951">ub</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ac0d2d6db4bd6e92c1d01104d25380edd">uc</a>)</td></tr>
-<tr class="memdesc:gac275ed2324b92a837086f1cb2fa564bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">DPWM-Max调制  <br /></td></tr>
-<tr class="memitem:gaf9ef4575568028ab2d5bbb89407f5f82" id="r_gaf9ef4575568028ab2d5bbb89407f5f82"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf9ef4575568028ab2d5bbb89407f5f82">Modulate_DPWMMin_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a04940fd14ddbfdf46e286a74e8ddb951">ub</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ac0d2d6db4bd6e92c1d01104d25380edd">uc</a>)</td></tr>
-<tr class="memdesc:gaf9ef4575568028ab2d5bbb89407f5f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">DPWM-Min调制  <br /></td></tr>
-<tr class="memitem:gac663e42bb9b07f2c2c414d8be8f9b8a0" id="r_gac663e42bb9b07f2c2c414d8be8f9b8a0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac663e42bb9b07f2c2c414d8be8f9b8a0">Modulate_GDPWM_Run</a> (<a class="el" href="struct_m_o_d.html">MOD</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a04940fd14ddbfdf46e286a74e8ddb951">ub</a>, float32_t <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ac0d2d6db4bd6e92c1d01104d25380edd">uc</a>, float32_t pf_angle)</td></tr>
-<tr class="memdesc:gac663e42bb9b07f2c2c414d8be8f9b8a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">GDPWM调制  <br /></td></tr>
+<tr class="memitem:ga57906ed99fea67ba1c3f7d89cc60ddae" id="r_ga57906ed99fea67ba1c3f7d89cc60ddae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga57906ed99fea67ba1c3f7d89cc60ddae">Modulate_Set</a> (<a class="el" href="struct_m_o_d___t.html">MOD_T</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, uint16_t tbprd)</td></tr>
+<tr class="memdesc:ga57906ed99fea67ba1c3f7d89cc60ddae"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置调制器的TBPRD寄存器值, 用于计算COMP寄存器值  <br /></td></tr>
+<tr class="memitem:ga9e85506d55d16517b820c7438c5d190a" id="r_ga9e85506d55d16517b820c7438c5d190a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9e85506d55d16517b820c7438c5d190a">Modulate_Bipolar_Run</a> (<a class="el" href="struct_m_o_d___t.html">MOD_T</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>)</td></tr>
+<tr class="memdesc:ga9e85506d55d16517b820c7438c5d190a"><td class="mdescLeft">&#160;</td><td class="mdescRight">双极性调制  <br /></td></tr>
+<tr class="memitem:gada481b59b0513da57f0eb02e7d747e5f" id="r_gada481b59b0513da57f0eb02e7d747e5f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gada481b59b0513da57f0eb02e7d747e5f">Modulate_Unipolar_Run</a> (<a class="el" href="struct_m_o_d___t.html">MOD_T</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>)</td></tr>
+<tr class="memdesc:gada481b59b0513da57f0eb02e7d747e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">快慢管交替的单极性调制  <br /></td></tr>
+<tr class="memitem:gad28a3b766541cbfebdf8cebaaa3f1ba9" id="r_gad28a3b766541cbfebdf8cebaaa3f1ba9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad28a3b766541cbfebdf8cebaaa3f1ba9">Modulate_Unipolar_DoubleFreq_Run</a> (<a class="el" href="struct_m_o_d___t.html">MOD_T</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>)</td></tr>
+<tr class="memdesc:gad28a3b766541cbfebdf8cebaaa3f1ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">单极性倍频调制  <br /></td></tr>
+<tr class="memitem:ga27880ffc5383aeed64a7996157c5adcb" id="r_ga27880ffc5383aeed64a7996157c5adcb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga27880ffc5383aeed64a7996157c5adcb">Modulate_SPWM_Run</a> (<a class="el" href="struct_m_o_d___t.html">MOD_T</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a04940fd14ddbfdf46e286a74e8ddb951">ub</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ac0d2d6db4bd6e92c1d01104d25380edd">uc</a>)</td></tr>
+<tr class="memdesc:ga27880ffc5383aeed64a7996157c5adcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">三相SPWM调制  <br /></td></tr>
+<tr class="memitem:ga6fc4d35877418f889b026a48da47236c" id="r_ga6fc4d35877418f889b026a48da47236c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6fc4d35877418f889b026a48da47236c">Modulate_SVPWM_Run</a> (<a class="el" href="struct_m_o_d___t.html">MOD_T</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a04940fd14ddbfdf46e286a74e8ddb951">ub</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ac0d2d6db4bd6e92c1d01104d25380edd">uc</a>)</td></tr>
+<tr class="memdesc:ga6fc4d35877418f889b026a48da47236c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SVPWM调制  <br /></td></tr>
+<tr class="memitem:ga80d912600c35bb74e0fc82c6ac0a3d91" id="r_ga80d912600c35bb74e0fc82c6ac0a3d91"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga80d912600c35bb74e0fc82c6ac0a3d91">Modulate_DPWM1_Run</a> (<a class="el" href="struct_m_o_d___t.html">MOD_T</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a04940fd14ddbfdf46e286a74e8ddb951">ub</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ac0d2d6db4bd6e92c1d01104d25380edd">uc</a>)</td></tr>
+<tr class="memdesc:ga80d912600c35bb74e0fc82c6ac0a3d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">DPWM-1调制  <br /></td></tr>
+<tr class="memitem:gadec8b7772d0511026d629ca043d90d48" id="r_gadec8b7772d0511026d629ca043d90d48"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gadec8b7772d0511026d629ca043d90d48">Modulate_DPWMMax_Run</a> (<a class="el" href="struct_m_o_d___t.html">MOD_T</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a04940fd14ddbfdf46e286a74e8ddb951">ub</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ac0d2d6db4bd6e92c1d01104d25380edd">uc</a>)</td></tr>
+<tr class="memdesc:gadec8b7772d0511026d629ca043d90d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">DPWM-Max调制  <br /></td></tr>
+<tr class="memitem:ga4f265669340edb87c51806cd3a5399e9" id="r_ga4f265669340edb87c51806cd3a5399e9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4f265669340edb87c51806cd3a5399e9">Modulate_DPWMMin_Run</a> (<a class="el" href="struct_m_o_d___t.html">MOD_T</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a04940fd14ddbfdf46e286a74e8ddb951">ub</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ac0d2d6db4bd6e92c1d01104d25380edd">uc</a>)</td></tr>
+<tr class="memdesc:ga4f265669340edb87c51806cd3a5399e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">DPWM-Min调制  <br /></td></tr>
+<tr class="memitem:gae9255018a554000cd3facb399e715693" id="r_gae9255018a554000cd3facb399e715693"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae9255018a554000cd3facb399e715693">Modulate_GDPWM_Run</a> (<a class="el" href="struct_m_o_d___t.html">MOD_T</a> *<a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a8d91926ab2cd08d0afc22ea5b27dc62c">mod</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ae9f020f8f900850ab1aaf6325313a153">ua</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#a04940fd14ddbfdf46e286a74e8ddb951">ub</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_modulate___test_2main_8c.html#ac0d2d6db4bd6e92c1d01104d25380edd">uc</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> pf_angle)</td></tr>
+<tr class="memdesc:gae9255018a554000cd3facb399e715693"><td class="mdescLeft">&#160;</td><td class="mdescRight">GDPWM调制  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <p>提供多种调制方式的实现 </p>
-<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">类型定义说明</h2>
-<a id="ga949d1486d9ae2ea4797d744850b93002" name="ga949d1486d9ae2ea4797d744850b93002"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga949d1486d9ae2ea4797d744850b93002">&#9670;&#160;</a></span>MOD</h2>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="ga468f303f0a813fe1eaeb87397977f533" name="ga468f303f0a813fe1eaeb87397977f533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga468f303f0a813fe1eaeb87397977f533">&#9670;&#160;</a></span>MOD_T_DEFAULTS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct MOD MOD</td>
+          <td class="memname">#define MOD_T_DEFAULTS&#160;&#160;&#160;{ 0u, 0u, 0u, 0u, 0u,}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义结构体初始值 </p>
+
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">类型定义说明</h2>
+<a id="ga0231c37df7dba6da08ca3eb52b36395f" name="ga0231c37df7dba6da08ca3eb52b36395f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0231c37df7dba6da08ca3eb52b36395f">&#9670;&#160;</a></span>MOD_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct MOD_T MOD_T</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -161,8 +183,8 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
-<a id="gab63b4a5468af7691b623930d5dae1009" name="gab63b4a5468af7691b623930d5dae1009"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab63b4a5468af7691b623930d5dae1009">&#9670;&#160;</a></span>Modulate_Bipolar_Run()</h2>
+<a id="ga9e85506d55d16517b820c7438c5d190a" name="ga9e85506d55d16517b820c7438c5d190a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e85506d55d16517b820c7438c5d190a">&#9670;&#160;</a></span>Modulate_Bipolar_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,12 +195,12 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
         <tr>
           <td class="memname">void Modulate_Bipolar_Run </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d___t.html">MOD_T</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ua</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -197,12 +219,12 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00059">59</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00048">48</a> 行定义.</p>
 
 </div>
 </div>
-<a id="ga10dcc11acc0ba8bca1cd5f1a91d20549" name="ga10dcc11acc0ba8bca1cd5f1a91d20549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga10dcc11acc0ba8bca1cd5f1a91d20549">&#9670;&#160;</a></span>Modulate_DPWM1_Run()</h2>
+<a id="ga80d912600c35bb74e0fc82c6ac0a3d91" name="ga80d912600c35bb74e0fc82c6ac0a3d91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80d912600c35bb74e0fc82c6ac0a3d91">&#9670;&#160;</a></span>Modulate_DPWM1_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,22 +235,22 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
         <tr>
           <td class="memname">void Modulate_DPWM1_Run </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d___t.html">MOD_T</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -249,12 +271,12 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00144">144</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00123">123</a> 行定义.</p>
 
 </div>
 </div>
-<a id="gac275ed2324b92a837086f1cb2fa564bf" name="gac275ed2324b92a837086f1cb2fa564bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac275ed2324b92a837086f1cb2fa564bf">&#9670;&#160;</a></span>Modulate_DPWMMax_Run()</h2>
+<a id="gadec8b7772d0511026d629ca043d90d48" name="gadec8b7772d0511026d629ca043d90d48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadec8b7772d0511026d629ca043d90d48">&#9670;&#160;</a></span>Modulate_DPWMMax_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,22 +287,22 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
         <tr>
           <td class="memname">void Modulate_DPWMMax_Run </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d___t.html">MOD_T</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -301,12 +323,12 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00183">183</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00160">160</a> 行定义.</p>
 
 </div>
 </div>
-<a id="gaf9ef4575568028ab2d5bbb89407f5f82" name="gaf9ef4575568028ab2d5bbb89407f5f82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf9ef4575568028ab2d5bbb89407f5f82">&#9670;&#160;</a></span>Modulate_DPWMMin_Run()</h2>
+<a id="ga4f265669340edb87c51806cd3a5399e9" name="ga4f265669340edb87c51806cd3a5399e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4f265669340edb87c51806cd3a5399e9">&#9670;&#160;</a></span>Modulate_DPWMMin_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -317,22 +339,22 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
         <tr>
           <td class="memname">void Modulate_DPWMMin_Run </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d___t.html">MOD_T</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -353,12 +375,12 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00214">214</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00189">189</a> 行定义.</p>
 
 </div>
 </div>
-<a id="gac663e42bb9b07f2c2c414d8be8f9b8a0" name="gac663e42bb9b07f2c2c414d8be8f9b8a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac663e42bb9b07f2c2c414d8be8f9b8a0">&#9670;&#160;</a></span>Modulate_GDPWM_Run()</h2>
+<a id="gae9255018a554000cd3facb399e715693" name="gae9255018a554000cd3facb399e715693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9255018a554000cd3facb399e715693">&#9670;&#160;</a></span>Modulate_GDPWM_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,27 +391,27 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
         <tr>
           <td class="memname">void Modulate_GDPWM_Run </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d___t.html">MOD_T</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>uc</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>uc</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>pf_angle</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>pf_angle</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -412,39 +434,12 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
 </dl>
 <dl class="section warning"><dt>警告</dt><dd>功率因数角范围:[-pi/6 - pi/6] </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00247">247</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00221">221</a> 行定义.</p>
 
 </div>
 </div>
-<a id="ga996f9b6a559031309fa6639bddf1b852" name="ga996f9b6a559031309fa6639bddf1b852"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga996f9b6a559031309fa6639bddf1b852">&#9670;&#160;</a></span>Modulate_Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Modulate_Init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>结构体初始化 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mod</td><td>结构体指针 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="modulate_8c_source.html">modulate.c</a> 第 <a class="el" href="modulate_8c_source.html#l00014">14</a> 行定义.</p>
-
-</div>
-</div>
-<a id="ga7ec773e0dd3b93e350d1f4b3c9932813" name="ga7ec773e0dd3b93e350d1f4b3c9932813"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7ec773e0dd3b93e350d1f4b3c9932813">&#9670;&#160;</a></span>Modulate_Set()</h2>
+<a id="ga57906ed99fea67ba1c3f7d89cc60ddae" name="ga57906ed99fea67ba1c3f7d89cc60ddae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga57906ed99fea67ba1c3f7d89cc60ddae">&#9670;&#160;</a></span>Modulate_Set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -452,7 +447,7 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
         <tr>
           <td class="memname">void Modulate_Set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d___t.html">MOD_T</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -471,12 +466,12 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8c_source.html">modulate.c</a> 第 <a class="el" href="modulate_8c_source.html#l00023">23</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8c_source.html">modulate.c</a> 第 <a class="el" href="modulate_8c_source.html#l00014">14</a> 行定义.</p>
 
 </div>
 </div>
-<a id="ga0c51eea0d414fcbcdb8632a9a18b29e5" name="ga0c51eea0d414fcbcdb8632a9a18b29e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0c51eea0d414fcbcdb8632a9a18b29e5">&#9670;&#160;</a></span>Modulate_SPWM_Run()</h2>
+<a id="ga27880ffc5383aeed64a7996157c5adcb" name="ga27880ffc5383aeed64a7996157c5adcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27880ffc5383aeed64a7996157c5adcb">&#9670;&#160;</a></span>Modulate_SPWM_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -487,22 +482,22 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
         <tr>
           <td class="memname">void Modulate_SPWM_Run </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d___t.html">MOD_T</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -523,12 +518,12 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00100">100</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00083">83</a> 行定义.</p>
 
 </div>
 </div>
-<a id="gabffdc55b3324200eaf48fa31f17eb65a" name="gabffdc55b3324200eaf48fa31f17eb65a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabffdc55b3324200eaf48fa31f17eb65a">&#9670;&#160;</a></span>Modulate_SVPWM_Run()</h2>
+<a id="ga6fc4d35877418f889b026a48da47236c" name="ga6fc4d35877418f889b026a48da47236c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6fc4d35877418f889b026a48da47236c">&#9670;&#160;</a></span>Modulate_SVPWM_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -539,22 +534,22 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
         <tr>
           <td class="memname">void Modulate_SVPWM_Run </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d___t.html">MOD_T</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ua</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ub</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>uc</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -575,12 +570,12 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00116">116</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00097">97</a> 行定义.</p>
 
 </div>
 </div>
-<a id="ga43426a9d8c7c9d8b024415a0b2f912e7" name="ga43426a9d8c7c9d8b024415a0b2f912e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga43426a9d8c7c9d8b024415a0b2f912e7">&#9670;&#160;</a></span>Modulate_Unipolar_DoubleFreq_Run()</h2>
+<a id="gad28a3b766541cbfebdf8cebaaa3f1ba9" name="gad28a3b766541cbfebdf8cebaaa3f1ba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad28a3b766541cbfebdf8cebaaa3f1ba9">&#9670;&#160;</a></span>Modulate_Unipolar_DoubleFreq_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -591,12 +586,12 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
         <tr>
           <td class="memname">void Modulate_Unipolar_DoubleFreq_Run </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d___t.html">MOD_T</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ua</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -615,12 +610,12 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00085">85</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00070">70</a> 行定义.</p>
 
 </div>
 </div>
-<a id="ga16efd57f27f25829b5ceadbf180b1dde" name="ga16efd57f27f25829b5ceadbf180b1dde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga16efd57f27f25829b5ceadbf180b1dde">&#9670;&#160;</a></span>Modulate_Unipolar_Run()</h2>
+<a id="gada481b59b0513da57f0eb02e7d747e5f" name="gada481b59b0513da57f0eb02e7d747e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada481b59b0513da57f0eb02e7d747e5f">&#9670;&#160;</a></span>Modulate_Unipolar_Run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -631,12 +626,12 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
         <tr>
           <td class="memname">void Modulate_Unipolar_Run </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_m_o_d.html">MOD</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_m_o_d___t.html">MOD_T</a> *</td>          <td class="paramname"><span class="paramname"><em>mod</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>ua</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ua</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -655,7 +650,7 @@ $(function(){initNavTree('group___c_t_r_l___m_o_d.html','',''); });
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00072">72</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="modulate_8h_source.html">modulate.h</a> 第 <a class="el" href="modulate_8h_source.html#l00059">59</a> 行定义.</p>
 
 </div>
 </div>

@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
    </div>
    <div id="projectbrief">NUEDC软件代码库</div>
   </td>
@@ -108,36 +108,58 @@ $(function(){initNavTree('group___c_t_r_l___d_e_l_a_y.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 结构体</h2></td></tr>
-<tr class="memitem:DELAY" id="r_DELAY"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_l_a_y.html">DELAY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">数组延迟链结构体定义  <a href="struct_d_e_l_a_y.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:DELAY_5FT" id="r_DELAY_5FT"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_l_a_y___t.html">DELAY_T</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">数组延迟链结构体定义  <a href="struct_d_e_l_a_y___t.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:gaadbab9d5768bc015dc5e22b7340a9d6d" id="r_gaadbab9d5768bc015dc5e22b7340a9d6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaadbab9d5768bc015dc5e22b7340a9d6d">DELAY_T_DEFAULTS</a>&#160;&#160;&#160;{{0.0f}, 0u, 0.0f, 0.0f, 0.0f}</td></tr>
+<tr class="memdesc:gaadbab9d5768bc015dc5e22b7340a9d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义结构体默认初始值  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 类型定义</h2></td></tr>
-<tr class="memitem:gac993929848db081769e724a03456dcc4" id="r_gac993929848db081769e724a03456dcc4"><td class="memItemLeft" align="right" valign="top">typedef struct DELAY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac993929848db081769e724a03456dcc4">DELAY</a></td></tr>
-<tr class="memdesc:gac993929848db081769e724a03456dcc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">数组延迟链结构体定义  <br /></td></tr>
+<tr class="memitem:ga8a5df0a097e9a9be65041b9003cb76d9" id="r_ga8a5df0a097e9a9be65041b9003cb76d9"><td class="memItemLeft" align="right" valign="top">typedef struct DELAY_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8a5df0a097e9a9be65041b9003cb76d9">DELAY_T</a></td></tr>
+<tr class="memdesc:ga8a5df0a097e9a9be65041b9003cb76d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">数组延迟链结构体定义  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:ga1d1f6ac6440c9beb1b7c6051c8fa15e0" id="r_ga1d1f6ac6440c9beb1b7c6051c8fa15e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1d1f6ac6440c9beb1b7c6051c8fa15e0">DELAY_Init</a> (<a class="el" href="struct_d_e_l_a_y.html">DELAY</a> *delay_addr)</td></tr>
-<tr class="memdesc:ga1d1f6ac6440c9beb1b7c6051c8fa15e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化延迟链  <br /></td></tr>
-<tr class="memitem:ga7f6f301d186e73e3449b5136447dbb11" id="r_ga7f6f301d186e73e3449b5136447dbb11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7f6f301d186e73e3449b5136447dbb11">DELAY_Set</a> (<a class="el" href="struct_d_e_l_a_y.html">DELAY</a> *delay_addr, float32_t isr_freq, float32_t grid_freq)</td></tr>
-<tr class="memdesc:ga7f6f301d186e73e3449b5136447dbb11"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置延时链  <br /></td></tr>
-<tr class="memitem:gab12603b239fc84d00450dded1a9629ee" id="r_gab12603b239fc84d00450dded1a9629ee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab12603b239fc84d00450dded1a9629ee">DELAY_Push</a> (<a class="el" href="struct_d_e_l_a_y.html">DELAY</a> *delay_addr, float32_t data)</td></tr>
-<tr class="memdesc:gab12603b239fc84d00450dded1a9629ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">送入数据到延迟链  <br /></td></tr>
-<tr class="memitem:ga09696418bb8d13d744d744fca5f28973" id="r_ga09696418bb8d13d744d744fca5f28973"><td class="memItemLeft" align="right" valign="top">static float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga09696418bb8d13d744d744fca5f28973">DELAY_Pop</a> (<a class="el" href="struct_d_e_l_a_y.html">DELAY</a> *delay_addr, float32_t phase)</td></tr>
-<tr class="memdesc:ga09696418bb8d13d744d744fca5f28973"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出特定延迟相位的数据  <br /></td></tr>
+<tr class="memitem:ga045412b1626e9a8ffd76738a198c1ea4" id="r_ga045412b1626e9a8ffd76738a198c1ea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga045412b1626e9a8ffd76738a198c1ea4">Delay_Set</a> (<a class="el" href="struct_d_e_l_a_y___t.html">DELAY_T</a> *delay_addr, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> isr_freq, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> grid_freq)</td></tr>
+<tr class="memdesc:ga045412b1626e9a8ffd76738a198c1ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置延时链  <br /></td></tr>
+<tr class="memitem:ga1af465c587dbf44db57cbadefae67627" id="r_ga1af465c587dbf44db57cbadefae67627"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1af465c587dbf44db57cbadefae67627">Delay_Push</a> (<a class="el" href="struct_d_e_l_a_y___t.html">DELAY_T</a> *delay_addr, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> data)</td></tr>
+<tr class="memdesc:ga1af465c587dbf44db57cbadefae67627"><td class="mdescLeft">&#160;</td><td class="mdescRight">送入数据到延迟链  <br /></td></tr>
+<tr class="memitem:ga585d42496b7278091d5a406d17848448" id="r_ga585d42496b7278091d5a406d17848448"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga585d42496b7278091d5a406d17848448">DELAY_Pop</a> (<a class="el" href="struct_d_e_l_a_y___t.html">DELAY_T</a> *delay_addr, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> phase)</td></tr>
+<tr class="memdesc:ga585d42496b7278091d5a406d17848448"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出特定延迟相位的数据  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <p>实现基于数组的数据延迟链 </p>
-<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">类型定义说明</h2>
-<a id="gac993929848db081769e724a03456dcc4" name="gac993929848db081769e724a03456dcc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac993929848db081769e724a03456dcc4">&#9670;&#160;</a></span>DELAY</h2>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="gaadbab9d5768bc015dc5e22b7340a9d6d" name="gaadbab9d5768bc015dc5e22b7340a9d6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadbab9d5768bc015dc5e22b7340a9d6d">&#9670;&#160;</a></span>DELAY_T_DEFAULTS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct DELAY DELAY</td>
+          <td class="memname">#define DELAY_T_DEFAULTS&#160;&#160;&#160;{{0.0f}, 0u, 0.0f, 0.0f, 0.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义结构体默认初始值 </p>
+
+<p class="definition">在文件 <a class="el" href="delay_8h_source.html">delay.h</a> 第 <a class="el" href="delay_8h_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">类型定义说明</h2>
+<a id="ga8a5df0a097e9a9be65041b9003cb76d9" name="ga8a5df0a097e9a9be65041b9003cb76d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a5df0a097e9a9be65041b9003cb76d9">&#9670;&#160;</a></span>DELAY_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct DELAY_T DELAY_T</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -147,37 +169,8 @@ $(function(){initNavTree('group___c_t_r_l___d_e_l_a_y.html','',''); });
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
-<a id="ga1d1f6ac6440c9beb1b7c6051c8fa15e0" name="ga1d1f6ac6440c9beb1b7c6051c8fa15e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1d1f6ac6440c9beb1b7c6051c8fa15e0">&#9670;&#160;</a></span>DELAY_Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DELAY_Init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_d_e_l_a_y.html">DELAY</a> *</td>          <td class="paramname"><span class="paramname"><em>delay_addr</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>初始化延迟链 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">delay_addr</td><td>结构体指针</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>初始化延迟链</p>
-<dl class="section note"><dt>注解</dt><dd>需要在.cmd文件中配置 .TI.ramfunc 段位置, 并预留足够空间 </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="delay_8c_source.html">delay.c</a> 第 <a class="el" href="delay_8c_source.html#l00018">18</a> 行定义.</p>
-
-</div>
-</div>
-<a id="ga09696418bb8d13d744d744fca5f28973" name="ga09696418bb8d13d744d744fca5f28973"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga09696418bb8d13d744d744fca5f28973">&#9670;&#160;</a></span>DELAY_Pop()</h2>
+<a id="ga585d42496b7278091d5a406d17848448" name="ga585d42496b7278091d5a406d17848448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga585d42496b7278091d5a406d17848448">&#9670;&#160;</a></span>DELAY_Pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,14 +179,14 @@ $(function(){initNavTree('group___c_t_r_l___d_e_l_a_y.html','',''); });
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t DELAY_Pop </td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> DELAY_Pop </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_d_e_l_a_y.html">DELAY</a> *</td>          <td class="paramname"><span class="paramname"><em>delay_addr</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_d_e_l_a_y___t.html">DELAY_T</a> *</td>          <td class="paramname"><span class="paramname"><em>delay_addr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>phase</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>phase</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -212,14 +205,14 @@ $(function(){initNavTree('group___c_t_r_l___d_e_l_a_y.html','',''); });
   </dd>
 </dl>
 <dl class="section note"><dt>注解</dt><dd>在调用此函数前,必须将本周期输入送入延迟链</dd></dl>
-<dl class="section return"><dt>返回</dt><dd>float32_t 延迟后的数据 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> 延迟后的数据 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="delay_8h_source.html">delay.h</a> 第 <a class="el" href="delay_8h_source.html#l00077">77</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="delay_8h_source.html">delay.h</a> 第 <a class="el" href="delay_8h_source.html#l00073">73</a> 行定义.</p>
 
 </div>
 </div>
-<a id="gab12603b239fc84d00450dded1a9629ee" name="gab12603b239fc84d00450dded1a9629ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab12603b239fc84d00450dded1a9629ee">&#9670;&#160;</a></span>DELAY_Push()</h2>
+<a id="ga1af465c587dbf44db57cbadefae67627" name="ga1af465c587dbf44db57cbadefae67627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1af465c587dbf44db57cbadefae67627">&#9670;&#160;</a></span>Delay_Push()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,14 +221,14 @@ $(function(){initNavTree('group___c_t_r_l___d_e_l_a_y.html','',''); });
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void DELAY_Push </td>
+          <td class="memname">void Delay_Push </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_d_e_l_a_y.html">DELAY</a> *</td>          <td class="paramname"><span class="paramname"><em>delay_addr</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_d_e_l_a_y___t.html">DELAY_T</a> *</td>          <td class="paramname"><span class="paramname"><em>delay_addr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -254,30 +247,30 @@ $(function(){initNavTree('group___c_t_r_l___d_e_l_a_y.html','',''); });
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="delay_8h_source.html">delay.h</a> 第 <a class="el" href="delay_8h_source.html#l00058">58</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="delay_8h_source.html">delay.h</a> 第 <a class="el" href="delay_8h_source.html#l00054">54</a> 行定义.</p>
 
 </div>
 </div>
-<a id="ga7f6f301d186e73e3449b5136447dbb11" name="ga7f6f301d186e73e3449b5136447dbb11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7f6f301d186e73e3449b5136447dbb11">&#9670;&#160;</a></span>DELAY_Set()</h2>
+<a id="ga045412b1626e9a8ffd76738a198c1ea4" name="ga045412b1626e9a8ffd76738a198c1ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga045412b1626e9a8ffd76738a198c1ea4">&#9670;&#160;</a></span>Delay_Set()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DELAY_Set </td>
+          <td class="memname">void Delay_Set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_d_e_l_a_y.html">DELAY</a> *</td>          <td class="paramname"><span class="paramname"><em>delay_addr</em></span>, </td>
+          <td class="paramtype"><a class="el" href="struct_d_e_l_a_y___t.html">DELAY_T</a> *</td>          <td class="paramname"><span class="paramname"><em>delay_addr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>isr_freq</em></span>, </td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>isr_freq</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float32_t</td>          <td class="paramname"><span class="paramname"><em>grid_freq</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>grid_freq</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -292,7 +285,7 @@ $(function(){initNavTree('group___c_t_r_l___d_e_l_a_y.html','',''); });
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="delay_8c_source.html">delay.c</a> 第 <a class="el" href="delay_8c_source.html#l00031">31</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="delay_8c_source.html">delay.c</a> 第 <a class="el" href="delay_8c_source.html#l00014">14</a> 行定义.</p>
 
 </div>
 </div>

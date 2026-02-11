@@ -109,7 +109,8 @@ var menudata={children:[
 {text:"v",url:"globals_v.html#index_v"},
 {text:"w",url:"globals_w.html#index_w"},
 {text:"x",url:"globals_x.html#index_x"},
-{text:"y",url:"globals_y.html#index_y"}]},
+{text:"y",url:"globals_y.html#index_y"},
+{text:"z",url:"globals_z.html#index_z"}]},
 {text:"函数",url:"globals_func.html",children:[
 {text:"a",url:"globals_func.html#index_a"},
 {text:"c",url:"globals_func_c.html#index_c"},
@@ -137,10 +138,12 @@ var menudata={children:[
 {text:"k",url:"globals_vars.html#index_k"},
 {text:"m",url:"globals_vars.html#index_m"},
 {text:"o",url:"globals_vars.html#index_o"},
+{text:"p",url:"globals_vars.html#index_p"},
 {text:"r",url:"globals_vars.html#index_r"},
 {text:"s",url:"globals_vars.html#index_s"},
 {text:"t",url:"globals_vars.html#index_t"},
-{text:"u",url:"globals_vars.html#index_u"}]},
+{text:"u",url:"globals_vars.html#index_u"},
+{text:"v",url:"globals_vars.html#index_v"}]},
 {text:"类型定义",url:"globals_type.html",children:[
 {text:"c",url:"globals_type.html#index_c"},
 {text:"d",url:"globals_type.html#index_d"},
@@ -191,4 +194,5 @@ var menudata={children:[
 {text:"s",url:"globals_defs_s.html#index_s"},
 {text:"t",url:"globals_defs_t.html#index_t"},
 {text:"u",url:"globals_defs_u.html#index_u"},
-{text:"v",url:"globals_defs_v.html#index_v"}]}]}]}]}
+{text:"v",url:"globals_defs_v.html#index_v"},
+{text:"z",url:"globals_defs_z.html#index_z"}]}]}]}]}

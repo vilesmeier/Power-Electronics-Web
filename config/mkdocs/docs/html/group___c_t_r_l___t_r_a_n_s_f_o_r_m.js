@@ -1,23 +1,23 @@
 var group___c_t_r_l___t_r_a_n_s_f_o_r_m =
 [
-    [ "DQ", "struct_d_q.html", [
-      [ "a", "struct_d_q.html#acc15f6169bdb7dfa9f55f5974559d771", null ],
-      [ "alpha", "struct_d_q.html#a8d48064f20c256ee70c0340201944f05", null ],
-      [ "b", "struct_d_q.html#aa2803cc4cddc4ad21a0ef5fec72405c3", null ],
-      [ "beta", "struct_d_q.html#a6bbac8cb900c1e2e5e33d609288e28e1", null ],
-      [ "c", "struct_d_q.html#a1aded4068d266a4dc8948695ca06e15a", null ],
-      [ "cos", "struct_d_q.html#a61371fbd4d8d45c19504bd2bb55779f7", null ],
-      [ "d", "struct_d_q.html#a767848f6efd85a10affd2f31ace3234c", null ],
-      [ "q", "struct_d_q.html#ae2eb8f5f4dc30164453cbd9c0f9d7b0a", null ],
-      [ "sin", "struct_d_q.html#a145def2452bd485accfca0743b354596", null ],
-      [ "zero", "struct_d_q.html#ade05fa7d0852511fa4c89943726867a3", null ]
+    [ "DQ_T", "struct_d_q___t.html", [
+      [ "a", "struct_d_q___t.html#ac535797967c04586a99a8b95e069f806", null ],
+      [ "alpha", "struct_d_q___t.html#a19b0b7711066f425e9b98d8bf525c4f6", null ],
+      [ "b", "struct_d_q___t.html#a76bebdee35dfd4c266678943c6bf41be", null ],
+      [ "beta", "struct_d_q___t.html#ad9726a6083380d0dfa4d144983218efc", null ],
+      [ "c", "struct_d_q___t.html#a7af22726d4231a782ae231c4dbc63a45", null ],
+      [ "cos", "struct_d_q___t.html#a06fc141bc2e48151460ae6dcb85ad265", null ],
+      [ "d", "struct_d_q___t.html#abc3648351ac4458d20f675a444bbc30d", null ],
+      [ "q", "struct_d_q___t.html#a97fb3118fe2b62c00e780bbc9af8a605", null ],
+      [ "sin", "struct_d_q___t.html#add74931016b4addccf73115f2fc02e94", null ],
+      [ "zero", "struct_d_q___t.html#ada61abcb273ded1fc25a6ee317ff7b39", null ]
     ] ],
-    [ "DQ", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#gaf192cef5f6b07a738b98c828bb8561c0", null ],
-    [ "DQ_Clark_Run", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#gabfc8b8b04448ff3a7f85e109c8307720", null ],
-    [ "DQ_DQ_Set_Angle", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#ga11c282de033b367b84cc8239ec3bcfe8", null ],
-    [ "DQ_Init", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#ga70999c60ebcaf97a22e60fe42bd5e169", null ],
-    [ "DQ_Inverse_Clark_Run", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#ga5551f1474938100093d31372fdab4613", null ],
-    [ "DQ_Inverse_Park_Run", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#gaafdfa45b01af85255dc9c5e4f649afde", null ],
-    [ "DQ_Park_Run", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#gab6766a07214aa5835fa5e77343c762a8", null ],
-    [ "DQ_Set_Sincos", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#gad45ec80eed897720f37c1da525fccb58", null ]
+    [ "DQ_T_DEFAULTS", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#ga320d47d23cffc5c654432553f01abc34", null ],
+    [ "DQ_T", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#ga40e5a5911364257401c57ed84c16e408", null ],
+    [ "DQ_Clark_Run", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#ga7f6e2ba071a89d284b59de9f2ac51e40", null ],
+    [ "DQ_DQ_Set_Angle", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#gad7570454890e2ff68b4eb9fcd74177af", null ],
+    [ "DQ_Inverse_Clark_Run", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#gae15ce14bc3267b82ecac1cbdd6822a0f", null ],
+    [ "DQ_Inverse_Park_Run", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#ga748318991afbc102fe6bac79eb81c991", null ],
+    [ "DQ_Park_Run", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#ga55303df063486f2182adabb6d56f0ba6", null ],
+    [ "DQ_Set_Sincos", "group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#gad1dbe2d7c463b60b993ef49a92b6b2a1", null ]
 ];

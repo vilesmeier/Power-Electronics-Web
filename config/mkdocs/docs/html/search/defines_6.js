@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['nuttall1024_0',['NUTTALL1024',['../fpu__fft__nuttall_8h.html#a9462029ab51e48bbf33bc7e715f65f19',1,'fpu_fft_nuttall.h']]],
-  ['nuttall128_1',['NUTTALL128',['../fpu__fft__nuttall_8h.html#ab736923f9193bc815136abfd269710b8',1,'fpu_fft_nuttall.h']]],
-  ['nuttall2048_2',['NUTTALL2048',['../fpu__fft__nuttall_8h.html#ad542248644e915bfdca2c4f6bbc2a1fa',1,'fpu_fft_nuttall.h']]],
-  ['nuttall256_3',['NUTTALL256',['../fpu__fft__nuttall_8h.html#acc8a5df454185edaeae6532bdd179a4d',1,'fpu_fft_nuttall.h']]],
-  ['nuttall32_4',['NUTTALL32',['../fpu__fft__nuttall_8h.html#ace0a4e20dcbdc9947e32c33557bd9abb',1,'fpu_fft_nuttall.h']]],
-  ['nuttall4096_5',['NUTTALL4096',['../fpu__fft__nuttall_8h.html#ada7d602aac6e037052bb212608904744',1,'fpu_fft_nuttall.h']]],
-  ['nuttall512_6',['NUTTALL512',['../fpu__fft__nuttall_8h.html#a1d6b1cf7c0c71c356a5360ef0957dedd',1,'fpu_fft_nuttall.h']]],
-  ['nuttall64_7',['NUTTALL64',['../fpu__fft__nuttall_8h.html#a4c03c0eed98d66a89d8b3de951842d06',1,'fpu_fft_nuttall.h']]]
+  ['kaiser1024_0',['KAISER1024',['../fpu__fft__kaiser_8h.html#a340293b0c3606a8ee982dc4b66051359',1,'fpu_fft_kaiser.h']]],
+  ['kaiser128_1',['KAISER128',['../fpu__fft__kaiser_8h.html#af0fd36ab75ed1034c66049841863e673',1,'fpu_fft_kaiser.h']]],
+  ['kaiser2048_2',['KAISER2048',['../fpu__fft__kaiser_8h.html#abf41f2a12384f89f4d9f1c0b69137bf8',1,'fpu_fft_kaiser.h']]],
+  ['kaiser256_3',['KAISER256',['../fpu__fft__kaiser_8h.html#a32344a6781a6653357c1217126df2a22',1,'fpu_fft_kaiser.h']]],
+  ['kaiser32_4',['KAISER32',['../fpu__fft__kaiser_8h.html#adedc8f15658bbbd95b2c511158545c72',1,'fpu_fft_kaiser.h']]],
+  ['kaiser4096_5',['KAISER4096',['../fpu__fft__kaiser_8h.html#aa1c12cde2a15e0b032f47b432a0148b6',1,'fpu_fft_kaiser.h']]],
+  ['kaiser512_6',['KAISER512',['../fpu__fft__kaiser_8h.html#a38c8f2b6e468547c7550ac692c3e900f',1,'fpu_fft_kaiser.h']]],
+  ['kaiser64_7',['KAISER64',['../fpu__fft__kaiser_8h.html#a3a754913853ad7813bb341c612f59084',1,'fpu_fft_kaiser.h']]]
 ];

@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
    </div>
    <div id="projectbrief">NUEDC软件代码库</div>
   </td>
@@ -90,42 +90,56 @@ $(function(){initNavTree('structdcl__df23.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">dcl_df23结构体 参考<div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a> &raquo; <a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html">差分方程支持</a></div></div></div>
+  <div class="headertitle"><div class="title">dcl_df23结构体 参考<div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a> &raquo; <a class="el" href="group___c_t_r_l___d_c_l.html">TI数字控制库</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>定义三阶直接形式Ⅱ（DF23）控制器结构体  
+<p>Defines the <a class="el" href="group___c_t_r_l___d_c_l.html#ga74b8909e62e7713da3898ff5ab087938" title="Defines the DCL_DF23 controller structure">DCL_DF23</a> controller structure  
  <a href="#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_d_c_l_8h_source.html">DCL.h</a>&gt;</code></p>
+<div class="dynheader">
+dcl_df23 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structdcl__df23__coll__graph.png" border="0" usemap="#adcl__df23_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="adcl__df23_coll__map" id="adcl__df23_coll__map">
+<area shape="rect" title="Defines the DCL_DF23 controller structure" alt="" coords="18,106,88,134"/>
+<area shape="rect" href="structdcl__df23__sps.html" title="Defines the DCL_DF23 shadow parameter set" alt="" coords="5,5,101,33"/>
+<area shape="poly" title=" " alt="" coords="56,49,56,105,50,105,50,49"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 成员变量</h2></td></tr>
-<tr class="memitem:ae2e0a3509ac2475beb0b8b9f19bd3980" id="r_ae2e0a3509ac2475beb0b8b9f19bd3980"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2e0a3509ac2475beb0b8b9f19bd3980">b0</a></td></tr>
-<tr class="memdesc:ae2e0a3509ac2475beb0b8b9f19bd3980"><td class="mdescLeft">&#160;</td><td class="mdescRight">系数 b0  <br /></td></tr>
-<tr class="memitem:ae9590782806e8502c45c92f1bbc49112" id="r_ae9590782806e8502c45c92f1bbc49112"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9590782806e8502c45c92f1bbc49112">b1</a></td></tr>
-<tr class="memdesc:ae9590782806e8502c45c92f1bbc49112"><td class="mdescLeft">&#160;</td><td class="mdescRight">系数 b1  <br /></td></tr>
-<tr class="memitem:a07c56dd7b56bfe8c415c0906c834532a" id="r_a07c56dd7b56bfe8c415c0906c834532a"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07c56dd7b56bfe8c415c0906c834532a">b2</a></td></tr>
-<tr class="memdesc:a07c56dd7b56bfe8c415c0906c834532a"><td class="mdescLeft">&#160;</td><td class="mdescRight">系数 b2  <br /></td></tr>
-<tr class="memitem:a71eb0900e1ee30b9ab32eb6d5e365a74" id="r_a71eb0900e1ee30b9ab32eb6d5e365a74"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71eb0900e1ee30b9ab32eb6d5e365a74">b3</a></td></tr>
-<tr class="memdesc:a71eb0900e1ee30b9ab32eb6d5e365a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">系数 b3  <br /></td></tr>
-<tr class="memitem:aeed92da3002451db369c957e6d5253a3" id="r_aeed92da3002451db369c957e6d5253a3"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeed92da3002451db369c957e6d5253a3">a1</a></td></tr>
-<tr class="memdesc:aeed92da3002451db369c957e6d5253a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">系数 a1  <br /></td></tr>
-<tr class="memitem:af138a68cd6801cb885bab8531e334604" id="r_af138a68cd6801cb885bab8531e334604"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af138a68cd6801cb885bab8531e334604">a2</a></td></tr>
-<tr class="memdesc:af138a68cd6801cb885bab8531e334604"><td class="mdescLeft">&#160;</td><td class="mdescRight">系数 a2  <br /></td></tr>
-<tr class="memitem:aa6772887ee798889551bdda7f2dede54" id="r_aa6772887ee798889551bdda7f2dede54"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6772887ee798889551bdda7f2dede54">a3</a></td></tr>
-<tr class="memdesc:aa6772887ee798889551bdda7f2dede54"><td class="mdescLeft">&#160;</td><td class="mdescRight">系数 a3  <br /></td></tr>
-<tr class="memitem:a0dacf5c2684beb19503993139a041ece" id="r_a0dacf5c2684beb19503993139a041ece"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dacf5c2684beb19503993139a041ece">x1</a></td></tr>
-<tr class="memdesc:a0dacf5c2684beb19503993139a041ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">中间变量 x1  <br /></td></tr>
-<tr class="memitem:acb5cd9a25b924a5ea2ed04bb8cfef85d" id="r_acb5cd9a25b924a5ea2ed04bb8cfef85d"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb5cd9a25b924a5ea2ed04bb8cfef85d">x2</a></td></tr>
-<tr class="memdesc:acb5cd9a25b924a5ea2ed04bb8cfef85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">中间变量 x2  <br /></td></tr>
-<tr class="memitem:a0a7283a089d042d4ab6478c1972fcec2" id="r_a0a7283a089d042d4ab6478c1972fcec2"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a7283a089d042d4ab6478c1972fcec2">x3</a></td></tr>
-<tr class="memdesc:a0a7283a089d042d4ab6478c1972fcec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">中间变量 x3  <br /></td></tr>
+<tr class="memitem:ae2e0a3509ac2475beb0b8b9f19bd3980" id="r_ae2e0a3509ac2475beb0b8b9f19bd3980"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2e0a3509ac2475beb0b8b9f19bd3980">b0</a></td></tr>
+<tr class="memdesc:ae2e0a3509ac2475beb0b8b9f19bd3980"><td class="mdescLeft">&#160;</td><td class="mdescRight">b0  <br /></td></tr>
+<tr class="memitem:ae9590782806e8502c45c92f1bbc49112" id="r_ae9590782806e8502c45c92f1bbc49112"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9590782806e8502c45c92f1bbc49112">b1</a></td></tr>
+<tr class="memdesc:ae9590782806e8502c45c92f1bbc49112"><td class="mdescLeft">&#160;</td><td class="mdescRight">b1  <br /></td></tr>
+<tr class="memitem:a07c56dd7b56bfe8c415c0906c834532a" id="r_a07c56dd7b56bfe8c415c0906c834532a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07c56dd7b56bfe8c415c0906c834532a">b2</a></td></tr>
+<tr class="memdesc:a07c56dd7b56bfe8c415c0906c834532a"><td class="mdescLeft">&#160;</td><td class="mdescRight">b2  <br /></td></tr>
+<tr class="memitem:a71eb0900e1ee30b9ab32eb6d5e365a74" id="r_a71eb0900e1ee30b9ab32eb6d5e365a74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71eb0900e1ee30b9ab32eb6d5e365a74">b3</a></td></tr>
+<tr class="memdesc:a71eb0900e1ee30b9ab32eb6d5e365a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">b3  <br /></td></tr>
+<tr class="memitem:aeed92da3002451db369c957e6d5253a3" id="r_aeed92da3002451db369c957e6d5253a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeed92da3002451db369c957e6d5253a3">a1</a></td></tr>
+<tr class="memdesc:aeed92da3002451db369c957e6d5253a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">a1  <br /></td></tr>
+<tr class="memitem:af138a68cd6801cb885bab8531e334604" id="r_af138a68cd6801cb885bab8531e334604"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af138a68cd6801cb885bab8531e334604">a2</a></td></tr>
+<tr class="memdesc:af138a68cd6801cb885bab8531e334604"><td class="mdescLeft">&#160;</td><td class="mdescRight">a2  <br /></td></tr>
+<tr class="memitem:aa6772887ee798889551bdda7f2dede54" id="r_aa6772887ee798889551bdda7f2dede54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6772887ee798889551bdda7f2dede54">a3</a></td></tr>
+<tr class="memdesc:aa6772887ee798889551bdda7f2dede54"><td class="mdescLeft">&#160;</td><td class="mdescRight">a3  <br /></td></tr>
+<tr class="memitem:a0dacf5c2684beb19503993139a041ece" id="r_a0dacf5c2684beb19503993139a041ece"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dacf5c2684beb19503993139a041ece">x1</a></td></tr>
+<tr class="memdesc:a0dacf5c2684beb19503993139a041ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">x1  <br /></td></tr>
+<tr class="memitem:acb5cd9a25b924a5ea2ed04bb8cfef85d" id="r_acb5cd9a25b924a5ea2ed04bb8cfef85d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb5cd9a25b924a5ea2ed04bb8cfef85d">x2</a></td></tr>
+<tr class="memdesc:acb5cd9a25b924a5ea2ed04bb8cfef85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">x2  <br /></td></tr>
+<tr class="memitem:a0a7283a089d042d4ab6478c1972fcec2" id="r_a0a7283a089d042d4ab6478c1972fcec2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a7283a089d042d4ab6478c1972fcec2">x3</a></td></tr>
+<tr class="memdesc:a0a7283a089d042d4ab6478c1972fcec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">x3  <br /></td></tr>
+<tr class="memitem:a44af3515a153227c80f593118186af27" id="r_a44af3515a153227c80f593118186af27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga5028c0805da7f3e0b372723ac789f3e2">DCL_DF23_SPS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44af3515a153227c80f593118186af27">sps</a></td></tr>
+<tr class="memdesc:a44af3515a153227c80f593118186af27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the shadow parameter set  <br /></td></tr>
+<tr class="memitem:a5c6a39ef3351efe59be22ac05b3a8bf7" id="r_a5c6a39ef3351efe59be22ac05b3a8bf7"><td class="memItemLeft" align="right" valign="top">DCL_CSS *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c6a39ef3351efe59be22ac05b3a8bf7">css</a></td></tr>
+<tr class="memdesc:a5c6a39ef3351efe59be22ac05b3a8bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the common support structure  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
-<div class="textblock"><p>定义三阶直接形式Ⅱ（DF23）控制器结构体 </p>
+<div class="textblock"><p>Defines the <a class="el" href="group___c_t_r_l___d_c_l.html#ga74b8909e62e7713da3898ff5ab087938" title="Defines the DCL_DF23 controller structure">DCL_DF23</a> controller structure </p>
 
-<p class="definition">在文件 <a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a> 第 <a class="el" href="_transfer_fun_8h_source.html#l00054">54</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00378">378</a> 行定义.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">结构体成员变量说明</h2>
 <a id="aeed92da3002451db369c957e6d5253a3" name="aeed92da3002451db369c957e6d5253a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeed92da3002451db369c957e6d5253a3">&#9670;&#160;</a></span>a1</h2>
@@ -134,14 +148,14 @@ $(function(){initNavTree('structdcl__df23.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_df23::a1</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_df23::a1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>系数 a1 </p>
+<p>a1 </p>
 
-<p class="definition">在文件 <a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a> 第 <a class="el" href="_transfer_fun_8h_source.html#l00059">59</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00384">384</a> 行定义.</p>
 
 </div>
 </div>
@@ -152,14 +166,14 @@ $(function(){initNavTree('structdcl__df23.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_df23::a2</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_df23::a2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>系数 a2 </p>
+<p>a2 </p>
 
-<p class="definition">在文件 <a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a> 第 <a class="el" href="_transfer_fun_8h_source.html#l00060">60</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00385">385</a> 行定义.</p>
 
 </div>
 </div>
@@ -170,14 +184,14 @@ $(function(){initNavTree('structdcl__df23.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_df23::a3</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_df23::a3</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>系数 a3 </p>
+<p>a3 </p>
 
-<p class="definition">在文件 <a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a> 第 <a class="el" href="_transfer_fun_8h_source.html#l00061">61</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00386">386</a> 行定义.</p>
 
 </div>
 </div>
@@ -188,14 +202,14 @@ $(function(){initNavTree('structdcl__df23.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_df23::b0</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_df23::b0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>系数 b0 </p>
+<p>b0 </p>
 
-<p class="definition">在文件 <a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a> 第 <a class="el" href="_transfer_fun_8h_source.html#l00055">55</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00380">380</a> 行定义.</p>
 
 </div>
 </div>
@@ -206,14 +220,14 @@ $(function(){initNavTree('structdcl__df23.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_df23::b1</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_df23::b1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>系数 b1 </p>
+<p>b1 </p>
 
-<p class="definition">在文件 <a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a> 第 <a class="el" href="_transfer_fun_8h_source.html#l00056">56</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00381">381</a> 行定义.</p>
 
 </div>
 </div>
@@ -224,14 +238,14 @@ $(function(){initNavTree('structdcl__df23.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_df23::b2</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_df23::b2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>系数 b2 </p>
+<p>b2 </p>
 
-<p class="definition">在文件 <a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a> 第 <a class="el" href="_transfer_fun_8h_source.html#l00057">57</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00382">382</a> 行定义.</p>
 
 </div>
 </div>
@@ -242,14 +256,50 @@ $(function(){initNavTree('structdcl__df23.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_df23::b3</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_df23::b3</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>系数 b3 </p>
+<p>b3 </p>
 
-<p class="definition">在文件 <a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a> 第 <a class="el" href="_transfer_fun_8h_source.html#l00058">58</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00383">383</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5c6a39ef3351efe59be22ac05b3a8bf7" name="a5c6a39ef3351efe59be22ac05b3a8bf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c6a39ef3351efe59be22ac05b3a8bf7">&#9670;&#160;</a></span>css</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DCL_CSS* dcl_df23::css</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the common support structure </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00394">394</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a44af3515a153227c80f593118186af27" name="a44af3515a153227c80f593118186af27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44af3515a153227c80f593118186af27">&#9670;&#160;</a></span>sps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga5028c0805da7f3e0b372723ac789f3e2">DCL_DF23_SPS</a>* dcl_df23::sps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the shadow parameter set </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00393">393</a> 行定义.</p>
 
 </div>
 </div>
@@ -260,14 +310,14 @@ $(function(){initNavTree('structdcl__df23.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_df23::x1</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_df23::x1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>中间变量 x1 </p>
+<p>x1 </p>
 
-<p class="definition">在文件 <a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a> 第 <a class="el" href="_transfer_fun_8h_source.html#l00062">62</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00389">389</a> 行定义.</p>
 
 </div>
 </div>
@@ -278,14 +328,14 @@ $(function(){initNavTree('structdcl__df23.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_df23::x2</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_df23::x2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>中间变量 x2 </p>
+<p>x2 </p>
 
-<p class="definition">在文件 <a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a> 第 <a class="el" href="_transfer_fun_8h_source.html#l00063">63</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00390">390</a> 行定义.</p>
 
 </div>
 </div>
@@ -296,19 +346,19 @@ $(function(){initNavTree('structdcl__df23.html','',''); });
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_df23::x3</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_df23::x3</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>中间变量 x3 </p>
+<p>x3 </p>
 
-<p class="definition">在文件 <a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a> 第 <a class="el" href="_transfer_fun_8h_source.html#l00064">64</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00391">391</a> 行定义.</p>
 
 </div>
 </div>
 <hr/>该结构体的文档由以下文件生成:<ul>
-<li><a class="el" href="_transfer_fun_8h_source.html">TransferFun.h</a></li>
+<li><a class="el" href="_d_c_l_8h_source.html">DCL.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

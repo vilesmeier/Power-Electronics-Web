@@ -8,14 +8,14 @@ var searchData=
   ['t6_5',['t6',['../struct_s_v_p_w_m.html#a58ba567bccce8d5877f8375ba9130cbb',1,'SVPWM']]],
   ['tail_6',['Tail',['../struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html#a59eab53a8a0afd4066a71f1ea49da4dd',1,'RFFT_ADC_F32_STRUCT']]],
   ['tbprd_7',['TBPRD',['../struct_s_v_p_w_m.html#a1b9e8dbc5980c73c221502fb132fc2cb',1,'SVPWM']]],
-  ['tbprd_8',['tbprd',['../struct_m_o_d.html#aef3ce9f37f655d38ee596151d6e780c6',1,'MOD']]],
+  ['tbprd_8',['tbprd',['../struct_m_o_d___t.html#a63ff27f82b6f861d96d979eda08efaac',1,'MOD_T']]],
   ['test1_9',['test1',['../280049_c_2_test___projects_2_v_o_f_a___test_2main_8c.html#a9121443aa724d602f6591f8b6679e21a',1,'main.c']]],
   ['test2_10',['test2',['../280049_c_2_test___projects_2_v_o_f_a___test_2main_8c.html#aa1c6942f5cb0527f7622dc4df73e2a18',1,'main.c']]],
   ['test3_11',['test3',['../280049_c_2_test___projects_2_v_o_f_a___test_2main_8c.html#ade4f49a70d028bae05c5d268cb569155',1,'main.c']]],
-  ['thd_12',['thd',['../group___d_s_p___r_f_f_t___f32.html#ga435f5c86bc9126eb6627f595e27815d6',1,'RFFT']]],
+  ['thd_12',['thd',['../group___d_s_p___r_f_f_t___f32.html#ga285ffa74eb75579c8a395fe23fdb6ccb',1,'RFFT_T']]],
   ['theta_13',['theta',['../struct_s_o_g_i__1_p_h.html#aa7afb071b3c17c69fbe3c3a7e85d9d68',1,'SOGI_1PH::theta'],['../struct_s_r_f__3_p_h.html#a25f08b63c4d9ae2a8ff80a527c9a0b8e',1,'SRF_3PH::theta'],['../struct_d_d_s_r_f__3_p_h.html#a50c2c822c503cd44efebbc749ff8b370',1,'DDSRF_3PH::theta']]],
-  ['threshold_14',['threshold',['../struct_p_o_w_e_r__1_p_h.html#a47901b99cb34a03122d5a331a5989b6c',1,'POWER_1PH']]],
+  ['threshold_14',['threshold',['../struct_p_o_w_e_r___i_n_t__1_p_h___t.html#a23c9969c786d98d0fed7d07b0440dd54',1,'POWER_INT_1PH_T']]],
   ['time_5fbase_15',['time_base',['../struct_s_t_a_t_e.html#ad2382f0a161c245f9a136eea3b984e41',1,'STATE']]],
   ['ts_16',['Ts',['../struct_s_v_p_w_m.html#a9f04e7fbd755e887796a6e22f0d26920',1,'SVPWM']]],
-  ['twiddle_17',['twiddle',['../group___d_s_p___r_f_f_t___f32.html#ga56ce624e4d31bc2956066f5fa5b6b34d',1,'twiddle:&#160;rfft.c'],['../group___d_s_p___r_f_f_t___f32.html#ga56ce624e4d31bc2956066f5fa5b6b34d',1,'twiddle:&#160;rfft.c']]]
+  ['twiddle_17',['twiddle',['../group___d_s_p___r_f_f_t___f32.html#ga7a73cc1da967a6e0b4ebf9c614baa2e1',1,'RFFT_DATA_T']]]
 ];

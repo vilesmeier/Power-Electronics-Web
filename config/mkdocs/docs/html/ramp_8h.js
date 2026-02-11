@@ -1,8 +1,8 @@
 var ramp_8h =
 [
-    [ "RAMP", "group___c_t_r_l___r_a_m_p.html#gae5a74d3450cfe8998ab3cabd68341310", null ],
-    [ "Ramp_Init", "group___c_t_r_l___r_a_m_p.html#ga3e743c6f7b3d3cace6e21e22f9722466", null ],
-    [ "Ramp_Presync", "group___c_t_r_l___r_a_m_p.html#ga0bdd6f4685504bc20e96a3dbf860b51d", null ],
-    [ "Ramp_Run", "group___c_t_r_l___r_a_m_p.html#gae2e0c71c0fe9a608875d295f970e9236", null ],
-    [ "Ramp_Set", "group___c_t_r_l___r_a_m_p.html#ga2e5990d2aba3b0277df88a6bb0871b2a", null ]
+    [ "RAMP_T_DEFALUTS", "group___c_t_r_l___r_a_m_p.html#ga1840710b498e45a6efb92e9d45c4a480", null ],
+    [ "RAMP_T", "group___c_t_r_l___r_a_m_p.html#gaf4f9ae852daa42dd604ffb987711766b", null ],
+    [ "Ramp_Presync", "group___c_t_r_l___r_a_m_p.html#ga4a3ce7434cbc108f83bb8f8b0c64c079", null ],
+    [ "Ramp_Run", "group___c_t_r_l___r_a_m_p.html#ga21b703f8fdc6af4dca08016d4d74b154", null ],
+    [ "Ramp_Set", "group___c_t_r_l___r_a_m_p.html#gab4cf5a44777a203a846f091f53122efb", null ]
 ];

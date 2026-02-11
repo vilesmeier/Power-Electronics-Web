@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
    </div>
    <div id="projectbrief">NUEDC软件代码库</div>
   </td>
@@ -90,115 +90,80 @@ $(function(){initNavTree('structdcl__pr.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">dcl_pr结构体 参考<div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a> &raquo; <a class="el" href="group___c_t_r_l___d_c_l.html">数字控制器</a></div></div></div>
+  <div class="headertitle"><div class="title">dcl_pr结构体 参考<div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a> &raquo; <a class="el" href="group___c_t_r_l___c_o_n_t_r_o_l.html">离散化控制器</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>使用DF22结构体定义PR控制器  
  <a href="#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="dcl_8h_source.html">dcl.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="control_8h_source.html">control.h</a>&gt;</code></p>
 <div class="dynheader">
 dcl_pr 的协作图:</div>
 <div class="dyncontent">
 <div class="center"><img src="structdcl__pr__coll__graph.png" border="0" usemap="#adcl__pr_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adcl__pr_coll__map" id="adcl__pr_coll__map">
-<area shape="rect" title="使用DF22结构体定义PR控制器" alt="" coords="12,106,68,134"/>
-<area shape="rect" href="structdcl__df22.html" title="定义二阶直接形式Ⅱ（DF22）控制器结构体" alt="" coords="5,5,75,33"/>
-<area shape="poly" title=" " alt="" coords="43,49,43,105,37,105,37,49"/>
+<area shape="rect" title="使用DF22结构体定义PR控制器" alt="" coords="36,307,92,335"/>
+<area shape="rect" href="structdcl__df22__t.html" title="Defines the DCL_DF22 controller structure" alt="" coords="24,207,104,234"/>
+<area shape="poly" title=" " alt="" coords="66,250,66,307,61,307,61,250"/>
+<area shape="rect" href="structdcl__df22.html" title="Defines the DCL_DF22 controller structure" alt="" coords="82,106,152,134"/>
+<area shape="poly" title=" " alt="" coords="105,148,73,207,68,205,101,146"/>
+<area shape="rect" href="structdcl__df22__sps.html" title="Defines the DCL_DF22 shadow parameter set" alt="" coords="5,5,101,33"/>
+<area shape="poly" title=" " alt="" coords="50,49,45,89,46,133,53,173,62,205,57,207,48,174,41,134,40,89,45,48"/>
+<area shape="poly" title=" " alt="" coords="72,44,111,104,106,107,67,47"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 成员变量</h2></td></tr>
-<tr class="memitem:afc1a13c9f0994a9663b5c897c62269f3" id="r_afc1a13c9f0994a9663b5c897c62269f3"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc1a13c9f0994a9663b5c897c62269f3">Kp</a></td></tr>
-<tr class="memdesc:afc1a13c9f0994a9663b5c897c62269f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kp  <br /></td></tr>
-<tr class="memitem:a5abacf50cdef38697bb7b07ca3c4de32" id="r_a5abacf50cdef38697bb7b07ca3c4de32"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5abacf50cdef38697bb7b07ca3c4de32">Kr</a></td></tr>
-<tr class="memdesc:a5abacf50cdef38697bb7b07ca3c4de32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kr  <br /></td></tr>
-<tr class="memitem:a918e4c7f925a6fc7ead78c88337cbb41" id="r_a918e4c7f925a6fc7ead78c88337cbb41"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a918e4c7f925a6fc7ead78c88337cbb41">Output</a></td></tr>
-<tr class="memdesc:a918e4c7f925a6fc7ead78c88337cbb41"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制器输出  <br /></td></tr>
-<tr class="memitem:ad9ac6dd687bc836ad44e39139cc386f6" id="r_ad9ac6dd687bc836ad44e39139cc386f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9ac6dd687bc836ad44e39139cc386f6">pr</a></td></tr>
-<tr class="memdesc:ad9ac6dd687bc836ad44e39139cc386f6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gaf8832c3b4a1ad9070601b091b430b0e8" title="定义二阶直接形式Ⅱ（DF22）控制器结构体">DCL_DF22</a> 结构体支持  <br /></td></tr>
+<tr class="memitem:afd62f3141e56127a7454531716b44630" id="r_afd62f3141e56127a7454531716b44630"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga8233383ca37eabb66161ef56fe7ddffd">DCL_DF22_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd62f3141e56127a7454531716b44630">pr</a></td></tr>
+<tr class="memdesc:afd62f3141e56127a7454531716b44630"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group___c_t_r_l___d_c_l.html#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> 结构体支持  <br /></td></tr>
+<tr class="memitem:a8df7f294456ef43d1eeca4038e391eea" id="r_a8df7f294456ef43d1eeca4038e391eea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8df7f294456ef43d1eeca4038e391eea">output</a></td></tr>
+<tr class="memdesc:a8df7f294456ef43d1eeca4038e391eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制器输出  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>使用DF22结构体定义PR控制器 </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00049">49</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00049">49</a> 行定义.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">结构体成员变量说明</h2>
-<a id="afc1a13c9f0994a9663b5c897c62269f3" name="afc1a13c9f0994a9663b5c897c62269f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc1a13c9f0994a9663b5c897c62269f3">&#9670;&#160;</a></span>Kp</h2>
+<a id="a8df7f294456ef43d1eeca4038e391eea" name="a8df7f294456ef43d1eeca4038e391eea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8df7f294456ef43d1eeca4038e391eea">&#9670;&#160;</a></span>output</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_pr::Kp</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Kp </p>
-
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00050">50</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a5abacf50cdef38697bb7b07ca3c4de32" name="a5abacf50cdef38697bb7b07ca3c4de32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5abacf50cdef38697bb7b07ca3c4de32">&#9670;&#160;</a></span>Kr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float32_t dcl_pr::Kr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Kr </p>
-
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00051">51</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a918e4c7f925a6fc7ead78c88337cbb41" name="a918e4c7f925a6fc7ead78c88337cbb41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a918e4c7f925a6fc7ead78c88337cbb41">&#9670;&#160;</a></span>Output</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float32_t dcl_pr::Output</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_pr::output</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>控制器输出 </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00052">52</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00051">51</a> 行定义.</p>
 
 </div>
 </div>
-<a id="ad9ac6dd687bc836ad44e39139cc386f6" name="ad9ac6dd687bc836ad44e39139cc386f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9ac6dd687bc836ad44e39139cc386f6">&#9670;&#160;</a></span>pr</h2>
+<a id="afd62f3141e56127a7454531716b44630" name="afd62f3141e56127a7454531716b44630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd62f3141e56127a7454531716b44630">&#9670;&#160;</a></span>pr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> dcl_pr::pr</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga8233383ca37eabb66161ef56fe7ddffd">DCL_DF22_T</a> dcl_pr::pr</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gaf8832c3b4a1ad9070601b091b430b0e8" title="定义二阶直接形式Ⅱ（DF22）控制器结构体">DCL_DF22</a> 结构体支持 </p>
+<p><a class="el" href="group___c_t_r_l___d_c_l.html#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> 结构体支持 </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00053">53</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00050">50</a> 行定义.</p>
 
 </div>
 </div>
 <hr/>该结构体的文档由以下文件生成:<ul>
-<li><a class="el" href="dcl_8h_source.html">dcl.h</a></li>
+<li><a class="el" href="control_8h_source.html">control.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

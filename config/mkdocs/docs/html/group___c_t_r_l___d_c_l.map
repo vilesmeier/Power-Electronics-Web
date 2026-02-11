@@ -1,4 +1,4 @@
-<map id="数字控制器" name="数字控制器">
-<area shape="rect" id="Node000002" href="$group___c_t_r_l.html" title="常用控制算法的模块化代码, 使用时直接将文件夹复制到 hardware 文件夹内即可" alt="" coords="5,5,92,30"/>
-<area shape="rect" id="Node000001" title="包含常见控制器传递函数, PI PR等" alt="" coords="140,5,226,30"/>
+<map id="TI数字控制库" name="TI数字控制库">
+<area shape="rect" id="Node000002" href="$group___c_t_r_l.html" title="常用控制算法的模块化代码, 使用时直接将文件夹复制到 hardware 文件夹内即可" alt="" coords="5,7,92,32"/>
+<area shape="rect" id="Node000001" title="TI 数字控制库, 提供 pi, 差分方程的支持" alt="" coords="140,5,239,33"/>
 </map>

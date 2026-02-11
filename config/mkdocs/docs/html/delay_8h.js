@@ -1,8 +1,8 @@
 var delay_8h =
 [
-    [ "DELAY", "group___c_t_r_l___d_e_l_a_y.html#gac993929848db081769e724a03456dcc4", null ],
-    [ "DELAY_Init", "group___c_t_r_l___d_e_l_a_y.html#ga1d1f6ac6440c9beb1b7c6051c8fa15e0", null ],
-    [ "DELAY_Pop", "group___c_t_r_l___d_e_l_a_y.html#ga09696418bb8d13d744d744fca5f28973", null ],
-    [ "DELAY_Push", "group___c_t_r_l___d_e_l_a_y.html#gab12603b239fc84d00450dded1a9629ee", null ],
-    [ "DELAY_Set", "group___c_t_r_l___d_e_l_a_y.html#ga7f6f301d186e73e3449b5136447dbb11", null ]
+    [ "DELAY_T_DEFAULTS", "group___c_t_r_l___d_e_l_a_y.html#gaadbab9d5768bc015dc5e22b7340a9d6d", null ],
+    [ "DELAY_T", "group___c_t_r_l___d_e_l_a_y.html#ga8a5df0a097e9a9be65041b9003cb76d9", null ],
+    [ "DELAY_Pop", "group___c_t_r_l___d_e_l_a_y.html#ga585d42496b7278091d5a406d17848448", null ],
+    [ "Delay_Push", "group___c_t_r_l___d_e_l_a_y.html#ga1af465c587dbf44db57cbadefae67627", null ],
+    [ "Delay_Set", "group___c_t_r_l___d_e_l_a_y.html#ga045412b1626e9a8ffd76738a198c1ea4", null ]
 ];

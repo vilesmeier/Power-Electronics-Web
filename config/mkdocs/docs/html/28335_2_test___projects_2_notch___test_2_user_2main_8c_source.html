@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
    </div>
    <div id="projectbrief">NUEDC软件代码库</div>
   </td>
@@ -130,8 +130,8 @@ $(function(){initNavTree('28335_2_test___projects_2_notch___test_2_user_2main_8c
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_function" href="group___d_r_v___f28335___a_d_c.html#ga5137b551f1b83b0f4d8df7d071a3d3a6">ADC_Init</a>();</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="group___d_r_v___f28335___p_w_m.html#ga16a6a31227f60674257e9715ee0c1638">EPWM_Init</a>();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_function" href="group___c_t_r_l___r_a_m_p.html#ga3e743c6f7b3d3cace6e21e22f9722466">Ramp_Init</a>(&amp;<a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#ae64cb3b8ccb553621432a97009f6d3d4">ramp</a>);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="group___c_t_r_l___r_a_m_p.html#ga2e5990d2aba3b0277df88a6bb0871b2a">Ramp_Set</a>(&amp;<a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#ae64cb3b8ccb553621432a97009f6d3d4">ramp</a>,50,20000);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Ramp_Init(&amp;<a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#ae64cb3b8ccb553621432a97009f6d3d4">ramp</a>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="group___c_t_r_l___r_a_m_p.html#gab4cf5a44777a203a846f091f53122efb">Ramp_Set</a>(&amp;<a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#ae64cb3b8ccb553621432a97009f6d3d4">ramp</a>,50,20000);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">//Enable Interrupt And JTAG Debug</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    EINT;</div>
@@ -147,8 +147,7 @@ $(function(){initNavTree('28335_2_test___projects_2_notch___test_2_user_2main_8c
 <div class="ttc" id="a280049_c_2_test___projects_2_digital___filter___test_2main_8c_html_ae64cb3b8ccb553621432a97009f6d3d4"><div class="ttname"><a href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#ae64cb3b8ccb553621432a97009f6d3d4">ramp</a></div><div class="ttdeci">RAMP ramp</div><div class="ttdef"><b>定义</b> <a href="280049_c_2_test___projects_2_digital___filter___test_2main_8c_source.html#l00026">280049C/Test_Projects/Digital_Filter_Test/main.c:26</a></div></div>
 <div class="ttc" id="a28335_2_test___projects_2_notch___test_2_user_2main_8c_html_a6288eba0f8e8ad3ab1544ad731eb7667"><div class="ttname"><a href="28335_2_test___projects_2_notch___test_2_user_2main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">main</a></div><div class="ttdeci">void main(void)</div><div class="ttdef"><b>定义</b> <a href="#l00012">28335/Test_Projects/Notch_Test/User/main.c:12</a></div></div>
 <div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div><div class="ttdoc">全局变量声明, 头文件打包, 全局通用宏定义</div></div>
-<div class="ttc" id="agroup___c_t_r_l___r_a_m_p_html_ga2e5990d2aba3b0277df88a6bb0871b2a"><div class="ttname"><a href="group___c_t_r_l___r_a_m_p.html#ga2e5990d2aba3b0277df88a6bb0871b2a">Ramp_Set</a></div><div class="ttdeci">void Ramp_Set(RAMP *ramp, float32_t grad_freq, float32_t isr_freq)</div><div class="ttdoc">set parameters,frequent in Hz</div><div class="ttdef"><b>定义</b> <a href="ramp_8c_source.html#l00022">ramp.c:22</a></div></div>
-<div class="ttc" id="agroup___c_t_r_l___r_a_m_p_html_ga3e743c6f7b3d3cace6e21e22f9722466"><div class="ttname"><a href="group___c_t_r_l___r_a_m_p.html#ga3e743c6f7b3d3cace6e21e22f9722466">Ramp_Init</a></div><div class="ttdeci">void Ramp_Init(RAMP *ramp)</div><div class="ttdoc">结构体初始化</div><div class="ttdef"><b>定义</b> <a href="ramp_8c_source.html#l00014">ramp.c:14</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___r_a_m_p_html_gab4cf5a44777a203a846f091f53122efb"><div class="ttname"><a href="group___c_t_r_l___r_a_m_p.html#gab4cf5a44777a203a846f091f53122efb">Ramp_Set</a></div><div class="ttdeci">void Ramp_Set(RAMP_T *ramp, float32_t grad_freq, float32_t isr_freq)</div><div class="ttdoc">set parameters,frequent in Hz</div><div class="ttdef"><b>定义</b> <a href="ramp_8c_source.html#l00013">ramp.c:13</a></div></div>
 <div class="ttc" id="agroup___d_r_v___f28335___a_d_c_html_ga5137b551f1b83b0f4d8df7d071a3d3a6"><div class="ttname"><a href="group___d_r_v___f28335___a_d_c.html#ga5137b551f1b83b0f4d8df7d071a3d3a6">ADC_Init</a></div><div class="ttdeci">void ADC_Init(void)</div><div class="ttdoc">ADC Init</div><div class="ttdef"><b>定义</b> <a href="adc_8c_source.html#l00013">adc.c:13</a></div></div>
 <div class="ttc" id="agroup___d_r_v___f28335___p_w_m_html_ga16a6a31227f60674257e9715ee0c1638"><div class="ttname"><a href="group___d_r_v___f28335___p_w_m.html#ga16a6a31227f60674257e9715ee0c1638">EPWM_Init</a></div><div class="ttdeci">void EPWM_Init(void)</div><div class="ttdoc">init interrupt, pwm1-6, tb sync and adc trigger</div><div class="ttdef"><b>定义</b> <a href="pwm_8c_source.html#l00204">pwm.c:204</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

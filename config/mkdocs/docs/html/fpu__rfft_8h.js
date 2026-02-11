@@ -1,6 +1,8 @@
 var fpu__rfft_8h =
 [
     [ "RFFT_ADC_F32_STRUCT", "struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t.html", "struct_r_f_f_t___a_d_c___f32___s_t_r_u_c_t" ],
+    [ "RFFT_F32_STRUCT_DEFAULTS", "fpu__rfft_8h.html#ac40552433a3763f37032bfa93e4ec66c", null ],
+    [ "RFFT_F32_STRUCT_HANDLE_DEFAULTS", "fpu__rfft_8h.html#a5d32856318d028320ae9e2f1d2bf52a4", null ],
     [ "RFFT_ADC_F32_STRUCT_Handle", "fpu__rfft_8h.html#a8a977d8b9a2c1763124388928d94204a", null ],
     [ "RFFT_F32_STRUCT_Handle", "fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf", null ],
     [ "RFFT_adc_f32", "fpu__rfft_8h.html#aa982a487f6da0f5d2137d4ee9cea234e", null ],

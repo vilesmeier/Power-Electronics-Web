@@ -1,15 +1,13 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,265,55,293"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,240,55,268"/>
 <area shape="rect" id="Node000002" href="$group___d_r_v___f28335___p_w_m.html#ga16a6a31227f60674257e9715ee0c1638" title="init interrupt, pwm1&#45;6, tb sync and adc trigger" alt="" coords="103,161,186,189"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="41,263,67,233,101,200,105,196,109,200,104,204,71,237,45,267"/>
-<area shape="rect" id="Node000010" href="$group___c_t_r_l___r_a_m_p.html#ga3e743c6f7b3d3cace6e21e22f9722466" title="结构体初始化" alt="" coords="104,213,184,241"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="54,266,97,246,100,250,56,271"/>
-<area shape="rect" id="Node000011" href="$group___c_t_r_l___r_a_m_p.html#ga2e5990d2aba3b0277df88a6bb0871b2a" title="set parameters,frequent in Hz" alt="" coords="105,265,184,293"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="55,276,89,276,89,282,55,282"/>
-<area shape="rect" id="Node000012" href="$group___d_r_v___f28335___u_a_r_t.html#gad7d9735eb6d12d58232f616020798946" title="Init SCI&#45;c" alt="" coords="104,317,184,345"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="56,288,100,308,97,313,54,293"/>
-<area shape="rect" id="Node000013" href="$group___d_r_v___f28335___u_a_r_t.html#ga62cd2632b61f0f11f05a028d7d7cea13" title="config baud rate" alt="" coords="105,369,184,397"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="45,292,71,322,104,355,109,358,105,362,101,358,67,325,41,295"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,237,101,200,107,196,110,200,104,204,52,242"/>
+<area shape="rect" id="Node000010" href="$group___c_t_r_l___r_a_m_p.html#gab4cf5a44777a203a846f091f53122efb" title="set parameters,frequent in Hz" alt="" coords="105,213,184,241"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="54,246,89,237,90,242,56,251"/>
+<area shape="rect" id="Node000011" href="$group___d_r_v___f28335___u_a_r_t.html#gad7d9735eb6d12d58232f616020798946" title="Init SCI&#45;c" alt="" coords="104,265,184,293"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="56,257,89,264,88,269,54,262"/>
+<area shape="rect" id="Node000012" href="$group___d_r_v___f28335___u_a_r_t.html#ga62cd2632b61f0f11f05a028d7d7cea13" title="config baud rate" alt="" coords="105,317,184,345"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="53,266,104,302,110,306,107,311,101,307,50,270"/>
 <area shape="rect" id="Node000003" href="$group___d_r_v___f28335___p_w_m.html#ga6f7068187c566632edbcc40fb80774a6" title="init pwm&#45;1" alt="" coords="234,5,324,33"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="150,160,182,106,205,74,232,44,236,41,240,44,236,48,209,77,187,109,155,162"/>
 <area shape="rect" id="Node000004" href="$group___d_r_v___f28335___p_w_m.html#ga9caa452be413513f8a1de581b6c9190d" title="PWM interrupt serve rountine" alt="" coords="237,57,321,85"/>

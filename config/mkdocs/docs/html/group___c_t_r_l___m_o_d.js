@@ -1,22 +1,22 @@
 var group___c_t_r_l___m_o_d =
 [
-    [ "MOD", "struct_m_o_d.html", [
-      [ "comp1", "struct_m_o_d.html#ade1a8ab96bf2ce8065a077ba30389b19", null ],
-      [ "comp2", "struct_m_o_d.html#a994ce35cce6865415e109e13bd3a8bd2", null ],
-      [ "comp3", "struct_m_o_d.html#a03aa7e9f47c04a7afd4b98593c845741", null ],
-      [ "half_tbprd", "struct_m_o_d.html#aec95c69641cd2a242c009ccbfe61b1ce", null ],
-      [ "tbprd", "struct_m_o_d.html#aef3ce9f37f655d38ee596151d6e780c6", null ]
+    [ "MOD_T", "struct_m_o_d___t.html", [
+      [ "comp1", "struct_m_o_d___t.html#a74c11b8b5dd1a9c091e9edd88540ae6a", null ],
+      [ "comp2", "struct_m_o_d___t.html#a7f0e4cf25c0ab2034e8c0a9360596d59", null ],
+      [ "comp3", "struct_m_o_d___t.html#a5a65814b4866bdb6fb9c3a95abe5641a", null ],
+      [ "half_tbprd", "struct_m_o_d___t.html#a56130c2da8302ca66447ef63bcdd2e3e", null ],
+      [ "tbprd", "struct_m_o_d___t.html#a63ff27f82b6f861d96d979eda08efaac", null ]
     ] ],
-    [ "MOD", "group___c_t_r_l___m_o_d.html#ga949d1486d9ae2ea4797d744850b93002", null ],
-    [ "Modulate_Bipolar_Run", "group___c_t_r_l___m_o_d.html#gab63b4a5468af7691b623930d5dae1009", null ],
-    [ "Modulate_DPWM1_Run", "group___c_t_r_l___m_o_d.html#ga10dcc11acc0ba8bca1cd5f1a91d20549", null ],
-    [ "Modulate_DPWMMax_Run", "group___c_t_r_l___m_o_d.html#gac275ed2324b92a837086f1cb2fa564bf", null ],
-    [ "Modulate_DPWMMin_Run", "group___c_t_r_l___m_o_d.html#gaf9ef4575568028ab2d5bbb89407f5f82", null ],
-    [ "Modulate_GDPWM_Run", "group___c_t_r_l___m_o_d.html#gac663e42bb9b07f2c2c414d8be8f9b8a0", null ],
-    [ "Modulate_Init", "group___c_t_r_l___m_o_d.html#ga996f9b6a559031309fa6639bddf1b852", null ],
-    [ "Modulate_Set", "group___c_t_r_l___m_o_d.html#ga7ec773e0dd3b93e350d1f4b3c9932813", null ],
-    [ "Modulate_SPWM_Run", "group___c_t_r_l___m_o_d.html#ga0c51eea0d414fcbcdb8632a9a18b29e5", null ],
-    [ "Modulate_SVPWM_Run", "group___c_t_r_l___m_o_d.html#gabffdc55b3324200eaf48fa31f17eb65a", null ],
-    [ "Modulate_Unipolar_DoubleFreq_Run", "group___c_t_r_l___m_o_d.html#ga43426a9d8c7c9d8b024415a0b2f912e7", null ],
-    [ "Modulate_Unipolar_Run", "group___c_t_r_l___m_o_d.html#ga16efd57f27f25829b5ceadbf180b1dde", null ]
+    [ "MOD_T_DEFAULTS", "group___c_t_r_l___m_o_d.html#ga468f303f0a813fe1eaeb87397977f533", null ],
+    [ "MOD_T", "group___c_t_r_l___m_o_d.html#ga0231c37df7dba6da08ca3eb52b36395f", null ],
+    [ "Modulate_Bipolar_Run", "group___c_t_r_l___m_o_d.html#ga9e85506d55d16517b820c7438c5d190a", null ],
+    [ "Modulate_DPWM1_Run", "group___c_t_r_l___m_o_d.html#ga80d912600c35bb74e0fc82c6ac0a3d91", null ],
+    [ "Modulate_DPWMMax_Run", "group___c_t_r_l___m_o_d.html#gadec8b7772d0511026d629ca043d90d48", null ],
+    [ "Modulate_DPWMMin_Run", "group___c_t_r_l___m_o_d.html#ga4f265669340edb87c51806cd3a5399e9", null ],
+    [ "Modulate_GDPWM_Run", "group___c_t_r_l___m_o_d.html#gae9255018a554000cd3facb399e715693", null ],
+    [ "Modulate_Set", "group___c_t_r_l___m_o_d.html#ga57906ed99fea67ba1c3f7d89cc60ddae", null ],
+    [ "Modulate_SPWM_Run", "group___c_t_r_l___m_o_d.html#ga27880ffc5383aeed64a7996157c5adcb", null ],
+    [ "Modulate_SVPWM_Run", "group___c_t_r_l___m_o_d.html#ga6fc4d35877418f889b026a48da47236c", null ],
+    [ "Modulate_Unipolar_DoubleFreq_Run", "group___c_t_r_l___m_o_d.html#gad28a3b766541cbfebdf8cebaaa3f1ba9", null ],
+    [ "Modulate_Unipolar_Run", "group___c_t_r_l___m_o_d.html#gada481b59b0513da57f0eb02e7d747e5f", null ]
 ];

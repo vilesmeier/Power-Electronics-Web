@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
    </div>
    <div id="projectbrief">NUEDC软件代码库</div>
   </td>
@@ -96,15 +96,19 @@ $(function(){initNavTree('power__int_8c.html','',''); });
 
 <p>单相/三相功率分析模块代码实现  
 <a href="#details">更多...</a></p>
-<div class="textblock"><code>#include &quot;power.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="power__int_8h_source.html">power_int.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 power_int.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="power__int_8c__incl.png" border="0" usemap="#apower__int_8c" loading="lazy" alt=""/></div>
 <map name="apower__int_8c" id="apower__int_8c">
-<area shape="rect" title="单相/三相功率分析模块代码实现" alt="" coords="5,5,94,33"/>
-<area shape="rect" title=" " alt="" coords="16,81,83,109"/>
-<area shape="poly" title=" " alt="" coords="52,34,52,65,47,65,47,34"/>
+<area shape="rect" title="单相/三相功率分析模块代码实现" alt="" coords="48,5,136,33"/>
+<area shape="rect" href="power__int_8h.html" title="单相/三相功率分析模块代码声明" alt="" coords="47,81,136,109"/>
+<area shape="poly" title=" " alt="" coords="94,34,94,65,89,65,89,34"/>
+<area shape="rect" title=" " alt="" coords="5,157,69,184"/>
+<area shape="poly" title=" " alt="" coords="84,111,58,146,54,142,80,108"/>
+<area shape="rect" title=" " alt="" coords="92,157,200,184"/>
+<area shape="poly" title=" " alt="" coords="104,108,130,142,125,146,99,111"/>
 </map>
 </div>
 </div>
@@ -112,26 +116,18 @@ power_int.c 的引用(Include)关系图:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:ga4a48db564c37e65cced4cf5e14edc03e" id="r_ga4a48db564c37e65cced4cf5e14edc03e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#ga4a48db564c37e65cced4cf5e14edc03e">POWER_1ph_Init</a> (<a class="el" href="struct_p_o_w_e_r__1_p_h.html">POWER_1PH</a> *v)</td></tr>
-<tr class="memdesc:ga4a48db564c37e65cced4cf5e14edc03e"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
-<tr class="memitem:ga9d547552a77fb8cbc20566a720e36db3" id="r_ga9d547552a77fb8cbc20566a720e36db3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#ga9d547552a77fb8cbc20566a720e36db3">POWER_1ph_Set</a> (<a class="el" href="struct_p_o_w_e_r__1_p_h.html">POWER_1PH</a> *v, float32_t isrFrequency, float32_t threshold, float32_t gridMaxFreq, float32_t gridMinFreq)</td></tr>
-<tr class="memdesc:ga9d547552a77fb8cbc20566a720e36db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置结构体  <br /></td></tr>
-<tr class="memitem:ga27cd4e0d8ea6c7f323b7b3dc7f6c9085" id="r_ga27cd4e0d8ea6c7f323b7b3dc7f6c9085"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#ga27cd4e0d8ea6c7f323b7b3dc7f6c9085">POWER_1ph_Run</a> (<a class="el" href="struct_p_o_w_e_r__1_p_h.html">POWER_1PH</a> *v, float32_t vol, float32_t cur)</td></tr>
-<tr class="memdesc:ga27cd4e0d8ea6c7f323b7b3dc7f6c9085"><td class="mdescLeft">&#160;</td><td class="mdescRight">单相功率分析  <br /></td></tr>
-<tr class="memitem:ga4ac3717da59ab21bd293a2594c423b25" id="r_ga4ac3717da59ab21bd293a2594c423b25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#ga4ac3717da59ab21bd293a2594c423b25">POWER_RMS_1ph_Run</a> (<a class="el" href="struct_p_o_w_e_r__1_p_h.html">POWER_1PH</a> *v, float32_t vrms, float32_t irms, float32_t pf)</td></tr>
-<tr class="memdesc:ga4ac3717da59ab21bd293a2594c423b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">在已知功率因数, 有效值下计算单相功率  <br /></td></tr>
-<tr class="memitem:ga3304d5695483a8801e239c2e34542e31" id="r_ga3304d5695483a8801e239c2e34542e31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#ga3304d5695483a8801e239c2e34542e31">POWER_3ph_Init</a> (<a class="el" href="struct_p_o_w_e_r__3_p_h.html">POWER_3PH</a> *power)</td></tr>
-<tr class="memdesc:ga3304d5695483a8801e239c2e34542e31"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
-<tr class="memitem:ga818838e6a58d17faec324699e1c13621" id="r_ga818838e6a58d17faec324699e1c13621"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#ga818838e6a58d17faec324699e1c13621">POWER_3ph_Set</a> (<a class="el" href="struct_p_o_w_e_r__3_p_h.html">POWER_3PH</a> *power, float32_t isr_freq, float32_t grid_freq)</td></tr>
-<tr class="memdesc:ga818838e6a58d17faec324699e1c13621"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置结构体参数  <br /></td></tr>
-<tr class="memitem:gaffdcf87faf162e61b13e5cba87637af3" id="r_gaffdcf87faf162e61b13e5cba87637af3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#gaffdcf87faf162e61b13e5cba87637af3">POWER_3ph_Set_Voltage</a> (<a class="el" href="struct_p_o_w_e_r__3_p_h.html">POWER_3PH</a> *power, float32_t Va, float32_t Vb, float32_t Vc)</td></tr>
-<tr class="memdesc:gaffdcf87faf162e61b13e5cba87637af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">输入瞬时相电压  <br /></td></tr>
-<tr class="memitem:gaccfdd2ff0df15f7cadb0d3ad1e7f1dad" id="r_gaccfdd2ff0df15f7cadb0d3ad1e7f1dad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#gaccfdd2ff0df15f7cadb0d3ad1e7f1dad">POWER_3ph_Set_Current</a> (<a class="el" href="struct_p_o_w_e_r__3_p_h.html">POWER_3PH</a> *power, float32_t Ia, float32_t Ib, float32_t Ic)</td></tr>
-<tr class="memdesc:gaccfdd2ff0df15f7cadb0d3ad1e7f1dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">输入瞬时相电流  <br /></td></tr>
-<tr class="memitem:ga84f6d0cf4a3cf6875367778fb0cb98b5" id="r_ga84f6d0cf4a3cf6875367778fb0cb98b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#ga84f6d0cf4a3cf6875367778fb0cb98b5">POWER_3ph_Run</a> (<a class="el" href="struct_p_o_w_e_r__3_p_h.html">POWER_3PH</a> *power)</td></tr>
-<tr class="memdesc:ga84f6d0cf4a3cf6875367778fb0cb98b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算三相功率, 更新频率为电网频率  <br /></td></tr>
-<tr class="memitem:gafbc11f452b966f1b52fd88269be05996" id="r_gafbc11f452b966f1b52fd88269be05996"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#gafbc11f452b966f1b52fd88269be05996">POWER_3ph_RMS_Run</a> (<a class="el" href="struct_p_o_w_e_r__3_p_h.html">POWER_3PH</a> *power, float32_t Varms, float32_t Vbrms, float32_t Vcrms, float32_t Iarms, float32_t Ibrms, float32_t Icrms, float32_t PF)</td></tr>
-<tr class="memdesc:gafbc11f452b966f1b52fd88269be05996"><td class="mdescLeft">&#160;</td><td class="mdescRight">在RMS, PF已知的条件下, 计算三相功率  <br /></td></tr>
+<tr class="memitem:ga8514cef548da5bd1a282d16af976f799" id="r_ga8514cef548da5bd1a282d16af976f799"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#ga8514cef548da5bd1a282d16af976f799">Power_int_1ph_Init</a> (<a class="el" href="struct_p_o_w_e_r___i_n_t__1_p_h___t.html">POWER_INT_1PH_T</a> *v)</td></tr>
+<tr class="memdesc:ga8514cef548da5bd1a282d16af976f799"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
+<tr class="memitem:ga71c79211882050b327d8458b9cd5e062" id="r_ga71c79211882050b327d8458b9cd5e062"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#ga71c79211882050b327d8458b9cd5e062">Power_int_1ph_Set</a> (<a class="el" href="struct_p_o_w_e_r___i_n_t__1_p_h___t.html">POWER_INT_1PH_T</a> *v, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> isrFrequency, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> threshold, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> gridMaxFreq, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> gridMinFreq)</td></tr>
+<tr class="memdesc:ga71c79211882050b327d8458b9cd5e062"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置结构体  <br /></td></tr>
+<tr class="memitem:ga0ec73236c854fbf3a3f4994cc3a59782" id="r_ga0ec73236c854fbf3a3f4994cc3a59782"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#ga0ec73236c854fbf3a3f4994cc3a59782">Power_int_1ph_Run</a> (<a class="el" href="struct_p_o_w_e_r___i_n_t__1_p_h___t.html">POWER_INT_1PH_T</a> *v, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> vol, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> cur)</td></tr>
+<tr class="memdesc:ga0ec73236c854fbf3a3f4994cc3a59782"><td class="mdescLeft">&#160;</td><td class="mdescRight">单相功率分析  <br /></td></tr>
+<tr class="memitem:ga6d52c3d80095bea562ed857fe9a3124b" id="r_ga6d52c3d80095bea562ed857fe9a3124b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#ga6d52c3d80095bea562ed857fe9a3124b">Power_int_3ph_Init</a> (<a class="el" href="struct_p_o_w_e_r___i_n_t__3_p_h___t.html">POWER_INT_3PH_T</a> *power)</td></tr>
+<tr class="memdesc:ga6d52c3d80095bea562ed857fe9a3124b"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
+<tr class="memitem:ga9006663298d16ede428b7503e9d506e4" id="r_ga9006663298d16ede428b7503e9d506e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#ga9006663298d16ede428b7503e9d506e4">Power_int_3ph_Set</a> (<a class="el" href="struct_p_o_w_e_r___i_n_t__3_p_h___t.html">POWER_INT_3PH_T</a> *power, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> isr_freq, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> grid_freq)</td></tr>
+<tr class="memdesc:ga9006663298d16ede428b7503e9d506e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置结构体参数  <br /></td></tr>
+<tr class="memitem:gaea4c9226de186b0ef70155290eaa1a9c" id="r_gaea4c9226de186b0ef70155290eaa1a9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___i_n_t.html#gaea4c9226de186b0ef70155290eaa1a9c">Power_int_3ph_Run</a> (<a class="el" href="struct_p_o_w_e_r___i_n_t__3_p_h___t.html">POWER_INT_3PH_T</a> *power, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Va, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Vb, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Vc, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Ia, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Ib, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Ic)</td></tr>
+<tr class="memdesc:gaea4c9226de186b0ef70155290eaa1a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算三相功率, 更新频率为电网频率  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>单相/三相功率分析模块代码实现 </p>

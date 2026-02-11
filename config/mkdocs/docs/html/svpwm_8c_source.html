@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
    </div>
    <div id="projectbrief">NUEDC软件代码库</div>
   </td>
@@ -122,7 +122,7 @@ $(function(){initNavTree('svpwm_8c_source.html','',''); });
 </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="svpwm_8c.html#ab05c424d0c59fb47c002f002904e32d1">   34</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="svpwm_8c.html#ab05c424d0c59fb47c002f002904e32d1">SVPWM_Set</a>(<a class="code hl_struct" href="struct_s_v_p_w_m.html">SVPWM</a>* svpwm, uint16_t tbprd, float32_t Udc ,float32_t f_isr)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="svpwm_8c.html#ab05c424d0c59fb47c002f002904e32d1">   34</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="svpwm_8c.html#ab05c424d0c59fb47c002f002904e32d1">SVPWM_Set</a>(<a class="code hl_struct" href="struct_s_v_p_w_m.html">SVPWM</a>* svpwm, uint16_t tbprd, <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Udc ,<a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> f_isr)</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    svpwm-&gt;<a class="code hl_variable" href="struct_s_v_p_w_m.html#a1b9e8dbc5980c73c221502fb132fc2cb">TBPRD</a> = tbprd;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    svpwm-&gt;<a class="code hl_variable" href="struct_s_v_p_w_m.html#a9f04e7fbd755e887796a6e22f0d26920">Ts</a> = (1.0f) / f_isr;</div>
@@ -131,7 +131,7 @@ $(function(){initNavTree('svpwm_8c_source.html','',''); });
 </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="svpwm_8c.html#afad80c205669268c91d53312df90aa50">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="svpwm_8c.html#afad80c205669268c91d53312df90aa50">SVPWM_Parameter_Cal</a>(<a class="code hl_struct" href="struct_s_v_p_w_m.html">SVPWM</a>* svpwm, float32_t Ualpha, float32_t Ubeta)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="svpwm_8c.html#afad80c205669268c91d53312df90aa50">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="svpwm_8c.html#afad80c205669268c91d53312df90aa50">SVPWM_Parameter_Cal</a>(<a class="code hl_struct" href="struct_s_v_p_w_m.html">SVPWM</a>* svpwm, <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Ualpha, <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Ubeta)</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    svpwm-&gt;<a class="code hl_variable" href="struct_s_v_p_w_m.html#aae25f02ce30be215abab82604473075a">u1</a> = Ubeta;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    svpwm-&gt;<a class="code hl_variable" href="struct_s_v_p_w_m.html#a538d1513a99ff65302befd4f1b5cccd5">u2</a> = (( 1.732050808f) * Ualpha - Ubeta) * 0.5f;</div>
@@ -140,7 +140,7 @@ $(function(){initNavTree('svpwm_8c_source.html','',''); });
 </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="svpwm_8c.html#ae538056fb5e8739153e22a70086687cd">   48</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="svpwm_8c.html#ae538056fb5e8739153e22a70086687cd">SVPWM_Sector_Cal</a>(<a class="code hl_struct" href="struct_s_v_p_w_m.html">SVPWM</a>* svpwm, float32_t Ualpha, float32_t Ubeta)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="svpwm_8c.html#ae538056fb5e8739153e22a70086687cd">   48</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="svpwm_8c.html#ae538056fb5e8739153e22a70086687cd">SVPWM_Sector_Cal</a>(<a class="code hl_struct" href="struct_s_v_p_w_m.html">SVPWM</a>* svpwm, <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Ualpha, <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Ubeta)</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">//Calculate Parameters for SVPWM Modulate</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_function" href="svpwm_8c.html#afad80c205669268c91d53312df90aa50">SVPWM_Parameter_Cal</a>(svpwm, Ualpha, Ubeta);</div>
@@ -174,7 +174,7 @@ $(function(){initNavTree('svpwm_8c_source.html','',''); });
 </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="svpwm_8c.html#a78f135041d85812e7ff8f159af68fa88">   78</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="svpwm_8c.html#a78f135041d85812e7ff8f159af68fa88">SVPWM_Run</a>(<a class="code hl_struct" href="struct_s_v_p_w_m.html">SVPWM</a>* svpwm, float32_t Ualpha, float32_t Ubeta)</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="svpwm_8c.html#a78f135041d85812e7ff8f159af68fa88">   78</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="svpwm_8c.html#a78f135041d85812e7ff8f159af68fa88">SVPWM_Run</a>(<a class="code hl_struct" href="struct_s_v_p_w_m.html">SVPWM</a>* svpwm, <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Ualpha, <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Ubeta)</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">//get parameter and sector</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_function" href="svpwm_8c.html#ae538056fb5e8739153e22a70086687cd">SVPWM_Sector_Cal</a>(svpwm, Ualpha, Ubeta);</div>
@@ -278,6 +278,7 @@ $(function(){initNavTree('svpwm_8c_source.html','',''); });
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <a class="code hl_function" href="svpwm_8c.html#afee2f9eac831a4a0c301572e8c8e1560">SVPWM_Duty_Update</a>(svpwm);</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>}</div>
 </div>
+<div class="ttc" id="agroup___c_t_r_l___d_c_l_html_ga4611b605e45ab401f02cab15c5e38715"><div class="ttname"><a href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></div><div class="ttdeci">float float32_t</div><div class="ttdef"><b>定义</b> <a href="dcl__support_8h_source.html#l00025">dcl_support.h:25</a></div></div>
 <div class="ttc" id="astruct_s_v_p_w_m_html"><div class="ttname"><a href="struct_s_v_p_w_m.html">SVPWM</a></div><div class="ttdoc">调制器结构体定义</div><div class="ttdef"><b>定义</b> <a href="svpwm_8h_source.html#l00020">svpwm.h:21</a></div></div>
 <div class="ttc" id="astruct_s_v_p_w_m_html_a0853403719d045fccf8869e584ee8e1c"><div class="ttname"><a href="struct_s_v_p_w_m.html#a0853403719d045fccf8869e584ee8e1c">SVPWM::duty2</a></div><div class="ttdeci">float32_t duty2</div><div class="ttdef"><b>定义</b> <a href="svpwm_8h_source.html#l00024">svpwm.h:24</a></div></div>
 <div class="ttc" id="astruct_s_v_p_w_m_html_a15eabdeb78a284b4457da7eb7e8330e8"><div class="ttname"><a href="struct_s_v_p_w_m.html#a15eabdeb78a284b4457da7eb7e8330e8">SVPWM::t2</a></div><div class="ttdeci">float32_t t2</div><div class="ttdef"><b>定义</b> <a href="svpwm_8h_source.html#l00023">svpwm.h:23</a></div></div>

@@ -1,0 +1,5 @@
+<map id="control.h" name="control.h">
+<area shape="rect" id="Node000001" title="包含各类离散化时域控制器" alt="" coords="5,5,77,33"/>
+<area shape="rect" id="Node000002" href="$control_8c.html" title="含各类控制器的时域实现" alt="" coords="6,81,76,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,49,44,81,38,81,38,49"/>
+</map>

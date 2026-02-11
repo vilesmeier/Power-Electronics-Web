@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
    </div>
    <div id="projectbrief">NUEDC软件代码库</div>
   </td>
@@ -90,99 +90,107 @@ $(function(){initNavTree('structdcl__pir.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">dcl_pir结构体 参考<div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a> &raquo; <a class="el" href="group___c_t_r_l___d_c_l.html">数字控制器</a></div></div></div>
+  <div class="headertitle"><div class="title">dcl_pir结构体 参考<div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a> &raquo; <a class="el" href="group___c_t_r_l___c_o_n_t_r_o_l.html">离散化控制器</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>使用PI和PR结构体定义PIR控制器  
+<p>定义PIR控制器  
  <a href="#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="dcl_8h_source.html">dcl.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="control_8h_source.html">control.h</a>&gt;</code></p>
 <div class="dynheader">
 dcl_pir 的协作图:</div>
 <div class="dyncontent">
 <div class="center"><img src="structdcl__pir__coll__graph.png" border="0" usemap="#adcl__pir_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adcl__pir_coll__map" id="adcl__pir_coll__map">
-<area shape="rect" title="使用PI和PR结构体定义PIR控制器" alt="" coords="27,207,86,234"/>
-<area shape="rect" href="structdcl__pi.html" title="定义 PI 控制器结构体" alt="" coords="5,106,60,134"/>
-<area shape="poly" title=" " alt="" coords="42,148,56,205,51,207,37,149"/>
-<area shape="rect" href="structdcl__pr.html" title="使用DF22结构体定义PR控制器" alt="" coords="84,106,141,134"/>
-<area shape="poly" title=" " alt="" coords="100,148,66,207,62,205,95,146"/>
-<area shape="rect" href="structdcl__df22.html" title="定义二阶直接形式Ⅱ（DF22）控制器结构体" alt="" coords="78,5,147,33"/>
-<area shape="poly" title=" " alt="" coords="115,49,115,105,110,105,110,49"/>
+<area shape="rect" title="定义PIR控制器" alt="" coords="81,307,140,335"/>
+<area shape="rect" href="structdcl__pi__t.html" title="Defines the DCL_PI_T controller structure" alt="" coords="30,207,96,234"/>
+<area shape="poly" title=" " alt="" coords="78,247,107,306,102,308,73,249"/>
+<area shape="rect" href="structdcl__pi.html" title="Defines the DCL_PI controller structure" alt="" coords="50,106,105,134"/>
+<area shape="poly" title=" " alt="" coords="76,149,67,206,62,206,71,148"/>
+<area shape="rect" href="structdcl__pi__sps.html" title="Defines the DCL_PI shadow parameter set" alt="" coords="5,5,86,33"/>
+<area shape="poly" title=" " alt="" coords="32,47,15,88,12,111,14,133,33,173,54,205,50,208,28,176,9,134,7,110,10,87,27,45"/>
+<area shape="poly" title=" " alt="" coords="57,47,76,105,71,106,52,48"/>
+<area shape="rect" href="structdcl__df22__t.html" title="Defines the DCL_DF22 controller structure" alt="" coords="120,207,200,234"/>
+<area shape="poly" title=" " alt="" coords="149,249,120,308,115,306,144,247"/>
+<area shape="rect" href="structdcl__df22.html" title="Defines the DCL_DF22 controller structure" alt="" coords="208,106,278,134"/>
+<area shape="poly" title=" " alt="" coords="224,147,173,208,169,204,220,144"/>
+<area shape="rect" href="structdcl__df22__sps.html" title="Defines the DCL_DF22 shadow parameter set" alt="" coords="130,5,225,33"/>
+<area shape="poly" title=" " alt="" coords="177,48,172,106,164,207,158,206,167,106,172,48"/>
+<area shape="poly" title=" " alt="" coords="197,44,236,104,232,107,192,47"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 成员变量</h2></td></tr>
-<tr class="memitem:a12b18ce5b76e4a13e75d8178a0fd0f97" id="r_a12b18ce5b76e4a13e75d8178a0fd0f97"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12b18ce5b76e4a13e75d8178a0fd0f97">Output</a></td></tr>
-<tr class="memdesc:a12b18ce5b76e4a13e75d8178a0fd0f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制器输出  <br /></td></tr>
-<tr class="memitem:a0fdbf6c9d2c666924d36f3422de5792c" id="r_a0fdbf6c9d2c666924d36f3422de5792c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fdbf6c9d2c666924d36f3422de5792c">pi</a></td></tr>
-<tr class="memdesc:a0fdbf6c9d2c666924d36f3422de5792c"><td class="mdescLeft">&#160;</td><td class="mdescRight">PI控制器支持  <br /></td></tr>
-<tr class="memitem:aa05551716411266f019e1fc4441c91ca" id="r_aa05551716411266f019e1fc4441c91ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#gaebf58688fc35694aefe4fdfdb1b5f007">DCL_PR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa05551716411266f019e1fc4441c91ca">pr</a></td></tr>
-<tr class="memdesc:aa05551716411266f019e1fc4441c91ca"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gaf8832c3b4a1ad9070601b091b430b0e8" title="定义二阶直接形式Ⅱ（DF22）控制器结构体">DCL_DF22</a> 结构体支持  <br /></td></tr>
+<tr class="memitem:a67ece74c15262f4bdf691d13b7f1d4ef" id="r_a67ece74c15262f4bdf691d13b7f1d4ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4af078e50a01360e929eebb595ac59ce">DCL_PI_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67ece74c15262f4bdf691d13b7f1d4ef">pi</a></td></tr>
+<tr class="memdesc:a67ece74c15262f4bdf691d13b7f1d4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">PI控制器支持  <br /></td></tr>
+<tr class="memitem:aa7c4f22960f27597bb8da0b7eb9562c1" id="r_aa7c4f22960f27597bb8da0b7eb9562c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga8233383ca37eabb66161ef56fe7ddffd">DCL_DF22_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7c4f22960f27597bb8da0b7eb9562c1">pr</a></td></tr>
+<tr class="memdesc:aa7c4f22960f27597bb8da0b7eb9562c1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group___c_t_r_l___d_c_l.html#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> 结构体支持  <br /></td></tr>
+<tr class="memitem:a5dd5e810e4e6c00eb4f2d8a7f84611ec" id="r_a5dd5e810e4e6c00eb4f2d8a7f84611ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dd5e810e4e6c00eb4f2d8a7f84611ec">output</a></td></tr>
+<tr class="memdesc:a5dd5e810e4e6c00eb4f2d8a7f84611ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制器输出  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
-<div class="textblock"><p>使用PI和PR结构体定义PIR控制器 </p>
+<div class="textblock"><p>定义PIR控制器 </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00061">61</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00084">84</a> 行定义.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">结构体成员变量说明</h2>
-<a id="a12b18ce5b76e4a13e75d8178a0fd0f97" name="a12b18ce5b76e4a13e75d8178a0fd0f97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12b18ce5b76e4a13e75d8178a0fd0f97">&#9670;&#160;</a></span>Output</h2>
+<a id="a5dd5e810e4e6c00eb4f2d8a7f84611ec" name="a5dd5e810e4e6c00eb4f2d8a7f84611ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd5e810e4e6c00eb4f2d8a7f84611ec">&#9670;&#160;</a></span>output</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_pir::Output</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_pir::output</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>控制器输出 </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00063">63</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00088">88</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a0fdbf6c9d2c666924d36f3422de5792c" name="a0fdbf6c9d2c666924d36f3422de5792c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fdbf6c9d2c666924d36f3422de5792c">&#9670;&#160;</a></span>pi</h2>
+<a id="a67ece74c15262f4bdf691d13b7f1d4ef" name="a67ece74c15262f4bdf691d13b7f1d4ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ece74c15262f4bdf691d13b7f1d4ef">&#9670;&#160;</a></span>pi</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> dcl_pir::pi</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4af078e50a01360e929eebb595ac59ce">DCL_PI_T</a> dcl_pir::pi</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>PI控制器支持 </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00064">64</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00086">86</a> 行定义.</p>
 
 </div>
 </div>
-<a id="aa05551716411266f019e1fc4441c91ca" name="aa05551716411266f019e1fc4441c91ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa05551716411266f019e1fc4441c91ca">&#9670;&#160;</a></span>pr</h2>
+<a id="aa7c4f22960f27597bb8da0b7eb9562c1" name="aa7c4f22960f27597bb8da0b7eb9562c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7c4f22960f27597bb8da0b7eb9562c1">&#9670;&#160;</a></span>pr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#gaebf58688fc35694aefe4fdfdb1b5f007">DCL_PR</a> dcl_pir::pr</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga8233383ca37eabb66161ef56fe7ddffd">DCL_DF22_T</a> dcl_pir::pr</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gaf8832c3b4a1ad9070601b091b430b0e8" title="定义二阶直接形式Ⅱ（DF22）控制器结构体">DCL_DF22</a> 结构体支持 </p>
+<p><a class="el" href="group___c_t_r_l___d_c_l.html#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> 结构体支持 </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00065">65</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00087">87</a> 行定义.</p>
 
 </div>
 </div>
 <hr/>该结构体的文档由以下文件生成:<ul>
-<li><a class="el" href="dcl_8h_source.html">dcl.h</a></li>
+<li><a class="el" href="control_8h_source.html">control.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

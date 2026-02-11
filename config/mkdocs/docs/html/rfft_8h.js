@@ -26,21 +26,18 @@ var rfft_8h =
     [ "FFT_WINDOW_GAIN", "group___d_s_p___r_f_f_t___f32.html#ga626007536417efdacd8d5a3917b7002a", null ],
     [ "MAX", "group___d_s_p___r_f_f_t___f32.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f", null ],
     [ "MIN", "group___d_s_p___r_f_f_t___f32.html#ga3acffbd305ee72dcd4593c0d8af64a4f", null ],
+    [ "RFFT_DATA_T_DEFAULTS", "group___d_s_p___r_f_f_t___f32.html#ga0b731af5f9c9fe5feefaf45f02fb4803", null ],
+    [ "RFFT_T_DEFAULTS", "group___d_s_p___r_f_f_t___f32.html#ga1f51992d61be87dde27488a7b6090bb9", null ],
     [ "FFT_MODE", "group___d_s_p___r_f_f_t___f32.html#ga035262da3af2ac3fc5c514365123f961", null ],
-    [ "RFFT", "group___d_s_p___r_f_f_t___f32.html#ga0b2c567a47e65f4abfa1cd1b7f099734", null ],
+    [ "RFFT_DATA_T", "group___d_s_p___r_f_f_t___f32.html#ga23d4261a419ec5fdd8130df5ee8c9048", null ],
+    [ "RFFT_T", "group___d_s_p___r_f_f_t___f32.html#ga8c8311a58e22f5edbdad4190c9f26960", null ],
     [ "FFT_MODE", "group___d_s_p___r_f_f_t___f32.html#gaba1a1aa3c6bb536435957847da9c1b2f", [
       [ "FFT_MODE_NULL", "group___d_s_p___r_f_f_t___f32.html#ggaba1a1aa3c6bb536435957847da9c1b2faeb8448db629160ec8f03e448a8ab078d", null ],
       [ "FFT_GRID_LOCK", "group___d_s_p___r_f_f_t___f32.html#ggaba1a1aa3c6bb536435957847da9c1b2fac4acfd934cb0e9a237ace151235488f5", null ],
       [ "FFT_PEAK_FIND", "group___d_s_p___r_f_f_t___f32.html#ggaba1a1aa3c6bb536435957847da9c1b2fabdd1a5e2d1c04b1d17b1bfa214d11112", null ]
     ] ],
-    [ "RFFT_Grid_Lock", "group___d_s_p___r_f_f_t___f32.html#ga3fc7edfa39757d7ff7e4522bcbbbf07d", null ],
-    [ "RFFT_Init", "group___d_s_p___r_f_f_t___f32.html#gaaca2fd3267a4458de0b5f4d37b0d85b8", null ],
-    [ "RFFT_Peak_Find", "group___d_s_p___r_f_f_t___f32.html#gad1e815d931ea459fc390f308cd553710", null ],
-    [ "RFFT_Run", "group___d_s_p___r_f_f_t___f32.html#ga413312679334b30df43bf8c9d9530dba", null ],
-    [ "RFFT_Set", "group___d_s_p___r_f_f_t___f32.html#ga8879dcbb9c5197cd6dfb4f30369a96e4", null ],
-    [ "input", "group___d_s_p___r_f_f_t___f32.html#ga5a0f4b49baab36db0c5e1922cdbc6c71", null ],
-    [ "magnitude", "group___d_s_p___r_f_f_t___f32.html#ga429b259b6633b6a2b677ba475d840c63", null ],
-    [ "output", "group___d_s_p___r_f_f_t___f32.html#gaf41db2f2a8a877a4d60944cafafac70c", null ],
-    [ "rfft", "group___d_s_p___r_f_f_t___f32.html#ga10170416a207dd77a5bb568f9b92887d", null ],
-    [ "twiddle", "group___d_s_p___r_f_f_t___f32.html#ga56ce624e4d31bc2956066f5fa5b6b34d", null ]
+    [ "RFFT_Grid_Lock", "group___d_s_p___r_f_f_t___f32.html#gaf879755b2c00c8545075441300efb56d", null ],
+    [ "RFFT_Peak_Find", "group___d_s_p___r_f_f_t___f32.html#ga9fb8d812d415f8a13c175e3f8af3daf2", null ],
+    [ "RFFT_Run", "group___d_s_p___r_f_f_t___f32.html#ga10f0af015b86327a43672d9e437d32fb", null ],
+    [ "RFFT_Set", "group___d_s_p___r_f_f_t___f32.html#gad9326e34787eb92e07fc6947e3ee94e2", null ]
 ];

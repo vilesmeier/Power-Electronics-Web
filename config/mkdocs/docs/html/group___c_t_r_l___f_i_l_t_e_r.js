@@ -1,10 +1,11 @@
 var group___c_t_r_l___f_i_l_t_e_r =
 [
-    [ "FILTER", "struct_f_i_l_t_e_r.html", [
-      [ "filter", "struct_f_i_l_t_e_r.html#ae718d75ee25e7d6901ecc83ac76b13c3", null ],
-      [ "output", "struct_f_i_l_t_e_r.html#a85c4e172c23b4241932be68ab7df9e26", null ]
+    [ "FILTER_T", "struct_f_i_l_t_e_r___t.html", [
+      [ "filter", "struct_f_i_l_t_e_r___t.html#aadbc1cf69ebad7766e2b853b27c8c150", null ],
+      [ "output", "struct_f_i_l_t_e_r___t.html#ae79e1b858192ebe8e8695fcd9fb7ed59", null ]
     ] ],
-    [ "FILTER", "group___c_t_r_l___f_i_l_t_e_r.html#gac86c6b6fa8a4126f68837d61aa7d9633", null ],
+    [ "FILTER_DEFAULTS", "group___c_t_r_l___f_i_l_t_e_r.html#ga7aa3390e294d99f1b760df744940babc", null ],
+    [ "FILTER_T", "group___c_t_r_l___f_i_l_t_e_r.html#ga885799775850a1f9387a6813bc770d0e", null ],
     [ "FilterType", "group___c_t_r_l___f_i_l_t_e_r.html#gac11d127292fe897a054b665cf5985e83", null ],
     [ "FilterType", "group___c_t_r_l___f_i_l_t_e_r.html#ga7ef0ab496f57e183b484e62e2053c94f", [
       [ "FIL_NULL", "group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94faa03dcbd13e5149679eccdc38ac2f5aee", null ],
@@ -15,7 +16,6 @@ var group___c_t_r_l___f_i_l_t_e_r =
       [ "BPF_2_ORDER", "group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fa84225c08afc69fdb71afd4738771fb05", null ],
       [ "BSF_2_ORDER", "group___c_t_r_l___f_i_l_t_e_r.html#gga7ef0ab496f57e183b484e62e2053c94fa1f0828a59462f2429fa526c12d9d4189", null ]
     ] ],
-    [ "Filter_Init", "group___c_t_r_l___f_i_l_t_e_r.html#ga6bf8811531a98a51e7a794c2a27c0b04", null ],
-    [ "Filter_Run", "group___c_t_r_l___f_i_l_t_e_r.html#gacc49dc6e7958ff297d763394dd0432cd", null ],
-    [ "Filter_Set", "group___c_t_r_l___f_i_l_t_e_r.html#gaeb072f0b39f2c1c227d2f9a14de3f56b", null ]
+    [ "Filter_Run", "group___c_t_r_l___f_i_l_t_e_r.html#ga63477f4d5b1286351d6bcda363162787", null ],
+    [ "Filter_Set", "group___c_t_r_l___f_i_l_t_e_r.html#ga368b24a2d9c0f91da395502cdd9d9e28", null ]
 ];

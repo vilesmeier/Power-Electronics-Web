@@ -1,0 +1,850 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: 离散化控制器</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group___c_t_r_l___c_o_n_t_r_o_l.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">离散化控制器 <div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>各类控制器的离散化时域实现  
+<a href="#details">更多...</a></p>
+<div class="dynheader">
+离散化控制器 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___c_t_r_l___c_o_n_t_r_o_l.png" border="0" usemap="#agroup______c__t__r__l______c__o__n__t__r__o__l" loading="lazy" alt=""/></div>
+<map name="agroup______c__t__r__l______c__o__n__t__r__o__l" id="agroup______c__t__r__l______c__o__n__t__r__o__l">
+<area shape="rect" href="group___c_t_r_l.html" title="常用控制算法的模块化代码, 使用时直接将文件夹复制到 hardware 文件夹内即可" alt="" coords="5,5,92,30"/>
+<area shape="rect" title="各类控制器的离散化时域实现" alt="" coords="140,5,239,30"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:dcl_5Fpr" id="r_dcl_5Fpr"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__pr.html">dcl_pr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用DF22结构体定义PR控制器  <a href="structdcl__pr.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:dcl_5Fpir" id="r_dcl_5Fpir"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__pir.html">dcl_pir</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义PIR控制器  <a href="structdcl__pir.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:dcl_5Fpmr" id="r_dcl_5Fpmr"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__pmr.html">dcl_pmr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PMR控制器结构体定义  <a href="structdcl__pmr.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:gaf4a85ab6f59a48fdaa726102bfe1cdce" id="r_gaf4a85ab6f59a48fdaa726102bfe1cdce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf4a85ab6f59a48fdaa726102bfe1cdce">PR_T_DEFAULTS</a>&#160;&#160;&#160;{ <a class="el" href="group___c_t_r_l___d_c_l.html#ga01c9317f24a06320f89975d5cac59891">DF22_T_DEFAULTS</a>, 0.0f }</td></tr>
+<tr class="memdesc:gaf4a85ab6f59a48fdaa726102bfe1cdce"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义DCL_PR_T结构体默认初始值  <br /></td></tr>
+<tr class="memitem:gab22b662d709bda12ddc15057b3c13d26" id="r_gab22b662d709bda12ddc15057b3c13d26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab22b662d709bda12ddc15057b3c13d26">PIR_T_DEFAULTS</a>&#160;&#160;&#160;{ <a class="el" href="group___c_t_r_l___d_c_l.html#gae14ff924a303331118020b9e1e47eda2">PI_T_DEFAULTS</a>, <a class="el" href="#gaf4a85ab6f59a48fdaa726102bfe1cdce">PR_T_DEFAULTS</a>, 0.0f}</td></tr>
+<tr class="memdesc:gab22b662d709bda12ddc15057b3c13d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义PIR控制器默认初始值  <br /></td></tr>
+<tr class="memitem:ga407ba64c959aad0a50f7462ceb719e09" id="r_ga407ba64c959aad0a50f7462ceb719e09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga407ba64c959aad0a50f7462ceb719e09">DCL_HARMONIC_NUM</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:ga407ba64c959aad0a50f7462ceb719e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义跟踪谐波数  <br /></td></tr>
+<tr class="memitem:ga38b9caeacac97f9c2c7ce2983be70507" id="r_ga38b9caeacac97f9c2c7ce2983be70507"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga38b9caeacac97f9c2c7ce2983be70507">PMR_T_DEFAULTS</a>&#160;&#160;&#160;{{<a class="el" href="group___c_t_r_l___d_c_l.html#ga01c9317f24a06320f89975d5cac59891">DF22_T_DEFAULTS</a>}, 0.0f, 0.0f}</td></tr>
+<tr class="memdesc:ga38b9caeacac97f9c2c7ce2983be70507"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义PMR控制器默认值  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:gaae7cf1b0bae686e07642b76b4504fa78" id="r_gaae7cf1b0bae686e07642b76b4504fa78"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__pr.html">dcl_pr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaae7cf1b0bae686e07642b76b4504fa78">DCL_PR_T</a></td></tr>
+<tr class="memdesc:gaae7cf1b0bae686e07642b76b4504fa78"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用DF22结构体定义PR控制器  <br /></td></tr>
+<tr class="memitem:gad4dc1df2713ebf7109ec292dbecc2101" id="r_gad4dc1df2713ebf7109ec292dbecc2101"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__pir.html">dcl_pir</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad4dc1df2713ebf7109ec292dbecc2101">DCL_PIR_T</a></td></tr>
+<tr class="memdesc:gad4dc1df2713ebf7109ec292dbecc2101"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义PIR控制器  <br /></td></tr>
+<tr class="memitem:ga58e7a61e3ae8acef541590dc350ee0ca" id="r_ga58e7a61e3ae8acef541590dc350ee0ca"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__pmr.html">dcl_pmr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga58e7a61e3ae8acef541590dc350ee0ca">DCL_PMR_T</a></td></tr>
+<tr class="memdesc:ga58e7a61e3ae8acef541590dc350ee0ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">PMR控制器结构体定义  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga46f6d664eaef47394a624758b5da247d" id="r_ga46f6d664eaef47394a624758b5da247d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga46f6d664eaef47394a624758b5da247d">DCL_PI_Set</a> (<a class="el" href="group___c_t_r_l___d_c_l.html#ga4af078e50a01360e929eebb595ac59ce">DCL_PI_T</a> *p, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Kp, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Ki, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Umax, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Umin, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Imax, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> isr_freq)</td></tr>
+<tr class="memdesc:ga46f6d664eaef47394a624758b5da247d"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置 <a class="el" href="group___c_t_r_l___d_c_l.html#ga4af078e50a01360e929eebb595ac59ce" title="Defines the DCL_PI_T controller structure">DCL_PI_T</a> 控制器  <br /></td></tr>
+<tr class="memitem:gaaf4449a80e34897c9fd5f97bd0571e9a" id="r_gaaf4449a80e34897c9fd5f97bd0571e9a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaaf4449a80e34897c9fd5f97bd0571e9a">DCL_PI_Run</a> (<a class="el" href="group___c_t_r_l___d_c_l.html#ga4af078e50a01360e929eebb595ac59ce">DCL_PI_T</a> *p, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> rk, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> yk)</td></tr>
+<tr class="memdesc:gaaf4449a80e34897c9fd5f97bd0571e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行 PI_T 控制器  <br /></td></tr>
+<tr class="memitem:ga2f1c741ae83ebc319bfda2776de247bb" id="r_ga2f1c741ae83ebc319bfda2776de247bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2f1c741ae83ebc319bfda2776de247bb">DCL_PR_Set</a> (<a class="el" href="#gaae7cf1b0bae686e07642b76b4504fa78">DCL_PR_T</a> *p, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Kp, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Kr, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> wc, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> w0, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> isr_freq)</td></tr>
+<tr class="memdesc:ga2f1c741ae83ebc319bfda2776de247bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置 QPR 控制器  <br /></td></tr>
+<tr class="memitem:gaa509a806733fde7a174aa8311280017d" id="r_gaa509a806733fde7a174aa8311280017d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa509a806733fde7a174aa8311280017d">DCL_PR_Run</a> (<a class="el" href="#gaae7cf1b0bae686e07642b76b4504fa78">DCL_PR_T</a> *p, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> ref, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> feedback, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> feedforward)</td></tr>
+<tr class="memdesc:gaa509a806733fde7a174aa8311280017d"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行 QPR 控制器  <br /></td></tr>
+<tr class="memitem:gaa7c7ca8dba7ca751ec692f3f9cd359f7" id="r_gaa7c7ca8dba7ca751ec692f3f9cd359f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa7c7ca8dba7ca751ec692f3f9cd359f7">DCL_PIR_Set</a> (<a class="el" href="#gad4dc1df2713ebf7109ec292dbecc2101">DCL_PIR_T</a> *p, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> kp, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> ki, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> kr, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Umax, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Umin, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Imax, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> wc, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> w0, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> isr_freq)</td></tr>
+<tr class="memdesc:gaa7c7ca8dba7ca751ec692f3f9cd359f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置 PIR 控制器  <br /></td></tr>
+<tr class="memitem:ga99b4e08c2ccb1c997467a74dea8ccc75" id="r_ga99b4e08c2ccb1c997467a74dea8ccc75"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga99b4e08c2ccb1c997467a74dea8ccc75">DCL_PIR_Run</a> (<a class="el" href="#gad4dc1df2713ebf7109ec292dbecc2101">DCL_PIR_T</a> *p, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> ref, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> feedback, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> feedforward)</td></tr>
+<tr class="memdesc:ga99b4e08c2ccb1c997467a74dea8ccc75"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行 PIR 控制器  <br /></td></tr>
+<tr class="memitem:ga489cb7ba96d67aa2ca908a99d8c2c756" id="r_ga489cb7ba96d67aa2ca908a99d8c2c756"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga489cb7ba96d67aa2ca908a99d8c2c756">DCL_PMR_Set</a> (<a class="el" href="#ga58e7a61e3ae8acef541590dc350ee0ca">DCL_PMR_T</a> *p, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Kp, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> *Kr, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> wc, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> w0, uint16_t *harmonic_set, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> isr_freq)</td></tr>
+<tr class="memdesc:ga489cb7ba96d67aa2ca908a99d8c2c756"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置PMR控制器  <br /></td></tr>
+<tr class="memitem:ga5c8c7dcf79539f25a76823b3b65e6a68" id="r_ga5c8c7dcf79539f25a76823b3b65e6a68"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5c8c7dcf79539f25a76823b3b65e6a68">DCL_PMR_Run</a> (<a class="el" href="#ga58e7a61e3ae8acef541590dc350ee0ca">DCL_PMR_T</a> *p, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> ref, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> feedback, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> feedforward)</td></tr>
+<tr class="memdesc:ga5c8c7dcf79539f25a76823b3b65e6a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行PMR控制器  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<p>各类控制器的离散化时域实现 </p>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="ga407ba64c959aad0a50f7462ceb719e09" name="ga407ba64c959aad0a50f7462ceb719e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga407ba64c959aad0a50f7462ceb719e09">&#9670;&#160;</a></span>DCL_HARMONIC_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DCL_HARMONIC_NUM&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义跟踪谐波数 </p>
+<p>PMR控制器谐波数 </p>
+
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00126">126</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gab22b662d709bda12ddc15057b3c13d26" name="gab22b662d709bda12ddc15057b3c13d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab22b662d709bda12ddc15057b3c13d26">&#9670;&#160;</a></span>PIR_T_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIR_T_DEFAULTS&#160;&#160;&#160;{ <a class="el" href="group___c_t_r_l___d_c_l.html#gae14ff924a303331118020b9e1e47eda2">PI_T_DEFAULTS</a>, <a class="el" href="#gaf4a85ab6f59a48fdaa726102bfe1cdce">PR_T_DEFAULTS</a>, 0.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义PIR控制器默认初始值 </p>
+
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00093">93</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga38b9caeacac97f9c2c7ce2983be70507" name="ga38b9caeacac97f9c2c7ce2983be70507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga38b9caeacac97f9c2c7ce2983be70507">&#9670;&#160;</a></span>PMR_T_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PMR_T_DEFAULTS&#160;&#160;&#160;{{<a class="el" href="group___c_t_r_l___d_c_l.html#ga01c9317f24a06320f89975d5cac59891">DF22_T_DEFAULTS</a>}, 0.0f, 0.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义PMR控制器默认值 </p>
+
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00139">139</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gaf4a85ab6f59a48fdaa726102bfe1cdce" name="gaf4a85ab6f59a48fdaa726102bfe1cdce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4a85ab6f59a48fdaa726102bfe1cdce">&#9670;&#160;</a></span>PR_T_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PR_T_DEFAULTS&#160;&#160;&#160;{ <a class="el" href="group___c_t_r_l___d_c_l.html#ga01c9317f24a06320f89975d5cac59891">DF22_T_DEFAULTS</a>, 0.0f }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义DCL_PR_T结构体默认初始值 </p>
+
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">类型定义说明</h2>
+<a id="gad4dc1df2713ebf7109ec292dbecc2101" name="gad4dc1df2713ebf7109ec292dbecc2101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad4dc1df2713ebf7109ec292dbecc2101">&#9670;&#160;</a></span>DCL_PIR_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__pir.html">dcl_pir</a> <a class="el" href="#gad4dc1df2713ebf7109ec292dbecc2101">DCL_PIR_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义PIR控制器 </p>
+
+</div>
+</div>
+<a id="ga58e7a61e3ae8acef541590dc350ee0ca" name="ga58e7a61e3ae8acef541590dc350ee0ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58e7a61e3ae8acef541590dc350ee0ca">&#9670;&#160;</a></span>DCL_PMR_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__pmr.html">dcl_pmr</a> <a class="el" href="#ga58e7a61e3ae8acef541590dc350ee0ca">DCL_PMR_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PMR控制器结构体定义 </p>
+
+</div>
+</div>
+<a id="gaae7cf1b0bae686e07642b76b4504fa78" name="gaae7cf1b0bae686e07642b76b4504fa78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae7cf1b0bae686e07642b76b4504fa78">&#9670;&#160;</a></span>DCL_PR_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__pr.html">dcl_pr</a> <a class="el" href="#gaae7cf1b0bae686e07642b76b4504fa78">DCL_PR_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用DF22结构体定义PR控制器 </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="gaaf4449a80e34897c9fd5f97bd0571e9a" name="gaaf4449a80e34897c9fd5f97bd0571e9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf4449a80e34897c9fd5f97bd0571e9a">&#9670;&#160;</a></span>DCL_PI_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_PI_Run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4af078e50a01360e929eebb595ac59ce">DCL_PI_T</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>rk</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>yk</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>执行 PI_T 控制器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">rk</td><td>给定值 </td></tr>
+    <tr><td class="paramname">yk</td><td>反馈值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00040">40</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___c_t_r_l___c_o_n_t_r_o_l_gaaf4449a80e34897c9fd5f97bd0571e9a_cgraph.png" border="0" usemap="#agroup___c_t_r_l___c_o_n_t_r_o_l_gaaf4449a80e34897c9fd5f97bd0571e9a_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup___c_t_r_l___c_o_n_t_r_o_l_gaaf4449a80e34897c9fd5f97bd0571e9a_cgraph" id="agroup___c_t_r_l___c_o_n_t_r_o_l_gaaf4449a80e34897c9fd5f97bd0571e9a_cgraph">
+<area shape="rect" title="执行 PI_T 控制器" alt="" coords="5,5,99,33"/>
+<area shape="rect" href="group___c_t_r_l___d_c_l.html#ga8e97e28b063ef52e0a59429cccc9c389" title="Executes a series form PI controller on the FPU32 Implemented as an external assembly module" alt="" coords="147,5,252,33"/>
+<area shape="poly" title=" " alt="" coords="99,16,131,16,131,22,99,22"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga46f6d664eaef47394a624758b5da247d" name="ga46f6d664eaef47394a624758b5da247d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46f6d664eaef47394a624758b5da247d">&#9670;&#160;</a></span>DCL_PI_Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_PI_Set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4af078e50a01360e929eebb595ac59ce">DCL_PI_T</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>Kp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>Ki</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>Umax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>Umin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>Imax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>isr_freq</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置 <a class="el" href="group___c_t_r_l___d_c_l.html#ga4af078e50a01360e929eebb595ac59ce" title="Defines the DCL_PI_T controller structure">DCL_PI_T</a> 控制器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>结构体指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Kp</td><td>Kp </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Ki</td><td>Ki </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Umax</td><td>输出上限幅 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Umin</td><td>输出下限幅 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Imax</td><td>积分器正负限幅(积分器限制在 <b>±Imax</b> 之间) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">isr_freq</td><td>中断频率(离散频率), 单位 Hz </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="control_8c_source.html">control.c</a> 第 <a class="el" href="control_8c_source.html#l00014">14</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___c_t_r_l___c_o_n_t_r_o_l_ga46f6d664eaef47394a624758b5da247d_cgraph.png" border="0" usemap="#agroup___c_t_r_l___c_o_n_t_r_o_l_ga46f6d664eaef47394a624758b5da247d_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup___c_t_r_l___c_o_n_t_r_o_l_ga46f6d664eaef47394a624758b5da247d_cgraph" id="agroup___c_t_r_l___c_o_n_t_r_o_l_ga46f6d664eaef47394a624758b5da247d_cgraph">
+<area shape="rect" title="配置 DCL_PI_T 控制器" alt="" coords="5,5,95,33"/>
+<area shape="rect" href="group___c_t_r_l___d_c_l.html#ga746e38af4ed1274d5014de7bf32acec0" title="Loads PI tuning parameters Implemented as assembly module" alt="" coords="143,5,250,33"/>
+<area shape="poly" title=" " alt="" coords="95,16,127,16,127,22,95,22"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga99b4e08c2ccb1c997467a74dea8ccc75" name="ga99b4e08c2ccb1c997467a74dea8ccc75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99b4e08c2ccb1c997467a74dea8ccc75">&#9670;&#160;</a></span>DCL_PIR_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_PIR_Run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gad4dc1df2713ebf7109ec292dbecc2101">DCL_PIR_T</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ref</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>feedback</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>feedforward</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>执行 PIR 控制器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">rk</td><td>设定值 </td></tr>
+    <tr><td class="paramname">yk</td><td>反馈值 </td></tr>
+    <tr><td class="paramname">fk</td><td>前馈值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00115">115</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___c_t_r_l___c_o_n_t_r_o_l_ga99b4e08c2ccb1c997467a74dea8ccc75_cgraph.png" border="0" usemap="#agroup___c_t_r_l___c_o_n_t_r_o_l_ga99b4e08c2ccb1c997467a74dea8ccc75_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup___c_t_r_l___c_o_n_t_r_o_l_ga99b4e08c2ccb1c997467a74dea8ccc75_cgraph" id="agroup___c_t_r_l___c_o_n_t_r_o_l_ga99b4e08c2ccb1c997467a74dea8ccc75_cgraph">
+<area shape="rect" title="执行 PIR 控制器" alt="" coords="5,32,107,60"/>
+<area shape="rect" href="group___c_t_r_l___c_o_n_t_r_o_l.html#gaaf4449a80e34897c9fd5f97bd0571e9a" title="执行 PI_T 控制器" alt="" coords="156,5,250,33"/>
+<area shape="poly" title=" " alt="" coords="106,34,140,28,141,33,107,39"/>
+<area shape="rect" href="group___c_t_r_l___c_o_n_t_r_o_l.html#gaa509a806733fde7a174aa8311280017d" title="执行 QPR 控制器" alt="" coords="155,57,251,85"/>
+<area shape="poly" title=" " alt="" coords="107,52,140,58,139,63,106,57"/>
+<area shape="rect" href="group___c_t_r_l___d_c_l.html#ga8e97e28b063ef52e0a59429cccc9c389" title="Executes a series form PI controller on the FPU32 Implemented as an external assembly module" alt="" coords="308,5,413,33"/>
+<area shape="poly" title=" " alt="" coords="250,16,292,16,292,22,250,22"/>
+<area shape="rect" href="group___c_t_r_l___d_c_l.html#gafe1ce8142d1bd331ed3d8ac685825e94" title="Executes a full 2nd order Direct Form 2 controller on the FPU32 Implemented as an external assembly m..." alt="" coords="299,57,422,85"/>
+<area shape="poly" title=" " alt="" coords="252,68,283,68,283,74,252,74"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="gaa7c7ca8dba7ca751ec692f3f9cd359f7" name="gaa7c7ca8dba7ca751ec692f3f9cd359f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7c7ca8dba7ca751ec692f3f9cd359f7">&#9670;&#160;</a></span>DCL_PIR_Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_PIR_Set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gad4dc1df2713ebf7109ec292dbecc2101">DCL_PIR_T</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>kp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ki</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>kr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>Umax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>Umin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>Imax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>wc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>w0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>isr_freq</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置 PIR 控制器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">kp</td><td>比例系数 </td></tr>
+    <tr><td class="paramname">ki</td><td>积分系数 </td></tr>
+    <tr><td class="paramname">kr</td><td>谐振系数 </td></tr>
+    <tr><td class="paramname">Umax</td><td>PI输出上限幅 </td></tr>
+    <tr><td class="paramname">Umin</td><td>PI输出下限幅 </td></tr>
+    <tr><td class="paramname">Imax</td><td>PI积分限幅 </td></tr>
+    <tr><td class="paramname">wc</td><td>谐振通带宽度, rad/s </td></tr>
+    <tr><td class="paramname">w0</td><td>谐振点中心频率, rad/s </td></tr>
+    <tr><td class="paramname">isr_freq</td><td>中断频率, Hz </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="control_8c_source.html">control.c</a> 第 <a class="el" href="control_8c_source.html#l00058">58</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___c_t_r_l___c_o_n_t_r_o_l_gaa7c7ca8dba7ca751ec692f3f9cd359f7_cgraph.png" border="0" usemap="#agroup___c_t_r_l___c_o_n_t_r_o_l_gaa7c7ca8dba7ca751ec692f3f9cd359f7_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup___c_t_r_l___c_o_n_t_r_o_l_gaa7c7ca8dba7ca751ec692f3f9cd359f7_cgraph" id="agroup___c_t_r_l___c_o_n_t_r_o_l_gaa7c7ca8dba7ca751ec692f3f9cd359f7_cgraph">
+<area shape="rect" title="配置 PIR 控制器" alt="" coords="5,32,103,60"/>
+<area shape="rect" href="group___c_t_r_l___d_c_l.html#ga745080d40225b83e6c78e9d2f563a762" title="Loads DF22 tuning parameters Implemented as assembly module" alt="" coords="151,5,276,33"/>
+<area shape="poly" title=" " alt="" coords="103,35,135,30,136,35,104,40"/>
+<area shape="rect" href="group___c_t_r_l___d_c_l.html#ga746e38af4ed1274d5014de7bf32acec0" title="Loads PI tuning parameters Implemented as assembly module" alt="" coords="160,57,267,85"/>
+<area shape="poly" title=" " alt="" coords="104,51,145,58,144,63,103,56"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga5c8c7dcf79539f25a76823b3b65e6a68" name="ga5c8c7dcf79539f25a76823b3b65e6a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c8c7dcf79539f25a76823b3b65e6a68">&#9670;&#160;</a></span>DCL_PMR_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_PMR_Run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga58e7a61e3ae8acef541590dc350ee0ca">DCL_PMR_T</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ref</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>feedback</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>feedforward</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>执行PMR控制器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">ref</td><td>设定值 </td></tr>
+    <tr><td class="paramname">feedback</td><td>反馈值 </td></tr>
+    <tr><td class="paramname">feedforward</td><td>前馈值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00158">158</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___c_t_r_l___c_o_n_t_r_o_l_ga5c8c7dcf79539f25a76823b3b65e6a68_cgraph.png" border="0" usemap="#agroup___c_t_r_l___c_o_n_t_r_o_l_ga5c8c7dcf79539f25a76823b3b65e6a68_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup___c_t_r_l___c_o_n_t_r_o_l_ga5c8c7dcf79539f25a76823b3b65e6a68_cgraph" id="agroup___c_t_r_l___c_o_n_t_r_o_l_ga5c8c7dcf79539f25a76823b3b65e6a68_cgraph">
+<area shape="rect" title="执行PMR控制器" alt="" coords="5,5,112,33"/>
+<area shape="rect" href="group___c_t_r_l___d_c_l.html#gafe1ce8142d1bd331ed3d8ac685825e94" title="Executes a full 2nd order Direct Form 2 controller on the FPU32 Implemented as an external assembly m..." alt="" coords="160,5,283,33"/>
+<area shape="poly" title=" " alt="" coords="112,16,144,16,144,22,112,22"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga489cb7ba96d67aa2ca908a99d8c2c756" name="ga489cb7ba96d67aa2ca908a99d8c2c756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga489cb7ba96d67aa2ca908a99d8c2c756">&#9670;&#160;</a></span>DCL_PMR_Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_PMR_Set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga58e7a61e3ae8acef541590dc350ee0ca">DCL_PMR_T</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>Kp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> *</td>          <td class="paramname"><span class="paramname"><em>Kr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>wc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>w0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>harmonic_set</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>isr_freq</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置PMR控制器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">Kp</td><td>比例系数 </td></tr>
+    <tr><td class="paramname">Kr</td><td>谐振系数数组 </td></tr>
+    <tr><td class="paramname">wc</td><td>基波谐振通带宽度, rad/s </td></tr>
+    <tr><td class="paramname">w0</td><td>基波谐振点中心频率, rad/s </td></tr>
+    <tr><td class="paramname">harmonic_set</td><td>跟踪谐波次数 </td></tr>
+    <tr><td class="paramname">isr_freq</td><td>中断频率 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="control_8c_source.html">control.c</a> 第 <a class="el" href="control_8c_source.html#l00096">96</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___c_t_r_l___c_o_n_t_r_o_l_ga489cb7ba96d67aa2ca908a99d8c2c756_cgraph.png" border="0" usemap="#agroup___c_t_r_l___c_o_n_t_r_o_l_ga489cb7ba96d67aa2ca908a99d8c2c756_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup___c_t_r_l___c_o_n_t_r_o_l_ga489cb7ba96d67aa2ca908a99d8c2c756_cgraph" id="agroup___c_t_r_l___c_o_n_t_r_o_l_ga489cb7ba96d67aa2ca908a99d8c2c756_cgraph">
+<area shape="rect" title="配置PMR控制器" alt="" coords="5,5,108,33"/>
+<area shape="rect" href="group___c_t_r_l___d_c_l.html#ga745080d40225b83e6c78e9d2f563a762" title="Loads DF22 tuning parameters Implemented as assembly module" alt="" coords="156,5,281,33"/>
+<area shape="poly" title=" " alt="" coords="108,16,140,16,140,22,108,22"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="gaa509a806733fde7a174aa8311280017d" name="gaa509a806733fde7a174aa8311280017d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa509a806733fde7a174aa8311280017d">&#9670;&#160;</a></span>DCL_PR_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_PR_Run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gaae7cf1b0bae686e07642b76b4504fa78">DCL_PR_T</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ref</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>feedback</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>feedforward</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>执行 QPR 控制器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">ref</td><td>给定值 </td></tr>
+    <tr><td class="paramname">feedback</td><td>反馈值 </td></tr>
+    <tr><td class="paramname">feedforward</td><td>前馈值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00074">74</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___c_t_r_l___c_o_n_t_r_o_l_gaa509a806733fde7a174aa8311280017d_cgraph.png" border="0" usemap="#agroup___c_t_r_l___c_o_n_t_r_o_l_gaa509a806733fde7a174aa8311280017d_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup___c_t_r_l___c_o_n_t_r_o_l_gaa509a806733fde7a174aa8311280017d_cgraph" id="agroup___c_t_r_l___c_o_n_t_r_o_l_gaa509a806733fde7a174aa8311280017d_cgraph">
+<area shape="rect" title="执行 QPR 控制器" alt="" coords="5,5,102,33"/>
+<area shape="rect" href="group___c_t_r_l___d_c_l.html#gafe1ce8142d1bd331ed3d8ac685825e94" title="Executes a full 2nd order Direct Form 2 controller on the FPU32 Implemented as an external assembly m..." alt="" coords="150,5,273,33"/>
+<area shape="poly" title=" " alt="" coords="102,16,134,16,134,22,102,22"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga2f1c741ae83ebc319bfda2776de247bb" name="ga2f1c741ae83ebc319bfda2776de247bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f1c741ae83ebc319bfda2776de247bb">&#9670;&#160;</a></span>DCL_PR_Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_PR_Set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gaae7cf1b0bae686e07642b76b4504fa78">DCL_PR_T</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>Kp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>Kr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>wc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>w0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>isr_freq</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置 QPR 控制器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>结构体指针 </td></tr>
+    <tr><td class="paramname">Kp</td><td>比例系数 </td></tr>
+    <tr><td class="paramname">Kr</td><td>谐振系数 </td></tr>
+    <tr><td class="paramname">wc</td><td>谐振通带宽度, 单位 rad/s </td></tr>
+    <tr><td class="paramname">w0</td><td>谐振点中心频率, 单位 rad/s </td></tr>
+    <tr><td class="paramname">isr_freq</td><td>中断频率 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="control_8c_source.html">control.c</a> 第 <a class="el" href="control_8c_source.html#l00035">35</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___c_t_r_l___c_o_n_t_r_o_l_ga2f1c741ae83ebc319bfda2776de247bb_cgraph.png" border="0" usemap="#agroup___c_t_r_l___c_o_n_t_r_o_l_ga2f1c741ae83ebc319bfda2776de247bb_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup___c_t_r_l___c_o_n_t_r_o_l_ga2f1c741ae83ebc319bfda2776de247bb_cgraph" id="agroup___c_t_r_l___c_o_n_t_r_o_l_ga2f1c741ae83ebc319bfda2776de247bb_cgraph">
+<area shape="rect" title="配置 QPR 控制器" alt="" coords="5,5,98,33"/>
+<area shape="rect" href="group___c_t_r_l___d_c_l.html#ga745080d40225b83e6c78e9d2f563a762" title="Loads DF22 tuning parameters Implemented as assembly module" alt="" coords="146,5,271,33"/>
+<area shape="poly" title=" " alt="" coords="98,16,130,16,130,22,98,22"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

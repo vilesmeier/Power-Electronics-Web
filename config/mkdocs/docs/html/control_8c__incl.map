@@ -1,0 +1,32 @@
+<map id="control.c" name="control.c">
+<area shape="rect" id="Node000001" title="含各类控制器的时域实现" alt="" coords="324,5,394,33"/>
+<area shape="rect" id="Node000002" href="$control_8h.html" title="包含各类离散化时域控制器" alt="" coords="323,81,394,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="362,34,362,65,356,65,356,34"/>
+<area shape="rect" id="Node000003" href="$_d_c_l_8h.html" title="Contains the public interface to the common Digital Controller Library functions" alt="" coords="170,157,239,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="332,112,247,152,244,147,330,107"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="379,308,442,336"/>
+<area shape="poly" id="edge17_Node000002_Node000008" title=" " alt="" coords="354,110,342,139,331,177,326,219,329,239,336,259,352,280,372,297,369,301,348,284,331,261,324,241,321,219,325,176,337,137,349,108"/>
+<area shape="rect" id="Node000010" href="$delay_8h.html" title="数组延迟链驱动函数声明" alt="" coords="389,157,486,184"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="375,107,414,144,411,148,371,111"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="551,232,660,260"/>
+<area shape="poly" id="edge18_Node000002_Node000011" title=" " alt="" coords="396,106,446,126,500,154,546,187,584,220,580,224,542,191,497,159,444,131,394,111"/>
+<area shape="rect" id="Node000004" href="$dcl__support_8h.html" title=" " alt="" coords="122,232,220,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="201,186,185,219,181,217,196,184"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,308,86,336"/>
+<area shape="poly" id="edge9_Node000003_Node000005" title=" " alt="" coords="180,187,146,208,111,234,84,265,63,296,58,293,80,262,108,230,143,203,177,183"/>
+<area shape="poly" id="edge10_Node000003_Node000008" title=" " alt="" coords="216,183,248,219,291,258,328,281,366,300,364,304,326,286,288,262,244,223,212,186"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="150,263,82,302,79,298,147,258"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="294,308,355,336"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="199,258,284,299,282,303,197,263"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="110,308,184,336"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="169,261,158,294,153,292,164,260"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="215,258,365,304,363,309,213,263"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="208,308,270,336"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="185,259,218,295,215,298,181,262"/>
+<area shape="poly" id="edge12_Node000010_Node000008" title=" " alt="" coords="456,183,472,198,486,217,494,239,491,261,474,284,453,301,449,297,470,280,486,259,489,239,481,220,468,202,452,187"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="469,182,563,223,561,228,466,187"/>
+<area shape="rect" id="Node000012" href="$mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="345,232,476,260"/>
+<area shape="poly" id="edge14_Node000010_Node000012" title=" " alt="" coords="435,186,423,219,418,217,430,184"/>
+<area shape="poly" id="edge16_Node000012_Node000006" title=" " alt="" coords="397,263,353,300,349,296,394,259"/>
+<area shape="poly" id="edge15_Node000012_Node000008" title=" " alt="" coords="414,261,414,292,408,292,408,261"/>
+</map>

@@ -1,5 +1,10 @@
 <map id="dcl_pr" name="dcl_pr">
-<area shape="rect" id="Node000001" title="使用DF22结构体定义PR控制器" alt="" coords="12,106,68,134"/>
-<area shape="rect" id="Node000002" href="$structdcl__df22.html" title="定义二阶直接形式Ⅱ（DF22）控制器结构体" alt="" coords="5,5,75,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="43,49,43,105,37,105,37,49"/>
+<area shape="rect" id="Node000001" title="使用DF22结构体定义PR控制器" alt="" coords="36,307,92,335"/>
+<area shape="rect" id="Node000002" href="$structdcl__df22__t.html" title="Defines the DCL_DF22 controller structure" alt="" coords="24,207,104,234"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,250,66,307,61,307,61,250"/>
+<area shape="rect" id="Node000003" href="$structdcl__df22.html" title="Defines the DCL_DF22 controller structure" alt="" coords="82,106,152,134"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,148,73,207,68,205,101,146"/>
+<area shape="rect" id="Node000004" href="$structdcl__df22__sps.html" title="Defines the DCL_DF22 shadow parameter set" alt="" coords="5,5,101,33"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="50,49,45,89,46,133,53,173,62,205,57,207,48,174,41,134,40,89,45,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="72,44,111,104,106,107,67,47"/>
 </map>

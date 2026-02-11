@@ -11,10 +11,10 @@ var searchData=
   ['gblue_8',['GBLUE',['../group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1cabd2999182571f8430b7f38af7476db9a',1,'LCD_ST7735S.h']]],
   ['global_2ec_9',['global.c',['../global_8c.html',1,'']]],
   ['global_2eh_10',['global.h',['../global_8h.html',1,'']]],
-  ['grad_5ffreq_11',['grad_freq',['../struct_r_a_m_p.html#a8c9314b80da3ea2a2a2a826a0d63844e',1,'RAMP']]],
+  ['grad_5ffreq_11',['grad_freq',['../struct_r_a_m_p___t.html#af4c0a6bd1fecda37bf05cfe4f7e361e3',1,'RAMP_T']]],
   ['gray_12',['GRAY',['../group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca3fb6c4ad00f4ad98553e01229d1803ac',1,'LCD_ST7735S.h']]],
   ['grayblue_13',['GRAYBLUE',['../group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf0813fa73d558d8c19e93dc9c7575fe5',1,'LCD_ST7735S.h']]],
   ['gred_14',['GRED',['../group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca66af9f9737563b6fbbf14a8bd3bfba1d',1,'LCD_ST7735S.h']]],
   ['green_15',['GREEN',['../group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caa60bd322f93178d68184e30e162571ca',1,'LCD_ST7735S.h']]],
-  ['grid_5ffreq_16',['grid_freq',['../struct_d_e_l_a_y.html#a34a01da59a67e92b7108bce3736ac713',1,'DELAY::grid_freq'],['../struct_p_o_w_e_r__3_p_h.html#a4650684ea0ef84858c3dc4acc4e8277e',1,'POWER_3PH::grid_freq']]]
+  ['grid_5ffreq_16',['grid_freq',['../struct_d_e_l_a_y___t.html#af6758c7870f26257ed7297d6ad84f052',1,'DELAY_T::grid_freq'],['../struct_p_o_w_e_r___i_n_t__3_p_h___t.html#a25b65e5fc190517a6e8602c850af3ae5',1,'POWER_INT_3PH_T::grid_freq']]]
 ];

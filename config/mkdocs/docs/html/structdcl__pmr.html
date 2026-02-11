@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
    </div>
    <div id="projectbrief">NUEDC软件代码库</div>
   </td>
@@ -90,135 +90,100 @@ $(function(){initNavTree('structdcl__pmr.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">dcl_pmr结构体 参考<div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a> &raquo; <a class="el" href="group___c_t_r_l___d_c_l.html">数字控制器</a></div></div></div>
+  <div class="headertitle"><div class="title">dcl_pmr结构体 参考<div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a> &raquo; <a class="el" href="group___c_t_r_l___c_o_n_t_r_o_l.html">离散化控制器</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>PMR控制器结构体定义, 使用多个PR控制器  
+<p>PMR控制器结构体定义  
  <a href="#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="dcl_8h_source.html">dcl.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="control_8h_source.html">control.h</a>&gt;</code></p>
 <div class="dynheader">
 dcl_pmr 的协作图:</div>
 <div class="dyncontent">
 <div class="center"><img src="structdcl__pmr__coll__graph.png" border="0" usemap="#adcl__pmr_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adcl__pmr_coll__map" id="adcl__pmr_coll__map">
-<area shape="rect" title="PMR控制器结构体定义, 使用多个PR控制器" alt="" coords="6,106,74,134"/>
-<area shape="rect" href="structdcl__df22.html" title="定义二阶直接形式Ⅱ（DF22）控制器结构体" alt="" coords="5,5,75,33"/>
-<area shape="poly" title=" " alt="" coords="43,49,43,105,37,105,37,49"/>
+<area shape="rect" title="PMR控制器结构体定义" alt="" coords="30,307,97,335"/>
+<area shape="rect" href="structdcl__df22__t.html" title="Defines the DCL_DF22 controller structure" alt="" coords="24,207,104,234"/>
+<area shape="poly" title=" " alt="" coords="66,250,66,307,61,307,61,250"/>
+<area shape="rect" href="structdcl__df22.html" title="Defines the DCL_DF22 controller structure" alt="" coords="82,106,152,134"/>
+<area shape="poly" title=" " alt="" coords="105,148,73,207,68,205,101,146"/>
+<area shape="rect" href="structdcl__df22__sps.html" title="Defines the DCL_DF22 shadow parameter set" alt="" coords="5,5,101,33"/>
+<area shape="poly" title=" " alt="" coords="50,49,45,89,46,133,53,173,62,205,57,207,48,174,41,134,40,89,45,48"/>
+<area shape="poly" title=" " alt="" coords="72,44,111,104,106,107,67,47"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 成员变量</h2></td></tr>
-<tr class="memitem:aa25b39bb7d79f09ae848cf32ece6c152" id="r_aa25b39bb7d79f09ae848cf32ece6c152"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa25b39bb7d79f09ae848cf32ece6c152">Kp</a></td></tr>
-<tr class="memdesc:aa25b39bb7d79f09ae848cf32ece6c152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kp  <br /></td></tr>
-<tr class="memitem:a273ac91a356bb630912fc60579902530" id="r_a273ac91a356bb630912fc60579902530"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a273ac91a356bb630912fc60579902530">Kr</a> [<a class="el" href="group___c_t_r_l___d_c_l.html#ga407ba64c959aad0a50f7462ceb719e09">DCL_HARMONIC_NUM</a>]</td></tr>
-<tr class="memdesc:a273ac91a356bb630912fc60579902530"><td class="mdescLeft">&#160;</td><td class="mdescRight">谐波 Kr 系数数组  <br /></td></tr>
-<tr class="memitem:aa564b86a86e22385acfb679c2228d414" id="r_aa564b86a86e22385acfb679c2228d414"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa564b86a86e22385acfb679c2228d414">Output</a></td></tr>
-<tr class="memdesc:aa564b86a86e22385acfb679c2228d414"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制器输出  <br /></td></tr>
-<tr class="memitem:a27c19bcfbcc13d8c1a5452311b4329b0" id="r_a27c19bcfbcc13d8c1a5452311b4329b0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27c19bcfbcc13d8c1a5452311b4329b0">harmonic_set</a> [<a class="el" href="group___c_t_r_l___d_c_l.html#ga407ba64c959aad0a50f7462ceb719e09">DCL_HARMONIC_NUM</a>]</td></tr>
-<tr class="memdesc:a27c19bcfbcc13d8c1a5452311b4329b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">跟踪谐波次数  <br /></td></tr>
-<tr class="memitem:a79d4f064e92e541c1e4224e0ba25bf2f" id="r_a79d4f064e92e541c1e4224e0ba25bf2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79d4f064e92e541c1e4224e0ba25bf2f">pr</a> [<a class="el" href="group___c_t_r_l___d_c_l.html#ga407ba64c959aad0a50f7462ceb719e09">DCL_HARMONIC_NUM</a>]</td></tr>
-<tr class="memdesc:a79d4f064e92e541c1e4224e0ba25bf2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">各谐波下的 <a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gaf8832c3b4a1ad9070601b091b430b0e8" title="定义二阶直接形式Ⅱ（DF22）控制器结构体">DCL_DF22</a> 结构体支持  <br /></td></tr>
+<tr class="memitem:ad61dda6bdfac1d74e327381c1da533f7" id="r_ad61dda6bdfac1d74e327381c1da533f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga8233383ca37eabb66161ef56fe7ddffd">DCL_DF22_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad61dda6bdfac1d74e327381c1da533f7">pr</a> [<a class="el" href="group___c_t_r_l___c_o_n_t_r_o_l.html#ga407ba64c959aad0a50f7462ceb719e09">DCL_HARMONIC_NUM</a>]</td></tr>
+<tr class="memdesc:ad61dda6bdfac1d74e327381c1da533f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">各谐波下的 <a class="el" href="group___c_t_r_l___d_c_l.html#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> 结构体支持  <br /></td></tr>
+<tr class="memitem:ad9704672b28f59cb9f1e34a23f559432" id="r_ad9704672b28f59cb9f1e34a23f559432"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9704672b28f59cb9f1e34a23f559432">kp</a></td></tr>
+<tr class="memdesc:ad9704672b28f59cb9f1e34a23f559432"><td class="mdescLeft">&#160;</td><td class="mdescRight">比例系数  <br /></td></tr>
+<tr class="memitem:a60f62e8a80054f4b7bc51980ddfe7ec1" id="r_a60f62e8a80054f4b7bc51980ddfe7ec1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60f62e8a80054f4b7bc51980ddfe7ec1">output</a></td></tr>
+<tr class="memdesc:a60f62e8a80054f4b7bc51980ddfe7ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">控制器输出  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
-<div class="textblock"><p>PMR控制器结构体定义, 使用多个PR控制器 </p>
+<div class="textblock"><p>PMR控制器结构体定义 </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00073">73</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00130">130</a> 行定义.</p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">结构体成员变量说明</h2>
-<a id="a27c19bcfbcc13d8c1a5452311b4329b0" name="a27c19bcfbcc13d8c1a5452311b4329b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27c19bcfbcc13d8c1a5452311b4329b0">&#9670;&#160;</a></span>harmonic_set</h2>
+<a id="ad9704672b28f59cb9f1e34a23f559432" name="ad9704672b28f59cb9f1e34a23f559432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9704672b28f59cb9f1e34a23f559432">&#9670;&#160;</a></span>kp</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t dcl_pmr::harmonic_set[<a class="el" href="group___c_t_r_l___d_c_l.html#ga407ba64c959aad0a50f7462ceb719e09">DCL_HARMONIC_NUM</a>]</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_pmr::kp</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>跟踪谐波次数 </p>
+<p>比例系数 </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00078">78</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00133">133</a> 行定义.</p>
 
 </div>
 </div>
-<a id="aa25b39bb7d79f09ae848cf32ece6c152" name="aa25b39bb7d79f09ae848cf32ece6c152"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa25b39bb7d79f09ae848cf32ece6c152">&#9670;&#160;</a></span>Kp</h2>
+<a id="a60f62e8a80054f4b7bc51980ddfe7ec1" name="a60f62e8a80054f4b7bc51980ddfe7ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60f62e8a80054f4b7bc51980ddfe7ec1">&#9670;&#160;</a></span>output</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float32_t dcl_pmr::Kp</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Kp </p>
-
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00075">75</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a273ac91a356bb630912fc60579902530" name="a273ac91a356bb630912fc60579902530"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a273ac91a356bb630912fc60579902530">&#9670;&#160;</a></span>Kr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float32_t dcl_pmr::Kr[<a class="el" href="group___c_t_r_l___d_c_l.html#ga407ba64c959aad0a50f7462ceb719e09">DCL_HARMONIC_NUM</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>谐波 Kr 系数数组 </p>
-
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00076">76</a> 行定义.</p>
-
-</div>
-</div>
-<a id="aa564b86a86e22385acfb679c2228d414" name="aa564b86a86e22385acfb679c2228d414"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa564b86a86e22385acfb679c2228d414">&#9670;&#160;</a></span>Output</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float32_t dcl_pmr::Output</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> dcl_pmr::output</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>控制器输出 </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00077">77</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00134">134</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a79d4f064e92e541c1e4224e0ba25bf2f" name="a79d4f064e92e541c1e4224e0ba25bf2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79d4f064e92e541c1e4224e0ba25bf2f">&#9670;&#160;</a></span>pr</h2>
+<a id="ad61dda6bdfac1d74e327381c1da533f7" name="ad61dda6bdfac1d74e327381c1da533f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad61dda6bdfac1d74e327381c1da533f7">&#9670;&#160;</a></span>pr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> dcl_pmr::pr[<a class="el" href="group___c_t_r_l___d_c_l.html#ga407ba64c959aad0a50f7462ceb719e09">DCL_HARMONIC_NUM</a>]</td>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga8233383ca37eabb66161ef56fe7ddffd">DCL_DF22_T</a> dcl_pmr::pr[<a class="el" href="group___c_t_r_l___c_o_n_t_r_o_l.html#ga407ba64c959aad0a50f7462ceb719e09">DCL_HARMONIC_NUM</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>各谐波下的 <a class="el" href="group___c_t_r_l___t_r_a_n_s_f_u_n.html#gaf8832c3b4a1ad9070601b091b430b0e8" title="定义二阶直接形式Ⅱ（DF22）控制器结构体">DCL_DF22</a> 结构体支持 </p>
+<p>各谐波下的 <a class="el" href="group___c_t_r_l___d_c_l.html#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> 结构体支持 </p>
 
-<p class="definition">在文件 <a class="el" href="dcl_8h_source.html">dcl.h</a> 第 <a class="el" href="dcl_8h_source.html#l00079">79</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="control_8h_source.html">control.h</a> 第 <a class="el" href="control_8h_source.html#l00132">132</a> 行定义.</p>
 
 </div>
 </div>
 <hr/>该结构体的文档由以下文件生成:<ul>
-<li><a class="el" href="dcl_8h_source.html">dcl.h</a></li>
+<li><a class="el" href="control_8h_source.html">control.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
