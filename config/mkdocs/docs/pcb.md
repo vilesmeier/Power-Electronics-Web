@@ -17,29 +17,7 @@
 ```
 
 ## /AD_Projects
-### /Auxiliary_power_LM5164
-非隔离辅助电源，LM5164  
-6-100V输入，转±12V-1A/5V-1A  
-
-### /Common_Files
-AD通用文件，库文件需要AD设置内导入  
-.outjob文件需要每个工程单独引入  
- -- project选项卡，右键，添加已有文件  
-
-### /Control_Card_28P650
-F28P650DKXPTP控制卡  
-
-### /Control_Card_280049C
-F280049CPTP控制卡  
-
-### /Power_Stage_1PH_Serial_3_Level
-单相级联三电平H桥
-
-### /Power_Stage_3PH_Serial_3_Level
-三相级联三电平H桥
-
-### /Sample_Board_H_Bridge
-单相/三相H桥通用采样小板  
+Altium Designer 24 PCB工程, 具体工程详见工程内原理图文件内说明  
 
 ## /LCDEA_Library
 立创EDA的自定义器件与封装  
