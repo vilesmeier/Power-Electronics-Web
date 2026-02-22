@@ -1,0 +1,4 @@
+<map id="参考相位生成" name="参考相位生成">
+<area shape="rect" id="Node000002" href="$group___c_t_r_l.html" title="常用控制算法的模块化代码, 使用时直接将文件夹复制到 hardware 文件夹内即可" alt="" coords="5,5,92,30"/>
+<area shape="rect" id="Node000001" title="提供参考相位生成器的实现, 输出锯齿波, 范围[0,2*pi]" alt="" coords="140,5,239,30"/>
+</map>

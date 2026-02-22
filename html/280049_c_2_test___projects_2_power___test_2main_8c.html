@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: main.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('280049_c_2_test___projects_2_power___test_2main_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">main.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;driverlib.h&quot;</code><br />
+<code>#include &quot;device.h&quot;</code><br />
+<code>#include &quot;board.h&quot;</code><br />
+<code>#include &quot;c2000ware_libraries.h&quot;</code><br />
+<code>#include &quot;f28x_project.h&quot;</code><br />
+<code>#include &lt;<a class="el" href="global_8h_source.html">global/global.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+280049C/Test_Projects/Power_Test/main.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="280049_c_2_test___projects_2_power___test_2main_8c__incl.png" border="0" usemap="#amain_8c" loading="lazy" alt=""/></div>
+<map name="amain_8c" id="amain_8c">
+<area shape="rect" title=" " alt="" coords="536,5,595,33"/>
+<area shape="rect" title=" " alt="" coords="270,81,349,109"/>
+<area shape="poly" title=" " alt="" coords="537,32,365,80,364,75,535,26"/>
+<area shape="rect" title=" " alt="" coords="374,81,443,109"/>
+<area shape="poly" title=" " alt="" coords="539,36,451,77,449,72,536,31"/>
+<area shape="rect" title=" " alt="" coords="468,81,533,109"/>
+<area shape="poly" title=" " alt="" coords="556,35,524,71,520,68,552,32"/>
+<area shape="rect" title=" " alt="" coords="557,81,705,109"/>
+<area shape="poly" title=" " alt="" coords="579,32,612,68,608,71,575,35"/>
+<area shape="rect" title=" " alt="" coords="730,81,834,109"/>
+<area shape="poly" title=" " alt="" coords="597,28,730,73,728,78,595,33"/>
+<area shape="rect" href="global_8h.html" title="全局变量声明, 头文件打包, 全局通用宏定义" alt="" coords="858,81,964,109"/>
+<area shape="poly" title=" " alt="" coords="596,24,844,77,842,82,595,29"/>
+<area shape="rect" href="_d_c_l_8h.html" title="Contains the public interface to the common Digital Controller Library functions" alt="" coords="218,232,287,260"/>
+<area shape="poly" title=" " alt="" coords="858,109,846,111,720,115,511,119,402,123,305,131,232,142,208,150,194,158,188,173,193,189,206,206,222,221,219,225,202,209,188,192,183,173,190,155,206,145,231,137,305,125,402,118,510,114,720,110,845,106,858,104"/>
+<area shape="rect" title=" " alt="" coords="745,384,808,411"/>
+<area shape="poly" title=" " alt="" coords="964,95,1090,102,1244,113,1380,130,1427,142,1453,155,1463,172,1469,197,1467,229,1452,262,1434,280,1408,297,1341,325,1256,348,1161,366,970,388,823,397,823,392,970,382,1161,360,1255,343,1339,320,1406,292,1430,276,1447,258,1462,227,1464,198,1458,174,1449,159,1425,147,1379,136,1244,119,1090,107,964,101"/>
+<area shape="rect" href="delay_8h.html" title="数组延迟链驱动函数声明" alt="" coords="714,157,812,184"/>
+<area shape="poly" title=" " alt="" coords="886,112,804,152,802,147,883,107"/>
+<area shape="rect" title=" " alt="" coords="630,232,738,260"/>
+<area shape="poly" title=" " alt="" coords="859,111,764,136,725,149,705,159,696,171,690,186,686,218,681,217,685,185,691,169,701,155,723,144,762,131,857,106"/>
+<area shape="rect" href="mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="813,232,945,260"/>
+<area shape="poly" title=" " alt="" coords="964,97,1027,105,1088,121,1112,132,1127,147,1132,165,1122,186,1097,204,1057,218,961,238,960,233,1055,213,1094,199,1118,183,1127,164,1123,150,1109,137,1086,126,1026,111,963,102"/>
+<area shape="rect" href="filter_8h.html" title="数字滤波器函数声明" alt="" coords="314,157,401,184"/>
+<area shape="poly" title=" " alt="" coords="858,109,846,111,727,126,633,134,538,143,417,159,416,154,537,137,632,129,727,121,845,106,858,104"/>
+<area shape="rect" href="modulate_8h.html" title="调制函数声明" alt="" coords="1183,157,1327,184"/>
+<area shape="poly" title=" " alt="" coords="965,105,1179,150,1178,156,963,110"/>
+<area shape="rect" href="mppt_8h.html" title="TI Solar(最大功率点跟踪)库移植参考官方用户手册" alt="" coords="543,157,639,184"/>
+<area shape="poly" title=" " alt="" coords="858,111,655,157,653,152,857,106"/>
+<area shape="rect" href="_control___driver_2oled_2oled_8h.html" title="OLED函数声明&#45;SSD1306/SSD1315" alt="" coords="204,157,290,184"/>
+<area shape="poly" title=" " alt="" coords="858,109,846,111,696,127,577,134,457,141,305,159,304,154,457,135,576,128,695,122,845,106,858,104"/>
+<area shape="rect" href="ramp_8h.html" title="参考相位生成 函数声明" alt="" coords="1010,157,1108,184"/>
+<area shape="poly" title=" " alt="" coords="939,107,1020,147,1018,152,936,112"/>
+<area shape="rect" href="state_8h.html" title="全局状态机声明, 以及自定义时间片" alt="" coords="426,157,519,184"/>
+<area shape="poly" title=" " alt="" coords="858,109,846,111,692,134,535,159,534,154,691,129,845,106,857,104"/>
+<area shape="rect" title=" " alt="" coords="1513,157,1677,184"/>
+<area shape="poly" title=" " alt="" coords="964,99,1495,154,1499,154,1498,160,1495,159,964,104"/>
+<area shape="rect" href="transform_8h.html" title="常用坐标变换" alt="" coords="836,157,986,184"/>
+<area shape="poly" title=" " alt="" coords="914,109,914,141,908,141,908,109"/>
+<area shape="rect" href="vofa_8h.html" title="VOFA上位机支持, 函数声明" alt="" coords="1351,157,1439,184"/>
+<area shape="poly" title=" " alt="" coords="965,100,1127,121,1336,154,1336,159,1126,126,964,105"/>
+<area shape="rect" title=" " alt="" coords="1700,157,1764,184"/>
+<area shape="poly" title=" " alt="" coords="964,94,1090,97,1267,107,1473,124,1685,154,1685,159,1473,130,1267,112,1090,103,964,99"/>
+<area shape="rect" href="dcl__support_8h.html" title=" " alt="" coords="203,308,302,336"/>
+<area shape="poly" title=" " alt="" coords="255,261,255,292,250,292,250,261"/>
+<area shape="rect" title=" " alt="" coords="111,384,191,411"/>
+<area shape="poly" title=" " alt="" coords="238,263,215,284,193,310,176,340,163,370,158,368,171,338,189,306,211,280,234,259"/>
+<area shape="poly" title=" " alt="" coords="274,258,338,296,380,316,423,333,506,356,590,373,730,390,729,395,589,378,504,361,421,338,377,321,336,301,271,263"/>
+<area shape="poly" title=" " alt="" coords="236,338,183,377,180,372,233,334"/>
+<area shape="rect" title=" " alt="" coords="399,384,460,411"/>
+<area shape="poly" title=" " alt="" coords="285,334,386,375,384,380,283,339"/>
+<area shape="rect" title=" " alt="" coords="216,384,289,411"/>
+<area shape="poly" title=" " alt="" coords="255,336,255,368,250,368,250,336"/>
+<area shape="poly" title=" " alt="" coords="302,327,730,387,729,392,302,333"/>
+<area shape="rect" title=" " alt="" coords="313,384,376,411"/>
+<area shape="poly" title=" " alt="" coords="270,334,318,372,315,376,267,338"/>
+<area shape="poly" title=" " alt="" coords="766,184,777,368,772,368,761,185"/>
+<area shape="poly" title=" " alt="" coords="751,187,711,224,708,220,747,183"/>
+<area shape="poly" title=" " alt="" coords="785,183,847,222,844,226,782,187"/>
+<area shape="poly" title=" " alt="" coords="840,263,476,384,474,379,839,258"/>
+<area shape="poly" title=" " alt="" coords="872,262,796,372,792,369,868,259"/>
+<area shape="poly" title=" " alt="" coords="340,187,285,226,282,221,337,183"/>
+<area shape="poly" title=" " alt="" coords="382,183,460,230,536,284,570,308,615,333,674,360,731,380,729,385,672,365,612,338,567,312,533,289,458,235,379,187"/>
+<area shape="poly" title=" " alt="" coords="402,179,615,227,614,232,401,184"/>
+<area shape="poly" title=" " alt="" coords="1224,187,1123,235,1077,263,1043,288,1008,312,960,338,889,366,824,387,822,382,888,361,958,333,1005,308,1040,283,1074,258,1120,230,1222,182"/>
+<area shape="poly" title=" " alt="" coords="1183,184,754,239,753,233,1182,178"/>
+<area shape="rect" title=" " alt="" coords="1133,232,1316,260"/>
+<area shape="poly" title=" " alt="" coords="1252,186,1238,219,1233,217,1247,184"/>
+<area shape="poly" title=" " alt="" coords="595,184,603,219,620,259,648,294,680,325,743,373,740,377,677,329,644,297,615,261,598,221,590,185"/>
+<area shape="poly" title=" " alt="" coords="609,183,658,221,654,225,606,187"/>
+<area shape="poly" title=" " alt="" coords="260,183,301,231,413,370,408,373,297,234,256,186"/>
+<area shape="poly" title=" " alt="" coords="270,183,392,252,475,295,563,333,651,363,730,383,729,388,649,368,561,338,473,300,389,257,267,187"/>
+<area shape="poly" title=" " alt="" coords="290,179,302,182,470,211,615,233,614,238,470,216,301,187,289,185"/>
+<area shape="rect" href="i2c_8h.html" title=" " alt="" coords="95,232,143,260"/>
+<area shape="poly" title=" " alt="" coords="225,187,156,227,153,222,223,183"/>
+<area shape="rect" title=" " alt="" coords="5,308,129,336"/>
+<area shape="poly" title=" " alt="" coords="112,262,87,297,83,294,108,259"/>
+<area shape="poly" title=" " alt="" coords="1054,186,1006,257,969,300,926,338,875,367,823,386,821,381,872,362,923,333,965,296,1001,253,1049,183"/>
+<area shape="poly" title=" " alt="" coords="1011,184,998,187,754,234,753,229,997,182,1010,179"/>
+<area shape="poly" title=" " alt="" coords="1028,187,926,229,924,224,1026,182"/>
+<area shape="poly" title=" " alt="" coords="486,183,555,251,603,294,655,333,693,356,731,375,729,379,691,361,652,338,600,298,551,255,482,187"/>
+<area shape="poly" title=" " alt="" coords="511,182,633,224,631,229,509,187"/>
+<area shape="poly" title=" " alt="" coords="928,183,942,198,955,218,962,239,959,261,932,301,897,333,859,360,823,379,820,374,856,355,893,329,928,297,954,259,957,240,951,220,938,202,924,187"/>
+<area shape="poly" title=" " alt="" coords="871,187,740,230,738,225,870,182"/>
+<area shape="poly" title=" " alt="" coords="908,186,893,219,888,217,903,184"/>
+<area shape="poly" title=" " alt="" coords="1391,186,1367,224,1349,245,1329,262,1264,299,1194,328,1123,351,1052,368,922,389,824,397,823,392,921,384,1051,363,1122,346,1193,323,1261,294,1325,258,1346,241,1363,221,1386,183"/>
+<area shape="poly" title=" " alt="" coords="1352,185,1339,187,1189,207,1071,216,953,223,802,235,754,240,753,235,801,230,953,217,1071,211,1188,201,1339,182,1351,180"/>
+<area shape="rect" title=" " alt="" coords="1390,232,1437,260"/>
+<area shape="poly" title=" " alt="" coords="1401,184,1409,216,1404,218,1396,186"/>
+</map>
+</div>
+</div>
+<p><a href="280049_c_2_test___projects_2_power___test_2main_8c_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a6288eba0f8e8ad3ab1544ad731eb7667" id="r_a6288eba0f8e8ad3ab1544ad731eb7667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6288eba0f8e8ad3ab1544ad731eb7667">main</a> (void)</td></tr>
+<tr class="memitem:a4ccda0eb51b96b9a45e50d01764249b6" id="r_a4ccda0eb51b96b9a45e50d01764249b6"><td class="memItemLeft" align="right" valign="top">interrupt void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ccda0eb51b96b9a45e50d01764249b6">ADC_EOC_ISR</a> (void)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a9180379b3c081f7e59029331457d3dba" id="r_a9180379b3c081f7e59029331457d3dba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_o_w_e_r___f_i_l__1_p_h___t.html">POWER_FIL_1PH_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9180379b3c081f7e59029331457d3dba">power_1ph</a> = <a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#gabb3fffcab66341fa7f2b59b62de12fce">POWER_FIL_1PH_T_DEFAULTS</a></td></tr>
+<tr class="memitem:ad3373493bf11b2b4ab6f5a30e5314300" id="r_ad3373493bf11b2b4ab6f5a30e5314300"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_o_w_e_r___f_i_l__3_p_h___t.html">POWER_FIL_3PH_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3373493bf11b2b4ab6f5a30e5314300">power_3ph</a> = <a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#ga6948bb147da77967f99e0d37092f1747">POWER_FIL_3PH_T_DEFAULTS</a></td></tr>
+<tr class="memitem:ab17b5b96b65ec03187a8f1c8150df6af" id="r_ab17b5b96b65ec03187a8f1c8150df6af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_a_m_p___t.html">RAMP_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab17b5b96b65ec03187a8f1c8150df6af">ramp</a> = <a class="el" href="group___c_t_r_l___r_a_m_p.html#ga1840710b498e45a6efb92e9d45c4a480">RAMP_T_DEFALUTS</a></td></tr>
+<tr class="memitem:ae9f020f8f900850ab1aaf6325313a153" id="r_ae9f020f8f900850ab1aaf6325313a153"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9f020f8f900850ab1aaf6325313a153">ua</a></td></tr>
+<tr class="memitem:a04940fd14ddbfdf46e286a74e8ddb951" id="r_a04940fd14ddbfdf46e286a74e8ddb951"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04940fd14ddbfdf46e286a74e8ddb951">ub</a></td></tr>
+<tr class="memitem:ac0d2d6db4bd6e92c1d01104d25380edd" id="r_ac0d2d6db4bd6e92c1d01104d25380edd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0d2d6db4bd6e92c1d01104d25380edd">uc</a></td></tr>
+<tr class="memitem:a1d212cb48f66ca98d4232df9a4ca86ee" id="r_a1d212cb48f66ca98d4232df9a4ca86ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d212cb48f66ca98d4232df9a4ca86ee">ia</a></td></tr>
+<tr class="memitem:af41515eafd6ae12db6821a57927a3bb6" id="r_af41515eafd6ae12db6821a57927a3bb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af41515eafd6ae12db6821a57927a3bb6">ib</a></td></tr>
+<tr class="memitem:a3b662179ce39444e8c5845149c3c04fe" id="r_a3b662179ce39444e8c5845149c3c04fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b662179ce39444e8c5845149c3c04fe">ic</a></td></tr>
+<tr class="memitem:aae1e616b45b6e2efa066845be61cb17f" id="r_aae1e616b45b6e2efa066845be61cb17f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae1e616b45b6e2efa066845be61cb17f">phi</a></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="a4ccda0eb51b96b9a45e50d01764249b6" name="a4ccda0eb51b96b9a45e50d01764249b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ccda0eb51b96b9a45e50d01764249b6">&#9670;&#160;</a></span>ADC_EOC_ISR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">interrupt void ADC_EOC_ISR </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html">280049C/Test_Projects/Power_Test/main.c</a> 第 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html#l00101">101</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6288eba0f8e8ad3ab1544ad731eb7667" name="a6288eba0f8e8ad3ab1544ad731eb7667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6288eba0f8e8ad3ab1544ad731eb7667">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html">280049C/Test_Projects/Power_Test/main.c</a> 第 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html#l00020">20</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="280049_c_2_test___projects_2_power___test_2main_8c_a6288eba0f8e8ad3ab1544ad731eb7667_cgraph.png" border="0" usemap="#a280049_c_2_test___projects_2_power___test_2main_8c_a6288eba0f8e8ad3ab1544ad731eb7667_cgraph" loading="lazy" alt=""/></div>
+<map name="a280049_c_2_test___projects_2_power___test_2main_8c_a6288eba0f8e8ad3ab1544ad731eb7667_cgraph" id="a280049_c_2_test___projects_2_power___test_2main_8c_a6288eba0f8e8ad3ab1544ad731eb7667_cgraph">
+<area shape="rect" title=" " alt="" coords="5,240,55,268"/>
+<area shape="rect" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#ga92e2fdf15c3588b2eed024a8e326f1bb" title="单相功率分析" alt="" coords="121,5,252,33"/>
+<area shape="poly" title=" " alt="" coords="29,239,34,201,45,149,66,93,81,67,101,44,106,39,110,43,105,48,86,70,71,95,50,150,39,202,35,240"/>
+<area shape="rect" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#ga4ec895261026b009d486394941bb6213" title="配置单相功率分析模块" alt="" coords="123,109,250,137"/>
+<area shape="poly" title=" " alt="" coords="35,238,60,194,78,169,101,148,110,142,113,146,104,152,82,173,64,197,40,241"/>
+<area shape="rect" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#ga5320e7b3d2297e36e52c63abb77a172b" title="三相功率分析" alt="" coords="121,57,252,85"/>
+<area shape="poly" title=" " alt="" coords="31,239,38,209,52,171,72,131,101,96,107,91,110,95,105,100,76,134,57,173,44,211,36,240"/>
+<area shape="rect" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#ga6a8f10ab0543c90044eb7ffc22596a44" title="配置三相功率分析模块" alt="" coords="123,161,250,189"/>
+<area shape="poly" title=" " alt="" coords="46,237,71,218,101,199,117,192,119,197,104,204,74,222,50,241"/>
+<area shape="rect" href="group___c_t_r_l___r_a_m_p.html#ga21b703f8fdc6af4dca08016d4d74b154" title="产生参考相位" alt="" coords="145,213,228,241"/>
+<area shape="poly" title=" " alt="" coords="55,247,129,234,130,239,56,252"/>
+<area shape="rect" href="group___c_t_r_l___r_a_m_p.html#gab4cf5a44777a203a846f091f53122efb" title="set parameters,frequent in Hz" alt="" coords="147,265,226,293"/>
+<area shape="poly" title=" " alt="" coords="56,255,133,268,132,273,55,260"/>
+<area shape="rect" href="group___c_t_r_l___v_o_f_a.html#ga77c9aea85bbaf41bbce8fc26c9cf846e" title="初始化结构体" alt="" coords="147,317,226,345"/>
+<area shape="poly" title=" " alt="" coords="50,266,74,284,104,302,133,314,131,319,101,307,72,289,46,270"/>
+<area shape="rect" href="group___c_t_r_l___v_o_f_a.html#gae9fe0fa8baf50f14038971031d27738d" title="请求VOFA发送数据" alt="" coords="116,369,258,397"/>
+<area shape="poly" title=" " alt="" coords="40,267,64,310,82,334,104,354,113,360,110,364,101,359,78,338,60,313,35,269"/>
+<area shape="rect" href="group___c_t_r_l___v_o_f_a.html#ga29a019e9a9005773e370e6b2013f60be" title="使用 Justfloat 协议, 向 VOFA 上位机发送数据" alt="" coords="146,421,228,449"/>
+<area shape="poly" title=" " alt="" coords="37,267,44,297,57,334,77,373,104,406,132,422,129,427,101,411,72,376,52,336,39,298,31,269"/>
+<area shape="rect" href="group___c_t_r_l___v_o_f_a.html#ga8b37353f7cbbd178e8f995dba7eaae73" title="通道输入源关联变量" alt="" coords="103,473,271,501"/>
+<area shape="poly" title=" " alt="" coords="35,268,39,306,50,357,71,411,86,437,105,459,109,463,106,467,101,462,82,440,66,414,45,359,34,307,29,268"/>
+<area shape="rect" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#ga814a2ecd31dc63f6628e1c1992ae03d2" title="计算四阶巴特沃斯滤波器" alt="" coords="326,32,448,60"/>
+<area shape="poly" title=" " alt="" coords="253,25,311,33,310,38,253,31"/>
+<area shape="rect" href="group___c_t_r_l___d_c_l.html#gafe1ce8142d1bd331ed3d8ac685825e94" title="Executes a full 2nd order Direct Form 2 controller on the FPU32 Implemented as an external assembly m..." alt="" coords="504,32,628,60"/>
+<area shape="poly" title=" " alt="" coords="449,43,489,43,489,48,449,48"/>
+<area shape="rect" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#gafc0739bfdbb38341b3468e791b787d2f" title="配置功率分析结构体内滤波器, 四阶巴特沃斯滤波器拆分为两个DF22实现" alt="" coords="328,136,446,164"/>
+<area shape="poly" title=" " alt="" coords="251,129,313,137,312,143,250,134"/>
+<area shape="rect" href="group___c_t_r_l___d_c_l.html#ga745080d40225b83e6c78e9d2f563a762" title="Loads DF22 tuning parameters Implemented as assembly module" alt="" coords="503,136,629,164"/>
+<area shape="poly" title=" " alt="" coords="447,147,488,147,488,152,447,152"/>
+<area shape="poly" title=" " alt="" coords="253,60,310,53,311,58,253,66"/>
+<area shape="poly" title=" " alt="" coords="250,165,312,157,313,162,251,170"/>
+<area shape="rect" href="group___d_r_v___f28335___u_a_r_t.html#gab0704d434e9b7a441faa3aac78d037b3" title="send data to txfifo" alt="" coords="319,421,455,449"/>
+<area shape="poly" title=" " alt="" coords="229,432,304,432,304,438,229,438"/>
+<area shape="rect" href="group___d_r_v___f28335___u_a_r_t.html#ga4c86107cd49c2644ef6abd5d0c6f7194" title="Send Char" alt="" coords="508,421,624,449"/>
+<area shape="poly" title=" " alt="" coords="456,432,492,432,492,438,456,438"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">变量说明</h2>
+<a id="a1d212cb48f66ca98d4232df9a4ca86ee" name="a1d212cb48f66ca98d4232df9a4ca86ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d212cb48f66ca98d4232df9a4ca86ee">&#9670;&#160;</a></span>ia</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> ia</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html">280049C/Test_Projects/Power_Test/main.c</a> 第 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af41515eafd6ae12db6821a57927a3bb6" name="af41515eafd6ae12db6821a57927a3bb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af41515eafd6ae12db6821a57927a3bb6">&#9670;&#160;</a></span>ib</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> ib</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html">280049C/Test_Projects/Power_Test/main.c</a> 第 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3b662179ce39444e8c5845149c3c04fe" name="a3b662179ce39444e8c5845149c3c04fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b662179ce39444e8c5845149c3c04fe">&#9670;&#160;</a></span>ic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> ic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html">280049C/Test_Projects/Power_Test/main.c</a> 第 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aae1e616b45b6e2efa066845be61cb17f" name="aae1e616b45b6e2efa066845be61cb17f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae1e616b45b6e2efa066845be61cb17f">&#9670;&#160;</a></span>phi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> phi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html">280049C/Test_Projects/Power_Test/main.c</a> 第 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9180379b3c081f7e59029331457d3dba" name="a9180379b3c081f7e59029331457d3dba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9180379b3c081f7e59029331457d3dba">&#9670;&#160;</a></span>power_1ph</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_o_w_e_r___f_i_l__1_p_h___t.html">POWER_FIL_1PH_T</a> power_1ph = <a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#gabb3fffcab66341fa7f2b59b62de12fce">POWER_FIL_1PH_T_DEFAULTS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html">280049C/Test_Projects/Power_Test/main.c</a> 第 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad3373493bf11b2b4ab6f5a30e5314300" name="ad3373493bf11b2b4ab6f5a30e5314300"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3373493bf11b2b4ab6f5a30e5314300">&#9670;&#160;</a></span>power_3ph</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_o_w_e_r___f_i_l__3_p_h___t.html">POWER_FIL_3PH_T</a> power_3ph = <a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#ga6948bb147da77967f99e0d37092f1747">POWER_FIL_3PH_T_DEFAULTS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html">280049C/Test_Projects/Power_Test/main.c</a> 第 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html#l00012">12</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab17b5b96b65ec03187a8f1c8150df6af" name="ab17b5b96b65ec03187a8f1c8150df6af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab17b5b96b65ec03187a8f1c8150df6af">&#9670;&#160;</a></span>ramp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_r_a_m_p___t.html">RAMP_T</a> ramp = <a class="el" href="group___c_t_r_l___r_a_m_p.html#ga1840710b498e45a6efb92e9d45c4a480">RAMP_T_DEFALUTS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html">280049C/Test_Projects/Power_Test/main.c</a> 第 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae9f020f8f900850ab1aaf6325313a153" name="ae9f020f8f900850ab1aaf6325313a153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f020f8f900850ab1aaf6325313a153">&#9670;&#160;</a></span>ua</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> ua</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html">280049C/Test_Projects/Power_Test/main.c</a> 第 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a04940fd14ddbfdf46e286a74e8ddb951" name="a04940fd14ddbfdf46e286a74e8ddb951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04940fd14ddbfdf46e286a74e8ddb951">&#9670;&#160;</a></span>ub</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> ub</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html">280049C/Test_Projects/Power_Test/main.c</a> 第 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac0d2d6db4bd6e92c1d01104d25380edd" name="ac0d2d6db4bd6e92c1d01104d25380edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0d2d6db4bd6e92c1d01104d25380edd">&#9670;&#160;</a></span>uc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> uc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html">280049C/Test_Projects/Power_Test/main.c</a> 第 <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_5506101b76382283adbe76592e28ea78.html">Projects</a></li><li class="navelem"><a href="dir_10b7f8b65d5f49054bb78df1150f335c.html">280049C</a></li><li class="navelem"><a href="dir_9b9a37027f3cd2329add90edef8ba42f.html">Test_Projects</a></li><li class="navelem"><a href="dir_7a71ea4c9e3a7595891e137a90d97148.html">Power_Test</a></li><li class="navelem"><a href="280049_c_2_test___projects_2_power___test_2main_8c.html">main.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

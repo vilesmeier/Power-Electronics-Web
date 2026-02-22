@@ -1,0 +1,7 @@
+<map id="例程与工程库" name="例程与工程库">
+<area shape="rect" id="Node000002" href="$group___n_u_e_d_c.html" title="电力电子方向备赛资料库, 代码, 工程, 测试例程部分" alt="" coords="5,55,118,79"/>
+<area shape="rect" id="Node000001" title="包含每个主控的工程模板, 模块代码测试工程, 对应拓扑/赛题的代码工程. 测试工程兼做该模块例程." alt="" coords="166,55,265,79"/>
+<area shape="rect" id="Node000003" href="$group___p_r_j___t_e_m_p_l_a_t_e.html" title="新工程模板, 创建工程时可以复制工程后重命名" alt="" coords="313,5,399,30"/>
+<area shape="rect" id="Node000004" href="$group___p_r_j___t_e_s_t.html" title="测试工程, 作为模块代码的仿真验证以及调用示例" alt="" coords="313,55,399,79"/>
+<area shape="rect" id="Node000005" href="$group___p_r_j___t_o_p_o_l_o_g_y.html" title="实际应用工程, 对应特定拓扑或特定赛题" alt="" coords="313,104,399,129"/>
+</map>

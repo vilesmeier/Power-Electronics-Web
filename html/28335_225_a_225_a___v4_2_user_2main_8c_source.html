@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: main.c 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('28335_225_a_225_a___v4_2_user_2main_8c_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">28335/25A/25A_V4/User/main.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="28335_225_a_225_a___v4_2_user_2main_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="global_8h.html">global.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="28335_225_a_225_a___v4_2_user_2main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">    3</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="28335_225_a_225_a___v4_2_user_2main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">main</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="comment">//Power On Reset</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    InitSysCtrl();</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    InitGpio();</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    DINT;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    InitPieCtrl();</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    IER = 0x0000;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    IFR = 0x0000;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    InitPieVectTable();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    EINT;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    ERTM;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//    //flash init</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//    //select BootLoader!</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//    InitFlash();</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//    memcpy(&amp;RamfuncsRunStart, &amp;RamfuncsLoadStart, (Uint32)&amp;RamfuncsLoadSize);</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">//Control Loop Init</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">//Current State</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="group___s_y_s___s_t_a_t_e.html#ga4448d628c7c103a33e51e52f2e111de4">State_Init</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">//RAMP</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    Ramp_Init(&amp;<a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#ae64cb3b8ccb553621432a97009f6d3d4">ramp</a>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_function" href="group___c_t_r_l___r_a_m_p.html#gab4cf5a44777a203a846f091f53122efb">Ramp_Set</a>(&amp;<a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#ae64cb3b8ccb553621432a97009f6d3d4">ramp</a>, 50, 20000);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">//RMS</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    RMS_Init(&amp;rms_A);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    RMS_Init(&amp;rms_C);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    RMS_Init(&amp;rms_Test);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">//PR</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    PR_Init(&amp;pr_vol_A);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    PR_Set(&amp;pr_vol_A,0.1f,1000.0f,0.1*2*PI,100*PI,50,20000);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    PR_Init(&amp;pr_vol_C);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    PR_Set(&amp;pr_vol_C,0.1f,1000.0f,0.1*2*PI,100*PI,50,20000);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    PR_Init(&amp;pr_VC_A);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    PR_Set(&amp;pr_VC_A,0.02f,0.0f,2*PI,100*PI,50,20000);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    PR_Init(&amp;pr_VC_C);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    PR_Set(&amp;pr_VC_C,0.02f,0.0f,2*PI,100*PI,50,20000);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    PR_Init(&amp;pr_rec_a);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    PR_Set(&amp;pr_rec_a,0.001f,1.0f,2*PI,100*PI,50,20000);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    PR_Init(&amp;pr_rec_c);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    PR_Set(&amp;pr_rec_c,0.001f,1.0f,2*PI,100*PI,50,20000);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// SVPWM</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_function" href="svpwm_8c.html#ac04fc8d47553face238e4f188b22dea6">SVPWM_Init</a>(&amp;svpwm);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_function" href="svpwm_8c.html#ac04fc8d47553face238e4f188b22dea6">SVPWM_Init</a>(&amp;svpwm_rec);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">//GUI</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="group___c_t_r_l___o_l_e_d.html#ga7372e46460a371e4d94a0ee7f5f1a1fd">OLED_Init</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_function" href="group___c_t_r_l___o_l_e_d.html#ga6960de38d41ba87c52e40f8bd4b094d3">OLED_Clear</a>();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_function" href="group___c_t_r_l___o_l_e_d.html#ga7869abbb812853dbd5673ecd64ccfeab">OLED_ShowString</a>(0,0,<span class="stringliteral">&quot;freq=&quot;</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_function" href="group___c_t_r_l___o_l_e_d.html#ga7869abbb812853dbd5673ecd64ccfeab">OLED_ShowString</a>(0,1,<span class="stringliteral">&quot;Mode=&quot;</span>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_function" href="group___d_r_v___f28335___u_a_r_t.html#gad7d9735eb6d12d58232f616020798946">UART_Init</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_function" href="group___d_r_v___f28335___u_a_r_t.html#ga62cd2632b61f0f11f05a028d7d7cea13">UART_Set</a>(1152000);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">//Pherial Init</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    XINT_GPIO_Init();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_function" href="group___d_r_v___f28335___a_d_c.html#ga5137b551f1b83b0f4d8df7d071a3d3a6">ADC_Init</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_function" href="group___d_r_v___f28335___p_w_m.html#ga16a6a31227f60674257e9715ee0c1638">EPWM_Init</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">//Enable Interrupt And JTAG Debug</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    EINT;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    ERTM;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">while</span>(1)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="comment">// get key state</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO30_CUR = GpioDataRegs.GPADAT.bit.GPIO30;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO31_CUR = GpioDataRegs.GPADAT.bit.GPIO31;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO48_CUR = GpioDataRegs.GPBDAT.bit.GPIO48;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO49_CUR = GpioDataRegs.GPBDAT.bit.GPIO49;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="comment">// clear flag</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.FLAG_FREQ_CHANGE = FREQ_NO_CHANGE;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="comment">// set period</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">if</span>((<a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO30_CUR == 0) &amp;&amp; (<a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO30_PRE == 1))</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq = 1.0f + <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq &gt; 100.0f)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq = 20.0f;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.FLAG_FREQ_CHANGE = FREQ_CHANGE;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">if</span>((<a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO31_CUR == 0) &amp;&amp; (<a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO31_PRE == 1))</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq = <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq - 1.0f;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq &lt; 20.0f)</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq = 100.0f;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.FLAG_FREQ_CHANGE = FREQ_CHANGE;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">if</span>((<a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO49_CUR == 0) &amp;&amp; (<a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO49_PRE == 1))</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq = 100.0f;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.FLAG_FREQ_CHANGE = FREQ_CHANGE;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">if</span>((<a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO48_CUR == 0) &amp;&amp; (<a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO48_PRE == 1))</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq = 20.0f;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.FLAG_FREQ_CHANGE = FREQ_CHANGE;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="comment">// reconfig control loop</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.FLAG_FREQ_CHANGE == FREQ_CHANGE)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <a class="code hl_function" href="group___c_t_r_l___r_a_m_p.html#gab4cf5a44777a203a846f091f53122efb">Ramp_Set</a>(&amp;<a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#ae64cb3b8ccb553621432a97009f6d3d4">ramp</a>, <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq, 20000);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            PR_Set(&amp;pr_vol_A,0.1f,  1000.0f, 0.1*2*PI, <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq * 2 * PI,50,20000);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            PR_Set(&amp;pr_vol_C,0.1f,  1000.0f, 0.1*2*PI, <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq * 2 * PI,50,20000);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            PR_Set(&amp;pr_VC_A, 0.02f, 0.0f,    2*PI,     <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq * 2 * PI,50,20000);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            PR_Set(&amp;pr_VC_C, 0.02f, 0.0f,    2*PI,     <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq * 2 * PI,50,20000);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            PR_Set(&amp;pr_rec_a,0.1f,  1000.0f, 0.1*2*PI, <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq * 2 * PI,50,20000);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            PR_Set(&amp;pr_rec_c,0.1f,  1000.0f, 0.1*2*PI, <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq * 2 * PI,50,20000);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="comment">// OLED</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <a class="code hl_function" href="group___d_r_v___f28335___o_l_e_d.html#gad5adf82299744d5a93f0ed25ed5c71aa">OLED_ShowFloat</a>(31,0,<a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.freq,4,1);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.FLAG_REC_EN == MODE_ENABLE)</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            <a class="code hl_function" href="group___c_t_r_l___o_l_e_d.html#ga7869abbb812853dbd5673ecd64ccfeab">OLED_ShowString</a>(31,1,<span class="stringliteral">&quot;ENA&quot;</span>);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <a class="code hl_function" href="group___c_t_r_l___o_l_e_d.html#ga7869abbb812853dbd5673ecd64ccfeab">OLED_ShowString</a>(31,1,<span class="stringliteral">&quot;DIS&quot;</span>);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="comment">// vofa debug</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <span class="comment">// update state</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO30_PRE = <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO30_CUR;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO31_PRE = <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO31_CUR;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO48_PRE = <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO48_CUR;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO49_PRE = <a class="code hl_variable" href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a>.flag.bits.GPIO49_CUR;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    }</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>}</div>
+</div>
+<div class="ttc" id="a280049_c_2_test___projects_2_digital___filter___test_2main_8c_html_ae64cb3b8ccb553621432a97009f6d3d4"><div class="ttname"><a href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#ae64cb3b8ccb553621432a97009f6d3d4">ramp</a></div><div class="ttdeci">RAMP ramp</div><div class="ttdef"><b>定义</b> <a href="280049_c_2_test___projects_2_digital___filter___test_2main_8c_source.html#l00026">280049C/Test_Projects/Digital_Filter_Test/main.c:26</a></div></div>
+<div class="ttc" id="a28335_225_a_225_a___v4_2_user_2main_8c_html_a6288eba0f8e8ad3ab1544ad731eb7667"><div class="ttname"><a href="28335_225_a_225_a___v4_2_user_2main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">main</a></div><div class="ttdeci">void main(void)</div><div class="ttdef"><b>定义</b> <a href="#l00003">28335/25A/25A_V4/User/main.c:3</a></div></div>
+<div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div><div class="ttdoc">全局变量声明, 头文件打包, 全局通用宏定义</div></div>
+<div class="ttc" id="agroup___c_t_r_l___o_l_e_d_html_ga6960de38d41ba87c52e40f8bd4b094d3"><div class="ttname"><a href="group___c_t_r_l___o_l_e_d.html#ga6960de38d41ba87c52e40f8bd4b094d3">OLED_Clear</a></div><div class="ttdeci">void OLED_Clear(void)</div><div class="ttdoc">将OLED显存数组全部清零</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00232">Control_Driver/oled/oled.c:232</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___o_l_e_d_html_ga7372e46460a371e4d94a0ee7f5f1a1fd"><div class="ttname"><a href="group___c_t_r_l___o_l_e_d.html#ga7372e46460a371e4d94a0ee7f5f1a1fd">OLED_Init</a></div><div class="ttdeci">void OLED_Init(void)</div><div class="ttdoc">OLED初始化</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00088">Control_Driver/oled/oled.c:88</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___o_l_e_d_html_ga7869abbb812853dbd5673ecd64ccfeab"><div class="ttname"><a href="group___c_t_r_l___o_l_e_d.html#ga7869abbb812853dbd5673ecd64ccfeab">OLED_ShowString</a></div><div class="ttdeci">void OLED_ShowString(int16_t X, int16_t Y, char *String)</div><div class="ttdoc">OLED显示字符串</div><div class="ttdef"><b>定义</b> <a href="_control___driver_2oled_2oled_8c_source.html#l00337">Control_Driver/oled/oled.c:337</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___r_a_m_p_html_gab4cf5a44777a203a846f091f53122efb"><div class="ttname"><a href="group___c_t_r_l___r_a_m_p.html#gab4cf5a44777a203a846f091f53122efb">Ramp_Set</a></div><div class="ttdeci">void Ramp_Set(RAMP_T *ramp, float32_t grad_freq, float32_t isr_freq)</div><div class="ttdoc">set parameters,frequent in Hz</div><div class="ttdef"><b>定义</b> <a href="ramp_8c_source.html#l00013">ramp.c:13</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___a_d_c_html_ga5137b551f1b83b0f4d8df7d071a3d3a6"><div class="ttname"><a href="group___d_r_v___f28335___a_d_c.html#ga5137b551f1b83b0f4d8df7d071a3d3a6">ADC_Init</a></div><div class="ttdeci">void ADC_Init(void)</div><div class="ttdoc">ADC Init</div><div class="ttdef"><b>定义</b> <a href="adc_8c_source.html#l00013">adc.c:13</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___o_l_e_d_html_gad5adf82299744d5a93f0ed25ed5c71aa"><div class="ttname"><a href="group___d_r_v___f28335___o_l_e_d.html#gad5adf82299744d5a93f0ed25ed5c71aa">OLED_ShowFloat</a></div><div class="ttdeci">void OLED_ShowFloat(Uint8 x, Uint8 y, float32 num, Uint8 len, Uint8 Flen)</div><div class="ttdoc">display a positive float</div><div class="ttdef"><b>定义</b> <a href="_peripheral___driver_228335_2_o_l_e_d_2oled_8c_source.html#l00206">Peripheral_Driver/28335/OLED/oled.c:206</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___p_w_m_html_ga16a6a31227f60674257e9715ee0c1638"><div class="ttname"><a href="group___d_r_v___f28335___p_w_m.html#ga16a6a31227f60674257e9715ee0c1638">EPWM_Init</a></div><div class="ttdeci">void EPWM_Init(void)</div><div class="ttdoc">init interrupt, pwm1-6, tb sync and adc trigger</div><div class="ttdef"><b>定义</b> <a href="pwm_8c_source.html#l00204">pwm.c:204</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___u_a_r_t_html_ga62cd2632b61f0f11f05a028d7d7cea13"><div class="ttname"><a href="group___d_r_v___f28335___u_a_r_t.html#ga62cd2632b61f0f11f05a028d7d7cea13">UART_Set</a></div><div class="ttdeci">void UART_Set(Uint32 baud)</div><div class="ttdoc">config baud rate</div><div class="ttdef"><b>定义</b> <a href="uart_8c_source.html#l00053">uart.c:53</a></div></div>
+<div class="ttc" id="agroup___d_r_v___f28335___u_a_r_t_html_gad7d9735eb6d12d58232f616020798946"><div class="ttname"><a href="group___d_r_v___f28335___u_a_r_t.html#gad7d9735eb6d12d58232f616020798946">UART_Init</a></div><div class="ttdeci">void UART_Init()</div><div class="ttdoc">Init SCI-c</div><div class="ttdef"><b>定义</b> <a href="uart_8c_source.html#l00004">uart.c:4</a></div></div>
+<div class="ttc" id="agroup___s_y_s___s_t_a_t_e_html_ga4448d628c7c103a33e51e52f2e111de4"><div class="ttname"><a href="group___s_y_s___s_t_a_t_e.html#ga4448d628c7c103a33e51e52f2e111de4">State_Init</a></div><div class="ttdeci">void State_Init(void)</div><div class="ttdoc">全局状态机初始化</div><div class="ttdef"><b>定义</b> <a href="state_8c_source.html#l00017">state.c:17</a></div></div>
+<div class="ttc" id="astate_8c_html_a390ef51e2cfd455504254347218a71ca"><div class="ttname"><a href="state_8c.html#a390ef51e2cfd455504254347218a71ca">state</a></div><div class="ttdeci">STATE state</div><div class="ttdef"><b>定义</b> <a href="state_8c_source.html#l00015">state.c:15</a></div></div>
+<div class="ttc" id="asvpwm_8c_html_ac04fc8d47553face238e4f188b22dea6"><div class="ttname"><a href="svpwm_8c.html#ac04fc8d47553face238e4f188b22dea6">SVPWM_Init</a></div><div class="ttdeci">void SVPWM_Init(SVPWM *svpwm)</div><div class="ttdoc">结构体初始化</div><div class="ttdef"><b>定义</b> <a href="svpwm_8c_source.html#l00012">svpwm.c:12</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_5506101b76382283adbe76592e28ea78.html">Projects</a></li><li class="navelem"><a href="dir_7dd5ed44a494c219ca67de2f65681ad1.html">28335</a></li><li class="navelem"><a href="dir_e496776680680bb04a6f9997a6ad8319.html">25A</a></li><li class="navelem"><a href="dir_04b04e45589660290c6f5524b936ecb3.html">25A_V4</a></li><li class="navelem"><a href="dir_bcbdf95c7c999b7371c414a9127ef83f.html">User</a></li><li class="navelem"><a href="28335_225_a_225_a___v4_2_user_2main_8c.html">main.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

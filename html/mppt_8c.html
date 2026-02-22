@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: mppt.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('mppt_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">mppt.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>MPPT(最大功率点跟踪)算法实现文件 移植自TI 的 Solar库, 参考ti官方用户手册  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="mppt_8h_source.html">mppt.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+mppt.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="mppt_8c__incl.png" border="0" usemap="#amppt_8c" loading="lazy" alt=""/></div>
+<map name="amppt_8c" id="amppt_8c">
+<area shape="rect" title="MPPT(最大功率点跟踪)算法实现文件 移植自TI 的 Solar库, 参考ti官方用户手册" alt="" coords="62,5,122,33"/>
+<area shape="rect" href="mppt_8h.html" title="TI Solar(最大功率点跟踪)库移植参考官方用户手册" alt="" coords="61,81,122,109"/>
+<area shape="poly" title=" " alt="" coords="94,34,94,65,89,65,89,34"/>
+<area shape="rect" title=" " alt="" coords="5,157,69,184"/>
+<area shape="poly" title=" " alt="" coords="84,111,58,146,54,142,80,108"/>
+<area shape="rect" title=" " alt="" coords="92,157,200,184"/>
+<area shape="poly" title=" " alt="" coords="104,108,130,142,125,146,99,111"/>
+</map>
+</div>
+</div>
+<p><a href="mppt_8c_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga28922b765639cc8da8c74190611a74fb" id="r_ga28922b765639cc8da8c74190611a74fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___m_p_p_t.html#ga28922b765639cc8da8c74190611a74fb">MPPT_INCC_Init</a> (<a class="el" href="struct_m_p_p_t___i_n_c_c___t.html">MPPT_INCC_T</a> *v)</td></tr>
+<tr class="memdesc:ga28922b765639cc8da8c74190611a74fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
+<tr class="memitem:ga7b319652fa0e61e60ab0dad6fa4d5885" id="r_ga7b319652fa0e61e60ab0dad6fa4d5885"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___m_p_p_t.html#ga7b319652fa0e61e60ab0dad6fa4d5885">MPPT_INCC_Set</a> (<a class="el" href="struct_m_p_p_t___i_n_c_c___t.html">MPPT_INCC_T</a> *v, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> step, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> max, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> min)</td></tr>
+<tr class="memdesc:ga7b319652fa0e61e60ab0dad6fa4d5885"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置结构体参数  <br /></td></tr>
+<tr class="memitem:ga7cf4e64a7062842bf128a3d31c5e3278" id="r_ga7cf4e64a7062842bf128a3d31c5e3278"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___m_p_p_t.html#ga7cf4e64a7062842bf128a3d31c5e3278">MPPT_INCC_I_Init</a> (<a class="el" href="struct_m_p_p_t___i_n_c_c___i___t.html">MPPT_INCC_I_T</a> *v)</td></tr>
+<tr class="memdesc:ga7cf4e64a7062842bf128a3d31c5e3278"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
+<tr class="memitem:gab1d9cacd540612d4ce8b768b7cf7bd78" id="r_gab1d9cacd540612d4ce8b768b7cf7bd78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___m_p_p_t.html#gab1d9cacd540612d4ce8b768b7cf7bd78">MPPT_INCC_I_Set</a> (<a class="el" href="struct_m_p_p_t___i_n_c_c___i___t.html">MPPT_INCC_I_T</a> *v, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> step, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> max, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> min)</td></tr>
+<tr class="memdesc:gab1d9cacd540612d4ce8b768b7cf7bd78"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置结构体参数  <br /></td></tr>
+<tr class="memitem:gac907e721c25c7cfa1e7699ced3a1bd54" id="r_gac907e721c25c7cfa1e7699ced3a1bd54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___m_p_p_t.html#gac907e721c25c7cfa1e7699ced3a1bd54">MPPT_PNO_Init</a> (<a class="el" href="struct_m_p_p_t___p_n_o___t.html">MPPT_PNO_T</a> *v)</td></tr>
+<tr class="memdesc:gac907e721c25c7cfa1e7699ced3a1bd54"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体初始化  <br /></td></tr>
+<tr class="memitem:ga0130f4cdfdcaa4c1db763311bea2b92b" id="r_ga0130f4cdfdcaa4c1db763311bea2b92b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___m_p_p_t.html#ga0130f4cdfdcaa4c1db763311bea2b92b">MPPT_PNO_Set</a> (<a class="el" href="struct_m_p_p_t___p_n_o___t.html">MPPT_PNO_T</a> *v, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> step, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> max, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> min, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> delta_p_min)</td></tr>
+<tr class="memdesc:ga0130f4cdfdcaa4c1db763311bea2b92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置结构体参数  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>MPPT(最大功率点跟踪)算法实现文件 移植自TI 的 Solar库, 参考ti官方用户手册 </p>
+<dl class="section author"><dt>作者</dt><dd>Mao Chenbin (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="mppt_8c_source.html">mppt.c</a> 中定义.</p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_a2fa5afdddbe638eace2099c238643e0.html">mppt</a></li><li class="navelem"><a href="mppt_8c.html">mppt.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

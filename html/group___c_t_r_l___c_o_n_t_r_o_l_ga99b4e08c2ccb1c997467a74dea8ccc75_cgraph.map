@@ -1,0 +1,11 @@
+<map id="DCL_PIR_Run" name="DCL_PIR_Run">
+<area shape="rect" id="Node000001" title="执行 PIR 控制器" alt="" coords="5,32,107,60"/>
+<area shape="rect" id="Node000002" href="$group___c_t_r_l___c_o_n_t_r_o_l.html#gaaf4449a80e34897c9fd5f97bd0571e9a" title="执行 PI_T 控制器" alt="" coords="156,5,250,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,34,140,28,141,33,107,39"/>
+<area shape="rect" id="Node000004" href="$group___c_t_r_l___c_o_n_t_r_o_l.html#gaa509a806733fde7a174aa8311280017d" title="执行 QPR 控制器" alt="" coords="155,57,251,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="107,52,140,58,139,63,106,57"/>
+<area shape="rect" id="Node000003" href="$group___c_t_r_l___d_c_l.html#ga8e97e28b063ef52e0a59429cccc9c389" title="Executes a series form PI controller on the FPU32 Implemented as an external assembly module" alt="" coords="308,5,413,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="250,16,292,16,292,22,250,22"/>
+<area shape="rect" id="Node000005" href="$group___c_t_r_l___d_c_l.html#gafe1ce8142d1bd331ed3d8ac685825e94" title="Executes a full 2nd order Direct Form 2 controller on the FPU32 Implemented as an external assembly m..." alt="" coords="299,57,422,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="252,68,283,68,283,74,252,74"/>
+</map>

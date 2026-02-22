@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: transform.c 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.0</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('transform_8c_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">transform.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="transform_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// Flash 启动支持, 将函数搬运至RAM</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma CODE_SECTION(DQ_Init, &quot;.TI.ramfunc&quot;);</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="transform_8h.html">transform.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#ga70999c60ebcaf97a22e60fe42bd5e169">   12</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#ga70999c60ebcaf97a22e60fe42bd5e169">DQ_Init</a>(<a class="code hl_struct" href="struct_d_q.html">DQ</a>* dq)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    dq-&gt;<a class="code hl_variable" href="struct_d_q.html#acc15f6169bdb7dfa9f55f5974559d771">a</a> = 0;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    dq-&gt;<a class="code hl_variable" href="struct_d_q.html#aa2803cc4cddc4ad21a0ef5fec72405c3">b</a> = 0;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    dq-&gt;<a class="code hl_variable" href="struct_d_q.html#a1aded4068d266a4dc8948695ca06e15a">c</a> = 0;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    dq-&gt;<a class="code hl_variable" href="struct_d_q.html#a8d48064f20c256ee70c0340201944f05">alpha</a> = 0;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    dq-&gt;<a class="code hl_variable" href="struct_d_q.html#a6bbac8cb900c1e2e5e33d609288e28e1">beta</a> = 0;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    dq-&gt;<a class="code hl_variable" href="struct_d_q.html#ade05fa7d0852511fa4c89943726867a3">zero</a> = 0;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    dq-&gt;<a class="code hl_variable" href="struct_d_q.html#a145def2452bd485accfca0743b354596">sin</a> = 0;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    dq-&gt;<a class="code hl_variable" href="struct_d_q.html#a61371fbd4d8d45c19504bd2bb55779f7">cos</a> = 0;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    dq-&gt;<a class="code hl_variable" href="struct_d_q.html#a767848f6efd85a10affd2f31ace3234c">d</a> = 0;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    dq-&gt;<a class="code hl_variable" href="struct_d_q.html#ae2eb8f5f4dc30164453cbd9c0f9d7b0a">q</a> = 0;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+</div>
+<div class="ttc" id="agroup___c_t_r_l___t_r_a_n_s_f_o_r_m_html_ga70999c60ebcaf97a22e60fe42bd5e169"><div class="ttname"><a href="group___c_t_r_l___t_r_a_n_s_f_o_r_m.html#ga70999c60ebcaf97a22e60fe42bd5e169">DQ_Init</a></div><div class="ttdeci">void DQ_Init(DQ *dq)</div><div class="ttdoc">结构体初始化</div><div class="ttdef"><b>定义</b> <a href="#l00012">transform.c:12</a></div></div>
+<div class="ttc" id="astruct_d_q_html"><div class="ttname"><a href="struct_d_q.html">DQ</a></div><div class="ttdoc">坐标变换 结构体定义</div><div class="ttdef"><b>定义</b> <a href="transform_8h_source.html#l00022">transform.h:23</a></div></div>
+<div class="ttc" id="astruct_d_q_html_a145def2452bd485accfca0743b354596"><div class="ttname"><a href="struct_d_q.html#a145def2452bd485accfca0743b354596">DQ::sin</a></div><div class="ttdeci">float32_t sin</div><div class="ttdoc">电角度正弦值</div><div class="ttdef"><b>定义</b> <a href="transform_8h_source.html#l00032">transform.h:32</a></div></div>
+<div class="ttc" id="astruct_d_q_html_a1aded4068d266a4dc8948695ca06e15a"><div class="ttname"><a href="struct_d_q.html#a1aded4068d266a4dc8948695ca06e15a">DQ::c</a></div><div class="ttdeci">float32_t c</div><div class="ttdoc">C相分量, abc</div><div class="ttdef"><b>定义</b> <a href="transform_8h_source.html#l00026">transform.h:26</a></div></div>
+<div class="ttc" id="astruct_d_q_html_a61371fbd4d8d45c19504bd2bb55779f7"><div class="ttname"><a href="struct_d_q.html#a61371fbd4d8d45c19504bd2bb55779f7">DQ::cos</a></div><div class="ttdeci">float32_t cos</div><div class="ttdoc">电角度余弦值</div><div class="ttdef"><b>定义</b> <a href="transform_8h_source.html#l00033">transform.h:33</a></div></div>
+<div class="ttc" id="astruct_d_q_html_a6bbac8cb900c1e2e5e33d609288e28e1"><div class="ttname"><a href="struct_d_q.html#a6bbac8cb900c1e2e5e33d609288e28e1">DQ::beta</a></div><div class="ttdeci">float32_t beta</div><div class="ttdoc">beta轴, alpha-beta-0</div><div class="ttdef"><b>定义</b> <a href="transform_8h_source.html#l00028">transform.h:28</a></div></div>
+<div class="ttc" id="astruct_d_q_html_a767848f6efd85a10affd2f31ace3234c"><div class="ttname"><a href="struct_d_q.html#a767848f6efd85a10affd2f31ace3234c">DQ::d</a></div><div class="ttdeci">float32_t d</div><div class="ttdoc">d轴分量, dq0</div><div class="ttdef"><b>定义</b> <a href="transform_8h_source.html#l00030">transform.h:30</a></div></div>
+<div class="ttc" id="astruct_d_q_html_a8d48064f20c256ee70c0340201944f05"><div class="ttname"><a href="struct_d_q.html#a8d48064f20c256ee70c0340201944f05">DQ::alpha</a></div><div class="ttdeci">float32_t alpha</div><div class="ttdoc">alpha轴, alpha-beta-0</div><div class="ttdef"><b>定义</b> <a href="transform_8h_source.html#l00027">transform.h:27</a></div></div>
+<div class="ttc" id="astruct_d_q_html_aa2803cc4cddc4ad21a0ef5fec72405c3"><div class="ttname"><a href="struct_d_q.html#aa2803cc4cddc4ad21a0ef5fec72405c3">DQ::b</a></div><div class="ttdeci">float32_t b</div><div class="ttdoc">B相分量, abc</div><div class="ttdef"><b>定义</b> <a href="transform_8h_source.html#l00025">transform.h:25</a></div></div>
+<div class="ttc" id="astruct_d_q_html_acc15f6169bdb7dfa9f55f5974559d771"><div class="ttname"><a href="struct_d_q.html#acc15f6169bdb7dfa9f55f5974559d771">DQ::a</a></div><div class="ttdeci">float32_t a</div><div class="ttdoc">A相分量, abc</div><div class="ttdef"><b>定义</b> <a href="transform_8h_source.html#l00024">transform.h:24</a></div></div>
+<div class="ttc" id="astruct_d_q_html_ade05fa7d0852511fa4c89943726867a3"><div class="ttname"><a href="struct_d_q.html#ade05fa7d0852511fa4c89943726867a3">DQ::zero</a></div><div class="ttdeci">float32_t zero</div><div class="ttdoc">alpha-beta-0 / dq0 共用的零序分量轴</div><div class="ttdef"><b>定义</b> <a href="transform_8h_source.html#l00029">transform.h:29</a></div></div>
+<div class="ttc" id="astruct_d_q_html_ae2eb8f5f4dc30164453cbd9c0f9d7b0a"><div class="ttname"><a href="struct_d_q.html#ae2eb8f5f4dc30164453cbd9c0f9d7b0a">DQ::q</a></div><div class="ttdeci">float32_t q</div><div class="ttdoc">q轴分量, dq0</div><div class="ttdef"><b>定义</b> <a href="transform_8h_source.html#l00031">transform.h:31</a></div></div>
+<div class="ttc" id="atransform_8h_html"><div class="ttname"><a href="transform_8h.html">transform.h</a></div><div class="ttdoc">常用坐标变换</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_6533cbbd49c9582ba260be7240f8bf57.html">transform</a></li><li class="navelem"><a href="transform_8c.html">transform.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

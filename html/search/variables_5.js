@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['f8x16_0',['F8x16',['../oled__font_8h.html#a7e67e47782b5ef26531d5be53ffef9a9',1,'oled_font.h']]],
+  ['fftsize_1',['FFTSize',['../struct_r_f_f_t___f32___s_t_r_u_c_t.html#a786173823bd56199aecdd62e6113da7f',1,'RFFT_F32_STRUCT']]],
+  ['fftstages_2',['FFTStages',['../struct_r_f_f_t___f32___s_t_r_u_c_t.html#a17121f2659e2dce87f2e88009b873922',1,'RFFT_F32_STRUCT']]],
+  ['filter_3',['filter',['../struct_f_i_l_t_e_r___t.html#aadbc1cf69ebad7766e2b853b27c8c150',1,'FILTER_T']]],
+  ['filter_5ftest_4',['filter_test',['../280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#a3e9a810136f0e0e8581e3105e97346ab',1,'main.c']]],
+  ['flag_5f100ms_5',['flag_100ms',['../struct_t_i_m_e___s_l_i_c_e___b_i_t.html#a2d1853164122033fb875aac31aede87d',1,'TIME_SLICE_BIT']]],
+  ['flag_5f100us_6',['flag_100us',['../struct_t_i_m_e___s_l_i_c_e___b_i_t.html#a4ea807a3ac56ffd4251b36437603adf1',1,'TIME_SLICE_BIT']]],
+  ['flag_5f10ms_7',['flag_10ms',['../struct_t_i_m_e___s_l_i_c_e___b_i_t.html#aada991cfca6ebb586884ed637566a41d',1,'TIME_SLICE_BIT']]],
+  ['flag_5f1ms_8',['flag_1ms',['../struct_t_i_m_e___s_l_i_c_e___b_i_t.html#adabed15653a2e44a2a3b602eb2733ff7',1,'TIME_SLICE_BIT']]],
+  ['flag_5f1s_9',['flag_1s',['../struct_t_i_m_e___s_l_i_c_e___b_i_t.html#a242d780680dc63a1d1655e246b8a6a17',1,'TIME_SLICE_BIT']]],
+  ['flag_5f50us_10',['flag_50us',['../struct_t_i_m_e___s_l_i_c_e___b_i_t.html#a2a67fb4b17dca578c9902dc269b9eca7',1,'TIME_SLICE_BIT']]],
+  ['flag_5fsend_11',['flag_send',['../struct_v_o_f_a___d_a_t_a.html#a4c10c01df8339fcd4a0a4ccccee5e188',1,'VOFA_DATA']]],
+  ['float_5fnum_12',['float_num',['../union_t_y_p_e___t_r_a_n_s_f_o_r_m.html#a7d3553d3fc51fe88ccb4ab5da57c57b4',1,'TYPE_TRANSFORM']]],
+  ['fn_13',['fn',['../struct_s_o_g_i__1_p_h.html#a78db63737144d77b0228f65de09fcd64',1,'SOGI_1PH::fn'],['../struct_s_r_f__3_p_h.html#a0b02f1675419cc02fed162c952ce6320',1,'SRF_3PH::fn'],['../struct_d_d_s_r_f__3_p_h.html#ab7d242bf805d0e9f8ea163786e770423',1,'DDSRF_3PH::fn']]],
+  ['fo_14',['fo',['../struct_s_o_g_i__1_p_h.html#a3b4926cd0a63cdf513eedbf5f778944e',1,'SOGI_1PH::fo'],['../struct_s_r_f__3_p_h.html#ada2e4c7df8817a3857561b1143f2d305',1,'SRF_3PH::fo'],['../struct_d_d_s_r_f__3_p_h.html#a28c83db18be01978b084f38aee55f734',1,'DDSRF_3PH::fo']]],
+  ['fpu32rffttwiddlefactors_15',['FPU32RFFTtwiddleFactors',['../fpu__rfft_8h.html#a9903744e1b4aa7f22343b3af65be67af',1,'fpu_rfft.h']]],
+  ['freq_16',['freq',['../group___d_s_p___r_f_f_t___f32.html#ga758dfd3949824e12d95c70a76a62a32b',1,'RFFT_T']]],
+  ['fs_17',['fs',['../group___d_s_p___r_f_f_t___f32.html#gaf79986d27bcd85d77e866276f9bd9337',1,'RFFT_T']]]
+];

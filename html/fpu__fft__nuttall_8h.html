@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: fpu_fft_nuttall.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('fpu__fft__nuttall_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fpu_fft_nuttall.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="fpu__fft__nuttall_8h__dep__incl.png" border="0" usemap="#afpu__fft__nuttall_8hdep" loading="lazy" alt=""/></div>
+<map name="afpu__fft__nuttall_8hdep" id="afpu__fft__nuttall_8hdep">
+<area shape="rect" title=" " alt="" coords="5,5,117,33"/>
+<area shape="rect" href="rfft_8h.html" title="FFT函数声明与结构体定义" alt="" coords="36,81,86,109"/>
+<area shape="poly" title=" " alt="" coords="64,49,64,81,58,81,58,49"/>
+<area shape="rect" href="rfft_8c.html" title="RFFT函数实现" alt="" coords="37,157,85,184"/>
+<area shape="poly" title=" " alt="" coords="64,124,64,156,58,156,58,124"/>
+</map>
+</div>
+</div>
+<p><a href="fpu__fft__nuttall_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ace0a4e20dcbdc9947e32c33557bd9abb" id="r_ace0a4e20dcbdc9947e32c33557bd9abb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace0a4e20dcbdc9947e32c33557bd9abb">NUTTALL32</a></td></tr>
+<tr class="memitem:a4c03c0eed98d66a89d8b3de951842d06" id="r_a4c03c0eed98d66a89d8b3de951842d06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c03c0eed98d66a89d8b3de951842d06">NUTTALL64</a></td></tr>
+<tr class="memitem:ab736923f9193bc815136abfd269710b8" id="r_ab736923f9193bc815136abfd269710b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab736923f9193bc815136abfd269710b8">NUTTALL128</a></td></tr>
+<tr class="memitem:acc8a5df454185edaeae6532bdd179a4d" id="r_acc8a5df454185edaeae6532bdd179a4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc8a5df454185edaeae6532bdd179a4d">NUTTALL256</a></td></tr>
+<tr class="memitem:a1d6b1cf7c0c71c356a5360ef0957dedd" id="r_a1d6b1cf7c0c71c356a5360ef0957dedd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d6b1cf7c0c71c356a5360ef0957dedd">NUTTALL512</a></td></tr>
+<tr class="memitem:a9462029ab51e48bbf33bc7e715f65f19" id="r_a9462029ab51e48bbf33bc7e715f65f19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9462029ab51e48bbf33bc7e715f65f19">NUTTALL1024</a></td></tr>
+<tr class="memitem:ad542248644e915bfdca2c4f6bbc2a1fa" id="r_ad542248644e915bfdca2c4f6bbc2a1fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad542248644e915bfdca2c4f6bbc2a1fa">NUTTALL2048</a></td></tr>
+<tr class="memitem:ada7d602aac6e037052bb212608904744" id="r_ada7d602aac6e037052bb212608904744"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada7d602aac6e037052bb212608904744">NUTTALL4096</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="a9462029ab51e48bbf33bc7e715f65f19" name="a9462029ab51e48bbf33bc7e715f65f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9462029ab51e48bbf33bc7e715f65f19">&#9670;&#160;</a></span>NUTTALL1024</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUTTALL1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__nuttall_8h_source.html">fpu_fft_nuttall.h</a> 第 <a class="el" href="fpu__fft__nuttall_8h_source.html#l00119">119</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab736923f9193bc815136abfd269710b8" name="ab736923f9193bc815136abfd269710b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab736923f9193bc815136abfd269710b8">&#9670;&#160;</a></span>NUTTALL128</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUTTALL128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00036280, 0.00041019, 0.00055484, 0.00080427, 0.00117093, \</div>
+<div class="line">0.00167228, 0.00233066, 0.00317331, 0.00423227, 0.00554427, \</div>
+<div class="line">0.00715059, 0.00909689, 0.01143301, 0.01421263, 0.01749301, \</div>
+<div class="line">0.02133449, 0.02580011, 0.03095499, 0.03686575, 0.04359978, \</div>
+<div class="line">0.05122450, 0.05980651, 0.06941066, 0.08009913, 0.09193039, \</div>
+<div class="line">0.10495817, 0.11923037, 0.13478802, 0.15166420, 0.16988295, \</div>
+<div class="line">0.18945834, 0.21039348, 0.23267967, 0.25629563, 0.28120686, \</div>
+<div class="line">0.30736514, 0.33470812, 0.36315911, 0.39262711, 0.42300687, \</div>
+<div class="line">0.45417928, 0.48601187, 0.51835956, 0.55106552, 0.58396233, \</div>
+<div class="line">0.61687320, 0.64961344, 0.68199204, 0.71381338, 0.74487911, \</div>
+<div class="line">0.77499002, 0.80394806, 0.83155837, 0.85763131, 0.88198451, \</div>
+<div class="line">0.90444482, 0.92485024, 0.94305173, 0.95891488, 0.97232146, \</div>
+<div class="line">0.98317077, 0.99138079, 0.99688916, 0.99965391, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__nuttall_8h_source.html">fpu_fft_nuttall.h</a> 第 <a class="el" href="fpu__fft__nuttall_8h_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad542248644e915bfdca2c4f6bbc2a1fa" name="ad542248644e915bfdca2c4f6bbc2a1fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad542248644e915bfdca2c4f6bbc2a1fa">&#9670;&#160;</a></span>NUTTALL2048</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUTTALL2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__nuttall_8h_source.html">fpu_fft_nuttall.h</a> 第 <a class="el" href="fpu__fft__nuttall_8h_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acc8a5df454185edaeae6532bdd179a4d" name="acc8a5df454185edaeae6532bdd179a4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc8a5df454185edaeae6532bdd179a4d">&#9670;&#160;</a></span>NUTTALL256</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUTTALL256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00036280, 0.00037452, 0.00040981, 0.00046916, 0.00055332, \</div>
+<div class="line">0.00066336, 0.00080068, 0.00096696, 0.00116419, 0.00139468, \</div>
+<div class="line">0.00166102, 0.00196611, 0.00231317, 0.00270568, 0.00314745, \</div>
+<div class="line">0.00364257, 0.00419541, 0.00481064, 0.00549321, 0.00624833, \</div>
+<div class="line">0.00708150, 0.00799847, 0.00900526, 0.01010812, 0.01131356, \</div>
+<div class="line">0.01262831, 0.01405931, 0.01561373, 0.01729891, 0.01912240, \</div>
+<div class="line">0.02109187, 0.02321519, 0.02550033, 0.02795539, 0.03058856, \</div>
+<div class="line">0.03340809, 0.03642230, 0.03963954, 0.04306814, 0.04671645, \</div>
+<div class="line">0.05059274, 0.05470522, 0.05906200, 0.06367105, 0.06854019, \</div>
+<div class="line">0.07367705, 0.07908903, 0.08478327, 0.09076665, 0.09704571, \</div>
+<div class="line">0.10362664, 0.11051525, 0.11771694, 0.12523665, 0.13307884, \</div>
+<div class="line">0.14124744, 0.14974586, 0.15857692, 0.16774282, 0.17724512, \</div>
+<div class="line">0.18708474, 0.19726187, 0.20777600, 0.21862586, 0.22980944, \</div>
+<div class="line">0.24132390, 0.25316561, 0.26533012, 0.27781212, 0.29060545, \</div>
+<div class="line">0.30370310, 0.31709715, 0.33077884, 0.34473848, 0.35896554, \</div>
+<div class="line">0.37344857, 0.38817527, 0.40313246, 0.41830609, 0.43368127, \</div>
+<div class="line">0.44924230, 0.46497265, 0.48085501, 0.49687130, 0.51300273, \</div>
+<div class="line">0.52922980, 0.54553233, 0.56188952, 0.57827998, 0.59468177, \</div>
+<div class="line">0.61107245, 0.62742912, 0.64372847, 0.65994683, 0.67606025, \</div>
+<div class="line">0.69204451, 0.70787519, 0.72352775, 0.73897759, 0.75420006, \</div>
+<div class="line">0.76917059, 0.78386471, 0.79825810, 0.81232670, 0.82604673, \</div>
+<div class="line">0.83939479, 0.85234788, 0.86488349, 0.87697966, 0.88861502, \</div>
+<div class="line">0.89976888, 0.91042125, 0.92055293, 0.93014553, 0.93918157, \</div>
+<div class="line">0.94764447, 0.95551864, 0.96278950, 0.96944356, 0.97546838, \</div>
+<div class="line">0.98085271, 0.98558643, 0.98966065, 0.99306767, 0.99580106, \</div>
+<div class="line">0.99785565, 0.99922755, 0.99991414, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__nuttall_8h_source.html">fpu_fft_nuttall.h</a> 第 <a class="el" href="fpu__fft__nuttall_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ace0a4e20dcbdc9947e32c33557bd9abb" name="ace0a4e20dcbdc9947e32c33557bd9abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace0a4e20dcbdc9947e32c33557bd9abb">&#9670;&#160;</a></span>NUTTALL32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUTTALL32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00036280, 0.00121324, 0.00446524, 0.01219183, 0.02771015, \</div>
+<div class="line">0.05525349, 0.09934601, 0.16385817, 0.25084832, 0.35942880, \</div>
+<div class="line">0.48497616, 0.61899264, 0.74980550, 0.86408777, 0.94895471, \</div>
+<div class="line">0.99420598, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__nuttall_8h_source.html">fpu_fft_nuttall.h</a> 第 <a class="el" href="fpu__fft__nuttall_8h_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ada7d602aac6e037052bb212608904744" name="ada7d602aac6e037052bb212608904744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada7d602aac6e037052bb212608904744">&#9670;&#160;</a></span>NUTTALL4096</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUTTALL4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__nuttall_8h_source.html">fpu_fft_nuttall.h</a> 第 <a class="el" href="fpu__fft__nuttall_8h_source.html#l00431">431</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1d6b1cf7c0c71c356a5360ef0957dedd" name="a1d6b1cf7c0c71c356a5360ef0957dedd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6b1cf7c0c71c356a5360ef0957dedd">&#9670;&#160;</a></span>NUTTALL512</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUTTALL512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="fpu__fft__nuttall_8h_source.html">fpu_fft_nuttall.h</a> 第 <a class="el" href="fpu__fft__nuttall_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4c03c0eed98d66a89d8b3de951842d06" name="a4c03c0eed98d66a89d8b3de951842d06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c03c0eed98d66a89d8b3de951842d06">&#9670;&#160;</a></span>NUTTALL64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NUTTALL64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">0.00036280, 0.00055796, 0.00118467, 0.00236637, 0.00430764, \</div>
+<div class="line">0.00729200, 0.01167775, 0.01789100, 0.02641512, 0.03777577, \</div>
+<div class="line">0.05252111, 0.07119707, 0.09431807, 0.12233421, 0.15559613, \</div>
+<div class="line">0.19431969, 0.23855253, 0.28814494, 0.34272762, 0.40169841, \</div>
+<div class="line">0.46422000, 0.52922980, 0.59546271, 0.66148635, 0.72574786, \</div>
+<div class="line">0.78663023, 0.84251554, 0.89185186, 0.93322022, 0.96539781, \</div>
+<div class="line">0.98741376, 0.99859427, }</div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="fpu__fft__nuttall_8h_source.html">fpu_fft_nuttall.h</a> 第 <a class="el" href="fpu__fft__nuttall_8h_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_0fd93c14012f780a2e81c2f5b80c75ff.html">rfft</a></li><li class="navelem"><a href="dir_6bd83238c5acd69e2087c7b8f0297dcf.html">fpu32_lib</a></li><li class="navelem"><a href="fpu__fft__nuttall_8h.html">fpu_fft_nuttall.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

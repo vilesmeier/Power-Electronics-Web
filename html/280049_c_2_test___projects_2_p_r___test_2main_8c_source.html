@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: main.c 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('280049_c_2_test___projects_2_p_r___test_2main_8c_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">280049C/Test_Projects/PR_Test/main.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="280049_c_2_test___projects_2_p_r___test_2main_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// Included Files</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;driverlib.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;device.h&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;board.h&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;c2000ware_libraries.h&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="global_8h.html">global.h</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">//</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Main</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">//</span></div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="280049_c_2_test___projects_2_p_r___test_2main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">   26</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="280049_c_2_test___projects_2_p_r___test_2main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">main</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// Initialize device clock and peripherals</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    Device_init();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">// Disable pin locks and enable internal pull-ups.</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    Device_initGPIO();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// </span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// Initialize PIE and clear PIE registers. Disables CPU interrupts.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    Interrupt_initModule();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// Initialize the PIE vector table with pointers to the shell Interrupt</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">// Service Routines (ISR).</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    Interrupt_initVectorTable();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// Configure ePWM1, ePWM2, and TZ GPIOs/Modules</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    Board_init();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// C2000Ware Library initialization</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    C2000Ware_libraries_init();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// Enable Global Interrupt (INTM) and real time interrupt (DBGM)</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    EINT;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    ERTM;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// Enter code here</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// QPR控制器初始化与配置</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    DCL_PR_Init(&amp;pr);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_function" href="group___c_t_r_l___c_o_n_t_r_o_l.html#ga2f1c741ae83ebc319bfda2776de247bb">DCL_PR_Set</a>(&amp;pr, 0, 1, 5, 2 * PI * 50.0f, 20*k);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">// 相位信号发生器初始化与配置</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    Ramp_Init(&amp;<a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#ae64cb3b8ccb553621432a97009f6d3d4">ramp</a>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_function" href="group___c_t_r_l___r_a_m_p.html#gab4cf5a44777a203a846f091f53122efb">Ramp_Set</a>(&amp;<a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#ae64cb3b8ccb553621432a97009f6d3d4">ramp</a>, 50.0f, 20*k);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// 数字示波器初始化</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_function" href="group___c_t_r_l___v_o_f_a.html#ga77c9aea85bbaf41bbce8fc26c9cf846e">VOFA_Init</a>();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_function" href="group___c_t_r_l___v_o_f_a.html#ga8b37353f7cbbd178e8f995dba7eaae73">VOFA_Set_Channel_Input</a>(0, &amp;<a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#a39c71b8a94fed5c413cfca8c402a7800">input_data</a>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_function" href="group___c_t_r_l___v_o_f_a.html#ga8b37353f7cbbd178e8f995dba7eaae73">VOFA_Set_Channel_Input</a>(1, &amp;(pr.Output));</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_function" href="group___c_t_r_l___v_o_f_a.html#ga8b37353f7cbbd178e8f995dba7eaae73">VOFA_Set_Channel_Input</a>(2, &amp;err);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">// IDLE loop. Just sit and loop forever (optional):</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">for</span>(;;)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="280049_c_2_test___projects_2_p_r___test_2main_8c.html#a800d347e4d357084bc13d2fa74ae4f40">   91</a></span>interrupt <span class="keywordtype">void</span> <a class="code hl_function" href="280049_c_2_test___projects_2_p_r___test_2main_8c.html#a800d347e4d357084bc13d2fa74ae4f40">ePWM_ISR</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>{</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="comment">// 生成参考相位</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_function" href="group___c_t_r_l___r_a_m_p.html#ga21b703f8fdc6af4dca08016d4d74b154">Ramp_Run</a>(&amp;<a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#ae64cb3b8ccb553621432a97009f6d3d4">ramp</a>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="comment">// 生成输入信号</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#a39c71b8a94fed5c413cfca8c402a7800">input_data</a> = sinf(<a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#ae64cb3b8ccb553621432a97009f6d3d4">ramp</a>.ref_angle);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="comment">// QPR控制器</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_function" href="group___c_t_r_l___c_o_n_t_r_o_l.html#gaa509a806733fde7a174aa8311280017d">DCL_PR_Run</a>(&amp;pr, <a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#a39c71b8a94fed5c413cfca8c402a7800">input_data</a>, 0, 0);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">// 计算误差</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    err = <a class="code hl_variable" href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#a39c71b8a94fed5c413cfca8c402a7800">input_data</a> - pr.Output;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="comment">// VOFA 串口发送数据包</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_function" href="group___c_t_r_l___v_o_f_a.html#ga29a019e9a9005773e370e6b2013f60be">VOFA_Run</a>();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">// Clear INT flag for this timer</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    EPWM_clearEventTriggerInterruptFlag(myEPWM0_BASE);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="comment">// Acknowledge interrupt group</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    Interrupt_clearACKGroup(INTERRUPT_ACK_GROUP3);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
+</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">//</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">// End of File</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">//</span></div>
+<div class="ttc" id="a280049_c_2_test___projects_2_digital___filter___test_2main_8c_html_a39c71b8a94fed5c413cfca8c402a7800"><div class="ttname"><a href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#a39c71b8a94fed5c413cfca8c402a7800">input_data</a></div><div class="ttdeci">float32_t input_data</div><div class="ttdef"><b>定义</b> <a href="280049_c_2_test___projects_2_digital___filter___test_2main_8c_source.html#l00027">280049C/Test_Projects/Digital_Filter_Test/main.c:27</a></div></div>
+<div class="ttc" id="a280049_c_2_test___projects_2_digital___filter___test_2main_8c_html_ae64cb3b8ccb553621432a97009f6d3d4"><div class="ttname"><a href="280049_c_2_test___projects_2_digital___filter___test_2main_8c.html#ae64cb3b8ccb553621432a97009f6d3d4">ramp</a></div><div class="ttdeci">RAMP ramp</div><div class="ttdef"><b>定义</b> <a href="280049_c_2_test___projects_2_digital___filter___test_2main_8c_source.html#l00026">280049C/Test_Projects/Digital_Filter_Test/main.c:26</a></div></div>
+<div class="ttc" id="a280049_c_2_test___projects_2_p_r___test_2main_8c_html_a6288eba0f8e8ad3ab1544ad731eb7667"><div class="ttname"><a href="280049_c_2_test___projects_2_p_r___test_2main_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">main</a></div><div class="ttdeci">void main(void)</div><div class="ttdef"><b>定义</b> <a href="#l00026">280049C/Test_Projects/PR_Test/main.c:26</a></div></div>
+<div class="ttc" id="a280049_c_2_test___projects_2_p_r___test_2main_8c_html_a800d347e4d357084bc13d2fa74ae4f40"><div class="ttname"><a href="280049_c_2_test___projects_2_p_r___test_2main_8c.html#a800d347e4d357084bc13d2fa74ae4f40">ePWM_ISR</a></div><div class="ttdeci">interrupt void ePWM_ISR(void)</div><div class="ttdef"><b>定义</b> <a href="#l00091">280049C/Test_Projects/PR_Test/main.c:91</a></div></div>
+<div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div><div class="ttdoc">全局变量声明, 头文件打包, 全局通用宏定义</div></div>
+<div class="ttc" id="agroup___c_t_r_l___c_o_n_t_r_o_l_html_ga2f1c741ae83ebc319bfda2776de247bb"><div class="ttname"><a href="group___c_t_r_l___c_o_n_t_r_o_l.html#ga2f1c741ae83ebc319bfda2776de247bb">DCL_PR_Set</a></div><div class="ttdeci">void DCL_PR_Set(DCL_PR_T *p, float32_t Kp, float32_t Kr, float32_t wc, float32_t w0, float32_t isr_freq)</div><div class="ttdoc">配置 QPR 控制器</div><div class="ttdef"><b>定义</b> <a href="control_8c_source.html#l00035">control.c:35</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___c_o_n_t_r_o_l_html_gaa509a806733fde7a174aa8311280017d"><div class="ttname"><a href="group___c_t_r_l___c_o_n_t_r_o_l.html#gaa509a806733fde7a174aa8311280017d">DCL_PR_Run</a></div><div class="ttdeci">static void DCL_PR_Run(DCL_PR_T *p, float32_t ref, float32_t feedback, float32_t feedforward)</div><div class="ttdoc">执行 QPR 控制器</div><div class="ttdef"><b>定义</b> <a href="control_8h_source.html#l00074">control.h:74</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___r_a_m_p_html_ga21b703f8fdc6af4dca08016d4d74b154"><div class="ttname"><a href="group___c_t_r_l___r_a_m_p.html#ga21b703f8fdc6af4dca08016d4d74b154">Ramp_Run</a></div><div class="ttdeci">static void Ramp_Run(RAMP_T *ramp)</div><div class="ttdoc">产生参考相位</div><div class="ttdef"><b>定义</b> <a href="ramp_8h_source.html#l00048">ramp.h:48</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___r_a_m_p_html_gab4cf5a44777a203a846f091f53122efb"><div class="ttname"><a href="group___c_t_r_l___r_a_m_p.html#gab4cf5a44777a203a846f091f53122efb">Ramp_Set</a></div><div class="ttdeci">void Ramp_Set(RAMP_T *ramp, float32_t grad_freq, float32_t isr_freq)</div><div class="ttdoc">set parameters,frequent in Hz</div><div class="ttdef"><b>定义</b> <a href="ramp_8c_source.html#l00013">ramp.c:13</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___v_o_f_a_html_ga29a019e9a9005773e370e6b2013f60be"><div class="ttname"><a href="group___c_t_r_l___v_o_f_a.html#ga29a019e9a9005773e370e6b2013f60be">VOFA_Run</a></div><div class="ttdeci">void VOFA_Run(void)</div><div class="ttdoc">使用 Justfloat 协议, 向 VOFA 上位机发送数据</div><div class="ttdef"><b>定义</b> <a href="vofa_8c_source.html#l00077">vofa.c:77</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___v_o_f_a_html_ga77c9aea85bbaf41bbce8fc26c9cf846e"><div class="ttname"><a href="group___c_t_r_l___v_o_f_a.html#ga77c9aea85bbaf41bbce8fc26c9cf846e">VOFA_Init</a></div><div class="ttdeci">void VOFA_Init(void)</div><div class="ttdoc">初始化结构体</div><div class="ttdef"><b>定义</b> <a href="vofa_8c_source.html#l00025">vofa.c:25</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___v_o_f_a_html_ga8b37353f7cbbd178e8f995dba7eaae73"><div class="ttname"><a href="group___c_t_r_l___v_o_f_a.html#ga8b37353f7cbbd178e8f995dba7eaae73">VOFA_Set_Channel_Input</a></div><div class="ttdeci">void VOFA_Set_Channel_Input(uint16_t channel, float32_t *input_ptr)</div><div class="ttdoc">通道输入源关联变量</div><div class="ttdef"><b>定义</b> <a href="vofa_8c_source.html#l00056">vofa.c:56</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_5506101b76382283adbe76592e28ea78.html">Projects</a></li><li class="navelem"><a href="dir_10b7f8b65d5f49054bb78df1150f335c.html">280049C</a></li><li class="navelem"><a href="dir_9b9a37027f3cd2329add90edef8ba42f.html">Test_Projects</a></li><li class="navelem"><a href="dir_60a2f8b48dbae1aa5d121fd95cfb63f0.html">PR_Test</a></li><li class="navelem"><a href="280049_c_2_test___projects_2_p_r___test_2main_8c.html">main.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

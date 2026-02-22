@@ -1,0 +1,5 @@
+<map id="DCL_PMR_Run" name="DCL_PMR_Run">
+<area shape="rect" id="Node000001" title="执行PMR控制器" alt="" coords="5,5,112,33"/>
+<area shape="rect" id="Node000002" href="$group___c_t_r_l___d_c_l.html#gafe1ce8142d1bd331ed3d8ac685825e94" title="Executes a full 2nd order Direct Form 2 controller on the FPU32 Implemented as an external assembly m..." alt="" coords="160,5,283,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,16,144,16,144,22,112,22"/>
+</map>

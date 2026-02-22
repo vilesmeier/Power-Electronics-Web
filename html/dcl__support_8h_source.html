@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: dcl_support.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('dcl__support_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">dcl_support.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="dcl__support_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef DCL_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define DCL_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#gaba65638d62bc6c241ce662efcb78e68d">   16</a></span><span class="preprocessor">#define DCL_VERSION 3050000</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// std type support</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef C2000_IEEE754_TYPES</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#gaebedd1cce60951fd692a2714c4576cb5">   20</a></span><span class="preprocessor">#define C2000_IEEE754_TYPES</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifdef __TI_EABI__</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">typedef</span> <span class="keywordtype">float</span> <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">typedef</span> <span class="keywordtype">double</span> <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#gabf48e6de81b13463344ee4ebcf05d8b6">float64_t</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">   25</a></span><span class="keyword">typedef</span> <span class="keywordtype">float</span> <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#gabf48e6de81b13463344ee4ebcf05d8b6">   26</a></span><span class="keyword">typedef</span> <span class="keywordtype">long</span> <span class="keywordtype">double</span> <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#gabf48e6de81b13463344ee4ebcf05d8b6">float64_t</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif      </span><span class="comment">// __TI_EABI__</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif      </span><span class="comment">// C2000_IEEE754_TYPES</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#ifndef __TMS320C28XX_CLA__</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;complex.h&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#ga5693719eb5d43034577d8404cbd8da13">   40</a></span><span class="preprocessor">#define CONST_PI_32     3.14159265358979323846f</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#gaa9e144e0e3cd5906e9b9331d03b134aa">   41</a></span><span class="preprocessor">#define CONST_2PI_32    2.0f * CONST_PI_32</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#ga3c89841a618b6fe27861b75cf9cc4c4f">   43</a></span><span class="preprocessor">#define CONST_PI_64     3.1415926535897932384626433832795028841971693993751058209749445923078164062L</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#gab40c307833f4d92fb79eebdf1d8158a6">   44</a></span><span class="preprocessor">#define CONST_2PI_64    2.0L * CONST_PI_64</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#ga4e8e11379575adbbcff1f62589ad6855">   48</a></span><span class="preprocessor">#define NULL_ADDR   0x00000000</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#ga06da86958ce5e924c5a793ebdd870561">   52</a></span><span class="preprocessor">#define DEFAULT_FPU32_TOL   1.0e-06f</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#ga6069fb9c134eb72cfdbb8c824505bc15">   53</a></span><span class="preprocessor">#define DEFAULT_FPU64_TOL   1.0e-10f</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#gaf7b3615b7d638b119dc50e8bdb4b7e63">   57</a></span><span class="preprocessor">#define F32_IS_VALUE(x,y)   (((x &lt; (y + DEFAULT_FPU32_TOL)) &amp;&amp; (x &gt; (y - DEFAULT_FPU32_TOL))) ? 1 : 0)</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#ga376d54bae56928bcf0db94d201957f53">   58</a></span><span class="preprocessor">#define F64_IS_VALUE(x,y)   (((x &lt; (y + DEFAULT_FPU64_TOL)) &amp;&amp; (x &gt; (y - DEFAULT_FPU64_TOL))) ? 1 : 0)</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#gab2a0b6ecc71d6624cceac7f1ff6d065b">   62</a></span><span class="preprocessor">#define F32_IS_ZERO(x)      F32_IS_VALUE(x,0.0f)</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="group___c_t_r_l___d_c_l.html#gaf354146a30be96184ab05896e7a041d8">   63</a></span><span class="preprocessor">#define F64_IS_ZERO(x)      F64_IS_VALUE(x,0.0L)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#define DCL_randf(a)         (a * ((float32_t) rand() / (float32_t) (RAND_MAX &gt;&gt; 1) - 1.0f))</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#define DCL_randf64(a)       (a * ((float64_t) rand() / (float64_t) (RAND_MAX &gt;&gt; 1) - 1.0L))</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#define DCL_C2_LIMIT_32    ((2.0f - CONST_PI_32) / (2.0f + CONST_PI_32))</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#define DCL_C2_LIMIT_64    ((2.0L - CONST_PI_64) / (2.0L + CONST_PI_64))</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#define DCL_DEFAULT_T_F32 100.0e-06f</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#define DCL_DEFAULT_T_F64 100.0e-06L</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#define DCL_TESTPOINTS_ENABLED</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#define DCL_BREAK_POINTS_ENABLED</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#ifdef DCL_BREAK_POINTS_ENABLED</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#define DCL_BREAK_POINT asm(&quot; ESTOP0&quot;)</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#define DCL_BREAK_POINT ;</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#ifdef __TMS320C28XX__</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#define DCL_DISABLE_INTS    DCL_disableInts()</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#define DCL_RESTORE_INTS(v) DCL_restoreInts(v)</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keyword">static</span> <span class="keyword">inline</span> int16_t DCL_disableInts(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>{</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">return</span> __disable_interrupts();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> DCL_restoreInts(int16_t v)</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>{</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordflow">if</span> (0 == (v &amp; 0x1))</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        __enable_interrupts();</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#define DCL_DISABLE_INTS    0</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">#define DCL_RESTORE_INTS(v) ;</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">#warning &quot;CPU not recognized.  Parameter updates may not be atomic.&quot;</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">//--- Controller Common Support Structure ------------------------------------</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keyword">typedef</span> <span class="keyword">struct </span>dcl_css {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> tpt;      </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> T;        </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    uint32_t sts;       </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    uint32_t err;       </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    uint32_t loc;       </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>} DCL_CSS;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="preprocessor">#define DCL_CSS_DEFAULTS { 0.0f, DCL_DEFAULT_T_F32, 0UL, 0UL, 0UL }</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="preprocessor">#define DCL_SET_CONTROLLER_PERIOD(p,a)  ((p)-&gt;css-&gt;T = a)</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="preprocessor">#define DCL_SET_SAMPLE_RATE     DCL_SET_CONTROLLER_PERIOD</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">//--- Status word ------------------------------------------------------------</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="keyword">enum</span> dcl_status_bits {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    STS_NONE = 0UL,                     </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    STS_UPDATE_PENDING = (1U &lt;&lt; 0),    </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    STS_CONTROLLER_RUNNING = (1U &lt;&lt; 1), </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    STS_ADJUSTMENT_RUNNING = (1U &lt;&lt; 2) </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>};</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="preprocessor">#define DCL_REQUEST_UPDATE(p)           ((p)-&gt;css-&gt;sts |= STS_UPDATE_PENDING)</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="preprocessor">#define DCL_CLEAR_UPDATE_REQUEST(p)     ((p)-&gt;css-&gt;sts &amp;= ~STS_UPDATE_PENDING)</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="preprocessor">#define DCL_UPDATE_WAITING(p)           (0U != ((p)-&gt;css-&gt;sts &amp; STS_UPDATE_PENDING))</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="preprocessor">#define DCL_CONTROLLER_BEGIN(p)         ((p)-&gt;css-&gt;sts |= STS_CONTROLLER_RUNNING)</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="preprocessor">#define DCL_CONTROLLER_END(p)           ((p)-&gt;css-&gt;sts &amp;= ~STS_CONTROLLER_RUNNING)</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">#define DCL_CONTROLLER_IN_PROGRESS(p)   (0U != ((p)-&gt;css-&gt;sts &amp; STS_CONTROLLER_RUNNING))</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="preprocessor">#define DCL_ADJUSTMENT_RUNNING(p)       ((p)-&gt;css-&gt;sts |= STS_ADJUSTMENT_RUNNING)</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="preprocessor">#define DCL_ADJUSTMENT_COMPLETE(p)      ((p)-&gt;css-&gt;sts &amp;= ~STS_ADJUSTMENT_RUNNING)</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">#define DCL_ADJUSTMENT_IN_PROGRESS(p)   (0U != ((p)-&gt;css-&gt;sts &amp; STS_ADJUSTMENT_RUNNING))</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">//--- Error handling ---------------------------------------------------------</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="preprocessor">#define DCL_ERROR_HANDLING_ENABLED</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="keyword">enum</span> dcl_error_codes {</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    ERR_NONE = 0U,                     </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    ERR_PARAM_RANGE = (1U &lt;&lt; 0),       </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    ERR_PARAM_INVALID = (1U &lt;&lt; 1),     </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    ERR_PARAM_WARN = (1U &lt;&lt; 2),        </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    ERR_INPUT_RANGE = (1U &lt;&lt; 3),       </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    ERR_OVERFLOW = (1U &lt;&lt; 4),          </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    ERR_UNDERFLOW = (1U &lt;&lt; 5),         </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    ERR_VERSION = (1U &lt;&lt; 6),           </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    ERR_DEVICE = (1U &lt;&lt; 7),            </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    ERR_CONTROLLER = (1U &lt;&lt; 8),        </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    ERR_TIMING = (1U &lt;&lt; 9),            </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    ERR_COMPUTATION = (1U &lt;&lt; 10)       </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>};</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="preprocessor">#define DCL_CLEAR_ERROR_CODE(p)     (p-&gt;css-&gt;err = ERR_NONE)</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="preprocessor">#define DCL_GET_ERROR_LOC(n)        (n-&gt;loc = (ERR_NONE == n-&gt;err) ? NULL_ADDR : __LINE__)</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="preprocessor">#define DCL_RUN_ERROR_HANDLER(n)    DCL_runErrorHandler(n)</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="keyword">extern</span> <span class="keywordtype">void</span> DCL_runErrorHandler(DCL_CSS *p);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="comment">//--- ZPK3 structure ---------------------------------------------------------</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="keyword">typedef</span> <span class="keyword">struct </span>dcl_zpk3 {</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keywordtype">float</span> complex z1;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="keywordtype">float</span> complex z2;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keywordtype">float</span> complex z3;</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordtype">float</span> complex p1;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keywordtype">float</span> complex p2;</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keywordtype">float</span> complex p3;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <a class="code hl_typedef" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> K;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>} DCL_ZPK3;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="preprocessor">#define ZPK3_DEFAULTS { 0.0f + 0.0f*I, 0.0f + 0.0f*I, 0.0f + 0.0f*I, \</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="preprocessor">                        0.0f + 0.0f*I, 0.0f + 0.0f*I, 0.0f + 0.0f*I, \</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="preprocessor">                        1.0f }</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment">//----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="preprocessor">#endif </span><span class="comment">// __TMS320C28XX_CLA__</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="preprocessor">#endif </span><span class="comment">// _C_DCL_H</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span></div>
+<div class="ttc" id="agroup___c_t_r_l___d_c_l_html_ga4611b605e45ab401f02cab15c5e38715"><div class="ttname"><a href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></div><div class="ttdeci">float float32_t</div><div class="ttdef"><b>定义</b> <a href="#l00025">dcl_support.h:25</a></div></div>
+<div class="ttc" id="agroup___c_t_r_l___d_c_l_html_gabf48e6de81b13463344ee4ebcf05d8b6"><div class="ttname"><a href="group___c_t_r_l___d_c_l.html#gabf48e6de81b13463344ee4ebcf05d8b6">float64_t</a></div><div class="ttdeci">long double float64_t</div><div class="ttdef"><b>定义</b> <a href="#l00026">dcl_support.h:26</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_f1b8e1914c2bf0242033d233eb0ffd20.html">dcl</a></li><li class="navelem"><a href="dcl__support_8h.html">dcl_support.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<map id="SVPWM_Run" name="SVPWM_Run">
+<area shape="rect" id="Node000001" title="执行扇区判断法SVPWM调制" alt="" coords="5,32,100,60"/>
+<area shape="rect" id="Node000002" href="$svpwm_8c.html#afee2f9eac831a4a0c301572e8c8e1560" title="更新COMP值" alt="" coords="148,5,295,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,36,132,31,133,36,101,41"/>
+<area shape="rect" id="Node000003" href="$svpwm_8c.html#ae538056fb5e8739153e22a70086687cd" title="计算扇区" alt="" coords="155,57,288,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,50,139,56,139,61,100,56"/>
+<area shape="rect" id="Node000004" href="$svpwm_8c.html#afad80c205669268c91d53312df90aa50" title="计算扇区判断标志量" alt="" coords="343,57,500,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="288,68,327,68,327,74,288,74"/>
+</map>

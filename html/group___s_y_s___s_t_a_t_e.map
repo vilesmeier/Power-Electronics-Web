@@ -1,0 +1,4 @@
+<map id="全局状态机" name="全局状态机">
+<area shape="rect" id="Node000002" href="$group___s_y_s.html" title="基于时间片和 task 的全局状态机和任务调度" alt="" coords="5,5,92,30"/>
+<area shape="rect" id="Node000001" title="提供全局状态机与时间片管理功能, 时间片任务在 task.c/task.h 中实现" alt="" coords="140,5,226,30"/>
+</map>

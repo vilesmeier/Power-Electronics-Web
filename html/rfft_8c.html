@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: rfft.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('rfft_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rfft.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>RFFT函数实现  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="rfft_8h_source.html">rfft.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+rfft.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="rfft_8c__incl.png" border="0" usemap="#arfft_8c" loading="lazy" alt=""/></div>
+<map name="arfft_8c" id="arfft_8c">
+<area shape="rect" title="RFFT函数实现" alt="" coords="1938,5,1986,33"/>
+<area shape="rect" href="rfft_8h.html" title="FFT函数声明与结构体定义" alt="" coords="1937,81,1987,109"/>
+<area shape="poly" title=" " alt="" coords="1965,34,1965,65,1959,65,1959,34"/>
+<area shape="rect" title=" " alt="" coords="469,308,532,336"/>
+<area shape="poly" title=" " alt="" coords="1937,99,913,117,311,135,113,147,55,153,32,159,15,181,8,201,12,219,24,235,44,250,71,262,141,283,223,298,309,308,453,317,453,322,309,313,222,303,139,288,69,267,41,254,20,239,7,221,3,201,10,179,29,154,54,147,113,141,311,130,913,111,1937,94"/>
+<area shape="rect" title=" " alt="" coords="42,157,106,184"/>
+<area shape="poly" title=" " alt="" coords="1937,99,1629,100,1108,107,822,115,548,125,307,140,122,159,121,154,307,135,548,120,822,109,1108,102,1629,95,1937,93"/>
+<area shape="rect" title=" " alt="" coords="131,157,239,184"/>
+<area shape="poly" title=" " alt="" coords="1937,99,1168,116,650,134,427,146,255,159,254,154,427,140,650,129,1168,110,1937,94"/>
+<area shape="rect" title=" " alt="" coords="263,157,445,184"/>
+<area shape="poly" title=" " alt="" coords="1937,99,1373,112,928,130,461,159,461,154,928,124,1373,106,1937,94"/>
+<area shape="rect" href="fpu__rfft_8h.html" title=" " alt="" coords="3983,157,4114,184"/>
+<area shape="poly" title=" " alt="" coords="1987,94,2887,110,3501,128,3765,140,3968,154,3968,159,3765,146,3501,134,2887,116,1987,99"/>
+<area shape="rect" href="fpu__fft__barthann_8h.html" title=" " alt="" coords="625,157,809,184"/>
+<area shape="poly" title=" " alt="" coords="1937,100,1506,116,1173,134,825,159,824,154,1173,129,1506,111,1937,94"/>
+<area shape="rect" href="fpu__fft__bartlett_8h.html" title=" " alt="" coords="834,157,1008,184"/>
+<area shape="poly" title=" " alt="" coords="1937,100,1579,118,1308,136,1024,159,1023,154,1307,130,1579,113,1937,95"/>
+<area shape="rect" href="fpu__fft__blackman_8h.html" title=" " alt="" coords="1032,157,1220,184"/>
+<area shape="poly" title=" " alt="" coords="1937,101,1659,122,1236,159,1236,154,1658,116,1937,95"/>
+<area shape="rect" href="fpu__fft__blackmanharris_8h.html" title=" " alt="" coords="1245,157,1466,184"/>
+<area shape="poly" title=" " alt="" coords="1937,102,1480,157,1480,152,1937,97"/>
+<area shape="rect" href="fpu__fft__bohman_8h.html" title=" " alt="" coords="1490,157,1669,184"/>
+<area shape="poly" title=" " alt="" coords="1938,104,1663,156,1662,151,1937,98"/>
+<area shape="rect" href="fpu__fft__cheb_8h.html" title=" " alt="" coords="1693,157,1853,184"/>
+<area shape="poly" title=" " alt="" coords="1938,108,1822,153,1820,148,1936,103"/>
+<area shape="rect" href="fpu__fft__flattop_8h.html" title=" " alt="" coords="1877,157,2047,184"/>
+<area shape="poly" title=" " alt="" coords="1965,109,1965,141,1959,141,1959,109"/>
+<area shape="rect" href="fpu__fft__gauss_8h.html" title=" " alt="" coords="2071,157,2237,184"/>
+<area shape="poly" title=" " alt="" coords="1988,103,2106,148,2104,153,1986,108"/>
+<area shape="rect" href="fpu__fft__hamming_8h.html" title=" " alt="" coords="2261,157,2447,184"/>
+<area shape="poly" title=" " alt="" coords="1988,98,2270,151,2269,156,1987,103"/>
+<area shape="rect" href="fpu__fft__hann_8h.html" title=" " alt="" coords="2471,157,2632,184"/>
+<area shape="poly" title=" " alt="" coords="1987,96,2456,154,2455,159,1987,102"/>
+<area shape="rect" href="fpu__fft__kaiser_8h.html" title=" " alt="" coords="2656,157,2823,184"/>
+<area shape="poly" title=" " alt="" coords="1987,95,2248,116,2641,154,2641,159,2247,121,1987,101"/>
+<area shape="rect" href="fpu__fft__nuttall_8h.html" title=" " alt="" coords="2847,157,3016,184"/>
+<area shape="poly" title=" " alt="" coords="1987,95,2319,114,2570,131,2833,154,2832,159,2569,137,2319,119,1987,100"/>
+<area shape="rect" href="fpu__fft__parzen_8h.html" title=" " alt="" coords="3040,157,3212,184"/>
+<area shape="poly" title=" " alt="" coords="1987,94,2391,111,2700,129,3025,154,3024,159,2700,134,2391,116,1987,100"/>
+<area shape="rect" href="fpu__fft__rect_8h.html" title=" " alt="" coords="3236,157,3392,184"/>
+<area shape="poly" title=" " alt="" coords="1987,94,2463,107,2833,125,3221,154,3221,159,2833,130,2463,112,1987,99"/>
+<area shape="rect" href="fpu__fft__taylor_8h.html" title=" " alt="" coords="3416,157,3580,184"/>
+<area shape="poly" title=" " alt="" coords="1987,94,2185,97,2528,106,2954,124,3401,154,3400,159,2954,129,2528,111,2185,102,1987,99"/>
+<area shape="rect" href="fpu__fft__triang_8h.html" title=" " alt="" coords="3604,157,3771,184"/>
+<area shape="poly" title=" " alt="" coords="1987,94,2208,95,2596,103,3081,121,3337,135,3589,154,3589,159,3336,141,3081,127,2596,109,2208,101,1987,99"/>
+<area shape="rect" href="fpu__fft__tukey_8h.html" title=" " alt="" coords="3795,157,3958,184"/>
+<area shape="poly" title=" " alt="" coords="1987,93,2231,94,2665,101,3209,119,3496,134,3780,154,3779,159,3496,139,3209,124,2665,106,2231,100,1987,99"/>
+<area shape="rect" href="mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="470,157,601,184"/>
+<area shape="poly" title=" " alt="" coords="1937,99,1751,101,1430,109,1033,127,824,141,617,159,617,154,823,135,1032,121,1430,103,1751,95,1937,94"/>
+<area shape="rect" href="fpu__types_8h.html" title=" " alt="" coords="2330,232,2418,260"/>
+<area shape="poly" title=" " alt="" coords="3983,186,3970,187,3741,206,3508,221,3057,240,2678,247,2433,248,2433,242,2678,241,3056,234,3507,216,3741,201,3970,182,3982,180"/>
+<area shape="poly" title=" " alt="" coords="2330,252,548,321,548,316,2330,247"/>
+<area shape="rect" title=" " alt="" coords="2345,308,2403,336"/>
+<area shape="poly" title=" " alt="" coords="2377,261,2377,292,2371,292,2371,261"/>
+<area shape="poly" title=" " alt="" coords="535,185,510,293,505,292,530,184"/>
+<area shape="rect" title=" " alt="" coords="538,232,599,260"/>
+<area shape="poly" title=" " alt="" coords="544,184,559,217,554,219,539,186"/>
+</map>
+</div>
+</div>
+<p><a href="rfft_8c_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gad9326e34787eb92e07fc6947e3ee94e2" id="r_gad9326e34787eb92e07fc6947e3ee94e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_s_p___r_f_f_t___f32.html#gad9326e34787eb92e07fc6947e3ee94e2">RFFT_Set</a> (<a class="el" href="struct_r_f_f_t___t.html">RFFT_T</a> *rfft, <a class="el" href="struct_r_f_f_t___d_a_t_a___t.html">RFFT_DATA_T</a> *rfft_data, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> fs, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> fgrid)</td></tr>
+<tr class="memdesc:gad9326e34787eb92e07fc6947e3ee94e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置RFFT参数及地址指针, 确定FFT幅度谱分析模式  <br /></td></tr>
+<tr class="memitem:ga10f0af015b86327a43672d9e437d32fb" id="r_ga10f0af015b86327a43672d9e437d32fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_s_p___r_f_f_t___f32.html#ga10f0af015b86327a43672d9e437d32fb">RFFT_Run</a> (<a class="el" href="struct_r_f_f_t___t.html">RFFT_T</a> *rfft)</td></tr>
+<tr class="memdesc:ga10f0af015b86327a43672d9e437d32fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行RFFT信号分析  <br /></td></tr>
+<tr class="memitem:gaf879755b2c00c8545075441300efb56d" id="r_gaf879755b2c00c8545075441300efb56d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_s_p___r_f_f_t___f32.html#gaf879755b2c00c8545075441300efb56d">RFFT_Grid_Lock</a> (<a class="el" href="struct_r_f_f_t___t.html">RFFT_T</a> *rfft)</td></tr>
+<tr class="memdesc:gaf879755b2c00c8545075441300efb56d"><td class="mdescLeft">&#160;</td><td class="mdescRight">delta_f == fgrid, 幅度谱每个元素即为一个谐波峰  <br /></td></tr>
+<tr class="memitem:ga9fb8d812d415f8a13c175e3f8af3daf2" id="r_ga9fb8d812d415f8a13c175e3f8af3daf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_s_p___r_f_f_t___f32.html#ga9fb8d812d415f8a13c175e3f8af3daf2">RFFT_Peak_Find</a> (<a class="el" href="struct_r_f_f_t___t.html">RFFT_T</a> *rfft)</td></tr>
+<tr class="memdesc:ga9fb8d812d415f8a13c175e3f8af3daf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">delta_f != fgrid, 寻找幅度谱峰值  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>RFFT函数实现 </p>
+<dl class="section author"><dt>作者</dt><dd>Mao Chenbin (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>文件中使用的 <b>__TMS320C28XX_TMU__</b> 宏定义说明, 见TI手册 ZHCU876Z TMS320C28x优化 C/C++ 编译器 节 2.5.1 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="rfft_8c_source.html">rfft.c</a> 中定义.</p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_0fd93c14012f780a2e81c2f5b80c75ff.html">rfft</a></li><li class="navelem"><a href="rfft_8c.html">rfft.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

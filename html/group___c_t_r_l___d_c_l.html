@@ -1,0 +1,1683 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: TI数字控制库</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group___c_t_r_l___d_c_l.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TI数字控制库 <div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>TI 数字控制库, 提供 pi, 差分方程的支持  
+<a href="#details">更多...</a></p>
+<div class="dynheader">
+TI数字控制库 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___c_t_r_l___d_c_l.png" border="0" usemap="#agroup______c__t__r__l______d__c__l" loading="lazy" alt=""/></div>
+<map name="agroup______c__t__r__l______d__c__l" id="agroup______c__t__r__l______d__c__l">
+<area shape="rect" href="group___c_t_r_l.html" title="常用控制算法的模块化代码, 使用时直接将文件夹复制到 hardware 文件夹内即可" alt="" coords="5,7,92,32"/>
+<area shape="rect" title="TI 数字控制库, 提供 pi, 差分方程的支持" alt="" coords="140,5,239,33"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-files" class="groupheader"><a id="files" name="files"></a>
+文件</h2></td></tr>
+<tr class="memitem:DCL_2Eh" id="r_DCL_2Eh"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_c_l_8h.html">DCL.h</a></td></tr>
+<tr class="memdesc:_d_c_l_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the public interface to the common Digital Controller Library functions <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:dcl_5Fpi_5Fsps" id="r_dcl_5Fpi_5Fsps"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__pi__sps.html">dcl_pi_sps</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> shadow parameter set  <a href="structdcl__pi__sps.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:dcl_5Fpi" id="r_dcl_5Fpi"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__pi.html">dcl_pi</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> controller structure  <a href="structdcl__pi.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:dcl_5Fpi_5Ft" id="r_dcl_5Fpi_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__pi__t.html">dcl_pi_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#ga4af078e50a01360e929eebb595ac59ce" title="Defines the DCL_PI_T controller structure">DCL_PI_T</a> controller structure  <a href="structdcl__pi__t.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:dcl_5Fdf11_5Fsps" id="r_dcl_5Fdf11_5Fsps"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__df11__sps.html">dcl_df11_sps</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#ga7375b44215b7758cf4f284e8b6106407" title="Defines the DCL_DF11 controller structure">DCL_DF11</a> shadow parameter set  <a href="structdcl__df11__sps.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:dcl_5Fdf11" id="r_dcl_5Fdf11"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__df11.html">dcl_df11</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#ga7375b44215b7758cf4f284e8b6106407" title="Defines the DCL_DF11 controller structure">DCL_DF11</a> controller structure  <a href="structdcl__df11.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:dcl_5Fdf11_5Ft" id="r_dcl_5Fdf11_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__df11__t.html">dcl_df11_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#ga9fbd823a102f8870ed1effffff696b8c" title="Defines the DCL_DF11_T controller structure">DCL_DF11_T</a> controller structure  <a href="structdcl__df11__t.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:dcl_5Fdf22_5Fsps" id="r_dcl_5Fdf22_5Fsps"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__df22__sps.html">dcl_df22_sps</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> shadow parameter set  <a href="structdcl__df22__sps.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:dcl_5Fdf22" id="r_dcl_5Fdf22"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__df22.html">dcl_df22</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> controller structure  <a href="structdcl__df22.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:dcl_5Fdf22_5Ft" id="r_dcl_5Fdf22_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__df22__t.html">dcl_df22_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> controller structure  <a href="structdcl__df22__t.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:dcl_5Fdf23_5Fsps" id="r_dcl_5Fdf23_5Fsps"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__df23__sps.html">dcl_df23_sps</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#ga74b8909e62e7713da3898ff5ab087938" title="Defines the DCL_DF23 controller structure">DCL_DF23</a> shadow parameter set  <a href="structdcl__df23__sps.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:dcl_5Fdf23" id="r_dcl_5Fdf23"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__df23.html">dcl_df23</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#ga74b8909e62e7713da3898ff5ab087938" title="Defines the DCL_DF23 controller structure">DCL_DF23</a> controller structure  <a href="structdcl__df23.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:dcl_5Fdf23_5Ft" id="r_dcl_5Fdf23_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdcl__df23__t.html">dcl_df23_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#ga1ba1f1e6fc4c1c4ded55c3626d83f3de" title="Defines the DCL_DF23_T controller structure">DCL_DF23_T</a> controller structure  <a href="structdcl__df23__t.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ga916dd408ba55e0958b6561f4e86ee487" id="r_ga916dd408ba55e0958b6561f4e86ee487"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga916dd408ba55e0958b6561f4e86ee487">PI_SPS_DEFAULTS</a>&#160;&#160;&#160;{ 1.0f, 0.0f, 1.0f, -1.0f, 1.0f, -1.0f }</td></tr>
+<tr class="memdesc:ga916dd408ba55e0958b6561f4e86ee487"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines default values to initialize the <a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> shadow structure  <br /></td></tr>
+<tr class="memitem:ga9f21fffdbe210c05fb4405eb76abe289" id="r_ga9f21fffdbe210c05fb4405eb76abe289"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9f21fffdbe210c05fb4405eb76abe289">PI_DEFAULTS</a>&#160;&#160;&#160;{ 1.0f, 0.0f, 0.0f, 1.0f, -1.0f, 1.0f, 0.0f, 1.0f, -1.0f, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a>, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a> }</td></tr>
+<tr class="memdesc:ga9f21fffdbe210c05fb4405eb76abe289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines default values to initialize the PI structure  <br /></td></tr>
+<tr class="memitem:gae14ff924a303331118020b9e1e47eda2" id="r_gae14ff924a303331118020b9e1e47eda2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae14ff924a303331118020b9e1e47eda2">PI_T_DEFAULTS</a>&#160;&#160;&#160;{<a class="el" href="#ga9f21fffdbe210c05fb4405eb76abe289">PI_DEFAULTS</a>, <a class="el" href="#ga916dd408ba55e0958b6561f4e86ee487">PI_SPS_DEFAULTS</a>, <a class="el" href="dcl__support_8h.html#a8cc8e449a418e8de122e088efce42306">DCL_CSS_DEFAULTS</a>, 0.0f }</td></tr>
+<tr class="memdesc:gae14ff924a303331118020b9e1e47eda2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines default values to initialize the PI_T structure  <br /></td></tr>
+<tr class="memitem:ga15e3eb3409f0bf0aede919fd1b0ec9d8" id="r_ga15e3eb3409f0bf0aede919fd1b0ec9d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga15e3eb3409f0bf0aede919fd1b0ec9d8">DF11_SPS_DEFAULTS</a>&#160;&#160;&#160;{ 0.5f, 0.5f, 1.0f }</td></tr>
+<tr class="memdesc:ga15e3eb3409f0bf0aede919fd1b0ec9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines default values to initialize the <a class="el" href="#ga3c9ccfe7c1890117936ca8946c0d5555" title="Defines the DCL_DF11 shadow parameter set">DCL_DF11_SPS</a> shadow structure  <br /></td></tr>
+<tr class="memitem:ga8390dfefa95b1298f42116905a236cb9" id="r_ga8390dfefa95b1298f42116905a236cb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8390dfefa95b1298f42116905a236cb9">DF11_DEFAULTS</a>&#160;&#160;&#160;{ 0.5f, 0.5f, 1.0f, 0.0f, 0.0f, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a>, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a> }</td></tr>
+<tr class="memdesc:ga8390dfefa95b1298f42116905a236cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines default values to initialize the <a class="el" href="#ga7375b44215b7758cf4f284e8b6106407" title="Defines the DCL_DF11 controller structure">DCL_DF11</a> structure  <br /></td></tr>
+<tr class="memitem:gaa95501b13b7087e1ff7f155255e395cd" id="r_gaa95501b13b7087e1ff7f155255e395cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa95501b13b7087e1ff7f155255e395cd">DF11_T_DEFAULTS</a>&#160;&#160;&#160;{ <a class="el" href="#ga8390dfefa95b1298f42116905a236cb9">DF11_DEFAULTS</a>, <a class="el" href="#ga15e3eb3409f0bf0aede919fd1b0ec9d8">DF11_SPS_DEFAULTS</a>, <a class="el" href="dcl__support_8h.html#a8cc8e449a418e8de122e088efce42306">DCL_CSS_DEFAULTS</a>, 0.0f}</td></tr>
+<tr class="memdesc:gaa95501b13b7087e1ff7f155255e395cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines default values to initialize the <a class="el" href="#ga9fbd823a102f8870ed1effffff696b8c" title="Defines the DCL_DF11_T controller structure">DCL_DF11_T</a> structure  <br /></td></tr>
+<tr class="memitem:ga4107adb7f946edacc95070faa874b8f2" id="r_ga4107adb7f946edacc95070faa874b8f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4107adb7f946edacc95070faa874b8f2">DF22_SPS_DEFAULTS</a>&#160;&#160;&#160;{ 1.0f, 0.0f, 0.0f, 0.0f, 0.0f }</td></tr>
+<tr class="memdesc:ga4107adb7f946edacc95070faa874b8f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines default values to initialize the <a class="el" href="#ga0b5df5b37e9155fb5bdce93041f9be53" title="Defines the DCL_DF22 shadow parameter set">DCL_DF22_SPS</a> shadow structure  <br /></td></tr>
+<tr class="memitem:gaaa3ad28ae5ba9f1a7efa3eff9b5edf5e" id="r_gaaa3ad28ae5ba9f1a7efa3eff9b5edf5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaaa3ad28ae5ba9f1a7efa3eff9b5edf5e">DF22_DEFAULTS</a>&#160;&#160;&#160;{ 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a>, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a> }</td></tr>
+<tr class="memdesc:gaaa3ad28ae5ba9f1a7efa3eff9b5edf5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines default values to initialize the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> structure  <br /></td></tr>
+<tr class="memitem:ga01c9317f24a06320f89975d5cac59891" id="r_ga01c9317f24a06320f89975d5cac59891"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga01c9317f24a06320f89975d5cac59891">DF22_T_DEFAULTS</a>&#160;&#160;&#160;{ <a class="el" href="#gaaa3ad28ae5ba9f1a7efa3eff9b5edf5e">DF22_DEFAULTS</a>, <a class="el" href="#ga4107adb7f946edacc95070faa874b8f2">DF22_SPS_DEFAULTS</a>, <a class="el" href="dcl__support_8h.html#a8cc8e449a418e8de122e088efce42306">DCL_CSS_DEFAULTS</a>, 0.0f}</td></tr>
+<tr class="memdesc:ga01c9317f24a06320f89975d5cac59891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define defalut values to initialize the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> structure  <br /></td></tr>
+<tr class="memitem:ga91fc8314b872e7b343f8cfc4940ac2e0" id="r_ga91fc8314b872e7b343f8cfc4940ac2e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga91fc8314b872e7b343f8cfc4940ac2e0">DF23_SPS_DEFAULTS</a>&#160;&#160;&#160;{ 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f }</td></tr>
+<tr class="memdesc:ga91fc8314b872e7b343f8cfc4940ac2e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines default values to initialize the <a class="el" href="#ga5028c0805da7f3e0b372723ac789f3e2" title="Defines the DCL_DF23 shadow parameter set">DCL_DF23_SPS</a> structure  <br /></td></tr>
+<tr class="memitem:ga23bcbae05f049c70fc33488fc94bf349" id="r_ga23bcbae05f049c70fc33488fc94bf349"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga23bcbae05f049c70fc33488fc94bf349">DF23_DEFAULTS</a>&#160;&#160;&#160;{ 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a>, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a> }</td></tr>
+<tr class="memdesc:ga23bcbae05f049c70fc33488fc94bf349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines default values to initialize the <a class="el" href="#ga74b8909e62e7713da3898ff5ab087938" title="Defines the DCL_DF23 controller structure">DCL_DF23</a> structure  <br /></td></tr>
+<tr class="memitem:gad156e04789d1dee619b5a9db600cc56b" id="r_gad156e04789d1dee619b5a9db600cc56b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad156e04789d1dee619b5a9db600cc56b">DF23_T_DEFAULTS</a>&#160;&#160;&#160;{<a class="el" href="#ga23bcbae05f049c70fc33488fc94bf349">DF23_DEFAULTS</a>, <a class="el" href="#ga91fc8314b872e7b343f8cfc4940ac2e0">DF23_SPS_DEFAULTS</a>, <a class="el" href="dcl__support_8h.html#a8cc8e449a418e8de122e088efce42306">DCL_CSS_DEFAULTS</a>, 0.0f}</td></tr>
+<tr class="memdesc:gad156e04789d1dee619b5a9db600cc56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines default values to initialize the <a class="el" href="#ga5028c0805da7f3e0b372723ac789f3e2" title="Defines the DCL_DF23 shadow parameter set">DCL_DF23_SPS</a> structure  <br /></td></tr>
+<tr class="memitem:gaba65638d62bc6c241ce662efcb78e68d" id="r_gaba65638d62bc6c241ce662efcb78e68d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaba65638d62bc6c241ce662efcb78e68d">DCL_VERSION</a>&#160;&#160;&#160;3050000</td></tr>
+<tr class="memdesc:gaba65638d62bc6c241ce662efcb78e68d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Library version number formatted for numerical comparison  <br /></td></tr>
+<tr class="memitem:gaebedd1cce60951fd692a2714c4576cb5" id="r_gaebedd1cce60951fd692a2714c4576cb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaebedd1cce60951fd692a2714c4576cb5">C2000_IEEE754_TYPES</a></td></tr>
+<tr class="memitem:ga5693719eb5d43034577d8404cbd8da13" id="r_ga5693719eb5d43034577d8404cbd8da13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5693719eb5d43034577d8404cbd8da13">CONST_PI_32</a>&#160;&#160;&#160;3.14159265358979323846f</td></tr>
+<tr class="memdesc:ga5693719eb5d43034577d8404cbd8da13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local definitions of mathematical constants  <br /></td></tr>
+<tr class="memitem:gaa9e144e0e3cd5906e9b9331d03b134aa" id="r_gaa9e144e0e3cd5906e9b9331d03b134aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa9e144e0e3cd5906e9b9331d03b134aa">CONST_2PI_32</a>&#160;&#160;&#160;2.0f * <a class="el" href="#ga5693719eb5d43034577d8404cbd8da13">CONST_PI_32</a></td></tr>
+<tr class="memitem:ga3c89841a618b6fe27861b75cf9cc4c4f" id="r_ga3c89841a618b6fe27861b75cf9cc4c4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3c89841a618b6fe27861b75cf9cc4c4f">CONST_PI_64</a>&#160;&#160;&#160;3.1415926535897932384626433832795028841971693993751058209749445923078164062L</td></tr>
+<tr class="memitem:gab40c307833f4d92fb79eebdf1d8158a6" id="r_gab40c307833f4d92fb79eebdf1d8158a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab40c307833f4d92fb79eebdf1d8158a6">CONST_2PI_64</a>&#160;&#160;&#160;2.0L * <a class="el" href="#ga3c89841a618b6fe27861b75cf9cc4c4f">CONST_PI_64</a></td></tr>
+<tr class="memitem:ga4e8e11379575adbbcff1f62589ad6855" id="r_ga4e8e11379575adbbcff1f62589ad6855"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a>&#160;&#160;&#160;0x00000000</td></tr>
+<tr class="memdesc:ga4e8e11379575adbbcff1f62589ad6855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines 32-bit null address for pointer initialization  <br /></td></tr>
+<tr class="memitem:ga06da86958ce5e924c5a793ebdd870561" id="r_ga06da86958ce5e924c5a793ebdd870561"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga06da86958ce5e924c5a793ebdd870561">DEFAULT_FPU32_TOL</a>&#160;&#160;&#160;1.0e-06f</td></tr>
+<tr class="memdesc:ga06da86958ce5e924c5a793ebdd870561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the acceptable FPU numerical tolerances  <br /></td></tr>
+<tr class="memitem:ga6069fb9c134eb72cfdbb8c824505bc15" id="r_ga6069fb9c134eb72cfdbb8c824505bc15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6069fb9c134eb72cfdbb8c824505bc15">DEFAULT_FPU64_TOL</a>&#160;&#160;&#160;1.0e-10f</td></tr>
+<tr class="memitem:gaf7b3615b7d638b119dc50e8bdb4b7e63" id="r_gaf7b3615b7d638b119dc50e8bdb4b7e63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf7b3615b7d638b119dc50e8bdb4b7e63">F32_IS_VALUE</a>(x,  y)</td></tr>
+<tr class="memdesc:gaf7b3615b7d638b119dc50e8bdb4b7e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines numerical proximity to specified value  <br /></td></tr>
+<tr class="memitem:ga376d54bae56928bcf0db94d201957f53" id="r_ga376d54bae56928bcf0db94d201957f53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga376d54bae56928bcf0db94d201957f53">F64_IS_VALUE</a>(x,  y)</td></tr>
+<tr class="memitem:gab2a0b6ecc71d6624cceac7f1ff6d065b" id="r_gab2a0b6ecc71d6624cceac7f1ff6d065b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab2a0b6ecc71d6624cceac7f1ff6d065b">F32_IS_ZERO</a>(x)</td></tr>
+<tr class="memdesc:gab2a0b6ecc71d6624cceac7f1ff6d065b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines numerical proximity to zero  <br /></td></tr>
+<tr class="memitem:gaf354146a30be96184ab05896e7a041d8" id="r_gaf354146a30be96184ab05896e7a041d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf354146a30be96184ab05896e7a041d8">F64_IS_ZERO</a>(x)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:gae74693ba4166199d0672acf44fd75f0c" id="r_gae74693ba4166199d0672acf44fd75f0c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__pi__sps.html">dcl_pi_sps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae74693ba4166199d0672acf44fd75f0c">DCL_PI_SPS</a></td></tr>
+<tr class="memdesc:gae74693ba4166199d0672acf44fd75f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> shadow parameter set  <br /></td></tr>
+<tr class="memitem:gad3535921d2d0c60eddf8442429c7e81f" id="r_gad3535921d2d0c60eddf8442429c7e81f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__pi.html">dcl_pi</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a></td></tr>
+<tr class="memdesc:gad3535921d2d0c60eddf8442429c7e81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> controller structure  <br /></td></tr>
+<tr class="memitem:ga4af078e50a01360e929eebb595ac59ce" id="r_ga4af078e50a01360e929eebb595ac59ce"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__pi__t.html">dcl_pi_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4af078e50a01360e929eebb595ac59ce">DCL_PI_T</a></td></tr>
+<tr class="memdesc:ga4af078e50a01360e929eebb595ac59ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#ga4af078e50a01360e929eebb595ac59ce" title="Defines the DCL_PI_T controller structure">DCL_PI_T</a> controller structure  <br /></td></tr>
+<tr class="memitem:ga3c9ccfe7c1890117936ca8946c0d5555" id="r_ga3c9ccfe7c1890117936ca8946c0d5555"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__df11__sps.html">dcl_df11_sps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3c9ccfe7c1890117936ca8946c0d5555">DCL_DF11_SPS</a></td></tr>
+<tr class="memdesc:ga3c9ccfe7c1890117936ca8946c0d5555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#ga7375b44215b7758cf4f284e8b6106407" title="Defines the DCL_DF11 controller structure">DCL_DF11</a> shadow parameter set  <br /></td></tr>
+<tr class="memitem:ga7375b44215b7758cf4f284e8b6106407" id="r_ga7375b44215b7758cf4f284e8b6106407"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__df11.html">dcl_df11</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7375b44215b7758cf4f284e8b6106407">DCL_DF11</a></td></tr>
+<tr class="memdesc:ga7375b44215b7758cf4f284e8b6106407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#ga7375b44215b7758cf4f284e8b6106407" title="Defines the DCL_DF11 controller structure">DCL_DF11</a> controller structure  <br /></td></tr>
+<tr class="memitem:ga9fbd823a102f8870ed1effffff696b8c" id="r_ga9fbd823a102f8870ed1effffff696b8c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__df11__t.html">dcl_df11_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9fbd823a102f8870ed1effffff696b8c">DCL_DF11_T</a></td></tr>
+<tr class="memdesc:ga9fbd823a102f8870ed1effffff696b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#ga9fbd823a102f8870ed1effffff696b8c" title="Defines the DCL_DF11_T controller structure">DCL_DF11_T</a> controller structure  <br /></td></tr>
+<tr class="memitem:ga0b5df5b37e9155fb5bdce93041f9be53" id="r_ga0b5df5b37e9155fb5bdce93041f9be53"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__df22__sps.html">dcl_df22_sps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0b5df5b37e9155fb5bdce93041f9be53">DCL_DF22_SPS</a></td></tr>
+<tr class="memdesc:ga0b5df5b37e9155fb5bdce93041f9be53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> shadow parameter set  <br /></td></tr>
+<tr class="memitem:gaf8832c3b4a1ad9070601b091b430b0e8" id="r_gaf8832c3b4a1ad9070601b091b430b0e8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__df22.html">dcl_df22</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a></td></tr>
+<tr class="memdesc:gaf8832c3b4a1ad9070601b091b430b0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> controller structure  <br /></td></tr>
+<tr class="memitem:ga8233383ca37eabb66161ef56fe7ddffd" id="r_ga8233383ca37eabb66161ef56fe7ddffd"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__df22__t.html">dcl_df22_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8233383ca37eabb66161ef56fe7ddffd">DCL_DF22_T</a></td></tr>
+<tr class="memdesc:ga8233383ca37eabb66161ef56fe7ddffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> controller structure  <br /></td></tr>
+<tr class="memitem:ga5028c0805da7f3e0b372723ac789f3e2" id="r_ga5028c0805da7f3e0b372723ac789f3e2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__df23__sps.html">dcl_df23_sps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5028c0805da7f3e0b372723ac789f3e2">DCL_DF23_SPS</a></td></tr>
+<tr class="memdesc:ga5028c0805da7f3e0b372723ac789f3e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#ga74b8909e62e7713da3898ff5ab087938" title="Defines the DCL_DF23 controller structure">DCL_DF23</a> shadow parameter set  <br /></td></tr>
+<tr class="memitem:ga74b8909e62e7713da3898ff5ab087938" id="r_ga74b8909e62e7713da3898ff5ab087938"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__df23.html">dcl_df23</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga74b8909e62e7713da3898ff5ab087938">DCL_DF23</a></td></tr>
+<tr class="memdesc:ga74b8909e62e7713da3898ff5ab087938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#ga74b8909e62e7713da3898ff5ab087938" title="Defines the DCL_DF23 controller structure">DCL_DF23</a> controller structure  <br /></td></tr>
+<tr class="memitem:ga1ba1f1e6fc4c1c4ded55c3626d83f3de" id="r_ga1ba1f1e6fc4c1c4ded55c3626d83f3de"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdcl__df23__t.html">dcl_df23_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1ba1f1e6fc4c1c4ded55c3626d83f3de">DCL_DF23_T</a></td></tr>
+<tr class="memdesc:ga1ba1f1e6fc4c1c4ded55c3626d83f3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="#ga1ba1f1e6fc4c1c4ded55c3626d83f3de" title="Defines the DCL_DF23_T controller structure">DCL_DF23_T</a> controller structure  <br /></td></tr>
+<tr class="memitem:ga4611b605e45ab401f02cab15c5e38715" id="r_ga4611b605e45ab401f02cab15c5e38715"><td class="memItemLeft" align="right" valign="top">typedef float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td></tr>
+<tr class="memitem:gabf48e6de81b13463344ee4ebcf05d8b6" id="r_gabf48e6de81b13463344ee4ebcf05d8b6"><td class="memItemLeft" align="right" valign="top">typedef long double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabf48e6de81b13463344ee4ebcf05d8b6">float64_t</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga504148974bbb1ca86f558807b38e507c" id="r_ga504148974bbb1ca86f558807b38e507c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga504148974bbb1ca86f558807b38e507c">DCL_resetPI</a> (<a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *p)</td></tr>
+<tr class="memdesc:ga504148974bbb1ca86f558807b38e507c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets PID internal storage data  <br /></td></tr>
+<tr class="memitem:ga746e38af4ed1274d5014de7bf32acec0" id="r_ga746e38af4ed1274d5014de7bf32acec0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga746e38af4ed1274d5014de7bf32acec0">DCL_fupdatePI</a> (<a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *p)</td></tr>
+<tr class="memdesc:ga746e38af4ed1274d5014de7bf32acec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads PI tuning parameters Implemented as assembly module  <br /></td></tr>
+<tr class="memitem:ga8e97e28b063ef52e0a59429cccc9c389" id="r_ga8e97e28b063ef52e0a59429cccc9c389"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8e97e28b063ef52e0a59429cccc9c389">DCL_runPI_C1</a> (<a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *p, <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> rk, <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> yk)</td></tr>
+<tr class="memdesc:ga8e97e28b063ef52e0a59429cccc9c389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a series form PI controller on the FPU32 Implemented as an external assembly module  <br /></td></tr>
+<tr class="memitem:ga3c7fbc3deab361d5139d2a827870492e" id="r_ga3c7fbc3deab361d5139d2a827870492e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3c7fbc3deab361d5139d2a827870492e">DCL_runPI_C5</a> (<a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *p, <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> rk, <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> yk)</td></tr>
+<tr class="memdesc:ga3c7fbc3deab361d5139d2a827870492e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes an parallel form PI controller on the FPU32 Contains enhanced AWR logic  <br /></td></tr>
+<tr class="memitem:gab9b8015bd525d8fab980e8e786ee3b7d" id="r_gab9b8015bd525d8fab980e8e786ee3b7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab9b8015bd525d8fab980e8e786ee3b7d">DCL_runPI_C7</a> (<a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *p, <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> rk, <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> yk)</td></tr>
+<tr class="memdesc:gab9b8015bd525d8fab980e8e786ee3b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a series form PI controller with Tustin integrator on the FPU32. Implemented as assembly module.  <br /></td></tr>
+<tr class="memitem:ga25a4b75c446a05bd33f159390d5443cb" id="r_ga25a4b75c446a05bd33f159390d5443cb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga25a4b75c446a05bd33f159390d5443cb">DCL_resetDF11</a> (<a class="el" href="#ga7375b44215b7758cf4f284e8b6106407">DCL_DF11</a> *p)</td></tr>
+<tr class="memdesc:ga25a4b75c446a05bd33f159390d5443cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the <a class="el" href="#ga7375b44215b7758cf4f284e8b6106407" title="Defines the DCL_DF11 controller structure">DCL_DF11</a> controller  <br /></td></tr>
+<tr class="memitem:gada64e4d76c5bd8a8f3df1aa7c605b864" id="r_gada64e4d76c5bd8a8f3df1aa7c605b864"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gada64e4d76c5bd8a8f3df1aa7c605b864">DCL_fupdateDF11</a> (<a class="el" href="#ga7375b44215b7758cf4f284e8b6106407">DCL_DF11</a> *p)</td></tr>
+<tr class="memdesc:gada64e4d76c5bd8a8f3df1aa7c605b864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads DF11 tuning parameters Implemented as assembly module  <br /></td></tr>
+<tr class="memitem:ga5b7d78115c546acf3fd91ec298c65ce2" id="r_ga5b7d78115c546acf3fd91ec298c65ce2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5b7d78115c546acf3fd91ec298c65ce2">DCL_runDF11_C1</a> (<a class="el" href="#ga7375b44215b7758cf4f284e8b6106407">DCL_DF11</a> *p, <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> ek)</td></tr>
+<tr class="memdesc:ga5b7d78115c546acf3fd91ec298c65ce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a 1st order Direct Form 1 controller on the FPU32 Implemented as an external assembly module  <br /></td></tr>
+<tr class="memitem:ga6ecbf71210c8904cba4323c5c75aa85d" id="r_ga6ecbf71210c8904cba4323c5c75aa85d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6ecbf71210c8904cba4323c5c75aa85d">DCL_resetDF22</a> (<a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *p)</td></tr>
+<tr class="memdesc:ga6ecbf71210c8904cba4323c5c75aa85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets internal DF22 controller data to zero  <br /></td></tr>
+<tr class="memitem:ga745080d40225b83e6c78e9d2f563a762" id="r_ga745080d40225b83e6c78e9d2f563a762"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga745080d40225b83e6c78e9d2f563a762">DCL_fupdateDF22</a> (<a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *p)</td></tr>
+<tr class="memdesc:ga745080d40225b83e6c78e9d2f563a762"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads DF22 tuning parameters Implemented as assembly module  <br /></td></tr>
+<tr class="memitem:gaaf5f27ab2366e3fd4394acb8977caf6d" id="r_gaaf5f27ab2366e3fd4394acb8977caf6d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaaf5f27ab2366e3fd4394acb8977caf6d">DCL_loadDF22asZPK</a> (<a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *p, DCL_ZPK3 *q)</td></tr>
+<tr class="memdesc:gaaf5f27ab2366e3fd4394acb8977caf6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the DF22 shadow coefficients from a ZPK3 description Note: new settings take effect after DCL_updateDF22() Only z1, z2, p1 &amp; p2 considered: z3 &amp; p3 ignored  <br /></td></tr>
+<tr class="memitem:gab0e13d824312b22fffc00556a8dc1771" id="r_gab0e13d824312b22fffc00556a8dc1771"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab0e13d824312b22fffc00556a8dc1771">DCL_loadDF22asZwn</a> (<a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *p, <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> z, <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> wn)</td></tr>
+<tr class="memdesc:gab0e13d824312b22fffc00556a8dc1771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the DF22 shadow coefficients from damping ratio and un-damped natural frequency using sample rate in CSS. Note: new settings take effect after DCL_updateDF22()  <br /></td></tr>
+<tr class="memitem:gafe1ce8142d1bd331ed3d8ac685825e94" id="r_gafe1ce8142d1bd331ed3d8ac685825e94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafe1ce8142d1bd331ed3d8ac685825e94">DCL_runDF22_C1</a> (<a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *p, <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> ek)</td></tr>
+<tr class="memdesc:gafe1ce8142d1bd331ed3d8ac685825e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a full 2nd order Direct Form 2 controller on the FPU32 Implemented as an external assembly module  <br /></td></tr>
+<tr class="memitem:gac00beecbf14cd3cd2296d59c3557b161" id="r_gac00beecbf14cd3cd2296d59c3557b161"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac00beecbf14cd3cd2296d59c3557b161">DCL_resetDF23</a> (<a class="el" href="#ga74b8909e62e7713da3898ff5ab087938">DCL_DF23</a> *p)</td></tr>
+<tr class="memdesc:gac00beecbf14cd3cd2296d59c3557b161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets internal DF23 controller data to zero  <br /></td></tr>
+<tr class="memitem:ga03473203d3a1508672e670a05c5c555d" id="r_ga03473203d3a1508672e670a05c5c555d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga03473203d3a1508672e670a05c5c555d">DCL_fupdateDF23</a> (<a class="el" href="#ga74b8909e62e7713da3898ff5ab087938">DCL_DF23</a> *p)</td></tr>
+<tr class="memdesc:ga03473203d3a1508672e670a05c5c555d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads DF23 tuning parameters Implemented as assembly module  <br /></td></tr>
+<tr class="memitem:ga85842444a6406689169247dccffd6760" id="r_ga85842444a6406689169247dccffd6760"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga85842444a6406689169247dccffd6760">DCL_loadDF23asZPK</a> (<a class="el" href="#ga74b8909e62e7713da3898ff5ab087938">DCL_DF23</a> *p, DCL_ZPK3 *q)</td></tr>
+<tr class="memdesc:ga85842444a6406689169247dccffd6760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the DF23 shadow coefficients from a ZPK3 description Note: new settings take effect after DCL_updateDF23()  <br /></td></tr>
+<tr class="memitem:gae70609d89621393f636b3f2eb8545fe2" id="r_gae70609d89621393f636b3f2eb8545fe2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae70609d89621393f636b3f2eb8545fe2">DCL_runDF23_C1</a> (<a class="el" href="#ga74b8909e62e7713da3898ff5ab087938">DCL_DF23</a> *p, <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> ek)</td></tr>
+<tr class="memdesc:gae70609d89621393f636b3f2eb8545fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a full 3rd order Direct Form 2 controller on the FPU32 Implemented as an external assembly module  <br /></td></tr>
+<tr class="memitem:ga8f24471737d4bb518232a99bf410b705" id="r_ga8f24471737d4bb518232a99bf410b705"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8f24471737d4bb518232a99bf410b705">DCL_runClamp_C1</a> (<a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> *data, <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Umax, <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Umin)</td></tr>
+<tr class="memdesc:ga8f24471737d4bb518232a99bf410b705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saturates a control variable and returns 1 if either limit is exceeded. Implemented as an external assembly module.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<p>TI 数字控制库, 提供 pi, 差分方程的支持 </p>
+<p>Contains the public interface to the common Digital Controller Library functions</p>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="gaebedd1cce60951fd692a2714c4576cb5" name="gaebedd1cce60951fd692a2714c4576cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaebedd1cce60951fd692a2714c4576cb5">&#9670;&#160;</a></span>C2000_IEEE754_TYPES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C2000_IEEE754_TYPES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00020">20</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gaa9e144e0e3cd5906e9b9331d03b134aa" name="gaa9e144e0e3cd5906e9b9331d03b134aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9e144e0e3cd5906e9b9331d03b134aa">&#9670;&#160;</a></span>CONST_2PI_32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONST_2PI_32&#160;&#160;&#160;2.0f * <a class="el" href="#ga5693719eb5d43034577d8404cbd8da13">CONST_PI_32</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gab40c307833f4d92fb79eebdf1d8158a6" name="gab40c307833f4d92fb79eebdf1d8158a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab40c307833f4d92fb79eebdf1d8158a6">&#9670;&#160;</a></span>CONST_2PI_64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONST_2PI_64&#160;&#160;&#160;2.0L * <a class="el" href="#ga3c89841a618b6fe27861b75cf9cc4c4f">CONST_PI_64</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga5693719eb5d43034577d8404cbd8da13" name="ga5693719eb5d43034577d8404cbd8da13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5693719eb5d43034577d8404cbd8da13">&#9670;&#160;</a></span>CONST_PI_32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONST_PI_32&#160;&#160;&#160;3.14159265358979323846f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Local definitions of mathematical constants </p>
+
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga3c89841a618b6fe27861b75cf9cc4c4f" name="ga3c89841a618b6fe27861b75cf9cc4c4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c89841a618b6fe27861b75cf9cc4c4f">&#9670;&#160;</a></span>CONST_PI_64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONST_PI_64&#160;&#160;&#160;3.1415926535897932384626433832795028841971693993751058209749445923078164062L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gaba65638d62bc6c241ce662efcb78e68d" name="gaba65638d62bc6c241ce662efcb78e68d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba65638d62bc6c241ce662efcb78e68d">&#9670;&#160;</a></span>DCL_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DCL_VERSION&#160;&#160;&#160;3050000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Library version number formatted for numerical comparison </p>
+
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00016">16</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga06da86958ce5e924c5a793ebdd870561" name="ga06da86958ce5e924c5a793ebdd870561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga06da86958ce5e924c5a793ebdd870561">&#9670;&#160;</a></span>DEFAULT_FPU32_TOL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_FPU32_TOL&#160;&#160;&#160;1.0e-06f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define the acceptable FPU numerical tolerances </p>
+
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga6069fb9c134eb72cfdbb8c824505bc15" name="ga6069fb9c134eb72cfdbb8c824505bc15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6069fb9c134eb72cfdbb8c824505bc15">&#9670;&#160;</a></span>DEFAULT_FPU64_TOL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_FPU64_TOL&#160;&#160;&#160;1.0e-10f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga8390dfefa95b1298f42116905a236cb9" name="ga8390dfefa95b1298f42116905a236cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8390dfefa95b1298f42116905a236cb9">&#9670;&#160;</a></span>DF11_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DF11_DEFAULTS&#160;&#160;&#160;{ 0.5f, 0.5f, 1.0f, 0.0f, 0.0f, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a>, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a> }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines default values to initialize the <a class="el" href="#ga7375b44215b7758cf4f284e8b6106407" title="Defines the DCL_DF11 controller structure">DCL_DF11</a> structure </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00174">174</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga15e3eb3409f0bf0aede919fd1b0ec9d8" name="ga15e3eb3409f0bf0aede919fd1b0ec9d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15e3eb3409f0bf0aede919fd1b0ec9d8">&#9670;&#160;</a></span>DF11_SPS_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DF11_SPS_DEFAULTS&#160;&#160;&#160;{ 0.5f, 0.5f, 1.0f }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines default values to initialize the <a class="el" href="#ga3c9ccfe7c1890117936ca8946c0d5555" title="Defines the DCL_DF11 shadow parameter set">DCL_DF11_SPS</a> shadow structure </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00158">158</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gaa95501b13b7087e1ff7f155255e395cd" name="gaa95501b13b7087e1ff7f155255e395cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa95501b13b7087e1ff7f155255e395cd">&#9670;&#160;</a></span>DF11_T_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DF11_T_DEFAULTS&#160;&#160;&#160;{ <a class="el" href="#ga8390dfefa95b1298f42116905a236cb9">DF11_DEFAULTS</a>, <a class="el" href="#ga15e3eb3409f0bf0aede919fd1b0ec9d8">DF11_SPS_DEFAULTS</a>, <a class="el" href="dcl__support_8h.html#a8cc8e449a418e8de122e088efce42306">DCL_CSS_DEFAULTS</a>, 0.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines default values to initialize the <a class="el" href="#ga9fbd823a102f8870ed1effffff696b8c" title="Defines the DCL_DF11_T controller structure">DCL_DF11_T</a> structure </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00188">188</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gaaa3ad28ae5ba9f1a7efa3eff9b5edf5e" name="gaaa3ad28ae5ba9f1a7efa3eff9b5edf5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa3ad28ae5ba9f1a7efa3eff9b5edf5e">&#9670;&#160;</a></span>DF22_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DF22_DEFAULTS&#160;&#160;&#160;{ 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a>, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a> }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines default values to initialize the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> structure </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00250">250</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga4107adb7f946edacc95070faa874b8f2" name="ga4107adb7f946edacc95070faa874b8f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4107adb7f946edacc95070faa874b8f2">&#9670;&#160;</a></span>DF22_SPS_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DF22_SPS_DEFAULTS&#160;&#160;&#160;{ 1.0f, 0.0f, 0.0f, 0.0f, 0.0f }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines default values to initialize the <a class="el" href="#ga0b5df5b37e9155fb5bdce93041f9be53" title="Defines the DCL_DF22 shadow parameter set">DCL_DF22_SPS</a> shadow structure </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00232">232</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga01c9317f24a06320f89975d5cac59891" name="ga01c9317f24a06320f89975d5cac59891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga01c9317f24a06320f89975d5cac59891">&#9670;&#160;</a></span>DF22_T_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DF22_T_DEFAULTS&#160;&#160;&#160;{ <a class="el" href="#gaaa3ad28ae5ba9f1a7efa3eff9b5edf5e">DF22_DEFAULTS</a>, <a class="el" href="#ga4107adb7f946edacc95070faa874b8f2">DF22_SPS_DEFAULTS</a>, <a class="el" href="dcl__support_8h.html#a8cc8e449a418e8de122e088efce42306">DCL_CSS_DEFAULTS</a>, 0.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define defalut values to initialize the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> structure </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00264">264</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga23bcbae05f049c70fc33488fc94bf349" name="ga23bcbae05f049c70fc33488fc94bf349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga23bcbae05f049c70fc33488fc94bf349">&#9670;&#160;</a></span>DF23_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DF23_DEFAULTS&#160;&#160;&#160;{ 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a>, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a> }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines default values to initialize the <a class="el" href="#ga74b8909e62e7713da3898ff5ab087938" title="Defines the DCL_DF23 controller structure">DCL_DF23</a> structure </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00399">399</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga91fc8314b872e7b343f8cfc4940ac2e0" name="ga91fc8314b872e7b343f8cfc4940ac2e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga91fc8314b872e7b343f8cfc4940ac2e0">&#9670;&#160;</a></span>DF23_SPS_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DF23_SPS_DEFAULTS&#160;&#160;&#160;{ 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines default values to initialize the <a class="el" href="#ga5028c0805da7f3e0b372723ac789f3e2" title="Defines the DCL_DF23 shadow parameter set">DCL_DF23_SPS</a> structure </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00374">374</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gad156e04789d1dee619b5a9db600cc56b" name="gad156e04789d1dee619b5a9db600cc56b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad156e04789d1dee619b5a9db600cc56b">&#9670;&#160;</a></span>DF23_T_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DF23_T_DEFAULTS&#160;&#160;&#160;{<a class="el" href="#ga23bcbae05f049c70fc33488fc94bf349">DF23_DEFAULTS</a>, <a class="el" href="#ga91fc8314b872e7b343f8cfc4940ac2e0">DF23_SPS_DEFAULTS</a>, <a class="el" href="dcl__support_8h.html#a8cc8e449a418e8de122e088efce42306">DCL_CSS_DEFAULTS</a>, 0.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines default values to initialize the <a class="el" href="#ga5028c0805da7f3e0b372723ac789f3e2" title="Defines the DCL_DF23 shadow parameter set">DCL_DF23_SPS</a> structure </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00413">413</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gaf7b3615b7d638b119dc50e8bdb4b7e63" name="gaf7b3615b7d638b119dc50e8bdb4b7e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf7b3615b7d638b119dc50e8bdb4b7e63">&#9670;&#160;</a></span>F32_IS_VALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F32_IS_VALUE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(((x &lt; (y + DEFAULT_FPU32_TOL)) &amp;&amp; (x &gt; (y - <a class="code hl_define" href="#ga06da86958ce5e924c5a793ebdd870561">DEFAULT_FPU32_TOL</a>))) ? 1 : 0)</div>
+<div class="ttc" id="agroup___c_t_r_l___d_c_l_html_ga06da86958ce5e924c5a793ebdd870561"><div class="ttname"><a href="#ga06da86958ce5e924c5a793ebdd870561">DEFAULT_FPU32_TOL</a></div><div class="ttdeci">#define DEFAULT_FPU32_TOL</div><div class="ttdoc">Define the acceptable FPU numerical tolerances</div><div class="ttdef"><b>定义</b> <a href="dcl__support_8h_source.html#l00052">dcl_support.h:52</a></div></div>
+</div><!-- fragment -->
+<p>Determines numerical proximity to specified value </p>
+
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00057">57</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gab2a0b6ecc71d6624cceac7f1ff6d065b" name="gab2a0b6ecc71d6624cceac7f1ff6d065b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2a0b6ecc71d6624cceac7f1ff6d065b">&#9670;&#160;</a></span>F32_IS_ZERO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F32_IS_ZERO</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#gaf7b3615b7d638b119dc50e8bdb4b7e63">F32_IS_VALUE</a>(x,0.0f)</div>
+<div class="ttc" id="agroup___c_t_r_l___d_c_l_html_gaf7b3615b7d638b119dc50e8bdb4b7e63"><div class="ttname"><a href="#gaf7b3615b7d638b119dc50e8bdb4b7e63">F32_IS_VALUE</a></div><div class="ttdeci">#define F32_IS_VALUE(x, y)</div><div class="ttdoc">Determines numerical proximity to specified value</div><div class="ttdef"><b>定义</b> <a href="dcl__support_8h_source.html#l00057">dcl_support.h:57</a></div></div>
+</div><!-- fragment -->
+<p>Determines numerical proximity to zero </p>
+
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00062">62</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga376d54bae56928bcf0db94d201957f53" name="ga376d54bae56928bcf0db94d201957f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga376d54bae56928bcf0db94d201957f53">&#9670;&#160;</a></span>F64_IS_VALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F64_IS_VALUE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(((x &lt; (y + DEFAULT_FPU64_TOL)) &amp;&amp; (x &gt; (y - <a class="code hl_define" href="#ga6069fb9c134eb72cfdbb8c824505bc15">DEFAULT_FPU64_TOL</a>))) ? 1 : 0)</div>
+<div class="ttc" id="agroup___c_t_r_l___d_c_l_html_ga6069fb9c134eb72cfdbb8c824505bc15"><div class="ttname"><a href="#ga6069fb9c134eb72cfdbb8c824505bc15">DEFAULT_FPU64_TOL</a></div><div class="ttdeci">#define DEFAULT_FPU64_TOL</div><div class="ttdef"><b>定义</b> <a href="dcl__support_8h_source.html#l00053">dcl_support.h:53</a></div></div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00058">58</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gaf354146a30be96184ab05896e7a041d8" name="gaf354146a30be96184ab05896e7a041d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf354146a30be96184ab05896e7a041d8">&#9670;&#160;</a></span>F64_IS_ZERO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F64_IS_ZERO</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#ga376d54bae56928bcf0db94d201957f53">F64_IS_VALUE</a>(x,0.0L)</div>
+<div class="ttc" id="agroup___c_t_r_l___d_c_l_html_ga376d54bae56928bcf0db94d201957f53"><div class="ttname"><a href="#ga376d54bae56928bcf0db94d201957f53">F64_IS_VALUE</a></div><div class="ttdeci">#define F64_IS_VALUE(x, y)</div><div class="ttdef"><b>定义</b> <a href="dcl__support_8h_source.html#l00058">dcl_support.h:58</a></div></div>
+</div><!-- fragment -->
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00063">63</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga4e8e11379575adbbcff1f62589ad6855" name="ga4e8e11379575adbbcff1f62589ad6855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e8e11379575adbbcff1f62589ad6855">&#9670;&#160;</a></span>NULL_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NULL_ADDR&#160;&#160;&#160;0x00000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines 32-bit null address for pointer initialization </p>
+
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga9f21fffdbe210c05fb4405eb76abe289" name="ga9f21fffdbe210c05fb4405eb76abe289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f21fffdbe210c05fb4405eb76abe289">&#9670;&#160;</a></span>PI_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PI_DEFAULTS&#160;&#160;&#160;{ 1.0f, 0.0f, 0.0f, 1.0f, -1.0f, 1.0f, 0.0f, 1.0f, -1.0f, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a>, <a class="el" href="#ga4e8e11379575adbbcff1f62589ad6855">NULL_ADDR</a> }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines default values to initialize the PI structure </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00058">58</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga916dd408ba55e0958b6561f4e86ee487" name="ga916dd408ba55e0958b6561f4e86ee487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga916dd408ba55e0958b6561f4e86ee487">&#9670;&#160;</a></span>PI_SPS_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PI_SPS_DEFAULTS&#160;&#160;&#160;{ 1.0f, 0.0f, 1.0f, -1.0f, 1.0f, -1.0f }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines default values to initialize the <a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> shadow structure </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gae14ff924a303331118020b9e1e47eda2" name="gae14ff924a303331118020b9e1e47eda2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae14ff924a303331118020b9e1e47eda2">&#9670;&#160;</a></span>PI_T_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PI_T_DEFAULTS&#160;&#160;&#160;{<a class="el" href="#ga9f21fffdbe210c05fb4405eb76abe289">PI_DEFAULTS</a>, <a class="el" href="#ga916dd408ba55e0958b6561f4e86ee487">PI_SPS_DEFAULTS</a>, <a class="el" href="dcl__support_8h.html#a8cc8e449a418e8de122e088efce42306">DCL_CSS_DEFAULTS</a>, 0.0f }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines default values to initialize the PI_T structure </p>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00071">71</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">类型定义说明</h2>
+<a id="ga7375b44215b7758cf4f284e8b6106407" name="ga7375b44215b7758cf4f284e8b6106407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7375b44215b7758cf4f284e8b6106407">&#9670;&#160;</a></span>DCL_DF11</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__df11.html">dcl_df11</a> <a class="el" href="#ga7375b44215b7758cf4f284e8b6106407">DCL_DF11</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the <a class="el" href="#ga7375b44215b7758cf4f284e8b6106407" title="Defines the DCL_DF11 controller structure">DCL_DF11</a> controller structure </p>
+
+</div>
+</div>
+<a id="ga3c9ccfe7c1890117936ca8946c0d5555" name="ga3c9ccfe7c1890117936ca8946c0d5555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c9ccfe7c1890117936ca8946c0d5555">&#9670;&#160;</a></span>DCL_DF11_SPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__df11__sps.html">dcl_df11_sps</a> <a class="el" href="#ga3c9ccfe7c1890117936ca8946c0d5555">DCL_DF11_SPS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the <a class="el" href="#ga7375b44215b7758cf4f284e8b6106407" title="Defines the DCL_DF11 controller structure">DCL_DF11</a> shadow parameter set </p>
+
+</div>
+</div>
+<a id="ga9fbd823a102f8870ed1effffff696b8c" name="ga9fbd823a102f8870ed1effffff696b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fbd823a102f8870ed1effffff696b8c">&#9670;&#160;</a></span>DCL_DF11_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__df11__t.html">dcl_df11_t</a> <a class="el" href="#ga9fbd823a102f8870ed1effffff696b8c">DCL_DF11_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the <a class="el" href="#ga9fbd823a102f8870ed1effffff696b8c" title="Defines the DCL_DF11_T controller structure">DCL_DF11_T</a> controller structure </p>
+
+</div>
+</div>
+<a id="gaf8832c3b4a1ad9070601b091b430b0e8" name="gaf8832c3b4a1ad9070601b091b430b0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8832c3b4a1ad9070601b091b430b0e8">&#9670;&#160;</a></span>DCL_DF22</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__df22.html">dcl_df22</a> <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> controller structure </p>
+
+</div>
+</div>
+<a id="ga0b5df5b37e9155fb5bdce93041f9be53" name="ga0b5df5b37e9155fb5bdce93041f9be53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b5df5b37e9155fb5bdce93041f9be53">&#9670;&#160;</a></span>DCL_DF22_SPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__df22__sps.html">dcl_df22_sps</a> <a class="el" href="#ga0b5df5b37e9155fb5bdce93041f9be53">DCL_DF22_SPS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> shadow parameter set </p>
+
+</div>
+</div>
+<a id="ga8233383ca37eabb66161ef56fe7ddffd" name="ga8233383ca37eabb66161ef56fe7ddffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8233383ca37eabb66161ef56fe7ddffd">&#9670;&#160;</a></span>DCL_DF22_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__df22__t.html">dcl_df22_t</a> <a class="el" href="#ga8233383ca37eabb66161ef56fe7ddffd">DCL_DF22_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> controller structure </p>
+
+</div>
+</div>
+<a id="ga74b8909e62e7713da3898ff5ab087938" name="ga74b8909e62e7713da3898ff5ab087938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74b8909e62e7713da3898ff5ab087938">&#9670;&#160;</a></span>DCL_DF23</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__df23.html">dcl_df23</a> <a class="el" href="#ga74b8909e62e7713da3898ff5ab087938">DCL_DF23</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the <a class="el" href="#ga74b8909e62e7713da3898ff5ab087938" title="Defines the DCL_DF23 controller structure">DCL_DF23</a> controller structure </p>
+
+</div>
+</div>
+<a id="ga5028c0805da7f3e0b372723ac789f3e2" name="ga5028c0805da7f3e0b372723ac789f3e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5028c0805da7f3e0b372723ac789f3e2">&#9670;&#160;</a></span>DCL_DF23_SPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__df23__sps.html">dcl_df23_sps</a> <a class="el" href="#ga5028c0805da7f3e0b372723ac789f3e2">DCL_DF23_SPS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the <a class="el" href="#ga74b8909e62e7713da3898ff5ab087938" title="Defines the DCL_DF23 controller structure">DCL_DF23</a> shadow parameter set </p>
+
+</div>
+</div>
+<a id="ga1ba1f1e6fc4c1c4ded55c3626d83f3de" name="ga1ba1f1e6fc4c1c4ded55c3626d83f3de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ba1f1e6fc4c1c4ded55c3626d83f3de">&#9670;&#160;</a></span>DCL_DF23_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__df23__t.html">dcl_df23_t</a> <a class="el" href="#ga1ba1f1e6fc4c1c4ded55c3626d83f3de">DCL_DF23_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the <a class="el" href="#ga1ba1f1e6fc4c1c4ded55c3626d83f3de" title="Defines the DCL_DF23_T controller structure">DCL_DF23_T</a> controller structure </p>
+
+</div>
+</div>
+<a id="gad3535921d2d0c60eddf8442429c7e81f" name="gad3535921d2d0c60eddf8442429c7e81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3535921d2d0c60eddf8442429c7e81f">&#9670;&#160;</a></span>DCL_PI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__pi.html">dcl_pi</a> <a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the <a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> controller structure </p>
+
+</div>
+</div>
+<a id="gae74693ba4166199d0672acf44fd75f0c" name="gae74693ba4166199d0672acf44fd75f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae74693ba4166199d0672acf44fd75f0c">&#9670;&#160;</a></span>DCL_PI_SPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__pi__sps.html">dcl_pi_sps</a> <a class="el" href="#gae74693ba4166199d0672acf44fd75f0c">DCL_PI_SPS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the <a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> shadow parameter set </p>
+
+</div>
+</div>
+<a id="ga4af078e50a01360e929eebb595ac59ce" name="ga4af078e50a01360e929eebb595ac59ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4af078e50a01360e929eebb595ac59ce">&#9670;&#160;</a></span>DCL_PI_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdcl__pi__t.html">dcl_pi_t</a> <a class="el" href="#ga4af078e50a01360e929eebb595ac59ce">DCL_PI_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the <a class="el" href="#ga4af078e50a01360e929eebb595ac59ce" title="Defines the DCL_PI_T controller structure">DCL_PI_T</a> controller structure </p>
+
+</div>
+</div>
+<a id="ga4611b605e45ab401f02cab15c5e38715" name="ga4611b605e45ab401f02cab15c5e38715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4611b605e45ab401f02cab15c5e38715">&#9670;&#160;</a></span>float32_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef float <a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00025">25</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gabf48e6de81b13463344ee4ebcf05d8b6" name="gabf48e6de81b13463344ee4ebcf05d8b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf48e6de81b13463344ee4ebcf05d8b6">&#9670;&#160;</a></span>float64_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef long double <a class="el" href="#gabf48e6de81b13463344ee4ebcf05d8b6">float64_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="dcl__support_8h_source.html">dcl_support.h</a> 第 <a class="el" href="dcl__support_8h_source.html#l00026">26</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="gada64e4d76c5bd8a8f3df1aa7c605b864" name="gada64e4d76c5bd8a8f3df1aa7c605b864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada64e4d76c5bd8a8f3df1aa7c605b864">&#9670;&#160;</a></span>DCL_fupdateDF11()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_fupdateDF11 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga7375b44215b7758cf4f284e8b6106407">DCL_DF11</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads DF11 tuning parameters Implemented as assembly module </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the active <a class="el" href="#ga7375b44215b7758cf4f284e8b6106407" title="Defines the DCL_DF11 controller structure">DCL_DF11</a> controller structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
+
+</div>
+</div>
+<a id="ga745080d40225b83e6c78e9d2f563a762" name="ga745080d40225b83e6c78e9d2f563a762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga745080d40225b83e6c78e9d2f563a762">&#9670;&#160;</a></span>DCL_fupdateDF22()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_fupdateDF22 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads DF22 tuning parameters Implemented as assembly module </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the active <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> controller structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
+
+</div>
+</div>
+<a id="ga03473203d3a1508672e670a05c5c555d" name="ga03473203d3a1508672e670a05c5c555d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga03473203d3a1508672e670a05c5c555d">&#9670;&#160;</a></span>DCL_fupdateDF23()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_fupdateDF23 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga74b8909e62e7713da3898ff5ab087938">DCL_DF23</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads DF23 tuning parameters Implemented as assembly module </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the active <a class="el" href="#ga74b8909e62e7713da3898ff5ab087938" title="Defines the DCL_DF23 controller structure">DCL_DF23</a> controller structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
+
+</div>
+</div>
+<a id="ga746e38af4ed1274d5014de7bf32acec0" name="ga746e38af4ed1274d5014de7bf32acec0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga746e38af4ed1274d5014de7bf32acec0">&#9670;&#160;</a></span>DCL_fupdatePI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_fupdatePI </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads PI tuning parameters Implemented as assembly module </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the active <a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> controller structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
+
+</div>
+</div>
+<a id="gaaf5f27ab2366e3fd4394acb8977caf6d" name="gaaf5f27ab2366e3fd4394acb8977caf6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf5f27ab2366e3fd4394acb8977caf6d">&#9670;&#160;</a></span>DCL_loadDF22asZPK()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_loadDF22asZPK </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DCL_ZPK3 *</td>          <td class="paramname"><span class="paramname"><em>q</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the DF22 shadow coefficients from a ZPK3 description Note: new settings take effect after DCL_updateDF22() Only z1, z2, p1 &amp; p2 considered: z3 &amp; p3 ignored </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> controller structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td>Pointer to the DCL_ZPK3 structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00293">293</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gab0e13d824312b22fffc00556a8dc1771" name="gab0e13d824312b22fffc00556a8dc1771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab0e13d824312b22fffc00556a8dc1771">&#9670;&#160;</a></span>DCL_loadDF22asZwn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_loadDF22asZwn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>wn</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the DF22 shadow coefficients from damping ratio and un-damped natural frequency using sample rate in CSS. Note: new settings take effect after DCL_updateDF22() </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> controller structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">z</td><td>The damping ratio </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wn</td><td>The un-damped natural frequency in rad/s </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00328">328</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga85842444a6406689169247dccffd6760" name="ga85842444a6406689169247dccffd6760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85842444a6406689169247dccffd6760">&#9670;&#160;</a></span>DCL_loadDF23asZPK()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_loadDF23asZPK </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga74b8909e62e7713da3898ff5ab087938">DCL_DF23</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DCL_ZPK3 *</td>          <td class="paramname"><span class="paramname"><em>q</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the DF23 shadow coefficients from a ZPK3 description Note: new settings take effect after DCL_updateDF23() </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the <a class="el" href="#ga74b8909e62e7713da3898ff5ab087938" title="Defines the DCL_DF23 controller structure">DCL_DF23</a> controller structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td>Pointer to the DCL_ZPK3 structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00441">441</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga25a4b75c446a05bd33f159390d5443cb" name="ga25a4b75c446a05bd33f159390d5443cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga25a4b75c446a05bd33f159390d5443cb">&#9670;&#160;</a></span>DCL_resetDF11()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_resetDF11 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga7375b44215b7758cf4f284e8b6106407">DCL_DF11</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets the <a class="el" href="#ga7375b44215b7758cf4f284e8b6106407" title="Defines the DCL_DF11 controller structure">DCL_DF11</a> controller </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the <a class="el" href="#ga7375b44215b7758cf4f284e8b6106407" title="Defines the DCL_DF11 controller structure">DCL_DF11</a> structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00194">194</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga6ecbf71210c8904cba4323c5c75aa85d" name="ga6ecbf71210c8904cba4323c5c75aa85d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6ecbf71210c8904cba4323c5c75aa85d">&#9670;&#160;</a></span>DCL_resetDF22()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_resetDF22 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets internal DF22 controller data to zero </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> controller structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00270">270</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gac00beecbf14cd3cd2296d59c3557b161" name="gac00beecbf14cd3cd2296d59c3557b161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac00beecbf14cd3cd2296d59c3557b161">&#9670;&#160;</a></span>DCL_resetDF23()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_resetDF23 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga74b8909e62e7713da3898ff5ab087938">DCL_DF23</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets internal DF23 controller data to zero </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the <a class="el" href="#ga74b8909e62e7713da3898ff5ab087938" title="Defines the DCL_DF23 controller structure">DCL_DF23</a> controller structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00419">419</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga504148974bbb1ca86f558807b38e507c" name="ga504148974bbb1ca86f558807b38e507c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga504148974bbb1ca86f558807b38e507c">&#9670;&#160;</a></span>DCL_resetPI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DCL_resetPI </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets PID internal storage data </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the <a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>None </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00077">77</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga8f24471737d4bb518232a99bf410b705" name="ga8f24471737d4bb518232a99bf410b705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8f24471737d4bb518232a99bf410b705">&#9670;&#160;</a></span>DCL_runClamp_C1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t DCL_runClamp_C1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>Umax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>Umin</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saturates a control variable and returns 1 if either limit is exceeded. Implemented as an external assembly module. </p>
+<p>Can be used to saturate a pre-computed Direct Form 2 controller. If the immediate result is in range it can be used, otherwise it can be clamped and the next partial pre-computation skipped. An example of use with a pre-computed DF22 controller follows:</p>
+<div class="fragment"><div class="line">uk = DCL_runDF22_C2(&amp;arma2, rk);                <span class="comment">// immediate result from pre-computed controller</span></div>
+<div class="line">i = <a class="code hl_function" href="#ga8f24471737d4bb518232a99bf410b705">DCL_runClamp_C1</a>(&amp;uk, 1.0f, -1.0f);          <span class="comment">// clamp immediate result to +/-1.0</span></div>
+<div class="line"><span class="comment">// ...use uk here...</span></div>
+<div class="line"><span class="keywordflow">if</span> (0 == i)                                     <span class="comment">// if immediate result is in range...</span></div>
+<div class="line">{</div>
+<div class="line">    DCL_runDF22_C3(&amp;arma2, rk, uk);             <span class="comment">// ...pre-compute the next partial result</span></div>
+<div class="line">}</div>
+<div class="ttc" id="agroup___c_t_r_l___d_c_l_html_ga8f24471737d4bb518232a99bf410b705"><div class="ttname"><a href="#ga8f24471737d4bb518232a99bf410b705">DCL_runClamp_C1</a></div><div class="ttdeci">int16_t DCL_runClamp_C1(float32_t *data, float32_t Umax, float32_t Umin)</div><div class="ttdoc">Saturates a control variable and returns 1 if either limit is exceeded. Implemented as an external as...</div></div>
+</div><!-- fragment --><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The address of the data variable </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Umax</td><td>The upper limit </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Umin</td><td>The lower limit </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Returns 0 if (Umin &lt; data &lt; Umax), else 1 </dd></dl>
+
+</div>
+</div>
+<a id="ga5b7d78115c546acf3fd91ec298c65ce2" name="ga5b7d78115c546acf3fd91ec298c65ce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b7d78115c546acf3fd91ec298c65ce2">&#9670;&#160;</a></span>DCL_runDF11_C1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> DCL_runDF11_C1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga7375b44215b7758cf4f284e8b6106407">DCL_DF11</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ek</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes a 1st order Direct Form 1 controller on the FPU32 Implemented as an external assembly module </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the <a class="el" href="#ga7375b44215b7758cf4f284e8b6106407" title="Defines the DCL_DF11 controller structure">DCL_DF11</a> controller structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ek</td><td>The servo error </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The control effort </dd></dl>
+
+</div>
+</div>
+<a id="gafe1ce8142d1bd331ed3d8ac685825e94" name="gafe1ce8142d1bd331ed3d8ac685825e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe1ce8142d1bd331ed3d8ac685825e94">&#9670;&#160;</a></span>DCL_runDF22_C1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> DCL_runDF22_C1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8">DCL_DF22</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ek</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes a full 2nd order Direct Form 2 controller on the FPU32 Implemented as an external assembly module </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the <a class="el" href="#gaf8832c3b4a1ad9070601b091b430b0e8" title="Defines the DCL_DF22 controller structure">DCL_DF22</a> controller structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ek</td><td>The servo error </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The control effort </dd></dl>
+
+</div>
+</div>
+<a id="gae70609d89621393f636b3f2eb8545fe2" name="gae70609d89621393f636b3f2eb8545fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae70609d89621393f636b3f2eb8545fe2">&#9670;&#160;</a></span>DCL_runDF23_C1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> DCL_runDF23_C1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga74b8909e62e7713da3898ff5ab087938">DCL_DF23</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>ek</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes a full 3rd order Direct Form 2 controller on the FPU32 Implemented as an external assembly module </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the <a class="el" href="#ga74b8909e62e7713da3898ff5ab087938" title="Defines the DCL_DF23 controller structure">DCL_DF23</a> controller structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ek</td><td>The servo error </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The control effort </dd></dl>
+
+</div>
+</div>
+<a id="ga8e97e28b063ef52e0a59429cccc9c389" name="ga8e97e28b063ef52e0a59429cccc9c389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e97e28b063ef52e0a59429cccc9c389">&#9670;&#160;</a></span>DCL_runPI_C1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> DCL_runPI_C1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>rk</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>yk</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes a series form PI controller on the FPU32 Implemented as an external assembly module </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the <a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rk</td><td>The controller set-point reference </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yk</td><td>The measured feedback value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The control effort </dd></dl>
+
+</div>
+</div>
+<a id="ga3c7fbc3deab361d5139d2a827870492e" name="ga3c7fbc3deab361d5139d2a827870492e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c7fbc3deab361d5139d2a827870492e">&#9670;&#160;</a></span>DCL_runPI_C5()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> DCL_runPI_C5 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>rk</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>yk</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes an parallel form PI controller on the FPU32 Contains enhanced AWR logic </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the <a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rk</td><td>The controller set-point reference </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yk</td><td>The measured feedback value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The control effort </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_d_c_l_8h_source.html">DCL.h</a> 第 <a class="el" href="_d_c_l_8h_source.html#l00111">111</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gab9b8015bd525d8fab980e8e786ee3b7d" name="gab9b8015bd525d8fab980e8e786ee3b7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab9b8015bd525d8fab980e8e786ee3b7d">&#9670;&#160;</a></span>DCL_runPI_C7()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> DCL_runPI_C7 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f">DCL_PI</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>rk</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>yk</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes a series form PI controller with Tustin integrator on the FPU32. Implemented as assembly module. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Pointer to the <a class="el" href="#gad3535921d2d0c60eddf8442429c7e81f" title="Defines the DCL_PI controller structure">DCL_PI</a> structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rk</td><td>The controller set-point reference </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">yk</td><td>The measured feedback value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The control effort </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

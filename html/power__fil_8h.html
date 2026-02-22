@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: power_fil.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('power__fil_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">power_fil.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>瞬时滤波法单相/三相功率分析 函数声明  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;stdint.h&quot;</code><br />
+<code>#include &lt;inc/hw_types.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="mathdef_8h_source.html">mathdef/mathdef.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_d_c_l_8h_source.html">dcl/dcl.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+power_fil.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="power__fil_8h__incl.png" border="0" usemap="#apower__fil_8h" loading="lazy" alt=""/></div>
+<map name="apower__fil_8h" id="apower__fil_8h">
+<area shape="rect" title="瞬时滤波法单相/三相功率分析 函数声明" alt="" coords="109,5,194,33"/>
+<area shape="rect" title=" " alt="" coords="17,232,80,260"/>
+<area shape="poly" title=" " alt="" coords="131,36,101,55,67,83,35,118,11,158,8,173,11,189,28,219,23,222,6,191,3,173,6,156,31,114,64,79,98,51,128,31"/>
+<area shape="rect" title=" " alt="" coords="248,81,356,109"/>
+<area shape="poly" title=" " alt="" coords="179,31,263,71,260,76,177,36"/>
+<area shape="rect" href="mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="20,157,152,184"/>
+<area shape="poly" title=" " alt="" coords="148,34,100,143,95,141,143,32"/>
+<area shape="rect" href="_d_c_l_8h.html" title="Contains the public interface to the common Digital Controller Library functions" alt="" coords="154,81,223,109"/>
+<area shape="poly" title=" " alt="" coords="160,32,178,66,173,68,156,35"/>
+<area shape="poly" title=" " alt="" coords="82,186,64,220,60,217,77,184"/>
+<area shape="rect" title=" " alt="" coords="105,232,166,260"/>
+<area shape="poly" title=" " alt="" coords="97,183,120,218,116,221,93,186"/>
+<area shape="poly" title=" " alt="" coords="191,109,184,146,177,167,165,186,133,214,96,233,94,228,130,210,161,183,172,165,179,145,185,109"/>
+<area shape="rect" href="dcl__support_8h.html" title=" " alt="" coords="226,157,324,184"/>
+<area shape="poly" title=" " alt="" coords="206,107,250,145,247,149,202,111"/>
+<area shape="rect" title=" " alt="" coords="374,232,454,260"/>
+<area shape="poly" title=" " alt="" coords="225,103,280,123,338,154,372,186,399,218,395,221,369,189,335,159,278,128,223,108"/>
+<area shape="poly" title=" " alt="" coords="236,187,96,232,94,227,234,182"/>
+<area shape="poly" title=" " alt="" coords="251,187,175,227,172,222,249,183"/>
+<area shape="poly" title=" " alt="" coords="301,183,377,222,375,227,299,187"/>
+<area shape="rect" title=" " alt="" coords="276,232,349,260"/>
+<area shape="poly" title=" " alt="" coords="284,184,302,217,297,220,280,186"/>
+<area shape="rect" title=" " alt="" coords="189,232,252,260"/>
+<area shape="poly" title=" " alt="" coords="268,186,242,221,237,218,263,183"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="power__fil_8h__dep__incl.png" border="0" usemap="#apower__fil_8hdep" loading="lazy" alt=""/></div>
+<map name="apower__fil_8hdep" id="apower__fil_8hdep">
+<area shape="rect" title="瞬时滤波法单相/三相功率分析 函数声明" alt="" coords="5,5,91,33"/>
+<area shape="rect" href="power__fil_8c.html" title="瞬时滤波法单相/三相功率分析 函数定义" alt="" coords="6,81,90,109"/>
+<area shape="poly" title=" " alt="" coords="51,49,51,81,45,81,45,49"/>
+</map>
+</div>
+</div>
+<p><a href="power__fil_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:POWER_5FFIL_5F1PH_5FT" id="r_POWER_5FFIL_5F1PH_5FT"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_o_w_e_r___f_i_l__1_p_h___t.html">POWER_FIL_1PH_T</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">单相功率分析结构体  <a href="struct_p_o_w_e_r___f_i_l__1_p_h___t.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:POWER_5FFIL_5F3PH_5FT" id="r_POWER_5FFIL_5F3PH_5FT"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_o_w_e_r___f_i_l__3_p_h___t.html">POWER_FIL_3PH_T</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">三相功率分析结构体  <a href="struct_p_o_w_e_r___f_i_l__3_p_h___t.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:gae7171a7d538e781fcdb95593d525ea9d" id="r_gae7171a7d538e781fcdb95593d525ea9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#gae7171a7d538e781fcdb95593d525ea9d">POWER_WC</a>&#160;&#160;&#160;(15.0f*2.0f*3.1415926f)</td></tr>
+<tr class="memdesc:gae7171a7d538e781fcdb95593d525ea9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">滤波器截止频率, 5Hz  <br /></td></tr>
+<tr class="memitem:gabb3fffcab66341fa7f2b59b62de12fce" id="r_gabb3fffcab66341fa7f2b59b62de12fce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#gabb3fffcab66341fa7f2b59b62de12fce">POWER_FIL_1PH_T_DEFAULTS</a>&#160;&#160;&#160;{0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, {<a class="el" href="group___c_t_r_l___d_c_l.html#ga01c9317f24a06320f89975d5cac59891">DF22_T_DEFAULTS</a>}, {<a class="el" href="group___c_t_r_l___d_c_l.html#ga01c9317f24a06320f89975d5cac59891">DF22_T_DEFAULTS</a>}, {<a class="el" href="group___c_t_r_l___d_c_l.html#ga01c9317f24a06320f89975d5cac59891">DF22_T_DEFAULTS</a>}}</td></tr>
+<tr class="memdesc:gabb3fffcab66341fa7f2b59b62de12fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">单相功率分析结构体默认初始值  <br /></td></tr>
+<tr class="memitem:ga6948bb147da77967f99e0d37092f1747" id="r_ga6948bb147da77967f99e0d37092f1747"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#ga6948bb147da77967f99e0d37092f1747">POWER_FIL_3PH_T_DEFAULTS</a></td></tr>
+<tr class="memdesc:ga6948bb147da77967f99e0d37092f1747"><td class="mdescLeft">&#160;</td><td class="mdescRight">三相功率分析模块初始化默认值  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ga25959bd8454512a2b6ff5b3a264f4029" id="r_ga25959bd8454512a2b6ff5b3a264f4029"><td class="memItemLeft" align="right" valign="top">typedef struct POWER_FIL_1PH_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#ga25959bd8454512a2b6ff5b3a264f4029">POWER_FIL_1PH_T</a></td></tr>
+<tr class="memdesc:ga25959bd8454512a2b6ff5b3a264f4029"><td class="mdescLeft">&#160;</td><td class="mdescRight">单相功率分析结构体  <br /></td></tr>
+<tr class="memitem:gadbc904080010550715ef24b427cc4f25" id="r_gadbc904080010550715ef24b427cc4f25"><td class="memItemLeft" align="right" valign="top">typedef struct POWER_FIL_3PH_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#gadbc904080010550715ef24b427cc4f25">POWER_FIL_3PH_T</a></td></tr>
+<tr class="memdesc:gadbc904080010550715ef24b427cc4f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">三相功率分析结构体  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gafc0739bfdbb38341b3468e791b787d2f" id="r_gafc0739bfdbb38341b3468e791b787d2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#gafc0739bfdbb38341b3468e791b787d2f">Power_Filter_Set</a> (<a class="el" href="group___c_t_r_l___d_c_l.html#ga8233383ca37eabb66161ef56fe7ddffd">DCL_DF22_T</a> *fil, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> isr_freq, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> wc)</td></tr>
+<tr class="memdesc:gafc0739bfdbb38341b3468e791b787d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置功率分析结构体内滤波器, 四阶巴特沃斯滤波器拆分为两个DF22实现  <br /></td></tr>
+<tr class="memitem:ga814a2ecd31dc63f6628e1c1992ae03d2" id="r_ga814a2ecd31dc63f6628e1c1992ae03d2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#ga814a2ecd31dc63f6628e1c1992ae03d2">Power_Filter_Run</a> (<a class="el" href="group___c_t_r_l___d_c_l.html#ga8233383ca37eabb66161ef56fe7ddffd">DCL_DF22_T</a> *fil, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> input)</td></tr>
+<tr class="memdesc:ga814a2ecd31dc63f6628e1c1992ae03d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算四阶巴特沃斯滤波器  <br /></td></tr>
+<tr class="memitem:ga4ec895261026b009d486394941bb6213" id="r_ga4ec895261026b009d486394941bb6213"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#ga4ec895261026b009d486394941bb6213">Power_fil_1ph_Set</a> (<a class="el" href="struct_p_o_w_e_r___f_i_l__1_p_h___t.html">POWER_FIL_1PH_T</a> *power, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> isr_freq)</td></tr>
+<tr class="memdesc:ga4ec895261026b009d486394941bb6213"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置单相功率分析模块  <br /></td></tr>
+<tr class="memitem:ga92e2fdf15c3588b2eed024a8e326f1bb" id="r_ga92e2fdf15c3588b2eed024a8e326f1bb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#ga92e2fdf15c3588b2eed024a8e326f1bb">Power_fil_1ph_Run</a> (<a class="el" href="struct_p_o_w_e_r___f_i_l__1_p_h___t.html">POWER_FIL_1PH_T</a> *power, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> v, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> i)</td></tr>
+<tr class="memdesc:ga92e2fdf15c3588b2eed024a8e326f1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">单相功率分析  <br /></td></tr>
+<tr class="memitem:ga6a8f10ab0543c90044eb7ffc22596a44" id="r_ga6a8f10ab0543c90044eb7ffc22596a44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#ga6a8f10ab0543c90044eb7ffc22596a44">Power_fil_3ph_Set</a> (<a class="el" href="struct_p_o_w_e_r___f_i_l__3_p_h___t.html">POWER_FIL_3PH_T</a> *power, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> isr_freq)</td></tr>
+<tr class="memdesc:ga6a8f10ab0543c90044eb7ffc22596a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置三相功率分析模块  <br /></td></tr>
+<tr class="memitem:ga5320e7b3d2297e36e52c63abb77a172b" id="r_ga5320e7b3d2297e36e52c63abb77a172b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___p_o_w_e_r___f_i_l.html#ga5320e7b3d2297e36e52c63abb77a172b">Power_fil_3ph_Run</a> (<a class="el" href="struct_p_o_w_e_r___f_i_l__3_p_h___t.html">POWER_FIL_3PH_T</a> *power, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> va, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> vb, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> vc, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c.html#a1d212cb48f66ca98d4232df9a4ca86ee">ia</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c.html#af41515eafd6ae12db6821a57927a3bb6">ib</a>, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="el" href="280049_c_2_test___projects_2_power___test_2main_8c.html#a3b662179ce39444e8c5845149c3c04fe">ic</a>)</td></tr>
+<tr class="memdesc:ga5320e7b3d2297e36e52c63abb77a172b"><td class="mdescLeft">&#160;</td><td class="mdescRight">三相功率分析  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>瞬时滤波法单相/三相功率分析 函数声明 </p>
+<dl class="section author"><dt>作者</dt><dd>vilesmeier (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="power__fil_8h_source.html">power_fil.h</a> 中定义.</p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_d1d953c26129256a31398946c1dc3c78.html">power_fil</a></li><li class="navelem"><a href="power__fil_8h.html">power_fil.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

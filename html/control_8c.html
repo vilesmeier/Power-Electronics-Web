@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: control.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('control_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">control.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>含各类控制器的时域实现  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="control_8h_source.html">control.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+control.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="control_8c__incl.png" border="0" usemap="#acontrol_8c" loading="lazy" alt=""/></div>
+<map name="acontrol_8c" id="acontrol_8c">
+<area shape="rect" title="含各类控制器的时域实现" alt="" coords="324,5,394,33"/>
+<area shape="rect" href="control_8h.html" title="包含各类离散化时域控制器" alt="" coords="323,81,394,109"/>
+<area shape="poly" title=" " alt="" coords="362,34,362,65,356,65,356,34"/>
+<area shape="rect" href="_d_c_l_8h.html" title="Contains the public interface to the common Digital Controller Library functions" alt="" coords="170,157,239,184"/>
+<area shape="poly" title=" " alt="" coords="332,112,247,152,244,147,330,107"/>
+<area shape="rect" title=" " alt="" coords="379,308,442,336"/>
+<area shape="poly" title=" " alt="" coords="354,110,342,139,331,177,326,219,329,239,336,259,352,280,372,297,369,301,348,284,331,261,324,241,321,219,325,176,337,137,349,108"/>
+<area shape="rect" href="delay_8h.html" title="数组延迟链驱动函数声明" alt="" coords="389,157,486,184"/>
+<area shape="poly" title=" " alt="" coords="375,107,414,144,411,148,371,111"/>
+<area shape="rect" title=" " alt="" coords="551,232,660,260"/>
+<area shape="poly" title=" " alt="" coords="396,106,446,126,500,154,546,187,584,220,580,224,542,191,497,159,444,131,394,111"/>
+<area shape="rect" href="dcl__support_8h.html" title=" " alt="" coords="122,232,220,260"/>
+<area shape="poly" title=" " alt="" coords="201,186,185,219,181,217,196,184"/>
+<area shape="rect" title=" " alt="" coords="5,308,86,336"/>
+<area shape="poly" title=" " alt="" coords="180,187,146,208,111,234,84,265,63,296,58,293,80,262,108,230,143,203,177,183"/>
+<area shape="poly" title=" " alt="" coords="216,183,248,219,291,258,328,281,366,300,364,304,326,286,288,262,244,223,212,186"/>
+<area shape="poly" title=" " alt="" coords="150,263,82,302,79,298,147,258"/>
+<area shape="rect" title=" " alt="" coords="294,308,355,336"/>
+<area shape="poly" title=" " alt="" coords="199,258,284,299,282,303,197,263"/>
+<area shape="rect" title=" " alt="" coords="110,308,184,336"/>
+<area shape="poly" title=" " alt="" coords="169,261,158,294,153,292,164,260"/>
+<area shape="poly" title=" " alt="" coords="215,258,365,304,363,309,213,263"/>
+<area shape="rect" title=" " alt="" coords="208,308,270,336"/>
+<area shape="poly" title=" " alt="" coords="185,259,218,295,215,298,181,262"/>
+<area shape="poly" title=" " alt="" coords="456,183,472,198,486,217,494,239,491,261,474,284,453,301,449,297,470,280,486,259,489,239,481,220,468,202,452,187"/>
+<area shape="poly" title=" " alt="" coords="469,182,563,223,561,228,466,187"/>
+<area shape="rect" href="mathdef_8h.html" title="添加常用常数的全局定义" alt="" coords="345,232,476,260"/>
+<area shape="poly" title=" " alt="" coords="435,186,423,219,418,217,430,184"/>
+<area shape="poly" title=" " alt="" coords="397,263,353,300,349,296,394,259"/>
+<area shape="poly" title=" " alt="" coords="414,261,414,292,408,292,408,261"/>
+</map>
+</div>
+</div>
+<p><a href="control_8c_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr id="func-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ga46f6d664eaef47394a624758b5da247d" id="r_ga46f6d664eaef47394a624758b5da247d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___c_o_n_t_r_o_l.html#ga46f6d664eaef47394a624758b5da247d">DCL_PI_Set</a> (<a class="el" href="group___c_t_r_l___d_c_l.html#ga4af078e50a01360e929eebb595ac59ce">DCL_PI_T</a> *p, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Kp, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Ki, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Umax, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Umin, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Imax, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> isr_freq)</td></tr>
+<tr class="memdesc:ga46f6d664eaef47394a624758b5da247d"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置 <a class="el" href="group___c_t_r_l___d_c_l.html#ga4af078e50a01360e929eebb595ac59ce" title="Defines the DCL_PI_T controller structure">DCL_PI_T</a> 控制器  <br /></td></tr>
+<tr class="memitem:ga2f1c741ae83ebc319bfda2776de247bb" id="r_ga2f1c741ae83ebc319bfda2776de247bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___c_o_n_t_r_o_l.html#ga2f1c741ae83ebc319bfda2776de247bb">DCL_PR_Set</a> (<a class="el" href="group___c_t_r_l___c_o_n_t_r_o_l.html#gaae7cf1b0bae686e07642b76b4504fa78">DCL_PR_T</a> *p, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Kp, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Kr, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> wc, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> w0, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> isr_freq)</td></tr>
+<tr class="memdesc:ga2f1c741ae83ebc319bfda2776de247bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置 QPR 控制器  <br /></td></tr>
+<tr class="memitem:gaa7c7ca8dba7ca751ec692f3f9cd359f7" id="r_gaa7c7ca8dba7ca751ec692f3f9cd359f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___c_o_n_t_r_o_l.html#gaa7c7ca8dba7ca751ec692f3f9cd359f7">DCL_PIR_Set</a> (<a class="el" href="group___c_t_r_l___c_o_n_t_r_o_l.html#gad4dc1df2713ebf7109ec292dbecc2101">DCL_PIR_T</a> *p, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> kp, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> ki, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> kr, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Umax, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Umin, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Imax, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> wc, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> w0, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> isr_freq)</td></tr>
+<tr class="memdesc:gaa7c7ca8dba7ca751ec692f3f9cd359f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置 PIR 控制器  <br /></td></tr>
+<tr class="memitem:ga489cb7ba96d67aa2ca908a99d8c2c756" id="r_ga489cb7ba96d67aa2ca908a99d8c2c756"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___c_o_n_t_r_o_l.html#ga489cb7ba96d67aa2ca908a99d8c2c756">DCL_PMR_Set</a> (<a class="el" href="group___c_t_r_l___c_o_n_t_r_o_l.html#ga58e7a61e3ae8acef541590dc350ee0ca">DCL_PMR_T</a> *p, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Kp, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> *Kr, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> wc, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> w0, uint16_t *harmonic_set, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> isr_freq)</td></tr>
+<tr class="memdesc:ga489cb7ba96d67aa2ca908a99d8c2c756"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置PMR控制器  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>含各类控制器的时域实现 </p>
+<dl class="section author"><dt>作者</dt><dd>vilesmeier (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="control_8c_source.html">control.c</a> 中定义.</p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_a7ad6c6c33a029953f5c821cdb478657.html">control</a></li><li class="navelem"><a href="control_8c.html">control.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

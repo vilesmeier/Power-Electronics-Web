@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: oled.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_control___driver_2oled_2oled_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">oled.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>OLED驱动函数定义-SSD1306/SSD1315  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_control___driver_2oled_2oled_8h_source.html">oled.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Control_Driver/oled/oled.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_control___driver_2oled_2oled_8c__incl.png" border="0" usemap="#aoled_8c" loading="lazy" alt=""/></div>
+<map name="aoled_8c" id="aoled_8c">
+<area shape="rect" title="OLED驱动函数定义&#45;SSD1306/SSD1315" alt="" coords="169,5,225,33"/>
+<area shape="rect" href="_control___driver_2oled_2oled_8h.html" title="OLED函数声明&#45;SSD1306/SSD1315" alt="" coords="169,81,225,109"/>
+<area shape="poly" title=" " alt="" coords="200,34,200,65,194,65,194,34"/>
+<area shape="rect" title=" " alt="" coords="5,157,69,184"/>
+<area shape="poly" title=" " alt="" coords="170,112,80,152,78,147,167,107"/>
+<area shape="rect" title=" " alt="" coords="92,157,200,184"/>
+<area shape="poly" title=" " alt="" coords="190,111,166,145,162,142,186,108"/>
+<area shape="rect" href="i2c_8h.html" title=" " alt="" coords="225,157,273,184"/>
+<area shape="poly" title=" " alt="" coords="208,108,233,142,229,146,204,111"/>
+<area shape="rect" title=" " alt="" coords="297,157,358,184"/>
+<area shape="poly" title=" " alt="" coords="222,107,293,147,290,151,219,112"/>
+<area shape="rect" title=" " alt="" coords="187,232,311,260"/>
+<area shape="poly" title=" " alt="" coords="252,185,252,217,246,217,246,185"/>
+</map>
+</div>
+</div>
+<p><a href="_control___driver_2oled_2oled_8c_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga568697a02d0fdf503ea2ded50a1bfe5d" id="r_ga568697a02d0fdf503ea2ded50a1bfe5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga568697a02d0fdf503ea2ded50a1bfe5d">OLED_WriteCommand</a> (uint8_t Command)</td></tr>
+<tr class="memdesc:ga568697a02d0fdf503ea2ded50a1bfe5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED 写命令  <br /></td></tr>
+<tr class="memitem:ga034549a1e1b554b2cd1e8359c3119d24" id="r_ga034549a1e1b554b2cd1e8359c3119d24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga034549a1e1b554b2cd1e8359c3119d24">OLED_WriteData</a> (uint8_t *Data, uint8_t Count)</td></tr>
+<tr class="memdesc:ga034549a1e1b554b2cd1e8359c3119d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED 写数据  <br /></td></tr>
+<tr class="memitem:ga7372e46460a371e4d94a0ee7f5f1a1fd" id="r_ga7372e46460a371e4d94a0ee7f5f1a1fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga7372e46460a371e4d94a0ee7f5f1a1fd">OLED_Init</a> (void)</td></tr>
+<tr class="memdesc:ga7372e46460a371e4d94a0ee7f5f1a1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED初始化  <br /></td></tr>
+<tr class="memitem:gaad16e65bcb5fa05008b3801d5ac5ef07" id="r_gaad16e65bcb5fa05008b3801d5ac5ef07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gaad16e65bcb5fa05008b3801d5ac5ef07">OLED_SetCursor</a> (uint8_t Page, uint8_t X)</td></tr>
+<tr class="memdesc:gaad16e65bcb5fa05008b3801d5ac5ef07"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED设置显示光标位置  <br /></td></tr>
+<tr class="memitem:ga7803502eeddd959ac51b71974318de1a" id="r_ga7803502eeddd959ac51b71974318de1a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga7803502eeddd959ac51b71974318de1a">OLED_Pow</a> (uint32_t X, uint32_t Y)</td></tr>
+<tr class="memdesc:ga7803502eeddd959ac51b71974318de1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">次方函数  <br /></td></tr>
+<tr class="memitem:gaddeab9dc9aea233b5d5e741fb7c1cc3d" id="r_gaddeab9dc9aea233b5d5e741fb7c1cc3d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gaddeab9dc9aea233b5d5e741fb7c1cc3d">OLED_pnpoly</a> (uint8_t nvert, int16_t *vertx, int16_t *verty, int16_t testx, int16_t testy)</td></tr>
+<tr class="memdesc:gaddeab9dc9aea233b5d5e741fb7c1cc3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断指定点是否在指定多边形内部  <br /></td></tr>
+<tr class="memitem:ga1b6950930269c5f1d1d25d59a4600381" id="r_ga1b6950930269c5f1d1d25d59a4600381"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga1b6950930269c5f1d1d25d59a4600381">OLED_IsInAngle</a> (int16_t X, int16_t Y, int16_t StartAngle, int16_t EndAngle)</td></tr>
+<tr class="memdesc:ga1b6950930269c5f1d1d25d59a4600381"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断指定点是否在指定角度内部  <br /></td></tr>
+<tr class="memitem:ga82c9cd4f8d003e9dffca9817fa43349c" id="r_ga82c9cd4f8d003e9dffca9817fa43349c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga82c9cd4f8d003e9dffca9817fa43349c">OLED_Update</a> (void)</td></tr>
+<tr class="memdesc:ga82c9cd4f8d003e9dffca9817fa43349c"><td class="mdescLeft">&#160;</td><td class="mdescRight">将OLED显存数组更新到OLED屏幕  <br /></td></tr>
+<tr class="memitem:ga029e37b9cbbc17649fa02a3cc2c98a29" id="r_ga029e37b9cbbc17649fa02a3cc2c98a29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga029e37b9cbbc17649fa02a3cc2c98a29">OLED_UpdateArea</a> (int16_t X, int16_t Y, uint8_t Width, uint8_t Height)</td></tr>
+<tr class="memdesc:ga029e37b9cbbc17649fa02a3cc2c98a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">将OLED显存数组部分更新到OLED屏幕  <br /></td></tr>
+<tr class="memitem:ga6960de38d41ba87c52e40f8bd4b094d3" id="r_ga6960de38d41ba87c52e40f8bd4b094d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga6960de38d41ba87c52e40f8bd4b094d3">OLED_Clear</a> (void)</td></tr>
+<tr class="memdesc:ga6960de38d41ba87c52e40f8bd4b094d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">将OLED显存数组全部清零  <br /></td></tr>
+<tr class="memitem:gaac92cfe1899db8eb779d133c987c6751" id="r_gaac92cfe1899db8eb779d133c987c6751"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gaac92cfe1899db8eb779d133c987c6751">OLED_ClearArea</a> (int16_t X, int16_t Y, uint8_t Width, uint8_t Height)</td></tr>
+<tr class="memdesc:gaac92cfe1899db8eb779d133c987c6751"><td class="mdescLeft">&#160;</td><td class="mdescRight">将OLED显存数组部分清零  <br /></td></tr>
+<tr class="memitem:ga23c6cc85fd664c7c8c40e0799b0ae261" id="r_ga23c6cc85fd664c7c8c40e0799b0ae261"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga23c6cc85fd664c7c8c40e0799b0ae261">OLED_Reverse</a> (void)</td></tr>
+<tr class="memdesc:ga23c6cc85fd664c7c8c40e0799b0ae261"><td class="mdescLeft">&#160;</td><td class="mdescRight">将OLED显存数组全部取反  <br /></td></tr>
+<tr class="memitem:ga4c1e02aa74ddc41d8c4e168ebc643a3c" id="r_ga4c1e02aa74ddc41d8c4e168ebc643a3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga4c1e02aa74ddc41d8c4e168ebc643a3c">OLED_ReverseArea</a> (int16_t X, int16_t Y, uint8_t Width, uint8_t Height)</td></tr>
+<tr class="memdesc:ga4c1e02aa74ddc41d8c4e168ebc643a3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">将OLED显存数组部分取反  <br /></td></tr>
+<tr class="memitem:gaa331dbadc06f4c13afb97120aae62825" id="r_gaa331dbadc06f4c13afb97120aae62825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gaa331dbadc06f4c13afb97120aae62825">OLED_ShowImage</a> (int16_t X, int16_t Y, uint8_t Width, uint8_t Height, const uint8_t *Image)</td></tr>
+<tr class="memdesc:gaa331dbadc06f4c13afb97120aae62825"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED显示图像  <br /></td></tr>
+<tr class="memitem:ga702041c412b420edd94a154681664202" id="r_ga702041c412b420edd94a154681664202"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga702041c412b420edd94a154681664202">OLED_ShowChar</a> (int16_t X, int16_t Y, char Char)</td></tr>
+<tr class="memdesc:ga702041c412b420edd94a154681664202"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED显示一个字符  <br /></td></tr>
+<tr class="memitem:ga7869abbb812853dbd5673ecd64ccfeab" id="r_ga7869abbb812853dbd5673ecd64ccfeab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga7869abbb812853dbd5673ecd64ccfeab">OLED_ShowString</a> (int16_t X, int16_t Y, char *String)</td></tr>
+<tr class="memdesc:ga7869abbb812853dbd5673ecd64ccfeab"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED显示字符串  <br /></td></tr>
+<tr class="memitem:ga9a8496051d3f0c10130d9d471f0c124e" id="r_ga9a8496051d3f0c10130d9d471f0c124e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga9a8496051d3f0c10130d9d471f0c124e">OLED_ShowUnsignedNum</a> (int16_t X, int16_t Y, uint32_t Number, uint8_t Length, <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga7ce25ca717affa983000aad4a3165a13">OLED_FORMAT</a> format)</td></tr>
+<tr class="memdesc:ga9a8496051d3f0c10130d9d471f0c124e"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED显示数字  <br /></td></tr>
+<tr class="memitem:ga4a403791ec36b102b18a11d01ec6b8e3" id="r_ga4a403791ec36b102b18a11d01ec6b8e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga4a403791ec36b102b18a11d01ec6b8e3">OLED_ShowSignedNum</a> (int16_t X, int16_t Y, int32_t Number, uint8_t Length, <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga7ce25ca717affa983000aad4a3165a13">OLED_FORMAT</a> format)</td></tr>
+<tr class="memdesc:ga4a403791ec36b102b18a11d01ec6b8e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED显示有符号数字  <br /></td></tr>
+<tr class="memitem:gad44b9ca6c1f8ca222561fe145e4eb450" id="r_gad44b9ca6c1f8ca222561fe145e4eb450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gad44b9ca6c1f8ca222561fe145e4eb450">OLED_ShowFloatNum</a> (int16_t X, int16_t Y, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> Number, uint8_t IntLength, uint8_t FraLength)</td></tr>
+<tr class="memdesc:gad44b9ca6c1f8ca222561fe145e4eb450"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED显示浮点数字  <br /></td></tr>
+<tr class="memitem:ga844ceaa4803f82d5936ba3dd45e65022" id="r_ga844ceaa4803f82d5936ba3dd45e65022"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga844ceaa4803f82d5936ba3dd45e65022">OLED_DrawPoint</a> (int16_t X, int16_t Y)</td></tr>
+<tr class="memdesc:ga844ceaa4803f82d5936ba3dd45e65022"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定位置画一个点  <br /></td></tr>
+<tr class="memitem:gaccbfe61ff6d99f9b65bb0ab7d2bc508b" id="r_gaccbfe61ff6d99f9b65bb0ab7d2bc508b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gaccbfe61ff6d99f9b65bb0ab7d2bc508b">OLED_GetPoint</a> (int16_t X, int16_t Y)</td></tr>
+<tr class="memdesc:gaccbfe61ff6d99f9b65bb0ab7d2bc508b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定位置点的值  <br /></td></tr>
+<tr class="memitem:gacabff6f3f4a5ea26544cec21aa0b93d8" id="r_gacabff6f3f4a5ea26544cec21aa0b93d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gacabff6f3f4a5ea26544cec21aa0b93d8">OLED_DrawLine</a> (int16_t X0, int16_t Y0, int16_t X1, int16_t Y1)</td></tr>
+<tr class="memdesc:gacabff6f3f4a5ea26544cec21aa0b93d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED画线  <br /></td></tr>
+<tr class="memitem:gad9deca36e5b2cc2dcbf23444ceb3c59c" id="r_gad9deca36e5b2cc2dcbf23444ceb3c59c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gad9deca36e5b2cc2dcbf23444ceb3c59c">OLED_DrawRectangle</a> (int16_t X, int16_t Y, uint8_t Width, uint8_t Height, <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled)</td></tr>
+<tr class="memdesc:gad9deca36e5b2cc2dcbf23444ceb3c59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED矩形  <br /></td></tr>
+<tr class="memitem:ga0705d9e553afe7f32062ea10898e7771" id="r_ga0705d9e553afe7f32062ea10898e7771"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga0705d9e553afe7f32062ea10898e7771">OLED_DrawTriangle</a> (int16_t X0, int16_t Y0, int16_t X1, int16_t Y1, int16_t X2, int16_t Y2, <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled)</td></tr>
+<tr class="memdesc:ga0705d9e553afe7f32062ea10898e7771"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED三角形  <br /></td></tr>
+<tr class="memitem:ga0c7425c5ba85794625dcfa028c91e134" id="r_ga0c7425c5ba85794625dcfa028c91e134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#ga0c7425c5ba85794625dcfa028c91e134">OLED_DrawCircle</a> (int16_t X, int16_t Y, uint8_t Radius, <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled)</td></tr>
+<tr class="memdesc:ga0c7425c5ba85794625dcfa028c91e134"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED画圆  <br /></td></tr>
+<tr class="memitem:gab080f4a3b1740662e187efc2384b9801" id="r_gab080f4a3b1740662e187efc2384b9801"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gab080f4a3b1740662e187efc2384b9801">OLED_DrawEllipse</a> (int16_t X, int16_t Y, uint8_t A, uint8_t B, <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled)</td></tr>
+<tr class="memdesc:gab080f4a3b1740662e187efc2384b9801"><td class="mdescLeft">&#160;</td><td class="mdescRight">画椭圆  <br /></td></tr>
+<tr class="memitem:gadfeafdf82e5d4ad40918809cef92a6fa" id="r_gadfeafdf82e5d4ad40918809cef92a6fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_t_r_l___o_l_e_d.html#gadfeafdf82e5d4ad40918809cef92a6fa">OLED_DrawArc</a> (int16_t X, int16_t Y, uint8_t Radius, int16_t StartAngle, int16_t EndAngle, <a class="el" href="group___c_t_r_l___o_l_e_d.html#ga976bfab42b37c5ae0b31992fb3705deb">OLED_FILL</a> IsFilled)</td></tr>
+<tr class="memdesc:gadfeafdf82e5d4ad40918809cef92a6fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">OLED画圆弧  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>OLED驱动函数定义-SSD1306/SSD1315 </p>
+<dl class="section author"><dt>作者</dt><dd>Mao Chenbin (<a href="#" onclick="location.href='mai'+'lto:'+'508'+'03'+'889'+'0@'+'qq.'+'co'+'m'; return false;">50803<span class="obfuscator">.nosp@m.</span>8890<span class="obfuscator">.nosp@m.</span>@qq.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_control___driver_2oled_2oled_8c_source.html">Control_Driver/oled/oled.c</a> 中定义.</p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_a6e4cb1f5a6e732470401aac39d591a8.html">NUEDC-Core</a></li><li class="navelem"><a href="dir_4d14047a1bc6cdf1f97ad185528cc692.html">Code</a></li><li class="navelem"><a href="dir_e45d108cfc6c3eeeb7e1740d8d399ae0.html">Control_Driver</a></li><li class="navelem"><a href="dir_c38e7e6077b5427c3d80136a5cbe2b61.html">oled</a></li><li class="navelem"><a href="_control___driver_2oled_2oled_8c.html">oled.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

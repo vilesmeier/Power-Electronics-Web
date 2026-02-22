@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['gauss1024_0',['GAUSS1024',['../fpu__fft__gauss_8h.html#a91f26b753ff97f267859de6fb7ee1b3e',1,'fpu_fft_gauss.h']]],
+  ['gauss128_1',['GAUSS128',['../fpu__fft__gauss_8h.html#a6b149f2c1ceb351b5219e64a104ee519',1,'fpu_fft_gauss.h']]],
+  ['gauss2048_2',['GAUSS2048',['../fpu__fft__gauss_8h.html#ac1cbe72ea64f9f6d62a699e6061b30b2',1,'fpu_fft_gauss.h']]],
+  ['gauss256_3',['GAUSS256',['../fpu__fft__gauss_8h.html#a2e357edad8b57b8c51a73f133e86e84a',1,'fpu_fft_gauss.h']]],
+  ['gauss32_4',['GAUSS32',['../fpu__fft__gauss_8h.html#a3504758f50cb4ea01c2a34e6e366bbf8',1,'fpu_fft_gauss.h']]],
+  ['gauss4096_5',['GAUSS4096',['../fpu__fft__gauss_8h.html#abb68e2ba2bb70d8aed71c6393f498c5c',1,'fpu_fft_gauss.h']]],
+  ['gauss512_6',['GAUSS512',['../fpu__fft__gauss_8h.html#a029bde43f849a3773bd94515f9f9e6f8',1,'fpu_fft_gauss.h']]],
+  ['gauss64_7',['GAUSS64',['../fpu__fft__gauss_8h.html#a6d1c37e2e5e4f1a32deff15671152eef',1,'fpu_fft_gauss.h']]],
+  ['gblue_8',['GBLUE',['../group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1cabd2999182571f8430b7f38af7476db9a',1,'LCD_ST7735S.h']]],
+  ['global_2ec_9',['global.c',['../global_8c.html',1,'']]],
+  ['global_2eh_10',['global.h',['../global_8h.html',1,'']]],
+  ['grad_5ffreq_11',['grad_freq',['../struct_r_a_m_p___t.html#af4c0a6bd1fecda37bf05cfe4f7e361e3',1,'RAMP_T']]],
+  ['gray_12',['GRAY',['../group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca3fb6c4ad00f4ad98553e01229d1803ac',1,'LCD_ST7735S.h']]],
+  ['grayblue_13',['GRAYBLUE',['../group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caf0813fa73d558d8c19e93dc9c7575fe5',1,'LCD_ST7735S.h']]],
+  ['gred_14',['GRED',['../group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1ca66af9f9737563b6fbbf14a8bd3bfba1d',1,'LCD_ST7735S.h']]],
+  ['green_15',['GREEN',['../group___d_r_v___f28335___l_c_d.html#ggab87bacfdad76e61b9412d7124be44c1caa60bd322f93178d68184e30e162571ca',1,'LCD_ST7735S.h']]],
+  ['grid_5ffreq_16',['grid_freq',['../struct_d_e_l_a_y___t.html#af6758c7870f26257ed7297d6ad84f052',1,'DELAY_T::grid_freq'],['../struct_p_o_w_e_r___i_n_t__3_p_h___t.html#a25b65e5fc190517a6e8602c850af3ae5',1,'POWER_INT_3PH_T::grid_freq']]]
+];

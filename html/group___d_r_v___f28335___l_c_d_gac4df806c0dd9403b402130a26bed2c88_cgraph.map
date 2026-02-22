@@ -1,0 +1,18 @@
+<map id="LCD_ShowBin" name="LCD_ShowBin">
+<area shape="rect" id="Node000001" title="display a int in BIN format" alt="" coords="5,32,107,60"/>
+<area shape="rect" id="Node000002" href="$group___d_r_v___f28335___l_c_d.html#gaaf409116545541ac11582da5f92dae57" title="math support" alt="" coords="172,5,248,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,34,156,26,157,31,108,40"/>
+<area shape="rect" id="Node000003" href="$group___d_r_v___f28335___l_c_d.html#ga984dce05b86caed4b2a0a0d8dba5462b" title="show a char" alt="" coords="155,57,265,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,52,140,57,139,62,107,57"/>
+<area shape="rect" id="Node000004" href="$group___d_r_v___f28335___l_c_d.html#ga16ab7118659faa7d9ffd28e4e0def529" title="draw point" alt="" coords="313,57,424,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="265,68,298,68,298,74,265,74"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___f28335___l_c_d.html#ga5ff5d250afc92419cfc04e6e7a80936b" title="set courser position" alt="" coords="481,31,582,58"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="424,59,465,53,466,58,425,65"/>
+<area shape="rect" id="Node000008" href="$group___d_r_v___f28335___l_c_d.html#gaba0abdc1cc1f6363bd0cf646e61094e3" title="write 16&#45;bit data" alt="" coords="472,83,591,110"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="425,77,457,82,456,88,424,82"/>
+<area shape="rect" id="Node000006" href="$group___d_r_v___f28335___l_c_d.html#ga71f317c08f5a4fd34f4e66b7413e0381" title="select register" alt="" coords="639,31,757,58"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="583,42,623,42,623,47,583,47"/>
+<area shape="rect" id="Node000007" href="$group___d_r_v___f28335___l_c_d.html#ga4c41fe8c154e5beccd73c8b5042f497f" title="write 8&#45;bit data" alt="" coords="642,83,754,110"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="579,56,638,75,636,80,578,62"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="591,94,627,94,627,99,591,99"/>
+</map>

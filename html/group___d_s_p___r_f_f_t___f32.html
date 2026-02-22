@@ -1,0 +1,1252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NUEDC: Real Fast Fourier Transforms</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NUEDC<span id="projectnumber">&#160;v5.5</span>
+   </div>
+   <div id="projectbrief">NUEDC软件代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group___d_s_p___r_f_f_t___f32.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Real Fast Fourier Transforms <div class="ingroups"><a class="el" href="group___n_u_e_d_c.html">资料库软件部分</a> &raquo; <a class="el" href="group___l_i_b.html">模块代码库</a> &raquo; <a class="el" href="group___c_t_r_l.html">控制环路库</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>提供基于TI官方FPU库的RFFT频谱分析实现  
+<a href="#details">更多...</a></p>
+<div class="dynheader">
+Real Fast Fourier Transforms 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___d_s_p___r_f_f_t___f32.png" border="0" usemap="#agroup______d__s__p______r__f__f__t______f32" loading="lazy" alt=""/></div>
+<map name="agroup______d__s__p______r__f__f__t______f32" id="agroup______d__s__p______r__f__f__t______f32">
+<area shape="rect" href="group___c_t_r_l.html" title="常用控制算法的模块化代码, 使用时直接将文件夹复制到 hardware 文件夹内即可" alt="" coords="5,7,92,32"/>
+<area shape="rect" title="提供基于TI官方FPU库的RFFT频谱分析实现" alt="" coords="140,5,327,33"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:RFFT_5FF32_5FSTRUCT" id="r_RFFT_5FF32_5FSTRUCT"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">RFFT_F32_STRUCT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for the Real FFT  <a href="struct_r_f_f_t___f32___s_t_r_u_c_t.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:RFFT_5FT" id="r_RFFT_5FT"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_f_f_t___t.html">RFFT_T</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体定义  <a href="struct_r_f_f_t___t.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:RFFT_5FDATA_5FT" id="r_RFFT_5FDATA_5FT"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_f_f_t___d_a_t_a___t.html">RFFT_DATA_T</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RFFT输入输出数组  <a href="struct_r_f_f_t___d_a_t_a___t.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ga0934cb2ea8795edf8b6733651f6aa72b" id="r_ga0934cb2ea8795edf8b6733651f6aa72b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0934cb2ea8795edf8b6733651f6aa72b">FFT_STAGE</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:ga0934cb2ea8795edf8b6733651f6aa72b"><td class="mdescLeft">&#160;</td><td class="mdescRight">FFT阶数  <br /></td></tr>
+<tr class="memitem:ga636ddc19af00bc87969a07c88331f105" id="r_ga636ddc19af00bc87969a07c88331f105"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga636ddc19af00bc87969a07c88331f105">FFT_SIZE</a>&#160;&#160;&#160;(1U&lt;&lt;<a class="el" href="#ga0934cb2ea8795edf8b6733651f6aa72b">FFT_STAGE</a>)</td></tr>
+<tr class="memdesc:ga636ddc19af00bc87969a07c88331f105"><td class="mdescLeft">&#160;</td><td class="mdescRight">FFT数组长度  <br /></td></tr>
+<tr class="memitem:ga773ffe60e709d24ffac8f78acd36470f" id="r_ga773ffe60e709d24ffac8f78acd36470f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga773ffe60e709d24ffac8f78acd36470f">FFT_PEAK_MAX</a>&#160;&#160;&#160;20</td></tr>
+<tr class="memdesc:ga773ffe60e709d24ffac8f78acd36470f"><td class="mdescLeft">&#160;</td><td class="mdescRight">FFT幅度谱峰值个数最大值  <br /></td></tr>
+<tr class="memitem:ga375c03b6ba7682f23a46a642bc7c35ea" id="r_ga375c03b6ba7682f23a46a642bc7c35ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga375c03b6ba7682f23a46a642bc7c35ea">FFT_TOLERANCE</a>&#160;&#160;&#160;0.05f</td></tr>
+<tr class="memdesc:ga375c03b6ba7682f23a46a642bc7c35ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">FFT峰值噪声阈限, 小于 FFT_TOLERANCE * peak_max 的峰视为噪声  <br /></td></tr>
+<tr class="memitem:ga073028e7d311cec2453b9da422e8dc64" id="r_ga073028e7d311cec2453b9da422e8dc64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga073028e7d311cec2453b9da422e8dc64">FFT_WINDOW_DISABLE</a></td></tr>
+<tr class="memdesc:ga073028e7d311cec2453b9da422e8dc64"><td class="mdescLeft">&#160;</td><td class="mdescRight">FFT是否加窗  <br /></td></tr>
+<tr class="memitem:gac4dab8d5ec53a02e5308e7485b6d3fc7" id="r_gac4dab8d5ec53a02e5308e7485b6d3fc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac4dab8d5ec53a02e5308e7485b6d3fc7">FFT_PHASE_DISABLE</a></td></tr>
+<tr class="memdesc:gac4dab8d5ec53a02e5308e7485b6d3fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">FFT是否计算相位  <br /></td></tr>
+<tr class="memitem:ga9b3757d7ef0e51af7ef76a1acc6e1fd2" id="r_ga9b3757d7ef0e51af7ef76a1acc6e1fd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9b3757d7ef0e51af7ef76a1acc6e1fd2">FFT_WIN_BARTHANN</a></td></tr>
+<tr class="memitem:ga6e5aa31fe14d96eebf6abbf1e59996b1" id="r_ga6e5aa31fe14d96eebf6abbf1e59996b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6e5aa31fe14d96eebf6abbf1e59996b1">FFT_WIN_BARTLETT</a>&#160;&#160;&#160;2.000f</td></tr>
+<tr class="memitem:ga53a6c3aaf1e2e8693e69ed6a7a87dbba" id="r_ga53a6c3aaf1e2e8693e69ed6a7a87dbba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga53a6c3aaf1e2e8693e69ed6a7a87dbba">FFT_WIN_BLACKMAN</a>&#160;&#160;&#160;2.381f</td></tr>
+<tr class="memitem:ga5ebcb55274da9413b87d4116abeb61b5" id="r_ga5ebcb55274da9413b87d4116abeb61b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5ebcb55274da9413b87d4116abeb61b5">FFT_WIN_BALCKMANHARRIS</a>&#160;&#160;&#160;2.787f</td></tr>
+<tr class="memitem:ga3aef85b522e10497277a6cddfdc68f67" id="r_ga3aef85b522e10497277a6cddfdc68f67"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3aef85b522e10497277a6cddfdc68f67">FFT_WIN_BOHMAN</a>&#160;&#160;&#160;2.000f</td></tr>
+<tr class="memitem:gaeca7f7ed1701823646bbf2bea2e549fc" id="r_gaeca7f7ed1701823646bbf2bea2e549fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaeca7f7ed1701823646bbf2bea2e549fc">FFT_WIN_CHEB</a>&#160;&#160;&#160;2.600f</td></tr>
+<tr class="memitem:gab960ecbd76aea276928fa31b129f2ea9" id="r_gab960ecbd76aea276928fa31b129f2ea9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab960ecbd76aea276928fa31b129f2ea9">FFT_WIN_FLATTOP</a>&#160;&#160;&#160;1.110f</td></tr>
+<tr class="memitem:gad0e6a2876e0988bf7c2372601fdf60d2" id="r_gad0e6a2876e0988bf7c2372601fdf60d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad0e6a2876e0988bf7c2372601fdf60d2">FFT_WIN_GAUSS</a>&#160;&#160;&#160;2.396f</td></tr>
+<tr class="memitem:gaf9cc97e722abd383b4fc27941672c7a7" id="r_gaf9cc97e722abd383b4fc27941672c7a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf9cc97e722abd383b4fc27941672c7a7">FFT_WIN_HAMMING</a>&#160;&#160;&#160;1.852f</td></tr>
+<tr class="memitem:ga272806e4c6f8566c705b4a3ee8df8fb2" id="r_ga272806e4c6f8566c705b4a3ee8df8fb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga272806e4c6f8566c705b4a3ee8df8fb2">FFT_WIN_HANN</a>&#160;&#160;&#160;2.000f</td></tr>
+<tr class="memitem:ga524b982fc5c02b1abf946f141ae4a2ea" id="r_ga524b982fc5c02b1abf946f141ae4a2ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga524b982fc5c02b1abf946f141ae4a2ea">FFT_WIN_KAISER</a>&#160;&#160;&#160;2.480f</td></tr>
+<tr class="memitem:ga763a23c30b221c29b025869f8deb676d" id="r_ga763a23c30b221c29b025869f8deb676d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga763a23c30b221c29b025869f8deb676d">FFT_WIN_MUTTALL</a>&#160;&#160;&#160;2.816f</td></tr>
+<tr class="memitem:ga20b73bc4ad4a490def9603d6d7543cd8" id="r_ga20b73bc4ad4a490def9603d6d7543cd8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga20b73bc4ad4a490def9603d6d7543cd8">FFT_WIN_PARZEN</a>&#160;&#160;&#160;2.000f</td></tr>
+<tr class="memitem:ga8b69925e12b71ddb6ee21ad7776c3c43" id="r_ga8b69925e12b71ddb6ee21ad7776c3c43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8b69925e12b71ddb6ee21ad7776c3c43">FFT_WIN_RECT</a>&#160;&#160;&#160;1.000f</td></tr>
+<tr class="memitem:ga46054988db4cec96d91a91e4fc449581" id="r_ga46054988db4cec96d91a91e4fc449581"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga46054988db4cec96d91a91e4fc449581">FFT_WIN_TAYLOR</a>&#160;&#160;&#160;1.700f</td></tr>
+<tr class="memitem:ga0f64bffc15e2434d545dbcbf4c4dd0ca" id="r_ga0f64bffc15e2434d545dbcbf4c4dd0ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0f64bffc15e2434d545dbcbf4c4dd0ca">FFT_WIN_TRIANG</a>&#160;&#160;&#160;2.000f</td></tr>
+<tr class="memitem:gab320c9b00551ebcb5a115dfcdf88b9aa" id="r_gab320c9b00551ebcb5a115dfcdf88b9aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab320c9b00551ebcb5a115dfcdf88b9aa">FFT_WIN_TUKEY</a>&#160;&#160;&#160;1.500f</td></tr>
+<tr class="memitem:ga626007536417efdacd8d5a3917b7002a" id="r_ga626007536417efdacd8d5a3917b7002a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga626007536417efdacd8d5a3917b7002a">FFT_WINDOW_GAIN</a>&#160;&#160;&#160;1.0f</td></tr>
+<tr class="memdesc:ga626007536417efdacd8d5a3917b7002a"><td class="mdescLeft">&#160;</td><td class="mdescRight">FFT窗函数幅值修正系数  <br /></td></tr>
+<tr class="memitem:gafa99ec4acc4ecb2dc3c2d05da15d0e3f" id="r_gafa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>(a,  b)</td></tr>
+<tr class="memdesc:gafa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用三目运算符的最大值  <br /></td></tr>
+<tr class="memitem:ga3acffbd305ee72dcd4593c0d8af64a4f" id="r_ga3acffbd305ee72dcd4593c0d8af64a4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(a,  b)</td></tr>
+<tr class="memdesc:ga3acffbd305ee72dcd4593c0d8af64a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用三目运算符的最小值  <br /></td></tr>
+<tr class="memitem:ga1f51992d61be87dde27488a7b6090bb9" id="r_ga1f51992d61be87dde27488a7b6090bb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1f51992d61be87dde27488a7b6090bb9">RFFT_T_DEFAULTS</a>&#160;&#160;&#160;{<a class="el" href="fpu__rfft_8h.html#ac40552433a3763f37032bfa93e4ec66c">RFFT_F32_STRUCT_DEFAULTS</a>, NULL, 0.0f, 0.0f, 0.0f, {0.0f}, {0.0f}, 0.0f, <a class="el" href="#ggaba1a1aa3c6bb536435957847da9c1b2faeb8448db629160ec8f03e448a8ab078d">FFT_MODE_NULL</a>, 0.0f}</td></tr>
+<tr class="memdesc:ga1f51992d61be87dde27488a7b6090bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">RFFT_T默认初始值  <br /></td></tr>
+<tr class="memitem:ga0b731af5f9c9fe5feefaf45f02fb4803" id="r_ga0b731af5f9c9fe5feefaf45f02fb4803"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0b731af5f9c9fe5feefaf45f02fb4803">RFFT_DATA_T_DEFAULTS</a>&#160;&#160;&#160;{ {0.0f}, {0.0f}, {0.0f}, {0.0f}}</td></tr>
+<tr class="memdesc:ga0b731af5f9c9fe5feefaf45f02fb4803"><td class="mdescLeft">&#160;</td><td class="mdescRight">RFFT_DATA_T默认初始值  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ga035262da3af2ac3fc5c514365123f961" id="r_ga035262da3af2ac3fc5c514365123f961"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="#gaba1a1aa3c6bb536435957847da9c1b2f">FFT_MODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga035262da3af2ac3fc5c514365123f961">FFT_MODE</a></td></tr>
+<tr class="memdesc:ga035262da3af2ac3fc5c514365123f961"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义RFFT频谱分析模式  <br /></td></tr>
+<tr class="memitem:ga8c8311a58e22f5edbdad4190c9f26960" id="r_ga8c8311a58e22f5edbdad4190c9f26960"><td class="memItemLeft" align="right" valign="top">typedef struct RFFT_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8c8311a58e22f5edbdad4190c9f26960">RFFT_T</a></td></tr>
+<tr class="memdesc:ga8c8311a58e22f5edbdad4190c9f26960"><td class="mdescLeft">&#160;</td><td class="mdescRight">结构体定义  <br /></td></tr>
+<tr class="memitem:ga23d4261a419ec5fdd8130df5ee8c9048" id="r_ga23d4261a419ec5fdd8130df5ee8c9048"><td class="memItemLeft" align="right" valign="top">typedef struct RFFT_DATA_T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga23d4261a419ec5fdd8130df5ee8c9048">RFFT_DATA_T</a></td></tr>
+<tr class="memdesc:ga23d4261a419ec5fdd8130df5ee8c9048"><td class="mdescLeft">&#160;</td><td class="mdescRight">RFFT输入输出数组  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:gaba1a1aa3c6bb536435957847da9c1b2f" id="r_gaba1a1aa3c6bb536435957847da9c1b2f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaba1a1aa3c6bb536435957847da9c1b2f">FFT_MODE</a> { <a class="el" href="#ggaba1a1aa3c6bb536435957847da9c1b2faeb8448db629160ec8f03e448a8ab078d">FFT_MODE_NULL</a> = 0U
+, <a class="el" href="#ggaba1a1aa3c6bb536435957847da9c1b2fac4acfd934cb0e9a237ace151235488f5">FFT_GRID_LOCK</a> = 1U
+, <a class="el" href="#ggaba1a1aa3c6bb536435957847da9c1b2fabdd1a5e2d1c04b1d17b1bfa214d11112">FFT_PEAK_FIND</a> = 2U
+ }</td></tr>
+<tr class="memdesc:gaba1a1aa3c6bb536435957847da9c1b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义RFFT频谱分析模式  <a href="#gaba1a1aa3c6bb536435957847da9c1b2f">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gad9326e34787eb92e07fc6947e3ee94e2" id="r_gad9326e34787eb92e07fc6947e3ee94e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad9326e34787eb92e07fc6947e3ee94e2">RFFT_Set</a> (<a class="el" href="struct_r_f_f_t___t.html">RFFT_T</a> *rfft, <a class="el" href="struct_r_f_f_t___d_a_t_a___t.html">RFFT_DATA_T</a> *rfft_data, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> fs, <a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> fgrid)</td></tr>
+<tr class="memdesc:gad9326e34787eb92e07fc6947e3ee94e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置RFFT参数及地址指针, 确定FFT幅度谱分析模式  <br /></td></tr>
+<tr class="memitem:ga10f0af015b86327a43672d9e437d32fb" id="r_ga10f0af015b86327a43672d9e437d32fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga10f0af015b86327a43672d9e437d32fb">RFFT_Run</a> (<a class="el" href="struct_r_f_f_t___t.html">RFFT_T</a> *rfft)</td></tr>
+<tr class="memdesc:ga10f0af015b86327a43672d9e437d32fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行RFFT信号分析  <br /></td></tr>
+<tr class="memitem:ga9fb8d812d415f8a13c175e3f8af3daf2" id="r_ga9fb8d812d415f8a13c175e3f8af3daf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9fb8d812d415f8a13c175e3f8af3daf2">RFFT_Peak_Find</a> (<a class="el" href="struct_r_f_f_t___t.html">RFFT_T</a> *rfft)</td></tr>
+<tr class="memdesc:ga9fb8d812d415f8a13c175e3f8af3daf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">delta_f != fgrid, 寻找幅度谱峰值  <br /></td></tr>
+<tr class="memitem:gaf879755b2c00c8545075441300efb56d" id="r_gaf879755b2c00c8545075441300efb56d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf879755b2c00c8545075441300efb56d">RFFT_Grid_Lock</a> (<a class="el" href="struct_r_f_f_t___t.html">RFFT_T</a> *rfft)</td></tr>
+<tr class="memdesc:gaf879755b2c00c8545075441300efb56d"><td class="mdescLeft">&#160;</td><td class="mdescRight">delta_f == fgrid, 幅度谱每个元素即为一个谐波峰  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ga425e94d6ce247ca636a01f863bae9a04" id="r_ga425e94d6ce247ca636a01f863bae9a04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">RFFT_F32_STRUCT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga425e94d6ce247ca636a01f863bae9a04">RFFT_T::rfft_struct</a></td></tr>
+<tr class="memdesc:ga425e94d6ce247ca636a01f863bae9a04"><td class="mdescLeft">&#160;</td><td class="mdescRight">ti库结构体  <br /></td></tr>
+<tr class="memitem:gaa77fa5cdc3433da3f1ae894867f0df6a" id="r_gaa77fa5cdc3433da3f1ae894867f0df6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa77fa5cdc3433da3f1ae894867f0df6a">RFFT_T::rfft_struct_pointer</a></td></tr>
+<tr class="memdesc:gaa77fa5cdc3433da3f1ae894867f0df6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ti库结构体指针  <br /></td></tr>
+<tr class="memitem:ga285ffa74eb75579c8a395fe23fdb6ccb" id="r_ga285ffa74eb75579c8a395fe23fdb6ccb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga285ffa74eb75579c8a395fe23fdb6ccb">RFFT_T::thd</a></td></tr>
+<tr class="memdesc:ga285ffa74eb75579c8a395fe23fdb6ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">总谐波失真  <br /></td></tr>
+<tr class="memitem:ga31defe92366e52718b5e235bb24db63c" id="r_ga31defe92366e52718b5e235bb24db63c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga31defe92366e52718b5e235bb24db63c">RFFT_T::dc_amp</a></td></tr>
+<tr class="memdesc:ga31defe92366e52718b5e235bb24db63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">DC分量  <br /></td></tr>
+<tr class="memitem:gaf79986d27bcd85d77e866276f9bd9337" id="r_gaf79986d27bcd85d77e866276f9bd9337"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf79986d27bcd85d77e866276f9bd9337">RFFT_T::fs</a></td></tr>
+<tr class="memdesc:gaf79986d27bcd85d77e866276f9bd9337"><td class="mdescLeft">&#160;</td><td class="mdescRight">采样频率  <br /></td></tr>
+<tr class="memitem:ga758dfd3949824e12d95c70a76a62a32b" id="r_ga758dfd3949824e12d95c70a76a62a32b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga758dfd3949824e12d95c70a76a62a32b">RFFT_T::freq</a> [<a class="el" href="#ga773ffe60e709d24ffac8f78acd36470f">FFT_PEAK_MAX</a>]</td></tr>
+<tr class="memdesc:ga758dfd3949824e12d95c70a76a62a32b"><td class="mdescLeft">&#160;</td><td class="mdescRight">峰值点频率  <br /></td></tr>
+<tr class="memitem:gaed90cab12601ff87a2820115df2a1c8e" id="r_gaed90cab12601ff87a2820115df2a1c8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaed90cab12601ff87a2820115df2a1c8e">RFFT_T::amp</a> [<a class="el" href="#ga773ffe60e709d24ffac8f78acd36470f">FFT_PEAK_MAX</a>]</td></tr>
+<tr class="memdesc:gaed90cab12601ff87a2820115df2a1c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">峰值点幅值  <br /></td></tr>
+<tr class="memitem:ga5d079160b1071eb7122524d0c412757d" id="r_ga5d079160b1071eb7122524d0c412757d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5d079160b1071eb7122524d0c412757d">RFFT_T::peak_num</a></td></tr>
+<tr class="memdesc:ga5d079160b1071eb7122524d0c412757d"><td class="mdescLeft">&#160;</td><td class="mdescRight">FFT magnitude 中峰值数量  <br /></td></tr>
+<tr class="memitem:gabcae3016f41bf425ce6a8baae348d17c" id="r_gabcae3016f41bf425ce6a8baae348d17c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#gaba1a1aa3c6bb536435957847da9c1b2f">FFT_MODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabcae3016f41bf425ce6a8baae348d17c">RFFT_T::mode</a></td></tr>
+<tr class="memdesc:gabcae3016f41bf425ce6a8baae348d17c"><td class="mdescLeft">&#160;</td><td class="mdescRight">幅度谱分析模式  <br /></td></tr>
+<tr class="memitem:ga12839f02451a305dbfd7d9804f09bf40" id="r_ga12839f02451a305dbfd7d9804f09bf40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga12839f02451a305dbfd7d9804f09bf40">RFFT_T::size_inv</a></td></tr>
+<tr class="memdesc:ga12839f02451a305dbfd7d9804f09bf40"><td class="mdescLeft">&#160;</td><td class="mdescRight">FFT_SIZE 倒数, 用于减少 FFT 分析中浮点除法  <br /></td></tr>
+<tr class="memitem:ga20ba249f43caced3d12c3fea14a83177" id="r_ga20ba249f43caced3d12c3fea14a83177"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga20ba249f43caced3d12c3fea14a83177">RFFT_DATA_T::input</a> [<a class="el" href="#ga636ddc19af00bc87969a07c88331f105">FFT_SIZE</a>]</td></tr>
+<tr class="memdesc:ga20ba249f43caced3d12c3fea14a83177"><td class="mdescLeft">&#160;</td><td class="mdescRight">输入数组  <br /></td></tr>
+<tr class="memitem:ga794898bdfc1cebb5a4f66aac8fde9f34" id="r_ga794898bdfc1cebb5a4f66aac8fde9f34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga794898bdfc1cebb5a4f66aac8fde9f34">RFFT_DATA_T::output</a> [<a class="el" href="#ga636ddc19af00bc87969a07c88331f105">FFT_SIZE</a>]</td></tr>
+<tr class="memdesc:ga794898bdfc1cebb5a4f66aac8fde9f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出数组  <br /></td></tr>
+<tr class="memitem:ga7a73cc1da967a6e0b4ebf9c614baa2e1" id="r_ga7a73cc1da967a6e0b4ebf9c614baa2e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7a73cc1da967a6e0b4ebf9c614baa2e1">RFFT_DATA_T::twiddle</a> [<a class="el" href="#ga636ddc19af00bc87969a07c88331f105">FFT_SIZE</a>]</td></tr>
+<tr class="memdesc:ga7a73cc1da967a6e0b4ebf9c614baa2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">预畸变因子表  <br /></td></tr>
+<tr class="memitem:ga235aeeae1f5741efa7d894b3bbe60163" id="r_ga235aeeae1f5741efa7d894b3bbe60163"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga235aeeae1f5741efa7d894b3bbe60163">RFFT_DATA_T::magnitude</a> [(<a class="el" href="#ga636ddc19af00bc87969a07c88331f105">FFT_SIZE</a> &gt; &gt;1)+1]</td></tr>
+<tr class="memdesc:ga235aeeae1f5741efa7d894b3bbe60163"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出幅值  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<p>提供基于TI官方FPU库的RFFT频谱分析实现 </p>
+<p>Copyright: Copyright (C) 2023 Texas Instruments Incorporated - All rights reserved not granted herein. Limited License.</p>
+<p>Texas Instruments Incorporated grants a world-wide, royalty-free, non-exclusive license under copyrights and patents it now or hereafter owns or controls to make, have made, use, import, offer to sell and sell ("Utilize") this software subject to the terms herein. With respect to the foregoing patent license, such license is granted solely to the extent that any such patent is necessary to Utilize the software alone. The patent license shall not apply to any combinations which include this software, other than combinations with devices manufactured by or for TI ("TI Devices"). No hardware patent is licensed hereunder.</p>
+<p>Redistributions must preserve existing copyright notices and reproduce this license (including the above copyright notice and the disclaimer and (if applicable) source code license limitations below) in the documentation and/or other materials provided with the distribution.</p>
+<p>Redistribution and use in binary form, without modification, are permitted provided that the following conditions are met:</p>
+<ul>
+<li>No reverse engineering, decompilation, or disassembly of this software is permitted with respect to any software provided in binary form.</li>
+<li>Any redistribution and use are licensed by TI for use only with TI Devices.</li>
+<li>Nothing shall obligate TI to provide you with source code for the software licensed and provided to you in object code.</li>
+</ul>
+<p>If software source code is provided to you, modification and redistribution of the source code are permitted provided that the following conditions are met:</p>
+<ul>
+<li>any redistribution and use of the source code, including any resulting derivative works, are licensed by TI for use only with TI Devices.</li>
+<li>any redistribution and use of any object code compiled from the source code and any resulting derivative works, are licensed by TI for use only with TI Devices.</li>
+</ul>
+<p>Neither the name of Texas Instruments Incorporated nor the names of its suppliers may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+<p>Copyright: Copyright (C) 2023 Texas Instruments Incorporated - All rights reserved not granted herein. Limited License.</p>
+<p>Texas Instruments Incorporated grants a world-wide, royalty-free, non-exclusive license under copyrights and patents it now or hereafter owns or controls to make, have made, use, import, offer to sell and sell ("Utilize") this software subject to the terms herein. With respect to the foregoing patent license, such license is granted solely to the extent that any such patent is necessary to Utilize the software alone. The patent license shall not apply to any combinations which include this software, other than combinations with devices manufactured by or for TI ("TI Devices"). No hardware patent is licensed hereunder.</p>
+<p>Redistributions must preserve existing copyright notices and reproduce this license (including the above copyright notice and the disclaimer and (if applicable) source code license limitations below) in the documentation and/or other materials provided with the distribution.</p>
+<p>Redistribution and use in binary form, without modification, are permitted provided that the following conditions are met:</p>
+<ul>
+<li>No reverse engineering, decompilation, or disassembly of this software is permitted with respect to any software provided in binary form.</li>
+<li>Any redistribution and use are licensed by TI for use only with TI Devices.</li>
+<li>Nothing shall obligate TI to provide you with source code for the software licensed and provided to you in object code.</li>
+</ul>
+<p>If software source code is provided to you, modification and redistribution of the source code are permitted provided that the following conditions are met:</p>
+<ul>
+<li>any redistribution and use of the source code, including any resulting derivative works, are licensed by TI for use only with TI Devices.</li>
+<li>any redistribution and use of any object code compiled from the source code and any resulting derivative works, are licensed by TI for use only with TI Devices.</li>
+</ul>
+<p>Neither the name of Texas Instruments Incorporated nor the names of its suppliers may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="ga773ffe60e709d24ffac8f78acd36470f" name="ga773ffe60e709d24ffac8f78acd36470f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga773ffe60e709d24ffac8f78acd36470f">&#9670;&#160;</a></span>FFT_PEAK_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_PEAK_MAX&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FFT幅度谱峰值个数最大值 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gac4dab8d5ec53a02e5308e7485b6d3fc7" name="gac4dab8d5ec53a02e5308e7485b6d3fc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac4dab8d5ec53a02e5308e7485b6d3fc7">&#9670;&#160;</a></span>FFT_PHASE_DISABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_PHASE_DISABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FFT是否计算相位 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga636ddc19af00bc87969a07c88331f105" name="ga636ddc19af00bc87969a07c88331f105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga636ddc19af00bc87969a07c88331f105">&#9670;&#160;</a></span>FFT_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_SIZE&#160;&#160;&#160;(1U&lt;&lt;<a class="el" href="#ga0934cb2ea8795edf8b6733651f6aa72b">FFT_STAGE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FFT数组长度 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga0934cb2ea8795edf8b6733651f6aa72b" name="ga0934cb2ea8795edf8b6733651f6aa72b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0934cb2ea8795edf8b6733651f6aa72b">&#9670;&#160;</a></span>FFT_STAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_STAGE&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FFT阶数 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga375c03b6ba7682f23a46a642bc7c35ea" name="ga375c03b6ba7682f23a46a642bc7c35ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga375c03b6ba7682f23a46a642bc7c35ea">&#9670;&#160;</a></span>FFT_TOLERANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_TOLERANCE&#160;&#160;&#160;0.05f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FFT峰值噪声阈限, 小于 FFT_TOLERANCE * peak_max 的峰视为噪声 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga5ebcb55274da9413b87d4116abeb61b5" name="ga5ebcb55274da9413b87d4116abeb61b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ebcb55274da9413b87d4116abeb61b5">&#9670;&#160;</a></span>FFT_WIN_BALCKMANHARRIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_BALCKMANHARRIS&#160;&#160;&#160;2.787f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga9b3757d7ef0e51af7ef76a1acc6e1fd2" name="ga9b3757d7ef0e51af7ef76a1acc6e1fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b3757d7ef0e51af7ef76a1acc6e1fd2">&#9670;&#160;</a></span>FFT_WIN_BARTHANN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_BARTHANN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga6e5aa31fe14d96eebf6abbf1e59996b1" name="ga6e5aa31fe14d96eebf6abbf1e59996b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e5aa31fe14d96eebf6abbf1e59996b1">&#9670;&#160;</a></span>FFT_WIN_BARTLETT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_BARTLETT&#160;&#160;&#160;2.000f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga53a6c3aaf1e2e8693e69ed6a7a87dbba" name="ga53a6c3aaf1e2e8693e69ed6a7a87dbba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga53a6c3aaf1e2e8693e69ed6a7a87dbba">&#9670;&#160;</a></span>FFT_WIN_BLACKMAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_BLACKMAN&#160;&#160;&#160;2.381f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00051">51</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga3aef85b522e10497277a6cddfdc68f67" name="ga3aef85b522e10497277a6cddfdc68f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3aef85b522e10497277a6cddfdc68f67">&#9670;&#160;</a></span>FFT_WIN_BOHMAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_BOHMAN&#160;&#160;&#160;2.000f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gaeca7f7ed1701823646bbf2bea2e549fc" name="gaeca7f7ed1701823646bbf2bea2e549fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeca7f7ed1701823646bbf2bea2e549fc">&#9670;&#160;</a></span>FFT_WIN_CHEB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_CHEB&#160;&#160;&#160;2.600f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gab960ecbd76aea276928fa31b129f2ea9" name="gab960ecbd76aea276928fa31b129f2ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab960ecbd76aea276928fa31b129f2ea9">&#9670;&#160;</a></span>FFT_WIN_FLATTOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_FLATTOP&#160;&#160;&#160;1.110f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00055">55</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gad0e6a2876e0988bf7c2372601fdf60d2" name="gad0e6a2876e0988bf7c2372601fdf60d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0e6a2876e0988bf7c2372601fdf60d2">&#9670;&#160;</a></span>FFT_WIN_GAUSS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_GAUSS&#160;&#160;&#160;2.396f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gaf9cc97e722abd383b4fc27941672c7a7" name="gaf9cc97e722abd383b4fc27941672c7a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf9cc97e722abd383b4fc27941672c7a7">&#9670;&#160;</a></span>FFT_WIN_HAMMING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_HAMMING&#160;&#160;&#160;1.852f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00057">57</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga272806e4c6f8566c705b4a3ee8df8fb2" name="ga272806e4c6f8566c705b4a3ee8df8fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga272806e4c6f8566c705b4a3ee8df8fb2">&#9670;&#160;</a></span>FFT_WIN_HANN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_HANN&#160;&#160;&#160;2.000f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00058">58</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga524b982fc5c02b1abf946f141ae4a2ea" name="ga524b982fc5c02b1abf946f141ae4a2ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga524b982fc5c02b1abf946f141ae4a2ea">&#9670;&#160;</a></span>FFT_WIN_KAISER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_KAISER&#160;&#160;&#160;2.480f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00059">59</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga763a23c30b221c29b025869f8deb676d" name="ga763a23c30b221c29b025869f8deb676d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga763a23c30b221c29b025869f8deb676d">&#9670;&#160;</a></span>FFT_WIN_MUTTALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_MUTTALL&#160;&#160;&#160;2.816f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00060">60</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga20b73bc4ad4a490def9603d6d7543cd8" name="ga20b73bc4ad4a490def9603d6d7543cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga20b73bc4ad4a490def9603d6d7543cd8">&#9670;&#160;</a></span>FFT_WIN_PARZEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_PARZEN&#160;&#160;&#160;2.000f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00061">61</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga8b69925e12b71ddb6ee21ad7776c3c43" name="ga8b69925e12b71ddb6ee21ad7776c3c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b69925e12b71ddb6ee21ad7776c3c43">&#9670;&#160;</a></span>FFT_WIN_RECT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_RECT&#160;&#160;&#160;1.000f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00062">62</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga46054988db4cec96d91a91e4fc449581" name="ga46054988db4cec96d91a91e4fc449581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46054988db4cec96d91a91e4fc449581">&#9670;&#160;</a></span>FFT_WIN_TAYLOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_TAYLOR&#160;&#160;&#160;1.700f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00063">63</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga0f64bffc15e2434d545dbcbf4c4dd0ca" name="ga0f64bffc15e2434d545dbcbf4c4dd0ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f64bffc15e2434d545dbcbf4c4dd0ca">&#9670;&#160;</a></span>FFT_WIN_TRIANG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_TRIANG&#160;&#160;&#160;2.000f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gab320c9b00551ebcb5a115dfcdf88b9aa" name="gab320c9b00551ebcb5a115dfcdf88b9aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab320c9b00551ebcb5a115dfcdf88b9aa">&#9670;&#160;</a></span>FFT_WIN_TUKEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WIN_TUKEY&#160;&#160;&#160;1.500f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga073028e7d311cec2453b9da422e8dc64" name="ga073028e7d311cec2453b9da422e8dc64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga073028e7d311cec2453b9da422e8dc64">&#9670;&#160;</a></span>FFT_WINDOW_DISABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WINDOW_DISABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FFT是否加窗 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga626007536417efdacd8d5a3917b7002a" name="ga626007536417efdacd8d5a3917b7002a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga626007536417efdacd8d5a3917b7002a">&#9670;&#160;</a></span>FFT_WINDOW_GAIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFT_WINDOW_GAIN&#160;&#160;&#160;1.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FFT窗函数幅值修正系数 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00070">70</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gafa99ec4acc4ecb2dc3c2d05da15d0e3f" name="gafa99ec4acc4ecb2dc3c2d05da15d0e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa99ec4acc4ecb2dc3c2d05da15d0e3f">&#9670;&#160;</a></span>MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(((a) &gt; (b)) ? (a) : (b))</div>
+</div><!-- fragment -->
+<p>使用三目运算符的最大值 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00074">74</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga3acffbd305ee72dcd4593c0d8af64a4f" name="ga3acffbd305ee72dcd4593c0d8af64a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3acffbd305ee72dcd4593c0d8af64a4f">&#9670;&#160;</a></span>MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">(((a) &lt; (b)) ? (a) : (b))</div>
+</div><!-- fragment -->
+<p>使用三目运算符的最小值 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00075">75</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga0b731af5f9c9fe5feefaf45f02fb4803" name="ga0b731af5f9c9fe5feefaf45f02fb4803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b731af5f9c9fe5feefaf45f02fb4803">&#9670;&#160;</a></span>RFFT_DATA_T_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RFFT_DATA_T_DEFAULTS&#160;&#160;&#160;{ {0.0f}, {0.0f}, {0.0f}, {0.0f}}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RFFT_DATA_T默认初始值 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00135">135</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga1f51992d61be87dde27488a7b6090bb9" name="ga1f51992d61be87dde27488a7b6090bb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f51992d61be87dde27488a7b6090bb9">&#9670;&#160;</a></span>RFFT_T_DEFAULTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RFFT_T_DEFAULTS&#160;&#160;&#160;{<a class="el" href="fpu__rfft_8h.html#ac40552433a3763f37032bfa93e4ec66c">RFFT_F32_STRUCT_DEFAULTS</a>, NULL, 0.0f, 0.0f, 0.0f, {0.0f}, {0.0f}, 0.0f, <a class="el" href="#ggaba1a1aa3c6bb536435957847da9c1b2faeb8448db629160ec8f03e448a8ab078d">FFT_MODE_NULL</a>, 0.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RFFT_T默认初始值 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00121">121</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">类型定义说明</h2>
+<a id="ga035262da3af2ac3fc5c514365123f961" name="ga035262da3af2ac3fc5c514365123f961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga035262da3af2ac3fc5c514365123f961">&#9670;&#160;</a></span>FFT_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="#gaba1a1aa3c6bb536435957847da9c1b2f">FFT_MODE</a> <a class="el" href="#gaba1a1aa3c6bb536435957847da9c1b2f">FFT_MODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义RFFT频谱分析模式 </p>
+
+</div>
+</div>
+<a id="ga23d4261a419ec5fdd8130df5ee8c9048" name="ga23d4261a419ec5fdd8130df5ee8c9048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga23d4261a419ec5fdd8130df5ee8c9048">&#9670;&#160;</a></span>RFFT_DATA_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct RFFT_DATA_T RFFT_DATA_T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>RFFT输入输出数组 </p>
+<dl class="section note"><dt>注解</dt><dd>cmd文件内, 数组需要 <b>2*FFT_SIZE</b> 对齐 </dd></dl>
+
+</div>
+</div>
+<a id="ga8c8311a58e22f5edbdad4190c9f26960" name="ga8c8311a58e22f5edbdad4190c9f26960"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c8311a58e22f5edbdad4190c9f26960">&#9670;&#160;</a></span>RFFT_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct RFFT_T RFFT_T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>结构体定义 </p>
+<dl class="section note"><dt>注解</dt><dd>由于不常用 FFT 分析相位, 故不添加FFT输出相位数组 </dd></dl>
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">枚举类型说明</h2>
+<a id="gaba1a1aa3c6bb536435957847da9c1b2f" name="gaba1a1aa3c6bb536435957847da9c1b2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba1a1aa3c6bb536435957847da9c1b2f">&#9670;&#160;</a></span>FFT_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#gaba1a1aa3c6bb536435957847da9c1b2f">FFT_MODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义RFFT频谱分析模式 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ggaba1a1aa3c6bb536435957847da9c1b2faeb8448db629160ec8f03e448a8ab078d" name="ggaba1a1aa3c6bb536435957847da9c1b2faeb8448db629160ec8f03e448a8ab078d"></a>FFT_MODE_NULL&#160;</td><td class="fielddoc"><p>初始化后未配置, 尚未指定FFT分析模式 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaba1a1aa3c6bb536435957847da9c1b2fac4acfd934cb0e9a237ace151235488f5" name="ggaba1a1aa3c6bb536435957847da9c1b2fac4acfd934cb0e9a237ace151235488f5"></a>FFT_GRID_LOCK&#160;</td><td class="fielddoc"><p>delta_f == fgrid, 直接处理幅度谱内每一个元素 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaba1a1aa3c6bb536435957847da9c1b2fabdd1a5e2d1c04b1d17b1bfa214d11112" name="ggaba1a1aa3c6bb536435957847da9c1b2fabdd1a5e2d1c04b1d17b1bfa214d11112"></a>FFT_PEAK_FIND&#160;</td><td class="fielddoc"><p>delta_f != fgrid, 只处理幅度谱内的峰值点 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00093">93</a> 行定义.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="gaf879755b2c00c8545075441300efb56d" name="gaf879755b2c00c8545075441300efb56d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf879755b2c00c8545075441300efb56d">&#9670;&#160;</a></span>RFFT_Grid_Lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RFFT_Grid_Lock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_f_f_t___t.html">RFFT_T</a> *</td>          <td class="paramname"><span class="paramname"><em>rfft</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>delta_f == fgrid, 幅度谱每个元素即为一个谐波峰 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rfft</td><td>结构体指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="rfft_8c_source.html">rfft.c</a> 第 <a class="el" href="rfft_8c_source.html#l00094">94</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga9fb8d812d415f8a13c175e3f8af3daf2" name="ga9fb8d812d415f8a13c175e3f8af3daf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fb8d812d415f8a13c175e3f8af3daf2">&#9670;&#160;</a></span>RFFT_Peak_Find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RFFT_Peak_Find </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_f_f_t___t.html">RFFT_T</a> *</td>          <td class="paramname"><span class="paramname"><em>rfft</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>delta_f != fgrid, 寻找幅度谱峰值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rfft</td><td>结构体指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="rfft_8c_source.html">rfft.c</a> 第 <a class="el" href="rfft_8c_source.html#l00135">135</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga10f0af015b86327a43672d9e437d32fb" name="ga10f0af015b86327a43672d9e437d32fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga10f0af015b86327a43672d9e437d32fb">&#9670;&#160;</a></span>RFFT_Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RFFT_Run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_f_f_t___t.html">RFFT_T</a> *</td>          <td class="paramname"><span class="paramname"><em>rfft</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>执行RFFT信号分析 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rfft</td><td>结构体指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="rfft_8c_source.html">rfft.c</a> 第 <a class="el" href="rfft_8c_source.html#l00049">49</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___d_s_p___r_f_f_t___f32_ga10f0af015b86327a43672d9e437d32fb_cgraph.png" border="0" usemap="#agroup___d_s_p___r_f_f_t___f32_ga10f0af015b86327a43672d9e437d32fb_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup___d_s_p___r_f_f_t___f32_ga10f0af015b86327a43672d9e437d32fb_cgraph" id="agroup___d_s_p___r_f_f_t___f32_ga10f0af015b86327a43672d9e437d32fb_cgraph">
+<area shape="rect" title="执行RFFT信号分析" alt="" coords="5,109,86,137"/>
+<area shape="rect" href="fpu__rfft_8h.html#a4ba62438408b6dbbe39975f316fe4429" title="Real Fast Fourier Transform (RFFT)." alt="" coords="154,5,230,33"/>
+<area shape="poly" title=" " alt="" coords="58,107,90,76,132,44,141,38,144,43,135,48,94,80,62,111"/>
+<area shape="rect" href="fpu__rfft_8h.html#aa72d6bf63e23a75e7f3ac08a5d64158c" title="Real FFT Magnitude." alt="" coords="138,57,246,85"/>
+<area shape="poly" title=" " alt="" coords="85,106,136,88,138,93,87,111"/>
+<area shape="rect" href="fpu__rfft_8h.html#aee841a4f8b872d083983d709f6d77d91" title="Windowing function for the 32&#45;bit real FFT" alt="" coords="141,109,244,137"/>
+<area shape="poly" title=" " alt="" coords="86,120,125,120,125,126,86,126"/>
+<area shape="rect" href="group___d_s_p___r_f_f_t___f32.html#gaf879755b2c00c8545075441300efb56d" title="delta_f == fgrid, 幅度谱每个元素即为一个谐波峰" alt="" coords="134,161,250,189"/>
+<area shape="poly" title=" " alt="" coords="87,135,138,153,136,158,85,140"/>
+<area shape="rect" href="group___d_s_p___r_f_f_t___f32.html#ga9fb8d812d415f8a13c175e3f8af3daf2" title="delta_f != fgrid, 寻找幅度谱峰值" alt="" coords="134,213,251,241"/>
+<area shape="poly" title=" " alt="" coords="62,135,94,166,135,198,144,204,141,208,132,203,90,170,58,139"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="gad9326e34787eb92e07fc6947e3ee94e2" name="gad9326e34787eb92e07fc6947e3ee94e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9326e34787eb92e07fc6947e3ee94e2">&#9670;&#160;</a></span>RFFT_Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RFFT_Set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_r_f_f_t___t.html">RFFT_T</a> *</td>          <td class="paramname"><span class="paramname"><em>rfft</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_r_f_f_t___d_a_t_a___t.html">RFFT_DATA_T</a> *</td>          <td class="paramname"><span class="paramname"><em>rfft_data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>fs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a></td>          <td class="paramname"><span class="paramname"><em>fgrid</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置RFFT参数及地址指针, 确定FFT幅度谱分析模式 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rfft</td><td>RFFT_T结构体指针 </td></tr>
+    <tr><td class="paramname">rfft_data</td><td>RFFT_DATA_T结构体指针 </td></tr>
+    <tr><td class="paramname">fs</td><td>采样频率 </td></tr>
+    <tr><td class="paramname">fgrid</td><td>信号频率 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="rfft_8c_source.html">rfft.c</a> 第 <a class="el" href="rfft_8c_source.html#l00018">18</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___d_s_p___r_f_f_t___f32_gad9326e34787eb92e07fc6947e3ee94e2_cgraph.png" border="0" usemap="#agroup___d_s_p___r_f_f_t___f32_gad9326e34787eb92e07fc6947e3ee94e2_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup___d_s_p___r_f_f_t___f32_gad9326e34787eb92e07fc6947e3ee94e2_cgraph" id="agroup___d_s_p___r_f_f_t___f32_gad9326e34787eb92e07fc6947e3ee94e2_cgraph">
+<area shape="rect" title="配置RFFT参数及地址指针, 确定FFT幅度谱分析模式" alt="" coords="5,161,82,189"/>
+<area shape="rect" href="fpu__rfft_8h.html#aa8570a2cefb6e9f92fdfc14007e3e2f7" title="Set the size of the FFT" alt="" coords="145,5,290,33"/>
+<area shape="poly" title=" " alt="" coords="48,160,76,104,99,71,128,44,136,38,139,43,131,48,103,75,81,106,53,162"/>
+<area shape="rect" href="fpu__rfft_8h.html#a89dba923f55a3ade344aa41159b7fa2f" title="Set the input buffer pointer" alt="" coords="144,57,290,85"/>
+<area shape="poly" title=" " alt="" coords="55,159,86,127,128,96,142,89,144,94,131,100,89,131,59,163"/>
+<area shape="rect" href="fpu__rfft_8h.html#ae8f5e276d0d7a20e53283666cf3545f3" title="Set the magnitude buffer pointer" alt="" coords="130,109,305,137"/>
+<area shape="poly" title=" " alt="" coords="81,161,153,139,155,145,83,166"/>
+<area shape="rect" href="fpu__rfft_8h.html#a30a4b4aaa467f7d81e84b2b0ffa0d162" title="Set the output buffer pointer" alt="" coords="140,161,294,189"/>
+<area shape="poly" title=" " alt="" coords="82,172,125,172,125,178,82,178"/>
+<area shape="rect" href="fpu__rfft_8h.html#a0d54e14dfc29f5c9635fe96077c5b959" title="Set the number of FFT stages" alt="" coords="148,213,286,241"/>
+<area shape="poly" title=" " alt="" coords="83,184,155,206,153,211,81,189"/>
+<area shape="rect" href="fpu__rfft_8h.html#a92ccd21f6a5273d25995e8a19364775e" title="Set the twiddles pointer" alt="" coords="135,265,300,293"/>
+<area shape="poly" title=" " alt="" coords="59,187,89,219,131,250,144,257,142,262,128,255,86,223,55,191"/>
+<area shape="rect" href="_r_f_f_t__f32__sincostable_8c.html#adce4305bf7eb28f6ce6336edc3b9ea76" title="Generate twiddle factors for the Real FFT." alt="" coords="144,317,290,345"/>
+<area shape="poly" title=" " alt="" coords="53,188,81,244,103,275,131,302,139,308,136,312,128,307,99,279,76,247,48,191"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">变量说明</h2>
+<a id="gaed90cab12601ff87a2820115df2a1c8e" name="gaed90cab12601ff87a2820115df2a1c8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed90cab12601ff87a2820115df2a1c8e">&#9670;&#160;</a></span>amp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> RFFT_T::amp[<a class="el" href="#ga773ffe60e709d24ffac8f78acd36470f">FFT_PEAK_MAX</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>峰值点幅值 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00112">112</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga31defe92366e52718b5e235bb24db63c" name="ga31defe92366e52718b5e235bb24db63c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31defe92366e52718b5e235bb24db63c">&#9670;&#160;</a></span>dc_amp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> RFFT_T::dc_amp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DC分量 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00108">108</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga758dfd3949824e12d95c70a76a62a32b" name="ga758dfd3949824e12d95c70a76a62a32b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga758dfd3949824e12d95c70a76a62a32b">&#9670;&#160;</a></span>freq</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> RFFT_T::freq[<a class="el" href="#ga773ffe60e709d24ffac8f78acd36470f">FFT_PEAK_MAX</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>峰值点频率 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00111">111</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gaf79986d27bcd85d77e866276f9bd9337" name="gaf79986d27bcd85d77e866276f9bd9337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf79986d27bcd85d77e866276f9bd9337">&#9670;&#160;</a></span>fs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> RFFT_T::fs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>采样频率 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00110">110</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga20ba249f43caced3d12c3fea14a83177" name="ga20ba249f43caced3d12c3fea14a83177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga20ba249f43caced3d12c3fea14a83177">&#9670;&#160;</a></span>input</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> RFFT_DATA_T::input[<a class="el" href="#ga636ddc19af00bc87969a07c88331f105">FFT_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>输入数组 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00127">127</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga235aeeae1f5741efa7d894b3bbe60163" name="ga235aeeae1f5741efa7d894b3bbe60163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga235aeeae1f5741efa7d894b3bbe60163">&#9670;&#160;</a></span>magnitude</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> RFFT_DATA_T::magnitude[(<a class="el" href="#ga636ddc19af00bc87969a07c88331f105">FFT_SIZE</a> &gt; &gt;1)+1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>输出幅值 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00130">130</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gabcae3016f41bf425ce6a8baae348d17c" name="gabcae3016f41bf425ce6a8baae348d17c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabcae3016f41bf425ce6a8baae348d17c">&#9670;&#160;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#gaba1a1aa3c6bb536435957847da9c1b2f">FFT_MODE</a> RFFT_T::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>幅度谱分析模式 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00114">114</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga794898bdfc1cebb5a4f66aac8fde9f34" name="ga794898bdfc1cebb5a4f66aac8fde9f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga794898bdfc1cebb5a4f66aac8fde9f34">&#9670;&#160;</a></span>output</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> RFFT_DATA_T::output[<a class="el" href="#ga636ddc19af00bc87969a07c88331f105">FFT_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>输出数组 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00128">128</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga5d079160b1071eb7122524d0c412757d" name="ga5d079160b1071eb7122524d0c412757d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d079160b1071eb7122524d0c412757d">&#9670;&#160;</a></span>peak_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t RFFT_T::peak_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FFT magnitude 中峰值数量 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00113">113</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga425e94d6ce247ca636a01f863bae9a04" name="ga425e94d6ce247ca636a01f863bae9a04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga425e94d6ce247ca636a01f863bae9a04">&#9670;&#160;</a></span>rfft_struct</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_r_f_f_t___f32___s_t_r_u_c_t.html">RFFT_F32_STRUCT</a> RFFT_T::rfft_struct</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ti库结构体 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00104">104</a> 行定义.</p>
+
+</div>
+</div>
+<a id="gaa77fa5cdc3433da3f1ae894867f0df6a" name="gaa77fa5cdc3433da3f1ae894867f0df6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa77fa5cdc3433da3f1ae894867f0df6a">&#9670;&#160;</a></span>rfft_struct_pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fpu__rfft_8h.html#a8e0e8c088fc134b9afc9994c3b253faf">RFFT_F32_STRUCT_Handle</a> RFFT_T::rfft_struct_pointer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ti库结构体指针 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00105">105</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga12839f02451a305dbfd7d9804f09bf40" name="ga12839f02451a305dbfd7d9804f09bf40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga12839f02451a305dbfd7d9804f09bf40">&#9670;&#160;</a></span>size_inv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> RFFT_T::size_inv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FFT_SIZE 倒数, 用于减少 FFT 分析中浮点除法 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00116">116</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga285ffa74eb75579c8a395fe23fdb6ccb" name="ga285ffa74eb75579c8a395fe23fdb6ccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga285ffa74eb75579c8a395fe23fdb6ccb">&#9670;&#160;</a></span>thd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> RFFT_T::thd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>总谐波失真 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00107">107</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga7a73cc1da967a6e0b4ebf9c614baa2e1" name="ga7a73cc1da967a6e0b4ebf9c614baa2e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a73cc1da967a6e0b4ebf9c614baa2e1">&#9670;&#160;</a></span>twiddle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___c_t_r_l___d_c_l.html#ga4611b605e45ab401f02cab15c5e38715">float32_t</a> RFFT_DATA_T::twiddle[<a class="el" href="#ga636ddc19af00bc87969a07c88331f105">FFT_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>预畸变因子表 </p>
+
+<p class="definition">在文件 <a class="el" href="rfft_8h_source.html">rfft.h</a> 第 <a class="el" href="rfft_8h_source.html#l00129">129</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
